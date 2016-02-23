@@ -98,7 +98,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding: 0 2em;
-  font-size: 200%;
+  font-size: 180%;
   line-height: 1.0;
 }
 p {
@@ -144,5 +144,8 @@ footer {
 @media only screen and (min-width: 50em) {
   body {
     font-size: 18px;
+  }
+  h2 {
+    font-size: 200%;
   }
 }
