@@ -1,0 +1,89 @@
+@import "html5bp-top.less";
+
+@linkcolor: #23c9bb;
+@hovercolor: lighten(@linkcolor, 10%);
+@sigcolor: #1e7c79;
+
+body {
+	background: @sigcolor;
+	color: white;
+	font-size: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: "Operator SSm A", "Operator SSm B", "Helvetica Neue", "Helvetica", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+article {
+	position: relative;
+}
+
+a, a:visited, a:hover {
+	color: @linkcolor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: @hovercolor;
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+figure {
+	margin: 2em 0 2em 0;
+	height: 25%;
+	overflow: hidden;
+	clear: both;
+}
+
+section {
+	margin-bottom: 4em;
+}
+
+h1 {
+	margin: 2em 0 2em 0;
+	font-size: 100%;
+	//border-top: 18px solid black;
+	text-align: center;
+	float:right;
+	color: @sigcolor;
+	background: white;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	display: inline-block;
+	padding: 8px 1em;
+	width: 4em;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 2em;	
+	font-size: 200%;
+	line-height: 1.0;
+}
+
+p {
+	display: block;
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 2em;
+
+
+}
+
+p.button {
+	text-align: center;
+}
+
+
+@import "html5bp-top.less";
