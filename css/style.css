@@ -50,7 +50,7 @@ body {
   margin: 0 auto;
   font-family: "Operator SSm A", "Operator SSm B", "Helvetica Neue", "Helvetica", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
 }
 article {
   position: relative;
@@ -60,6 +60,7 @@ a:visited,
 a:hover {
   color: #23c9bb;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
   color: #41ded1;
