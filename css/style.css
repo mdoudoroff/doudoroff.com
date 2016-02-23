@@ -45,12 +45,12 @@ textarea {
 body {
   background: #1e7c79;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 1000px;
   margin: 0 auto;
   font-family: "Operator SSm A", "Operator SSm B", "Helvetica Neue", "Helvetica", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
 }
 article {
   position: relative;
