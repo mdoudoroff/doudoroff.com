@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Quicktime Gallery</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html" selected="selected">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>QuickTime Gallery</h1>
+<p>That fact that this video animation could be produced at all is remarkable, especially when you consider that it was recorded to tape playing off the computer system, rather that output one frame at a time, which was the norm before around 1995. These animations were rendered at 320x200 pixels, utilizing only 16 carefully-selected colors at a time, out of a miniscule total palette of 512 colors. In order for them to play back, the entire animation had to be loaded into RAM, which was seldom more capacious than 4MB. Towards the end of the Atari era, a clever programmer -- Boris Tsikanovsky -- figured out a way to manipulate color lookup tables so that the full 512 color palette could be used for animation (see <a href="spectrum.html">Spectrum 512 and Unispec</a> for details); a couple examples of this technology are included below. In any case, it was generally not practical to produce an animated segment of any visual complexity that lasted more than about a minute. Nor was there enough colors or sufficient processing power to do real anti-aliasing, smooth shading, texture maps, reflections or specular highlights. However, this animation and software is what it is: a significant chapter and breeding ground in the origins of <span class="glossaryTerm" onmouseover="javascript:showDiv('desktopvideo')" onmouseout="javascript:hideDiv('desktopvideo')">desktop video</span>.</p>
+<p>These QuickTime files were each prepared in one of two ways:</p>
+<div class="bodyDiv">
+<ul>
+<li>most of the material was digitized from old VHS tapes; the signal was cleaned up with a DPS time-base-corrector and various JVC circuits and digitized to MiniDV; the DV data was transferred to a PC through a Canopus DV Raptor, edited in Adobe Premiere 6 and encoded with Apple QuickTime Pro</li>
+<li>the Cybermate sequences and some of the other animations were captured to AVI with <a href="http://www.techsmith.com/">TechSmith</a>’s Camtasia as they played back in real-time from within the <a href="http://www.blimey.strayduck.com/">STEEM</a> Atari ST emulator; the AVIs were then edited in Premiere 6 and encoded with QuickTime Pro; audio was prepared in <a href="http://www.syntrillium.com/">Syntrillium</a>’s Cool Edit 2000</li>
+</ul>
+</div>
+<p>All stills on this site were screen grabs from STEEM unless they were from video source, in which case they were saved from Premiere 6.</p>
+
+<div style="width:720px; margin:auto;">
+<h3 style="margin:0px;">Short clips</h3>
+<p style="margin:0px;">These are silent video clips of miscellaneous individual animations.</p>
+
+<div class="cluster" style="width:720px; text-align:center; padding:10px 0px 10px 0px;">
+	<div class="quicktime left">
+		<a href="cyber/adap.mov"><img src="gfx/video.adap.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/adap.mov">ADAP</a> 0.5 MB<br />Cyber Paint drawing effects</p>
+		<br class="spacer" />
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/anticlogo.mov"><img src="gfx/video.anticlogo.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/anticlogo.mov">Antic logo</a>	1.3 MB<br />Cyber Control shadows and Cyber Paint drawing effects</p>
+		<br class="spacer" />
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/bladerunner.mov"><img src="gfx/video.bladerunner.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/bladerunner.mov">Blade Runner</a>	1.0 MB<br />512 color Unispec composite of Spectrum 512 background and two CAD-3D animations, one of which was processed in Cyber Paint</p>
+		<br class="spacer" />		
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/bomber.mov"><img src="gfx/video.bomber.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/bomber.mov">bomber</a> 0.5 MB<br />Cyber Control path animation</p>
+		<br class="spacer" />		
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/bounce.mov"><img src="gfx/video.bounce.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/bounce.mov">bounce</a> 0.1 MB<br />Cyber Paint drawing effects</p>
+		<br class="spacer" />
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/cokecan.mov"><img src="gfx/video.cokecan.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/cokecan.mov">soda can</a> 0.8 MB<br />Cyber Texture geometry</p>
+		<br class="spacer" />
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/cokecanroll.mov"><img src="gfx/video.cokecanroll.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/cokecanroll.mov">rolling soda can</a> 0.7 MB<br />Cyber Texture geometry plus Cyber Control shadows</p>
+		<br class="spacer" />
+	</div>	
+	<div class="quicktime left">
+		<a href="cyberclips/computertable.mov"><img src="gfx/video.computertable.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/computertable.mov">computer desk flyaround</a> 0.2 MB<br />Cyber Control path and shadows</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/court.mov"><img src="gfx/video.court.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/court.mov">basketball court flyover</a> 0.7 MB<br />Cyber Control path</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/globe.mov"><img src="gfx/video.globe.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/globe.mov">globe</a> 0.5 MB<br />Cyber Texture geometry</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/hammer.mov"><img src="gfx/video.hammer.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/hammer.mov">hammer</a> 0.3 MB<br />Cyber Control hierarchical animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/hybridarts.mov"><img src="gfx/video.hybridarts.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/hybridarts.mov">Hybrid Arts logo</a> 0.7 MB<br />Cyber Paint compositing (no geometry)</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/jumprope.mov"><img src="gfx/video.jumprope.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/jumprope.mov">jump rope</a> 0.3 MB<br />Cyber Control animation and shadows</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/megast.mov"><img src="gfx/video.megast.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/metast.mov">Atari Mega ST flyaround</a> 0.2 MB<br />Cyber Control path animation and Cyber Paint drawing effects</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/piano.mov"><img src="gfx/video.piano.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/piano.mov">piano flyaround</a> 0.4 MB<br />Cyber Control path animation and shadows</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/pyramid.mov"><img src="gfx/video.pyramid.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/pyramid.mov">pyramid</a> 0.2 MB<br />Cyber Texture geometry and Cyber Control path animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/recognizer.mov"><img src="gfx/video.recognizer.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/recognizer.mov">TRON recognizer</a> 0.3 MB<br />Cyber Control animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/rocking.mov"><img src="gfx/video.rocking.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/rocking.mov">rocker</a> 0.3 MB<br />Cyber Control shadows</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/saucer.mov"><img src="gfx/video.saucer.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/saucer.mov">flying saucer</a> 0.2 MB<br />Cyber Control path animation and stars database plug-in</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/spec_bee.mov"><img src="gfx/video.spec_bee.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/spec_bee.mov">bee</a> 1.3 MB<br />Unispec 512 color composite of Spectrum picture and CAD-3D animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/spec_tabletop.mov"><img src="gfx/video.spec_tabletop.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/spec_tabletop.mov">toys</a> 0.4 MB<br />Unispec 512 color composite of four separate CAD-3D scenes</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/submarine.mov"><img src="gfx/video.submarine.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/submarine.mov">submarine</a> 1.3 MB<br />Cyber Paint effects on Cyber Control path animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/theater.mov"><img src="gfx/video.theater.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/theater.mov">town square flythrough</a> 0.3 MB<br />Cyber Control path animation</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/trivisionball.mov"><img src="gfx/video.trivisionball.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/trivisionball.mov">ball logo</a> 0.7 MB<br />Cyber Texture geometry</p>
+		<br class="spacer" />
+	</div>
+	<div class="quicktime left">
+		<a href="cyberclips/trumpet.mov"><img src="gfx/video.trumpet.jpg" width="160" height="120" alt="" /></a>
+		<p><a href="cyberclips/trumpet.mov">trumpet flyaround</a> 0.4 MB<br />Cyber Control path animation</p>
+		<br class="spacer" />
+	</div>
+</div>
+
+<br class="spacer" />
+
+<h3 style="margin:0px;">CyberMation demo reel</h3>
+<a href="cyberclips/cybermation.mov"><img src="gfx/cybermation.jpg" width="160" height="120" alt="" style="float:left; padding:5px 10px 10px 0px; border:none;"/></a>
+<p>CyberMation is a sixteen minute demo reel in which all the visuals (except the live camera) were produced with Antic graphics software. 
+The entire video is about 73MB as a downloadable.<br />
+<a href="cyberclips/cybermation.mov">View reel</a> (right-click to download)</p>
+<div style="clear:left;"></div>
+
+<br class="spacer" />
+
+<h3 style="margin:0px;">Cybermate clips</h3>
+<p style="margin:0px;">These are video clips of Cybermate presentation, including sound effects created with <a href="relatedproducts.html">G.I.S.T.</a></p>
+
+<div style="width:670px; margin:auto; padding: 10px 0px 10px 0px;">
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<a href="cyberclips/cyberscape.mov"><img src="gfx/screenshot.cyberscape.gif" alt="" width="320" height="200" /></a>
+		<p>Darrel Anderson’s Cyberscape<br /><a href="cyberclips/cyberscape.mov">Quicktime MOV (40MB)</a></p>
+	</div>
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<a href="cyberclips/spiderpatrol.mov"><img src="gfx/screenshot.spiderpatrol.gif" alt="" width="320" height="200" /></a>
+		<p>Tom Hudson’s Spider Patrol<br /><a href="cyberclips/spiderpatrol.mov">Quicktime MOV (56MB)</a></p>
+	</div>
+</div>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="desktopvideo">
+	<p><strong>Desktop Video</strong></p>
+	<p>The Macintosh and Aldus Pagemaker in the mid 1980’s created the Desktop Publishing industry, which enabled people with relatively inexpensive computers to do (somewhat) professional-grade page layout. Desktop Video is a concept that followed on the heels of Desktop Publishing and proposed to do the same for digital video production. Desktop Video exploded in the early 1990s led by Avid, and now is ubiquitous, particularly with the advent of the DV/miniDV camcorder.</p>
+</div>
+
+<br class="spacer" />
+
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="timeline.html"><em>Timeline</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="whatmight.html"><em>What Might Have Been</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

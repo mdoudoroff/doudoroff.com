@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - General History Part II: A New Software Culture</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html" selected="selected">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h2 style="clear:both;">A new software culture</h2>
+<p>The Atari ST computer came along soon after <em>Antic</em>’s software publishing operation launched, opening a whole new market for original software. Because of two specific developments, Gary was able to tackle this market in a new way:</p>
+<p>For one, Gary discovered he could work directly with software developers in a collaborative manner, rather than simply providing a publishing service. A good example of this collaboration was the Flash telecommunications product, which quickly became (and forever remained) the de facto standard on the Atari ST for modem-based networking and CompuServe access:</p>
+<p class="blockquote">Flash is one of my dream-come-true products since I’d had fantasies of a decent telecom program for a couple of years and finally found those two guys [John Chiazzese and Alan Page] in Toronto. It was the first time a programmer really listened to my ideas and implemented them and I saw how powerful that could be.</p>
+<div class="sidebar right" style="padding:0px; width:350px;">
+<div class="imageCluster right" style="width:200px; padding:5px 0px 0px 0px;">
+	<img src="gfx/photo.atarist.png" alt="" width="200" height="209" class="png" />
+</div>
+<h1 style="padding:10px 10px 10px 10px; clear:none;">About the hardware</h1>
+<p style="padding:0px 10px 0px 10px;">All of this software and artwork was produced on Atari ST (“sixteen-thirty-two”) personal computers in the mid-to-late 1980’s. These computers were based on the Motorola 68000 microprocessor (the same as in the original 1984 Macintosh), and featured 512KB to (eventually) 4MB of RAM.</p>
+<p style="padding:0px 10px 0px 10px;">Physically, the computers were highly self-contained and built on a single motherboard with little “expandability”. On the other hand, they were complete packages, and were relatively inexpensive (“The Power Without The Price”). Some later form factors included a floppy and hard disk drive inside its case with a detached keyboard, others used external units.</p>
+<p style="padding:0px 10px 0px 10px;">The Atari ST computers used an operating system called TOS (“Tramiel Operating System”), which was partially derived from and featured a primitive (and wretched) Mac-like <span class="glossaryTerm" onmouseover="javascript:showDiv('ui')" onmouseout="javascript:hideDiv('ui')">GUI</span> called <span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">GEM</span>. The machines could be operated in three graphics modes, depending on what sort of (proprietary) monitor was attached: 320x200 in 16 colors (out of a total palette of 512 colors), 640x200 in four colors (out of 512), and 640x400 in black and white. Some models had <span class="glossaryTerm" onmouseover="javascript:showDiv('composite')" onmouseout="javascript:hideDiv('composite')">composite video</span> output. All units had a set of MIDI ports which helped make these computers briefly ubiquitous in the professional music world.</p>
+<p style="padding:0px 10px 10px 10px;">For more information and pictures, visit <a href="http://www.atari-history.com/">The Atari Historical Society</a></p>
+</div>
+<p>The other major epiphany for Gary was CompuServe. Prior to the commercialization of the Internet, social computer telecommunication was done either through tiny BBS (bulletin board server) or larger national (even international) services, such as CompuServe. CompuServe hosted several Atari forums managed by Ron Luks, and one of the busiest belonged to <em>Antic</em>. The forum did two significant things for Gary and his publishing operation: First, it put him in direct contact with an active portion of his customer base. Gary could talk directly with the people buying his products and tailor the products appropriately. Second, it provided a medium for his customers to interact with each other as a community. People from disparate parts of the world using the same software could now share information—and ultimately, their computer artwork—with minimal attention or resources from <em>Antic</em>. In fact, on-line computer art exchange was already well under way with both the Atari 800 crowd and the ST users who had software like Tom Hudson’s DEGAS digital paint program. Gary took all this activity to the next logical level by making “user community” an official part of software development at <em>Antic</em>. The on-line arm of his graphics community was the “Cyber Connection” forum on CompuServe, which provided both an official face (like a commercial Web site) and a more casual message board system for free discussions.</p>
+<p>The combination of direct collaboration with programmers and direct interaction with the end customers were two key components of the software culture that made all the subsequent graphics software possible.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="composite">
+	<p><strong>Composite Video</strong></p>
+	<p>A video signal carried by a single coaxial cable that could be made compatible with consumer televisions and VCRs. (This feature would be used by Antic’s future Cyber VCR product.)</p>
+</div>
+<div class="glossaryPopup" id="gem">
+	<p><strong>GEM and TOS</strong></p>
+	<p>The operating system of the Atari ST-series of personal computers was called TOS (Tramiel Operating System), which was a superset of Digital Research’s GEM (Graphical Environment Manager) system. In short, it was responsible for the Macintosh-like features (windows, drop-down menus, the mouse pointer) in most of these Antic software products.</p>
+</div>
+<div class="glossaryPopup" id="ui">
+	<p><strong>User Interface (UI) and Graphical User Interface (GUI)</strong></p>
+	<p>Computer programs don't actually do anything visible to the user unless the programmer goes out of the way to include visual features. These features, which often the user can interact with through a mouse or keyboard, constitute a user interface. Graphical User Interfaces further infers a level of visual sophistication in the interface beyond computer terminal text.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history3.html"><em>III. Now, in 3-D!</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history1.html"><em>I. Antic Magazine & The Catalog</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

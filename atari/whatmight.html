@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - What Might Have Been</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html" selected="selected">Additional materials:</option><option value="whatmight.html" selected="selected">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>What Might Have Been</h1>
+<p>In total, the <em>Antic</em> Cyber graphics software pushed the limitations of the Atari ST well beyond what the engineers at Atari would have deemed reasonable. Atari Corporation was not a nimble or particularly aggressive computer developer, and they completely failed to evolve the Atari ST platform in a timely fashion. By the time Atari produced a computer with a faster microprocessor, the <em>Antic</em> developers had moved on and Atari itself was well on its way to oblivion. They had their chances to create a computer with a math coprocessor and better graphics hardware, but none was forthcoming within a reasonable timeframe for Gary Yost, et al.</p>
+<p>Despite the stagnation of Atari’s hardware, <em>Antic</em> developers did perform some interesting experiments. </p>
+<div class="cluster right" style="margin-bottom: 15px;">
+	<div class="imageCluster" style="width:250px; padding:10px;">
+		<a href="gfx/screenshot.mat.jpg"><img src="gfx/screenshot.mat.thumb.jpg" alt="" width="250" height="156" /></a>
+		<p>Material editor interface</p>
+		<a href="gfx/screenshot.matlight.jpg"><img src="gfx/screenshot.matlight.thumb.jpg" alt="" width="250" height="156" /></a>
+		<p>Light configuration</p>
+		<a href="gfx/screenshot.matrender.jpg"><img src="gfx/screenshot.matrender.thumb.jpg" alt="" width="250" height="156" /></a>
+		<p>512-color material renderings</p>
+	</div>
+</div>
+<p>Boris Tsikanovsky had made the entire ST color palette available through Spectrum 512, so logically, Tom Hudson experimented with implementing more advanced rendering techniques for CAD-3D. The result, which never got beyond the prototype stage, was a materials editor that could render smooth-shaded spheres with <span class="glossaryTerm" onmouseover="javascript:showDiv('bitcolor')" onmouseout="javascript:hideDiv('bitcolor')">24-bit color</span> controls, transparency, <span class="glossaryTerm" onmouseover="javascript:showDiv('texturemap')" onmouseout="javascript:hideDiv('texturemap')">texture maps</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('bumpmap')" onmouseout="javascript:hideDiv('bumpmap')">bump maps</span>, all using Spectrum display code. Tom elaborates:</p>
+<p class="blockquote">I was not terribly happy that Atari had not introduced any kind of math coprocessor, even though one had been promised for some time. Rendering times were very slow when using the <span class="glossaryTerm" onmouseover="javascript:showDiv('zbuffer')" onmouseout="javascript:hideDiv('zbuffer')">Z-buffer</span> rendering mode. I was also bemoaning the lack of more than 16 colors, something that was really holding us back.</p>
+<p class="blockquote">Boris Tsikanovsky’s “Spectrum” technology, which provided 512 color capability, promised to help us out in the color department, and in fact I had a prototype materials editor running on the Atari that used the technology... Boris provided us with the code necessary to display the colors and it looked much better than the 16-color display. Unfortunately, the computations necessary to display the shaded spheres brought the ST to a crawl! I was dying to get the advanced rendering capability into the software, but without more computing power it wasn't going to be practical.</p>
+<p class="blockquote">That’s when we started looking elsewhere.</p>
+<p class="blockquote">Probably the biggest change was that we were originally looking at developing our next-generation software on the Apple computers. In fact, Gary had sent me a list of the various Apple hardware that we'd need to get going on the project and we were on the verge of ordering it when Gary told me about the newest technology on the horizon: The PC VGA video card!</p>
+<p class="blockquote">This card, Gary said, would put 256 (!) colors on the screen at once in 320x200 resolution, the mode we had been using with 16 colors on the Atari. I remember thinking that this would be paradise. In addition, the 80386-based computers could be equipped with math coprocessors; something I knew was going to be vital. Gary also pointed out that the PC market was going to be much larger than the Apple market, which was an important consideration for a niche product like ours.</p>
+<p class="blockquote">I have to say at this point that Gary was incredible at being able to look into the future and see what was going to happen. He pointed out that VGA cards were new, but by the time our PC product was ready to ship, every computer sold would be equipped with one. He was absolutely right.</p>
+<p class="blockquote">And when I got my 386-20 PC and ported my prototype materials editor code over to it, the rendering times were about 15 times faster than the ST.</p>
+<p>The basic rendering technology in that prototype materials editor—minus the Spectrum 512 code—ended up in 3D Studio Release 1.</p>
+<p>Mark Kimball went even further: he designed and built his own graphics <span class="glossaryTerm" onmouseover="javascript:showDiv('framebuffer')" onmouseout="javascript:hideDiv('framebuffer')">framebuffer</span> for the ST that could display a 512 x 512 pixel image in 24-bit color. Mark explains:</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/photo.marksadapter.jpg"><img src="gfx/photo.marksadapter.thumb.jpg" width="250" height="188" /></a>
+		<p>Mark Kimball’s custom display adapter for the ST</p>
+	</div>
+</div>
+<p class="blockquote">It used a Texas Instruments 34020 video processor chip and interfaced to the ST using the internal expansion bus. The 34010 was a nice chip because it integrated the video output function (H & V sync) with DRAM refresh and image processing capabilities... To test the thing, I had to build my own socket for the ST video monitor (see arrow). The devices that are on the daughter card (sticking up vertically from the main board) are the DRAM chips and miscellaneous buffer IC’s. I took this photo on March 1, 2002. I haven't tried to run the old card yet, but unless it’s been “zapped” it should run OK.</p>
+<p class="blockquote">... To demo the thing I used a bunch of <span class="glossaryTerm" onmouseover="javascript:showDiv('truecolor')" onmouseout="javascript:hideDiv('truecolor')">true color</span> images I generated using a home-brew <span class="glossaryTerm" onmouseover="javascript:showDiv('raytracing')" onmouseout="javascript:hideDiv('raytracing')">ray tracing</span> program. The ray-tracer, in turn, was written in a combination of <span class="glossaryTerm" onmouseover="javascript:showDiv('assembly')" onmouseout="javascript:hideDiv('assembly')">assembly language</span> and C, and used fixed-point math for all the ray tracer calculations (for speed). I used an enhanced version of Tom’s CAD-3D file format, with additional information about each object (like surface condition, reflectivity, transmissivity) tacked onto the end of the CAD-3D info. Since it was an experimental program, I had fun adding things like procedurally-defined surfaces, where a user-provided subroutine could run whenever a procedurally-defined object was “hit” by the ray being traced.</p>
+<p class="blockquote">The combination of display adapter and ray tracer produced some nice images...for that time, anyway. I believe that Tom had left the ST community before I did the display adapter.</p>
+<div style="width:670px; margin:auto; padding: 10px 0px 0px 0px;">
+	<div class="imageCluster left" style="width:320px; padding: 0px 0px 10px 0px;">
+		<img src="gfx/rendering.raytraceshadow.jpg" alt="" width="320" height="200" />
+	</div>
+	<div class="imageCluster left" style="width:320px; padding:0px 0px 10px 0px;">
+		<img src="gfx/rendering.raytracebowl.jpg" alt="" width="320" height="200" />
+	</div>
+</div>
+<br class="spacer" />
+<div style="width:670px; margin:auto; padding: 10px 0px 0px 0px;">
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<img src="gfx/rendering.raytracechecker.jpg" alt="" width="320" height="200" />
+	</div>
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<img src="gfx/rendering.raytracereflect.jpg" alt="" width="320" height="200" />
+	</div>
+</div>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="bitcolor">
+	<p><strong>24-bit color</strong></p>
+	<p>Where eight bits of data are used to represent each red, green and blue component of each pixel (3 bytes per pixel) for a total of approximately 16 million unique shades of color. Commonly referred to as “true color”, although it is not (the human eye can distinguish between billions of colors.)</p>
+</div>
+<div class="glossaryPopup" id="bumpmap">
+	<p><strong>Bump map</strong></p>
+	<p>A texture mapping technique where the shades in a picture file are used to perturb the mathematical normals of a 3D surface during rendering to produce the appearance of roughness or relief detail.</p>
+</div>
+<div class="glossaryPopup" id="texturemap">
+	<p><strong>Texture map</strong></p>
+	<p>A 3D graphics technique where the color values of a picture file are mathematically interpolated (mapped) across a 3D surface, as a way of adding interesting visual detail to the surface.</p>
+</div>
+<div class="glossaryPopup" id="truecolor">
+	<p><strong>True color</strong></p>
+	<p>Where eight bits of data are used to represent each red, green and blue component of each pixel (3 bytes per pixel) for a total of approximately 16 million unique shades of color. More accurately known as 24-bit color.</p>
+</div>
+<div class="glossaryPopup" id="framebuffer">
+	<p><strong>Framebuffer</strong></p>
+	<p>Special hardware—usually a circuit board—for storing and displaying a digital image. In professional computer graphics, special framebuffer hardware is required for outputting broadcast-quality digital imagery to videotape. Also, prior to the mid-1990’s, it was uncommon for a desktop computer to be able to display a 24-bit image without a special framebuffer.</p>
+</div>
+<div class="glossaryPopup" id="assembly">
+	<p><strong>Assembly language</strong></p>
+	<p>The most rigorous and fundamental language available to a programmer for developing software; typically only used to develop extremely optimized mathematical algorithms. Assembly language programming generally requires special expertise.</p>
+</div>
+<div class="glossaryPopup" id="raytracing">
+	<p><strong>Ray tracing</strong></p>
+	<p>One of two dominant approaches to rendering a picture of a 3D scene; the other being scan-line rendering. Raytracing is the meticulous simulation of “rays” of light as they trace (usually backwards) from the viewpoint (eye) into the scene, where they may bounce from surface to surface. Raytracing is especially adept at simulating shiny reflections.</p>
+</div>
+<div class="glossaryPopup" id="zbuffer">
+	<p><strong>Z-buffer</strong></p>
+	<p>A z-buffer is an array of data that numerically represents the distance between the focal plane of a 3D camera and a surface for each pixel of a 3D rendering. Z-buffers are used for various purposes in computer graphics, one of which is to help a scan-line renderer sort out which of multiple, overlapping surfaces to draw for a given pixel.</p>
+</div><br>
+
+<div style="clear:both;"></div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="quicktimegallery.html"><em>Quicktime gallery</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="relatedproducts.html"><em>Other related products</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

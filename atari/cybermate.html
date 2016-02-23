@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cybermate (Cyber Studio)</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html" selected="selected">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Cybermate (Cyber Studio)</h1>
+<p>Cybermate was a Forth-based <span class="glossaryTerm" onmouseover="javascript:showDiv('authoring')" onmouseout="javascript:hideDiv('authoring')">authoring language</span> created by Mark Kimball that was supposed to be used to edit, sequence and present the animation files along with sound. By writing <span class="glossaryTerm" onmouseover="javascript:showDiv('FORTH')" onmouseout="javascript:hideDiv('FORTH')">Forth</span> scripts, you could control when and how fast a video or audio segment played, and you could do looping. Cybermate was basically a precursor to systems like Macromedia Director; it was published together with CAD-3D 2.0 as the product Cyber Studio.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cybermatesplash.gif"><img src="gfx/screenshot.cybermatesplash.thumb.jpg" alt="" width="250" height="156" border="2" /></a>
+		<p>Cybermate’s splash screen</p>
+	</div>
+</div>
+<p>Mark Kimball’s delta animation format for CAD-3D is notable as one of the first actual implementations of a compressed digital video format, an antecedent of systems like QuickTime. When it was originally developed, the only way to play back this format was with a simple stand-alone player program. In fact, all you could do was play back exactly what CAD-3D and Cyber Smash had saved to disk, without modification or sound. Foreseeing these limitations as weaknesses in the product, Gary asked Mark to produce a more flexible playback system. Mark explains:</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cyberstudio.jpg"><img src="gfx/packaging.cyberstudio.thumb.jpg" width="143" height="168" /></a>
+	</div>
+</div>
+<p class="blockquote">Cybermate began as a simple animation scripting scheme, but I quickly became dissatisfied with the very limited options that approach imposed. I came across an article in <em>Byte</em> by Dick Pountain about an object-oriented version of Forth, which seemed to answer a lot of the problems I had with the limited-option approach. So I began adapting a Forth program to include the object-oriented method. I quickly discovered that the Byte article had been based on a very different dialect of Forth, so a lot of modifications were needed. But after that, the power of the object-oriented Forth quickly became apparent. Subsequent additions to the basic Cybermate core proved to be very simple and intuitive (to me at least), so its power was never limited by the original design of the animation “scripting” paradigm.</p>
+<p class="blockquote">In addition, Forth was very nice because it was fast in execution and provided quick feedback regarding problems, so the code/debug cycle was pretty quick. Its built-in compiler and text editor further shortened the development cycle. Keep in mind that there were not very many good <span class="glossaryTerm" onmouseover="javascript:showDiv('developmentenvironment')" onmouseout="javascript:hideDiv('developmentenvironment')">development environments</span> around at that time, and none that allowed potential users to employ the same environment to write their own animation sequences!</p>
+<div style="width:640px; margin:auto; text-align:center;">
+	<img src="gfx/screenshot.cybermate.gif" width="640" height="400" />
+	<p class="caption">Cybermate’s development environment with a page of sample code</p>
+</div>
+<p>On paper, Cybermate is pretty impressive for the day, especially in its ability to work with stereo animations. However, it turned out that Cybermate had problems. The first—ironically—was Forth. Forth is a unique and legendary computer language, but despite being much easier to use than its reputation suggests, it contains peculiarities that have dogged the language throughout its considerable history. The Forth problem was compounded by <em>Antic</em>’s choice to provide the 73-page Cybermate manual on disk only, not in printed form. This in an era when a great many computer users didn't own printers (due to their relatively high cost) and when there was no good way of reading the documentation on the computer’s display. (There was no Web, no Acrobat, no widespread word processors, and screen resolutions were far too low to fit a full page, legibly.) If this wasn't enough to doom the product, Cybermate was quite crash-prone, which swiftly dissuaded all but the most determined user from working with it. Mark concludes:</p>
+<p class="blockquote">The most successful aspect of Cybermate was that it could be used in an interactive environment, where code could be immediately tested. Its least successful aspect was that it was a very deep environment. Linux hackers would like it, but perhaps few others nowadays.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Cybermate sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>unified, interactive development environment</li>
+<li>Forth</li>
+<li>object oriented (sounds, images, animations)</li>
+<li>support for <em>Antic</em> G.I.S.T. audio files, including programmatic volume and pitch control</li>
+<li>programmatic control over looping, playback direction and speed</li>
+<li>programmatic color cycling</li>
+<li>programmatic dissolve and fade transitions</li>
+<li>stereo animation authoring and playback (for use with the Stereotek 3D glasses)</li>
+<li>ability to save a re-distributable <span class="glossaryTerm" onmouseover="javascript:showDiv('runtime')" onmouseout="javascript:hideDiv('runtime')">run-time edition</span> of a Cybermate sequence for playback on Atari STs without Cybermate (Darrel Anderson’s <em>Cyberscape</em> was sold by <em>Antic</em> as a stand alone demo in this manner)</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>Forth</li>
+</ul>
+</div></div>
+<p class="blockquote">I worked on a 32-bit version of Cybermate, to get around its memory limitations, but Cybermate died as a commercial product long before it ever came out. It was necessary to develop a 32-bit version of Forth, which was quite a departure from the Forths of the time, so a lot of work went down the drain there. </p>
+<p>Cybermate never really got a chance to mature. Although they were fundamentally different products, in most users’ minds Cybermate was supplanted by Cyber Paint. Mark went on to contribute to Cyber VCR and explore other computer graphics interests:</p>
+<p class="blockquote">I published a <span class="glossaryTerm" onmouseover="javascript:showDiv('morphing')" onmouseout="javascript:hideDiv('morphing')">morphing</span> program which worked with the Cyber Studio version of CAD-3D and was fairly successful. It made it up to version 4 of “Meta”, so I called it “Meta4”. It was published in ST magazine. I worked on a fast <span class="glossaryTerm" onmouseover="javascript:showDiv('raytracing')" onmouseout="javascript:hideDiv('raytracing')">ray tracing</span> program, which used CAD-3D-style objects, as a sort of test bed to test other ideas-and it worked pretty good. Never made it to a commercial product, however, and never was published. </p>
+<p class="blockquote">Personally, I married, became interested in growing Rhododendrons (which grow very well in the Pacific Northwest), wine making, hunting mushrooms, making soap, hiking and gardening. Doesn't leave much time for hacking nowadays, but who knows what the future will bring. I have been doing some work with Linux, and I like the platform, so who knows... .</p>
+<p>Two complete Cybermate projects (including G.I.S.T. sound) can be seen here as (large) QuickTime movies:</p>
+
+<div style="width:670px; margin:auto; padding: 10px 0px 10px 0px;">
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<a href="cyberclips/cyberscape.mov"><img src="gfx/screenshot.cyberscape.gif" alt="" width="320" height="200" /></a>
+		<p>Darrel Anderson’s Cyberscape<br /><a href="cyberclips/cyberscape.mov">Quicktime MOV (40MB)</a></p>
+	</div>
+	<div class="imageCluster left" style="width:320px; padding:0px;">
+		<a href="cyberclips/spiderpatrol.mov"><img src="gfx/screenshot.spiderpatrol.gif" alt="" width="320" height="200" /></a>
+		<p>Tom Hudson’s Spider Patrol<br /><a href="cyberclips/spiderpatrol.mov">Quicktime MOV (56MB)</a></p>
+	</div>
+</div>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="morphing">
+	<p><strong>Morphing</strong></p>
+	<p>The computer-assisted distortion of one shape into another over time. As a two-dimensional process, morphing emerged as a cinematic technique in the late ’80s and early ’90s in films such as Terminator 2, and is now a ubiquitous tool in special effects work. Morphing can also refer to 3D geometry distorting into a different 3D shape.</p>
+</div>
+<div class="glossaryPopup" id="raytracing">
+	<p><strong>Ray tracing</strong></p>
+	<p>One of two dominant approaches to rendering a picture of a 3D scene; the other being scan-line rendering. Raytracing is the meticulous simulation of “rays” of light as they trace (usually backwards) from the viewpoint (eye) into the scene, where they may bounce from surface to surface. Raytracing is especially adept at simulating shiny reflections.</p>
+</div>
+<div class="glossaryPopup" id="runtime">
+	<p><strong>Run time edition</strong></p>
+	<p>A packaging of data (in this case animation and sound information) with just enough executable code so that the data can be re-used (in this case, played back for the user) without the original application software from which it originated.</p>
+</div>
+<div class="glossaryPopup" id="authoring">
+	<p><strong>Authoring</strong></p>
+	<p>In the computer world, authoring refers to general creative assembly and sequencing of multimedia elements. Originally associated with the creation of CD-ROM multimedia software, authoring now applies to many media including the Web and DVDs. Authoring usually implies a lightweight process, as opposed to <em>programming</em>.</p>
+</div>
+<div class="glossaryPopup" id="developmentenvironment">
+	<p><strong>Development environment</strong></p>
+	<p>Programming tends to center around the activity of editing text files. Development environments are applications that provide various features that make this activity more efficient.</p>
+</div>
+<div class="glossaryPopup" id="FORTH">
+	<p><strong>FORTH</strong></p>
+	<p>A unique, idiosyncratic, but highly efficient computer language created in 1970 by Charles Moore.</p>
+</div>
+
+<div style="clear:both"></div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cybercontrol.html"><em>Cyber Control</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cad3d.html"><em>CAD-3D & CAD-3D 2.0 (Cyber Studio)</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

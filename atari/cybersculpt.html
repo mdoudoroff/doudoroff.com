@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cyber Sculpt</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html" selected="selected">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Cyber Sculpt</h1>
+<p>Cyber Sculpt was a companion product for CAD-3D that provided expanded 3D geometry modeling capabilities. Cyber Sculpt had its own, elaborated “<span class="glossaryTerm" onmouseover="javascript:showDiv('spin')" onmouseout="javascript:hideDiv('spin')">spin</span>” and “<span class="glossaryTerm" onmouseover="javascript:showDiv('extrude')" onmouseout="javascript:hideDiv('extrude')">extrude</span>” modeling utilities, added a simple cross-sectional modeler, and provided an editing interface for <span class="glossaryTerm" onmouseover="javascript:showDiv('vertex')" onmouseout="javascript:hideDiv('vertex')">vertex</span>- and <span class="glossaryTerm" onmouseover="javascript:showDiv('face')" onmouseout="javascript:hideDiv('face')">face</span>-level modification. Geometry from Cyber Sculpt was saved to disk and loaded in CAD-3D for <span class="glossaryTerm" onmouseover="javascript:showDiv('rendering')" onmouseout="javascript:hideDiv('rendering')">rendering</span> and animation.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cybersculpt.jpg"><img src="gfx/packaging.cybersculpt.thumb.jpg" width="143" height="159" /></a>
+	</div>
+</div>
+<p>Immediately after the release of CAD-3D 1.0, some of its modeling limitations began to grate. A particular limitation was the inability to extrude font characters. There was a market demand for 3D fonts, but CAD-3D couldn't extrude a shape with a hole in it. Letters such as “O” and “R” were impossible to create without using messy <span class="glossaryTerm" onmouseover="javascript:showDiv('boolean')" onmouseout="javascript:hideDiv('boolean')">Booleans</span>. In order to develop his <a href="relatedproducts.html">3D Fonts I</a> product, which contained a basic serif font and a basic sans-serif font as CAD-3D geometry, Tom created a small stand-alone utility called the Super Extruder Tool. The Super Extruder could handle those holes, and the utility ended up being included on the fonts disk as a bonus.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.superextruder.gif"><img src="gfx/screenshot.superextruder.thumb.gif" alt="" width="250" height="156" /></a>
+		<p>Super Extruder</p>
+	</div>
+</div>
+<p>When it came time to do CAD-3D 2.0, another problem arose: memory. There was a direct trade-off between the number of features that could be included in CAD-3D and the memory that remained to hold, manipulate and render the user’s 3D geometry. The priority for CAD-3D 2.0 was animation, so the new CAD-3D retained its predecessor’s extrusion limitations.</p>
+<p>Tom eventually created Cyber Sculpt to significantly advance CAD-3D’s modeling capabilities, and it is one of the most sophisticated pieces of software ever written for the ST. Again, for memory reasons, Cyber Sculpt was kept as a separate application from CAD-3D, instead of being CAD-3D 3.0.</p>
+<div style="width:640px; margin:auto; padding: 10px 0px 10px 0px; text-align:center;">
+	<img src="gfx/screenshot.cybersculpttemplate.gif" width="640" height="400" border="1" />
+	<p class="caption">Cyber Sculpt’s Extrude template editor showing an extrusion template of nested shapes (the letter “A” will be negative space)</p>
+</div>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<img src="gfx/rendering.antic_a.gif" width="154" height="162" border="0" />
+	</div>
+</div>
+<p>One of the biggest challenges for Cyber Sculpt was becoming more sophisticated about the 2D templates that are used in extrusion and lathe modeling. In Cyber Sculpt, these templates were shapes drawn by the user and defined by connected points. The shapes had to be closed (not open-ended) and the lines could not cross, but the shapes could otherwise take any form and be nested inside each other (to create holes). A template in action is one of the more intuitive concepts in 3D computer graphics—for a human. Computers, on the other hand, are intuition-free, and templates create a lot of ambiguities. Tom explains,</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:122px;">
+		<img src="gfx/diagram.cxkey.gif" alt="" width="122" height="81" />
+		<p>Keying a shape vertex</p>
+	</div>
+</div>
+<p class="blockquote">At the time, the nested extrusion templates were a big deal for me. It was a challenge to handle the connection of dissimilar templates, and I think we came up with a pretty solid method, using “keys” to relate vertices on one template to those on another.</p>
+<p>Keys were actually a simple solution to a complex problem. Keys enabled the user to tag vertices (points) in their shapes with numbers so the computer didn't have to guess.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cybersculptcx.gif"><img src="gfx/screenshot.cybersculptcx.thumb.jpg" alt="" width="250" height="156" /></a>
+		<p>Cyber Sculpt cross-sectional configuration screen</p>
+	</div>
+</div>
+<p>Solving the nesting problems opened the door for one of Cyber Sculpt’s entirely new features: cross-sectional modeling. Technically, cross-sectional modeling was first possible using Cyber Control, which could be used to algorithmically create geometry (see Darrel’s <a href="designdisks1.html">Design Disk</a> work). Cyber Sculpt brought this capability into a <span class="glossaryTerm" onmouseover="javascript:showDiv('ui')" onmouseout="javascript:hideDiv('ui')">GUI</span>. Sort of. Interactive cross-sectional modeling has never been (even today) all that easy to do in 3D software, and few really mastered this aspect of Cyber Sculpt. Nonetheless, with good planning it was possible to build representations of car fuselages and such in Cyber Sculpt by positioning cross-sections and relating them with keys. The main technical limitation—which would be addressed in 3D Studio—was that Cyber Sculpt couldn't interpolate between templates; it could merely connect them.</p>
+<div style="width:544px; margin:auto; padding: 10px 0px 10px 0px">
+	<img src="gfx/diagram.crossections.gif" width="544" height="200" />
+</div>
+<p>The other major new feature in Cyber Sculpt was the 3D editor, which enabled the user to push, pull, poke and prod 3D geometry at the lowest level. Conceptually, the 3D Editor extends the same move/rotate/scale/delete functionality that applies to entire objects in CAD-3D to the vertex structure of a single object. Operating the 3D Editor was simply a matter of selecting the vertices one wanted to manipulate, then selecting and applying a manipulation tool. </p>
+<p>An impressive—though not frequently useful—feature of the 3D Editor was a magnet tool, which could be used to distort groups of vertices as if they were being attracted to the mouse position. </p>
+<div style="width:640px; margin:auto; padding: 10px 0px 10px 0px">
+	<img src="gfx/screenshot.cybersculptmagnet.gif" width="640" height="400" border="1" />
+	<p class="caption">Cyber Sculpt’s 3D Editor showing the magnet tool distorting the shape of a wine glass</p>
+</div>
+<p>The design of Cyber Sculpt is notable for its modal nature. Unlike CAD-3D, which provides a constant window on its 3D universe, Cyber Sculpt is just a blank screen when you first start it up. The 3D universe is there, but it’s invisible until you enter one of its modules. Inside the Spin and Extrude modules, the view is strictly 2D for editing a template. The cross-sectional module is really just a dialog box for ordering templates. Furthermore, the 3D Editor never shows the universe from more than one dimension at a time. </p>
+<p>There were two major reasons for these limitations: one was simply screen resolution. Cyber Sculpt was all about precision work, so it didn't make sense to chop the Atari’s already-limited resolution screen into little windows like CAD-3D. The other reason was that, unlike CAD-3D, which concerned itself with issues of gross scene composition, Cyber Sculpt was concerned with the precise adjustment and definition of 3D forms. The convenience of having four active views of the geometry was outweighed by the practical need for higher-resolution local control. </p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cybersculpt3dview.gif"><img src="gfx/screenshot.cybersculpt3dview.thumb.gif" alt="" width="250" height="156" /></a>
+		<p>Cyber Sculpt’s interactive 3D view (under mouse control)</p>
+	</div>
+</div>
+<p>The one way the user got to visualize his work in 3D from within Cyber Sculpt was with the interactive 3D view, which would render a wire frame camera view of the currently-resident geometry under “real-time” mouse control. Due to the processing limitations of the ST, however, this interactive 3D view was only responsive with simple objects.</p>
+<p>Despite its limitations, Cyber Sculpt was a major augmentation of the 3D capabilities of the Cyber software. Metaphorically, modeling in Cyber Sculpt was somewhat like moving from Legos to a carpentry shop.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Cyber Sculpt sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li><span class="glossaryTerm" onmouseover="javascript:showDiv('spline')" onmouseout="javascript:hideDiv('spline')">spline</span> interpolated cross-section templates </li>
+<li>template extrusion and lathe along spline path, with spline-controlled twisting</li>
+<li>cross-sectional modeling, including nested shapes (uses vertex key assignments)</li>
+<li>vertex editing</li>
+<li>magnetic distortion</li>
+<li>extrusion of nested shapes</li>
+<li>manual data entry</li>
+<li>tablet support</li>
+<li>skew/bend/twist</li>
+<li>manual face painting/flipping</li>
+<li>geometry mirroring</li>
+<li>parametric primitive solids</li>
+<li>stereo support for interactive 3D view</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>cross-sectional modeler did not interpolate templates between key templates; it merely connected user-supplied templates</li>
+</ul>
+</div></div>
+<h2>Postscript: Cyber Sculpt after the Atari</h2>
+<p>CyberSculpt was the last product Tom Hudson produced for the Atari. At the time of its publication, he had already moved on with Gary Yost to begin development of MSDOS-based 3D Studio for Autodesk. However, Cyber Sculpt also provided the basis for developing 3D Studio. </p>
+<p>In addition to contributing various algorithms, Cyber Sculpt’s distinctive modal approach to the 3D scene was adapted for 3D Studio, which was divided into three primary modes (plus a materials editor): 2D Shaper, 3D Lofter and 3D Editor. The 2D shaper was very similar to the Extrude and Spin template editing views of Cyber Sculpt. The 3D Lofter combined extrusion and lathe functionality with significantly more sophisticated parameterization and a flexible, visually-editable 3D <span class="glossaryTerm" onmouseover="javascript:showDiv('path')" onmouseout="javascript:hideDiv('path')">path</span>. The 3D Editor of 3D Studio incorporated both the multi-view scene manipulation functionality of CAD-3D and the vertex editing features of Cyber Sculpt’s 3D Editor. (The new VGA standard of the PC nicely alleviated the screen resolution crunch of the Atari, and made many more colors available.)</p>
+<p>The modal approach begun in Cyber Sculpt proved attractive for compartmentalizing functionality, keeping workflow conceptually simple and easy to explain, and most importantly, for best leveraging the relatively limited processing power of both the Atari STs and the PC-compatibles of those years. The downside was that modeling had to be done out-of-context from the scene one was working on. With 3ds max, the modal approach was abandoned, bringing that software more into line with products like Alias, where modeling could be done within the 3D scene itself.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="path">
+	<p><strong>Path</strong></p>
+	<p>A path is a mathematically-defined (usually drawn by the user) route through two or three-dimensional space that the computer will use for some purpose. In 3D computer graphics, paths are most commonly used either to dictate the movement of an object within a scene or to provide a flexible axis on which the object’s own geometry is built.</p>
+</div>
+<div class="glossaryPopup" id="vertex">
+	<p><strong>Vertex</strong></p>
+	<p>A point in space, defined by numbers, of two or three dimensions. Vertices are a fundamental building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="face">
+	<p><strong>Face</strong></p>
+	<p>A set of three or more vertices connected to represent an arbitrary surface (or more commonly, a facet of a surface). Faces are a ubiquitous building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="boolean">
+	<p><strong>Boolean modeling</strong></p>
+	<p>Boolean join algorithms take two or more solids that intersect each other in space and either merge their surfaces, subtract one volume from the other, or discard all but the shared volume. In this example, a hemispherical indentation is made in a block by subtracting a sphere from it.</p>
+	<img src="gfx/diagram.boolean.gif" width="435" height="120" style="margin: 10px 0px 0px 33px;" />
+</div>
+<div class="glossaryPopup" id="spin">
+	<p><strong>Spin</strong></p>
+	<p>Spin, more commonly known in computer graphics as “surface of revolution”, was a lathe-like tool where the user draws a symmetric cross section which the computer uses as a profile for a cylindrical form.</p>
+	<img src="gfx/diagram.spin.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="extrude">
+	<p><strong>Extrude</strong></p>
+	<p>As it sounds, extrude was a tool that took a user-drawn cross-section and built geometry that gave the shape depth.</p>
+	<img src="gfx/diagram.extrude.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="rendering">
+	<p><strong>Rendering</strong></p>
+	<p>In computer graphics, rendering is the process of algorithmically deriving a picture or piece of a picture from other information, which may be a view of 3D geometry, 2D geometry (line art) or other picture information.</p>
+</div>
+<div class="glossaryPopup" id="spline">
+	<p><strong>Spline</strong></p>
+	<p>A smoothly curving path (in two or three dimensions) through space calculated from three or more fixed points, often specified by the user.</p>
+</div>
+<div class="glossaryPopup" id="ui">
+	<p><strong>User Interface (UI) and Graphical User Interface (GUI)</strong></p>
+	<p>Computer programs don't actually do anything visible to the user unless the programmer goes out of the way to include visual features. These features, which often the user can interact with through a mouse or keyboard, constitute a user interface. Graphical User Interfaces further infers a level of visual sophistication in the interface beyond computer terminal text.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cybertexture.html"><em>CyberTexture</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cybervcr.html"><em>Cyber VCR</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

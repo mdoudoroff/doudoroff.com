@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cyber Paint</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html" selected="selected">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Cyber Paint</h1>
+<p>Cyber Paint—created by Jim Kent—was a 2D animation program that brought together a wide variety of animation and paint functionality and the delta-compressed animation format developed for CAD-3D. The user could move freely between animation frames and paint arbitrarily, or utilize various animation tools for automatic <span class="glossaryTerm" onmouseover="javascript:showDiv('tweening')" onmouseout="javascript:hideDiv('tweening')">tweening</span> movement across frames. Cyber Paint was one of the first, if not the first, consumer program that enabled the user to paint across time in a compressed digital video format.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cyberpaint.jpg"><img src="gfx/packaging.cyberpaint.thumb.jpg" width="143" height="167" /></a>
+	</div>
+</div>
+<p>Jim Kent got his BA and MA in math at the University of California at Santa Cruz. He had also taken art classes, which primed him for interest in computer graphics. His first graphics programming was on the Radio Shack Color Computer, first in BASIC, then in <span class="glossaryTerm" onmouseover="javascript:showDiv('assembly')" onmouseout="javascript:hideDiv('assembly')">Assembly</span>. Jim’s first job after getting his MA was at Island Graphics, where he adapted their paint program MicroIllustrator to the Color Computer.</p>
+<p>His second project at Island Graphics was Aegis Animator for the new Amiga computer. Jim relates:</p>
+<p class="blockquote">I’d seen recently a demo of an Apple program that used polygon-tweening. (This program was eventually released as Phantavision.) Tweening seemed like a brilliant labor-saving idea for animation. To the tweening I added moving, rotation and resizing. You could add and subtract points from the polygons as well—which was probably the gnarliest part to code. Finally I added moving cels (bitmaps with a mask so that some pixels could be transparent) and a background. The program was originally implemented on a Sun workstation because we were developing it concurrently with the Amiga. It was ported to the Amiga as the hardware became available. The program was written mostly in C with a few speed critical routines in 68000 assembler.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:320px;">
+		<a href="gfx/screenshot.aegis.gif"><img src="gfx/screenshot.aegis.thumb.jpg" alt="" width="320" height="201" /></a>
+		<p>Aegis Animator</p>
+	</div>
+</div>
+<p>The Amiga and the Atari ST computers were released almost concurrently, and became fierce competitors in a healthy home computer market. This burgeoning market proved attractive to Jim:</p>
+<p class="blockquote">After the Aegis Animator was released Island wanted to go into the professional market. I wanted to stay in the home market and port the program to the Atari ST. We worked out a deal where I’d have rights to the source code in exchange for my accumulated vacation time and agreeing to support the Amiga version. I started my own company then—Dancing Flame. While I ported Animator I added better support for color cycling and made it so that you could make an entire animation a single object inside of another animation. ...</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:243px;">
+		<img src="gfx/rendering.dragon.gif" alt="" width="243" height="96" />
+		<p>Cyber Paint cel animation<br />(by Doug Thomas)</p>
+	</div>
+</div>
+<p class="blockquote">I loved the polygon tweening aspects of Animator myself, but I found to my surprise that many artists were using it just to flip between cels they created in a paint program. It seemed to me quite a hassle to create the cels in one program and then import them into another, then line the cels up just right. I figured if that’s what they wanted to do I’d give them a program designed expressly for that purpose.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<a href="gfx/screenshot.flicker.gif"><img src="gfx/screenshot.flicker.thumb.jpg" alt="" width="320" height="201" /></a>
+		<p>Flicker</p>
+	</div>
+</div>
+<p>Jim’s response was to create Flicker. Flicker is a paint program with a twist: within memory limitations, the user can create multiple pictures that can be flipped through as an animation. True to Jim’s intent, Flicker introduced blueing features, which allow a computer-based cartoonist to approximate the <span class="glossaryTerm" onmouseover="javascript:showDiv('onionskin')" onmouseout="javascript:hideDiv('onionskin')">onion skin technique</span> familiar to traditional cartoonists. (For detailed information on Flicker, <a href="http://www.atarimagazines.com/startv2n1/flicker.html">click here</a>.)</p>
+<p>Now, while developing the Atari version of Aegis Animator, simple fate set the stage for Cyber Paint:</p>
+<p class="blockquote">[Gary Yost] lived in my neighborhood and saw me testing the ST [Aegis] Animator in one of the local computer stores. He wanted the Aegis Animator, but sadly I had inherited a right of first refusal contract for the ST port with Aegis software—a publisher that had little presence in the ST market. Gary saw Flicker, which I’d done in just about a week, and didn't regard it as a commercial product. He suggested I publish it in <em>START</em>, <em>Antic</em>’s ST magazine. At <em>START</em> I met Heidi Brumbaugh. I fell in love with her, so I liked hanging around <em>Antic</em>. While I was there Gary showed me some movies made with Tom Hudson’s programs rendered and delta-compressed. Delta compression was a revelation. I realized with it you could do a version of Flicker that would handle hundreds of frames rather than ten or twelve. Thus was born Cyber Paint.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/rendering.tesla.gif" alt="" width="320" height="200" />
+		<p>A CAD-3D animation with CyberPaint lightning and image compositing (by Jon Bell)</p>
+	</div>
+</div>
+<p>Cyber Paint <em>is</em> Flicker, but significantly expanded and with the critical adaptation to use Mark Kimball’s delta compression. In fact, Cyber Paint’s native format (SEQ) actually took the original delta compression format (DLT) a step further with a little more rigorous data management. Jim explains:</p>
+<p class="blockquote">The SEQ format separated the screen into <span class="glossaryTerm" onmouseover="javascript:showDiv('bitplane')" onmouseout="javascript:hideDiv('bitplane')">bit planes</span> and did vertical <span class="glossaryTerm" onmouseover="javascript:showDiv('runlength')" onmouseout="javascript:hideDiv('runlength')">run length compression</span> of the bit planes. This was quite a bit denser than DLT, something like twice as dense. Since at the time many of the users used floppies, it was worthwhile to store the animations in a more dense format. The CPU time it took for the compression and [de]compression was generally less than the disk I/O time it would take to write something larger. Plus, of course you could store longer animations that way. Once you had a hard disk DLT files were probably faster to load and save though.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/screenshot.cyberpaint.gif" alt="" width="320" height="200" />
+		<p>Various Cyber Paint menus</p>
+	</div>
+</div>
+<p>One of the special aspects of Cyber Paint is its interface, which is strikingly timeless and elegant. Unlike most post-Macintosh software, which is given a homogeneous look and feel, Cyber Paint has a direct, custom interface, vaguely reminiscent of Quantel’s broadcast graphics systems:</p>
+<p class="blockquote">From the Aegis Animator experience I realized it was good to have the 'time'-oriented controls at the top level of the user interface in an animation package. Since time is symmetrical going forward and backwards I made the controls symmetrical as well. This was the first place I put the frame number on the knob of the slider that controlled the frame. I liked it because it saved screen real estate. (I’ve always preferred programs that let the user see mostly their work rather than mostly program controls.)</p>
+<p>Aegis Animator, Flicker and Cyber Paint all shared similar drop-down menus, although for the latter two products, Jim designed them to better get out of the way of the artist when they weren't needed. To supplement the drop-downs, Jim sketched out and coded a stacking control panel at the bottom of the screen that always featured time navigation controls. This interface remained fundamentally unchanged through the subsequent Autodesk Animator and Autodesk Animator Pro products.</p>
+<h2>Postscript: Cyber Paint after the Atari</h2>
+<p>Eventually, Jim Kent went on to create the PC applications Autodesk Animator and Autodesk Animator Pro for Yost Group, each of which was a direct evolution from the original Cyber Paint. These subsequent PC products benefited from a full 256-color VGA palette (out of 16 million colors) and the ability to play animation directly off a hard drive, permitting significantly longer, more elaborate animations. Animator Pro took the technology to significantly higher screen resolutions. Animator Pro became a legendary tool in computer game development, though it has gradually become irrelevant in the age of modern graphics accelerators. Products such as Pinnacle Systems Commotion Pro, Discreet Combustion, NewTek Aura and various Quantel products all do on a grand scale with millions of colors the sorts of things that Cyber Paint did, but seldom with the elegance of this original software.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Cyber Paint sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li><span class="glossaryTerm" onmouseover="javascript:showDiv('paged')" onmouseout="javascript:hideDiv('paged')">paged management</span> for animations too large to fit in memory along with the program</li>
+<li>apply most functions to frame, segment of frames or the entire animation</li>
+<li>color palette animation, including ability to <span class="glossaryTerm" onmouseover="javascript:showDiv('colorcycle')" onmouseout="javascript:hideDiv('colorcycle')">cycle colors</span> and convert animations to different palettes</li>
+<li>over and under compositing of animations</li>
+<li><span class="glossaryTerm" onmouseover="javascript:showDiv('matte')" onmouseout="javascript:hideDiv('matte')">traveling matte</span> composites</li>
+<li>image processing filters</li>
+<li>parametric rotation, scaling and translation <span class="glossaryTerm" onmouseover="javascript:showDiv('opticalprinting')" onmouseout="javascript:hideDiv('opticalprinting')">optical printing</span> effects, including along motion path</li>
+<li>cut and paste (over time, with tweening) features, with transparent pixel support</li>
+<li>customizable paint brushes and airbrush</li>
+<li>text rendering, with support for custom vector fonts</li>
+<li>"blueing" features to assist with traditional-style cartoon animation</li>
+<li>color replacement</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>320x200, 16 colors (out of 512) only</li>
+<li>no ability to work with sound or play back audio with a clip (only Cybermate did that)</li>
+<li>Cyber Paint did not contain Aegis Animator’s polygon tweening, although the subsequent Autodesk Animator and Autodesk Animator Pro products did</li>
+</ul>
+</div></div>
+<p>This line of software development never quite made it beyond MS-DOS. Autodesk hired Jim and several other programmers to produce a new product that would bring Autodesk Animator Pro to Windows and, simultaneously, take it beyond paletted graphics to “<span class="glossaryTerm" onmouseover="javascript:showDiv('truecolor')" onmouseout="javascript:hideDiv('truecolor')">truecolor</span>” (arbitrary use of color). Unfortunately, this new product, Animator Studio, fell victim to typical corporate shenanigans, prompting Jim to move on:</p>
+<p class="blockquote">Animator Studio started off well, but ended badly. Half way through the project the Autodesk Multimedia division got a new manager who had a large bonus tied to shipping the Animator at a certain date. He forced shipment in spite of the program still being half-baked at the time. I was very embarrassed by the program’s flakiness and poor performance. The <span class="glossaryTerm" onmouseover="javascript:showDiv('ui')" onmouseout="javascript:hideDiv('ui')">UI</span> was quite nice, but that doesn't mean much if the program isn't reliable.</p>
+<p>Animator Studio was indeed released as a product, but could not succeed. Jim ultimately returned to school and recently completed his PhD, this time in Molecular Cell and Developmental Biology from UC Santa Cruz. </p>
+<p class="blockquote">In the course of this study I did the first public assembly of the human genome and produced the human genome browser at <a href="http://genome.ucsc.edu">http://genome.ucsc.edu</a>. I’m now focused on figuring out how the body knows which parts of the genome to use in which cells: how crystallin is produced only in the lens of the eye, and hemoglobin only in the red blood cells. All the animation programming experience is actually proving surprisingly useful. Animation and Genomics both deal with very large data. Both can be quite complex, so it takes a little art to keep the user interface from becoming mind-boggling.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="tweening">
+	<p><strong>Tweening</strong></p>
+	<p>The term, short for “in-betweening”, and the concept derive from traditional hand-drawn cel animation production where a master animator draws “key frames” of cartoon characters and assistants draw the frames in-between, interpolating how they should look from the master’s lead.</p>
+	<p>Given the right instructions, a computer can mathematically interpolate in-between frames just as it has below between two different stars.</p>
+	<img src="gfx/diagram.tweening.gif" width="264" height="80" style="margin: 10px 0px 0px 118px;" />
+</div>
+<div class="glossaryPopup" id="onionskin">
+	<p><strong>Onion Skinning</strong></p>
+	<p>In traditional, hand-drawn cel animation, each original frame was typically first drawn on tracing paper, so that previous (and subsequent) drawings could be seen through the paper. Because the artist could see other frames through the one he was drawing, it was considerably easier to maintain consistency through the animation.</p>
+	<img src="gfx/diagram.onionskin.jpg" width="243" height="96" style="margin: 10px 0px 0px 118px;" />
+</div>
+<div class="glossaryPopup" id="paged">
+	<p><strong>Paged management</strong></p>
+	<p>Generally, the ability to work with a larger block of information than will fit in memory at once, by moving the parts that aren't needed at the moment to disk.</p>
+</div>
+<div class="glossaryPopup" id="matte">
+	<p><strong>Travelling matte</strong></p>
+	<p>The travelling matte is an animation concept inherited from the world of the traditional animation stand photography; basically, the travelling matte is a stencil (or set of stencils) that can move and change shape over time to reveal or occlude whatever is behind it.</p>
+</div>
+<div class="glossaryPopup" id="opticalprinting">
+	<p><strong>Optical printing</strong></p>
+	<p>Real optical printing is the re-photography of backlit film, sometimes with an intervening matte or other means of modifying the resulting image. Computers follow a similar process (metaphorically) when they re-process sequences of frames that comprise an animation or video.</p>
+</div>
+<div class="glossaryPopup" id="bitplane">
+	<p><strong>Bit plane</strong></p>
+	<p>In this context, each pixel of an image contains numerical data that refers to an indexed color (in a CLUT) and those numbers behind each pixel can be further decimated for the purpose of data compression. A bit plane is one image-worth of such decimations.</p>
+</div>
+<div class="glossaryPopup" id="runlength">
+	<p><strong>Run-length Compression</strong></p>
+	<p>Also known as run-length encoding (RLE), this simple form of compression takes advantage of repetitive sequences of data. For example, it is more efficient to represent <strong>AAAAAAAAAAAAAAAAAAAA</strong> as <strong>20A</strong>.</p>
+</div>
+<div class="glossaryPopup" id="assembly">
+	<p><strong>Assembly language</strong></p>
+	<p>The most rigorous and fundamental language available to a programmer for developing software; typically only used to develop extremely optimized mathematical algorithms. Assembly language programming generally requires special expertise.</p>
+</div>
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+<div class="glossaryPopup" id="clut">
+	<p><strong>CLUT (Color Look-up Table)</strong></p>
+	<p>A set of indexed registers, each containing numbers representing colors. On the Atari ST, the CLUT kept track of whichever sixteen colors were in use on-screen at any given moment.</p>
+</div>
+<div class="glossaryPopup" id="colorcycle">
+	<p><strong>Color cycling</strong></p>
+	<p>Like many other computer systems of its day, the Atari ST used an indexed color scheme for its color graphics. Indexing meant that each dot (pixel) on the screen referred to any one color in a finite palette, known as a color look-up table (<span class="glossaryTerm" onmouseover="javascript:showDiv('clut')" onmouseout="javascript:hideDiv('clut')">CLUT</span>). Color cycling was nothing more complex than dynamically re-assigning some or all of the colors in the palette, thus affecting all the applicable pixels on the display. The results of color cycling could be quite dramatic.</p>
+	<img src="gfx/diagram.colorcycling.clut.gif" width="400" height="14" />
+	<img src="gfx/diagram.colorcycling.image.gif" width="400" height="92" />
+</div>
+<div class="glossaryPopup" id="truecolor">
+	<p><strong>True color</strong></p>
+	<p>Where eight bits of data are used to represent each red, green and blue component of each pixel (3 bytes per pixel) for a total of approximately 16 million unique shades of color. More accurately known as 24-bit color.</p>
+</div>
+<div class="glossaryPopup" id="ui">
+	<p><strong>User Interface (UI) and Graphical User Interface (GUI)</strong></p>
+	<p>Computer programs don't actually do anything visible to the user unless the programmer goes out of the way to include visual features. These features, which often the user can interact with through a mouse or keyboard, constitute a user interface. Graphical User Interfaces further infers a level of visual sophistication in the interface beyond computer terminal text.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cybervcr.html"><em>Cyber VCR</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="spectrum.html"><em>Spectrum 512 (and Unispec)</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

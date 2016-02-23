@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software—Cartoon Design & Video Titling Design Disks</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html" selected="selected">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<img src="gfx/animation.autogyro.gif" width="280" height="166" />
+<h1>Cartoon Design & Video Titling Design Disks</h1>
+<p>Maurice Molyneaux first pursued his interest in animation with Reston Movie Maker on the Atari 800. The limitations of that computer made the Atari ST attractive when it became available, and Maurice got involved with the development of the software eventually marketed by Epyx as Art & Film Director. Maurice immediately bought CAD-3D 1.0 when it came out and he got around its lack of animation support by animating CAD-3D <span class="glossaryTerm" onmouseover="javascript:showDiv('rendering')" onmouseout="javascript:hideDiv('rendering')">renderings</span> in Art & Film Director.</p>
+<p class="blockquote">I was using that software to do a mockup of a Star Trek game for a pitch, so what I did was model all the spaceships in CAD 3-D, render out all the angles I wanted, then used those as cels in Film Director. So, by December 1986 I had CAD 3-D generated objects flying around, long before 2.0, Cyber Control and Cyber Paint came on the scene. That game concept didn't sell, but Broderbund was impressed by what I’d done and asked me to create a demo for the Art & Film Director products (eventually published by Epyx). With those I ended up creating an entire 10-minute animated cartoon demo.</p>
+<p>Maurice went on to do some writing for <em>ANALOG</em> and <em>ST-Log</em> magazines, which is how he met Andy Eddy. Andy was, at the time, working as a cable television technician and doing computer writing as a hobby. Andy’s interest in computers had always been closely tied to video games:</p>
+<p class="blockquote">... the Atari line was popular for me due to the legendary game brand--I’ve been a long-time game player, and had the Battlezone coin-op record twice. That’s probably why I gravitated to Atari computers. I had hoped to get a career going in designing games, and bought an Atari 800 and an <span class="glossaryTerm" onmouseover="javascript:showDiv('assembly')" onmouseout="javascript:hideDiv('assembly')">assembly language</span> cartridge with that hope, but it wasn't long after that that the computer-game market filled up with lots of software, making it harder to pursue the career plan. However, <em>ANALOG</em> had advertised the need for writers, and I sent some things in that were accepted. In time, I was writing regularly for <em>Analog</em>/<em>ST-Log</em> and some other Atari-related magazines.</p>
+<p>In October 1987, <em>Antic</em> and <em>ANALOG</em> ended up with booths across from each other at the Worcester Atari Fair. Gary Yost, who was attending to push the Cyber software, noticed that some cartoons (running inside Art & Film Director) in his competitor’s booth were drawing a crowd. Maurice relates:</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:175px;">
+		<img src="gfx/animation.mouse.gif" width="114" height="98" border="0" />
+		<p>Maurice’s Megabit Mouse character for Epyx Art & Film Director</p>
+	</div>
+</div>
+<p class="blockquote">Notably, there was a cartoon character called Megabit Mouse who was interacting with -- one might say fighting -- the program interfaces.  I think the thing that distinguished these animations from anything that had been seen before on the ST was that they were genuinely funny... The animation was simple, flat 2-D, but the mouse character was extremely expressive.  He'd get a laugh just by cocking his eyebrow at the right moment.</p>
+<p>Investigating, Gary met Maurice and Andy, and ultimately signed them up to produce two design disk products to fit nagging gaps in the Cyber product line. One of these products was the Cartoon Design Disk, which focused on animation techniques for 3D cartoon characters. Andy explains:</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:119px;">
+		<img src="gfx/animation.mvmen.gif" width="119" height="183" border="0" />
+		<p>The 3D human characters walking with scripted head movements and facial expressions</p>
+	</div>
+</div>
+<p class="blockquote">... in the Cartoon disk, Maurice wanted to take the premise of the guys from the Dire Straits video (the moving men from “Money for Nothing”) and really do the animation as it should have been. As advanced as that video was in computer animation, the guys walked without picking up their feet, so I believe our first mission--and success-was articulating the movement of walking and swinging the arms that the “advanced music video” didn't do.</p>
+<p class="blockquote">... Maurice had basic movement scripts for the characters when he worked on them, and I took them and added nuances to the animation as well as creating the framework for the test programs that enabled you to enter a series of parameters you wanted. The scripts would create the animation from there. I was like any other person getting those disks, in that I was handed the characters and the basic scripts, and then I screwed around to do a bit more, which is what ended up on the final products. It wasn't so much a division of work as it was taking what he had done, which was substantial, and evolving and polishing and expanding the script side.</p>
+<div style="width:391px; margin:auto;">
+	<img src="gfx/rendering.cartooncharacters.gif" width="391" height="142" border="0" />
+</div>
+<p>The Cartoon Design Disk shipped with three human characters, a humanoid rabbit, three different cartoon insects (reminiscent of the bee in Lucasfilm’s seminal computer animated short film <em>Andre and Wally Bee</em>) and a whimsical automaton called Autogyro. Cyber Control scripts were included for scripting each character, along with extensive documentation. Maurice concludes:</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:104px;">
+		<img src="gfx/animation.bee.gif" width="149" height="126" border="0" />
+	</div>
+</div>
+<p class="blockquote">I suppose one disappointment of mine was that I never did get a funny character in 3-D.  In Film Director I could play the animation on the fly at speed as I was working in it, so I could finesse the timing and actions until I got them just right.  With the Cyber Studio there were so many layers and it took so much time to render out sequences that it wasn't as easy to tweak the animations.  You'd have to go alter the Cyber Control script, re-render, and hope this time you got the timing right or the move right or what have you.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:317px;">
+		<img src="gfx/animation.spintitle.gif" width="317" height="197" border="0" />
+		<p>The Video Titling Design Disk provided Cyber Control scripts for easily creating flying logos like this...</p>
+	</div>
+</div>
+<p>The other product, the Video Titling Design Disk, was a grab bag of resources and demonstrations of titling techniques that spanned both Cyber Paint and CAD-3D/Cyber Control. As a whole, this product was almost more an educational tool than a practical one because much of the content was in its documentation, and because the included demos and resources would inevitably have required significant modification to be used for a real project. For example, the Video Titling Disk detailed the <em>process</em> of figuring out how to reproduce a complex special effect: the optical “warp” effect used in the title sequence of Star Trek: The Next Generation. The <a href="gfx/trekwarp.gif">finished animation</a> and the files used to create it were included, but the real value was learning how Maurice and Andy went about it. Their process reflected the experience of many CAD-3D users. Andy comments:</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:317px;">
+		<img src="gfx/animation.slidetitle.gif" width="317" height="197" border="0" />
+		<p>...or like this. You just choose the letters. The disk even included the font.</p>
+	</div>
+</div>
+<p class="blockquote">Working on the CAD 3-D stuff was a perfect proof of all the things that adults said when you were in school: You'd complain that all this American History and algebra and such was going to be a waste in real life, but here was a case where I had to try to dig up all the 3-D math I learned in hopes of making the scripts work well. For instance, the process of making the bee in the Cartoon disk fly around, we not only had to plot the <span class="glossaryTerm" onmouseover="javascript:showDiv('spline')" onmouseout="javascript:hideDiv('spline')">splines</span> he'd travel, but also try to find a way to align him with the spline, so he was “facing” the direction he was flying. Oh, that was some frustration trying to figure out how to do that in math I hadn't used since high school a decade before.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:300px;">
+		<img src="gfx/rendering.vtdpen.jpg" width="300" height="200" border="0" />
+	</div>
+</div>
+<p>The “biggest” feature of the Video Titling Design Disk, however, was a clever system for producing animated cursive writing with Cyber Control. Andy and Maurice built a complete cursive alphabet of coordinates (both upper and lower case) and Andy worked out a fancy script to make it all work. The script could even animate a 3D ballpoint pen that drew the letters on the screen: </p>
+<p class="blockquote">I was also pretty proud to come up with a way to draw with the pen in the Video Titling disk. It was kind of a hack, but it worked if you were willing to restrict your use of it.</p>
+<!--<div class="cluster right"><div class="sidebar">
+<h1>Cartoon Design & Video Titling Design Disks sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>Extensive documentation</li>
+<li>Sophisticated Cyber Control example scripts</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>Applying these products in the spirit they were intended was largely beyond the capabilities of the Atari and its software</li>
+</ul>
+</div></div>-->
+<p class="blockquote">... Of course, CAD 3-D was in flux, and often we'd come up with an idea and the program would later have that feature added to it. I think the pen writing was one such case, where we asked if it would be possible to create an image that could be used as a background for the animation—by “drawing” to the screen at the point of the pen, saving that image and using it as the background image, it looked like the pen was drawing a line when shown frame-to-frame.</p>
+<p>Andy has continued to work in publishing as a writer, contributing to the magazines <em>Video Games & Computer Entertainment</em>, <em>GamePro</em>, and <em>GameWEEK</em> (now <em>ieMagazine</em>). He has also written or worked on eight books on games and the Internet.</p>
+<p>Maurice has since become a game developer, working with Omnitrend, Psygnosis, Electronic Arts, and Sega (including the Ecco the Dolphin title for Dreamcast and Playstation2) and is currently directing production of wireless games for NuvoStudios.</p>
+
+
+<!-- glossary -->
+<div class="glossaryPopup" id="spline">
+	<p><strong>Spline</strong></p>
+	<p>A smoothly curving path (in two or three dimensions) through space calculated from three or more fixed points, often specified by the user.</p>
+</div>
+<div class="glossaryPopup" id="assembly">
+	<p><strong>Assembly language</strong></p>
+	<p>The most rigorous and fundamental language available to a programmer for developing software; typically only used to develop extremely optimized mathematical algorithms. Assembly language programming generally requires special expertise.</p>
+</div>
+<div class="glossaryPopup" id="rendering">
+	<p><strong>Rendering</strong></p>
+	<p>In computer graphics, rendering is the process of algorithmically deriving a picture or piece of a picture from other information, which may be a view of 3D geometry, 2D geometry (line art) or other picture information.</p>
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="relatedproducts.html"><em>Other related products</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="designdisks1.html"><em>Future, Architectural, Human & Microbot Design Disks</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

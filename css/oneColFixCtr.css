@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+	font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #1e7c79;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: white;
+}
+.oneColFixCtr #container {
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	min-width: 780px;
+	min-height: 400px;
+	position: absolute;
+	bottom: 80px;
+}

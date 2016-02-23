@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - General History Part V: Make Art</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html" selected="selected">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h2 style="clear:both;">Make Art</h2>
+<p>Earlier, in 1986, shortly after releasing CAD-3D 1.0, Tom Hudson had turned out a few inexpensive “accessory” products, including two collections of 3D “clip art”. One product was called the CAD-3D Collection I, which contained an assortment of polished CAD-3D models including a computer monitor, a space shuttle, the Enterprise from Star Trek, an electrical wall outlet and a Japanese battle helmet. The other collection was “Fonts, Primitives, Hints and Tips” (later renamed <a href="relatedproducts.html">3D Fonts I</a>), which featured 3D letters of the alphabet in both serif and sans-serif designs. Similar to stock photography, these 3D letters were time-saving design resources specifically meant to be integrated into other projects, rather than as an end to themselves. Gary explains:</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:254px;">
+		<img src="gfx/rendering.fonts.gif" alt="Examples of the 3D letters from 3D Fonts I" width="254" height="179" border="0" />
+	</div>
+</div>
+<p class="blockquote">To be honest, the idea for the design disks came from Enabling Technologies [the makers of Easy3D], who had a disk of 3D clip art of letters, numbers and common symbols. It was extremely rudimentary, but it did give me the idea that folks could use canned 3D artwork. So, I can’t take credit for the original idea—as usual I found a good idea that was incompletely executed and embellished upon it.</p>
+<p>Tom’s font disk was a solid product, but Gary took 3D clip art in a new direction with Darrel Anderson, another key individual who turned up about this time. </p>
+
+<div class="cluster right">
+	<div class="imageCluster" style="width:280px;">
+		<a href="gfx/rendering.stoneface.gif"><img src="gfx/rendering.stoneface.thumb.jpg" alt="Darrel Anderson's contest-winning DEGAS painting Stoneface" width="280" height="199" border="2" /></a>
+		<p>Darrel Anderson’s contest-winning DEGAS painting <em>Stoneface</em></p>
+	</div>
+</div>
+
+<p>Since the ST now had powerful (for the time) paint tools such as DEGAS Elite and Atari’s own NeoCHROME, it was only natural for <em>Antic Magazine</em> to sponsor an art competition. Darrel’s entry was on an entirely different level from any of the <a href="http://www.atarimagazines.com/v5n3/Winners.html">other submissions</a>. Here was a “real artist”—not just a computer geek—using computers to make “real artwork”. Gary wasted no time in engaging Darrel, who produced tutorial articles for <em>START</em>, fascinating demos and clip-art products for <em>Antic</em>, not to mention loads of inspiration. The energizing effect that Darrel’s work had on both <em>Antic</em>’s software development and on the user base cannot be underestimated.</p>
+<p>As the unofficial artist-in-residence for the Cyber software, Darrel always had access to software under development, such as CAD-3D 2.0. Gary continues:</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/screenshot.cyberscapepics.gif" alt="" width="320" height="200" /></a>
+		<p>Stills from <a href="quicktimegallery.html"><em>Cyberscape</em></a></p>
+	</div>
+</div>
+<p class="blockquote">Darrel did some interesting Sci-Fi artwork with CAD-3D, and when I got a hold of his data I started playing around with it and thought it'd be a great idea for non-artistic folks like myself to have those kinds of objects to make cool stuff with.</p>
+<p>Gary ultimately convinced Darrel to undertake two projects from his initial CAD-3D work: one was the “3-D feature film on disk” <a href="quicktimegallery.html"><em>Cyberscape</em></a>, which would essentially introduce the animation potential of CAD-3D and Cybermate to the world. The resulting demo is both a testament to the extreme limitations of the Atari ST (including the fact that the demo had to fit on a single 720KB floppy disk) and a mark of how far the software had come.</p>
+<div style="width:600px; margin:auto; text-align:center;">
+	<img src="gfx/diagram.cyberscapeboards.jpg" width="600" height="110" />
+	<p class="caption">Conceptual storyboards from Cyberscape that appeared in The Catalog</p>
+</div>
+<p>The other project was the <a href="designdisks1.html"><em>Future Design Disk</em></a>, an extensive collection of futuristic forms that were artistically realized. In other words, cool geometry that anybody could use but that nobody but Darrel could have come up with on his or her own because it reflected Darrel’s unique sense of style.</p>
+<p>During the next couple of years, Darrel and his friend Richard Berry produced <a href="designdisks1.html">three more design disks</a> for <em>Antic</em>. Darrel also went on to develop unique plug-in modules for 3D Studio and create special effect sequences for the film <em>Johnny Mnemonic</em>. Today, Darrel remains an active artist and software developer (please visit <a href="http://braid.com">www.braid.com</a>). Gary also revived the spirit of the design disks in different form for Autodesk 3D Studio as the World Creating Toolkit: a CD-ROM packed with artistic resources for that software.</p>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history6.html"><em>VI. Going “Cyber”</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history4.html"><em>IV. Making it move</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

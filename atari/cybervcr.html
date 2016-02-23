@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cyber VCR</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html" selected="selected">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Cyber VCR</h1>
+<p>Cyber VCR, by Tom Hudson, was a unique program for sequencing Cyber animations and recording the sequence to videotape. Cyber VCR worked with Sony Betamax and Sony 8mm consumer video equipment that featured the CTL-L cable interface. Cyber VCR was certainly amongst the first consumer computer products that controlled a VCR for the purposes of recording animation (or anything else, for that matter).</p>
+<div style="width:600px; margin:auto; padding: 10px 0px 10px 0px">
+	<img src="gfx/diagram.cybervcr.jpg" width="600" height="471" />
+</div>
+<p>As Cyber Studio was coming together, Gary Yost had been experimenting with assembling SEQ files to a standard VHS VCR, and had discovered how unsatisfactory the noisy edits and manual button-pushing process were. But at the Atlanta Spring COMDEX convention in 1987, Gary saw new products in the Sony booth that were exciting: Sony had introduced new 8mm and Betamax VCRs that featured both <span class="glossaryTerm" onmouseover="javascript:showDiv('flying')" onmouseout="javascript:hideDiv('flying')">flying erase heads</span> (for relatively clean edits) and a new cable interface called CTL-L. In this new equipment, Gary immediately recognized a potential solution for recording animation to video, specifically CAD-3D and Cyber Paint animation:</p>
+<p class="blockquote">I went to Sony first and showed them what we'd done on the ST and explained what we could do with their new 8mm/CTL-L line of products. They were quite excited and gave me two decks and some cables to experiment with. I had told Tom what I was up to and of course he was excited, so when I got the decks I sent one to him along with both cables and he modified one end of each of the cables by putting an RS-232 connector on it.</p>
+<p>Actually, the RS-232 connector didn't work; the Sony CTL-L specification wasn't compatible with the UARTs (a computer component that handles serial communication) in the Atari ST. Sony had sent along a wiring diagram and a list of deck commands, but it wasn't much. Gary and Tom once again turned to Mark Kimball and his prodigious experience making computers and electronic equipment talk to each other. Tom says:</p>
+<p class="blockquote">My main work was on the application side and working up a way to make the non-frame-accurate VCR work acceptably well with what we wanted to do. ... The driver code Mark wrote is about 300 lines of <span class="glossaryTerm" onmouseover="javascript:showDiv('assembly')" onmouseout="javascript:hideDiv('assembly')">assembly code</span>, with comments, which isn't a lot. I can see where he had to deal with some timing issues by adding NOP (No-Operation) lines, though. Probably wasn't a lot of fun for him!</p>
+<p>Mark found that the Atari’s parallel port (printer) interface would do the job. The biggest trick was generating the correct timing for the 1’s and 0’s being sent to the VCR, and he adapted the cable and wrote an assembly-language driver to make it work. Mark relates:</p>
+<p class="blockquote">The first time I got the VCR to respond to my commands, with my own code, was quite a kick. Things like that are the reason for hacking, I believe.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:300px;">
+		<a href="gfx/screenshot.cybervcr.gif"><img src="gfx/screenshot.cybervcr.thumb.jpg" alt="" width="300" height="188" /></a>
+		<p>Cyber VCR</p>
+	</div>
+</div>
+<p>The basic requirement for the new project that would become Cyber VCR was “to be able to construct an edit list of individual sequences and lay those seamlessly to tape”. With Mark’s driver, this was really not a particularly difficult goal to reach. Tom created a very direct drag-and-drop <span class="glossaryTerm" onmouseover="javascript:showDiv('edl')" onmouseout="javascript:hideDiv('edl')">EDL</span> (edit decision list) interface using stock <span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">TOS and GEM</span> elements. The animation handling code was simply adapted from Cyber Paint. Cyber VCR was probably the quickest major Cyber product to program.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Cyber VCR sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>drag-and-drop reordering</li>
+<li>load and save EDLs</li>
+<li>wipes/fades transitions; wipes were themselves Cyber Paint animations that were used as moving masks</li>
+<li>looping, ping-ponging and holds</li>
+<li>clip excerpting</li>
+<li>support for DLT, SEQ, and still images</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>only worked with Sony equipment with CTL-L interface and flying erase heads (most high end Betamax VCRs and 8mm VCRs/camcorders); not truly <span class="glossaryTerm" onmouseover="javascript:showDiv('frameaccurate')" onmouseout="javascript:hideDiv('frameaccurate')">frame accurate</span>, just close</li>
+<li>required an ST with video out, which meant most STs would <em>not</em> work with it out of the box; select ST models had RF-out and third party customization kits were available for the rest at extra cost and risk (of damaging the computer during the customization)</li>
+<li>because of ST’s 16 color limitation, wipes/transitions between different palettes could be a bit uneven</li>
+<li>no sound support</li>
+</ul>
+</div></div>
+<p>The problem with publishing Cyber VCR was that it required the custom cable. Although <em>Antic</em> had resold some hardware products (such as the Tektronix StereoTek 3D glasses), they had specifically avoided the investment and risks of developing their own hardware products. Gary fought hard and managed to get the cables made, but the process took a while and may have slowed the release of the product by a few months. </p>
+<p>Cyber VCR was a critical piece of the Cyber puzzle because—although it wasn't professional in nature—it provided a link to the videotape-based professional videographics world, and really drove home the integrated nature of the Cyber software. Gary and Tom’s later opportunities with Autodesk can be partially tied to this product. Gary explains:</p>
+<p class="blockquote">At the November ’87 COMDEX we had a whole table of the Atari booth set up with a “<span class="glossaryTerm" onmouseover="javascript:showDiv('desktopvideo')" onmouseout="javascript:hideDiv('desktopvideo')">desktop video</span>” system based around Cyber Studio and Cyber VCR. We also had a second deck running animations off the 8mm tape that we were producing on the spot. It was sweet, and during the show David Kalish of Autodesk brought Eric Lyons and everyone else from Autodesk he could grab to see what we were doing. David owned an Atari ST that he'd bought for his son and subsequent to the show bought all our products for him to play around with. In early January, David called me and told me he wanted to meet so we could discuss how to bring all this technology over to the PC. In fact, he even said that if Autodesk wasn't interested, he wanted to put together a list of private investors (headed by David) to get us onto the project ASAP. That was one of the most exciting telephone calls of my life, for sure. (And Cyber VCR was instrumental in lighting the path for us.)</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="edl">
+	<p><strong>Edit Decision List (EDL)</strong></p>
+	<p>A list that describes in terms of time (and frame numbers) how to combine separate “shots” of a film or animation into a finished, “edited” production.</p>
+</div>
+<div class="glossaryPopup" id="frameaccurate">
+	<p><strong>Frame accurate</strong></p>
+	<p>Frame acccuracy is the degree to which a video recording device can track, start and stop on specific video frames. Truly frame accurate video devices tend to be relatively expensive because it is difficult to get such a complex electromechanical devices act with such precision.</p>
+</div>
+<div class="glossaryPopup" id="assembly">
+	<p><strong>Assembly language</strong></p>
+	<p>The most rigorous and fundamental language available to a programmer for developing software; typically only used to develop extremely optimized mathematical algorithms. Assembly language programming generally requires special expertise.</p>
+</div>
+<div class="glossaryPopup" id="flying">
+	<p><strong>Flying Erase Head</strong></p>
+	<p>Videotape recorders use a spinning cylinder (“head”) to read and write video signal on a magnetic tape. Erasure is done by an element that is typically separate, which means that the act of erasing does not happen concurrently at the exact same place on the tape as the head that does the recording and reading. A flying erase head is where the erasing element has been integrated on the same head as the read/write element(s), making the device more complex and expensive, but also better suited to making good edits.</p>
+</div>
+<div class="glossaryPopup" id="desktopvideo">
+	<p><strong>Desktop Video</strong></p>
+	<p>The Macintosh and Aldus Pagemaker in the mid 1980’s created the Desktop Publishing industry, which enabled people with relatively inexpensive computers to do (somewhat) professional-grade page layout. Desktop Video is a concept that followed on the heels of Desktop Publishing and proposed to do the same for digital video production. Desktop Video exploded in the early 1990s led by Avid, and now is ubiquitous, particularly with the advent of the DV/miniDV camcorder.</p>
+</div>
+<div class="glossaryPopup" id="gem">
+	<p><strong>GEM and TOS</strong></p>
+	<p>The operating system of the Atari ST-series of personal computers was called TOS (Tramiel Operating System), which was a superset of Digital Research’s GEM (Graphical Environment Manager) system. In short, it was responsible for the Macintosh-like features (windows, drop-down menus, the mouse pointer) in most of these Antic software products.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cybersculpt.html"><em>Cyber Sculpt</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cyberpaint.html"><em>Cyber Paint</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Timeline</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html" selected="selected">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Timeline</h1>
+
+<h2 style="clear:both;">1982</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">June</div>
+	<div class="timelineEvent">Tom Hudson begins working at ANALOG full time, having written various articles freelance since ANALOG issue #2.</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1984</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">February</div>
+	<div class="timelineEvent">Tom’s article and type-in 3D program, Solid States, appears in ANALOG.</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1985</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">July</div>
+	<div class="timelineEvent">
+		Tom sends “HUDRAW” (later DEGAS) program to Batteries Included to see if they'd be interested.<br />
+		Tom makes verbal agreement with Gary Yost for 3D program.<br />
+		Tom signs contract with BI for DEGAS (7/30).
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">August</div>
+	<div class="timelineEvent">Tom resigns from ANALOG Computing.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">September</div>
+	<div class="timelineEvent">Tom completes DEGAS 1.0; released by Batteries Included.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">November</div>
+	<div class="timelineEvent">Tom starts coding 3D viewer demo (became CAD-3D later) for Gary Yost and showed it to him at COMDEX show in Vegas later that month.</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1986</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">Winter</div>
+	<div class="timelineEvent">Boris Tsikanovsky forms Trio Engineering with brothers Boris and Michael Elman in Boston. Begins work on Spectrum 512.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Spring</div>
+	<div class="timelineEvent">Trio Engineering contacts Gary Yost; agreement to publish Spectrum 512.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">May</div>
+	<div class="timelineEvent">CAD-3D 1.0 released ($49.95).</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">July</div>
+	<div class="timelineEvent">Darrel Anderson wins Antic’s art competition.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Summer</div>
+	<div class="timelineEvent">Mark Kimball (Tektronix) contacts Tom about his prototype liquid-crystal 3D goggles. In addition to proceeding with built-in support for the 3D glasses (to be marketed as StereoTek glasses and sold by Antic), discussion between Mark, Tom and Gary regarding the animation problem leads Mark to develop the Cybersmash desk accessory and his delta-animation format for CAD-3D 2.0. If that wasn't enough, Gary contracts Mark to develop a system for scripting animation presentations; the result is Cybermate.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Summer</div>
+	<div class="timelineEvent">Tom begins DEGAS Elite for Batteries Included.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">August</div>
+	<div class="timelineEvent">Gary meets Jim Kent testing his Aegis Animator software for the ST at a local computer store; secures Flicker for START magazine; later Jim sees Cyber Studio’s delta compression scheme on a visit to Antic, which leads to the expansion of Flicker into Cyber Paint.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">October</div>
+	<div class="timelineEvent">
+		3D Fonts I [w/Super Extruder] released ($24.95).<br />
+		Plotter and Printer Drivers released ($24.95).
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Winter</div>
+	<div class="timelineEvent">Batteries Included ships DEGAS Elite.</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1987</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">February</div>
+	<div class="timelineEvent">
+		Cyber Studio: Stereo CAD-3D 2.0 & Cybermate released ($89.95).<br />
+		StereoTek 3D Glasses released ($149.95).<br />
+		Future Design Disk released ($24.95).<br />
+		Cyberscape demo released ($10.00).
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">April</div>
+	<div class="timelineEvent">
+		Batteries Included sells rights for DEGAS and DEGAS Elite to Electronic Arts.<br />
+		Tom creates and begins selling The Antialiaser.
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Spring</div>
+	<div class="timelineEvent">Gary sees Sony CTL-L interface on their new consumer video hardware at the Atlanta COMDEX.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Summer</div>
+	<div class="timelineEvent">Jim Kent’s Flicker released in START magazine.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">June</div>
+	<div class="timelineEvent">Tom begins work on Cyber Control.<br />
+		Genesis 3D Molecular Modeler released ($79.95).<br />
+		3D Developer’s Disk released ($29.95).<br />
+		Human Design Disk released ($29.95).<br />
+		Architectural Design Disk released ($29.95).
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">September</div>
+	<div class="timelineEvent">Tom creates “Spider Patrol” Cybermate presentation.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">October</div>
+	<div class="timelineEvent">
+		Tom starts work on Cyber VCR.<br />
+		Tom begins work on Cyber Sculpt.<br />
+		Gary meets Maurice Molyneaux and Andy Eddy at the Worcester Atari Fair (Massachusetts), contracts with them for the Cartoon Design Disk and Video Titling Design Disk; Gary personally meets Boris Tsikanovsky for the first time.
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Winter</div>
+	<div class="timelineEvent">Spectrum 512 released ($69.95).<br />
+		Cyber Control released ($59.95).<br />
+		Cyber Paint 1.0 released ($69.95).
+	</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1988</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">February</div>
+	<div class="timelineEvent">Gary leaves Antic to begin negotiations in earnest with Autodesk to make 3D software for the PC.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">Spring</div>
+	<div class="timelineEvent">Trio Engineering releases DigiSpec and UniSpec products.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">May</div>
+	<div class="timelineEvent">
+		Gary signs contract with Autodesk, forms Yost Group, Inc.<br />
+		Tom signs contract with Gary Yost to develop 3D products for the PC.
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">July</div>
+	<div class="timelineEvent">
+		Cyber Sculpt released ($89.95).<br />
+		Cyber Texture released ($49.95).<br />
+		Cyber VCR released ($69.95).<br />
+		Cyber Paint 2.0 released ($79.95).<br />
+		3D Fonts II released ($29.95).<br />
+		Cartoon Design Disk released ($29.95).<br />
+		Video Titling Disk released ($29.95).<br />
+		Microbot Design Disk released ($29.95).<br />
+		Interior Design Disk released ($29.95).
+	</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">August</div>
+	<div class="timelineEvent">Tom begins planning for 3D Studio 1.0 with Gary.</div>
+	<br class="spacer" />
+</div>
+<div class="timelineEntry">
+	<div class="timelineDate">September</div>
+	<div class="timelineEvent">Jack Powell leaves Antic to join Yost Group; replaced by Charles Cherry.</div>
+	<br class="spacer" />
+</div>
+
+<h2 style="clear:both;">1989</h2>
+<div class="timelineEntry">
+	<div class="timelineDate">January</div>
+	<div class="timelineEvent">Version 1.1 of Cyber Sculpt released w/bugfixes.</div>
+	<br class="spacer" />
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="about.html"><em>About this history/the author</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="quicktimegallery.html"><em>Quicktime gallery</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>

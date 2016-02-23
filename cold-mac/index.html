@@ -1,0 +1,193 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Patching Cold Mac</title>
+</head>
+<style>
+body {
+	max-width: 800px;
+	margin: 1em auto;
+}
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+</style>
+<body>
+
+<h1>Patching Cold Mac</h1>
+
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// -->
+</script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+<p>2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
+
+<p>This document is an attempt to understand the <a href="http://www.whimsicalraps.com/pages/coldmac">Cold Mac</a> utility module for you Eurorack synthesizers designed and manufactured by Whimsical Raps.</p>
+
+<small>Note: the following is an unofficial, customer-generated document and may contain errors. The author will attempt to correct any errors as he becomes aware of them.</small>
+
+<h2>Contents</h2>
+
+<ol>
+	<li><a href="#nomenclature">Nomenclature</a></li>
+	<li><a href="#surveillance">“Surveillance”</a></li>
+	<li><a href="#unitymix">Straight Audio Unity Mix</a></li>
+	<li><a href="#panning">Panning/Crossfading</a></li>
+	<li><a href="#inversion">Signal Inversion and Offset</a></li>
+	<li><a href="#logical">Logical Mixing</a></li>
+	<li><a href="#otherutilities">Recitifier, Crease/wavefolder, Envelope follower and Integrator</a></li>
+	<li><a href="#normalizations">Normalizations</a></li>
+	<li><a href="#videos">Videos</a></li>
+</ol>
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<p>The faceplate of Cold Mac contains a whopping 20 jacks. This document refers to each jack by its label in capital letters (e.g., SLOPE). Alas, a number of the jacks are labeled redundantly or with pictograms that don’t translate readily to words, so, taking a syntactic cue from the <a href="https://cdn.shopify.com/s/files/1/0714/9931/files/COLDMAC-Manual-outlines.pdf">official documentation</a>, we’ve adopted these names for those jacks:
+
+<img src="gfx/00-jack-naming.jpg" />
+
+<h2 id="surveillance">“Surveillance” (standalone CV output)</h2>
+
+<p>With no inputs, each of the outputs (except MAC) emits CV according to SURVEY as indicated by the little graphs by the jacks.</p>
+
+<img src="gfx/10-surveillance.jpg" />
+
+<p>Due to normalizations, FOLLOW and LOCATION also emit CV based on SURVEY (more below).</p>
+
+<p>You can certainly use this default CV output directly, but perhaps the primary use case is to patch modulation sources into the inputs, maybe layer in some self-patching within Cold Mac, and thereby erect a more complex web of signal processing.</p>
+
+<p>Whimsical Raps’ concept of “patch surveillance” seems to be that a whole bunch of parallel CV can be processed through Cold Mac under concurrent-but-varied amplitude modulation by the sweep (or CV) of SURVEY. The number of possibilities are initially overwheling, particularly when you factor self-patching into the picture.</p>
+
+<p>One way to try to understand how this works is a visual model. (This approach may not work for everyone.) The following set of graphs illustrate how a slow LFO is affected by the various elementary patch combinations, across the sweep of SURVEY. A graph of how the same LFO signal might be affected by a conventional linear attenuator is provided for contrast.</p>
+
+<img src="gfx/13-lfo-input-visualized.jpg" />
+
+<p><span style="color:red;">*</span>Intrinsic to the function of the design (see Panning/Crossfading section below), LEFT is normalized to -5v and RIGHT is normalized to +5v. If you reproduce these examples yourself, and then break one or other of these normals by inserting a dummy cable into whichever input (LEFT or RIGHT) you’re not using for the LFO signal, you’ll notice that the frequency of the output signal will drop or leap up, accordingly.</p>
+
+
+<h2 id="unitymix">Straight Audio Unity Mix</h2>
+
+<p>Up to six audio inputs in the lower left column of jacks will be unity mixed, attenuated by SURVEY and output through MAC. MAC only passes audio, not CV. In this kind of patch, Cold Mac acts a lot like a VCA with a unity mix on the front end.</p>
+<p><span style="color:red; font-weight:bold;">*</span>the OR(1) and SLOPE input signals will receive 2X gain unless the normalization of the AND(1) and CREASE jacks are broken, respectively, either by other input signals or dummy cables.</p>
+
+<img src="gfx/01-straight-mix.jpg" />
+
+<h2 id="panning">Panning/Crossfading signals (audio or CV)</h2>
+
+<p>With one input into LEFT, SURVEY will pan the signal between the LEFT(OUT) and RIGHT(OUT).</p>
+<p>With one input into RIGHT, SURVEY will pan that signal in the reverse manner, between RIGHT(OUT) and LEFT(OUT).</p>
+
+<p><em>With two signals into both LEFT and RIGHT, SURVEY will pan both signals between the outputs in an opposing manner (the signals switch places).</em></p>
+
+<img src="gfx/02-pan-one-between-two.jpg" />
+
+<p>Patching CV into the FADE input will decouple panning from SURVEY, using the CV input instead and freeing up SURVEY for other purposes.</p>
+
+<img src="gfx/03-fade-cv.jpg" />
+
+<p>If you take two input signals and only a single output, SURVEY (or FADE) will effectively crossfade between the two signals to LEFT(OUT). As per above, however, both outputs are actually active, each being the reverse of the other, so the reverse crossfade will emit from RIGHT(OUT).</p>
+
+<img src="gfx/04-cross-fade-between-two.jpg" />
+
+<p>The OFFSET input merely mixes in an additional input signal on top of the results of the panning/crossfading at LEFT(OUT) and RIGHT(OUT). The OFFSET signal is replicated equally to both panning outputs but (in the case of audio) is <strong>not</strong> sent to MAC. The OFFSET signal is not affected by SURVEY or FADE.</p>
+
+<img src="gfx/05-offset.jpg" />
+
+<h2 id="inversion">Signal Inversion and Offset</h2>
+
+<p><strong>Note: this section is a new draft awaiting validation.</strong></p>
+
+<p>If you put a signal into FADE (with no signal in LEFT or RIGHT), an inverted copy will be available from the RIGHT(OUT).</p>
+
+<img src="gfx/055-inversion.jpg" />
+
+<p>Alternatively, if you put a signal into SURVEY (with no signal in LEFT or RIGHT or FADE), an inverted copy will also be available from the RIGHT(OUT), but the signal will be offset (lower) according to the position of the knob. (Similarly, the signal out of LEFT(OUT) will not be inverted, but will be a copy of the input signal offset (higher) according to the position of the knob.)</p>
+
+<img src="gfx/056-inversion-w-offset.jpg" />
+
+<p>In both scenarios above, the outputs at RIGHT(OUT) and LEFT(OUT) are affected by the default -5v and +5v signals normaled to LEFT and RIGHT, respectively. If you insert a dummy cable in either LEFT or RIGHT, that will break the normalization and constrain voltage range of the output at RIGHT(OUT) and LEFT(OUT) accordingly. Moreover, you can insert your own signals at LEFT and RIGHT to modulate the voltage range at RIGHT(OUT) and LEFT(OUT).</p>
+
+
+<h2 id="logical">So-called logical mixing (audio or CV)</h2>
+
+<p>If you put a signal into OR(1), SURVEY effectively sets a floor for the voltage and sends the result to OR(OUT).</p>
+
+<p>Patching CV into the OR(2) input will decouple the floor from SURVEY, using the CV input instead and freeing up SURVEY for other purposes.</p>
+
+<img src="gfx/06-or.jpg" />
+
+<p>If you put a signal into AND(1), SURVEY also effectively sets a floor for its voltage, but in the reverse direction, and sends the result to AND(OUT).</p>
+
+<p>AND(1) is normalled to OR(1) so the same input signal can be processed simultaneously by both AND and OR circuits.</p>
+
+<p>Patching CV into the AND(2) input will decouple the ceiling from SURVEY, using the CV input instead and freeing up SURVEY for other purposes.</p>
+
+<img src="gfx/07-and.jpg" />
+
+<p>If you patch two different signals simultaneously into OR(1) and AND(1), then take both outputs and mix them together, you achieve what the <a href="https://cdn.shopify.com/s/files/1/0714/9931/files/COLDMAC-Manual-outlines.pdf">official documentation</a> terms “logical crossfading” with “spectral connotations”. As you sweep SURVEY from left to right, you’re simultaneously raising the floor of first signal until its highest frequencies wink out, while lowering the floor of the second signal from nothing until the full spectrum is passed. The result is subtly different from a conventional crossfade.</p>
+
+<img src="gfx/12-harmonic-cross-fade.jpg" />
+
+<h2 id="otherutilities">Rectifier, Crease/wavefolder, Envelope follower and Integrator</h2>
+
+<p>Patching audio or CV into SLOPE, you get:</p>
+<ol>
+	<li>a rectified copy of the input signal from SLOPE(OUT)</li>
+	<li>a slightly laggy envelope-following CV out of FOLLOW</li>
+</ol>
+
+<p>SURVEY has no effect in this patch arrangement.</p>
+
+<img src="gfx/08-slope-and-follow.jpg" />
+
+<p>CREASE is normaled to SLOPE, so from either the SLOPE input or—breaking the normal—the CREASE input, you get:</p>
+<ol>
+	<li>a flipped/wavefolded/creased copy of the input signal out of the CREASE(OUT)</li>
+	<li>a very laggy CV out of LOCATION, that non-linearly chases the input voltage</li>
+</ol>
+
+<p>Again, SURVEY has no effect in this patch arrangement.</p>
+
+<img src="gfx/09-crease-and-location.jpg" />
+
+<p>While SURVEY has no effect on the above, per se, SLOPE is normaled to SURVEY, so the current SURVEY voltage is running through all the above if no cable is patched into SLOPE (or CREASE) to break the normal.</p>
+
+
+<h2 id="normalizations">Normalized connections</h2>
+
+<p>Recapping from above:</p>
+
+<ul>
+<li>FADE, OR(2), AND(2) and SLOPE all appear to be normaled to SURVEY.</li>
+<li>AND(1) appears to be normaled to OR(1)</li>
+<li>CREASE appears to be normaled to SLOPE (which is normaled to SURVEY)</li>
+</ul>
+
+<img src="gfx/11-normals.jpg" />
+
+<small>Additionally, as noted in the <a href="https://cdn.shopify.com/s/files/1/0714/9931/files/COLDMAC-Manual-outlines.pdf">official documentation</a> and referenced in the Surveillance section (above), LEFT is normaled to -5v, RIGHT to +5v, and OR(1) to ground.</small>
+
+
+<h2 id="videos">Videos</h2>
+
+<p><em>Patching Cold Mac #1</em> by endor:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ULJChfuJMYw" frameborder="0" allowfullscreen></iframe>
+
+<p>Whimsical Raps’ <em>COLD MAC: An Introduction</em>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIgcg4-8TOs" frameborder="0" allowfullscreen></iframe>
+
+<p>Whimsical Raps’ <em>COLD MAC: Patch Surveillance</em>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I_hLiDaUi3Q" frameborder="0" allowfullscreen></iframe>
+
+
+<p style="text-align:center;">• • •</p>
+
+
+
+
+</body>
+</html>

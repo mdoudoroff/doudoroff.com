@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - General History Part IV: Making It Move</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html" selected="selected">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h2 style="clear:both;">Making it move</h2>
+<p>While all this was going on, Gary was experimenting with making very short animated sequences by loading CAD-3D images into a <span class="glossaryTerm" onmouseover="javascript:showDiv('ramdisk')" onmouseout="javascript:hideDiv('ramdisk')">RAM disk</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('pageflipping')" onmouseout="javascript:hideDiv('pageflipping')">page-flipping</span> though them quickly. He showed his experiments at the <em>Antic</em> booth at the 1986 Spring COMDEX in Atlanta. Since RAM on the Atari ST was very limited, Gary brought up in conversation how exciting it would be if there was a way to compress the images to increase the length of sequences that could be displayed. Mark Kimball had an epiphany:</p>
+<p class="blockquote">I realized that some technology tried for videophones, which was based on very low data rates, might be applied to computer animations. One of the ways that was used to reduce videophone data rate was to transmit the frame-to-frame differences, which is quite similar to the DLT scheme [we ended up with for CAD-3D]. One problem with noisy transmission channels like telephones is that errors can occur [that accumulate and degrade the image]. To avoid that, it is necessary to periodically transmit a full frame. I recognized that a digital storage device would not have errors, so it would not be necessary to deal with the overhead of a periodic full frame so the overall data rate could be pretty low. It turned out to be a pretty good approach for making computer animations for the time.</p>
+<div style="width:690px; margin:auto;">
+	<div class="imageCluster left" style="width:200px; padding:10px;">
+		<img src="gfx/diagram.dltframe1.gif" alt="" width="200" height="150" />
+		<p>Frame 1</p>
+	</div>
+	<div class="imageCluster left" style="width:200px; padding:10px;">
+		<img src="gfx/diagram.dltframe2.gif" alt="" width="200" height="150" />
+		<p>Frame 2</p>
+	</div>
+	<div class="imageCluster left" style="width:200px; padding:10px;">
+		<img src="gfx/diagram.dltframexor.gif" alt="" width="200" height="150" />
+		<p>Difference between frames (logical XOR)</p>
+	</div>
+</div>
+<p>Mark implemented his solution as another ST <span class="glossaryTerm" onmouseover="javascript:showDiv('deskaccessory')" onmouseout="javascript:hideDiv('deskaccessory')">desk accessory</span>—called Cyber Smash. Cyber Smash hooked into the printer driver interface Tom had built into CAD-3D and managed the compressed animation recording process, the results of which went into a DLT file. Gary adds:</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:376px;">
+		<img src="gfx/screenshot.superviewsetting.gif" alt="" width="376" height="283" />
+		<p>Rendering a stereo animation in CAD-3D 2.0 was simply a matter of pushing a button</p>
+	</div>
+</div>
+<p class="blockquote">What was truly amazing about Cyber Smash was that it would support the creation of stereoscopic animations. There was a switch that the user could set to tell the compressor that multiple eye-views were being used, and it would compress and then decode everything so that the [Stereotek 3D] glasses could play back the sequences correctly. You should've seen the faces of people when they first saw a spaceship flying out of the screen, or a skeleton rotating in 3D so that you could see the relationships between all the bones. It was awesome. And then, in CAD-3D 2.0, Tom built an integrated user interface around Mark’s code that allowed our users to just press a button to produce either stereoscopic or monoscopic 3D animations automatically. This was the first time we used code from multiple developers in the same product, and it lit the way for many collaborations in the future.</p>
+<p>Mark Kimball’s delta animation format is noted as one of the first actual implementations of a compressed digital video format, a precursor of digital video systems like QuickTime, and the MPEG-2 format of today’s DVD movies. It was also notable for being able to record (and play back outside of CAD-3D) stereo animations for the 3D glasses.</p>
+<div style="width:693px; margin:auto;">
+	<img src="gfx/animation.torus.gif" width="693" height="100" />
+</div>
+<p>Now that CAD-3D could render animations, there remained the question of how to present them. CAD-3D itself couldn't play back the files it created, so Gary contracted Mark to produce a playback solution. Mark had already been using <span class="glossaryTerm" onmouseover="javascript:showDiv('FORTH')" onmouseout="javascript:hideDiv('FORTH')">Forth</span>—an extremely efficient and lightweight high-level computer language—to develop his 3D glasses, so he made an adaptation of Forth that could manipulate the animation data. The resulting product, <a href="cybermate.html">Cybermate</a>, married an interactive programming language with both digital video and audio features and is one of the first multimedia <span class="glossaryTerm" onmouseover="javascript:showDiv('authoring')" onmouseout="javascript:hideDiv('authoring')">authoring</span> environments ever. Cybermate could manage multiple animation files, play back partial or entire sequences at arbitrary speeds, loop, <span class="glossaryTerm" onmouseover="javascript:showDiv('colorcycle')" onmouseout="javascript:hideDiv('colorcycle')">cycle colors</span>, and execute dissolve and wipe transitions. And it could do it stereoscopically, with the 3D glasses. Moreover, it could play sounds in synchronization with the picture.</p>
+<p>The end result of this intensely innovative period was the release of The Cyber Studio, which packaged CAD-3D 2.0 and Cybermate together as a $90 product that shipped in early 1987.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="ramdisk">
+	<p><strong>RAM disk</strong></p>
+	<p>A computer program that imitates the behavior of a storage volume (disk drive) for other programs, but actually uses a portion of the computer’s RAM memory for data storage; this technique provides the fastest possible temporary file store at the expense of available memory.</p>
+</div>
+<div class="glossaryPopup" id="colorcycle">
+	<p><strong>Color cycling</strong></p>
+	<p>Like many other computer systems of its day, the Atari ST used an indexed color scheme for its color graphics. Indexing meant that each dot (pixel) on the screen referred to any one color in a finite palette, known as a color look-up table (<span class="glossaryTerm" onmouseover="javascript:showDiv('clut')" onmouseout="javascript:hideDiv('clut')">CLUT</span>). Color cycling was nothing more complex than dynamically re-assigning some or all of the colors in the palette, thus affecting all the applicable pixels on the display. The results of color cycling could be quite dramatic.</p>
+	<img src="gfx/diagram.colorcycling.clut.gif" width="400" height="14" />
+	<img src="gfx/diagram.colorcycling.image.gif" width="400" height="92" />
+</div>
+<div class="glossaryPopup" id="authoring">
+	<p><strong>Authoring</strong></p>
+	<p>In the computer world, authoring refers to general creative assembly and sequencing of multimedia elements. Originally associated with the creation of CD-ROM multimedia software, authoring now applies to many media including the Web and DVDs. Authoring usually implies a lightweight process, as opposed to <em>programming</em>.</p>
+</div>
+<div class="glossaryPopup" id="clut">
+	<p><strong>CLUT (Color Look-up Table)</strong></p>
+	<p>A set of indexed registers, each containing numbers representing colors. On the Atari ST, the CLUT kept track of whichever sixteen colors were in use on-screen at any given moment.</p>
+</div>
+<div class="glossaryPopup" id="deskaccessory">
+	<p><strong>Desk Accessory</strong></p>
+	<p>Different operating systems have used different approaches to managing types of programs that hang around (“stay resident”) while the user is working with an application. Often these co-existing programs are intended to complement applications in some fashion. In the Atari ST’s TOS operating system, such programs were called “Desk Accessories”, because they were often accessed from a drop-down menu on the desktop display. The comparable feature of a modern operating system is a “service” or “daemon”.</p>
+</div>
+<div class="glossaryPopup" id="FORTH">
+	<p><strong>FORTH</strong></p>
+	<p>A unique, idiosyncratic, but highly efficient computer language created in 1970 by Charles Moore.</p>
+</div>
+<div class="glossaryPopup" id="pageflipping">
+	<p><strong>Page flipping</strong></p>
+	<p>The precise technical definition of page flipping depends on the specific display architecture of a computer, but the general idea is that you set up a sequence of images in the computer’s RAM memory (limited by how much RAM the computer has available) and then you instruct the computer to send each image in sequence to the display as quickly as possible. At one time, this sort of technique was one of the only ways to reproduce full-motion imagery on a computer because hard disk storage was much slower (and much more expensive).</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history5.html"><em>V. Make Art</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history3.html"><em>III. Now, in 3-D!</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+</body>
+</html>
