@@ -3,6 +3,7 @@
 @linkcolor: #23c9bb;
 @hovercolor: lighten(@linkcolor, 10%);
 @sigcolor: #1e7c79;
+@darkcolor: darken(@sigcolor, 20%);
 
 body {
 	background: @sigcolor;
@@ -46,19 +47,18 @@ section {
 }
 
 h1 {
-	margin: 2em 0 2em 0;
+	margin: 2em auto 2em auto;
 	font-size: 100%;
 	//border-top: 18px solid black;
 	text-align: center;
-	float:right;
 	color: @sigcolor;
 	background: white;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
-	display: inline-block;
+	border-radius: 8px;
+	display: block;
 	padding: 8px 1em;
 	width: 4em;
-	line-height: 1.0
+	line-height: 1.0;
+	font-variant: italic;
 }
 
 h2 {
@@ -89,5 +89,26 @@ p.button {
 	font-size:22px;
 }
 
+#masthead {
+	color: @darkcolor;
+	text-align: left;
+	font-weight: bold;
+	margin: 3em 0;
+	max-width: 40em;
+}
+
+#pageTitle {
+	font-weight: bold;
+	font-size: 63px;
+	text-align: center;
+	margin: 2em 0;
+}
+
+
+footer {
+	margin-top: 4em;
+	font-size: 14px;
+	color: @darkcolor;
+}
 
 @import "html5bp-top.less";
