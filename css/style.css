@@ -45,12 +45,13 @@ textarea {
 body {
   background: #1e7c79;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 1000px;
   margin: 0 auto;
   font-family: "Operator SSm A", "Operator SSm B", "Helvetica Neue", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.4;
 }
 article {
   position: relative;
@@ -60,7 +61,6 @@ a:visited,
 a:hover {
   color: #23c9bb;
   text-decoration: none;
-  font-weight: bold;
 }
 a:hover {
   color: #41ded1;
@@ -111,4 +111,6 @@ p {
 }
 p.button {
   text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
