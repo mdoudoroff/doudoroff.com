@@ -85,11 +85,19 @@ def klassForproduct(val):
 def klassFornotes(val):
 	return 'left'
 
+def klassForheadphone(val):
+	if val.lower().find('yes') > -1:
+		return 'green'
+	elif val.lower().find('no') > -1:
+		return 'red'
+	else:
+		return ''
+
 
 def klassForshippingstatus(val):
-	if val.lower() == 'yes':
+	if val.lower().find('yes') > -1:
 		return 'green'
-	elif val.lower() == 'no':
+	elif val.lower().find('no') > -1:
 		return 'red'
 	else:
 		return ''
@@ -113,7 +121,8 @@ def valueFornotes(row):
 	vals = row['notes'].split(';')
 	bits = ['<ul>']
 	for val in vals:
-		bits.append('<li>%s</li>' % val)
+		if val.strip():
+			bits.append('<li>%s</li>' % val)
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
