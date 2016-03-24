@@ -40,7 +40,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
+<p>2016-03-23 Added initial info on Frap CGM<br />2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
 
 
 '''
