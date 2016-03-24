@@ -2629,6 +2629,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/mixers\/gfx\/poltergeist2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142605,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/poltergeist2.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/poltergeist2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/mixers\/gfx\/praga-large.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
