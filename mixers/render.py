@@ -55,6 +55,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/addac-system-addac802-quintet-mixing-console">ADDAC 802 Quintet Mixing Console</a> (multi-cahnnel mixing and routing vca that can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/low-gain-electronics-submix">Low-Gain Submix</a> (multi-channel mixing and routing vca that can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/mfb-drum-99">MFB Drum-99</a>  (multi-channel stereo submixer)</li>
+<li><a href="http://hinton-instruments.co.uk/paprod/modular/modmix/index.htm">Hinton Instruments ModMix II</a> (dual four input mixer with added sauce; also note other Hinton products relevant to stereo mixing)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
