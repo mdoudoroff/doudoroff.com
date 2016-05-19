@@ -2442,17 +2442,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/mixers\/gfx\/6csm-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26676,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/6csm-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/6csm-large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/mixers\/gfx\/6csm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2497,13 +2486,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/dubmix-large.jpg": {
+	"\/mixers\/gfx\/doepfer-A138p.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96477,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/dubmix-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/dubmix-large.jpg",
+		"initialSize": 48198,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/doepfer-A138p.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/doepfer-A138p.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2541,13 +2530,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/miiiix-large.jpg": {
+	"\/mixers\/gfx\/frapcgm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 225167,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/miiiix-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/miiiix-large.jpg",
+		"initialSize": 269669,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/frapcgm.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/frapcgm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2585,17 +2574,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/mx4s-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 130453,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/mx4s-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/mx4s-large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/mixers\/gfx\/mx4s.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2603,17 +2581,6 @@
 		"initialSize": 130453,
 		"inputAbbreviatedPath": "\/mixers\/gfx\/mx4s.jpg",
 		"outputAbbreviatedPath": "\/mixers\/gfx\/mx4s.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/mixers\/gfx\/poltergeist-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 393252,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/poltergeist-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/poltergeist-large.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2640,17 +2607,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/praga-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 409601,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/praga-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/praga-large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/mixers\/gfx\/praga.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2662,17 +2618,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/quadmixer-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 259550,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/quadmixer-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/quadmixer-large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/mixers\/gfx\/quadmixer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2680,17 +2625,6 @@
 		"initialSize": 259550,
 		"inputAbbreviatedPath": "\/mixers\/gfx\/quadmixer.jpg",
 		"outputAbbreviatedPath": "\/mixers\/gfx\/quadmixer.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/mixers\/gfx\/scanpan-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 43847,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/scanpan-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/scanpan-large.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2717,17 +2651,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/mixers\/gfx\/unify-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 127070,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/unify-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/unify-large.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/mixers\/gfx\/unify.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2735,17 +2658,6 @@
 		"initialSize": 127070,
 		"inputAbbreviatedPath": "\/mixers\/gfx\/unify.jpg",
 		"outputAbbreviatedPath": "\/mixers\/gfx\/unify.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/mixers\/gfx\/vcstereomixer-large.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 106828,
-		"inputAbbreviatedPath": "\/mixers\/gfx\/vcstereomixer-large.jpg",
-		"outputAbbreviatedPath": "\/mixers\/gfx\/vcstereomixer-large.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6154,8 +6066,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "www",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "doudoroff.com",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "harddrive_gray"
 	},
 "projectSettings": {
