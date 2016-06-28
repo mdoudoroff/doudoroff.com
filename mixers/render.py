@@ -59,6 +59,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/mfb-drum-99">MFB Drum-99</a>  (multi-channel stereo submixer)</li>
 <li><a href="http://hinton-instruments.co.uk/paprod/modular/modmix/index.htm">Hinton Instruments ModMix II</a> (dual four input mixer with added sauce; also note other Hinton products relevant to stereo mixing)</li>
 <li><a href="https://www.thonk.co.uk/shop/worng-lrmsmslr/">Worng LRMSMSLR Mid-Side (MS) Matrix</a> (mid side stereo processor for Eurorack)</li>
+<li><a href="http://ladik.ladik.eu/?page_id=1567">Ladik M-160 (configurable mixer)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
