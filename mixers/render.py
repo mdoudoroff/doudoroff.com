@@ -42,14 +42,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2016-06-01 Additonal PanMix details<br />2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />2016-05-18 Added Arrel ER-100<br />2016-03-24 Added initial info on Doepfer A-138p/o<br />2016-03-23 Added initial info on Frap CGM<br />2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
+<p>2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br />2016-06-01 Additonal PanMix details<br />2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />2016-05-18 Added Arrel ER-100<br />2016-03-24 Added initial info on Doepfer A-138p/o<br />2016-03-23 Added initial info on Frap CGM<br />2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
 
 
 '''
 
 html_bottom = u'''
 
-<p>In addition, these modules don’t belong in the above comparison but have been pointed out as being of potential interest:</p>
+<p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/make-noise-rxmx">Make Noise RxMx</a> (can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/intellijel-azimuth-ii">Intellijel Azimuth II</a> (single channel of mono to stereo with panning and spread, amongst other features)</li>
@@ -57,9 +57,10 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/addac-system-addac802-quintet-mixing-console">ADDAC 802 Quintet Mixing Console</a> (multi-cahnnel mixing and routing vca that can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/low-gain-electronics-submix">Low-Gain Submix</a> (multi-channel mixing and routing vca that can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/mfb-drum-99">MFB Drum-99</a>  (multi-channel stereo submixer)</li>
-<li><a href="http://hinton-instruments.co.uk/paprod/modular/modmix/index.htm">Hinton Instruments ModMix II</a> (dual four input mixer with added sauce; also note other Hinton products relevant to stereo mixing)</li>
-<li><a href="https://www.thonk.co.uk/shop/worng-lrmsmslr/">Worng LRMSMSLR Mid-Side (MS) Matrix</a> (mid side stereo processor for Eurorack)</li>
-<li><a href="http://ladik.ladik.eu/?page_id=1567">Ladik M-160 (configurable mixer)</li>
+<li><a href="https://www.modulargrid.net/e/hinton-instruments-modmixii">Hinton Instruments ModMix II</a> (dual four input mixer with added sauce; also note other Hinton products relevant to stereo mixing)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-worng-lrmsmslr">Worng LRMSMSLR Mid-Side (MS) Matrix</a> (mid side stereo processor for Eurorack)</li>
+<li><a href="https://www.modulargrid.net/e/ladik-m-160-6ch-mono-stereo-aux-mixer">Ladik M-160 (configurable mixer)</li>
+<li><a href="https://www.modulargrid.net/e/blue-lantern-modules-stereoscopic-duo-vca--">Blue Lantern Stereoscopic Duo VCA</a></li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
