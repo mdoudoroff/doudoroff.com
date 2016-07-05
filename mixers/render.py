@@ -42,7 +42,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br />2016-06-01 Additonal PanMix details<br />2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />2016-05-18 Added Arrel ER-100<br />2016-03-24 Added initial info on Doepfer A-138p/o<br />2016-03-23 Added initial info on Frap CGM<br />2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
+<p>2016-07-05 Endorphin.es Cockpit<br />2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br />2016-06-01 Additonal PanMix details<br />2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />2016-05-18 Added Arrel ER-100<br />2016-03-24 Added initial info on Doepfer A-138p/o<br />2016-03-23 Added initial info on Frap CGM<br />2016-03-15 Added headphone column; updated data on Koma mixer<br />2016-02-01 Updated WMD photo<br />2016-01-27 Updated Toppobrillo info, new photos<br />2016-01-26 More additions and corrections<br />2016-01-25 Added more placeholder photos, missing modules, errata<br />2016-01-24 Errata and many additions from Muffwiggler members<br />2016-01-23 Rough draft</p>
 
 
 '''
