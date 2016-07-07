@@ -2486,6 +2486,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/mixers\/gfx\/bluelantern-ssma.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95094,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/bluelantern-ssma.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/bluelantern-ssma.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/mixers\/gfx\/bluelanternmixer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2526,6 +2537,17 @@
 		"initialSize": 87234,
 		"inputAbbreviatedPath": "\/mixers\/gfx\/emwstereomixer.jpg",
 		"outputAbbreviatedPath": "\/mixers\/gfx\/emwstereomixer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mixers\/gfx\/endorphines-cockpit.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55344,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/endorphines-cockpit.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/endorphines-cockpit.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
