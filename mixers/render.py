@@ -52,6 +52,7 @@ html_bottom = u'''
 <p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/make-noise-rxmx">Make Noise RxMx</a> (can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/intellijel-mutamix">Intellijel Mutamix</a> (can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/intellijel-azimuth-ii">Intellijel Azimuth II</a> (single channel of mono to stereo with panning and spread, amongst other features)</li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-vca-matrix">4ms VCA Matrix</a> (multi-channel mixing and routing vca that can be employed in a stereo manner)</li>
 <li><a href="https://www.modulargrid.net/e/addac-system-addac802-quintet-mixing-console">ADDAC 802 Quintet Mixing Console</a> (multi-cahnnel mixing and routing vca that can be employed in a stereo manner)</li>
