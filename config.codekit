@@ -2486,6 +2486,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/mixers\/gfx\/blackstereomixer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34897,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/blackstereomixer.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/blackstereomixer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/mixers\/gfx\/bluelantern-ssma.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2581,6 +2592,17 @@
 		"initialSize": 81845,
 		"inputAbbreviatedPath": "\/mixers\/gfx\/happy-nerding-panmix.jpg",
 		"outputAbbreviatedPath": "\/mixers\/gfx\/happy-nerding-panmix.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/mixers\/gfx\/ladik-m-175.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25331,
+		"inputAbbreviatedPath": "\/mixers\/gfx\/ladik-m-175.jpg",
+		"outputAbbreviatedPath": "\/mixers\/gfx\/ladik-m-175.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
