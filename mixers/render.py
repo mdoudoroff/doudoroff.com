@@ -42,7 +42,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2017-01-31 Rebel Technologies Mix 01<br />
+<p>2017-02-01 Rebel Technologies Mix 01<br />
 2017-01-31 Cwejman MX-4AS<br />
 2017-01-30 Doepfer A-135<br />
 2017-01-19 Qu-bit Mixology update<br />
