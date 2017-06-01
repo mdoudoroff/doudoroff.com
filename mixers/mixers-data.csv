@@ -1,5 +1,6 @@
 product,pic,shippingstatus,hp,mono_inputs,stereo_inputs,cv_panning,cv_vcas,mutesolo,sends,headphone,price,notes,_mgurl,_website
 Product,,Shipping,HP,Mono Inputs,Stereo Inputs,CV Panning,CV VCAs,Mute/Solo,Sends,Headphone Out,Approx. Price (USD),Additional Notes,,
+ADDAC Stereo Summing Mixer,addac-stereo-summing-mixer.jpg,Yes,80,1-5,1-5,5,5,5 (manual),3 stereo sends,Yes,1344,"product is broken into two modules, one for I/O and one for control; expander adds four more fully-featured channels; cueing system; extensive line level support",https://www.modulargrid.net/e/addac-system-addac807a,
 Arrel Audio ER-100 Eurorack Stereo Summing Mixer,arrel-ER-100.jpg,Yes,28,8,"1 stereo aux, 1 stereo insert",0,0,8 solo (manual),1 stereo send,Yes,1000,,https://www.modulargrid.net/e/other-unknown-arrel-audio-er-100,http://www.arrel-audio.com/product.php?page=ER-100
 Blacet MIX3500,blacetmix3500.jpg,Yes (DIY),15,1-5,0-2,0,0,0,0,Yes (sort of),140+,,,http://www.blacet.com
 Blue Lantern BMX 6 Channel Stereo Mixer,bluelanternmixer.jpg,Yes (DIY or pre-built),34,6,0,0,0,6 (manual),2,Yes,45+,supports line- or eurorack-level inputs,https://www.modulargrid.net/e/blue-lantern-modules-bmx-6channel-stereo-mixer-diy,
