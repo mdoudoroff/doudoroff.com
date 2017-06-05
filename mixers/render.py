@@ -42,7 +42,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2017-06-05 Rebel Technologies Mix 02<br />
+<p>2017-06-05 Rebel Technologies Mix 02, Eric Stereo Mixer V2<br />
 2017-06-01 ADDAC Stereo Summing Mixer<br />
 2017-05-02 GRP Stereo Out Module<br />
 2017-04-13 Doepfer A-138s<br />
