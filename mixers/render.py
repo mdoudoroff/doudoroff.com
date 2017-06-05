@@ -42,7 +42,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2017-06-01 ADDAC Stereo Summing Mixer<br />
+<p>2017-06-05 Rebel Technologies Mix 02<br />
+2017-06-01 ADDAC Stereo Summing Mixer<br />
 2017-05-02 GRP Stereo Out Module<br />
 2017-04-13 Doepfer A-138s<br />
 2017-04-06 Qu-bit Mixology update<br />
@@ -89,6 +90,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/other-unknown-worng-lrmsmslr">Worng LRMSMSLR Mid-Side (MS) Matrix</a> (mid side stereo processor for Eurorack)</li>
 <li><a href="https://www.modulargrid.net/e/ladik-m-160-6ch-mono-stereo-aux-mixer">Ladik M-160 (configurable mixer)</li>
 <li><a href="https://www.modulargrid.net/e/blue-lantern-modules-stereoscopic-duo-vca--">Blue Lantern Stereoscopic Duo VCA</a></li>
+<li><a href="https://www.modulargrid.net/e/hikari-instruments-atten-mixer">Hikari Atten/Mixer</a></li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
