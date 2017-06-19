@@ -37,10 +37,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <!--<p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>-->
 
 <p>2017-06-18 Rough draft</p>
+<p>2017-06-19 Various tweaks and additions</p>
 
 <h2>Introduction</h2>
 
-<p>There are many many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty melodic-oriented designs with fairly complete gate sequencing ability</strong>.</p>
+<p>There are many many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty melodic-oriented designs with fairly complete gate sequencing ability</strong>.
+This comparison can never be more than a starting place for further research—most of the modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—their design
+bias toward different priorities and “process”. <strong>Sequencer are intensely personal tools.</strong></p>
 
 <p>The UI Style column is an attempt to broadly categorize the operational styles of these different designs:</p>
 
@@ -54,51 +57,83 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
 </ul>
 
+<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
+This provides a clue about how “playable” or how much “windowing” is going on while navigating the sequence.</p>
+
 <h2>Comparison</h2>
 
-<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">HP</th><th class="">Steps (basis)</th><th class="">Tracks</th><th class="">Outputs per track</th><th class="">CV ins</th><th class="">Ratcheting/repeat</th><th class="">Approx. Price (USD)</th><th class="">UI Style</th><th class="left">Additional Notes</th></tr>
+<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">CV ins</th><th class="">Ratcheting/repeat</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
 <tr><td class="left"><strong>Audio Damage Sequencer 1</strong><br /><small><br /><a href="https://www.modulargrid.net/e/audio-damage-adm06-sequencer-1" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.audiodamage.com/collections/eurorack/products/adm06-sequencer-1" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/seq1.jpeg"><img src="gfx/seq1.jpeg" style="width:180px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">36</td>
-	<td class="">64</td>
+	<td class="">x0x</td>
+	<td class="">16/64</td>
 	<td class="">1</td>
 	<td class="">1 pitch<br /> 3 cv<br /> 1 gate<br /> 1 aux</td>
 	<td class="">2 assignable</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">36</td>
+	<td class="green">Yes</td>
 	<td class="">699</td>
-	<td class="">x0x</td>
 	<td class="left"><ul>
 	<li>lots of internal modulation options</li>
 	</ul></td>
 </tr>
+<tr><td class="left"><strong>Copper Traces Seek</strong><br /><small><br /><a href="https://www.modulargrid.net/e/copper-traces-seek" target="_blank">Modular Grid &gt;</a><br /><a href="http://coppertracesmusic.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/seek.jpeg"><img src="gfx/seek.jpeg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">x0x</td>
+	<td class="">1/64</td>
+	<td class="">1</td>
+	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">12</td>
+	<td class="green">Yes</td>
+	<td class="">299</td>
+	<td class="left"><ul>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>Detroit Underground DU-SEQ</strong><br /><small><br /><a href="https://www.modulargrid.net/e/detroit-underground-du-seq" target="_blank">Modular Grid &gt;</a><br /><a href="http://detroitunderground.net/archives/modular/du-seq" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/du-seq.jpeg"><img src="gfx/du-seq.jpeg" style="width:150px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">30</td>
-	<td class="">8</td>
+	<td class="">classic</td>
+	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">2 playback modifier gate ins</td>
-	<td class="">Repeat</td>
+	<td class="">repeat</td>
+	<td class="">30</td>
+	<td class="green">Yes</td>
 	<td class="">500</td>
-	<td class="">classic</td>
 	<td class="left"><ul>
 	<li>analog</li>
 	<li> no built-in quantizer or storage</li>
 	</ul></td>
 </tr>
+<tr><td class="left"><strong>Doepfer A-155</strong><br /><small><br /><a href="https://www.modulargrid.net/e/doepfer-a-155" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/a155.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-a155.jpeg"><img src="gfx/doepfer-a155.jpeg" style="width:250px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">8/8</td>
+	<td class="">1</td>
+	<td class="">1 cv<br /> 1 gate<br /> 3 trig</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">50</td>
+	<td class="green">Yes</td>
+	<td class="">375</td>
+	<td class="left"><ul>
+	<li>expander available</li>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>Five12 Vector</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-vector" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/vector.jpeg"><img src="gfx/vector.jpeg" style="width:210px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="red">No</td>
-	<td class="">42</td>
-	<td class="">16</td>
+	<td class="">Cirklon-ish</td>
+	<td class="">8/16</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
 	<td class="">2 assignable</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">42</td>
+	<td class="red">No</td>
 	<td class="gray">TBD</td>
-	<td class="">Cirklon-ish</td>
 	<td class="left"><ul>
 	<li>extensive MIDI support</li>
 	<li> two additional MIDI-out-only tracks</li>
@@ -106,177 +141,216 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 </tr>
 <tr><td class="left"><strong>Industrial Music Electronics Stillson Hammer Mk II</strong><br /><small><br /><a href="https://www.modulargrid.net/e/the-harvestman-stillson-hammer-mkii" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/stillson-hammer2.jpeg"><img src="gfx/stillson-hammer2.jpeg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">32</td>
-	<td class="">16</td>
+	<td class="">hybrid</td>
+	<td class="">16/16*</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">1 tempo, 2 assignable, 1 cv record in</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">32</td>
+	<td class="green">Yes</td>
 	<td class="">666</td>
-	<td class="">hybrid</td>
 	<td class="left"><ul>
 	<li>per-step delay</li>
 	<li> cv outs can double as gate outs for up to 8-tracks of drum sequencing</li>
+	<li> *sliders do not always reflect state</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Intellijel Metropolis</strong><br /><small><br /><a href="https://www.modulargrid.net/e/intellijel-metropolis-" target="_blank">Modular Grid &gt;</a><br /><a href="https://intellijel.com/eurorack-modules/metropolis/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/metropolis.jpeg"><img src="gfx/metropolis.jpeg" style="width:170px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">34</td>
-	<td class="">8</td>
+	<td class="">classic</td>
+	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">2 assignable</td>
-	<td class="">Repeat</td>
+	<td class="">repeat</td>
+	<td class="">34</td>
+	<td class="green">Yes</td>
 	<td class="">580</td>
-	<td class="">classic</td>
 	<td class="left"><ul>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Malekko Heavy Industry Varigate 8+</strong><br /><small><br /><a href="https://www.modulargrid.net/e/malekko-heavy-industry-varigate-8" target="_blank">Modular Grid &gt;</a><br /><a href="https://malekkoheavyindustry.com/product/varigate-8/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/varigate8plus.jpeg"><img src="gfx/varigate8plus.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">26</td>
-	<td class="">16</td>
-	<td class="">2 (plus 6 gate-only tracks)</td>
+	<td class="">hybrid</td>
+	<td class="">16/16*</td>
+	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">1 randomization gate, 1 cv record in</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">26</td>
+	<td class="green">Yes</td>
 	<td class="">549</td>
-	<td class="">hybrid</td>
 	<td class="left"><ul>
+	<li>provides additional six gate-only tracks</li>
+	<li> *sliders do not always reflect state</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Modcan Touch Sequencer</strong><br /><small><br /><a href="https://www.modulargrid.net/e/modcan-touch-sequencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://modcan.com/emodules/touchseq.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/touchseq.jpeg"><img src="gfx/touchseq.jpeg" style="width:105px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">21</td>
-	<td class="">64</td>
+	<td class="">GUI</td>
+	<td class="">8/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">1 assignable</td>
 	<td class=""></td>
+	<td class="">21</td>
+	<td class="green">Yes</td>
 	<td class="">600</td>
-	<td class="">GUI</td>
 	<td class="left"><ul>
+	<li>touchscreen UI (some users may need a stylus)</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Monome Teletype</strong><br /><small><br /><a href="https://www.modulargrid.net/e/monome-teletype" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.monome.org/docs/modular/teletype/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/teletype.jpeg"><img src="gfx/teletype.jpeg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">18</td>
-	<td class="">64</td>
+	<td class="">GUI/Tracker</td>
+	<td class="">???/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">1 assignable trigger, 1 assignable gate</td>
-	<td class="">Ratcheting, Repeat</td>
+	<td class="">ratcheting, repeat</td>
+	<td class="">18</td>
+	<td class="green">Yes</td>
 	<td class="">480</td>
-	<td class="">GUI/Tracker</td>
 	<td class="left"><ul>
 	<li>additional outputs per track available with expander</li>
+	<li> reliant on external QWERTY keyboard for programming (included)</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Ornament & Crime</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel" target="_blank">Modular Grid &gt;</a><br /><a href="http://ornament-and-cri.me/user-manual-v1_3/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/o_c.jpeg"><img src="gfx/o_c.jpeg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes (DIY)</td>
-	<td class="">14</td>
-	<td class="">16</td>
+	<td class="">GUI</td>
+	<td class="">16/64</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">4 assignable</td>
 	<td class=""></td>
+	<td class="">14</td>
+	<td class="green">Yes (DIY)</td>
 	<td class="">300 (approx)</td>
-	<td class="">GUI</td>
 	<td class="left"><ul>
-	<li>includes other sequencing-related programs</li>
+	<li>requires external clock</li>
+	<li> includes other sequencing-related programs</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Orthogonal Devices ER-101</strong><br /><small><br /><a href="http://www.orthogonaldevices.com/er-101" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/er101.jpeg"><img src="gfx/er101.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">26</td>
-	<td class="">99+</td>
+	<td class="">per-step window</td>
+	<td class="">1/99+</td>
 	<td class="">4 identical</td>
 	<td class="">2 cv<br /> 1 gate</td>
 	<td class="">various part selection, assignable modulation and cv recording options with ER-201 expander</td>
-	<td class="">Ratcheting, Repeat (de facto)</td>
+	<td class="">ratcheting, repeat (de facto)</td>
+	<td class="">26</td>
+	<td class="green">Yes</td>
 	<td class="">600</td>
-	<td class="">per-step window</td>
 	<td class="left"><ul>
 	<li>requires external clock</li>
 	<li> ER-102 expander adds addressable parts, CV modulation,  various CV recording features, and SD card storage</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Copper Traces Seek</strong><br /><small><br /><a href="https://www.modulargrid.net/e/copper-traces-seek" target="_blank">Modular Grid &gt;</a><br /><a href="http://coppertracesmusic.com" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/seek.jpeg"><img src="gfx/seek.jpeg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">12</td>
-	<td class="">64</td>
+<tr><td class="left"><strong>Rossum Electro-Music Control Forge</strong><br /><small><br /><a href="https://www.modulargrid.net/e/rossum-electro-music-control-forge" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rossum-electro.com/products/control_forge/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/control-forge.jpeg"><img src="gfx/control-forge.jpeg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">GUI/per-step window</td>
+	<td class="">8</td>
 	<td class="">1</td>
-	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
-	<td class=""></td>
-	<td class=""></td>
-	<td class="">299</td>
-	<td class="">x0x</td>
+	<td class="">1 cv<br /> 2 trigger/gate</td>
+	<td class="">yes (it’s complicated)</td>
+	<td class="">arbitrary behavioral logic</td>
+	<td class="">22</td>
+	<td class="green">Yes</td>
+	<td class="">499</td>
 	<td class="left"><ul>
+	<li>really an arbitrary function generator, but can be operated as a step sequencer</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Transister Sound Labs Stepper Acid</strong><br /><small><br /><a href="https://www.modulargrid.net/e/transistor-sounds-labs-stepper-acid" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.transistorsoundslabs.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/stepper-acid.jpeg"><img src="gfx/stepper-acid.jpeg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">32</td>
-	<td class="">16</td>
+	<td class="">x0x</td>
+	<td class="">16/16</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
 	<td class=""></td>
 	<td class=""></td>
+	<td class="">32</td>
+	<td class="green">Yes</td>
 	<td class="">395</td>
-	<td class="">x0x</td>
 	<td class="left"><ul>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Verbos Multistage</strong><br /><small><br /><a href="https://www.modulargrid.net/e/verbos-electronics-voltage-multistage" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/verbos-multistage.jpeg"><img src="gfx/verbos-multistage.jpeg" style="width:150px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">8/8</td>
+	<td class="">1</td>
+	<td class="">1 cv<br /> 1 gate</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">30</td>
+	<td class="green">Yes</td>
+	<td class="">549</td>
+	<td class="left"><ul>
+	<li>no built-in quantizer</li>
+	<li> really an arbitrary function generator, but can be operated as a step sequencer</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Winter Modular Eloquencer</strong><br /><small><br /><a href="https://www.modulargrid.net/e/winter-modular-eloquencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://winter-modular.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/eloquencer.jpeg"><img src="gfx/eloquencer.jpeg" style="width:190px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="green">Yes</td>
-	<td class="">38</td>
-	<td class="">16</td>
+	<td class="">GUI/x0x</td>
+	<td class="">16/16</td>
 	<td class="">8</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">2 assignable</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">38</td>
+	<td class="green">Yes</td>
 	<td class="">616</td>
-	<td class="">GUI/x0x</td>
 	<td class="left"><ul>
 	<li>extensive random/probability features</li>
 	</ul></td>
 </tr>
+<tr><td class="left"><strong>XAOS Moskwa</strong><br /><small><br /><a href="https://www.modulargrid.net/e/xaoc-devices-moskwa" target="_blank">Modular Grid &gt;</a><br /><a href="http://xaocdevices.com/main/moskwa/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/xaos-moskwa.jpeg"><img src="gfx/xaos-moskwa.jpeg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Classic</td>
+	<td class="">8/8</td>
+	<td class="">1</td>
+	<td class="">1 cv<br /> 1 gate</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">20</td>
+	<td class="green">Yes</td>
+	<td class="">349</td>
+	<td class="left"><ul>
+	<li>no built-in quantizer</li>
+	<li> two units can be chained with expander for 16 step sequences</li>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>XOR-Electronics Nerdseq</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-nerdseq" target="_blank">Modular Grid &gt;</a><br /><a href="http://nerdsynth.com/nerdseq/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/nerdseq.jpeg"><img src="gfx/nerdseq.jpeg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="red">No</td>
-	<td class="">32</td>
-	<td class="">64</td>
+	<td class="">GUI/Tracker</td>
+	<td class="">???/64</td>
 	<td class="">6</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
 	<td class="">4 assignable</td>
-	<td class="">Ratcheting</td>
+	<td class="">ratcheting</td>
+	<td class="">32</td>
+	<td class="red">No</td>
 	<td class="gray">TBD</td>
-	<td class="">GUI/Tracker</td>
 	<td class="left"><ul>
 	<li>includes sample playback feature and cartridge-based voice expanders</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>ZetaOhm FLXS1</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-flxs1" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.zetaohm.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/flxs1.jpeg"><img src="gfx/flxs1.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="red">No</td>
-	<td class="">26</td>
-	<td class="">64</td>
+	<td class="">GUI/x0x</td>
+	<td class="">16/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
 	<td class="">4 assignable</td>
-	<td class="">Arpegiation</td>
+	<td class="">arpeggiation</td>
+	<td class="">26</td>
+	<td class="red">No</td>
 	<td class="">675</td>
-	<td class="">GUI/x0x</td>
 	<td class="left"><ul>
 	<li>extensive arpeggio features</li>
 	<li> LFOs</li>
@@ -286,24 +360,28 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 </tr>
 </table>
 
-<p>External and partially-external alternatives with direct Eurorack integration</p>
+<h2>External and partially-external alternatives with direct Eurorack integration</h2>
+<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
+These are a selection of alternatives to either a heavy-duty sequencer module as per above, or a straight-up MIDI-style approach:</p>
 <ul>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
 <li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a></li>
 <li><a href="http://www.monome.org/docs/modular/teletype/">Monome Teletype</a></li>
+<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a></li>
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
 </ul>
 
+<h2>Further alternatives</h2>
 <p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Popcorn</a> (clever eight step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer">Division6 Mattson SQ816</a> (classic 8-step design)</li>
-<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>
+<!--<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>-->
 <li><a href="https://www.modulargrid.net/e/make-noise-rene">Make Noise René</a> (1 track, 16 step quantizable with gate processing, but not full gate features)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>

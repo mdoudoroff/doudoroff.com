@@ -43,10 +43,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <!--<p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>-->
 
 <p>2017-06-18 Rough draft</p>
+<p>2017-06-19 Various tweaks and additions</p>
 
 <h2>Introduction</h2>
 
-<p>There are many many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty melodic-oriented designs with fairly complete gate sequencing ability</strong>.</p>
+<p>There are many many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty melodic-oriented designs with fairly complete gate sequencing ability</strong>.
+This comparison can never be more than a starting place for further research—most of the modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—their design
+bias toward different priorities and “process”. <strong>Sequencer are intensely personal tools.</strong></p>
 
 <p>The UI Style column is an attempt to broadly categorize the operational styles of these different designs:</p>
 
@@ -60,30 +63,37 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
 </ul>
 
+<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
+This provides a clue about how “playable” or how much “windowing” is going on while navigating the sequence.</p>
+
 <h2>Comparison</h2>
 
 '''
 
 html_bottom = u'''
 
-<p>External and partially-external alternatives with direct Eurorack integration</p>
+<h2>External and partially-external alternatives with direct Eurorack integration</h2>
+<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
+These are a selection of alternatives to either a heavy-duty sequencer module as per above, or a straight-up MIDI-style approach:</p>
 <ul>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
 <li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a></li>
 <li><a href="http://www.monome.org/docs/modular/teletype/">Monome Teletype</a></li>
+<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a></li>
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
 </ul>
 
+<h2>Further alternatives</h2>
 <p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Popcorn</a> (clever eight step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer">Division6 Mattson SQ816</a> (classic 8-step design)</li>
-<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>
+<!--<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>-->
 <li><a href="https://www.modulargrid.net/e/make-noise-rene">Make Noise René</a> (1 track, 16 step quantizable with gate processing, but not full gate features)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>
@@ -181,7 +191,7 @@ with open('sequencers-data.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
-					v = row[fieldname]
+					v = row[fieldname].decode('utf-8')
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
