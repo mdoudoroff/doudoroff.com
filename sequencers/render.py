@@ -52,11 +52,12 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <ul>
 	<li><strong>Classic</strong> means you have dedicated, separate pots/sliders for each step, yielding an operational style comparable to the vintage analog sequencers of yore</li>
-	<li><strong>TB-303-ish</strong> generally implies a row of light-up buttons for choosing a step and a row of buttons similar to an octave of a piano keyboard for choosing notes</li>
-	<li><strong>Cirklon-style</strong> is a more modal push-button UI, often with lots of menus/remapping of the buttons</li>
-	<li><strong>multi-mode hybrid</strong> means there are pots/sliders for each step, but they get used for different modes and often are not accurately representing state</li>
-	<li><strong>per-step parametric window</strong> means a form-like interface that focuses on step parameters with no overall reperesentation of the sequence available</li>
-	<li><strong>paginated GUI</strong> means an interface focused on a computer-type display, generally with lots of menus</li>
+	<li><strong>x0x</strong> generally implies a row of light-up buttons for choosing a step and a row of buttons similar to an octave of a piano keyboard for choosing notes</li>
+	<li><strong>Cirklon-ish</strong> is a more modal push-button UI, often with lots of menus/remapping of the buttons</li>
+	<li><strong>hybrid</strong> means there are pots/sliders for each step, but they get used for different modes and often are not accurately representing state</li>
+	<li><strong>per-step window</strong> means a form-like interface that focuses on step parameters with no overall reperesentation of the sequence available</li>
+	<li><strong>GUI</strong> means an interface focused on a computer-type display, generally with lots of menus</li>
+	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
 </ul>
 
 <h2>Comparison</h2>
@@ -74,10 +75,12 @@ html_bottom = u'''
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
+<li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
 </ul>
 
 <p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Popcorn</a> (clever eight step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer">Division6 Mattson SQ816</a> (classic 8-step design)</li>
 <li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>
@@ -86,6 +89,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/rossum-electro-music-control-forge">Rossum Electro-Music Control Forge</a> (arbitrary function generator with extensive step transition features that can be operated as an 8-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
+<li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
 </ul>
 
