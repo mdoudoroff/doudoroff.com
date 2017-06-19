@@ -42,8 +42,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <!--<p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>-->
 
-<p>2017-06-18 Rough draft</p>
-<p>2017-06-19 Various tweaks and additions</p>
+<p>2017-06-18 Rough draft<br />2017-06-19 Various tweaks and additions</p>
 
 <h2>Introduction</h2>
 
