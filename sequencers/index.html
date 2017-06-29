@@ -36,7 +36,9 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692#2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p>2017-06-18 Rough draft<br />2017-06-19 Various tweaks and additions</p>
+<p>2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
+2017-06-18 Rough draft<br />
+2017-06-19 Various tweaks and additions</p>
 
 <h2>Introduction</h2>
 
@@ -61,20 +63,40 @@ This provides a clue about how “playable” or how much “windowing” is goi
 
 <h2>Comparison</h2>
 
-<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">CV ins</th><th class="">Ratcheting/repeat</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
 <tr><td class="left"><strong>Audio Damage Sequencer 1</strong><br /><small><br /><a href="https://www.modulargrid.net/e/audio-damage-adm06-sequencer-1" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.audiodamage.com/collections/eurorack/products/adm06-sequencer-1" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/seq1.jpeg"><img src="gfx/seq1.jpeg" style="width:180px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">x0x</td>
 	<td class="">16/64</td>
 	<td class="">1</td>
 	<td class="">1 pitch<br /> 3 cv<br /> 1 gate<br /> 1 aux</td>
-	<td class="">2 assignable</td>
+	<td class="">per step length; accent</td>
 	<td class="">ratcheting</td>
+	<td class="">2 assignable</td>
 	<td class="">36</td>
 	<td class="green">Yes</td>
 	<td class="">699</td>
 	<td class="left"><ul>
 	<li>lots of internal modulation options</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Bastl Instruments Popcorn</strong><br /><small><br /><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.bastl-instruments.com/modular/popcorn/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/popcorn.jpeg"><img src="gfx/popcorn.jpeg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">8</td>
+	<td class="">1</td>
+	<td class="">1 cv<br /> 1 gate</td>
+	<td class="">per step on/off; global gate length</td>
+	<td class=""></td>
+	<td class="">1 assignable</td>
+	<td class="">10</td>
+	<td class="green">Yes</td>
+	<td class="">263</td>
+	<td class="left"><ul>
+	<li>requires external clock</li>
+	<li> dual clock inputs supports bi-directional clocking</li>
+	<li> cv and expanders available</li>
+	<li> chain two for 16 steps</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Copper Traces Seek</strong><br /><small><br /><a href="https://www.modulargrid.net/e/copper-traces-seek" target="_blank">Modular Grid &gt;</a><br /><a href="http://coppertracesmusic.com" target="_blank">Web site &gt;</a></small></td>
@@ -83,6 +105,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">1/64</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
+	<td class="">per step on/off; accent</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">12</td>
@@ -97,8 +120,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">2 playback modifier gate ins</td>
+	<td class="">per step pulse, ratchet, hold or pass-through</td>
 	<td class="">repeat</td>
+	<td class="">2 playback modifier gate ins</td>
 	<td class="">30</td>
 	<td class="green">Yes</td>
 	<td class="">500</td>
@@ -113,6 +137,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 3 trig</td>
+	<td class="">per step trigger and gate (three trigger buses)</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">50</td>
@@ -128,8 +153,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/16</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">2 assignable</td>
+	<td class="gray">TBD</td>
 	<td class="">ratcheting</td>
+	<td class="">2 assignable</td>
 	<td class="">42</td>
 	<td class="red">No</td>
 	<td class="gray">TBD</td>
@@ -144,8 +170,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16*</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">1 tempo, 2 assignable, 1 cv record in</td>
+	<td class="">per step length and delay</td>
 	<td class="">ratcheting</td>
+	<td class="">1 tempo, 2 assignable, 1 cv record in</td>
 	<td class="">32</td>
 	<td class="green">Yes</td>
 	<td class="">666</td>
@@ -161,12 +188,31 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">2 assignable</td>
+	<td class="">per step pulse, ratchet or hold</td>
 	<td class="">repeat</td>
+	<td class="">2 assignable</td>
 	<td class="">34</td>
 	<td class="green">Yes</td>
 	<td class="">580</td>
 	<td class="left"><ul>
+	</ul></td>
+</tr>
+<tr><td class="left">Make Noise René</td>
+	<td class="pic"><a href="gfx/rene.jpeg"><img src="gfx/rene.jpeg" style="width:170px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">16</td>
+	<td class="">1</td>
+	<td class="">2 cv<br /> 2 gate (sort of)</td>
+	<td class="">pulse or pass-through (see notes)</td>
+	<td class=""></td>
+	<td class="">6 multipurpose</td>
+	<td class="">34</td>
+	<td class="green">Yes</td>
+	<td class="">500</td>
+	<td class="left"><ul>
+	<li>requires external clock</li>
+	<li> dual clock inputs supports dual-axis sequencing</li>
+	<li> more a gate processor than gate sequencer (conditionally generates pulses or passes through and merges externally-generated gates)</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Malekko Heavy Industry Varigate 8+</strong><br /><small><br /><a href="https://www.modulargrid.net/e/malekko-heavy-industry-varigate-8" target="_blank">Modular Grid &gt;</a><br /><a href="https://malekkoheavyindustry.com/product/varigate-8/" target="_blank">Web site &gt;</a></small></td>
@@ -175,14 +221,33 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16*</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">1 randomization gate, 1 cv record in</td>
+	<td class="">per step on/off and delay</td>
 	<td class="">ratcheting</td>
+	<td class="">1 randomization gate, 1 cv record in</td>
 	<td class="">26</td>
 	<td class="green">Yes</td>
 	<td class="">549</td>
 	<td class="left"><ul>
 	<li>provides additional six gate-only tracks</li>
+	<li> probability features</li>
 	<li> *sliders do not always reflect state</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Mattson sq816</strong><br /><small><br /><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.division-6.com/products/mattson-sq816-sequencer.php" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mattson-sq816.jpeg"><img src="gfx/mattson-sq816.jpeg" style="width:260px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">8 or 16</td>
+	<td class="">2 or 1</td>
+	<td class="">1 cv<br /> 1 gate<br /> plus extra per-step gate outs</td>
+	<td class="">global pulse, hold or pass-through</td>
+	<td class=""></td>
+	<td class="">1 transpose cv, 1 clock rate cv</td>
+	<td class="">52</td>
+	<td class="green">Yes</td>
+	<td class="">970</td>
+	<td class="left"><ul>
+	<li>midi output</li>
+	<li> gated run control</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Modcan Touch Sequencer</strong><br /><small><br /><a href="https://www.modulargrid.net/e/modcan-touch-sequencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://modcan.com/emodules/touchseq.html" target="_blank">Web site &gt;</a></small></td>
@@ -191,8 +256,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">1 assignable</td>
+	<td class="">per step length</td>
 	<td class=""></td>
+	<td class="">1 assignable</td>
 	<td class="">21</td>
 	<td class="green">Yes</td>
 	<td class="">600</td>
@@ -206,8 +272,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">???/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">1 assignable trigger, 1 assignable gate</td>
+	<td class="">???</td>
 	<td class="">ratcheting, repeat</td>
+	<td class="">1 assignable trigger, 1 assignable gate</td>
 	<td class="">18</td>
 	<td class="green">Yes</td>
 	<td class="">480</td>
@@ -222,8 +289,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">4 assignable</td>
+	<td class="">global length</td>
 	<td class=""></td>
+	<td class="">4 assignable</td>
 	<td class="">14</td>
 	<td class="green">Yes (DIY)</td>
 	<td class="">300 (approx)</td>
@@ -236,10 +304,11 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="pic"><a href="gfx/er101.jpeg"><img src="gfx/er101.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">per-step window</td>
 	<td class="">1/99+</td>
-	<td class="">4 identical</td>
+	<td class="">4</td>
 	<td class="">2 cv<br /> 1 gate</td>
-	<td class="">various part selection, assignable modulation and cv recording options with ER-201 expander</td>
+	<td class="">per step length</td>
 	<td class="">ratcheting, repeat (de facto)</td>
+	<td class="">various part selection, assignable modulation and cv recording options with ER-201 expander</td>
 	<td class="">26</td>
 	<td class="green">Yes</td>
 	<td class="">600</td>
@@ -254,8 +323,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 2 trigger/gate</td>
-	<td class="">yes (it’s complicated)</td>
+	<td class="">no per step control; global length</td>
 	<td class="">arbitrary behavioral logic</td>
+	<td class="">yes (it’s complicated)</td>
 	<td class="">22</td>
 	<td class="green">Yes</td>
 	<td class="">499</td>
@@ -269,6 +339,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
+	<td class="">per step on/off; accent</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">32</td>
@@ -283,6 +354,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
+	<td class="">per step on/off</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">30</td>
@@ -299,8 +371,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16</td>
 	<td class="">8</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">2 assignable</td>
+	<td class="">per step length</td>
 	<td class="">ratcheting, repeat</td>
+	<td class="">2 assignable</td>
 	<td class="">38</td>
 	<td class="green">Yes</td>
 	<td class="">616</td>
@@ -310,10 +383,11 @@ This provides a clue about how “playable” or how much “windowing” is goi
 </tr>
 <tr><td class="left"><strong>XAOS Moskwa</strong><br /><small><br /><a href="https://www.modulargrid.net/e/xaoc-devices-moskwa" target="_blank">Modular Grid &gt;</a><br /><a href="http://xaocdevices.com/main/moskwa/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/xaos-moskwa.jpeg"><img src="gfx/xaos-moskwa.jpeg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">Classic</td>
+	<td class="">classic</td>
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
+	<td class="">per step length</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">20</td>
@@ -330,8 +404,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">???/64</td>
 	<td class="">6</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">4 assignable</td>
+	<td class="gray">TBD</td>
 	<td class="">ratcheting</td>
+	<td class="">4 assignable</td>
 	<td class="">32</td>
 	<td class="red">No</td>
 	<td class="gray">TBD</td>
@@ -345,8 +420,9 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">4 assignable</td>
+	<td class="">per step length</td>
 	<td class="">arpeggiation</td>
+	<td class="">4 assignable</td>
 	<td class="">26</td>
 	<td class="red">No</td>
 	<td class="">675</td>
@@ -377,14 +453,9 @@ These are a selection of alternatives to either a heavy-duty sequencer module as
 <h2>Further alternatives</h2>
 <p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
-<li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Popcorn</a> (clever eight step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer">Division6 Mattson SQ816</a> (classic 8-step design)</li>
-<!--<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>-->
-<li><a href="https://www.modulargrid.net/e/make-noise-rene">Make Noise René</a> (1 track, 16 step quantizable with gate processing, but not full gate features)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>
-<!--<li><a href="https://www.modulargrid.net/e/rossum-electro-music-control-forge">Rossum Electro-Music Control Forge</a> (arbitrary function generator with extensive step transition features that can be operated as an 8-step sequencer)</li>-->
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>

@@ -42,7 +42,9 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692#2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p>2017-06-18 Rough draft<br />2017-06-19 Various tweaks and additions</p>
+<p>2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
+2017-06-18 Rough draft<br />
+2017-06-19 Various tweaks and additions</p>
 
 <h2>Introduction</h2>
 
@@ -89,14 +91,9 @@ These are a selection of alternatives to either a heavy-duty sequencer module as
 <h2>Further alternatives</h2>
 <p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
-<li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Popcorn</a> (clever eight step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/division-6-mattson-sq816-sequencer">Division6 Mattson SQ816</a> (classic 8-step design)</li>
-<!--<li><a href="https://www.modulargrid.net/e/doepfer-a-155v">Doepfer A-155v</a> (classic sequencer design, but without full gate features)</li>-->
-<li><a href="https://www.modulargrid.net/e/make-noise-rene">Make Noise René</a> (1 track, 16 step quantizable with gate processing, but not full gate features)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>
-<!--<li><a href="https://www.modulargrid.net/e/rossum-electro-music-control-forge">Rossum Electro-Music Control Forge</a> (arbitrary function generator with extensive step transition features that can be operated as an 8-step sequencer)</li>-->
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
