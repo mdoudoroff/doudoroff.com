@@ -34,7 +34,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692#2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
+<p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
 <p>2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
 2017-06-18 Rough draft<br />
@@ -46,7 +46,10 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 This comparison can never be more than a starting place for further research—most of the modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—their design
 bias toward different priorities and “process”. Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencer are intensely personal tools.</strong></p>
 
-<p>The UI Style column is an attempt to broadly categorize the operational styles of these different designs:</p>
+<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
+This provides a clue about how “playable” or how much “windowing” is going on while navigating the sequence.</p>
+
+<p>The <strong>UI Style</strong> column is an attempt to broadly categorize the operational styles of these different designs:</p>
 
 <ul>
 	<li><strong>Classic</strong> means you have dedicated, separate pots/sliders for each step, yielding an operational style comparable to the vintage analog sequencers of yore</li>
@@ -58,8 +61,8 @@ bias toward different priorities and “process”. Most of these modules have t
 	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
 </ul>
 
-<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
-This provides a clue about how “playable” or how much “windowing” is going on while navigating the sequence.</p>
+<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit, or at least pass through, gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some
+attempt to provide per-step control over gate length whereas most do not. Per step gate length can be critical for use with ADSR and ASR envelopes, but often implies a more complex, programmatic user interface for the sequencer.</p>
 
 <h2>Comparison</h2>
 
@@ -213,6 +216,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>requires external clock</li>
 	<li> dual clock inputs supports dual-axis sequencing</li>
 	<li> more a gate processor than gate sequencer (conditionally generates pulses or passes through and merges externally-generated gates)</li>
+	<li> separate aux cv output (arcane)</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Malekko Heavy Industry Varigate 8+</strong><br /><small><br /><a href="https://www.modulargrid.net/e/malekko-heavy-industry-varigate-8" target="_blank">Modular Grid &gt;</a><br /><a href="https://malekkoheavyindustry.com/product/varigate-8/" target="_blank">Web site &gt;</a></small></td>
