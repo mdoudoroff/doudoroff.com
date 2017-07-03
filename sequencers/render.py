@@ -42,7 +42,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p>2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
+<p>2017-07-03 Corrections<br />
+2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
 2017-06-18 Rough draft<br />
 2017-06-19 Various tweaks and additions</p>
 
