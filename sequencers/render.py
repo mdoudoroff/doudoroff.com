@@ -92,6 +92,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module as
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
+<li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY)</li>
 </ul>
 
 <h2>Further alternatives</h2>
