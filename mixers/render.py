@@ -42,7 +42,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2017-12-21 Added Intellijel Mixup<br />
+<p>2018-02-07 Stubbed out 4ms Listen modules<br />
+2017-12-21 Added Intellijel Mixup<br />
 2017-11-13 Stubbed out Random*Source Stereo Mixer<br />
 2017-08-14 Doepfer shipping update<br />
 2017-07-04 Stubbed out the Befaco HEXA<br />
