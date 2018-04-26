@@ -42,7 +42,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p>2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
+<p>2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
+2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
 2017-08-15 NerdSeq updates<br />
 2017-07-03 Corrections<br />
 2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
@@ -85,9 +86,9 @@ These are a selection of alternatives to either a heavy-duty sequencer module as
 <ul>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
-<li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a></li>
-<li><a href="http://www.monome.org/docs/modular/teletype/">Monome Teletype</a></li>
-<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a></li>
+<li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a> (direct patch)</li>
+<li><a href="http://www.monome.org/docs/modular/teletype/">Monome Teletype</a> (direct patch)</li>
+<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a> (direct patch)</li>
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
