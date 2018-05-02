@@ -28,7 +28,9 @@ img {
 table {border-collapse: collapse;}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
+td.notes {text-align: left; font-size: 85%}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+th { background-color: #eee; color: #666; font-size: 85%; }
 </style>
 <body>
 
@@ -42,7 +44,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p>2018-05-01 Added Roland 531, updates<br />
+<p>2018-05-02 Added Happy Nerding PanMix Jr.<br />
+2018-05-01 Added Roland 531, updates<br />
 2018-03-15 Added Hyrlo, minor updates<br />
 2018-02-07 Stubbed out 4ms Listen modules<br />
 2017-12-21 Added Intellijel Mixup<br />
@@ -100,6 +103,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/blue-lantern-modules-stereoscopic-duo-vca--">Blue Lantern Stereoscopic Duo VCA</a></li>
 <li><a href="https://www.modulargrid.net/e/hikari-instruments-atten-mixer">Hikari Atten/Mixer</a></li>
 <li><a href="http://omsonic.co.uk/product/omsonic-universal-panning-expander-upe-and-mixer/">omsonic Universal Panning Expander and Mixer</a></li>
+<li><a href="https://github.com/sarnesjo/nearness">Nearness</a> (clever space-efficient DIY design)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
@@ -128,7 +132,7 @@ def klassForproduct(val):
 	return 'left'
 
 def klassFornotes(val):
-	return 'left'
+	return 'notes'
 
 def klassForheadphone(val):
 	if val.lower().find('yes') > -1:
@@ -203,11 +207,9 @@ with open('mixers-data.csv') as csvfile:
 
 			rows.append(columns)
 
-s = html_top
 
-
-s += '<table>' 
-
+# build th row
+s = u''
 s += '<tr>'
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
@@ -219,8 +221,18 @@ for fieldname in reader.fieldnames:
 
 		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
 s += '</tr>'
+table_header_row = s
+
+# build table
+s = html_top
+s += '<table>' 
+
 
 for row in rows:
+
+	if rows.index(row)%5==0:
+		s += table_header_row
+
 	s += u'\n<tr>'
 	s += u'\n\t'.join(row)
 	s += u'\n</tr>'
