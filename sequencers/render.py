@@ -14,6 +14,16 @@ html_top = u'''
 body {
 	max-width: 1600px;
 	margin: 1em;
+	font-family: Georgia, serif;
+	font-size: 16px;
+}
+p, li {
+	max-width: 50rem;
+	line-height: 1.4;
+}
+.updates {
+	font-size: 85%;
+	font-family: monospace;
 }
 a {text-decoration:none;}
 a:hover {color:red;text-decoration:underline;}
@@ -25,7 +35,7 @@ img {
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
-table {border-collapse: collapse;}
+table {border-collapse: collapse;font-size: 85%}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
@@ -42,7 +52,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p>2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
+<p class="updates">2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
 2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
 2017-08-15 NerdSeq updates<br />
 2017-07-03 Corrections<br />
@@ -52,27 +62,26 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h2>Introduction</h2>
 
-<p>There are many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty melodic-oriented designs with fairly complete gate sequencing ability</strong>.
-This comparison can never be more than a starting place for further research—most of the modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—their design
-bias toward different priorities and “process”. Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencer are intensely personal tools.</strong></p>
+<p>There are many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong> It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
+<p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
+biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
 <p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
-This provides a clue about how “playable” or how much “windowing” is going on while navigating the sequence.</p>
+This provides a clue about how “playable” or how much “windowing” is going on working with and navigating your sequence.</p>
 
 <p>The <strong>UI Style</strong> column is an attempt to broadly categorize the operational styles of these different designs:</p>
 
 <ul>
-	<li><strong>Classic</strong> means you have dedicated, separate pots/sliders for each step, yielding an operational style comparable to the vintage analog sequencers of yore</li>
-	<li><strong>x0x</strong> generally implies a row of light-up buttons for choosing a step and a row of buttons similar to an octave of a piano keyboard for choosing notes</li>
-	<li><strong>Cirklon-ish</strong> is a more modal push-button UI, often with lots of menus/remapping of the buttons</li>
-	<li><strong>hybrid</strong> means there are pots/sliders for each step, but they get used for different modes and often are not accurately representing state</li>
-	<li><strong>per-step window</strong> means a form-like interface that focuses on step parameters with no overall reperesentation of the sequence available</li>
-	<li><strong>GUI</strong> means an interface focused on a computer-type display, generally with lots of menus</li>
+	<li><strong>classic</strong> means you have dedicated, separate pots/sliders for each step, yielding an operational style comparable to the vintage analog sequencers of yore</li>
+	<li><strong>hybrid</strong> means there are pots/sliders for each step, but they get used for different modes and often are not accurately reflecting the current state of what you’re looking at</li>
+	<li><strong>x0x</strong> generally implies a row of light-up buttons for choosing a step and a row of buttons similar to an octave of a piano keyboard for choosing notes—the working style popularized by the Roland 303 etc. in the 1980s</li>
+	<li><strong>Cirklon-ish</strong> is a more modal push-button UI, often with lots of menus that remap the meaning of the buttons</li>
+	<li><strong>per-step window</strong> means a form-like interface that focuses on the parameters of a single step, with no overall reperesentation of the sequence available</li>
+	<li><strong>GUI</strong> means an interface focused on a computer-type display, generally with lots of menus and modes</li>
 	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
 </ul>
 
-<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit, or at least pass through, gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some
-attempt to provide per-step control over gate length whereas most do not. Per step gate length can be critical for use with ADSR and ASR envelopes, but often implies a more complex, programmatic user interface for the sequencer.</p>
+<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some attempt to provide per-step control over gate length, whereas most do not. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
 
 <h2>Comparison</h2>
 
@@ -82,7 +91,7 @@ html_bottom = u'''
 
 <h2>External and partially-external alternatives with direct Eurorack integration</h2>
 <p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
-These are a selection of alternatives to either a heavy-duty sequencer module as per above, or a straight-up MIDI-style approach:</p>
+These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can produce CV):</p>
 <ul>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
@@ -97,11 +106,10 @@ These are a selection of alternatives to either a heavy-duty sequencer module as
 </ul>
 
 <h2>Further alternatives</h2>
-<p>In addition, these modules don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
+<p>In addition, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
-<li><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel">Ornament & Crime</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
