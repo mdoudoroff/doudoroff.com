@@ -35,10 +35,11 @@ img {
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
-table {border-collapse: collapse;font-size: 85%}
+table {border-collapse: collapse;font-size: 85%;}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+th { background-color: #eee; color: #666; }
 </style>
 <body>
 
@@ -218,11 +219,8 @@ with open('sequencers-data.csv') as csvfile:
 
 			rows.append(columns)
 
-s = html_top
-
-
-s += '<table>' 
-
+# build th row
+s = u''
 s += '<tr>'
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
@@ -234,8 +232,31 @@ for fieldname in reader.fieldnames:
 
 		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
 s += '</tr>'
+table_header_row = s
+
+
+s = html_top
+
+
+s += '<table>' 
+
+# s += '<tr>'
+# for fieldname in reader.fieldnames:
+# 	if not fieldname.find('_')==0:
+# 		klass = ''
+# 		try:
+# 			klass = locals()["klassFor%s" % fieldname](fieldname)
+# 		except:
+# 			klass = klassForAny(fieldname)
+
+# 		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
+# s += '</tr>'
 
 for row in rows:
+
+	if rows.index(row)%5==0:
+		s += table_header_row
+
 	s += u'\n<tr>'
 	s += u'\n\t'.join(row)
 	s += u'\n</tr>'
