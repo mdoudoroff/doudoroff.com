@@ -53,7 +53,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
+<p class="updates">2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br />
+2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
 2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
 2017-08-15 NerdSeq updates<br />
 2017-07-03 Corrections<br />
@@ -114,6 +115,8 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
+<li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
+<li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>

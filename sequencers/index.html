@@ -47,7 +47,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
+<p class="updates">2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br />
+2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
 2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
 2017-08-15 NerdSeq updates<br />
 2017-07-03 Corrections<br />
@@ -85,7 +86,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="pic"><a href="gfx/1010-toolbox.jpg"><img src="gfx/1010-toolbox.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">GUI</td>
 	<td class="">32</td>
-	<td class="">4</td>
+	<td class="">16</td>
 	<td class="">1 cv<br /> 1 gate</td>
 	<td class="">per step</td>
 	<td class=""></td>
@@ -97,6 +98,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>MIDI interface</li>
 	<li> rhythm sequencer</li>
 	<li> function generators (LFOs)</li>
+	<li>cv recorder</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Audio Damage Sequencer 1</strong><br /><small><br /><a href="https://www.modulargrid.net/e/audio-damage-adm06-sequencer-1" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.audiodamage.com/collections/eurorack/products/adm06-sequencer-1" target="_blank">Web site &gt;</a></small></td>
@@ -185,21 +187,23 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> no built-in quantizer or storage</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Five12 Vector</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-vector" target="_blank">Modular Grid &gt;</a></small></td>
+<tr><td class="left"><strong>Five12 Vector</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-vector" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.five12.net/showthread.php?t=3408" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/vector.jpeg"><img src="gfx/vector.jpeg" style="width:210px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">Cirklon-ish</td>
 	<td class="">8/16</td>
-	<td class="">2</td>
+	<td class="">2-6</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="gray">TBD</td>
+	<td class="">per step length; velocity</td>
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">42</td>
-	<td class="red">No</td>
-	<td class="gray">TBD</td>
+	<td class="green">Yes</td>
+	<td class="">699</td>
 	<td class="left"><ul>
-	<li>extensive MIDI support</li>
+	<li>hardware implementation of Numerology</li>
+	<li> extensive MIDI support</li>
 	<li> two additional MIDI-out-only tracks</li>
+	<li> expander adds more track outs and gate outs</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Golt Red Light District</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-red-light-district" target="_blank">Modular Grid &gt;</a><br /><a href="http://goltsynth.com/rld/index.html" target="_blank">Web site &gt;</a></small></td>
@@ -408,6 +412,41 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>various playback modes, including self-transposition</li>
 	</ul></td>
 </tr>
+<tr><td class="left"><strong>Pittsburgh Sequence Designer 128</strong><br /><small><br /><a href="https://www.modulargrid.net/e/pittsburgh-modular-electronic-sequence-designer-128" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/pittsburgh-128.jpg"><img src="gfx/pittsburgh-128.jpg" style="width:235px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">hybrid</td>
+	<td class="">32</td>
+	<td class="">4</td>
+	<td class="">1 cv<br /> 1 gate</td>
+	<td class="">per-track length</td>
+	<td class="">ratcheting, repeat</td>
+	<td class="">2 assignable</td>
+	<td class="">47</td>
+	<td class="red">No</td>
+	<td class="">649</td>
+	<td class="left"><ul>
+	<li>midi support</li>
+	<li> quantization</li>
+	<li> euclidean and random features</li>
+	<li> more</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+<tr><td class="left"><strong>Random*Source Serge Sequencer 8 XL</strong><br /><small><br /><a href="https://www.modulargrid.net/e/random-source-serge-sequencer-8-xl-seq8xl" target="_blank">Modular Grid &gt;</a><br /><a href="http://randomsource.net/serge_euro" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/random-source-xl.jpg"><img src="gfx/random-source-xl.jpg" style="width:210px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">classic</td>
+	<td class="">8</td>
+	<td class="">2</td>
+	<td class="">1 cv<br /> shared gate</td>
+	<td class="">per step pulse</td>
+	<td class=""></td>
+	<td class="">direction, hold</td>
+	<td class="">42</td>
+	<td class="green">Yes</td>
+	<td class="">630</td>
+	<td class="left"><ul>
+	<li>per step gate outs</li>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>Rossum Electro-Music Control Forge</strong><br /><small><br /><a href="https://www.modulargrid.net/e/rossum-electro-music-control-forge" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rossum-electro.com/products/control_forge/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/control-forge.jpeg"><img src="gfx/control-forge.jpeg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">GUI/per-step window</td>
@@ -423,7 +462,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="left"><ul>
 	<li>really an arbitrary function generator, but can be operated as a step sequencer</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Squarp Hermod Modular Brain</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-hermod" target="_blank">Modular Grid &gt;</a><br /><a href="http://squarp.net/hermod" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/squarp-hermod.jpg"><img src="gfx/squarp-hermod.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">Tracker</td>
@@ -475,7 +514,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> no built-in quantizer</li>
 	<li> really an arbitrary function generator, but can be operated as a step sequencer</li>
 	</ul></td>
-</tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
 <tr><td class="left"><strong>Winter Modular Eloquencer</strong><br /><small><br /><a href="https://www.modulargrid.net/e/winter-modular-eloquencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://winter-modular.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/eloquencer.jpeg"><img src="gfx/eloquencer.jpeg" style="width:190px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">GUI/x0x</td>
@@ -508,7 +547,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>no built-in quantizer</li>
 	<li> two units can be chained with expander for 16 step sequences</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>XOR-Electronics Nerdseq</strong><br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-nerdseq" target="_blank">Modular Grid &gt;</a><br /><a href="http://nerdsynth.com/nerdseq/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/nerdseq.jpeg"><img src="gfx/nerdseq.jpeg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">GUI/Tracker</td>
@@ -573,6 +612,8 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
+<li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
+<li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
