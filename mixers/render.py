@@ -54,7 +54,9 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
-<p class="updates">2018-05-02 Added Happy Nerding PanMix Jr.<br />
+<p class="updates">
+2018-09-07 Added SSI M-4 and Happy Nerding 3X<br />
+2018-05-02 Added Happy Nerding PanMix Jr.<br />
 2018-05-01 Added Roland 531, updates<br />
 2018-03-15 Added Hyrlo, minor updates<br />
 2018-02-07 Stubbed out 4ms Listen modules<br />
