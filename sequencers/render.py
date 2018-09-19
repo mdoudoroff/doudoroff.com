@@ -223,7 +223,7 @@ with open('sequencers-data.csv') as csvfile:
 
 			rows.append(columns)
 
-print rows
+# print rows
 
 # build th row
 s = u''
