@@ -102,8 +102,10 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.monome.org/docs/modular/teletype/">Monome Teletype</a> (direct patch)</li>
 <li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a> (direct patch)</li>
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
+<li><a href="https://www.kilpatrickaudio.com/?p=carbon">Kilpatrick Audio Carbon</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
+<li><a href="http://www.signalarts.ca/sattetra.html">Signal Arts TetraMAPS</a> (Lemur/TouchOSC eurorack hardware + iPad solution)</li>
 <li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
 <li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY)</li>
 </ul>
