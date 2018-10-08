@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   max-width: 1000px;
   margin: 0 auto;
-  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
