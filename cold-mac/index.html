@@ -166,24 +166,20 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Patching audio or CV into SLOPE, you get:</p>
 <ol>
 	<li>a rectified copy of the input signal from SLOPE(OUT)</li>
-	<li>a slightly laggy envelope-following CV out of FOLLOW</li>
+	<li>an envelope-following CV that chases the input voltage (fixed slew rate) out of FOLLOW</li>
 </ol>
-
-<p>SURVEY has no effect in this patch arrangement.</p>
 
 <img src="gfx/08-slope-and-follow.jpg" />
 
 <p>CREASE is normaled to SLOPE, so from either the SLOPE input or—breaking the normal—the CREASE input, you get:</p>
 <ol>
 	<li>a flipped/wavefolded/creased copy of the input signal out of the CREASE(OUT)</li>
-	<li>a very laggy CV out of LOCATION, that non-linearly chases the input voltage</li>
+	<li>a voltage out out of LOCATION that rises or falls toward the voltage of the input at a rate proportional to the input volage level; in other words, the greater above or below zero volts the input level is, the faster the voltage at LOCATION will rise (or fall) to meet it; whenever the input voltage is zero volts, LOCATION will not change from wherever it is</li>
 </ol>
-
-<p>Again, SURVEY has no effect in this patch arrangement.</p>
 
 <img src="gfx/09-crease-and-location.jpg" />
 
-<p>While SURVEY has no effect on the above, per se, SLOPE is normaled to SURVEY, so the current SURVEY voltage is running through all the above if no cable is patched into SLOPE (or CREASE) to break the normal.</p>
+<p>While SURVEY has no effect on the slope and crease circuits, per se, SLOPE is normaled to SURVEY, so the current SURVEY voltage is running through all the above if no cable is patched into SLOPE (or CREASE) to break the normal.</p>
 
 <h2 id="surveillance">Patch Surveillance</h2>
 
