@@ -94,8 +94,9 @@ html_bottom = u'''
 
 <h2>External and partially-external alternatives with direct Eurorack integration</h2>
 <p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
-These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can produce CV):</p>
+These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can all produce CV):</p>
 <ul>
+<li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
 <li><a href="https://novationmusic.com/keys/sl-mkiii">Novation SL MkIII</a> (direct patch)</li>
