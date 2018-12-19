@@ -62,7 +62,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>This document is an attempt to understand the <a href="http://www.whimsicalraps.com/pages/coldmac">Cold Mac</a> utility module for Eurorack synthesizers, designed and manufactured by Whimsical Raps. Please note: this is an unofficial, customer-generated document and may contain errors. The author will attempt to correct any errors as he becomes aware of them.</p>
 
 
-<p style="color: gray; font-size: 80%; max-width: 100%;">Revision history:<br />2018-12-03 Massive 2.0 rewrite<br />2018-10-13 Added overview and various other corrections and amplifications<br />2018-08-01 Added Nathan Moody’s helpful <em>Modular Patch Walkthrough 01</em> video (see bottom of page)<br />2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
+<p style="color: gray; font-size: 80%; max-width: 100%;">Revision history:<br />2018-12-18 Corrections<br />2018-12-03 Massive 2.0 rewrite<br />2018-10-13 Added overview and various other corrections and amplifications<br />2018-08-01 Added Nathan Moody’s helpful <em>Modular Patch Walkthrough 01</em> video (see bottom of page)<br />2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
 
 
 
@@ -77,8 +77,10 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 		<li><a href="#inversion">Signal Inversion and Offset</a></li>
 		<li><a href="#logic">Analog Logic</a></li>
 		<li><a href="#logical">Logical Mixing</a></li>
-		<li><a href="#rectification">Rectification &amp; Envelope following</a></li>
-		<li><a href="#crease">Crease &amp; Location</a></li>
+		<li><a href="#rectification">Full Rectification</a></li>
+		<li><a href="#follow">Envelope follower</a></li>
+		<li><a href="#crease">Crease</a></li>
+		<li><a href="#location">Location</a></li>
 		<li><a href="#unitymix">Straight Audio Unity Mix</a></li>
 	</ol>
 	<li><a href="#system">Cold Mac as a System</a></li>
@@ -283,23 +285,24 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h2 id="location"><span class="context blue">LOCATION</span>Location</h2>
 
-<p>Patching CV into CREASE (audio won’t generally work here) you will produce a voltage from LOCATION that rises or falls toward the input voltage at a rate proportional to the magnitude of the input voltage.
+<p>Patching CV into CREASE (audio won’t generally work here) you will produce a voltage from LOCATION that rises or falls at a rate proportional to the magnitude of the input voltage (relative to 0v).
 <img src="gfx/location.jpg" /></p>
-
 
 
 <p>LOCATION is a curious integrator circuit. More or less, you steer its voltage up and down by applying positive or negative voltage at CREASE. It’s a bit like the steering wheel of a car, or perhaps more like the rudder of a boat: the higher the voltage (negative or positive) you apply, the faster LOCATION changes. When you apply zero volts, LOCATION stops changing.</p>
 
+<p>Note that because CREASE is normaled to SLOPE, and SLOPE is normaled to SURVEY, with nothing patched to either SLOPE or CREASE, the offset voltage from SURVEY will be processed by the location integrator. Indeed, one of the stated intentions for the LOCATION circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
+
 <p>The maximum range of LOCATION seems to be about ±4.5v, but the actual range depends a bit on the CV you input. For example, if you hit it with ±5v, you’ll only see about a ±4.2v range from LOCATION. If you hit it with ±10v, you’ll see ±4.5v. Even with high voltage swings at the CREASE input, this integrator moves at a somewhat leisurely pace. For it to do much interesting, you generally need to be applying bipolar CV at CREASE, otherwise LOCATION will simply drift up and mostly stay there (although there may be some one-shot creative application for this). Moreover, if the CV you apply at CREASE is modulating in a more or less evenly balanced way between positive and negative (such as a typical LFO), then it’s going to even out at LOCATION and you might get something like a flatline. So, to creatively employ LOCATION, you probably need one of two things as a CV input:</p>
 
 <ul>
-	<li>a CV source that is normally sits at zero volts but sometimes goes positive or negative like steering corrections to a vehicle; a joystick could be one example</li>
+	<li>a CV source that is normally sits at zero volts but sometimes goes positive or negative like steering corrections to a vehicle; a joystick could be one example, but the Survey knob itself is the most obvious</li>
 	<li>a CV source that drifts up and down arbitrarily, at an <em>average slow pace</em>; pitch data on a relatively long sequence might do this.</li>
 </ul>
 
 <p>In any case, the actual result from LOCATION depends a great deal on the relative speed of the fluctuating input CV and the <em>fixed</em> rate behavior of the LOCATION integrator.</p>
 
-<p>Note that because CREASE is normaled to SLOPE, and SLOPE is normaled to SURVEY, with nothing patched to either SLOPE or CREASE, the offset voltage from SURVEY will be processed by the location integrator. Indeed, one of the stated intentions for the LOCATION circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
+
 
 
 
