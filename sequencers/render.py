@@ -53,7 +53,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2018-09-19 added René 2<br />
+<p class="updates">2019-02-10 stubbed out Per|Former (DIY)<br />
+2018-09-19 added René 2<br />
 2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br />
 2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
 2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
