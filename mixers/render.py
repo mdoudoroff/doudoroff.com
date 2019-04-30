@@ -55,6 +55,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
 <p class="updates">
+2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
 2019-03-27 added Befaco STMIX<br />
 2019-02-10 added JPSynth Stereo Mixer<br />
 2019-01-20 added Tesseract Tex Mix<br />
