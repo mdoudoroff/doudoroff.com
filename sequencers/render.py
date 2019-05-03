@@ -53,7 +53,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2019-02-13 added CFM1<br />
+<p class="updates">2019-05-03 added USTA, release years<br />
+2019-02-13 added CFM1<br />
 2019-02-10 stubbed out Per|Former (DIY)<br />
 2018-09-19 added René 2<br />
 2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br />
@@ -67,7 +68,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h2>Introduction</h2>
 
-<p>There are many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong> It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
+<p>There are many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
 <p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
 biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
@@ -142,6 +143,8 @@ def klassForAny(val):
 
 def valueForproduct(row):
 	h = u'<strong>%s</strong>' % row['product'].decode('utf-8')
+	if row['_year'].strip():
+		h += u'<br />%s' % row['_year']
 	h += u'<br /><small>'
 	if row['_mgurl'].strip():
 		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
