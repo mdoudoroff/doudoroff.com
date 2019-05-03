@@ -108,6 +108,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
 <li><a href="https://www.kilpatrickaudio.com/?p=carbon">Kilpatrick Audio Carbon</a> (direct patch)</li>
 <li><a href="https://squarp.net">Squarp Pyramid</a> (direct patch)</li>
+<li><a href="http://www.grpsynthesizer.it/index.php/en/products/grp-synthesizer-r24-en.html">Grp Synthesizer R24</a> (direct patch)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="http://www.signalarts.ca/sattetra.html">Signal Arts TetraMAPS</a> (Lemur/TouchOSC eurorack hardware + iPad solution)</li>
