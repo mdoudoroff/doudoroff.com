@@ -53,7 +53,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2019-05-03 added USTA, release years<br />
+<p class="updates">2019-5-08 added Endorphin.es Ground Control<br />
+2019-05-03 added USTA, release years<br />
 2019-02-13 added CFM1<br />
 2019-02-10 stubbed out Per|Former (DIY)<br />
 2018-09-19 added René 2<br />
@@ -192,7 +193,7 @@ def valueForpic(row):
 		return '(need photo)'
 
 def valueFornotes(row):
-	vals = row['notes'].split(';')
+	vals = row['notes'].decode('utf-8').split(';')
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
@@ -220,7 +221,6 @@ with open('sequencers-data.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
-					# v = row[fieldname].decode('utf-8')
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
@@ -276,7 +276,11 @@ for row in rows:
 		s += table_header_row
 
 	s += u'\n<tr>'
-	s += u'\n\t'.join(row)
+	try:
+		s += u'\n\t'.join(row)
+	except:
+		print row
+		sys.exit(1)
 	s += u'\n</tr>'
 s += u'\n</table>'
 
