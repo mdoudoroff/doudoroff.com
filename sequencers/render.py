@@ -53,7 +53,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
-<p class="updates">2019-5-08 added Endorphin.es Ground Control<br />
+<p class="updates">2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
+2019-05-08 added Endorphin.es Ground Control<br />
 2019-05-03 added USTA, release years<br />
 2019-02-13 added CFM1<br />
 2019-02-10 stubbed out Per|Former (DIY)<br />
