@@ -55,6 +55,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
 <p class="updates">
+2019-06-28 added new column about individual outs (for multitracking), other updates
 2019-05-08 added OIII Quad Mixer<br />
 2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
 2019-03-27 added Befaco STMIX<br />
@@ -123,6 +124,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/hikari-instruments-atten-mixer">Hikari Atten/Mixer</a></li>
 <li><a href="http://omsonic.co.uk/product/omsonic-universal-panning-expander-upe-and-mixer/">omsonic Universal Panning Expander and Mixer</a></li>
 <li><a href="https://github.com/sarnesjo/nearness">Nearness</a> (clever space-efficient DIY design)</li>
+<li><a href="https://www.modulargrid.net/e/qu-bit-electronix-synapse">Qu-bit Synapse</a> (can be employed in a stereo manner)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
@@ -194,6 +196,10 @@ def valueFornotes(row):
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
+def valueForindiv_outs(row):
+	if row['indiv_outs']:
+		return row['indiv_outs']
+	return u'–'
 
 rows = []
 columnDisplayNames = {}
