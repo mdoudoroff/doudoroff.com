@@ -55,6 +55,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
 <p class="updates">
+2019-08-06 added ph Mixer++<br />
 2019-06-28 added new column about individual outs (for multitracking), other updates
 2019-05-08 added OIII Quad Mixer<br />
 2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
