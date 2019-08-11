@@ -69,8 +69,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 2017-08-15 NerdSeq updates<br />
 2017-07-03 Corrections<br />
 2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
-2017-06-18 Rough draft<br />
 2017-06-19 Various tweaks and additions<br />
+2017-06-18 Rough draft<br />
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
@@ -93,7 +93,7 @@ function toggleAdditionalUpdates()
 
 <h2>Introduction</h2>
 
-<p>There are many sequencer-related modules for Eurorack. This comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
+<p>This is a pretty exhaustive and up-to-date basic comparison of fancy sequencers for Eurorack. There are many sequencer-related modules for Eurorack, and this comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
 <p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
 biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
@@ -109,10 +109,12 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li><strong>Cirklon-ish</strong> is a more modal push-button UI, often with lots of menus that remap the meaning of the buttons</li>
 	<li><strong>per-step window</strong> means a form-like interface that focuses on the parameters of a single step, with no overall reperesentation of the sequence available</li>
 	<li><strong>GUI</strong> means an interface focused on a computer-type display, generally with lots of menus and modes</li>
-	<li><strong>Tracker</strong> means a spreadsheet-like interface</li>
+	<li><strong>Tracker</strong> is a specific GUI interface similar to a spreadsheet</li>
 </ul>
 
 <p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some attempt to provide per-step control over gate length, whereas most do not. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
+
+<p>Below the comparison is a directory of additional tools of potential interest that do not fit in the comparison.</p>
 
 <h2>Comparison</h2>
 
