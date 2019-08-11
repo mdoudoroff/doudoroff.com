@@ -40,6 +40,8 @@ td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
+
+.collapsed {display: none;}
 </style>
 <body>
 
@@ -53,9 +55,11 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
+<h4>Latest</h4>
 <p class="updates">2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
 2019-05-08 added Endorphin.es Ground Control<br />
 2019-05-03 added USTA, release years<br />
+<span id="additionalUpdates" class="collapsed">
 2019-02-13 added CFM1<br />
 2019-02-10 stubbed out Per|Former (DIY)<br />
 2018-09-19 added René 2<br />
@@ -66,7 +70,26 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 2017-07-03 Corrections<br />
 2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
 2017-06-18 Rough draft<br />
-2017-06-19 Various tweaks and additions</p>
+2017-06-19 Various tweaks and additions<br />
+</span>
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
+</p>
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
 
 <h2>Introduction</h2>
 

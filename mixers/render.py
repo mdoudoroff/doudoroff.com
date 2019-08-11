@@ -22,7 +22,7 @@ p, li {
 	line-height: 1.4;
 }
 .updates {
-	font-size: 11px;
+	font-size: 85%;
 	font-family: monospace;
 }
 a {text-decoration:none;}
@@ -41,6 +41,7 @@ td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
+.collapsed {display: none;}
 </style>
 <body>
 
@@ -52,12 +53,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
+<p>This is a pretty exhaustive and up-to-date basic comparison of all your stereo mixer module options for Eurorack, with an implicit focus on your output stage, although some of these modules are suitable for submixing. Some additional tools of potential interest are listed at the bottom. Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
 
+<h4>Latest</h4>
 <p class="updates">
 2019-08-06 added ph Mixer++<br />
-2019-06-28 added new column about individual outs (for multitracking), other updates
+2019-06-28 added new column about individual outs (for multitracking), other updates<br />
 2019-05-08 added OIII Quad Mixer<br />
+<span id="additionalUpdates" class="collapsed">
 2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
 2019-03-27 added Befaco STMIX<br />
 2019-02-10 added JPSynth Stereo Mixer<br />
@@ -102,7 +105,26 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 2016-01-26 More additions and corrections<br />
 2016-01-25 Added more placeholder photos, missing modules, errata<br />
 2016-01-24 Errata and many additions from Muffwiggler members<br />
-2016-01-23 Rough draft</p>
+2016-01-23 Rough draft<br />
+</span>
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
+</p>
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
 
 
 '''
