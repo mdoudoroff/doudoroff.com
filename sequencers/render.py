@@ -56,11 +56,12 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-05 added WMD Metron+Voltera<br />
+<p class="updates">2019-09-06 added Octone, other updates<br />
+2019-09-05 added WMD Metron+Voltera<br />
 2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
+<span id="additionalUpdates" class="collapsed">
 2019-05-08 added Endorphin.es Ground Control<br />
 2019-05-03 added USTA, release years<br />
-<span id="additionalUpdates" class="collapsed">
 2019-02-13 added CFM1<br />
 2019-02-10 stubbed out Per|Former (DIY)<br />
 2018-09-19 added René 2<br />
@@ -147,6 +148,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <h2>Further alternatives</h2>
 <p>In addition, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-bloom">Qu-bit Electronics Bloom</a> (random/evolving melody-focused 32-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
