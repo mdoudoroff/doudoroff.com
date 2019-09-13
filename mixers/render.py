@@ -42,8 +42,27 @@ td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
 .collapsed {display: none;}
+
+nav { 
+	background: #eee; 
+	padding: 0.25em;
+	font-family: Helvetica, sans-serif;
+	border-bottom: 2px solid #666;
+	}
+
+nav ul {  }
+nav ul li { list-style: none; display: inline-block; margin-right: 1em; }
 </style>
 <body>
+
+<nav>
+<ul>
+	<li>Eurorack Comparisons:</li>
+	<li><strong>Stereo Mixer Modules</strong></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+</ul>
+</nav>
 
 <h1>Eurorack Stereo Mixer Module Comparison</h1>
 
