@@ -35,6 +35,7 @@ img {
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
+.nope {background-color:#eee;}
 table {border-collapse: collapse;font-size: 85%;}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
@@ -204,8 +205,36 @@ def valueFornotes(row):
 def valueForrecording(row):
 	v = row['recording'].decode('utf-8')
 	if not v.strip():
-		return u'—'
+		return u' '
 	return v
+
+def valueFormaxlength(row):
+	v = row['recording'].decode('utf-8')
+	if not v.strip():
+		return u''
+	return row['maxlength'].decode('utf-8')
+
+def valueForclockedrec(row):
+	v = row['recording'].decode('utf-8')
+	if not v.strip():
+		return u' '
+	return row['clockedrec'].decode('utf-8')
+
+
+def klassForrecording(val):
+	if not val:
+		return 'nope'
+	return ''
+
+def klassFormaxlength(val):
+	if not val:
+		return 'nope'
+	return ''
+
+def klassForclockedrec(val):
+	if not val:
+		return 'nope'
+	return ''
 
 rows = []
 columnDisplayNames = {}
