@@ -79,7 +79,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-13 added Mungo g0, filled in more cells<br />
+<p class="updates">2019-09-14 added Doepfer and Ladik modules, ongoing basic corrections<br />
+2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
 <span id="additionalUpdates" class="collapsed">
 </span>
@@ -106,12 +107,18 @@ function toggleAdditionalUpdates()
 
 <p>This is—or rather, shall evolve into—an exhaustive comparison grid for Eurorack sampler options. The goal is to provide enough information to identify and narrow the options that interest you.</p>
 
-<p>Samplers fall into three main types:</p>
+<p>Not all modules that employ “sampling techniques” are included here; for example, digital delays also sample audio, but this is not a digital delay comparison. Only some of these modules can record/capture audio, but they can all replay audio on demand.</p>
+
+<p>Eurorack samplers generally fall into—or overlap—five main types:</p>
+
 <ul>
-	<li><strong>file player</strong>: these play sample files mainly from triggers or gates, usually (but not always) with an emphasis on 1v/o pitch control and enveloping</li>
-	<li><strong>virtual tape</strong>: these record and play (typically longer) segments of audio in the style of a tape recorder, with an emphasis on speed, direction and edits (splices)</li>
-	<li><strong>looper</strong>: these focus on simultaneously recording and playing (typically longer) loops of audio, much like a guitar pedal looper</li>
+	<li><strong>file player</strong>: these play audio data files, typically by triggers or gate, typically with an emphasis on 1v/o pitch control and enveloping; they may or may not have recording functionality</li>
+	<li><strong>audio buffer</strong>: these devices focus on capturing (recording) and manipulating audio (snippets) in rudimentary ways, such as modulating sample rates, to produce delay or wavetable-like effects; <em>these are more electronic than algorithmic</em></li>
+	<li><strong>virtual tape</strong>: these use DSP techniques to play (typically longer) segments of audio in the style of a tape recorder, with an emphasis on variable speed, direction and edits (splices)</li>
+	<li><strong>looper</strong>: these focus on simultaneously recording and playing (typically longer) ephemeral loops of audio, much like a guitar pedal looper</li>
+	<li><strong>granular</strong>: these capture (typically ephemeral) audio and use DSP techniques to derive new audio through granular techniques</li>
 </ul>
+
 <p>Many modules do some or all of the above, but there’s nearly always some sort of bias built into the user interface.</p>
 
 <h2>Comparison</h2>
@@ -123,6 +130,7 @@ html_bottom = u'''
 <h2>Other modules of interest</h2>
 <p>These don’t really fit in the above comparison, but are probably worth being aware of.</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms Dual Loopoing Delay</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
 <li><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel">Grayscale Supercell</a></li>
@@ -134,6 +142,7 @@ html_bottom = u'''
 <li><a href="https://1010music.com/blackbox-a-compact-sampling-studio-press-release">1010 Music Blackbox</a></li>
 <li><a href="https://www.elektron.se/products/digitakt/">Elektron Digitakt</a></li>
 <li><a href="https://www.elektron.se/products/octatrack-mkii/">Elektron Octatrack MKII</a></li>
+<li><a href="https://synthstrom.com/product/deluge/">Synthstrom Deluge</a></li>
 <li><a href="https://teenage.engineering/products/op-1">Teenage Engineering OP-1</a></li>
 <li><a href="https://teenage.engineering/products/op-z">Teenage Engineering OP-Z</a></li>
 <li><a href="https://teenage.engineering/products/po">Teenage Engineering PO-33</a></li>
