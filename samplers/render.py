@@ -79,7 +79,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-14 added Doepfer and Ladik modules, ongoing basic corrections<br />
+<p class="updates">2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
 <span id="additionalUpdates" class="collapsed">
@@ -166,6 +166,8 @@ def valueForproduct(row):
 	if row['_year'].strip():
 		h += u'<br />%s' % row['_year']
 	h += u'<br /><small>'
+	if row['_hp'].strip():
+		h += u'<br />%s HP' % row['_hp']
 	if row['_mgurl'].strip():
 		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
@@ -194,7 +196,7 @@ def valueForpic(row):
 	if row['pic'].strip():
 		width = 0
 		try:
-			width = int(row['hp']) * 5
+			width = int(row['_hp']) * 5
 			height = 26.2 * 5
 		except:
 			pass
