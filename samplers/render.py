@@ -79,7 +79,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
+<p class="updates">2019-09-15 added 4ms DLD; many corrections and details<br />
+2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
 <span id="additionalUpdates" class="collapsed">
@@ -131,7 +132,6 @@ html_bottom = u'''
 <p>These don’t really fit in the above comparison, but are probably worth being aware of.</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
-<li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms Dual Loopoing Delay</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
 <li><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel">Grayscale Supercell</a></li>
 <li><a href="https://www.modulargrid.net/e/mutable-instruments-clouds">Mutable Instruments Clouds</a> (and various clones)</a></li>
