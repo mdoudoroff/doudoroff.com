@@ -79,7 +79,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-15 added 4ms DLD; many corrections and details<br />
+<p class="updates">2019-09-16 added (nascent) latency column, corrections<br />
+2019-09-15 added 4ms DLD; many corrections and details<br />
 2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
@@ -106,7 +107,7 @@ function toggleAdditionalUpdates()
 
 <h2>Introduction</h2>
 
-<p>This is—or rather, shall evolve into—an exhaustive comparison grid for Eurorack sampler options. The goal is to provide enough information to identify and narrow the options that interest you.</p>
+<p>This is an exhaustive comparison grid for Eurorack sampler options. The goal is to provide enough information to identify and narrow the options that interest you.</p>
 
 <p>Not all modules that employ “sampling techniques” are included here; for example, digital delays also sample audio, but this is not a digital delay comparison. Only some of these modules can record/capture audio, but they can all replay audio on demand.</p>
 
@@ -131,6 +132,8 @@ html_bottom = u'''
 <h2>Other modules of interest</h2>
 <p>These don’t really fit in the above comparison, but are probably worth being aware of.</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/noise-reap-isd-sampler">Noise Reap ISD Sampler</a> (teensy-based DIY hackable platform by mxmxmx)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-eurotrash-mkii">Eurotrash Mk II dual mono WAV player</a> (teensy-based DIY hackable platform by mxmxmx)</li>
 <li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
 <li><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel">Grayscale Supercell</a></li>
