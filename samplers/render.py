@@ -135,9 +135,11 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/noise-reap-isd-sampler">Noise Reap ISD Sampler</a> (teensy-based DIY hackable platform by mxmxmx)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-eurotrash-mkii">Eurotrash Mk II dual mono WAV player</a> (teensy-based DIY hackable platform by mxmxmx)</li>
 <li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
+<li><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay">4ms Dual Looping Delay</a> (delay with some sampler-esque capabilities)</li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
-<li><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel">Grayscale Supercell</a></li>
-<li><a href="https://www.modulargrid.net/e/mutable-instruments-clouds">Mutable Instruments Clouds</a> (and various clones)</a></li>
+<li><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel">Grayscale Supercell</a> (granular processor)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-clouds">Mutable Instruments Clouds</a> (granular processor)</a></li>
+<li><a href="https://www.modulargrid.net/e/instruo-arbhar">Instruo Arbhar</a> (granular)</a> (granular processor)</li>
 </ul>
 
 <h2>Non-modular alternatives</h2>
