@@ -76,6 +76,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-22 added Happy Nerding 2xSAM<br />
 2019-08-06 added ph Mixer++<br />
 2019-06-28 added new column about individual outs (for multitracking), other updates<br />
 2019-05-08 added OIII Quad Mixer<br />
