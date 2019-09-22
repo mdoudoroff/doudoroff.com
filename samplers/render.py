@@ -37,6 +37,7 @@ img {
 .gray {color:gray;}
 .nope {background-color:#eee;}
 table {border-collapse: collapse;font-size: 85%;}
+table.players .nope { display: none; }
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
@@ -79,14 +80,16 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
+<p class="updates">2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
+2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
 2019-09-17 added (tentatively) Clouds, more edits/augmentations<br />
 2019-09-16 added (nascent) latency column, corrections<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-15 added 4ms DLD; many corrections and details<br />
 2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
-<span id="additionalUpdates" class="collapsed">
+
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
@@ -124,8 +127,6 @@ function toggleAdditionalUpdates()
 </ul>
 
 <p>Many modules do some or all of the above, but there’s nearly always some sort of bias built into the user interface.</p>
-
-<h2>Comparison</h2>
 
 '''
 
@@ -255,6 +256,7 @@ def klassForclockedrec(val):
 	return ''
 
 rows = []
+rows_players = []
 columnDisplayNames = {}
 
 with open('samplers.csv') as csvfile:
@@ -282,13 +284,16 @@ with open('samplers.csv') as csvfile:
 					columns.append('<td class="%s">%s</td>' % (klass,v))
 
 
-			rows.append(columns)
+			if row['recording'].strip():
+				rows.append(columns)
+			else:
+				rows_players.append(columns)
 
 # print rows
 
 # build th row
-s = u''
-s += '<tr>'
+s = []
+
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
 		klass = ''
@@ -297,32 +302,37 @@ for fieldname in reader.fieldnames:
 		except:
 			klass = klassForAny(fieldname)
 
-		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
-s += '</tr>'
-table_header_row = s
+		s.append('<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname]))
 
+table_header_row = u''.join(['<tr>'] + s + ['</tr>'])
+table_player_header_row = u''.join(['<tr>'] + s[:3]+ s[6:] + ['</tr>'])
 
 s = html_top
 
-
+s += '<h2>Samplers (with recording/capture)</h2>'
 s += '<table>' 
-
-# s += '<tr>'
-# for fieldname in reader.fieldnames:
-# 	if not fieldname.find('_')==0:
-# 		klass = ''
-# 		try:
-# 			klass = locals()["klassFor%s" % fieldname](fieldname)
-# 		except:
-# 			klass = klassForAny(fieldname)
-
-# 		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
-# s += '</tr>'
 
 for row in rows:
 
 	if rows.index(row)%4==0:
 		s += table_header_row
+
+	s += u'\n<tr>'
+	try:
+		s += u'\n\t'.join(row)
+	except:
+		print row
+		sys.exit(1)
+	s += u'\n</tr>'
+s += u'\n</table>'
+
+s += '<h2>Sample Players (no recording/capture)</h2>'
+s += '<table class="players">' 
+
+for row in rows_players:
+
+	if rows_players.index(row)%4==0:
+		s += table_player_header_row
 
 	s += u'\n<tr>'
 	try:

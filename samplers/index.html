@@ -31,6 +31,7 @@ img {
 .gray {color:gray;}
 .nope {background-color:#eee;}
 table {border-collapse: collapse;font-size: 85%;}
+table.players .nope { display: none; }
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
@@ -73,14 +74,16 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=3120088"><em>Eurorack sampler comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
+<p class="updates">2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
+2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
 2019-09-17 added (tentatively) Clouds, more edits/augmentations<br />
 2019-09-16 added (nascent) latency column, corrections<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-15 added 4ms DLD; many corrections and details<br />
 2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
 2019-08-26 super rough first draft<br />
-<span id="additionalUpdates" class="collapsed">
+
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
@@ -119,9 +122,7 @@ function toggleAdditionalUpdates()
 
 <p>Many modules do some or all of the above, but there’s nearly always some sort of bias built into the user interface.</p>
 
-<h2>Comparison</h2>
-
-<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+<h2>Samplers (with recording/capture)</h2><table><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>1010 Music Bitbox</strong><br />2016<br /><small><br />26 HP<br /><a href="https://www.modulargrid.net/e/1010-music-bitbox-2-0" target="_blank">Modular Grid &gt;</a><br /><a href="https://1010music.com/product/bitbox-eurorack-module-with-touchscreen" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/bitbox.jpg"><img src="gfx/bitbox.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -141,23 +142,6 @@ function toggleAdditionalUpdates()
 	<li>Ableton export</li>
 	<li>Arturia-style TRS MIDI support</li>
 	<li> ships with sample content</li>
-	</ul></td>
-</tr>
-<tr><td class="left"><strong>2hp Play</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-play" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.twohp.com/modules/play" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/2hp-play.jpg"><img src="gfx/2hp-play.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">“extremely low”</td>
-	<td class="">1 mono</td>
-	<td class="">file, pitch</td>
-	<td class="">volatile buffers; FAT32 microSD, 16-bit 44.1kHz mono WAV, up to 32 files per card</td>
-	<td class="green">Yes</td>
-	<td class="">150</td>
-	<td class="left notes"><ul>
-	<li>ships with sample content</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>4ms Digital Looping Delay</strong><br />2015<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay" target="_blank">Web site &gt;</a></small></td>
@@ -196,24 +180,6 @@ function toggleAdditionalUpdates()
 	<li>ships with sample content</li>
 	<li> end-of-sample trigger outputs</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
-<tr><td class="left"><strong>ADDAC 111</strong><br />2013<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac111-ultra-wav-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.addacsystem.com/product/addac100-series/addac111" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/addac-111.jpg"><img src="gfx/addac-111.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">???</td>
-	<td class="">1 mono</td>
-	<td class="">file, pitch, start, length</td>
-	<td class="">volatile buffers; FAT16 microSD, 16-bit 22.05kHz mono, 72 files per card</td>
-	<td class="green">Yes</td>
-	<td class="">500</td>
-	<td class="left notes"><ul>
-	<li>built in VCA, envelope follower</li>
-	<li>expander enables gate sequencing of eight sample files</li>
-	</ul></td>
 </tr>
 <tr><td class="left"><strong>ALM Busy Circuits Squid Salmple</strong><br />2018<br /><small><br />21 HP<br /><a href="https://www.modulargrid.net/e/alm-busy-circuits-alm022-squid-salmple" target="_blank">Modular Grid &gt;</a><br /><a href="https://busycircuits.com/alm022/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/alm-squid.jpg"><img src="gfx/alm-squid.jpg" style="width:105px;height:131.0px;cursor:zoom-in;" /></a></td>
@@ -231,24 +197,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	<li>ships with sample content</li>
 	</ul></td>
-</tr>
-<tr><td class="left"><strong>Bastl GrandPa</strong><br />2015<br /><small><br />5 HP<br /><a href="https://www.modulargrid.net/e/bastl-instruments-grandpa" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.bastl-instruments.com/modular/grandpa/" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/bastl-granpa.jpg"><img src="gfx/bastl-granpa.jpg" style="width:25px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player, granular</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">“some” (anecdotal)</td>
-	<td class="">1 mono</td>
-	<td class="">1 assignable (pitch, crush, grain size, attack, release, start, end, etc.)</td>
-	<td class="">volatile buffers; microSD, 12-bit 22.05kHz mono WAV, up to 35 samples per card</td>
-	<td class="green">Yes</td>
-	<td class="">185</td>
-	<td class="left notes"><ul>
-	<li>expander available that significantly expands CV support</li>
-	</ul></td>
-</tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Doepfer A-112 Sampler</strong><br />2012<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-112v" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/a112.htm" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/doepfer-A-112.jpg"><img src="gfx/doepfer-A-112.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
@@ -266,24 +215,6 @@ function toggleAdditionalUpdates()
 	<li>can be used as a sort of wavetable oscillator</li>
 	<li> manufacturer’s software for side-loading data through SysEx defunct</li>
 	<li> non-volatile memory requires battery</li>
-	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
-<tr><td class="left"><strong>Erica Synths Pico Drums</strong><br />2016<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-drums" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-drums/" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/erica-pico-drums.jpg"><img src="gfx/erica-pico-drums.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">2</td>
-	<td class="">1-5 milliseconds</td>
-	<td class="">1 mono</td>
-	<td class="">1 assignable (pitch, decay, file, volume)</td>
-	<td class="">non-volatile state; side-load, 12-bit 44kHz mono WAV</td>
-	<td class="green">Yes</td>
-	<td class="">135</td>
-	<td class="left notes"><ul>
-	<li>swapping samples requires USB programmer adapter (sold separately) and computer web browser</li>
-	<li> includes sample content</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Erica Synths Sample Drum</strong><br />2018<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-sample-drum" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/drum-series/sample-drum/" target="_blank">Web site &gt;</a></small></td>
@@ -304,45 +235,6 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Expert Sleepers Disting mk4</strong><br />2017<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br /><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/expert-sleepers-disting-mk4.jpg"><img src="gfx/expert-sleepers-disting-mk4.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">2</td>
-	<td class="">~1 millisecond</td>
-	<td class="">1 stereo</td>
-	<td class="">depends on mode (pitch, decay, file, speed, reverse, scrub, pan)</td>
-	<td class="">volatile buffer; FAT32 microSD, 16-bit WAV (any sample rate</td>
-	<td class="green">Yes</td>
-	<td class="">190</td>
-	<td class="left notes"><ul>
-	<li>multi-purpose utility module (sample playing is one of many functions)</li>
-	<li> many features require file-based configuration on a computer beforehand</li>
-	<li> multi-sample playback support</li>
-	<li> some MIDI support</li>
-	<li> DC coupled, so can play CV samples</li>
-	</ul></td>
-</tr>
-<tr><td class="left"><strong>Futureretro Transient Plus</strong><br />2018<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/futureretro-transient-plus" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.future-retro.com/products.html#!/Transient-Plus/p/84467820/category=0" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/future-retro-transient.jpg"><img src="gfx/future-retro-transient.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">???</td>
-	<td class="">1 mono</td>
-	<td class="">2 assignable (pitch, distortion, filtration, various kinds of audio modulations, etc.)</td>
-	<td class="">non-volatile state; FAT16 microSD, up to 600 files of max 16MB total</td>
-	<td class="green">Yes</td>
-	<td class="">250</td>
-	<td class="left notes"><ul>
-	<li>really a sample-based percussion module, but you can swap out the samples</li>
-	<li> includes sample content</li>
-	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Ginko Synthese Sampleslicer MkII</strong><br />2017<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/ginko-synthese-sampleslicer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.ginkosynthese.com/product/sampleslicer/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/ginko-synthese-samplesclicer-mk2.jpg"><img src="gfx/ginko-synthese-samplesclicer-mk2.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
@@ -377,7 +269,7 @@ function toggleAdditionalUpdates()
 	<li>real time granular processor that can freeze (and store and recall) its (short) buffer for use like a sampler</li>
 	<li> alternate modes (algorithms) and alternate firmware</li>
 	</ul></td>
-</tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Grayscale Microcell</strong><br />2019<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/grayscale-microcell-ucell-µcell-micro-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br /><a href="https://grayscale.info/microcell/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/grayscale-microcell.jpg"><img src="gfx/grayscale-microcell.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
@@ -413,7 +305,7 @@ function toggleAdditionalUpdates()
 	<li>designed for audio rate modulation</li>
 	<li> extensive expander available that also enables stereo operation</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Instruo arbhar</strong><br />2019<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/instruo-arbhar" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.instruomodular.com/product/arbhar/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-arbhar.jpg"><img src="gfx/instruo-arbhar.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
@@ -450,24 +342,7 @@ function toggleAdditionalUpdates()
 	<li>dual varispeed looper with one-shot mode</li>
 	<li> includes 2hp expander with additional CV ins (not shown)</li>
 	</ul></td>
-</tr>
-<tr><td class="left"><strong>Ladik D-333</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/ladik-d-333-rom-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=1167" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/ladik-d-333.jpg"><img src="gfx/ladik-d-333.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">???</td>
-	<td class="">1 mono</td>
-	<td class="">file, pitch</td>
-	<td class="">replaceable EEPROM chip</td>
-	<td class="green">Yes</td>
-	<td class="">80</td>
-	<td class="left notes"><ul>
-	<li>not designed for frequently changing the sample content</li>
-	</ul></td>
-</tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Make Noise Morphagene</strong><br />2017<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/make-noise-morphagene" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/modules/morphagene" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/make-noise-morphagene.jpg"><img src="gfx/make-noise-morphagene.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, granular</td>
@@ -485,7 +360,7 @@ function toggleAdditionalUpdates()
 	<li>reel “ecosystem” on freesound.org</li>
 	<li>end-of-splice trigger</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Make Noise Phonogene</strong><br />2012<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/make-noise-phonogene" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/phonogene.shtml" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/make-noise-phonogene.jpg"><img src="gfx/make-noise-phonogene.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape</td>
@@ -535,7 +410,7 @@ function toggleAdditionalUpdates()
 	<td class="">600</td>
 	<td class="left notes"><ul>
 	</ul></td>
-</tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Mungo s0 Sample/Slicer</strong><br />2015<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-s0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/s0.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mungo-s0.jpg"><img src="gfx/mungo-s0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, file player</td>
@@ -553,7 +428,7 @@ function toggleAdditionalUpdates()
 	<li>DC coupled (can record/play CV)</li>
 	<li> looping sustain</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Mungo g0</strong><br />2012<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-g0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/g0.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mungo-g0.jpg"><img src="gfx/mungo-g0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
@@ -568,23 +443,6 @@ function toggleAdditionalUpdates()
 	<td class="green">Yes</td>
 	<td class="">499</td>
 	<td class="left notes"><ul>
-	</ul></td>
-</tr>
-<tr><td class="left"><strong>Music Thing Radio Music</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/music-thing-modular-radio-music" target="_blank">Modular Grid &gt;</a><br /><a href="http://musicthing.co.uk/modular/?p=1075" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/music-thing-radio-music.jpg"><img src="gfx/music-thing-radio-music.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">1</td>
-	<td class="">9+ milliseconds (depends on sd card)</td>
-	<td class="">1 mono</td>
-	<td class="">file select</td>
-	<td class="">FAT16 or FAT32 microSD, 16-bit 44.1kHz mono, up to 16 banks of up to 75 samples</td>
-	<td class="green">Yes</td>
-	<td class="">115</td>
-	<td class="left notes"><ul>
-	<li>designed to play long clips directly of microSD</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>Mutable Instruments Clouds</strong><br />2014<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/mutable-instruments-clouds" target="_blank">Modular Grid &gt;</a><br /><a href="https://mutable-instruments.net/modules/clouds/" target="_blank">Web site &gt;</a></small></td>
@@ -692,23 +550,6 @@ function toggleAdditionalUpdates()
 	<li>alternate firmware</li>
 	</ul></td>
 </tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
-<tr><td class="left"><strong>Qu-bit Wave</strong><br />2016<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-wave" target="_blank">Modular Grid &gt;</a></small></td>
-	<td class="pic"><a href="gfx/qubit-wave.jpg"><img src="gfx/qubit-wave.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">file player</td>
-	<td class="nope"> </td>
-	<td class="nope"></td>
-	<td class="nope"> </td>
-	<td class="">4</td>
-	<td class="">???</td>
-	<td class="">4 mono</td>
-	<td class="">pitch, file</td>
-	<td class="">microSD, 16-bit 44kHz mono WAV, up to four banks of 16 samples each</td>
-	<td class="">Discontinued?</td>
-	<td class="">480</td>
-	<td class="left notes"><ul>
-	<li>includes sample content</li>
-	</ul></td>
-</tr>
 <tr><td class="left"><strong>Rossum Electro-Music Assimil8or</strong><br />2017<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/rossum-electro-music-assimil8or" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rossum-electro.com/products/assimil8or/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/rossum-assimil8or.jpg"><img src="gfx/rossum-assimil8or.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -767,7 +608,185 @@ function toggleAdditionalUpdates()
 	<li>this is really a tape delay simulator with a looper and pitch-able “phrase sampler” grafted on</li>
 	<li> four virtual playback heads to play with</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
+<tr><td class="left"><strong>Whimsical Raps MANNEQUINS W/</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/mannequins-w" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.whimsicalraps.com/products/wslash" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mannequins-w.jpg"><img src="gfx/mannequins-w.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">virtual tape, looper</td>
+	<td class="">mono</td>
+	<td class="">hours</td>
+	<td class="">patched or through Teletype???</td>
+	<td class="">1</td>
+	<td class="">???</td>
+	<td class="">1 mono</td>
+	<td class="">um… yes?</td>
+	<td class="">non-volatile buffer</td>
+	<td class="green">Yes</td>
+	<td class="">250</td>
+	<td class="left notes"><ul>
+	<li>unique</li>
+	</ul></td>
+</tr>
+</table><h2>Sample Players (no recording/capture)</h2><table class="players"><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>2hp Play</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-play" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.twohp.com/modules/play" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/2hp-play.jpg"><img src="gfx/2hp-play.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">“extremely low”</td>
+	<td class="">1 mono</td>
+	<td class="">file, pitch</td>
+	<td class="">volatile buffers; FAT32 microSD, 16-bit 44.1kHz mono WAV, up to 32 files per card</td>
+	<td class="green">Yes</td>
+	<td class="">150</td>
+	<td class="left notes"><ul>
+	<li>ships with sample content</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>ADDAC 111</strong><br />2013<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac111-ultra-wav-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.addacsystem.com/product/addac100-series/addac111" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/addac-111.jpg"><img src="gfx/addac-111.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">???</td>
+	<td class="">1 mono</td>
+	<td class="">file, pitch, start, length</td>
+	<td class="">volatile buffers; FAT16 microSD, 16-bit 22.05kHz mono, 72 files per card</td>
+	<td class="green">Yes</td>
+	<td class="">500</td>
+	<td class="left notes"><ul>
+	<li>built in VCA, envelope follower</li>
+	<li>expander enables gate sequencing of eight sample files</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Bastl GrandPa</strong><br />2015<br /><small><br />5 HP<br /><a href="https://www.modulargrid.net/e/bastl-instruments-grandpa" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.bastl-instruments.com/modular/grandpa/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/bastl-granpa.jpg"><img src="gfx/bastl-granpa.jpg" style="width:25px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player, granular</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">“some” (anecdotal)</td>
+	<td class="">1 mono</td>
+	<td class="">1 assignable (pitch, crush, grain size, attack, release, start, end, etc.)</td>
+	<td class="">volatile buffers; microSD, 12-bit 22.05kHz mono WAV, up to 35 samples per card</td>
+	<td class="green">Yes</td>
+	<td class="">185</td>
+	<td class="left notes"><ul>
+	<li>expander available that significantly expands CV support</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Erica Synths Pico Drums</strong><br />2016<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-drums" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-drums/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/erica-pico-drums.jpg"><img src="gfx/erica-pico-drums.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">2</td>
+	<td class="">1-5 milliseconds</td>
+	<td class="">1 mono</td>
+	<td class="">1 assignable (pitch, decay, file, volume)</td>
+	<td class="">non-volatile state; side-load, 12-bit 44kHz mono WAV</td>
+	<td class="green">Yes</td>
+	<td class="">135</td>
+	<td class="left notes"><ul>
+	<li>swapping samples requires USB programmer adapter (sold separately) and computer web browser</li>
+	<li> includes sample content</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Expert Sleepers Disting mk4</strong><br />2017<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br /><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/expert-sleepers-disting-mk4.jpg"><img src="gfx/expert-sleepers-disting-mk4.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">2</td>
+	<td class="">~1 millisecond</td>
+	<td class="">1 stereo</td>
+	<td class="">depends on mode (pitch, decay, file, speed, reverse, scrub, pan)</td>
+	<td class="">volatile buffer; FAT32 microSD, 16-bit WAV (any sample rate</td>
+	<td class="green">Yes</td>
+	<td class="">190</td>
+	<td class="left notes"><ul>
+	<li>multi-purpose utility module (sample playing is one of many functions)</li>
+	<li> many features require file-based configuration on a computer beforehand</li>
+	<li> multi-sample playback support</li>
+	<li> some MIDI support</li>
+	<li> DC coupled, so can play CV samples</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Futureretro Transient Plus</strong><br />2018<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/futureretro-transient-plus" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.future-retro.com/products.html#!/Transient-Plus/p/84467820/category=0" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/future-retro-transient.jpg"><img src="gfx/future-retro-transient.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">???</td>
+	<td class="">1 mono</td>
+	<td class="">2 assignable (pitch, distortion, filtration, various kinds of audio modulations, etc.)</td>
+	<td class="">non-volatile state; FAT16 microSD, up to 600 files of max 16MB total</td>
+	<td class="green">Yes</td>
+	<td class="">250</td>
+	<td class="left notes"><ul>
+	<li>really a sample-based percussion module, but you can swap out the samples</li>
+	<li> includes sample content</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Ladik D-333</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/ladik-d-333-rom-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=1167" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ladik-d-333.jpg"><img src="gfx/ladik-d-333.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">???</td>
+	<td class="">1 mono</td>
+	<td class="">file, pitch</td>
+	<td class="">replaceable EEPROM chip</td>
+	<td class="green">Yes</td>
+	<td class="">80</td>
+	<td class="left notes"><ul>
+	<li>not designed for frequently changing the sample content</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Music Thing Radio Music</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/music-thing-modular-radio-music" target="_blank">Modular Grid &gt;</a><br /><a href="http://musicthing.co.uk/modular/?p=1075" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/music-thing-radio-music.jpg"><img src="gfx/music-thing-radio-music.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">1</td>
+	<td class="">9+ milliseconds (depends on sd card)</td>
+	<td class="">1 mono</td>
+	<td class="">file select</td>
+	<td class="">FAT16 or FAT32 microSD, 16-bit 44.1kHz mono, up to 16 banks of up to 75 samples</td>
+	<td class="green">Yes</td>
+	<td class="">115</td>
+	<td class="left notes"><ul>
+	<li>designed to play long clips directly of microSD</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Qu-bit Wave</strong><br />2016<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-wave" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/qubit-wave.jpg"><img src="gfx/qubit-wave.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">file player</td>
+	<td class="nope"> </td>
+	<td class="nope"></td>
+	<td class="nope"> </td>
+	<td class="">4</td>
+	<td class="">???</td>
+	<td class="">4 mono</td>
+	<td class="">pitch, file</td>
+	<td class="">microSD, 16-bit 44kHz mono WAV, up to four banks of 16 samples each</td>
+	<td class="">Discontinued?</td>
+	<td class="">480</td>
+	<td class="left notes"><ul>
+	<li>includes sample content</li>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>Tesseract Modular Nutella Tsunami</strong><br />2018<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/tesseract-modular-nutella-tsunami" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.tesseractmodular.com/eurorack-modules/nutella-tsunami" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tesseract-nutella.jpg"><img src="gfx/tesseract-nutella.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -822,24 +841,7 @@ function toggleAdditionalUpdates()
 	<li> also drum synth and wavetable engines</li>
 	<li> includes sample content</li>
 	</ul></td>
-</tr>
-<tr><td class="left"><strong>Whimsical Raps MANNEQUINS W/</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/mannequins-w" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.whimsicalraps.com/products/wslash" target="_blank">Web site &gt;</a></small></td>
-	<td class="pic"><a href="gfx/mannequins-w.jpg"><img src="gfx/mannequins-w.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
-	<td class="">virtual tape, looper</td>
-	<td class="">mono</td>
-	<td class="">hours</td>
-	<td class="">patched or through Teletype???</td>
-	<td class="">1</td>
-	<td class="">???</td>
-	<td class="">1 mono</td>
-	<td class="">um… yes?</td>
-	<td class="">non-volatile buffer</td>
-	<td class="green">Yes</td>
-	<td class="">250</td>
-	<td class="left notes"><ul>
-	<li>unique</li>
-	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>XOR Electronics Nerdseq</strong><br />2016<br /><small><br />32 HP<br /><a href="https://www.modulargrid.net/e/xor-electronics-nerdseq" target="_blank">Modular Grid &gt;</a><br /><a href="http://xor-electronics.com/nerdseq/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/xor-nerdseq.jpg"><img src="gfx/xor-nerdseq.jpg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
