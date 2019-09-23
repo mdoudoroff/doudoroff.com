@@ -61,7 +61,7 @@ nav ul li { list-style: none; display: inline-block; margin-right: 1em; }
 	<li><strong>Stereo Mixer Modules</strong></li>
 	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
 	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
-	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</strong></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
 </ul>
 </nav>
 
