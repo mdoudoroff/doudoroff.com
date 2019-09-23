@@ -92,6 +92,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
 
+<p>If you’re looking for microtonal quantization, use your browser’s search feature (usually command+f/ctrl+f) to find “micro” on this page.</p>
+
 <script>
 var status = "less";
 function toggleAdditionalUpdates()
