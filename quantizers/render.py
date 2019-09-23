@@ -73,10 +73,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>Note: I’m still adding the rows to this comparison—if your favorite quantizer is missing, don’t worry (yet).</p>
-
-<!--<p>This is a pretty exhaustive and up-to-date basic comparison of all your pitch quantizer module options for Eurorack. 
-Some additional tools of potential interest are listed at the bottom.--> 
+<p>This is a pretty exhaustive and up-to-date basic comparison of all your pitch quantizer module options for Eurorack. Some additional tools of potential interest are listed at the bottom.</p>
 
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?t=222110"><em>Eurorack pitch quantizer comparison</em> (MuffWiggler forum)</a></p>
 
@@ -88,6 +85,12 @@ Some additional tools of potential interest are listed at the bottom.-->
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
+
+<h4>Notes</h4>
+
+<p>The <strong>Channels</strong> column is the number of input voltages the unit will quantize for you. The <strong>Derived Parts</strong> describes the <em>additional</em> outputs that some units will create for you (intervals, chords, arpeggios, etc.)</p>
+
+<p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
 
 <script>
 var status = "less";
