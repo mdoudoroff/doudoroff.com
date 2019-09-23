@@ -185,11 +185,15 @@ def klassForAny(val):
 
 def valueForproduct(row):
 	h = u'<strong>%s</strong>' % row['product']
-	h += '<br /><small>'
+	if row['_year'].strip():
+		h += u'<br />%s' % row['_year']
+	h += u'<br /><small>'
+	if row['_hp'].strip():
+		h += u'<br />%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl'].decode('utf-8')
 	if row['_website'].strip():
-		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website'].decode('utf-8')
 	h += '</small>'
 	return h
 
@@ -223,7 +227,7 @@ def valueForpic(row):
 	if row['pic'].strip():
 		width = 0
 		try:
-			width = int(row['hp']) * 5
+			width = int(row['_hp']) * 5
 			height = 26.2 * 5
 		except:
 			pass
