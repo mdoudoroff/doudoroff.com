@@ -119,6 +119,10 @@ html_bottom = u'''
 <ul>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord">Qu-bit Chord</a> (chord-generating quad-oscillator with parametric front-end)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord-v2">Qu-bit Chord 2</a> (chord-generating quad-oscillator with parametric front-end)</li>
+<li><a href="https://www.modulargrid.net/e/flame-4vox">Flame 4VOX</a> (chord-generating quad sequencer)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-plaits">Mutable Instrument Plaits</a> (oscillator with chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-braids-2015">Mutable Instrument Braids</a> (oscillator with chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-marbles">Mutable Instruments Marbles</a> (random source that can be quantized to a user-supplied voltage table)</li>
 <li><a href="https://www.modulargrid.net/e/2hp-arp-black-panel">2hp Arp</a> (arpeggio generator)</li>
 <li><a href="https://www.modulargrid.net/e/klavis-caltrans-">Klavis Caltrans</a> (pitch manager)</li>
 <li><a href="https://www.modulargrid.net/e/bastl-instruments-1983">Bastl Instruments 1983</a> (pitch manager/MIDI interface)</li>
