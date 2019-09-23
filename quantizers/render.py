@@ -114,11 +114,14 @@ html_bottom = u'''
 <ul>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord">Qu-bit Chord</a> (chord-generating quad-oscillator with parametric front-end)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord-v2">Qu-bit Chord 2</a> (chord-generating quad-oscillator with parametric front-end)</li>
-<li><a href=""></a> </li>
-<li><a href=""></a> </li>
-<li><a href=""></a> </li>
-<li><a href=""></a> </li>
+<li><a href="https://www.modulargrid.net/e/2hp-arp-black-panel">2hp Arp</a> (arpeggio generator)</li>
+<li><a href="https://www.modulargrid.net/e/klavis-caltrans-">Klavis Caltrans</a> (pitch manager)</li>
+<li><a href="https://www.modulargrid.net/e/bastl-instruments-1983">Bastl Instruments 1983</a> (pitch manager/MIDI interface)</li>
+<li><a href="https://www.modulargrid.net/e/mazzatron-keys-1-keyboard-quantizer">Mazzatron KEYS-1 Keyboard Quantizer</a> (transposer)</li>
+<li><a href="https://www.modulargrid.net/e/doepfer-a-173-1">Doepfer A-173-1 and -2</a> (transposer)</li>
 </ul>
+
+
 
 <p style="text-align:center;">• • •</p>
 
