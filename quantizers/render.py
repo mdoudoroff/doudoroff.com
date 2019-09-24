@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import json, csv
+import json, csv, decimal
 
 
 html_top = u'''
@@ -80,7 +80,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2019-09-24 reworked transposition column, errata<br />
+2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
 2019-09-23 rough draft<br />
 <span id="additionalUpdates" class="collapsed">
 </span>
@@ -91,9 +91,12 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>The <strong>Channels</strong> column is the number of input voltages the unit will quantize for you. The <strong>Derived Parts</strong> describes the <em>additional</em> outputs that some units will create for you (intervals, chords, arpeggios, etc.)</p>
 
+<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate to a cent.</p>
+
 <p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
 
 <p>If you’re looking for microtonal quantization, use your browser’s search feature (usually command+f/ctrl+f) to find “micro” on this page.</p>
+
 
 <script>
 var status = "less";
@@ -118,6 +121,7 @@ html_bottom = u'''
 
 <p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/elektrofon-klang">Elektrofon Klang</a> (four part chord generator)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord">Qu-bit Chord</a> (chord-generating quad-oscillator with parametric front-end)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord-v2">Qu-bit Chord 2</a> (chord-generating quad-oscillator with parametric front-end)</li>
 <li><a href="https://www.modulargrid.net/e/flame-4vox">Flame 4VOX</a> (chord-generating quad sequencer)</li>
@@ -198,6 +202,23 @@ def valueFornotes(row):
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
+def valueForaccuracy(row):
+	v = row['accuracy'].strip()
+	if not v:
+		return u'???'
+	else:
+		return '%s millivolts' % v
+
+def klassForaccuracy(val):
+	if val.strip():
+		try:
+			d = decimal.Decimal(val)
+		except:
+			pass
+		else:
+			if d > decimal.Decimal('0.83'):
+				return 'red'
+	return ''
 
 rows = []
 columnDisplayNames = {}
