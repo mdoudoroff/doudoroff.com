@@ -74,6 +74,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-24 reworked transposition column, errata<br />
 2019-09-23 rough draft<br />
 <span id="additionalUpdates" class="collapsed">
 </span>
@@ -105,7 +106,7 @@ function toggleAdditionalUpdates()
 </script>
 
 
-<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transpose</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>2hp Tune</strong><br />2016<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-tune" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.twohp.com/modules/tune" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/2hp-tune.jpg"><img src="gfx/2hp-tune.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -116,7 +117,7 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +5v</td>
 	<td class="">0 to +5v</td>
 	<td class="">8 preset</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">100</td>
 	<td class="notes"><ul>
 	</ul></td>
@@ -131,7 +132,7 @@ function toggleAdditionalUpdates()
 	<td class="">-5v to +5v</td>
 	<td class="">0 to +10v</td>
 	<td class="">7 basic scales with pure, equal, Bohlen-Pierce, Just or “exotic” temperament; active notes are directly editable/playable with keyboard-style buttons</td>
-	<td class="">Yes</td>
+	<td class="">(default) CV option</td>
 	<td class="">430</td>
 	<td class="notes"><ul>
 	<li>tuning mode</li>
@@ -151,7 +152,7 @@ function toggleAdditionalUpdates()
 	<td class="">-10.24v to +10.24v</td>
 	<td class="">-2v to +8v</td>
 	<td class="">comprehensive modes and scales with equal temperament, just intonation, or quarter comma meantime; active notes are directly editable/playable with dedicated buttons for each channel</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">1000</td>
 	<td class="notes"><ul>
 	<li>all parts share root and scale while  having independent active scale notes</li>
@@ -173,7 +174,7 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +10v</td>
 	<td class="">0 to +10v</td>
 	<td class="">~27 possible scales</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">160</td>
 	<td class="notes"><ul>
 	</ul></td>
@@ -188,12 +189,12 @@ function toggleAdditionalUpdates()
 	<td class="">???</td>
 	<td class="">???</td>
 	<td class="">various; each output is manually set to a note in the scale</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">370</td>
 	<td class="notes"><ul>
 	<li>chord progression sequencer</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transpose</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Erica Synths Pico Quant</strong><br />2018<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-quant" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-quant/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/erica-pico-quant.jpg"><img src="gfx/erica-pico-quant.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -221,7 +222,7 @@ function toggleAdditionalUpdates()
 	<td class="">???</td>
 	<td class="">???</td>
 	<td class="">slew/glide; MIDI support</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">190</td>
 	<td class="notes"><ul>
 	<li>multi-function device (quantizer is one of many modes)</li>
@@ -237,7 +238,7 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +10v</td>
 	<td class="">0 to +10v</td>
 	<td class="">huge list of scales; active notes set manually with keyboard-style buttons (?)</td>
-	<td class="">Yes</td>
+	<td class="">(default) CV option</td>
 	<td class="">370</td>
 	<td class="notes"><ul>
 	<li>state progression sequencer</li>
@@ -254,7 +255,7 @@ function toggleAdditionalUpdates()
 	<td class="">0v to +8v</td>
 	<td class="">???</td>
 	<td class="">15 basic scales</td>
-	<td class="">Yes</td>
+	<td class="">CV option</td>
 	<td class="">470</td>
 	<td class="notes"><ul>
 	<li>dedicated internal vibrato LFO</li>
@@ -281,7 +282,7 @@ function toggleAdditionalUpdates()
 	<li>intervals created automatically, manually, or with cv</li>
 	<li> analog slew per output</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transpose</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Instruo Quad Performance Quantizer</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/instruo-qpq-quad-performance-quantizer-custom-shop" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-qpq.jpg"><img src="gfx/instruo-qpq.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">Discontinued</td>
@@ -340,7 +341,7 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +5v</td>
 	<td class="">0 to +5v</td>
 	<td class="">sixteen basic scales</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">75</td>
 	<td class="notes"><ul>
 	<li>cv controlled octave switcher</li>
@@ -356,12 +357,12 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +10v</td>
 	<td class="">0 to +10v</td>
 	<td class="">any scale can be scripted (including microtonal)</td>
-	<td class="">It’s complicated</td>
+	<td class="">No (requires expander)</td>
 	<td class="">480</td>
 	<td class="notes"><ul>
 	<li>expanders are available to add additional CV inputs and CV outputs, theoretically adding additional channels or derived parts</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transpose</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Ornament & Crime</strong><br />2016<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel" target="_blank">Modular Grid &gt;</a><br /><a href="https://ornament-and-cri.me" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/o_c.jpeg"><img src="gfx/o_c.jpeg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes (DIY/builder)</td>
@@ -424,10 +425,10 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +5v, 0 to +10v, or -5v to +5v (selectable)</td>
 	<td class="">0 to +5v</td>
 	<td class="">Major, minor plus 24 semi-tone-based user scale (defined with keyboard-style buttons)</td>
-	<td class="">Yes</td>
+	<td class="">CV option</td>
 	<td class="">299</td>
 	<td class="notes"><ul>
-	<li>clocked state sequencer</li>
+	<li>clocked state sequencer with transposition</li>
 	<li> glide support</li>
 	<li> tuning mode</li>
 	<li> TipTop SyncBus support</li>
@@ -443,11 +444,11 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +5v</td>
 	<td class="">0 to +5v</td>
 	<td class="">32 scales</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">230</td>
 	<td class="notes"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transpose</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
 <tr><td class="left"><strong>Tubbutec uTune</strong><br />2017<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/tubbutec-µtune-" target="_blank">Modular Grid &gt;</a><br /><a href="https://tubbutec.de/µtune/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tubbute-utune.jpg"><img src="gfx/tubbute-utune.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -458,7 +459,7 @@ function toggleAdditionalUpdates()
 	<td class="">0 to +10v</td>
 	<td class="">0 to +10v</td>
 	<td class="">microtonal scale editor built-in</td>
-	<td class="">Yes</td>
+	<td class="">CV option</td>
 	<td class="">300</td>
 	<td class="notes"><ul>
 	<li>extensive MIDI I/O including sending microtonal MIDI out</li>
@@ -477,7 +478,7 @@ function toggleAdditionalUpdates()
 	<td class="">0v to +5v</td>
 	<td class="">-1v to +6v</td>
 	<td class="">16 scales; active notes selected via note mask selection</td>
-	<td class="">Yes</td>
+	<td class="">Dedicated</td>
 	<td class="">300</td>
 	<td class="notes"><ul>
 	<li>extensive rhythmic pattern-based arpeggiation and glide features</li>
@@ -493,6 +494,7 @@ function toggleAdditionalUpdates()
 <li><a href="https://www.modulargrid.net/e/flame-4vox">Flame 4VOX</a> (chord-generating quad sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/mutable-instruments-plaits">Mutable Instrument Plaits</a> (oscillator with chord generator)</li>
 <li><a href="https://www.modulargrid.net/e/mutable-instruments-braids-2015">Mutable Instrument Braids</a> (oscillator with chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Instruments Popcorn</a> (sequencer that can be used as a quantizer)</li>
 <li><a href="https://www.modulargrid.net/e/mutable-instruments-marbles">Mutable Instruments Marbles</a> (random source that can be quantized to a user-supplied voltage table)</li>
 <li><a href="https://www.modulargrid.net/e/2hp-arp-black-panel">2hp Arp</a> (arpeggio generator)</li>
 <li><a href="https://www.modulargrid.net/e/klavis-caltrans-">Klavis Caltrans</a> (pitch manager)</li>
