@@ -81,6 +81,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-25 clarified some wording<br />
 2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
 2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
 2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
