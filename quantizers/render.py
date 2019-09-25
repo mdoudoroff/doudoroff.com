@@ -205,12 +205,25 @@ def valueFornotes(row):
 
 def valueForaccuracy(row):
 	v = row['accuracy'].strip()
+
 	if not v:
 		return u'???'
 	else:
-		return '%s millivolts' % v
+
+		bitdepth = row['_dacresolution']
+		if decimal.Decimal(v) < decimal.Decimal('0.83'):
+			note = '(less than one cent)'
+		elif decimal.Decimal(v) < decimal.Decimal('2.52'):
+			note = '(within a few cents)'
+		else:
+			note = '(crummy)'
+
+		return '%s-bit:<br />within %s millivolts<br />%s' % (bitdepth,v,note)
 
 def klassForaccuracy(val):
+	if not val.strip():
+		return 'red'
+
 	if val.strip():
 		try:
 			d = decimal.Decimal(val)
@@ -219,6 +232,7 @@ def klassForaccuracy(val):
 		else:
 			if d > decimal.Decimal('0.83'):
 				return 'red'
+
 	return ''
 
 rows = []
