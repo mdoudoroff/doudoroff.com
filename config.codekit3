@@ -311,20 +311,20 @@
 		"oAP": "/build/cold-mac/gfx",
 		"oF": 0
 		},
-	"/cold-mac/index.bak": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/cold-mac/index.bak",
-		"oF": 0
-		},
 	"/cold-mac/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/cold-mac/index.html",
+		"oF": 0
+		},
+	"/cold-mac/index.v1": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/cold-mac/index.v1",
 		"oF": 0
 		},
 	"/css/main.css": {
@@ -2128,6 +2128,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/work/work-latitude29.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/work-martini-app.jpg": {
+		"ft": 16384,
+		"iS": 232840,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/work/work-martini-app.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

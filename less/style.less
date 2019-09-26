@@ -6,14 +6,17 @@
 @darkcolor: darken(@sigcolor, 20%);
 
 body {
-	background: @sigcolor;
+	background: darken(@sigcolor, 10%);
 	color: white;
 	font-size: 16px;
 	max-width: 1000px;
 	margin: 0 auto;
-	font-family: "Whitney SSm A", "Whitney SSm B";
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 400;
 	font-style: normal;
-	font-weight: normal;
+	// font-family: "Whitney SSm A", "Whitney SSm B";
+	// font-style: normal;
+	// font-weight: normal;
 }
 
 article {
@@ -74,10 +77,10 @@ h2 {
 
 p {
 	display: block;
-	max-width: 40em;
+	// max-width: 40em;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 2em;
+	padding: 0 1em;
 	line-height: 1.8;
 
 
@@ -96,17 +99,32 @@ p.button {
 #masthead {
 	color: @darkcolor;
 	text-align: center;
-	font-weight: bold;
-	font-size: 180%;
-	margin: 3em 0;
+	// font-weight: bold;
+	font-size: 150%;
+	margin: 3em 0 2em 0;
 	max-width: 40em;
+
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+
+	text-shadow: 
+	#FFF 0px 0px 20px, 
+	#FFF 0px 0px 40px, 
+	#FFF 0px 0px 60px, 
+	#1e7c79 0px 0px 80px, 
+	#1e7c79 0px 0px 120px, 
+	#1e7c79 0px 0px 160px, 
+	#1e7c79 0px 0px 200px, 
+	#1e7c79 0px 0px 300px;
+
 }
 
 #pageTitle {
 	font-weight: bold;
 	font-size: 350%;
 	text-align: center;
-	margin: 2em 0;
+	margin: 1em 0;
 }
 
 .dingbat {
@@ -125,6 +143,7 @@ footer {
 	#masthead {font-size:200%;}
 	body { font-size: 18px; }
 	h2 {font-size:200%;}
+	p {max-width: 30em;}
 }
 
 @import "html5bp-top.less";
