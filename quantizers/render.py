@@ -92,7 +92,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>The <strong>Channels</strong> column is the number of input voltages the unit will quantize for you. The <strong>Derived Parts</strong> describes the <em>additional</em> outputs that some units will create for you (intervals, chords, arpeggios, etc.)</p>
 
-<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate to a cent.</p>
+<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate within a cent.</p>
 
 <p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
 

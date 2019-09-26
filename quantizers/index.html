@@ -74,7 +74,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2019-09-25 errata
+2019-09-25 errata<br />
 2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
 2019-09-23 rough draft<br />
 <span id="additionalUpdates" class="collapsed">
@@ -86,7 +86,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>The <strong>Channels</strong> column is the number of input voltages the unit will quantize for you. The <strong>Derived Parts</strong> describes the <em>additional</em> outputs that some units will create for you (intervals, chords, arpeggios, etc.)</p>
 
-<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate to a cent.</p>
+<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate within a cent.</p>
 
 <p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
 
@@ -267,7 +267,7 @@ function toggleAdditionalUpdates()
 <tr><td class="left"><strong>Instruo Harmonaig</strong><br />2017<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/instruo-harmonaig" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.instruomodular.com/product/harmonaig/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-harmonaig.jpg"><img src="gfx/instruo-harmonaig.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
-	<td class="red">???</td>
+	<td class="">16-bit:<br />within 0.31 millivolts<br />(less than one cent)</td>
 	<td class="">1</td>
 	<td class="">third, fifth and seventh (chord)</td>
 	<td class="">No</td>
@@ -481,7 +481,7 @@ function toggleAdditionalUpdates()
 <tr><td class="left"><strong>WMD Arpitecht</strong><br />2017<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/wmd-arpitecht" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.wmdevices.com/collections/eurorack-modules/products/arpitecht" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/wmd-arpitecht.jpg"><img src="gfx/wmd-arpitecht.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
-	<td class="red">???</td>
+	<td class="">14-bit:<br />within 0.43 millivolts<br />(less than one cent)</td>
 	<td class="">1</td>
 	<td class=""></td>
 	<td class="">Yes</td>
