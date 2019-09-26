@@ -80,6 +80,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-26 added more performance data from producers<br />
 2019-09-25 errata<br />
 2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
 2019-09-23 rough draft<br />
@@ -230,7 +231,7 @@ def klassForaccuracy(val):
 		except:
 			pass
 		else:
-			if d > decimal.Decimal('0.83'):
+			if d > decimal.Decimal('2.4'):
 				return 'red'
 
 	return ''
