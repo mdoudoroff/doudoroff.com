@@ -231,7 +231,7 @@ def klassForaccuracy(val):
 		except:
 			pass
 		else:
-			if d > decimal.Decimal('2.4'):
+			if d > decimal.Decimal('2.5'):
 				return 'red'
 
 	return ''
