@@ -182,6 +182,17 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 
 <p style="text-align:center;">• • •</p>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
 </body>
 </html>
 '''
