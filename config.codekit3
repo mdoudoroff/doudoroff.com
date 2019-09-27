@@ -1904,14 +1904,6 @@
 		"oAP": "/quantizers/index.html",
 		"oF": 0
 		},
-	"/quantizers/quantizers.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/quantizers.csv",
-		"oF": 0
-		},
 	"/quantizers/quantizers.numbers": {
 		"cB": 0,
 		"ft": 8192,

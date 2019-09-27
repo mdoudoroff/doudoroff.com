@@ -228,7 +228,7 @@ def valueForaccuracy(row):
 		elif decimal.Decimal(v) < decimal.Decimal('2.52'):
 			note = '(within a few cents)'
 		else:
-			note = '(crummy)'
+			note = '(beware)'
 
 		return '%s-bit:<br />within %s millivolts<br />%s' % (bitdepth,v,note)
 
