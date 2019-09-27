@@ -81,6 +81,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-27 errata<br />
 2019-09-25 clarified some wording<br />
 2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
 2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
@@ -142,7 +143,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay">4ms Dual Looping Delay</a> (delay with some sampler-esque capabilities)</li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
-<li><a href="https://www.modulargrid.net/e/instruo-arbhar">Instruo Arbhar</a> (granular)</a> (granular processor)</li>
+<li><a href="https://www.modulargrid.net/e/alyseum-record">Alyseum Record</a></li>
 </ul>
 
 <h2>Non-modular alternatives</h2>
