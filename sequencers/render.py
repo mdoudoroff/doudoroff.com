@@ -76,7 +76,9 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2581692"><em>heavy duty pitch + gate sequencer module comparison</em></a> (MuffWiggler forum)</p>
 
 <h4>Latest</h4>
-<p class="updates">2019-09-06 added Octone, other updates<br />
+<p class="updates">
+2019-09-30 added Oakley Sequencer<br />
+2019-09-06 added Octone, other updates<br />
 2019-09-05 added WMD Metron+Voltera<br />
 2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
 <span id="additionalUpdates" class="collapsed">
