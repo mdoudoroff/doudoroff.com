@@ -80,6 +80,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />
 2019-09-26 added more performance data from producers<br />
 2019-09-25 errata<br />
