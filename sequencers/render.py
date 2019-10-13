@@ -77,6 +77,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-10-13 minor updates<br />
 2019-09-30 added Tesseract Sequencer<br />
 2019-09-30 added Oakley Sequencer<br />
 2019-09-06 added Octone, other updates<br />
