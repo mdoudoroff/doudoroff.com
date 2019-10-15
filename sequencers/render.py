@@ -77,13 +77,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-10-15 removed Pittsburgh Sequence Designer<br />
 2019-10-13 minor updates<br />
 2019-09-30 added Tesseract Sequencer<br />
 2019-09-30 added Oakley Sequencer<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-06 added Octone, other updates<br />
 2019-09-05 added WMD Metron+Voltera<br />
 2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
-<span id="additionalUpdates" class="collapsed">
 2019-05-08 added Endorphin.es Ground Control<br />
 2019-05-03 added USTA, release years<br />
 2019-02-13 added CFM1<br />
