@@ -77,13 +77,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
 2019-09-26 added Toppobrillo Stereomix 2<br />
 2019-09-22 added Happy Nerding 2xSAM<br />
 2019-08-06 added ph Mixer++<br />
+<span id="additionalUpdates" class="collapsed">
 2019-06-28 added new column about individual outs (for multitracking), other updates<br />
 2019-05-08 added OIII Quad Mixer<br />
-<span id="additionalUpdates" class="collapsed">
 2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
 2019-03-27 added Befaco STMIX<br />
 2019-02-10 added JPSynth Stereo Mixer<br />
@@ -254,7 +255,7 @@ def valueFornotes(row):
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
-			bits.append('<li>%s</li>' % val)
+			bits.append('<li>%s</li>' % val.decode('utf-8'))
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
@@ -279,7 +280,7 @@ with open('mixers-data.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
-					v = row[fieldname]
+					v = row[fieldname].decode('utf-8')
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
