@@ -80,13 +80,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-10-22 added Kassutronics Quantizer<br />
 2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />
 2019-09-26 added more performance data from producers<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-25 errata<br />
 2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
 2019-09-23 rough draft<br />
-<span id="additionalUpdates" class="collapsed">
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
