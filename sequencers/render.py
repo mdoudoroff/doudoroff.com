@@ -77,6 +77,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
 2019-10-15 removed Pittsburgh Sequence Designer<br />
 2019-10-13 minor updates<br />
 2019-09-30 added Tesseract Sequencer<br />
@@ -175,7 +176,6 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <ul>
 <li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/qu-bit-electronix-bloom">Qu-bit Electronics Bloom</a> (random/evolving melody-focused 32-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
