@@ -77,12 +77,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-26 added Alyseum Q-Mix<br />
 2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
 2019-09-26 added Toppobrillo Stereomix 2<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-22 added Happy Nerding 2xSAM<br />
 2019-08-06 added ph Mixer++<br />
-<span id="additionalUpdates" class="collapsed">
 2019-06-28 added new column about individual outs (for multitracking), other updates<br />
 2019-05-08 added OIII Quad Mixer<br />
 2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
