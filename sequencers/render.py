@@ -77,12 +77,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
 2019-10-15 removed Pittsburgh Sequence Designer<br />
 2019-10-13 minor updates<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-30 added Tesseract Sequencer<br />
 2019-09-30 added Oakley Sequencer<br />
-<span id="additionalUpdates" class="collapsed">
 2019-09-06 added Octone, other updates<br />
 2019-09-05 added WMD Metron+Voltera<br />
 2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
