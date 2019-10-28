@@ -136,6 +136,7 @@ html_bottom = u'''
 <li><a href="https://www.modulargrid.net/e/mutable-instruments-marbles">Mutable Instruments Marbles</a> (random source that can be quantized to a user-supplied voltage table)</li>
 <li><a href="https://www.modulargrid.net/e/2hp-arp-black-panel">2hp Arp</a> (arpeggio generator)</li>
 <li><a href="https://www.modulargrid.net/e/klavis-caltrans-">Klavis Caltrans</a> (pitch manager)</li>
+<li><a href="https://www.modulargrid.net/e/alyseum-q-linear">Alyseium Q-Linear</a> (pitch manager)</li>
 <li><a href="https://www.modulargrid.net/e/bastl-instruments-1983">Bastl Instruments 1983</a> (pitch manager/MIDI interface)</li>
 <li><a href="https://www.modulargrid.net/e/mazzatron-keys-1-keyboard-quantizer">Mazzatron KEYS-1 Keyboard Quantizer</a> (transposer)</li>
 <li><a href="https://www.modulargrid.net/e/doepfer-a-173-1">Doepfer A-173-1 and -2</a> (transposer)</li>
