@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import json, csv
+import json, csv, sys
 
 
 html_top = u'''
@@ -77,11 +77,12 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-09-26 added Paratek РИТМИКС<br />
 2019-09-26 added Alyseum Q-Mix<br />
 2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
-2019-09-26 added Toppobrillo Stereomix 2<br />
 <span id="additionalUpdates" class="collapsed">
+2019-09-26 added Toppobrillo Stereomix 2<br />
 2019-09-22 added Happy Nerding 2xSAM<br />
 2019-08-06 added ph Mixer++<br />
 2019-06-28 added new column about individual outs (for multitracking), other updates<br />
@@ -200,7 +201,7 @@ def klassForAny(val):
 	return ' '.join(klasses)
 
 def valueForproduct(row):
-	h = u'<strong>%s</strong>' % row['product']
+	h = u'<strong>%s</strong>' % row['product'].decode('utf-8')
 	if row['_year'].strip():
 		h += u'<br />%s' % row['_year']
 	h += u'<br /><small>'
@@ -247,7 +248,7 @@ def valueForpic(row):
 			height = 26.2 * 5
 		except:
 			pass
-		return '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>''' % (row['pic'],row['pic'],width,height)
+		return '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>''' % (row['pic'].decode('utf-8'),row['pic'].decode('utf-8'),width,height)
 	else:
 		return '(need photo)'
 
@@ -256,7 +257,7 @@ def valueFornotes(row):
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
-			bits.append('<li>%s</li>' % val.decode('utf-8'))
+			bits.append(u'<li>%s</li>' % val.decode('utf-8'))
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
@@ -323,7 +324,13 @@ for row in rows:
 		s += table_header_row
 
 	s += u'\n<tr>'
-	s += u'\n\t'.join(row)
+	for bit in row:
+		try:
+			s += u'\n\t' + bit
+		except Exception, reason:
+			print "FAILED (%s) on bit:" % reason
+			print bit
+			sys.exit(1)
 	s += u'\n</tr>'
 s += u'\n</table>'
 
