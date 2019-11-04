@@ -77,7 +77,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2019-09-26 added Paratek РИТМИКС<br />
+2019-11-04 added Catoff Mix<br />
+2019-11-03 added Paratek РИТМИКС<br />
 2019-09-26 added Alyseum Q-Mix<br />
 2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
