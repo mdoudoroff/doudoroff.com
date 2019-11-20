@@ -158,6 +158,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
+<li><a href="https://teenage.engineering/guides/po-modular/16">Teenage Engineering Pocket Operator Modular 16</a> (direct patch)</li>
 <li><a href="https://novationmusic.com/keys/sl-mkiii">Novation SL MkIII</a> (direct patch)</li>
 <li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a> (direct patch)</li>
 <li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a> (direct patch)</li>
