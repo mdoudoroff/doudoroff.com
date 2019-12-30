@@ -77,6 +77,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
 2019-10-15 removed Pittsburgh Sequence Designer<br />
@@ -185,6 +186,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
 <li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
 <li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
+<li><a href="https://www.modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
