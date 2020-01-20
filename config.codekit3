@@ -841,6 +841,195 @@
 		"oAP": "/mixers/render.py",
 		"oF": 0
 		},
+	"/oldfashioned101/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/oldfashioned101/404.html",
+		"oF": 0
+		},
+	"/oldfashioned101/gfx": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/oldfashioned101/gfx",
+		"oF": 0
+		},
+	"/oldfashioned101/humans.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/oldfashioned101/humans.txt",
+		"oF": 0
+		},
+	"/oldfashioned101/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/oldfashioned101/index.html",
+		"oF": 0
+		},
+	"/oldfashioned101/javascripts/jquery-1.6.2.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/oldfashioned101/javascripts/min/jquery-1.6.2-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/oldfashioned101/javascripts/jquery-1.6.2.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/oldfashioned101/javascripts/min/jquery-1.6.2.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/oldfashioned101/javascripts/modernizr-2.0.6.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/oldfashioned101/javascripts/min/modernizr-2.0.6.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/oldfashioned101/javascripts/plugins.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/oldfashioned101/javascripts/min/plugins-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/oldfashioned101/javascripts/script.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/oldfashioned101/javascripts/min/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/oldfashioned101/pagetwo.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/oldfashioned101/pagetwo.html",
+		"oF": 0
+		},
+	"/oldfashioned101/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/oldfashioned101/robots.txt",
+		"oF": 0
+		},
+	"/oldfashioned101/sass/partials/_base.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/oldfashioned101/sass/css/_base.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/sass/partials/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/oldfashioned101/sass/css/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/sass/partials/_media.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/oldfashioned101/sass/css/_media.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/sass/partials/_overrides.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/oldfashioned101/sass/css/_overrides.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/sass/partials/_page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/oldfashioned101/sass/css/_page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/sass/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/oldfashioned101/css/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/oldfashioned101/stylesheets/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/oldfashioned101/stylesheets/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/photo/content/custom.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2048,6 +2237,17 @@
 		"jF": 0,
 		"oA": 1,
 		"oAP": "/work/work-ck-library.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/work-community.jpg": {
+		"ft": 16384,
+		"iS": 113387,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/work/work-community.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
