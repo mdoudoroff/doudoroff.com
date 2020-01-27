@@ -3,8 +3,10 @@
 
 import json, csv, sys
 
+if sys.version_info[0] != 3:
+    sys.exit("This script requires Python version 3")
 
-html_top = u'''
+html_top = '''
 <html>
 <head>
 	<meta charset="utf-8">
@@ -157,7 +159,7 @@ function toggleAdditionalUpdates()
 
 '''
 
-html_bottom = u'''
+html_bottom = '''
 
 <p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
@@ -203,16 +205,16 @@ def klassForAny(val):
 	return ' '.join(klasses)
 
 def valueForproduct(row):
-	h = u'<strong>%s</strong>' % row['product'].decode('utf-8')
+	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += u'<br />%s' % row['_year']
-	h += u'<br /><small>'
+		h += '<br />%s' % row['_year']
+	h += '<br /><small>'
 	if row['_hp'].strip():
-		h += u'<br />%s HP' % row['_hp']
+		h += '<br />%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl'].decode('utf-8')
+		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website'].decode('utf-8')
+		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
 	h += '</small>'
 	return h
 
@@ -250,7 +252,7 @@ def valueForpic(row):
 			height = 26.2 * 5
 		except:
 			pass
-		return '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>''' % (row['pic'].decode('utf-8'),row['pic'].decode('utf-8'),width,height)
+		return '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>''' % (row['pic'],row['pic'],width,height)
 	else:
 		return '(need photo)'
 
@@ -259,19 +261,19 @@ def valueFornotes(row):
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
-			bits.append(u'<li>%s</li>' % val.decode('utf-8'))
+			bits.append('<li>%s</li>' % val)
 	bits.append('</ul>')
 	return '\n\t'.join(bits)
 
 def valueForindiv_outs(row):
 	if row['indiv_outs']:
 		return row['indiv_outs']
-	return u'–'
+	return '–'
 
 rows = []
 columnDisplayNames = {}
 
-with open('mixers-data.csv') as csvfile:
+with open('mixers-data.csv',encoding='utf-8') as csvfile:
 
 	reader = csv.DictReader(csvfile)
 
@@ -284,7 +286,7 @@ with open('mixers-data.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
-					v = row[fieldname].decode('utf-8')
+					v = row[fieldname]
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
@@ -301,7 +303,7 @@ with open('mixers-data.csv') as csvfile:
 
 
 # build th row
-s = u''
+s = ''
 s += '<tr>'
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
@@ -325,16 +327,16 @@ for row in rows:
 	if rows.index(row)%5==0:
 		s += table_header_row
 
-	s += u'\n<tr>'
+	s += '\n<tr>'
 	for bit in row:
 		try:
-			s += u'\n\t' + bit
-		except Exception, reason:
-			print "FAILED (%s) on bit:" % reason
-			print bit
+			s += '\n\t' + bit
+		except Exception as reason:
+			print("FAILED (%s) on bit:" % reason)
+			print(bit)
 			sys.exit(1)
-	s += u'\n</tr>'
-s += u'\n</table>'
+	s += '\n</tr>'
+s += '\n</table>'
 
 s += html_bottom
 

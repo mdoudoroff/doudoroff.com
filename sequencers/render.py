@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import json, csv
+import json, csv, sys
 
+if sys.version_info[0] != 3:
+    sys.exit("This script requires Python version 3")
 
-html_top = u'''
+html_top = '''
 <html>
 <head>
 	<meta charset="utf-8">
@@ -150,7 +152,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 
 '''
 
-html_bottom = u'''
+html_bottom = '''
 
 <h2>External and partially-external alternatives with direct Eurorack integration</h2>
 <p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
@@ -159,6 +161,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
 <li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
+<li><a href="https://www.arturia.com/products/hybrid-synths/keystep-pro/overview">Arturia Keystep Pro</a> (direct patch)</li>
 <li><a href="https://teenage.engineering/guides/po-modular/16">Teenage Engineering Pocket Operator Modular 16</a> (direct patch)</li>
 <li><a href="https://novationmusic.com/keys/sl-mkiii">Novation SL MkIII</a> (direct patch)</li>
 <li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a> (direct patch)</li>
@@ -213,15 +216,15 @@ def klassForAny(val):
 	return ' '.join(klasses)
 
 def valueForproduct(row):
-	h = u'<strong>%s</strong>' % row['product'].decode('utf-8')
+	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += u'<br />%s' % row['_year']
-	h += u'<br /><small>'
+		h += '<br />%s' % row['_year']
+	h += '<br /><small>'
 	if row['_mgurl'].strip():
-		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
-	h += u'</small>'
+		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+	h += '</small>'
 	return h
 
 def klassForproduct(val):
@@ -262,7 +265,7 @@ def valueForpic(row):
 		return '(need photo)'
 
 def valueFornotes(row):
-	vals = row['notes'].decode('utf-8').split(';')
+	vals = row['notes'].split(';')
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
@@ -272,7 +275,7 @@ def valueFornotes(row):
 
 def valueFortrack_outs(row):
 	vals = row['track_outs'].split(',')
-	return u'<br />'.join(vals)
+	return '<br />'.join(vals)
 
 rows = []
 columnDisplayNames = {}
@@ -293,7 +296,7 @@ with open('sequencers-data.csv') as csvfile:
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
-						v = row[fieldname].decode('utf-8')
+						v = row[fieldname]
 					klass = ''
 					try:
 						klass = locals()["klassFor%s" % fieldname](row[fieldname])
@@ -307,7 +310,7 @@ with open('sequencers-data.csv') as csvfile:
 # print rows
 
 # build th row
-s = u''
+s = ''
 s += '<tr>'
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
@@ -344,14 +347,14 @@ for row in rows:
 	if rows.index(row)%5==0:
 		s += table_header_row
 
-	s += u'\n<tr>'
+	s += '\n<tr>'
 	try:
-		s += u'\n\t'.join(row)
+		s += '\n\t'.join(row)
 	except:
-		print row
+		print(row)
 		sys.exit(1)
-	s += u'\n</tr>'
-s += u'\n</table>'
+	s += '\n</tr>'
+s += '\n</table>'
 
 s += html_bottom
 
