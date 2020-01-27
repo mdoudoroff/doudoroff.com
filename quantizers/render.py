@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import json, csv, decimal
+import json, csv, decimal, sys
 
+if sys.version_info[0] != 3:
+    sys.exit("This script requires Python version 3")
 
-html_top = u'''
+html_top = '''
 <html>
 <head>
 	<meta charset="utf-8">
@@ -122,7 +124,7 @@ function toggleAdditionalUpdates()
 
 '''
 
-html_bottom = u'''
+html_bottom = '''
 
 <p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
@@ -168,16 +170,16 @@ def klassForAny(val):
 	return ' '.join(klasses)
 
 def valueForproduct(row):
-	h = u'<strong>%s</strong>' % row['product']
+	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += u'<br />%s' % row['_year']
-	h += u'<br /><small>'
+		h += '<br />%s' % row['_year']
+	h += '<br /><small>'
 	if row['_hp'].strip():
-		h += u'<br />%s HP' % row['_hp']
+		h += '<br />%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl'].decode('utf-8')
+		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website'].decode('utf-8')
+		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
 	h += '</small>'
 	return h
 
@@ -211,7 +213,7 @@ def valueForpic(row):
 		return '(need photo)'
 
 def valueFornotes(row):
-	vals = row['notes'].decode('utf-8').split(';')
+	vals = row['notes'].split(';')
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
@@ -223,7 +225,7 @@ def valueForaccuracy(row):
 	v = row['accuracy'].strip()
 
 	if not v:
-		return u'???'
+		return '???'
 	else:
 
 		bitdepth = row['_dacresolution']
@@ -267,7 +269,7 @@ with open('quantizers.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
-					v = row[fieldname].decode('utf-8')
+					v = row[fieldname]
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
@@ -284,7 +286,7 @@ with open('quantizers.csv') as csvfile:
 
 
 # build th row
-s = u''
+s = ''
 s += '<tr>'
 for fieldname in reader.fieldnames:
 	if not fieldname.find('_')==0:
@@ -308,10 +310,10 @@ for row in rows:
 	if rows.index(row)%5==0:
 		s += table_header_row
 
-	s += u'\n<tr>'
-	s += u'\n\t'.join(row)
-	s += u'\n</tr>'
-s += u'\n</table>'
+	s += '\n<tr>'
+	s += '\n\t'.join(row)
+	s += '\n</tr>'
+s += '\n</table>'
 
 s += html_bottom
 

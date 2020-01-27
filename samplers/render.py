@@ -3,8 +3,10 @@
 
 import json, csv, sys
 
+if sys.version_info[0] != 3:
+    sys.exit("This script requires Python version 3")
 
-html_top = u'''
+html_top = '''
 <html>
 <head>
 	<meta charset="utf-8">
@@ -134,7 +136,7 @@ function toggleAdditionalUpdates()
 
 '''
 
-html_bottom = u'''
+html_bottom = '''
 
 <h2>Other modules of interest</h2>
 <p>These don’t really fit in the above comparison, but are probably worth being aware of.</p>
@@ -182,17 +184,17 @@ def klassForAny(val):
 	return ' '.join(klasses)
 
 def valueForproduct(row):
-	h = u'<strong>%s</strong>' % row['product'].decode('utf-8')
+	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += u'<br />%s' % row['_year']
-	h += u'<br /><small>'
+		h += '<br />%s' % row['_year']
+	h += '<br /><small>'
 	if row['_hp'].strip():
-		h += u'<br />%s HP' % row['_hp']
+		h += '<br />%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += u'<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl'].decode('utf-8')
+		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += u'<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
-	h += u'</small>'
+		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+	h += '</small>'
 	return h
 
 def klassForproduct(val):
@@ -225,7 +227,7 @@ def valueForpic(row):
 		return '(need photo)'
 
 def valueFornotes(row):
-	vals = row['notes'].decode('utf-8').split(';')
+	vals = row['notes'].split(';')
 	bits = ['<ul>']
 	for val in vals:
 		if val.strip():
@@ -234,22 +236,22 @@ def valueFornotes(row):
 	return '\n\t'.join(bits)
 
 def valueForrecording(row):
-	v = row['recording'].decode('utf-8')
+	v = row['recording']
 	if not v.strip():
-		return u' '
+		return ' '
 	return v
 
 def valueFormaxlength(row):
-	v = row['recording'].decode('utf-8')
+	v = row['recording']
 	if not v.strip():
-		return u''
-	return row['maxlength'].decode('utf-8')
+		return ''
+	return row['maxlength']
 
 def valueForclockedrec(row):
-	v = row['recording'].decode('utf-8')
+	v = row['recording']
 	if not v.strip():
-		return u' '
-	return row['clockedrec'].decode('utf-8')
+		return ' '
+	return row['clockedrec']
 
 
 def klassForrecording(val):
@@ -287,7 +289,7 @@ with open('samplers.csv') as csvfile:
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
-						v = row[fieldname].decode('utf-8')
+						v = row[fieldname]
 					klass = ''
 					try:
 						klass = locals()["klassFor%s" % fieldname](row[fieldname])
@@ -316,8 +318,8 @@ for fieldname in reader.fieldnames:
 
 		s.append('<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname]))
 
-table_header_row = u''.join(['<tr>'] + s + ['</tr>'])
-table_player_header_row = u''.join(['<tr>'] + s[:3]+ s[6:] + ['</tr>'])
+table_header_row = ''.join(['<tr>'] + s + ['</tr>'])
+table_player_header_row = ''.join(['<tr>'] + s[:3]+ s[6:] + ['</tr>'])
 
 s = html_top
 
@@ -329,14 +331,14 @@ for row in rows:
 	if rows.index(row)%4==0:
 		s += table_header_row
 
-	s += u'\n<tr>'
+	s += '\n<tr>'
 	try:
-		s += u'\n\t'.join(row)
+		s += '\n\t'.join(row)
 	except:
-		print row
+		print(row)
 		sys.exit(1)
-	s += u'\n</tr>'
-s += u'\n</table>'
+	s += '\n</tr>'
+s += '\n</table>'
 
 s += '<h2>Sample Players (no recording/capture)</h2>'
 s += '<table class="players">' 
@@ -346,14 +348,14 @@ for row in rows_players:
 	if rows_players.index(row)%4==0:
 		s += table_player_header_row
 
-	s += u'\n<tr>'
+	s += '\n<tr>'
 	try:
-		s += u'\n\t'.join(row)
+		s += '\n\t'.join(row)
 	except:
-		print row
+		print(row)
 		sys.exit(1)
-	s += u'\n</tr>'
-s += u'\n</table>'
+	s += '\n</tr>'
+s += '\n</table>'
 
 s += html_bottom
 
