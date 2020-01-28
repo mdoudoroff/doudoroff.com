@@ -34,13 +34,17 @@ body {
   margin: 0;
 }
 #mainSubject img,
-#detailSubject img {
+#detailSubject img,
+#mainSubject svg,
+#detailSubject svg {
   object-fit: cover;
   width: auto;
   height: 100%;
 }
 #mainSubject img.wide,
-#detailSubject img.wide {
+#detailSubject img.wide,
+#mainSubject svg.wide,
+#detailSubject svg.wide {
   width: 100%;
   height: auto;
 }
