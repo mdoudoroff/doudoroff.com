@@ -4,718 +4,115 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
+		"uuidString": "1B022568-9AF5-41FB-88EC-A7FE5297A7EB"
 		}
 	],
 "creatorBuild": "31934",
 "files": {
-	"/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/.gitignore",
-		"oF": 0
-		},
-	"/atari/about.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/about.html",
-		"oF": 0
-		},
-	"/atari/cad3d.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cad3d.html",
-		"oF": 0
-		},
-	"/atari/cybercontrol.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cybercontrol.html",
-		"oF": 0
-		},
-	"/atari/cybermate.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cybermate.html",
-		"oF": 0
-		},
-	"/atari/cyberpaint.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cyberpaint.html",
-		"oF": 0
-		},
-	"/atari/cybersculpt.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cybersculpt.html",
-		"oF": 0
-		},
-	"/atari/cybertexture.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cybertexture.html",
-		"oF": 0
-		},
-	"/atari/cybervcr.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/cybervcr.html",
-		"oF": 0
-		},
-	"/atari/designdisks1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/designdisks1.html",
-		"oF": 0
-		},
-	"/atari/designdisks2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/designdisks2.html",
-		"oF": 0
-		},
-	"/atari/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/atari/gfx",
-		"oF": 0
-		},
-	"/atari/history1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history1.html",
-		"oF": 0
-		},
-	"/atari/history2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history2.html",
-		"oF": 0
-		},
-	"/atari/history3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history3.html",
-		"oF": 0
-		},
-	"/atari/history4.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history4.html",
-		"oF": 0
-		},
-	"/atari/history5.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history5.html",
-		"oF": 0
-		},
-	"/atari/history6.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history6.html",
-		"oF": 0
-		},
-	"/atari/history7.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/history7.html",
-		"oF": 0
-		},
-	"/atari/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/index.html",
-		"oF": 0
-		},
-	"/atari/pdf/cadpipe.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/cadpipe.txt",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1986-q2.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1986-q2.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1986-q4.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1986-q4.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1987-q1.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1987-q1.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1987-q3.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1987-q3.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1987-q4.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1987-q4.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1988-q1.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1988-q1.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1988-q2.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1988-q2.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1989-01.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1989-01.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1989-02.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1989-02.pdf",
-		"oF": 0
-		},
-	"/atari/pdf/catalog-1990-04.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/atari/pdf/catalog-1990-04.pdf",
-		"oF": 0
-		},
-	"/atari/quicktimegallery.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/quicktimegallery.html",
-		"oF": 0
-		},
-	"/atari/relatedproducts.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/relatedproducts.html",
-		"oF": 0
-		},
-	"/atari/spectrum.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/spectrum.html",
-		"oF": 0
-		},
-	"/atari/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/atari/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/atari/timeline.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/timeline.html",
-		"oF": 0
-		},
-	"/atari/whatmight.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/atari/whatmight.html",
-		"oF": 0
-		},
-	"/cold-mac/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/cold-mac/gfx",
-		"oF": 0
-		},
-	"/cold-mac/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/cold-mac/index.html",
-		"oF": 0
-		},
-	"/cold-mac/index.v1": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/cold-mac/index.v1",
-		"oF": 0
-		},
-	"/css/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/css/normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/css/normalize.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/normalize.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/css/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/css/style-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/fonts/427083/06728A2AE8F58DAE9.eot": {
+	"/css/style.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/06728A2AE8F58DAE9.eot",
+		"oA": 0,
+		"oAP": "/css/style.css.map",
 		"oF": 0
 		},
-	"/fonts/427083/0B611C5C735FD05A5.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/0B611C5C735FD05A5-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/0D80AA62A3428E393.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/0D80AA62A3428E393-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/144075894F0DAB1B2.eot": {
+	"/detail1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/144075894F0DAB1B2.eot",
+		"oA": 0,
+		"oAP": "/detail1.html",
 		"oF": 0
 		},
-	"/fonts/427083/26D675C7DE9AE59A4.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/26D675C7DE9AE59A4-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/312238EE952187B02.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/312238EE952187B02-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/326AAC7ED44D57D88.eot": {
+	"/detail2.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/326AAC7ED44D57D88.eot",
+		"oA": 0,
+		"oAP": "/detail2.html",
 		"oF": 0
 		},
-	"/fonts/427083/35D386FD44EBDAB8A.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/35D386FD44EBDAB8A-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/36FF554E3FF984808.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/36FF554E3FF984808-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/37E32413357589755.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/37E32413357589755-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/385BC62773DE1E15B.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/385BC62773DE1E15B-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/39FF621310CEC2D6D.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/39FF621310CEC2D6D-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/41169BBF48D2EF91F.eot": {
+	"/detail3.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/41169BBF48D2EF91F.eot",
+		"oA": 0,
+		"oAP": "/detail3.html",
 		"oF": 0
 		},
-	"/fonts/427083/53D48111AE4E45A2A.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/53D48111AE4E45A2A-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/553DBE74AC6BB64BE.eot": {
+	"/detail4.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/553DBE74AC6BB64BE.eot",
+		"oA": 0,
+		"oAP": "/detail4.html",
 		"oF": 0
 		},
-	"/fonts/427083/58F51FF500BF6BE7A.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/58F51FF500BF6BE7A.eot",
-		"oF": 0
-		},
-	"/fonts/427083/5EAFD7C6068CC38F6.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/5EAFD7C6068CC38F6.eot",
-		"oF": 0
-		},
-	"/fonts/427083/6BA370C0547303CD3.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/gfx/p1-d1.jpg": {
+		"ft": 16384,
+		"iS": 54133,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/fonts/427083/6BA370C0547303CD3-min.css",
+		"oAP": "/gfx/p1-d1.jpg",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"/fonts/427083/7232FEA2FF2FE162E.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/gfx/p1-d2.jpg": {
+		"ft": 16384,
+		"iS": 55823,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/fonts/427083/7232FEA2FF2FE162E-min.css",
+		"oAP": "/gfx/p1-d2.jpg",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"/fonts/427083/8CA67CB9B406E430A.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/gfx/p1-d3.jpg": {
+		"ft": 16384,
+		"iS": 56954,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/fonts/427083/8CA67CB9B406E430A-min.css",
+		"oAP": "/gfx/p1-d3.jpg",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"/fonts/427083/9167CE3D9F3711663.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/gfx/p1-d4.jpg": {
+		"ft": 16384,
+		"iS": 66053,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/fonts/427083/9167CE3D9F3711663-min.css",
+		"oAP": "/gfx/p1-d4.jpg",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"/fonts/427083/94D197DD8E9122DFD.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/gfx/sample-page.jpg": {
+		"ft": 16384,
+		"iS": 315252,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/fonts/427083/94D197DD8E9122DFD-min.css",
+		"oAP": "/gfx/sample-page.jpg",
 		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/9AA3EBB30EA185D58.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/9AA3EBB30EA185D58-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/9B0C9D0BC33F2B3B2.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/9B0C9D0BC33F2B3B2-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/9C681611A920C9FD6.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/9C681611A920C9FD6-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/A5D6BE7CF22AFC829.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/A5D6BE7CF22AFC829-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/A5D76B1049956A913.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/A5D76B1049956A913-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/B6B065A641E44242A.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/B6B065A641E44242A-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/BDB91B3812A0E5BB7.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/fonts/427083/BDB91B3812A0E5BB7.eot",
-		"oF": 0
-		},
-	"/fonts/427083/C2CF4F20CDDB918EA.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/C2CF4F20CDDB918EA-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/DD58234FED302870E.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/DD58234FED302870E-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/DFF765AD372779191.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/DFF765AD372779191-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/E4665AFD973182EBD.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/E4665AFD973182EBD-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/E517D1DA850653A07.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/E517D1DA850653A07-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/F172AA077470CAC83.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/F172AA077470CAC83-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fonts/427083/F4CFA65F0D5E98390.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fonts/427083/F4CFA65F0D5E98390-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/gfx",
-		"oF": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/index.html": {
 		"cB": 0,
@@ -725,1888 +122,21 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
-	"/js/main.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/min/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/vendor/html5shiv.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/vendor/min/html5shiv-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/kiosk/css/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/kiosk/css/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/kiosk/css/style.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/css/style.css.map",
-		"oF": 0
-		},
-	"/kiosk/detail1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/detail1.html",
-		"oF": 0
-		},
-	"/kiosk/detail2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/detail2.html",
-		"oF": 0
-		},
-	"/kiosk/detail3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/detail3.html",
-		"oF": 0
-		},
-	"/kiosk/detail4.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/detail4.html",
-		"oF": 0
-		},
-	"/kiosk/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/kiosk/gfx",
-		"oF": 0
-		},
-	"/kiosk/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/kiosk/index.html",
-		"oF": 0
-		},
-	"/kiosk/less/style.less": {
-		"aP": 0,
-		"bl": 0,
-		"eJ": 0,
-		"ft": 1,
-		"iI": 0,
-		"ma": 0,
-		"mS": 0,
-		"oA": 0,
-		"oAP": "/kiosk/css/style.css",
-		"oF": 0,
-		"oS": 0,
-		"rwU": 0,
-		"sI": 0,
-		"sU": 0
-		},
-	"/less/html5bp-bottom.less": {
-		"aP": 0,
-		"bl": 0,
-		"eJ": 0,
-		"ft": 1,
-		"iI": 0,
-		"ma": 0,
-		"mS": 0,
-		"oA": 0,
-		"oAP": "/css/html5bp-bottom.css",
-		"oF": 0,
-		"oS": 0,
-		"rwU": 0,
-		"sI": 0,
-		"sU": 0
-		},
-	"/less/html5bp-top.less": {
-		"aP": 0,
-		"bl": 0,
-		"eJ": 0,
-		"ft": 1,
-		"iI": 0,
-		"ma": 0,
-		"mS": 0,
-		"oA": 1,
-		"oAP": "/css/html5bp-top.css",
-		"oF": 0,
-		"oS": 0,
-		"rwU": 0,
-		"sI": 0,
-		"sU": 0
-		},
 	"/less/style.less": {
 		"aP": 0,
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"mS": 0,
 		"oA": 0,
 		"oAP": "/css/style.css",
-		"oF": 0,
+		"oF": 2,
 		"oS": 0,
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
-		},
-	"/martin.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/martin.html",
-		"oF": 0
-		},
-	"/mixers/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/mixers/gfx",
-		"oF": 0
-		},
-	"/mixers/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/mixers/index.html",
-		"oF": 0
-		},
-	"/mixers/mixers-data.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/mixers/mixers-data.csv",
-		"oF": 0
-		},
-	"/mixers/mixers-data.numbers": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/mixers/mixers-data.numbers",
-		"oF": 0
-		},
-	"/mixers/render.py": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/mixers/render.py",
-		"oF": 0
-		},
-	"/oldfashioned101/404.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/oldfashioned101/404.html",
-		"oF": 0
-		},
-	"/oldfashioned101/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/oldfashioned101/gfx",
-		"oF": 0
-		},
-	"/oldfashioned101/humans.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/oldfashioned101/humans.txt",
-		"oF": 0
-		},
-	"/oldfashioned101/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/oldfashioned101/index.html",
-		"oF": 0
-		},
-	"/oldfashioned101/javascripts/jquery-1.6.2.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/oldfashioned101/javascripts/min/jquery-1.6.2-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/oldfashioned101/javascripts/jquery-1.6.2.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/oldfashioned101/javascripts/min/jquery-1.6.2.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/oldfashioned101/javascripts/modernizr-2.0.6.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/oldfashioned101/javascripts/min/modernizr-2.0.6.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/oldfashioned101/javascripts/plugins.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/oldfashioned101/javascripts/min/plugins-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/oldfashioned101/javascripts/script.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/oldfashioned101/javascripts/min/script-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/oldfashioned101/pagetwo.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/oldfashioned101/pagetwo.html",
-		"oF": 0
-		},
-	"/oldfashioned101/robots.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/oldfashioned101/robots.txt",
-		"oF": 0
-		},
-	"/oldfashioned101/sass/partials/_base.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/oldfashioned101/sass/css/_base.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/sass/partials/_fonts.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/oldfashioned101/sass/css/_fonts.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/sass/partials/_media.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/oldfashioned101/sass/css/_media.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/sass/partials/_overrides.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/oldfashioned101/sass/css/_overrides.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/sass/partials/_page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/oldfashioned101/sass/css/_page.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/sass/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/oldfashioned101/css/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/oldfashioned101/stylesheets/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/oldfashioned101/stylesheets/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/content/custom.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/content/custom-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/content/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/content/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/greenmount/content/bin/images": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/photo/greenmount/content/bin/images",
-		"oF": 0
-		},
-	"/photo/greenmount/content/custom.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/custom-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/greenmount/content/logo.png": {
-		"ft": 32768,
-		"iS": 8632,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/greenmount/content/Untitled_I_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_I_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_II_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_II_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_III_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_III_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_IV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_IV_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_IX_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_IX_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_V_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_V_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_VI_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_VI_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_VII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_VII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_VIII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_VIII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_X_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_X_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XI_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XI_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XIII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XIII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XIV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XIV_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XIX_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XIX_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XV_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XVI_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XVI_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XVII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XVII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XVIII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XVIII_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/content/Untitled_XX_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/content/Untitled_XX_large.html",
-		"oF": 0
-		},
-	"/photo/greenmount/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/index.html",
-		"oF": 0
-		},
-	"/photo/greenmount/resources/css/ie6.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/css/ie6-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/greenmount/resources/css/ie7.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/css/ie7-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/greenmount/resources/css/master.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/css/master-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/greenmount/resources/js/live_update.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/js/min/live_update-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/greenmount/resources/js/pngfix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/js/min/pngfix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/greenmount/resources/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/greenmount/resources/misc/icon_fullsize.png": {
-		"ft": 32768,
-		"iS": 2868,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/misc/icon_fullsize.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/greenmount/resources/misc/shadow-grid.gif": {
-		"ft": 4194304,
-		"iS": 56,
-		"oA": 1,
-		"oAP": "/photo/greenmount/resources/misc/shadow-grid.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/photo/greenmount/resources/misc/shadow.png": {
-		"ft": 32768,
-		"iS": 39993,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/misc/shadow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/greenmount/resources/version_info.png": {
-		"ft": 32768,
-		"iS": 2591,
-		"oA": 0,
-		"oAP": "/photo/greenmount/resources/version_info.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/index.html",
-		"oF": 0
-		},
-	"/photo/resources/css/ie6.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/resources/css/ie6-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/resources/css/ie7.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/resources/css/ie7-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/resources/css/master.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/resources/css/master-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/resources/js/live_update.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/resources/js/min/live_update-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/resources/js/pngfix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/resources/js/min/pngfix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/resources/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/resources/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/resources/misc/icon_fullsize.png": {
-		"ft": 32768,
-		"iS": 2868,
-		"oA": 0,
-		"oAP": "/photo/resources/misc/icon_fullsize.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/resources/misc/shadow-grid.gif": {
-		"ft": 4194304,
-		"iS": 56,
-		"oA": 1,
-		"oAP": "/photo/resources/misc/shadow-grid.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/photo/resources/misc/shadow.png": {
-		"ft": 32768,
-		"iS": 39993,
-		"oA": 0,
-		"oAP": "/photo/resources/misc/shadow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/resources/version_info.png": {
-		"ft": 32768,
-		"iS": 2591,
-		"oA": 0,
-		"oAP": "/photo/resources/version_info.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/whitesands/content/bin/images": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/photo/whitesands/content/bin/images",
-		"oF": 0
-		},
-	"/photo/whitesands/content/custom.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/custom-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/whitesands/content/logo.png": {
-		"ft": 32768,
-		"iS": 8632,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/whitesands/content/white_sands_i_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_i_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_ii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_ii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_iii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_iii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_iv_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_iv_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_ix_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_ix_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_v_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_v_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_vi_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_vi_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_vii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_vii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_viii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_viii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_x_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_x_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_xi_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_xi_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_xii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_xii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_xiii_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_xiii_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/content/white_sands_xiv_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/content/white_sands_xiv_large.html",
-		"oF": 0
-		},
-	"/photo/whitesands/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/index.html",
-		"oF": 0
-		},
-	"/photo/whitesands/resources/css/ie6.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/css/ie6-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/whitesands/resources/css/ie7.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/css/ie7-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/whitesands/resources/css/master.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/css/master-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/whitesands/resources/js/live_update.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/js/min/live_update-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/whitesands/resources/js/pngfix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/js/min/pngfix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/whitesands/resources/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/whitesands/resources/misc/icon_fullsize.png": {
-		"ft": 32768,
-		"iS": 2868,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/misc/icon_fullsize.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/whitesands/resources/misc/shadow-grid.gif": {
-		"ft": 4194304,
-		"iS": 56,
-		"oA": 1,
-		"oAP": "/photo/whitesands/resources/misc/shadow-grid.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/photo/whitesands/resources/misc/shadow.png": {
-		"ft": 32768,
-		"iS": 39993,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/misc/shadow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/whitesands/resources/version_info.png": {
-		"ft": 32768,
-		"iS": 2591,
-		"oA": 0,
-		"oAP": "/photo/whitesands/resources/version_info.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/wilson/content/25th_Street_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/25th_Street_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Alley_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Alley_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/bin/images": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/photo/wilson/content/bin/images",
-		"oF": 0
-		},
-	"/photo/wilson/content/Clinic_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Clinic_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/custom.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/custom-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/wilson/content/Grain_Elevator_I_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_I_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grain_Elevator_II_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_II_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grain_Elevator_III_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_III_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grain_Elevator_IV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_IV_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grain_Elevator_V_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_V_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grain_Elevator_VI_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grain_Elevator_VI_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Grocery_Store_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Grocery_Store_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Home_With_Painted_Windows_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Home_With_Painted_Windows_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Jailhouse_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Jailhouse_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/wilson/content/Municipal_Power_Plant_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Municipal_Power_Plant_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Post_Office_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Post_Office_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Restaurant_Window_I_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Restaurant_Window_I_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Restaurant_Window_II_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Restaurant_Window_II_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Restaurant_Window_III_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Restaurant_Window_III_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Restaurant_Window_IV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Restaurant_Window_IV_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Restaurant_Window_V_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Restaurant_Window_V_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_I_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_I_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_II_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_II_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_III_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_III_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_IV_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_IV_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_V_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_V_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_VI_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_VI_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Storefront_VII_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Storefront_VII_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Theater_Sign_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Theater_Sign_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/content/Truck_large.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/content/Truck_large.html",
-		"oF": 0
-		},
-	"/photo/wilson/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/index.html",
-		"oF": 0
-		},
-	"/photo/wilson/resources/css/ie6.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/css/ie6-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/wilson/resources/css/ie7.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/css/ie7-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/wilson/resources/css/master.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/css/master-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/photo/wilson/resources/js/live_update.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/js/min/live_update-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/wilson/resources/js/pngfix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/js/min/pngfix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/photo/wilson/resources/logo.png": {
-		"ft": 32768,
-		"iS": 8547,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/wilson/resources/misc/icon_fullsize.png": {
-		"ft": 32768,
-		"iS": 2868,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/misc/icon_fullsize.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/wilson/resources/misc/shadow-grid.gif": {
-		"ft": 4194304,
-		"iS": 56,
-		"oA": 1,
-		"oAP": "/photo/wilson/resources/misc/shadow-grid.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/photo/wilson/resources/misc/shadow.png": {
-		"ft": 32768,
-		"iS": 39993,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/misc/shadow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/photo/wilson/resources/version_info.png": {
-		"ft": 32768,
-		"iS": 2591,
-		"oA": 0,
-		"oAP": "/photo/wilson/resources/version_info.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/quantizers/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/quantizers/gfx",
-		"oF": 0
-		},
-	"/quantizers/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/index.html",
-		"oF": 0
-		},
-	"/quantizers/quantizers.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/quantizers.csv",
-		"oF": 0
-		},
-	"/quantizers/quantizers.numbers": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/quantizers.numbers",
-		"oF": 0
-		},
-	"/quantizers/render.py": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/render.py",
-		"oF": 0
-		},
-	"/samplers/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/samplers/gfx",
-		"oF": 0
-		},
-	"/samplers/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/samplers/index.html",
-		"oF": 0
-		},
-	"/samplers/render.py": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/samplers/render.py",
-		"oF": 0
-		},
-	"/samplers/samplers.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/samplers/samplers.csv",
-		"oF": 0
-		},
-	"/samplers/samplers.numbers": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/samplers/samplers.numbers",
-		"oF": 0
-		},
-	"/sequencers/gfx": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/sequencers/gfx",
-		"oF": 0
-		},
-	"/sequencers/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sequencers/index.html",
-		"oF": 0
-		},
-	"/sequencers/render.py": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sequencers/render.py",
-		"oF": 0
-		},
-	"/sequencers/sequencers-data.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sequencers/sequencers-data.csv",
-		"oF": 0
-		},
-	"/sequencers/sequencers-data.numbers": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sequencers/sequencers-data.numbers",
-		"oF": 0
-		},
-	"/work.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/work.html",
-		"oF": 0
-		},
-	"/work/placeholder.jpg": {
-		"ft": 16384,
-		"iS": 21440,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/placeholder.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-alpenz.jpg": {
-		"ft": 16384,
-		"iS": 314759,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-alpenz.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-bbb.jpg": {
-		"ft": 16384,
-		"iS": 544410,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-bbb.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-ck-library.jpg": {
-		"ft": 16384,
-		"iS": 291327,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-ck-library.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-community.jpg": {
-		"ft": 16384,
-		"iS": 113387,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-community.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-diglloyd.jpg": {
-		"ft": 16384,
-		"iS": 402089,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-diglloyd.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-diglloydtools.jpg": {
-		"ft": 16384,
-		"iS": 365226,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-diglloydtools.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-dines.jpg": {
-		"ft": 16384,
-		"iS": 296131,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-dines.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-gaz.jpg": {
-		"ft": 16384,
-		"iS": 433289,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-gaz.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-grubbasoftware.jpg": {
-		"ft": 16384,
-		"iS": 194839,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-grubbasoftware.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-hairball.jpg": {
-		"ft": 16384,
-		"iS": 489128,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-hairball.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-latitude29.jpg": {
-		"ft": 16384,
-		"iS": 288726,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-latitude29.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-martini-app.jpg": {
-		"ft": 16384,
-		"iS": 232840,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-martini-app.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-mixographyinc.jpg": {
-		"ft": 16384,
-		"iS": 314643,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-mixographyinc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-mixologytech.jpg": {
-		"ft": 16384,
-		"iS": 242538,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-mixologytech.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-modern.jpg": {
-		"ft": 16384,
-		"iS": 305052,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-modern.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-mpg.jpg": {
-		"ft": 16384,
-		"iS": 383369,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-mpg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-mybar.jpg": {
-		"ft": 16384,
-		"iS": 349043,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-mybar.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-of101.jpg": {
-		"ft": 16384,
-		"iS": 290343,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-of101.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-paramount1.jpg": {
-		"ft": 16384,
-		"iS": 408741,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-paramount1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-paramount2.jpg": {
-		"ft": 16384,
-		"iS": 460027,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-paramount2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-pdt.jpg": {
-		"ft": 16384,
-		"iS": 417360,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-pdt.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-punch.jpg": {
-		"ft": 16384,
-		"iS": 642321,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-punch.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-ssn.jpg": {
-		"ft": 16384,
-		"iS": 441301,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-ssn.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-tiki1.jpg": {
-		"ft": 16384,
-		"iS": 320427,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-tiki1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-tiki2.jpg": {
-		"ft": 16384,
-		"iS": 557917,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-tiki2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-total-tiki.jpg": {
-		"ft": 16384,
-		"iS": 562808,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-total-tiki.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-v101.jpg": {
-		"ft": 16384,
-		"iS": 367212,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-v101.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-waveeditonline.jpg": {
-		"ft": 16384,
-		"iS": 404135,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/work/work-waveeditonline.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/work/work-wimf.jpg": {
-		"ft": 16384,
-		"iS": 361892,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/work/work-wimf.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
 		}
 	},
 "hooks": [
@@ -2614,10 +144,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 525628832,
-	"displayValue": "doudoroff.com",
-	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-fry",
+	"creationDate": 601857032.06309998,
+	"displayValue": "kiosk",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets-silver",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
@@ -3072,7 +602,7 @@
 			},
 		"array-callback-return": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowImplicit': false}"
 			},
 		"array-element-newline": {
 			"active": 0,
@@ -3108,7 +638,7 @@
 			},
 		"camelcase": {
 			"active": 0,
-			"optionString": "{'properties': 'always'}"
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
 			},
 		"capitalized-comments": {
 			"active": 0,
@@ -3188,11 +718,11 @@
 			},
 		"func-name-matching": {
 			"active": 0,
-			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			"optionString": "'always', {'considerPropertyDescriptor': false, 'includeCommonJSModuleExports': false}"
 			},
 		"func-names": {
 			"active": 0,
-			"optionString": "'always'"
+			"optionString": "'always', {'generators': 'always'}"
 			},
 		"func-style": {
 			"active": 0,
@@ -3232,7 +762,7 @@
 			},
 		"id-match": {
 			"active": 0,
-			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true, 'ignoreDestructuring': false}"
 			},
 		"implicit-arrow-linebreak": {
 			"active": 0,
@@ -3240,7 +770,7 @@
 			},
 		"indent": {
 			"active": 0,
-			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1 }"
 			},
 		"init-declarations": {
 			"active": 0,
@@ -3324,7 +854,7 @@
 			},
 		"new-parens": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'always'"
 			},
 		"newline-per-chained-call": {
 			"active": 0,
@@ -3376,7 +906,7 @@
 			},
 		"no-confusing-arrow": {
 			"active": 0,
-			"optionString": "{'allowParens': false}"
+			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
 			"active": 1,
@@ -3476,7 +1006,7 @@
 			},
 		"no-extra-parens": {
 			"active": 0,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -3708,7 +1238,7 @@
 			},
 		"no-self-assign": {
 			"active": 1,
-			"optionString": "{'props': false}"
+			"optionString": "{'props': true}"
 			},
 		"no-self-compare": {
 			"active": 0,
@@ -3732,11 +1262,11 @@
 			},
 		"no-sync": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'allowAtRootLevel': false}"
 			},
 		"no-tabs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
 			"active": 0,
@@ -3756,7 +1286,7 @@
 			},
 		"no-trailing-spaces": {
 			"active": 0,
-			"optionString": "{'skipBlankLines': false}"
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
 			},
 		"no-undef": {
 			"active": 1,
@@ -3772,7 +1302,7 @@
 			},
 		"no-underscore-dangle": {
 			"active": 0,
-			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
 			"active": 1,
@@ -3872,7 +1402,7 @@
 			},
 		"object-curly-newline": {
 			"active": 0,
-			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			"optionString": "{'ObjectExpression': {'multiline': true, 'consistent': true}, 'ObjectPattern': {'multiline': true, 'consistent': true}}"
 			},
 		"object-curly-spacing": {
 			"active": 0,
@@ -3880,7 +1410,7 @@
 			},
 		"object-property-newline": {
 			"active": 0,
-			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			"optionString": "{'allowAllPropertiesOnSameLine': true}"
 			},
 		"object-shorthand": {
 			"active": 0,
@@ -4008,7 +1538,7 @@
 			},
 		"sort-keys": {
 			"active": 0,
-			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
 			},
 		"sort-vars": {
 			"active": 0,
@@ -4474,7 +2004,7 @@
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.gif",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -4498,7 +2028,7 @@
 		"useUnixNewlines": 0
 		},
 	"languageDefaultsJPG": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.jpg",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -4513,11 +2043,11 @@
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
@@ -4534,8 +2064,8 @@
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "",
-		"autoOutputPathReplace2": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
 		"shouldRunCacheBuster": 0,
 		"shouldRunHTMLMinifier": 0
@@ -4547,8 +2077,8 @@
 		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
-		"createSourceMap": 0,
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
 		"enableJavascript": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
@@ -4580,7 +2110,7 @@
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.*",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -4590,7 +2120,7 @@
 		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsPNG": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.png",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -4617,7 +2147,7 @@
 		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -4647,7 +2177,7 @@
 		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"importCSS": 0,
@@ -4663,7 +2193,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 3758088159
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
@@ -4671,12 +2201,12 @@
 		"autoOutputPathRelativePath": "/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
-		"moduleType": 0,
+		"moduleType": 2,
 		"removeComments": 0,
 		"targetECMAVersion": 0
 		},
@@ -4692,7 +2222,7 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules, blog, articles, prem, prot, images, images_sel, images_selected, img, gfx, ad, WEB-INF, WEB-INF.bak, Templates",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,
@@ -4776,7 +2306,7 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"directives": {
@@ -4808,7 +2338,7 @@
 			"flagValue": -1
 			},
 		"hoist_funs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_props": {
@@ -4852,7 +2382,7 @@
 			"flagValue": -1
 			},
 		"keep_fargs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_fnames": {
@@ -4980,7 +2510,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"warnings": {
@@ -4997,7 +2527,7 @@
 			}
 		},
 	"uglifyMangleNames": 1,
-	"uglifyReservedNamesString": "$",
+	"uglifyReservedNamesString": "$,exports,require",
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
