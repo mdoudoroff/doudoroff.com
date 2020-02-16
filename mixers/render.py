@@ -79,12 +79,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-02-16 added Martime Modular Victor Alpha<br />
 2019-11-20 added Arcaico Caronte MS-4<br />
 2019-11-04 added Catoff Mix<br />
 2019-11-03 added Paratek РИТМИКС<br />
 2019-09-26 added Alyseum Q-Mix<br />
-2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 <span id="additionalUpdates" class="collapsed">
+2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
 2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
 2019-09-26 added Toppobrillo Stereomix 2<br />
 2019-09-22 added Happy Nerding 2xSAM<br />
