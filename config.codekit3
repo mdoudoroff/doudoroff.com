@@ -897,14 +897,6 @@
 		"oAP": "/mixers/index.html",
 		"oF": 0
 		},
-	"/mixers/mixers-data.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/mixers/mixers-data.csv",
-		"oF": 0
-		},
 	"/mixers/mixers-data.numbers": {
 		"cB": 0,
 		"ft": 8192,
