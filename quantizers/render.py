@@ -82,6 +82,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-02-19 added Tenderfoot Quad Quantizer<br />
 2019-10-22 added Kassutronics Quantizer<br />
 2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />
