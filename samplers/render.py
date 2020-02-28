@@ -83,6 +83,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-02-28 added Squarp Rample<br />
 2019-09-27 errata<br />
 2019-09-25 clarified some wording<br />
 2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
