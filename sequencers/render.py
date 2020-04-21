@@ -79,6 +79,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-12-30 reworked the Gate Handling column<br />
 2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
@@ -144,7 +145,8 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li><strong>Tracker</strong> is a specific GUI interface similar to a spreadsheet</li>
 </ul>
 
-<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some attempt to provide per-step control over gate length, whereas most do not. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
+<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, many attempt to provide per-step control over gate length. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
+<p>A few sequencers even provide for variable step length, meaning each step can have a duration of variable length, and within that duration, a gate of variable length. This approach, while more complex, makes more sophisticated phrasing (or “groove”) possible. Some of these designs will use the term “stage” in place of “step”.</p>
 
 <p>Below the comparison is a directory of additional tools of potential interest that do not fit in the comparison.</p>
 

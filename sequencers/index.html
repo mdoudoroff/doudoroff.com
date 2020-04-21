@@ -71,6 +71,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2019-12-30 reworked the Gate Handling column<br />
 2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
@@ -136,7 +137,8 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li><strong>Tracker</strong> is a specific GUI interface similar to a spreadsheet</li>
 </ul>
 
-<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, some attempt to provide per-step control over gate length, whereas most do not. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
+<p>The <strong>Gate handling</strong> column is an attempt to characterize how the sequencer treats gates. All these sequencers emit (or at least pass through) gates of some sort, but they vary wildly in capabilities and style. Perhaps most critically, many attempt to provide per-step control over gate length. Per-step gate length can be critical for use with ADSR- and ASR-envelopes, but this capability often implies a more complex, programmatic user interface for the sequencer.</p>
+<p>A few sequencers even provide for variable step length, meaning each step can have a duration of variable length, and within that duration, a gate of variable length. This approach, while more complex, makes more sophisticated phrasing (or “groove”) possible. Some of these designs will use the term “stage” in place of “step”.</p>
 
 <p>Below the comparison is a directory of additional tools of potential interest that do not fit in the comparison.</p>
 
@@ -149,7 +151,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">64</td>
 	<td class="">8</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step</td>
+	<td class="">variable gate length per step</td>
 	<td class=""></td>
 	<td class="">4 assignable</td>
 	<td class="">26</td>
@@ -168,7 +170,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">1</td>
 	<td class="">1 pitch<br /> 3 cv<br /> 1 gate<br /> 1 aux</td>
-	<td class="">per step length; accent</td>
+	<td class="">variable gate length per step; accent</td>
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">36</td>
@@ -184,7 +186,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off; global gate length</td>
+	<td class="">gate on/off per step; global variable gate length</td>
 	<td class=""></td>
 	<td class="">1 assignable</td>
 	<td class="">10</td>
@@ -203,7 +205,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate (but there’s more to it than that)</td>
-	<td class="">per step on/off or half-step length</td>
+	<td class="">gate on/off per step or half-step length on/off per step</td>
 	<td class="">ratcheting</td>
 	<td class="">various, patch programmable</td>
 	<td class="">16</td>
@@ -219,7 +221,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">6</td>
 	<td class="">configurable</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">52</td>
@@ -236,11 +238,11 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">1/64</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
-	<td class="">per step on/off; accent</td>
+	<td class="">gate on/off per step; accent</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">12</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">299</td>
 	<td class="left"><ul>
 	<li>extensive randomization features</li>
@@ -252,7 +254,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step pulse, ratchet, hold or pass-through</td>
+	<td class="">pulse, ratchet, hold or pass-through per step</td>
 	<td class="">repeat</td>
 	<td class="">2 playback modifier gate ins</td>
 	<td class="">30</td>
@@ -269,7 +271,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">2</td>
 	<td class="">2 cv<br /> 1 gate<br /> 3 trig</td>
-	<td class="">per step trigger and/or gate (three trigger buses)</td>
+	<td class="">trigger and/or gate on/off (three trigger buses) per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">50</td>
@@ -288,7 +290,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">64/64</td>
 	<td class="">3 (plus 8 triggers)</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step, TBD</td>
 	<td class="gray">TBD</td>
 	<td class="">4 assignable</td>
 	<td class="">42</td>
@@ -306,7 +308,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step, TBD</td>
 	<td class="">ratcheting, repeat</td>
 	<td class="gray">TBD</td>
 	<td class="">38</td>
@@ -324,7 +326,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/16</td>
 	<td class="">2 to 6</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">per step length; velocity</td>
+	<td class="">variable gate length within variable step length per step; velocity</td>
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">42</td>
@@ -343,7 +345,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16</td>
 	<td class="">4</td>
 	<td class="">2 cv<br /> 2 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length within variable step length per step</td>
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">36</td>
@@ -363,7 +365,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">12/32</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1-2 gates</td>
-	<td class="">per step on/off (three gate buses)</td>
+	<td class="">gate on/off per step (three gate buses)</td>
 	<td class=""></td>
 	<td class="">play mode</td>
 	<td class="">84</td>
@@ -380,7 +382,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16*</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length and delay</td>
+	<td class="">variable gate length per step; delay</td>
 	<td class="">ratcheting</td>
 	<td class="">1 tempo, 2 assignable, 1 cv record in</td>
 	<td class="">32</td>
@@ -398,7 +400,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step pulse, ratchet or hold</td>
+	<td class="">pulse, ratchet or hold per step</td>
 	<td class="">repeat</td>
 	<td class="">2 assignable</td>
 	<td class="">34</td>
@@ -432,7 +434,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16</td>
 	<td class="">1</td>
 	<td class="">2 cv<br /> 2 gate (sort of)</td>
-	<td class="">per step pulse or pass-through (see notes)</td>
+	<td class="">pulse or pass-through per step (see notes)</td>
 	<td class=""></td>
 	<td class="">6 multipurpose</td>
 	<td class="">34</td>
@@ -451,7 +453,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16</td>
 	<td class="">3</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">trigger or pass-through</td>
+	<td class="">trigger or pass-through per step</td>
 	<td class=""></td>
 	<td class="">5 multipurpose</td>
 	<td class="">34</td>
@@ -469,7 +471,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16*</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off and delay</td>
+	<td class="">gate on/off per step; delay</td>
 	<td class="">ratcheting</td>
 	<td class="">1 randomization gate, 1 cv record in</td>
 	<td class="">26</td>
@@ -487,7 +489,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off</td>
+	<td class="">gate on/off per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">12</td>
@@ -504,7 +506,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8 or 16</td>
 	<td class="">2 or 1</td>
 	<td class="">1 cv<br /> 1 gate<br /> plus extra per-step gate outs</td>
-	<td class="">global pulse, hold or pass-through</td>
+	<td class="">pulse, hold or pass-through, globally</td>
 	<td class=""></td>
 	<td class="">1 transpose cv, 1 clock rate cv</td>
 	<td class="">52</td>
@@ -521,7 +523,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length within variable step length per step</td>
 	<td class=""></td>
 	<td class="">1 assignable</td>
 	<td class="">21</td>
@@ -554,7 +556,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off (two gate buses)</td>
+	<td class="">gate on/off per step (two gate buses)</td>
 	<td class=""></td>
 	<td class="">2 transpose</td>
 	<td class="">50</td>
@@ -570,7 +572,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off; global length</td>
+	<td class="">gate on/off per step; global gate length</td>
 	<td class=""></td>
 	<td class="">4 assignable</td>
 	<td class="">14</td>
@@ -587,7 +589,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">1/99+</td>
 	<td class="">4</td>
 	<td class="">2 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length within variable step length per step</td>
 	<td class="">ratcheting, repeat (de facto)</td>
 	<td class="">various part selection, assignable modulation and cv recording options with ER-201 expander</td>
 	<td class="">26</td>
@@ -604,7 +606,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">8</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">ratcheting</td>
 	<td class="">4 assignable</td>
 	<td class="">34</td>
@@ -622,7 +624,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">2 cv<br /> 1 gate</td>
-	<td class="">per step on/off</td>
+	<td class="">gate on/off per step</td>
 	<td class="">ratcheting</td>
 	<td class="">1 assignable gate input</td>
 	<td class="">10</td>
@@ -638,7 +640,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/32</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">repeat</td>
 	<td class="">transpose, various inputs for controlling and navigating pattern variations</td>
 	<td class="">16</td>
@@ -654,7 +656,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per-track length</td>
+	<td class="">gate on/off per step; global gate length</td>
 	<td class="">ratcheting</td>
 	<td class=""></td>
 	<td class="">10</td>
@@ -671,7 +673,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">2</td>
 	<td class="">1 cv<br /> shared gate</td>
-	<td class="">per step pulse</td>
+	<td class="">pulse per step</td>
 	<td class=""></td>
 	<td class="">direction, hold</td>
 	<td class="">42</td>
@@ -687,7 +689,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 2 trigger/gate</td>
-	<td class="">no per step control; global length</td>
+	<td class="">global gate length</td>
 	<td class="">arbitrary behavioral logic</td>
 	<td class="">yes (it’s complicated)</td>
 	<td class="">22</td>
@@ -703,7 +705,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">1-256</td>
 	<td class="">8</td>
 	<td class="">configurable</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">ratcheting</td>
 	<td class="">four configurable inputs</td>
 	<td class="">26</td>
@@ -723,7 +725,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/16</td>
 	<td class="">1 or 2</td>
 	<td class="">1 cv<br /> 2 gates</td>
-	<td class="">per step on/off (two gate buses)</td>
+	<td class="">gate on/off per step (two gate buses)</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">26</td>
@@ -740,7 +742,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/16</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 accent</td>
-	<td class="">per step on/off; accent</td>
+	<td class="">gate on/off per step; accent</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">32</td>
@@ -755,7 +757,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step on/off</td>
+	<td class="">gate on/off per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">30</td>
@@ -773,7 +775,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/256</td>
 	<td class="">8</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">ratcheting, repeat</td>
 	<td class="">2 assignable</td>
 	<td class="">38</td>
@@ -790,7 +792,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/256</td>
 	<td class="">4 to 64</td>
 	<td class="">1 cv</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">40</td>
@@ -809,7 +811,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">8/8</td>
 	<td class="">1</td>
 	<td class="">1 cv<br /> 1 gate</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">20</td>
@@ -826,7 +828,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">6</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length within variable step length per step</td>
 	<td class="">ratcheting</td>
 	<td class="">4 assignable</td>
 	<td class="">32</td>
@@ -845,7 +847,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">16/64</td>
 	<td class="">4</td>
 	<td class="">1 cv<br /> 1 gate<br /> 1 mod</td>
-	<td class="">per step length</td>
+	<td class="">variable gate length per step</td>
 	<td class="">arpeggiation</td>
 	<td class="">4 assignable</td>
 	<td class="">26</td>
