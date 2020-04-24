@@ -2170,14 +2170,6 @@
 		"oAP": "/quantizers/index.html",
 		"oF": 0
 		},
-	"/quantizers/quantizers.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/quantizers/quantizers.csv",
-		"oF": 0
-		},
 	"/quantizers/quantizers.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -2216,6 +2208,14 @@
 		"oAP": "/samplers/render.py",
 		"oF": 0
 		},
+	"/samplers/samplers.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/samplers/samplers.csv",
+		"oF": 0
+		},
 	"/samplers/samplers.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -2244,6 +2244,14 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/sequencers/render.py",
+		"oF": 0
+		},
+	"/sequencers/sequencers-data.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/sequencers/sequencers-data.csv",
 		"oF": 0
 		},
 	"/sequencers/sequencers-data.numbers": {
