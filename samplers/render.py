@@ -83,6 +83,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-04-24 added Disting EX<br />
 2020-04-16 errata & updates<br />
 2020-02-28 added Squarp Rample<br />
 2019-09-27 errata<br />
