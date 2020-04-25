@@ -83,17 +83,18 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-04-25 added Bitbox Mk2 and Bitbox Micro<br />
 2020-04-24 added Disting EX<br />
 2020-04-16 errata & updates<br />
 2020-02-28 added Squarp Rample<br />
 2019-09-27 errata<br />
+<span id="additionalUpdates" class="collapsed">
 2019-09-25 clarified some wording<br />
 2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
 2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
 2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
 2019-09-17 added (tentatively) Clouds, more edits/augmentations<br />
 2019-09-16 added (nascent) latency column, corrections<br />
-<span id="additionalUpdates" class="collapsed">
 2019-09-15 added 4ms DLD; many corrections and details<br />
 2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
 2019-09-13 added Mungo g0, filled in more cells<br />
