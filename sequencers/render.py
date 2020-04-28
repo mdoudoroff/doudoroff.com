@@ -79,7 +79,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2019-12-30 reworked the Gate Handling column<br />
+2019-04-29 added the RYK M185<br />
+2019-03-30 reworked the Gate Handling column<br />
 2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />

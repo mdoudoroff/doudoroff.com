@@ -7,7 +7,7 @@
 		"uuidString": "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
 		}
 	],
-"creatorBuild": "32001",
+"creatorBuild": "32137",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -1026,79 +1026,79 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/oldfashioned101/sass/css/_base.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/sass/partials/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/oldfashioned101/sass/css/_fonts.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/sass/partials/_media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/oldfashioned101/sass/css/_media.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/sass/partials/_overrides.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/oldfashioned101/sass/css/_overrides.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/sass/partials/_page.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/oldfashioned101/sass/css/_page.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/sass/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/oldfashioned101/css/style.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/oldfashioned101/stylesheets/style.css": {
 		"aP": 1,
@@ -2170,6 +2170,14 @@
 		"oAP": "/quantizers/index.html",
 		"oF": 0
 		},
+	"/quantizers/quantizers.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/quantizers/quantizers.csv",
+		"oF": 0
+		},
 	"/quantizers/quantizers.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -2208,6 +2216,14 @@
 		"oAP": "/samplers/render.py",
 		"oF": 0
 		},
+	"/samplers/samplers.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/samplers/samplers.csv",
+		"oF": 0
+		},
 	"/samplers/samplers.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -2236,14 +2252,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/sequencers/render.py",
-		"oF": 0
-		},
-	"/sequencers/sequencers-data.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sequencers/sequencers-data.csv",
 		"oF": 0
 		},
 	"/sequencers/sequencers-data.numbers": {
@@ -4622,13 +4630,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
