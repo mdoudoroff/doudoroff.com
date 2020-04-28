@@ -161,18 +161,19 @@ html_bottom = '''
 <p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
 These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can all produce CV):</p>
 <ul>
-<li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (direct patch)</li>
-<li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (direct patch)</li>
-<li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (direct patch)</li>
-<li><a href="https://www.arturia.com/products/hybrid-synths/keystep-pro/overview">Arturia Keystep Pro</a> (direct patch)</li>
-<li><a href="https://teenage.engineering/guides/po-modular/16">Teenage Engineering Pocket Operator Modular 16</a> (direct patch)</li>
-<li><a href="https://novationmusic.com/keys/sl-mkiii">Novation SL MkIII</a> (direct patch)</li>
-<li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a> (direct patch)</li>
-<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a> (direct patch)</li>
-<li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (direct patch)</li>
-<li><a href="https://www.kilpatrickaudio.com/?p=carbon">Kilpatrick Audio Carbon</a> (direct patch)</li>
-<li><a href="https://squarp.net">Squarp Pyramid</a> (direct patch)</li>
-<li><a href="http://www.grpsynthesizer.it/index.php/en/products/grp-synthesizer-r24-en.html">Grp Synthesizer R24</a> (direct patch)</li>
+<li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://www.arturia.com/beatstep-pro/overview">Arturia Beatstep Pro</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://www.arturia.com/products/keystep/overview">Arturia Keystep</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://www.arturia.com/products/hybrid-synths/keystep-pro/overview">Arturia Keystep Pro</a> (<strong>direct patch</strong>)</li>
+<li><a href="http://www.grpsynthesizer.it/index.php/en/products/grp-synthesizer-r24-en.html">Grp Synthesizer R24</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://www.kilpatrickaudio.com/?p=carbon">Kilpatrick Audio Carbon</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://koma-elektronik.com/?product=komplex-sequencer">Koma Komplex</a> (<strong>direct patch</strong>)</li>
+<li><a href="http://www.korg.com/us/products/dj/sq_1/">Korg SQ-1</a> (<strong>direct patch</strong>)</li>
+<li><a href="http://www.monome.org/docs/modular/ansible/">Monome Ansible w/Grid or Arc</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://novationmusic.com/keys/sl-mkiii">Novation SL MkIII</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://www.indiegogo.com/projects/noodlebox-a-serendipity-sequencer/x/23407414">Sixty Four Pixels Serendipity</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://squarp.net">Squarp Pyramid</a> (<strong>direct patch</strong>)</li>
+<li><a href="https://teenage.engineering/guides/po-modular/16">Teenage Engineering Pocket Operator Modular 16</a> (<strong>direct patch</strong>)</li>
 <li><a href="http://polyend.com/seq-sequencer/">Polyend SEQ</a> (w/Poly MIDI-to-CV interface module)</li>
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="http://www.signalarts.ca/sattetra.html">Signal Arts TetraMAPS</a> (Lemur/TouchOSC eurorack hardware + iPad solution)</li>
@@ -184,15 +185,15 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <p>In addition, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
-<li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
-<li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
-<li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
-<li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
 <li><a href="https://www.modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
+<li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
+<li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
+<li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
+<li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
+<li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
+<li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
