@@ -7,7 +7,7 @@
 		"uuidString": "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
 		}
 	],
-"creatorBuild": "32137",
+"creatorBuild": "32147",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -895,14 +895,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/mixers/index.html",
-		"oF": 0
-		},
-	"/mixers/mixers-data.csv": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/mixers/mixers-data.csv",
 		"oF": 0
 		},
 	"/mixers/mixers-data.numbers": {
