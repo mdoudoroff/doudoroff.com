@@ -12,7 +12,7 @@ body {
 	font-size: 16px;
 }
 p, li {
-	max-width: 50rem;
+	max-width: 40rem;
 	line-height: 1.4;
 }
 .updates {
@@ -57,9 +57,18 @@ img.diagram {
 
 <h1>Multitrack Recording Your Eurorack Modular Synthesizer</h1>
 
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+<p>Acknowledgements: Thanks to flo for his input.</p>
+
 
 <h4>Latest</h4>
 <p class="updates">
+2020-05-25 tweaks<br />
 2020-05-24 rough draft<br />
 <!--<span id="additionalUpdates" class="collapsed">
 </span>
@@ -84,7 +93,7 @@ function toggleAdditionalUpdates()
 }
 </script>
 
-<p>This guide attempts to summarize the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
+<p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
 
 <h2>An array of options</h2>
 
@@ -98,7 +107,7 @@ function toggleAdditionalUpdates()
 
 <img src="gfx/option-direct.png" class="diagram" />
 
-<p>This approach can scale from just a single mono single up to any number of mono and stereo channels, depending on what the rest of your studio setup can handle.</p>
+<p>This approach can scale from just a single mono signal up to any number of mono and stereo channels, depending on what the rest of your studio setup can handle.</p>
 
 <p>The main issue with this approach is that the Eurorack modular voltage levels are pretty hot (±10V range). Most mixing consoles have no trouble handling Eurorack voltages, but depending on the headroom of the destination to which you are patching, you may wish to run the signal through an attenuator first.</p>
 
@@ -107,15 +116,15 @@ function toggleAdditionalUpdates()
 
 <h3>Option 2: use a DB25 adapter module</h3>
 
-<p>This option centers around some sort of Eurorack module that you patch into that takes your Eurorack signal, attenuates it to line level, and passes it out a DB25 connector, to which you attach a “snake” that carries the signals to your computer audio interface, patch bay, or other studio gear. The DB25 approach is implemented in blocks of eight channels, typically of balanced audio. The best known such solution is probably the nw2s::io module.</p>
+<p>This option centers around some sort of Eurorack module that you patch into that takes your Eurorack signal, attenuates it to line level, and passes it out a DB25 connector, to which you attach a “snake” that carries the signals to your computer audio interface, patch bay, or other studio gear. The DB25 approach is implemented in blocks of eight channels, typically of balanced audio. The best known such solution is probably the <a href="https://www.modulargrid.net/e/nw2s-nw2s-io-balanced">nw2s::io</a> module.</p>
 
 <img src="gfx/option-db25.png" class="diagram" />
 
 <p>The advantage to this approach is that you can deliver up eight channels of modular audio for processing and recording in the rest of your studio in a relatively tidy manner.</p>
 
-<p>A related approach is the PM DB25 expander for the popular WMD Performance Mixer. The latter is a stereo mixer module that—fully expanded—can handle up six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix out two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer.</p>
+<p>In fact, there are other high density snake connector systems around, such as EDAC, and high end alternatives for managing multiple outputs from your modular, such as Hinton Instrument’s <a href="http://www.hinton-instruments.co.uk/paprod/modular/trimmer/">Trimmer</a>. If you’re reading this guide in the first place, then these sorts of heavy duty things are most likely out of scope, but it’s useful to know they exist.</p>
 
-<p>The advantage to the WMD Performance Mixer + DB25 approach is that you retain all the functionality of the Performance Mixer within your modular while also being able to pass all of its channels (post-gain, pre-fader, more on this below) to your studio in a relatively tidy manner.</p>
+<p>A related approach is the <a href="https://www.modulargrid.net/e/wmd-pm-db25">PM DB25 expander</a> for the popular <a href="https://www.modulargrid.net/e/wmd-performance-mixer-black">WMD Performance Mixer</a>. The latter is a stereo mixer module that—fully expanded—can handle up up to six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix out through two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer. The advantage to the WMD Performance Mixer + DB25 approach is that you retain all the functionality of the Performance Mixer within your modular while also being able to pass all of its channels (post-gain, pre-fader, more on this below) to your studio in a relatively tidy manner.</p>
 
 
 
@@ -128,9 +137,9 @@ function toggleAdditionalUpdates()
 <p>We already mentioned the WMD Performance Mixer, above, which delivers individual channels (pre-fader) over line level DB25. A few other stereo mixers have individual 1/8" output jacks per track:
 
 <ul>
-	<li>Xaoc Devices Praga is a four channel stereo mixer; each channel has an individual “VCA output” which is “post-fader” (see considerations, below); you can direct patch from this jack (Eurorack signal levels) to the studio recording solution of your choice; multiple Praga modules can be connected to add additional channels</li>
-	<li>similarly, Befaco Hexmix + Hexpander is a six track stereo mixer with individual channel outputs (post-fader, post-eq) for each of the six channels</li>
-	<li>Frap Tools CGM is a modular Eurorack stereo mixer system, with separate modules for mono channels and stereo channels; each has a direct output (pre- or post-fader, configurable) useful for multitrack recording; pretty much any number of mono or stereo channels can be configured with enough pieces of this system</li>
+	<li><a href="https://www.modulargrid.net/e/xaoc-devices-praga">Xaoc Devices Praga</a> is a four channel stereo mixer; each channel has an individual “VCA output” which is “post-fader” (see considerations, below); you can direct patch from this jack (Eurorack signal levels) to the studio recording solution of your choice; multiple Praga modules can be connected to add additional channels</li>
+	<li>similarly, <a href="https://www.modulargrid.net/e/befaco-hexmix">Befaco Hexmix</a> + <a href="https://www.modulargrid.net/e/befaco-hexpander">Hexpander</a> is a six track stereo mixer with individual channel outputs (post-fader, post-eq) for each of the six channels</li>
+	<li><a href="https://frap.tools/products/mixer/">Frap Tools CGM</a> is a modular Eurorack stereo mixer system, with separate modules for mono channels and stereo channels; each has a direct output (pre- or post-fader, configurable) useful for multitrack recording; pretty much any number of mono or stereo channels can be configured with enough pieces of this system</li>
 </ul>
 
 <img src="gfx/option-stereo-mixer.png" class="diagram" />
@@ -142,7 +151,7 @@ function toggleAdditionalUpdates()
 
 <h3>Option 4: put a computer audio interface in your modular</h3>
 
-<p>Expert Sleepers offers two modules—the ES-8 and the ES-9—each of which embed a USB class-compliant audio interface in a Eurorack module. These modules connect to your computer over USB, and pass bidirectional digital audio between your modular and your computer. The modules themselves handle the analog-to-digital and digital-to-analog conversions.</p>
+<p>Expert Sleepers offers two modules—the <a href="https://www.modulargrid.net/e/expert-sleepers-es-8">ES-8</a> and the <a href="https://www.modulargrid.net/e/expert-sleepers-es-9">ES-9</a>—each of which embed a USB class-compliant audio interface in a Eurorack module. These modules connect to your computer over USB, and pass bidirectional digital audio between your modular and your computer. The modules themselves handle the analog-to-digital and digital-to-analog conversions.</p>
 
 <ul>
 	<li>Expert Sleepers ES-8 will send up to four audio tracks to your computer, and return eight. You can add various expansion modules to the ES-8 to send up to twelve audio tracks to your computer, and return up to 16.</li>
@@ -162,7 +171,7 @@ function toggleAdditionalUpdates()
 
 <p>By “ADAT” we actually mean “ADAT Lightpipe”. It’s nothing new: a standard for transmitting eight channels of digital audio over a fiber optic cable. Many computer audio interfaces (and various other types of gear) offer ADAT interfaces because it’s an inexpensive, space-efficient way to handle additional channels of (digital) audio without having to also implement the ADCs, DACs and related hardware of translating those channels to and from the analog domain. Consequently, some audio equipment manufacturers (e.g., Behringer) sell rack mount units with eight mic inputs, preamps, and an ADAT output, as a solution to conveniently add analog inputs to a computer audio interface that has an ADAT input.</p>
 
-<p>So, if you already have a computer audio interface, and that interface has at least one ADAT output port and one ADAT input port, then you probably have an additional mulittrack recording option: Expert Sleepers offers the ES-3 module, to which you connect an ADAT cable from the ADAT OUT jack of your interface. The ES-3 receives clocking (for the ADAT signals, not for your DAW or modular) from your interface and translates eight channels of audio from your interface to the eight mono Eurorack output jacks on the ES-3. If you then attach the ES-6 expander module to your ES-3, and connect the ES-6 via ADAT cable to the ADAT IN jack on your interface, you can also send six audio channels to your computer through the six input jacks on the ES-6. In this respect, the ES-3/ES-6 combo will enable you to record up to six tracks simultaneously in your DAW. If you additionally add the ES-7 expander to the ES-6, you can add two more inputs for a total of eight simultaneous tracks.</p>
+<p>So, if you already have a computer audio interface, and that interface has at least one ADAT output port and one ADAT input port, then you probably have an additional mulittrack recording option: Expert Sleepers offers the <a href="https://www.modulargrid.net/e/expert-sleepers-es-3-mk4">ES-3</a> module, to which you connect an ADAT cable from the ADAT OUT jack of your interface. The ES-3 receives clocking (for the ADAT signals, not for your DAW or modular) from your interface and translates eight channels of audio from your interface to the eight mono Eurorack output jacks on the ES-3. If you then attach the <a href="https://www.modulargrid.net/e/expert-sleepers-es-6-mk2">ES-6 expander module</a> to your ES-3, and connect the ES-6 via ADAT cable to the ADAT IN jack on your interface, you can also send six audio channels to your computer through the six input jacks on the ES-6. In this respect, the ES-3/ES-6 combo will enable you to record up to six tracks simultaneously in your DAW. If you additionally add the ES-7 expander to the ES-6, you can add two more inputs for a total of eight simultaneous tracks.</p>
 
 <img src="gfx/option-es3-es6.png" class="diagram" />
 
@@ -175,10 +184,9 @@ function toggleAdditionalUpdates()
 
 <p>This is a relatively new option that depends on particular capabilities of specific modules on the market.</p>
 <ul>
-	<li>The Percussa SSP can record up to sixteen (mono) tracks direct to disk</li>
-	<li>The Expert Sleepers Disting EX can record up to six (mono) tracks direct to disk</li>
-	<li>The Orthogonal Devices ER-301 can record up to six (mono) tracks direct to disk</li>
-	<li>There are a few stereo recording modules on the market, such as the Expert Sleepers Disting Mk4 and the 4MS WAV Recorder, multiples of which could theoretically be used in concert to record more channels concurrently, although they would be doing so to separate SD cards</li>
+	<li>The <a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> can record up to sixteen (mono) tracks direct to disk</li>
+	<li>The Expert Sleepers <a href="https://www.modulargrid.net/e/expert-sleepers-disting-ex">Disting EX</a> can record up to six (mono) tracks direct to disk</li>
+	<li>The Orthogonal Devices <a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer">ER-301</a> can record up to 12 tracks direct to disk</li>
 </ul>
 
 <img src="gfx/option-recorder-module.png" class="diagram" />
