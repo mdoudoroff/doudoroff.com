@@ -897,6 +897,14 @@
 		"oAP": "/mixers/index.html",
 		"oF": 0
 		},
+	"/mixers/mixers-data.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/mixers/mixers-data.csv",
+		"oF": 0
+		},
 	"/mixers/mixers-data.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -911,6 +919,22 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/mixers/render.py",
+		"oF": 0
+		},
+	"/multitracking/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/multitracking/index.html",
+		"oF": 0
+		},
+	"/multitracking/render.py": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/multitracking/render.py",
 		"oF": 0
 		},
 	"/oldfashioned101/404.html": {
