@@ -65,13 +65,16 @@ img.diagram {
 
 <h1>Multitrack Recording Your Eurorack Modular Synthesizer</h1>
 
+<p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
+
+
 <p>Martin Doudoroff<br />
 <script type="text/javascript"><!--
 var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>Acknowledgements: Thanks to flo for his input.</p>
+<p>Thanks to flo, Cromatica45, desolationjones, and simka for their input.</p>
 
 
 <h4>Latest</h4>
@@ -101,15 +104,14 @@ function toggleAdditionalUpdates()
 }
 </script>
 
-<p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
-
 <h2>An array of options</h2>
 
 <p>Your options will largely depend on how many tracks you wish to record concurrently from your modular, and, of course, the rest of your “studio setup”. Some of your options are most suitable for 4-6 simultaneous tracks, some sit around 8 tracks, others support even more.</p>
 
+<p>The first three options I describe are related and—depending how you look at it—overlap, but have distinct practical implications. They are the analog solutions. The digital solutions are outlined thereafter.</p>
 
 
-<h3>Option 1: directly patch the last output of each voice with a cable into your studio for recording</h3>
+<h3>Option 1: directly patch the last output of each voice with a cable into your studio</h3>
 
 <p>This option is common with folks whose modular is part of a larger, mature studio context, and it is straightforward and direct: you simply run a cable from each audio signal you wish to record out of your modular to some destination where recording can happen. That might be straight into an computer audio interface, into a mixing console, into a portastudio, or into an audio recorder, possibly passing through a patch bay, effects and other equipment along the way! Typically that patch is simply accomplished with an 1/8" TR to 1/4" TR cable or a 1/8" to 1/4" adapter.</p>
 
@@ -117,22 +119,22 @@ function toggleAdditionalUpdates()
 
 <p>This approach can scale from just a single mono signal up to any number of mono and stereo channels, depending on what the rest of your studio setup can handle.</p>
 
-<p>The main issue with this approach is that the Eurorack modular voltage levels are pretty hot (±10V range). Most mixing consoles have no trouble handling Eurorack voltages, but depending on the headroom of the destination to which you are patching, you may wish to run the signal through an attenuator first.</p>
+<p>The main issue with this approach is that Eurorack modular voltage levels are pretty hot (±10V range). Most mixing consoles have no trouble handling Eurorack voltages, but depending on the headroom of the destination to which you are patching, you may wish to run the signal through an attenuator first. Any attenuator could work, but there are modules specifically designed to ease output attenuation. One simple, inexpensive example is the passive <a href="https://www.modulargrid.net/e/ladik-p-520-4ch-out-line">Ladik P-520</a>. Numerous “output modules” also exist that provide balanced audio outputs, although they’re typically stereo, and for multitracking you’d need multiples of those, which could get quite expensive and consume a lot of hp.</p>
 
 
 
 
 <h3>Option 2: use a DB25 adapter module</h3>
 
-<p>This option centers around some sort of Eurorack module that you patch into that takes your Eurorack signal, attenuates it to line level, and passes it out a DB25 connector, to which you attach a “snake” that carries the signals to your computer audio interface, patch bay, or other studio gear. The DB25 approach is implemented in blocks of eight channels, typically of balanced audio. The best known such solution is probably the <a href="https://www.modulargrid.net/e/nw2s-nw2s-io-balanced">nw2s::io</a> module.</p>
+<p>This option centers around a Eurorack module that takes your various Eurorack voices, attenuates them to line level, and passes them out a DB25 connector, to which you attach a “snake” that carries the signals to your computer audio interface, patch bay, or other studio gear. The DB25 approach is implemented in blocks of eight channels, typically of balanced audio. The best known such solution is probably the <a href="https://www.modulargrid.net/e/nw2s-nw2s-io-balanced">nw2s::io</a> module.</p>
 
 <img src="gfx/option-db25.png" class="diagram" />
 
-<p>The advantage to this approach is that you can deliver up eight channels of modular audio for processing and recording in the rest of your studio in a relatively tidy manner.</p>
+<p>The advantage to this approach is that you can tidily deliver up to eight channels of properly attenuated (line level), balanced audio for processing and recording in the rest of your studio. It’s relatively space-efficient compared to some alternatives, and depending on your other studio equipment, it may be relatively cost-effective.</p>
 
-<p>In fact, there are other high density snake connector systems around, such as EDAC, and high end alternatives for managing multiple outputs from your modular, such as Hinton Instrument’s <a href="http://www.hinton-instruments.co.uk/paprod/modular/trimmer/">Trimmer</a>. If you’re reading this guide in the first place, then these sorts of heavy duty things are most likely out of scope, but it’s useful to know they exist.</p>
+<p>In fact, there are other high density snake connector systems around, such as EDAC, and high end alternatives for managing multiple outputs from your modular, such as Hinton Instrument’s <a href="http://www.hinton-instruments.co.uk/paprod/modular/trimmer/">Trimmer</a>. Some modular synthesists use these, instead. If you’re reading this guide in the first place, then these sorts of heavy duty options are most likely out of scope, but it’s good to know they exist.</p>
 
-<p>A related approach is the <a href="https://www.modulargrid.net/e/wmd-pm-db25">PM DB25 expander</a> for the popular <a href="https://www.modulargrid.net/e/wmd-performance-mixer-black">WMD Performance Mixer</a>. The latter is a stereo mixer module that—fully expanded—can handle up up to six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix out through two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer. The advantage to the WMD Performance Mixer + DB25 approach is that you retain all the functionality of the Performance Mixer within your modular while also being able to pass all of its channels (post-gain, pre-fader, more on this below) to your studio in a relatively tidy manner.</p>
+<p>A related approach is the <a href="https://www.modulargrid.net/e/wmd-pm-db25">PM DB25 expander</a> for the popular <a href="https://www.modulargrid.net/e/wmd-performance-mixer-black">WMD Performance Mixer</a>. The latter is a stereo mixer module that—fully expanded—can handle up up to six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix, out through two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer, so you’re unlikely to consider this option unless you want the Performance Mixer in your rack the first place, but it’s a tidy solution.</p>
 
 
 
@@ -142,7 +144,7 @@ function toggleAdditionalUpdates()
 
 <p>People have various reasons for wanting a stereo mixer in their modular synthesizer to begin with, so multitrack recording will be only one of the factors why you would choose to purchase and employ any of these Eurorack stereo mixers. A few Eurorack stereo mixer modules offer <strong>individual channel outputs</strong>, which enable you to multitrack record your modular while still using the stereo mixer module in your patch. </p>
 
-<p>We already mentioned the WMD Performance Mixer, above, which delivers individual channels (pre-fader) over line level DB25. A few other stereo mixers have individual 1/8" output jacks per track:
+<p>We already mentioned the WMD Performance Mixer, above, which delivers individual channels (pre-fader—more on this below) over line level DB25. A few other stereo mixers offer individual 1/8" output jacks per track:
 
 <ul>
 	<li><a href="https://www.modulargrid.net/e/xaoc-devices-praga">Xaoc Devices Praga</a> is a four channel stereo mixer; each channel has an individual “VCA output” which is “post-fader” (see considerations, below); you can direct patch from this jack (Eurorack signal levels) to the studio recording solution of your choice; multiple Praga modules can be connected to add additional channels</li>
@@ -194,7 +196,7 @@ function toggleAdditionalUpdates()
 <ul>
 	<li>The <a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> can record up to sixteen (mono) tracks direct to disk</li>
 	<li>The Expert Sleepers <a href="https://www.modulargrid.net/e/expert-sleepers-disting-ex">Disting EX</a> can record up to six (mono) tracks direct to disk</li>
-	<li>The Orthogonal Devices <a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer">ER-301</a> can record up to 12 tracks direct to disk</li>
+	<li>The Orthogonal Devices <a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer">ER-301</a> can record 4 tracks of audio direct to disk (technicaly, it can record as many as twelve tracks to disk, but there are caveats)</li>
 </ul>
 
 <img src="gfx/option-recorder-module.png" class="diagram" />
@@ -241,6 +243,7 @@ function toggleAdditionalUpdates()
 <p>However, some modular synthesists adamantly want to capture their performance “post-fader”, because <em>they are playing their mixer as part of the performance</em> and don’t want to have to reconstruct (re-mix) what they did later on. Basically, they want capture and bake-in some of their on-the-fly mixing decisions, while still retaining separate tracks.</p>
 
 <p>In most of the multitrack recording options, above, this boils down to what you do in terms of patching—you patch for the result you want. Stereo mixer modules are one “bottleneck” where the design of the module can limit your options in this regard.</p>
+
 
 
 '''
