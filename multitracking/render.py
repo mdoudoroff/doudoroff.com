@@ -10,7 +10,7 @@ html_top = '''
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Multitrack Recording Your Eurorack Modular Synthesizer</title>
+	<title>How to Multitrack Your Eurorack</title>
 </head>
 <style>
 body {
@@ -18,6 +18,10 @@ body {
 	margin: 1em;
 	font-family: Georgia, serif;
 	font-size: 16px;
+}
+h2, h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
 }
 p, li {
 	max-width: 40rem;
@@ -63,9 +67,8 @@ img.diagram {
 <body>
 
 
-<h1>Multitrack Recording Your Eurorack Modular Synthesizer</h1>
+<h1>How to Multitrack Your Eurorack</h1>
 
-<p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
 
 
 <p>Martin Doudoroff<br />
@@ -74,18 +77,11 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<p>Thanks to flo, Cromatica45, desolationjones, and simka for their input.</p>
+<small>Thanks to flo, Cromatica45, desolationjones, and simka for their input.</small>
+
+<p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
 
 
-<h4>Latest</h4>
-<p class="updates">
-2020-05-26 minor additions, clarifications<br />
-2020-05-25 tweaks<br />
-2020-05-24 rough draft<br />
-<!--<span id="additionalUpdates" class="collapsed">
-</span>
-<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>-->
-</p>
 
 
 
@@ -105,14 +101,35 @@ function toggleAdditionalUpdates()
 }
 </script>
 
-<h2>An array of options</h2>
+<h2>Contents</h2>
 
 <p>Your options will largely depend on how many tracks you wish to record concurrently from your modular, and, of course, the rest of your “studio setup”. Some of your options are most suitable for 4-6 simultaneous tracks, some sit around 8 tracks, others support even more.</p>
 
 <p>The first three options I describe are related and—depending how you look at it—overlap, but have distinct practical implications. They are the analog solutions. The digital solutions are outlined thereafter.</p>
 
+<p>Your options:</p>
+<ol>
+	<li><a href="#directpatch">Directly patch each voice into your studio</a> (analog, any number of channels)</li>
+	<li><a href="#snake">Use a DB25/snake adapter module</a> (analog, 8-channels, 16-channels)</li>
+	<li><a href="#mixermodule">Use a stereo mixer module with individual channel output jacks</a> (analog, 4-8 channels)</li>
+	<li><a href="#interfacemodule">Put a computer audio interface in your modular</a> (digital, 4-14 channels)</li>
+	<li><a href="#adatmodule">Put an ADAT interface in your modular</a> (digital, 6-8 channels)</li>
+	<li><a href="#recordermodule">Self-contained multitrack recording within the modular itself</a> (digital, 4-16 channels)</li>
+</ol>
+<p>Additional considerations:</p>
+<ol>
+	<li><a href="#interfaces">Computer Audio Interfaces and alternatives</a></li>
+	<li><a href="#coupling">DC-coupling</a></li>
+	<li><a href="#postfader">Pre-fader/Post-fader recording</a></li>
+</ol>
+<p>Case studies:</p>
+<ol>
+	<li><a href="#studypragaportastudio">Two Pragas and a portastudio</a></li>
+	<li><a href="#study4848">Small studio integration with a WMD Performance Mixer+DB25, PreSonus 4848, and a little ADAT</a></li>
+</ol>
 
-<h3>Option 1: directly patch the last output of each voice with a cable into your studio</h3>
+
+<h3 id="directpatch">Option 1: Directly patch each voice into your studio</h3>
 
 <p>This option is common with folks whose modular is part of a larger, mature studio context, and it is straightforward and direct: you simply run a cable from each audio signal you wish to record out of your modular to some destination where recording can happen. That might be straight into an computer audio interface, into a mixing console, into a portastudio, or into an audio recorder, possibly passing through a patch bay, effects and other equipment along the way! Typically that patch is simply accomplished with an 1/8" TR to 1/4" TR cable or a 1/8" to 1/4" adapter.</p>
 
@@ -125,23 +142,23 @@ function toggleAdditionalUpdates()
 
 
 
-<h3>Option 2: use a DB25 adapter module</h3>
+<h3 id="snake">Option 2: Use a DB25/snake adapter module</h3>
 
 <p>This option centers around a Eurorack module that takes your various Eurorack voices, attenuates them to line level, and passes them out a DB25 connector, to which you attach a “snake” that carries the signals to your computer audio interface, patch bay, or other studio gear. The DB25 approach is implemented in blocks of eight channels, typically of balanced audio. The best known such solution is probably the <a href="https://www.modulargrid.net/e/nw2s-nw2s-io-balanced">nw2s::io</a> module.</p>
 
 <img src="gfx/option-db25.png" class="diagram" />
 
-<p>The advantage to this approach is that you can tidily deliver up to eight channels of properly attenuated (line level), balanced audio for processing and recording in the rest of your studio. It’s relatively space-efficient compared to some alternatives, and depending on your other studio equipment, it may be relatively cost-effective.</p>
+<p>The advantage to this approach is that you can tidily deliver up to eight channels of properly attenuated (line level), balanced audio for processing and recording, without a lot of repatching between your module and the rest of your studio. It’s also relatively space-efficient compared to some alternatives, and depending on your other studio equipment, it may be relatively cost-effective.</p>
 
 <p>In fact, there are other high density snake connector systems around, such as EDAC, and high end alternatives for managing multiple outputs from your modular, such as Hinton Instrument’s <a href="http://www.hinton-instruments.co.uk/paprod/modular/trimmer/">Trimmer</a>. Some modular synthesists use these, instead. If you’re reading this guide in the first place, then these sorts of heavy duty options are most likely out of scope, but it’s good to know they exist.</p>
 
-<p>A related approach is the <a href="https://www.modulargrid.net/e/wmd-pm-db25">PM DB25 expander</a> for the popular <a href="https://www.modulargrid.net/e/wmd-performance-mixer-black">WMD Performance Mixer</a>. The latter is a stereo mixer module that—fully expanded—can handle up up to six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix, out through two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer, so you’re unlikely to consider this option unless you want the Performance Mixer in your rack the first place, but it’s a tidy solution.</p>
+<p>A related approach is the <a href="https://www.modulargrid.net/e/wmd-pm-db25">PM DB25 expander</a> for the popular <a href="https://www.modulargrid.net/e/wmd-performance-mixer-black">WMD Performance Mixer</a>. The latter is a stereo mixer module that—fully expanded—can handle up up to six mono channels and four stereo channels. The PM DB25 expander delivers all those channels, plus the stereo mix, out through two DB25 ports—a total of sixteen line level signals of balanced audio. The PM DB25 only works with the WMD Performance mixer, so you’re unlikely to consider this option unless you want the Performance Mixer in your rack, but it’s a tidy solution and offers the convenience that any and every channel you’re working with in the mixer can be recorded at any time with no extra patching.</p>
 
 
 
 
 
-<h3>Option 3: use a stereo mixer module that provides individual channel output jacks</h3>
+<h3 id="mixermodule">Option 3: Use a stereo mixer module with individual channel output jacks</h3>
 
 <p>People have various reasons for wanting a stereo mixer in their modular synthesizer to begin with, so multitrack recording will be only one of the factors why you would choose to purchase and employ any of these Eurorack stereo mixers. A few Eurorack stereo mixer modules offer <strong>individual channel outputs</strong>, which enable you to multitrack record your modular while still using the stereo mixer module in your patch. </p>
 
@@ -160,7 +177,7 @@ function toggleAdditionalUpdates()
 
 
 
-<h3>Option 4: put a computer audio interface in your modular</h3>
+<h3 id="interfacemodule">Option 4: Put a computer audio interface in your modular</h3>
 
 <p>Expert Sleepers offers two modules—the <a href="https://www.modulargrid.net/e/expert-sleepers-es-8">ES-8</a> and the <a href="https://www.modulargrid.net/e/expert-sleepers-es-9">ES-9</a>—each of which embed a USB class-compliant audio interface in a Eurorack module. These modules connect to your computer over USB, and pass bidirectional digital audio between your modular and your computer. The modules themselves handle the analog-to-digital and digital-to-analog conversions.</p>
 
@@ -178,7 +195,7 @@ function toggleAdditionalUpdates()
 
 
 
-<h3>Option 5: put an ADAT interface in your modular</h3>
+<h3 id="adatmodule">Option 5: Put an ADAT interface in your modular</h3>
 
 <p>By “ADAT” we actually mean “ADAT Lightpipe”. It’s nothing new: a standard for transmitting eight channels of digital audio over a fiber optic cable. Many computer audio interfaces (and various other types of gear) offer ADAT interfaces because it’s an inexpensive, space-efficient way to handle additional channels of (digital) audio without having to also implement the ADCs, DACs and related hardware of translating those channels to and from the analog domain. Consequently, some audio equipment manufacturers (e.g., Behringer) sell rack mount units with eight mic inputs, preamps, and an ADAT output, as a solution to conveniently add analog inputs to a computer audio interface that has an ADAT input.</p>
 
@@ -191,7 +208,7 @@ function toggleAdditionalUpdates()
 
 
 
-<h3>Option 6: self-contained multitrack recording within the modular itself</h3>
+<h3 id="recordermodule">Option 6: Self-contained multitrack recording within the modular itself</h3>
 
 <p>This is a relatively new option that depends on particular capabilities of specific modules on the market.</p>
 <ul>
@@ -207,12 +224,12 @@ function toggleAdditionalUpdates()
 
 
 
-<h2>Considerations</h2>
+<h2>Additional considerations</h2>
 
 
 
 
-<h3>Computer Audio Interfaces and alternatives</h3>
+<h3 id="interfaces">Computer Audio Interfaces and alternatives</h3>
 
 <p>There’s inevitably much handwringing over interfaces, exacerbated by the constant stream of new models. The market has wildly diverse options at wildly different price points. One fundamental variable that is only loosely related to price (and physical size) is the number of analog audio inputs the device offers. Number of inputs is (obviously) relevant to multitracking your modular. However, many of the other features of an interface (mic preamps, DSP, networking) may be of little or no relevance, yet add dramatically to the cost of the product.</p>
 
@@ -228,16 +245,16 @@ function toggleAdditionalUpdates()
 
 
 
-<h3>DC-Coupling</h3>
+<h3 id="coupling">DC-coupling</h3>
 
-<p>In this context, DC-Coupling is mainly about the ability to share low frequency CV between the modular and a computer, and not have it stripped out by capacitors in an analog circuit. DC voltage (offset) is generally undesirable with audio because it can gobble headroom and even damage circuitry that isn’t designed to handle it. However, the ability to record and play back CV signals by a DAW, transmit clock and other CV signals to/from a DAW, or otherwise integrate hardware synths with software synths based on control voltage instead of MIDI is growing in popularity. Quite a few computer audio interfaces</a> are now DC-coupled for input, output or both. (This probably-not-quite-exhaustive <a href="https://www.sweetwater.com/sweetcare/articles/which-audio-interfaces-are-dc-coupled">list from Sweetwater</a> unfortunately does not specify whether it is the input, the output, or both that is DC-coupled.) Due diligence is required. Note that all bets are off if you’re not patching your modular more or less directly to the interface.</p>
+<p>In this context, DC-coupling is mainly about the ability to share low frequency CV between the modular and a computer, and not have it stripped out by capacitors in an analog circuit. DC voltage (offset) is generally undesirable with audio because it can gobble headroom and even damage circuitry that isn’t designed to handle it. However, the ability to record and play back CV signals by a DAW, transmit clock and other CV signals to/from a DAW, or otherwise integrate hardware synths with software synths based on control voltage instead of MIDI is growing in popularity. Quite a few computer audio interfaces</a> are now DC-coupled for input, output or both. (This probably-not-quite-exhaustive <a href="https://www.sweetwater.com/sweetcare/articles/which-audio-interfaces-are-dc-coupled">list from Sweetwater</a> unfortunately does not specify whether it is the input, the output, or both that is DC-coupled.) Due diligence is required. Note that all bets are off if you’re not patching your modular more or less directly to the interface.</p>
 
 <p>If you are using an interface with DC-coupled inputs to record audio, you may also need to be thoughtful about not introducing DC offset to the audio you produce in your modular (or about countering it), if some of your modules tends to introduce offset. Some interfaces, such as the aforementioned ES-9, have optional DC-blocking filters that can be enabled/disabled for particular channels.</p>
 
 
 
 
-<h3>Pre-fader/Post-fader recording</h3>
+<h3 id="postfader">Pre-fader/Post-fader recording</h3>
 
 <p>The terms “pre-fader” and “post-fader” are a little problematic, here, but we (ab)use them for lack of a better name. Canonically, when you do multitrack recording, you’re trying to properly capture the individual “raw” elements (voices, instruments) of a performance distreetly, and you don’t worry about manipulating and mixing them until later. This is why, for example, the WMD Performance Mixer+DB25 combo passes all the channels out raw and untouched except for the gain adjustments. For the sake of this discussion, that would be “pre-fader” because the faders and panners on the WMD Performance Mixer do not influence the channels you’re recording in parallel.</p>
 
@@ -247,15 +264,47 @@ function toggleAdditionalUpdates()
 
 
 
+<h2>Case studies</h2>
+
+<p>Below are a few brief case studies to provide food for thought.</p>
+
+
+<h3 id="studypragaportastudio">Two Pragas and a portastudio</h3>
+
+<p>In this setup, two Pragas provide eight channels of signal control in the rack. Eight longish 1/8"-to-1/4" TR patch cables stretch from the individual channel outputs on the Pragas to the inputs on the TASCAM DP-24SD. These Praga outputs are post-fader, so the level knobs and mutes on the Praga are part of the recorded performance (but not the panning). The TASCAM records up to eight channels simultaneously to an SD card. No computer required.</p>
+
+<img src="gfx/study-praga-portastudio.png" class="diagram" />
+
+
+
+
+<h3 id="study4848">Small studio integration with a WMD Performance Mixer+DB25, PreSonus 4848, and a little ADAT</h3>
+
+<p>This Eurorack system began with the WMD Performance Mixer, which was first used to live mix a stereo signal for recording. When it was time to “upgrade” to multitrack recording, the Performance Mixer was retained and the WMD DB25 expander added. A new computer audio interface was needed, and the PreSonus 4848 was selected because of its extensive DB25 support, the implication being the two DB25 snakes from the WMD DB25 Expander could be connected directly to the 4848. After doing so, the 4848 still had available 16 channels of line level input, 32 channels of line level output, and another 16 channels in and out of ADAT. A couple of DB25-to-1/4" TRS snakes is all that was required to integrate a small mixing console, which in turn handled the monitors. Eventually, an Expert Sleepers ES-3 is added to carry clock and reset from the DAW to the modular over ADAT, and later, and ES-6 could be added to that.</p>
+
+<img src="gfx/study-pm-db25-4848.png" class="diagram" />
+
+
+
+
+
+
 '''
 
 html_bottom = '''
 
 
 
-
-
 <p style="text-align:center;">• • •</p>
+
+<h4>Revision History</h4>
+<p class="updates">
+2020-05-26 minor additions, clarifications<br />
+2020-05-25 tweaks<br />
+2020-05-24 rough draft<br />
+</p>
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
