@@ -79,6 +79,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-06-01 minor updates<br />
 2020-05-18 added ACL Pan Mix<br />
 2020-02-17 added Doepfer A-135-3<br />
 2020-02-17 added SynEssentials SE2026<br />
