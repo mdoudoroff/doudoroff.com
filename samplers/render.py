@@ -83,12 +83,13 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-06-04 added 2hp Loop; additional updates<br />
 2020-04-25 added Bitbox Mk2 and Bitbox Micro<br />
 2020-04-24 added Disting EX<br />
 2020-04-16 errata & updates<br />
 2020-02-28 added Squarp Rample<br />
-2019-09-27 errata<br />
 <span id="additionalUpdates" class="collapsed">
+2019-09-27 errata<br />
 2019-09-25 clarified some wording<br />
 2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
 2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
