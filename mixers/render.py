@@ -79,14 +79,15 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-06-04 added 6IXMXM.SET<br />
 2020-06-01 minor updates<br />
 2020-05-18 added ACL Pan Mix<br />
 2020-02-17 added Doepfer A-135-3<br />
 2020-02-17 added SynEssentials SE2026<br />
+<span id="additionalUpdates" class="collapsed">
 2020-02-16 added Modulaire Maritime Victor Alpha<br />
 2019-11-20 added Arcaico Caronte MS-4<br />
 2019-11-04 added Catoff Mix<br />
-<span id="additionalUpdates" class="collapsed">
 2019-11-03 added Paratek РИТМИКС<br />
 2019-09-26 added Alyseum Q-Mix<br />
 2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
