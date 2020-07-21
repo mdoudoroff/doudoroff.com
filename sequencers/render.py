@@ -79,14 +79,15 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2019-04-29 added the RYK M185<br />
-2019-03-30 reworked the Gate Handling column<br />
+2020-07-21 added (with misgivings) Behringer 960 and 182<br />
+2020-04-29 added the RYK M185<br />
+2020-03-30 reworked the Gate Handling column<br />
 2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
+<span id="additionalUpdates" class="collapsed">
 2019-10-15 removed Pittsburgh Sequence Designer<br />
 2019-10-13 minor updates<br />
-<span id="additionalUpdates" class="collapsed">
 2019-09-30 added Tesseract Sequencer<br />
 2019-09-30 added Oakley Sequencer<br />
 2019-09-06 added Octone, other updates<br />
