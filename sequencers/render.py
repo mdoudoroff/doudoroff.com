@@ -128,7 +128,10 @@ function toggleAdditionalUpdates()
 
 <h2>Introduction</h2>
 
-<p>This is a pretty exhaustive and up-to-date basic comparison of fancy sequencers for Eurorack. There are many sequencer-related modules for Eurorack, and this comparison is rather picky, <strong>focusing on heavier-duty, melodic-oriented designs with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.
+<p>It is important to understand that this comparison is quite picky, <strong>focusing on complex, all-in-one, melodic-oriented sequencers with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.</p>
+
+<p style="border: 3px solid red; padding: 0.5em;">The Eurorack market offers a huge number (dozens, even hundreds) of comparatively simple “utility sequencers” that vary wildly in design and features. <strong>None of them are included in this comparison.</strong> Some of these “utility sequencers” store or generate variable CV levels, while others specialize in gate generation (gate sequencers). <strong>Any “simpler” sequencers can be patched together with each other and in combination with virtually any other Eurorack utility modules to create a custom pitch and gate sequence</strong>, often with interesting and idiosyncratic characteristics that cannot be achieved by relying on the all-in-one tools listed here. This <em>modular</em>, patching-centric approach to creating sequences can be more hands-on, immediate, and rewarding. So, please do not assume that you need any of the products listed on this page in order to make melodic music with your synthesizer.</p>
+
 <p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
 biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
@@ -183,8 +186,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY)</li>
 </ul>
 
-<h2>Further Eurorack alternatives</h2>
-<p>The Eurorack market offers a huge number of comparatively simple “utility sequencers” that vary wildly in design and features. Some of these specialize in variable CV levels, others specialize in gate generation (gate sequencers). Any of these can be patched together with virtually any other utility modules to create a custom pitch and gate sequence, often with interesting and idiosyncratic characteristics that cannot be achieved using the elaborate tools listed above.</p>
+<h2>Additional Eurorack modules</h2>
 <p>Finally, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
