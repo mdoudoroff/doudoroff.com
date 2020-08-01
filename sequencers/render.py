@@ -183,8 +183,9 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY)</li>
 </ul>
 
-<h2>Further alternatives</h2>
-<p>In addition, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
+<h2>Further Eurorack alternatives</h2>
+<p>The Eurorack market offers a huge number of comparatively simple “utility sequencers” that vary wildly in design and features. Some of these specialize in variable CV levels, others specialize in gate generation (gate sequencers). Any of these can be patched together with virtually any other utility modules to create a custom pitch and gate sequence, often with interesting and idiosyncratic characteristics that cannot be achieved using the elaborate tools listed above.</p>
+<p>Finally, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
 <li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
