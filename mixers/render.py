@@ -79,6 +79,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-08-02 added Make Noise XOH<br />
 2020-08-01 added Ladik M-610<br />
 2020-07-03 added Cosmotronic Cosmix<br />
 2020-06-04 added 6IXMXM.SET and ST-Modular SUM CHANNEL + MAIN<br />
