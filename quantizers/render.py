@@ -82,6 +82,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
 2020-02-19 added Shakmat Bard Quartet<br />
 2020-02-19 added Tenderfoot Quad Quantizer<br />
 2019-10-22 added Kassutronics Quantizer<br />
