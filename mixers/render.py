@@ -79,6 +79,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-11-09 added SSF Vortices<br />
 2020-10-30 added Endorphin.es Cockpit 2<br />
 2020-08-02 added Make Noise XOH<br />
 2020-08-01 added Ladik M-610<br />
