@@ -7,12 +7,13 @@
 <style>
 body {
 	max-width: 1600px;
-	margin: 1em;
 	font-family: Georgia, serif;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 p, li {
-	max-width: 50rem;
+	max-width: 40rem;
 	line-height: 1.4;
 }
 .updates {
@@ -26,38 +27,56 @@ img {
 	width: 100%;
 	margin: 1em 0;
 }
+.main {	padding: 1em; }
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
 table {border-collapse: collapse;font-size: 85%;}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
+td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
-
+.notes { min-width: 15em; }
 .collapsed {display: none;}
 
-nav { 
+nav {
 	background: #eef; 
-	padding: 0.25em 1em;
+	padding: 0.5em 1em;
 	font-family: Helvetica, sans-serif;
 	border-bottom: 2px solid #666;
 	}
-nav p { margin: 0.5em 0; }
-nav ul { margin: 0 0 0.5em 0; padding: 0; }
-nav ul li { list-style: none; display: inline-block; margin-right: 1em; }
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
 </style>
 <body>
 
 <nav>
-<p><em>Martin’s Eurorack Module Comparisons:</em></p>
+<div class="navrail">
 <ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
 	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
 	<li><strong>Pitch &amp; Gate Sequencers</strong></li>
 	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
 	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
 </ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
 </nav>
+
+<div class="main">
 
 <h1>Eurorack Pitch + Gate Sequencer Module Comparison</h1>
 
@@ -122,7 +141,7 @@ function toggleAdditionalUpdates()
 
 <h2>Introduction</h2>
 
-<p>It is important to understand that this comparison is quite picky, <strong>focusing on complex, all-in-one, melodic-oriented sequencers with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.</p>
+<p>It is important to understand that this comparison is quite picky, <strong>focusing on complex, all-in-one (“battleship”), melodic-oriented sequencers with fairly complete gate sequencing ability</strong>. It includes pretty much everything at the “high end” and excludes pretty much all simpler “utility sequencers”.</p>
 
 <p style="border: 3px solid red; padding: 0.5em;">The Eurorack market offers a huge number (dozens, even hundreds) of comparatively simple “utility sequencers” that vary wildly in design and features. <strong>None of them are included in this comparison.</strong> Some of these “utility sequencers” store or generate variable CV levels, while others specialize in gate generation (gate sequencers). <strong>Any “simpler” sequencers can be patched together with each other and in combination with virtually any other Eurorack utility modules to create a custom pitch and gate sequence</strong>, often with interesting and idiosyncratic characteristics that cannot be achieved by relying on the all-in-one tools listed here. This <em>modular</em>, patching-centric approach to creating sequences can be more hands-on, immediate, and rewarding. So, please do not assume that you need any of the products listed on this page in order to make melodic music with your synthesizer.</p>
 
@@ -976,7 +995,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.sequentix.com">Sequentix Cirklon</a> (w/CV output module)</li>
 <li><a href="http://www.signalarts.ca/sattetra.html">Signal Arts TetraMAPS</a> (Lemur/TouchOSC eurorack hardware + iPad solution)</li>
 <li><a href="https://www.socialentropy.com/engine/?page_id=346">Social Entropy Engine</a> (w/CV expander)</li>
-<li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY)</li>
+<li><a href="http://www.ucapps.de">uCApps MIDIbox SEQ</a> (DIY MIDI sequencer with extensive analog CV bus)</li>
 </ul>
 
 <h2>Additional Eurorack modules</h2>
@@ -996,6 +1015,8 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 </ul>
 
 <p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>

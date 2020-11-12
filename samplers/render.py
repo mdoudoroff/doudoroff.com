@@ -15,12 +15,13 @@ html_top = '''
 <style>
 body {
 	max-width: 1600px;
-	margin: 1em;
 	font-family: Georgia, serif;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 p, li {
-	max-width: 50rem;
+	max-width: 40rem;
 	line-height: 1.4;
 }
 .updates {
@@ -34,42 +35,58 @@ img {
 	width: 100%;
 	margin: 1em 0;
 }
+.main {	padding: 1em; }
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
-.nope {background-color:#eee;}
 table {border-collapse: collapse;font-size: 85%;}
-table.players .nope { display: none; }
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
+td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
-
 .notes { min-width: 15em; }
-
 .collapsed {display: none;}
 
-nav { 
+nav {
 	background: #eef; 
-	padding: 0.25em 1em;
+	padding: 0.5em 1em;
 	font-family: Helvetica, sans-serif;
 	border-bottom: 2px solid #666;
 	}
-nav p { margin: 0.5em 0; }
-nav ul { margin: 0 0 0.5em 0; padding: 0; }
-nav ul li { list-style: none; display: inline-block; margin-right: 1em; }
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
+table.players .nope { display: none; }
+
 </style>
 <body>
 
 <nav>
-<p><em>Martin’s Eurorack Module Comparisons:</em></p>
+<div class="navrail">
 <ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
 	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
 	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
 	<li><strong>Sampler Modules</strong></li>
 	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
 </ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
 </nav>
+
+<div class="main">
 
 <h1>Eurorack Sampler Module Comparison</h1>
 
@@ -166,6 +183,8 @@ html_bottom = '''
 
 
 <p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
