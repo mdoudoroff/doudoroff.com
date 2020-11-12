@@ -15,13 +15,10 @@ html_top = '''
 <style>
 body {
 	max-width: 1600px;
-	margin: 1em;
 	font-family: Georgia, serif;
 	font-size: 16px;
-}
-h2, h3 {
-	margin-top: 1.5em;
-	margin-bottom: 0.5em;
+	margin: 0;
+	padding: 0;
 }
 p, li {
 	max-width: 40rem;
@@ -38,6 +35,7 @@ img {
 	width: 100%;
 	margin: 1em 0;
 }
+.main {	padding: 1em; }
 .red {color:red;}
 .green {color:green;}
 .gray {color:gray;}
@@ -47,24 +45,65 @@ td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
 th { background-color: #eee; color: #666; }
+.notes { min-width: 15em; }
 .collapsed {display: none;}
 
-nav { 
+nav {
 	background: #eef; 
-	padding: 0.25em 1em;
+	padding: 0.5em 1em;
 	font-family: Helvetica, sans-serif;
 	border-bottom: 2px solid #666;
 	}
-nav p { margin: 0.5em 0; }
-nav ul { margin: 0 0 0.5em 0; padding: 0; }
-nav ul li { list-style: none; display: inline-block; margin-right: 1em; }
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
+
+
+
 
 img.diagram {
 	height: 450px;
 	width: auto;
 }
+
+h2, h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+@media (max-width: 450px) {
+	img.diagram { width: 100%; height: auto; }
+}
+
+
 </style>
 <body>
+
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><strong>How to Multitrack Your Eurorack</strong></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
 
 
 <h1>How to Multitrack Your Eurorack</h1>
@@ -304,7 +343,7 @@ html_bottom = '''
 2020-05-24 rough draft<br />
 </p>
 
-
+</div><!-- end div.main -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
