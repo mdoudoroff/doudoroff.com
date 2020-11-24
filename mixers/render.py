@@ -96,16 +96,17 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-11-24 added Frap Tools QSC<br />
 2020-11-09 added SSF Vortices<br />
 2020-10-30 added Endorphin.es Cockpit 2<br />
 2020-08-02 added Make Noise XOH<br />
 2020-08-01 added Ladik M-610<br />
+<span id="additionalUpdates" class="collapsed">
 2020-07-03 added Cosmotronic Cosmix<br />
 2020-06-04 added 6IXMXM.SET and ST-Modular SUM CHANNEL + MAIN<br />
 2020-06-01 minor updates<br />
 2020-05-18 added ACL Pan Mix<br />
 2020-02-17 added Doepfer A-135-3<br />
-<span id="additionalUpdates" class="collapsed">
 2020-02-17 added SynEssentials SE2026<br />
 2020-02-16 added Modulaire Maritime Victor Alpha<br />
 2019-11-20 added Arcaico Caronte MS-4<br />
