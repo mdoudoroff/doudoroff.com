@@ -17,6 +17,248 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/_ckl/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 17268,
+		"oA": 1,
+		"oAP": "/_ckl/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/_ckl/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 70126,
+		"oA": 1,
+		"oAP": "/_ckl/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/_ckl/css/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_ckl/css/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_ckl/css/main.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/css/main.css.map",
+		"oF": 0
+		},
+	"/_ckl/css/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_ckl/css/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_ckl/exh.barware.hawthorne.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.barware.hawthorne.html",
+		"oF": 0
+		},
+	"/_ckl/exh.barware.index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.barware.index.html",
+		"oF": 0
+		},
+	"/_ckl/exh.figures.ashley_james.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.figures.ashley_james.html",
+		"oF": 0
+		},
+	"/_ckl/exh.figures.brigham_peter_bent.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.figures.brigham_peter_bent.html",
+		"oF": 0
+		},
+	"/_ckl/exh.figures.index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.figures.index.html",
+		"oF": 0
+		},
+	"/_ckl/exh.figures.mrs_gaywood.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.figures.mrs_gaywood.html",
+		"oF": 0
+		},
+	"/_ckl/exh.figures.willard_orasmus.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.figures.willard_orasmus.html",
+		"oF": 0
+		},
+	"/_ckl/exh.index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.index.html",
+		"oF": 0
+		},
+	"/_ckl/exh.sun_article.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/exh.sun_article.html",
+		"oF": 0
+		},
+	"/_ckl/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 597,
+		"oA": 1,
+		"oAP": "/_ckl/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/_ckl/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1443,
+		"oA": 1,
+		"oAP": "/_ckl/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/_ckl/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/favicon.ico",
+		"oF": 0
+		},
+	"/_ckl/gfx": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/_ckl/gfx",
+		"oF": 0
+		},
+	"/_ckl/icon.png": {
+		"ft": 32768,
+		"iS": 15725,
+		"oA": 1,
+		"oAP": "/_ckl/icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/_ckl/images": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/_ckl/images",
+		"oF": 0
+		},
+	"/_ckl/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/_ckl/index.html",
+		"oF": 0
+		},
+	"/_ckl/js/main-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_ckl/js/min/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/_ckl/js/main.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_ckl/js/min/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/_ckl/js/vendor/modernizr-3.11.2.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_ckl/js/vendor/min/modernizr-3.11.2.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/_ckl/less/main.less": {
+		"aP": 0,
+		"bl": 0,
+		"eJ": 0,
+		"ft": 1,
+		"iI": 0,
+		"ma": 0,
+		"mS": 0,
+		"oA": 0,
+		"oAP": "/_ckl/css/main.css",
+		"oF": 0,
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 0
+		},
 	"/atari/about.html": {
 		"cB": 0,
 		"ft": 8192,
