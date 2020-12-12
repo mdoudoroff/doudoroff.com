@@ -98,14 +98,15 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-12-12 added Extralife Sweet Sixteen, other updates<br />
 2020-10-25 added Ladik S-280<br />
 2020-08-01 added SDS Digital Sequarallel<br />
 2020-07-21 added (with misgivings) Behringer 960 and 182<br />
 2020-04-29 added the RYK M185<br />
+<span id="additionalUpdates" class="collapsed">
 2020-03-30 reworked the Gate Handling column<br />
 2019-12-30 minor updates<br />
 2019-10-28 added Befaco Muxlicer<br />
-<span id="additionalUpdates" class="collapsed">
 2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
 2019-10-15 removed Pittsburgh Sequence Designer<br />
 2019-10-13 minor updates<br />
@@ -215,6 +216,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-degree-vco-controller">OK200 Degree</a> (novel quantized performance controller &amp; sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
 <li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
