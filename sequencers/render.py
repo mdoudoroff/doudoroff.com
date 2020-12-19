@@ -98,7 +98,8 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2020-12-12 added Extralife Sweet Sixteen, other updates<br />
+2020-12-19 added D&D Modules Heaven 16<br />
+2020-12-12 added Extralife Super Sixteen, other updates<br />
 2020-10-25 added Ladik S-280<br />
 2020-08-01 added SDS Digital Sequarallel<br />
 2020-07-21 added (with misgivings) Behringer 960 and 182<br />
