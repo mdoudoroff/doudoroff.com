@@ -2566,6 +2566,14 @@
 		"oAP": "/sequencers/render.py",
 		"oF": 0
 		},
+	"/sequencers/sequencers-data.csv": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/sequencers/sequencers-data.csv",
+		"oF": 0
+		},
 	"/sequencers/sequencers-data.numbers": {
 		"cB": 0,
 		"ft": 8192,

@@ -43,7 +43,10 @@ table {border-collapse: collapse;font-size: 85%;}
 td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
-td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+td ul, td ol { padding-left: 20px; -webkit-padding-start: 20px; }
+ol li {
+	margin-bottom: 1em;
+}
 th { background-color: #eee; color: #666; }
 .notes { min-width: 15em; }
 .collapsed {display: none;}
@@ -165,6 +168,7 @@ function toggleAdditionalUpdates()
 <ol>
 	<li><a href="#studypragaportastudio">Two Pragas and a portastudio</a></li>
 	<li><a href="#study4848">Small studio integration with a WMD Performance Mixer+DB25, PreSonus 4848, and a little ADAT</a></li>
+	<li><a href="#studyTascam12">Multitracking &amp; tempo sync with Tascam Model 12</a></li>
 </ol>
 
 
@@ -326,6 +330,53 @@ function toggleAdditionalUpdates()
 
 
 
+<h3 id="studyTascam12">Multitracking &amp; tempo sync with Tascam Model 12</h3>
+
+<p style="margin: 0.5em 0; border: 1px solid black; padding: 3px;">The following case study is generously supplied by <strong>maudibe</strong>, from the MW forum, featuring the Tascam Model 12, a multitrack recorder and mixer with some fairly unique functionallity. This approach is particularly interesting because it addresses both multitracking and clock sync—a “holy grail” type scenario—in an economical and compact fashion.</p>
+
+<p>Working with the Tascam Model 12, your modular, and eventually, your DAW is really easy; I use the simplest, non-technical route possible, it is fast, efficient, works flawlessly, and <em>keeps everything in sync</em>.</p>
+
+<p>Not much required in the way of gear:</p>
+<ol>
+<li>Your Tascam Model 12 with a good quality memory card.</li>
+<li>A simple and cheap MIDI sync module (Doepfer A-190-8 is my weapon of choice).</li>
+<li>Your modular system with a suitable clock (PNW is the business for me).</li>
+<li>A card reader for your Mac or PC - I use a Mac for music, so I have a breakout box.</li>
+<li>Your DAW software. I use Cubase Pro because it is the best :)</li>
+</ol>
+
+<p>Process:</p>
+<ol>
+<li>Get your song started however you like - obviously, we are working in sync here, so you need to play with a click using the built in metronome in the Tascam, if recording guitars / bass / keyboards / acoustic drums first.
+This of course means you have to set a tempo in the Tascam.<br /><br />
+If you are starting with the modular, get a patch happening and check on its master clock using the readout of your clock module, transfer this tempo to the Tascam... you are then ready to sync the Tascam and the Modular, ready for recording the first patch, either further modular tracks or instrument tracks.</li>
+
+<li>Connect the MIDI out from the Tascam to the MIDI Sync module in your rack. There are settings to be made in the Tascam to output this MIDI clock - easy to find in the manual. There are no controls or settings on my Doepfer sync module, I like that. Just feed it some MIDI clock and it starts flashing away.<br /><br />
+Next, connect the desired output clock of the sync module to the master clock of your modular. Some patch cables will be required: One to support the clock pulse, one to send a start signal, and one to send a reset, all from the sync module to your master clock.<br /><br />
+Your experience may be different as to <em>what</em> clock pulse your master clock expects… 48ppqn, 16, or 1 per bar. These settings are found in your master clock menu.<br /><br />
+This is a one time set-up, so do not worry if it takes some time to get everything talking and playing nice!</li>
+
+<li>When you hit play or record on the Tascam it now spits out MIDI clock. Bear in mind, there is no song position pointer, so your modular will be oblivious to where you are in the song. I usually record my first track take in one go anyway, so not a problem, but if you do decide to drop in, then do so at the beginning of a bar and use skilful clock reset to get everything starting on the beat. <br /><br />
+The thing to do is get your modular noodlings down “on tape”—they will run in time with the metronome, but you really need to commit stuff ASAP. You can replace or overdub to your heart’s content later.<br /><br />
+So just hit record when ready, and marvel at how everything plays in time with the somewhat annoying metronome (which can be changed!).<br /><br />
+You should at this time feel somewhat elated. :)</li>
+
+<li>Now you can do your overdubs from any source… perhaps a guitar, or a modular kick that you want on its own track.</li>
+
+<li>Moving onto the DAW. I read a lot of people getting confused about setting up sync with the DAW. It is a bit of a minefield as you have a lot of parameters. My solution was a happy accident, brought about by the fact that my studio is essentially split into two areas (A) a DAW “in the box” and keyboard workspace, and (B) my jam zone, which houses guitars, amps, foot pedals, guitar synth and the Tascam.<br /><br />
+So, I gave this a try (and was astounded): I took the card out of the Tascam and popped it into the card reader on the Mac. Then dragged the appropriate MTR folder onto the desktop and opened it, ready to examine the contents. (Make sure you know the Tascam tempo of the project—including the tempo in the name of the song file is a good idea if you have a lot of projects)<br /><br />
+Now open your DAW and drag tracks 1 thru 10 into the DAW. You do not want or need the mixdown tracks of 11 and 12. Ensure the project bit depth and rate are the same as used when recording in the Tascam!<br /><br />
+Set the tempo to be the same as the Tascam project. Make sure all the files start playback on your desired bar; use “snap to bar” to ensure this.<br /><br />
+Adjust your faders and hit play. Be amazed: it all lines up on the bar lines! If you do have a tad of offset then you can use the offset adjust on all tracks, but I have found this unnecessary.<br /><br />
+Now you can continue to add your software elements, such as soft synths, effects, virtual drums, beat boxes, samplers, etc., all in-time with the grid and your Tascam tracks.</li>
+
+<li>Mix and mangle.<br /><br />
+You could of course send this all back to the Tascam and continue working, or use elements of a mix as a backing track for live work, again, all in-time with Tascam’s metronome and any subsequent synced modular mayhem.</li>
+</ol>
+
+<p>Pour yourself a large gin and tonic.</p>
+
+
 
 
 '''
@@ -338,6 +389,7 @@ html_bottom = '''
 
 <h4>Revision History</h4>
 <p class="updates">
+2020-12-22 added maudibe’s case study with the Tascam Model 12<br />
 2020-12-12 minor addition<br />
 2020-05-26 minor additions, clarifications<br />
 2020-05-25 tweaks<br />
