@@ -119,7 +119,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
 
-<small>Thanks to flo, Cromatica45, desolationjones, and simka for their input.</small>
+<small>Thanks to flo, Cromatica45, desolationjones, simka, and maudibe for their input.</small>
 
 <p>This guide attempts to summarize and demystify the options and considerations for those making the move from stereo recording to multitrack recording of their Eurorack modular system. </p>
 
