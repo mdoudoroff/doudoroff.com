@@ -96,6 +96,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2020-01-11 small updates<br />
 2020-11-24 added Frap Tools QSC<br />
 2020-11-09 added SSF Vortices<br />
 2020-10-30 added Endorphin.es Cockpit 2<br />
