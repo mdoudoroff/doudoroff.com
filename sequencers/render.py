@@ -98,6 +98,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2021-01-23 minor updates<br />
 2021-01-03 added Intellijel Tete+Tetrapad<br />
 2020-12-19 added D&D Modules Heaven 16<br />
 2020-12-12 added Extralife Super Sixteen, other updates<br />
