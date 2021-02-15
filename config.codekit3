@@ -2482,6 +2482,19 @@
 		"oAP": "/quantizers/index.html",
 		"oF": 0
 		},
+	"/quantizers/mazzatron-keys-1.jpg": {
+		"ft": 16384,
+		"iS": 71890,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/quantizers/mazzatron-keys-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/quantizers/quantizers.csv": {
 		"cB": 0,
 		"ft": 8192,
