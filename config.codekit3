@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34018",
+  "creatorBuild" : "34081",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -15,6 +15,136 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/_ckl\/about.html",
+      "oF" : 0
+    },
+    "\/_ckl\/android-chrome-192x192.png" : {
+      "ft" : 32768,
+      "iS" : 17268,
+      "oA" : 1,
+      "oAP" : "\/_ckl\/android-chrome-192x192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_ckl\/android-chrome-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 70126,
+      "oA" : 1,
+      "oAP" : "\/_ckl\/android-chrome-512x512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_ckl\/css\/main.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/_ckl\/css\/main-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/_ckl\/css\/main.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/css\/main.css.map",
+      "oF" : 0
+    },
+    "\/_ckl\/css\/normalize.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/_ckl\/css\/normalize-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/_ckl\/downloads\/sun-article-home-printable.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/downloads\/sun-article-home-printable.pdf",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.barware.hawthorne.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.barware.hawthorne.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.barware.index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.barware.index.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.figures.ashley_james.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.figures.ashley_james.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.figures.brigham_peter_bent.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.figures.brigham_peter_bent.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.figures.index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.figures.index.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.figures.mrs_gaywood.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.figures.mrs_gaywood.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.figures.willard_orasmus.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.figures.willard_orasmus.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.index.html",
       "oF" : 0
     },
     "\/_ckl\/exh.sun_article.html" : {
@@ -62,7 +192,7 @@
     "\/_ckl\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/_ckl\/gfx",
+      "oAP" : "\/_ckl\/gfx",
       "oF" : 0
     },
     "\/_ckl\/icon.png" : {
@@ -81,7 +211,7 @@
     "\/_ckl\/images" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/_ckl\/images",
+      "oAP" : "\/_ckl\/images",
       "oF" : 0
     },
     "\/_ckl\/index.html" : {
@@ -234,7 +364,7 @@
     "\/atari\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/atari\/gfx",
+      "oAP" : "\/atari\/gfx",
       "oF" : 0
     },
     "\/atari\/history1.html" : {
@@ -444,7 +574,7 @@
     "\/cold-mac\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/cold-mac\/gfx",
+      "oAP" : "\/cold-mac\/gfx",
       "oF" : 0
     },
     "\/cold-mac\/index.html" : {
@@ -914,7 +1044,7 @@
     "\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/gfx",
+      "oAP" : "\/gfx",
       "oF" : 0
     },
     "\/index.html" : {
@@ -1002,7 +1132,7 @@
     "\/kiosk\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/kiosk\/gfx",
+      "oAP" : "\/kiosk\/gfx",
       "oF" : 0
     },
     "\/kiosk\/index.html" : {
@@ -1096,7 +1226,7 @@
     "\/mixers\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/mixers\/gfx",
+      "oAP" : "\/mixers\/gfx",
       "oF" : 0
     },
     "\/mixers\/index.html" : {
@@ -1134,7 +1264,7 @@
     "\/multitracking\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/multitracking\/gfx",
+      "oAP" : "\/multitracking\/gfx",
       "oF" : 0
     },
     "\/multitracking\/index.html" : {
@@ -1164,7 +1294,7 @@
     "\/oldfashioned101\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/oldfashioned101\/gfx",
+      "oAP" : "\/oldfashioned101\/gfx",
       "oF" : 0
     },
     "\/oldfashioned101\/humans.txt" : {
@@ -1378,7 +1508,7 @@
     "\/photo\/greenmount\/content\/bin\/images" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/photo\/greenmount\/content\/bin\/images",
+      "oAP" : "\/photo\/greenmount\/content\/bin\/images",
       "oF" : 0
     },
     "\/photo\/greenmount\/content\/custom.css" : {
@@ -1825,7 +1955,7 @@
     "\/photo\/whitesands\/content\/bin\/images" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/photo\/whitesands\/content\/bin\/images",
+      "oAP" : "\/photo\/whitesands\/content\/bin\/images",
       "oF" : 0
     },
     "\/photo\/whitesands\/content\/custom.css" : {
@@ -2112,7 +2242,7 @@
     "\/photo\/wilson\/content\/bin\/images" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/photo\/wilson\/content\/bin\/images",
+      "oAP" : "\/photo\/wilson\/content\/bin\/images",
       "oF" : 0
     },
     "\/photo\/wilson\/content\/Clinic_large.html" : {
@@ -2479,7 +2609,7 @@
     "\/quantizers\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/quantizers\/gfx",
+      "oAP" : "\/quantizers\/gfx",
       "oF" : 0
     },
     "\/quantizers\/index.html" : {
@@ -2517,7 +2647,7 @@
     "\/samplers\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/samplers\/gfx",
+      "oAP" : "\/samplers\/gfx",
       "oF" : 0
     },
     "\/samplers\/index.html" : {
@@ -2555,7 +2685,7 @@
     "\/sequencers\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/build\/sequencers\/gfx",
+      "oAP" : "\/sequencers\/gfx",
       "oF" : 0
     },
     "\/sequencers\/index.html" : {
@@ -5032,21 +5162,21 @@
 
       ],
       "contentEntries" : [
-        "!(node_modules)\/**\/*.html",
-        "!(node_modules)\/**\/*.htm",
-        "!(node_modules)\/**\/*.shtml",
-        "!(node_modules)\/**\/*.xhtml",
-        "!(node_modules)\/**\/*.php",
-        "!(node_modules)\/**\/*.js",
-        "!(node_modules)\/**\/*.ts",
-        "!(node_modules)\/**\/*.coffee",
-        "!(node_modules)\/**\/*.erb",
-        "!(node_modules)\/**\/*.pug",
-        "!(node_modules)\/**\/*.jade",
-        "!(node_modules)\/**\/*.slim",
-        "!(node_modules)\/**\/*.haml",
-        "!(node_modules)\/**\/*.md",
-        "!(node_modules)\/**\/*.kit"
+        "**\/*.html",
+        "**\/*.htm",
+        "**\/*.shtml",
+        "**\/*.xhtml",
+        "**\/*.php",
+        "**\/*.js",
+        "**\/*.ts",
+        "**\/*.coffee",
+        "**\/*.erb",
+        "**\/*.pug",
+        "**\/*.jade",
+        "**\/*.slim",
+        "**\/*.haml",
+        "**\/*.md",
+        "**\/*.kit"
       ],
       "removeFontFace" : 0,
       "removeKeyframes" : 0,
