@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34081",
+  "creatorBuild" : "34127",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -6616,6 +6616,9 @@
       "removeVariables" : 0,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -6650,6 +6653,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
