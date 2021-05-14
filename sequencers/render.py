@@ -98,6 +98,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2021-05-14 misc updates, added videos column<br />
 2021-04-08 errata<br />
 2021-02-15 added Intellijel Metropolix<br />
 2021-01-23 minor updates<br />
