@@ -270,6 +270,14 @@ def valueForproduct(row):
 def klassForproduct(val):
 	return 'left'
 
+def valueForvideos(row):
+	bits = []
+	links = row['videos'].split(';')
+	for l in links:
+		(text, url) = l.split('|')
+		bits.append(f'<a href="{url.strip()}">{text.strip()}</a>')
+	return '<br /><br />'.join(bits)
+
 def klassFornotes(val):
 	return 'left'
 
@@ -333,6 +341,7 @@ with open('sequencers-data.csv') as csvfile:
 			columns = []
 			for fieldname in reader.fieldnames:
 				if not fieldname.find('_')==0:
+					# v = locals()["valueFor%s" % fieldname](row)
 					try:
 						v = locals()["valueFor%s" % fieldname](row)
 					except:
