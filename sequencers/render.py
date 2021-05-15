@@ -98,15 +98,16 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2021-05-15 errata<br />
 2021-05-14 misc updates, added videos column<br />
 2021-04-08 errata<br />
 2021-02-15 added Intellijel Metropolix<br />
 2021-01-23 minor updates<br />
+<span id="additionalUpdates" class="collapsed">
 2021-01-03 added Intellijel Tete+Tetrapad<br />
 2020-12-19 added D&D Modules Heaven 16<br />
 2020-12-12 added Extralife Super Sixteen, other updates<br />
 2020-10-25 added Ladik S-280<br />
-<span id="additionalUpdates" class="collapsed">
 2020-08-01 added SDS Digital Sequarallel<br />
 2020-07-21 added (with misgivings) Behringer 960 and 182<br />
 2020-04-29 added the RYK M185<br />
@@ -276,7 +277,7 @@ def valueForvideos(row):
 	links = row['videos'].split(';')
 	for l in links:
 		(text, url) = l.split('|')
-		bits.append(f'<a href="{url.strip()}">{text.strip()}</a>')
+		bits.append(f'<a href="{url.strip()}" target="_blank">{text.strip()}</a>')
 	return '<br /><br />'.join(bits)
 
 def klassFornotes(val):
