@@ -1,0 +1,154 @@
+@import "html5boilerplate.less";
+
+
+@general-red:   rgb(237,68,57);
+@sm-black:  	rgb(34,30,28);
+@sm-tan:		rgb(251,224,183);
+@odg-black:  	rgb(45,41,38);
+@odg-orange: 	rgb(237,109,35);
+
+
+
+
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after{box-sizing:border-box;}
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+
+html{ 
+   font-size: 1px;/*for using REM units*/
+}
+body{
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   font-size: 16rem;
+   font-weight: 400;
+   line-height: 1.3;
+   color: #222;
+
+   @media only screen and (min-width: 1100px)  {
+   	font-size: 18rem;
+
+   }
+}
+
+// The above is a gentle reset to be used in conjunction with normalize.css
+// It can be adjusted to taste
+
+////////////////////////////
+
+
+
+#main {
+	padding: 0 0.5em;
+	max-width: 960px;
+	min-height: 400px;
+	margin: 0 auto;
+}
+
+p {
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+a, a:visited, a:active { color: blue; }
+a:hover { color: red; }
+
+img {
+	width: 100%;
+}
+
+nav {
+	top: 0;
+	width: 100%;
+	min-height: 50px;
+	position: fixed;
+	background: rgba(90,90,90,.7);
+	backdrop-filter: blur(5px); 
+	-webkit-backdrop-filter: blur(5px); 
+
+	li {
+		height: 35px;
+		line-height: 35px;
+
+	}
+
+	a, a:visited, a:active { color: lightblue; }
+	a:hover { color: red; }
+
+}
+
+#navLogo {
+	height:40px;
+	width: auto;
+	position: relative;
+	left: 50%;
+	top: 5px;
+	margin-left: -20px;
+}
+
+#spacerForFixedHeader {
+	height: 52px;
+}
+
+footer {
+	font-size: 80%;
+	margin: 2em 0 0 0;
+	padding: 1em 0.5em;
+	background: #ccc;
+	a, a:visited, a:active { color: blue; }
+	a:hover { color: red; }
+
+
+	.contentWrapper {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+#burger {
+	position: absolute;
+	left:9px;
+	top: 9px;
+	width: 30px;
+	height: 30px;
+	transition: transform 0.5s;
+}
+
+#mainMenu {
+	padding-bottom: 1em;
+}
+
+
+.mainMenuContainer ul {
+	display: none;
+	margin-left: 13px;
+	margin-top: 0.25em;
+}
+
+.buttonRow {
+	display: flex;
+	justify-content: space-around;
+}
