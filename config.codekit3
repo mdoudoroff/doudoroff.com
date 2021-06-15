@@ -2156,6 +2156,14 @@
       "oAP" : "\/_odg\/404.html",
       "oF" : 0
     },
+    "\/_odg\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/about.html",
+      "oF" : 0
+    },
     "\/_odg\/android-icon-36x36.png" : {
       "ft" : 32768,
       "iS" : 1868,
@@ -2600,6 +2608,30 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_odg\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/favicon.ico",
+      "oF" : 0
+    },
+    "\/_odg\/find.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/find.html",
+      "oF" : 0
+    },
+    "\/_odg\/genever.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/genever.html",
+      "oF" : 0
+    },
     "\/_odg\/humans.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2766,12 +2798,52 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_odg\/product-odg.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/product-odg.html",
+      "oF" : 0
+    },
+    "\/_odg\/product-sm.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/product-sm.html",
+      "oF" : 0
+    },
+    "\/_odg\/recipes.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/recipes.html",
+      "oF" : 0
+    },
+    "\/_odg\/resources.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/resources.html",
+      "oF" : 0
+    },
     "\/_odg\/robots.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/_odg\/robots.txt",
+      "oF" : 0
+    },
+    "\/_odg\/schiedam.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_odg\/schiedam.html",
       "oF" : 0
     },
     "\/_odg\/site.webmanifest" : {
