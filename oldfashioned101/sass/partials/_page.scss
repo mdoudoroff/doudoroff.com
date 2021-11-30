@@ -1,0 +1,101 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $font-color;
+  font-size: 115%;
+  font-family: Georgia, serif;
+}
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body {
+	text-shadow: 0 1px 0 #f5ede6;
+	background: #e5d2c0;
+	background-size: 100%;
+}
+
+body p {
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
+}
+
+#container {
+	padding: 1em;
+	
+	section {
+	
+		h1, h2, p { text-align: center; }
+	
+		.more {
+			font-size: 90%;
+			outline: 6px double $alt-color;
+			padding: 0.15em 1em;
+			background-size: 100%;
+			text-shadow: 0 1px 0 #f5ede6;
+			color: $font-color;
+		}
+	
+		.more p { text-align: justify;}	
+		
+	}
+	
+
+}
+
+header, header p {
+	text-align: center;
+}
+
+header p {
+	font-size:94%;
+	margin-top:0;
+}
+
+header p.subtitle {
+	font-size:155%;
+}
+
+#main {}
+
+footer {
+	border-top: 2px solid $alt-color;
+	font-size:80%;
+}
+
+.dropcap {
+	font-family: "rosewood-std",sans-serif;
+	font-size:350%;
+	float:left;
+	line-height:100%;
+	padding-right: 0.2em;
+}
+
+h1 {
+	color: $alt-color;
+	font-size:300%;
+	font-family: "rosewood-std",sans-serif;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	font-weight:normal;
+}
+
+h2 {
+	font-size:155%;
+	font-family: "rosewood-std-fill","Georgia",serif;
+	font-weight:normal;
+	margin-top:2em;
+	margin-bottom:0.5em;
+}
+	
+.book {
+	text-align: center;
+}

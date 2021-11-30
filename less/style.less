@@ -1,0 +1,149 @@
+@import "html5bp-top.less";
+
+@linkcolor: #23c9bb;
+@hovercolor: lighten(@linkcolor, 10%);
+@sigcolor: #1e7c79;
+@darkcolor: darken(@sigcolor, 20%);
+
+body {
+	background: darken(@sigcolor, 10%);
+	color: white;
+	font-size: 16px;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	// font-family: "Whitney SSm A", "Whitney SSm B";
+	// font-style: normal;
+	// font-weight: normal;
+}
+
+article {
+	position: relative;
+}
+
+a, a:visited, a:hover {
+	color: @linkcolor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: @hovercolor;
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+figure {
+	margin: 2em 0 2em 0;
+	height: 25%;
+	overflow: hidden;
+	clear: both;
+}
+
+section {
+	margin-bottom: 4em;
+}
+
+h1 {
+	margin: 2em auto 2em auto;
+	font-size: 100%;
+	//border-top: 18px solid black;
+	text-align: center;
+	color: @sigcolor;
+	background: white;
+	border-radius: 8px;
+	display: block;
+	padding: 8px 1em;
+	width: 4em;
+	line-height: 1.0;
+	font-variant: italic;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 2em;	
+	font-size: 180%;
+	line-height: 1.0;
+}
+
+p {
+	display: block;
+	// max-width: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em;
+	line-height: 1.8;
+
+
+}
+
+p.button {
+	text-align: center;
+	font-weight: bold;
+	font-size:120%;
+}
+
+.dark {
+	color: @darkcolor;
+}
+
+#masthead {
+	color: @darkcolor;
+	text-align: center;
+	// font-weight: bold;
+	font-size: 150%;
+	margin: 3em 0 2em 0;
+	max-width: 40em;
+
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+
+	text-shadow: 
+	#FFF 0px 0px 20px, 
+	#FFF 0px 0px 40px, 
+	#FFF 0px 0px 60px, 
+	#1e7c79 0px 0px 80px, 
+	#1e7c79 0px 0px 120px, 
+	#1e7c79 0px 0px 160px, 
+	#1e7c79 0px 0px 200px, 
+	#1e7c79 0px 0px 300px;
+
+}
+
+#pageTitle {
+	font-weight: bold;
+	font-size: 350%;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.dingbat {
+	font-weight: bold;
+	text-align: center;
+	color: @darkcolor;
+}
+
+footer {
+	margin-top: 4em;
+	font-size: 14px;
+	color: @darkcolor;
+}
+
+@media only screen and (min-width: 50em)  {
+	#masthead {font-size:200%;}
+	body { font-size: 18px; }
+	h2 {font-size:200%;}
+	p {max-width: 30em;}
+}
+
+@import "html5bp-top.less";

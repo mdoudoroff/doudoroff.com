@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - CAD-3D & CAD-3D 2.0 (Cyber Studio)</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html" selected="selected">Each software product in-depth:</option><option value="cad3d.html" selected="selected">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>CAD-3D & CAD-3D 2.0 (Cyber Studio)</h1>
+<p>CAD-3D was a basic polygonal 3D modeling and <span class="glossaryTerm" onmouseover="javascript:showDiv('rendering')" onmouseout="javascript:hideDiv('rendering')">rendering</span> program created by Tom Hudson. Using the various view ports, the operator could assemble scenes out of geometric primitives or custom extruded or lathed objects, adjust lighting and camera positioning, and render images as stills or, beginning with CAD-3D 2.0, as an animated sequence. Published a year after the first version, and bundled together with Cybermate as the product Cyber Studio, CAD-3D 2.0 was probably the first low-cost 3D animation system and was certainly the first with such an extensive feature set. The open architecture design of CAD-3D 2.0 also established it as a central platform whose functionality was subsequently extended with the Cyber Control, Anti-alias, Cyber Sculpt and Cyber Texture products. </p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cyberstudio.jpg"><img src="gfx/packaging.cyberstudio.thumb.jpg" width="143" height="168" /></a>
+	</div>
+</div>
+<p>Tom Hudson made a name for himself early on in the Atari community writing articles and type-in programs for <em>ANALOG Computing</em> magazine, and then by creating the digital paint programs DEGAS and DEGAS Elite (published by Batteries Included) for the Atari ST. Back in 1984, Tom had created a type-in Atari 800 <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> program published in <em>ANALOG</em> called Solid States, with which a user could manually enter a series of three-dimensional coordinates, specify connecting lines, and then render perspective views of the data as a wire frame. Tom’s interest in 3D graphics originated from wanting to make display graphics for science fiction film sets. Solid States didn't meet his expectations, but it was a start.</p>
+
+<div style="width:530px; margin:auto; padding: 10px 0px 10px 0px;">
+	<div class="imageCluster left" style="width:250px; padding:0px;">
+		<a href="gfx/screenshot.solidstatesui.gif"><img src="gfx/screenshot.solidstatesui.thumb.jpg" alt="" width="250" height="150" /></a>
+		<p>Solid States on the Atari 800</p>
+	</div>
+	<div class="imageCluster left" style="width:250px; padding:0px;">
+		<a href="gfx/rendering.solidstates.gif"><img src="gfx/rendering.solidstates.thumb.jpg" alt="" width="250" height="150" /></a>
+		<p>A Solid States rendering</p>
+	</div>
+</div>
+
+<p style="clear:both;">In late 1985, Tom ported this simple program to the ST, inheriting some of the graphical user interface features that came “for free” with TOS.</p>
+
+<div style="width:696px; margin:auto; padding: 10px 0px 10px 0px;">
+	<div class="imageCluster left" style="width:160px; padding:0px;">
+		<a href="gfx/screenshot.ssport1.jpg"><img src="gfx/screenshot.ssport1.thumb.jpg" alt="" width="160" height="100" /></a>
+		<p>Solid States on the ST</p>
+	</div>
+	<div class="imageCluster left" style="width:160px; padding:0px;">
+		<a href="gfx/screenshot.ssport2.jpg"><img src="gfx/screenshot.ssport2.thumb.jpg" alt="" width="160" height="100" /></a>
+		<p>Simple lathe interface</p>
+	</div>
+	<div class="imageCluster left" style="width:160px; padding:0px;">
+		<a href="gfx/rendering.ssport1.jpg"><img src="gfx/rendering.ssport1.thumb.jpg" alt="" width="160" height="100" /></a>
+		<p>Shaded rendering</p>
+	</div>
+	<div class="imageCluster left" style="width:160px; padding:0px;">
+		<a href="gfx/rendering.ssport2.jpg"><img src="gfx/rendering.ssport2.thumb.jpg" alt="" width="160" height="100" /></a>
+		<p>Shaded rendering</p>
+	</div>
+</div>
+
+<p>However, this “3D viewer” remained primitive and numerical in nature. After Gary and Tom looked at Enabling Technologies’ Easy 3D at the Winter 1985 COMDEX, Tom took the interface in a new direction, eventually resulting in CAD-3D 1.0. </p>
+
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.easy3d.gif"><img src="gfx/screenshot.easy3d.thumb.jpg" alt="" width="250" height="167" /></a>
+		<p>Easy3D on the Macintosh</p>
+	</div>
+</div>
+
+<p class="blockquote">I went back to Kansas City and turned out CAD-3D 1.0 after a few months of work. The worst part of developing the program was the fact that I didn't have a hard drive at that point—just two floppy drives! Compiling the program was a nightmare of disk-swapping and trying to remember what files had been compiled and which hadn't. I didn't have a “make” utility at this point, which made life incredibly difficult.</p>
+
+<div class="cluster left">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cad3d1.jpg"><img src="gfx/screenshot.cad3d1.thumb.jpg" alt="" width="250" height="157" /></a>
+		<p>CAD-3D 1.0</p>
+	</div>
+</div>
+
+<p>CAD-3D 1.0 split the screen into four windows. One window was a perspective-enabled view through a center-pointing camera outside the scene. The perspective viewpoint could be moved about the middle of the scene much like one turns a bi-axial tabletop globe. The other three windows represented the top, front and side elevations of the scene, without perspective. Moving and manipulating 3D objects in any of the three orthogonal windows was automatically reflected in the rest of the windows. Tools were accessed through drop-down menus.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cyberstudiouk.jpg"><img src="gfx/packaging.cyberstudiouk.thumb.jpg" width="143" height="165" /></a>
+		<p>UK Edition</p>
+	</div>
+</div>
+<p>The user could add 3D objects to the scene either by loading them from disk or by creating them from a small library of primitives (sphere, torus, wedge, rectangular solid, etc.). There were also two tools, <span class="glossaryTerm" onmouseover="javascript:showDiv('spin')" onmouseout="javascript:hideDiv('spin')">spin</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('extrude')" onmouseout="javascript:hideDiv('extrude')">extrude</span>, which created objects from a two-dimensional template shape drawn by the user. The final modeling tool was the <span class="glossaryTerm" onmouseover="javascript:showDiv('boolean')" onmouseout="javascript:hideDiv('boolean')">Boolean “joiner”,</span> which allowed the user to overlap two objects and subtract one from the other, sort of like sculptural carving.</p>
+<p class="blockquote">The biggest coding challenge in the project was writing the 3D Boolean algorithm. This is one of the most complex tasks in 3D work and the Atari’s floating-point routines really weren't up to the task. It took weeks of work to get the Boolean code stable enough to work in most cases, and I swore I’d never write another 3D Boolean algorithm!</p>
+<p>Because of the Atari ST’s tiny color palette, rendering options in CAD-3D were quite limited. In color mode, the user could choose to use the palette to provide 14 shades of one color (blue, red, yellow, green, violet or cyan) or seven shades of any two colors. When used in monochrome mode, CAD-3D could generate sixteen shades of gray by using fill patterns.</p>
+
+<div style="width:302px; margin:auto;">
+	<img src="gfx/diagram.hatch-shading.gif" width="302" height="243" />
+</div>
+
+<p>The CAD-3D renderer also had four modes: wire frame, hidden, solid and outline which could be used for different effects, although solid was by far the primary mode.</p>
+
+<div style="width:600px; margin:auto;">
+	<img src="gfx/diagram.cad-3d-rendering-styles.gif" width="600" height="167" style="text-align: center;" />
+</div>
+
+<p>CAD-3D Version 2.0 added significantly expanded functionality over Version 1.0 in many ways, and involved lots of changes under the hood. For one thing, Tom and Gary put a major effort into wringing more performance out of the 68000 microprocessor. 3D computer graphics are challenging for computers due to the sheer quantity of calculations required to accomplish anything, and the more complex the geometry in a 3D scene, the longer it takes to do all those calculations.</p>
+
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/screenshot.starglider.gif" alt="" width="320" height="200" /><p>Starglider</p>
+	</div>
+</div>
+
+<p>By this point, everybody in the business had noticed a new computer game called Starglider (for the Atari ST and Amiga) created by the British game designer and programmer Jez San. Starglider featured highly responsive 3D graphics for the time, so Tom and Gary contacted Jez and purchased some useful routines from him that helped speed the redrawing of CAD-3D’s viewports. The most dramatic way this new technology manifested itself in CAD-3D 2.0 was that the user could now use the mouse to rotate the perspective camera’s view “in real time” while in wire frame mode. Jez went on to play a significant role in the development of the Super Nintendo and Microsoft X-Box game consoles.</p>
+<p>Meanwhile, Tom reworked the guts of the software to provide an “open architecture” interface so he could later extend the application with plug-ins like Cyber Control. He also added a simple <span class="glossaryTerm" onmouseover="javascript:showDiv('zbuffer')" onmouseout="javascript:hideDiv('zbuffer')">Z-buffer</span> <span class="glossaryTerm" onmouseover="javascript:showDiv('scanline')" onmouseout="javascript:hideDiv('scanline')">scan-line renderer</span> for cleaner shaded renderings, more flexible color palette management, a more flexible light interface, and measuring/dimensioning tools.</p>
+
+<div style="width:640px; margin:auto;">
+	<img src="gfx/screenshot.cad3d2.gif" width="640" height="398" />
+</div>
+
+<p>The interface changed as well. The left third of CAD-3D was given over to an icon panel to provide buttons for commonly-used tools. Gary explains:</p>
+<p class="blockquote">The reason we added the command panel was that we had introduced a lot of controls we wanted direct access to without hunting through dropdowns. [The screen space tradeoff] was kind of a catch-22 situation. In some ways we were just riffing off the icon panel design of programs like Mac Paint and I guess to some extent even [Atari’s paint program] Neochrome.</p>
+
+<div class="cluster right"><div class="sidebar">
+	<h1>CAD-3D sidebar</h1>
+	<h2>notable features</h2>
+	<ul>
+	<li>Straightforward <span class="glossaryTerm" onmouseover="javascript:showDiv('ui')" onmouseout="javascript:hideDiv('ui')">GUI</span>: object selection and transformation, group selection and transformation</li>
+	<li>Isometric and perspective views (camera always center-looking in GUI, free-flying with Cyber Control)</li>
+	<li>Up to three point light sources that could be positioned anywhere</li>
+	<li><span class="glossaryTerm" onmouseover="javascript:showDiv('flatshading')" onmouseout="javascript:hideDiv('flatshading')">Flat-shading</span> scan-line renderer for 16 color mode</li>
+	<li>Hatch-pattern shading in 2 color mode</li>
+	<li>Six primitives with basic level-of-detail parameters</li>
+	<li>Cross-section based spin (lathe) and extrude functions for creating custom solids</li>
+	<li>Boolean geometry operators</li>
+	<li>Stop-motion animation capability (not keyframed)</li>
+	<li>Published <span class="glossaryTerm" onmouseover="javascript:showDiv('api')" onmouseout="javascript:hideDiv('api')">API</span> for automation with external software (such as Cyber Control)</li>
+	</ul>
+	<h2>notable limitations</h2>
+	<ul>
+	<li>CAD-3D 2.0 did not—by itself—have a free moving camera view: the camera always pointed towards the origin (0,0,0), though it could be rotated around that origin and zoomed in and out. It was possible to free the camera through Cyber Control scripts.</li>
+	<li>CAD-3D’s animation was—by itself—limited to animation-stand process: arrange scene, record image, modify scene, record image, etc. There was no “keyframing”. Animation was automated only with Cyber Control scripts.</li>
+	<li>Because the ST had paletted graphics, the user had to set up ranges of gradient colors in order for shading to take place. By default, this meant either one “color” with fourteen shades, or two colors with seven shades each. Clever manipulation of the limited color palette was often central to the polish of animation on the ST.</li>
+	<li>Due to the memory and processing limitations of theb ST, the CAD-3D universe was nine thousand units deep in each dimension with (generally) integer precision. Only the Boolean code used floating-point math. Jez (Jeremy) San, a British programmer who founded Argonaut, developed the popular StarGlider game for the Commodore 64 and Atari 800 and went on to contribute to the SNES and XBOX game consoles, contributed some <span class="glossaryTerm" onmouseover="javascript:showDiv('assembly')" onmouseout="javascript:hideDiv('assembly')">assembly-language</span> code that used fixed-point data to improve the viewport display speed.</li>
+	</ul>
+</div></div>
+<p>A huge feature of the new CAD-3D was support for LC Technology’s StereoTek 3D Glasses, which were liquid crystal shutter glasses controlled by a tethered cartridge unit. Using control software (developed by Mark Kimball), CAD-3D could switch between two offset views of the same 3D scene—the glasses would alternatively obscure the wearer’s eyes in perfect synchronization with such speed that a persistent 3D experience resulted.</p>
+<p>Yet the biggest new feature by far in CAD-3D 2.0 was the ability to render to the new “delta-compressed” animation format developed by Mark Kimball. The basic idea was to start with a picture, and then for each subsequent “movie frame” store only the parts that change, rather than storing each frame as an entire picture, thus wasting data. Mark Kimball implemented this process as an Atari ST <span class="glossaryTerm" onmouseover="javascript:showDiv('deskaccessory')" onmouseout="javascript:hideDiv('deskaccessory')">desk accessory</span> called Cyber Smash. Tom explains:</p>
+<p class="blockquote">This was an amazing piece of code that found the rendering buffer inside CAD-3D and, as you generated images, it would create an animation file frame-by-frame. The procedure is pretty simple -- the first frame’s screen image would be stored as is. When the second frame was generated, Cyber Smash would perform a logical XOR operation, which has the effect of reducing the image to only what has changed between the prior frame and the current one. These changes were compressed and saved to the file, then the animator would generate the next frame and call Cyber Smash to compress it. This was done for each frame in the animation. The end result was a fairly compact animation file that would play back quickly because each sequential frame after the first was merely an XOR operation on the video memory. Of course, the roundabout procedure for generating these animation files was a pain, but we'd take care of that when we integrated his code with ours.</p>
+<p>Over the next couple of years, Tom developed several companion products for CAD-3D, including the <a href="relatedproducts.html">3D Developer Disk for Cyber Studio</a>, <a href="relatedproducts.html">3D Plotter & Printer Drivers</a>, <a href="relatedproducts.html">Antialias</a>, <a href="relatedproducts.html">3D Fonts I</a>, <a href="cybercontrol.html">Cyber Control</a>, <a href="cybervcr.html">Cyber VCR</a>, and <a href="cybersculpt.html">Cyber Sculpt</a>. Eventually, Tom Hudson went on to help create Autodesk 3D Studio on the PC, which itself passed through four versions, practically spawned an industry, and then was re-designed as the current Discreet product 3ds max. CAD-3D is literally 3ds max’s grandfather. Also, see <a href="whatmight.html">What Might Have Been</a>.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="spin">
+	<p><strong>Spin</strong></p>
+	<p>Spin, more commonly known in computer graphics as “surface of revolution”, was a lathe-like tool where the user draws a symmetric cross section which the computer uses as a profile for a cylindrical form.</p>
+	<img src="gfx/diagram.spin.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="extrude">
+	<p><strong>Extrude</strong></p>
+	<p>As it sounds, extrude was a tool that took a user-drawn cross-section and built geometry that gave the shape depth.</p>
+	<img src="gfx/diagram.extrude.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="boolean">
+	<p><strong>Boolean modeling</strong></p>
+	<p>Boolean join algorithms take two or more solids that intersect each other in space and either merge their surfaces, subtract one volume from the other, or discard all but the shared volume. In this example, a hemispherical indentation is made in a block by subtracting a sphere from it.</p>
+	<img src="gfx/diagram.boolean.gif" width="435" height="120" style="margin: 10px 0px 0px 33px;" />
+</div>
+<div class="glossaryPopup" id="zbuffer">
+	<p><strong>Z-buffer</strong></p>
+	<p>A z-buffer is an array of data that numerically represents the distance between the focal plane of a 3D camera and a surface for each pixel of a 3D rendering. Z-buffers are used for various purposes in computer graphics, one of which is to help a scan-line renderer sort out which of multiple, overlapping surfaces to draw for a given pixel.</p>
+</div>
+<div class="glossaryPopup" id="scanline">
+	<p><strong>Scan-line renderer</strong></p>
+	<p>One of two dominant approaches to rendering an image of a 3D scene, the other being raytracing. Although the two techniques are not entirely mutually exclusive of each other, scan-line rendering progressively draws a scene line by line whereas raytracing generally draws a scene object-by-object.</p>
+</div>
+<div class="glossaryPopup" id="rendering">
+	<p><strong>Rendering</strong></p>
+	<p>In computer graphics, rendering is the process of algorithmically deriving a picture or piece of a picture from other information, which may be a view of 3D geometry, 2D geometry (line art) or other picture information.</p>
+</div>
+<div class="glossaryPopup" id="api">
+	<p><strong>Application Programming Interface (API)</strong></p>
+	<p>A feature of a program that enables another program to communicate with and control it.</p>
+</div>
+<div class="glossaryPopup" id="assembly">
+	<p><strong>Assembly language</strong></p>
+	<p>The most rigorous and fundamental language available to a programmer for developing software; typically only used to develop extremely optimized mathematical algorithms. Assembly language programming generally requires special expertise.</p>
+</div>
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+<div class="glossaryPopup" id="deskaccessory">
+	<p><strong>Desk Accessory</strong></p>
+	<p>Different operating systems have used different approaches to managing types of programs that hang around (“stay resident”) while the user is working with an application. Often these co-existing programs are intended to complement applications in some fashion. In the Atari ST’s TOS operating system, such programs were called “Desk Accessories”, because they were often accessed from a drop-down menu on the desktop display. The comparable feature of a modern operating system is a “service” or “daemon.”</p>
+</div>
+<div class="glossaryPopup" id="flatshading">
+	<p><strong>Flat shading</strong></p>
+	<p>The filling in the faceted lattice (the “faces”) of 3D geometry with solid colors.</p>
+	<img src="gfx/diagram.shading.gif" width="270" height="96" alt="illustration of wire, flat and smooth shading" />
+	<p>3D computer graphics on the Atari never really got beyond flat shading into smooth shading; the computer just didn't have enough color shades to do it justice (see the section “What Might Have Been”).</p>
+</div>
+<div class="glossaryPopup" id="ui">
+	<p><strong>User Interface (UI) and Graphical User Interface (GUI)</strong></p>
+	<p>Computer programs don't actually do anything visible to the user unless the programmer goes out of the way to include visual features. These features, which often the user can interact with through a mouse or keyboard, constitute a user interface. Graphical User Interfaces further infers a level of visual sophistication in the interface beyond computer terminal text.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cybermate.html"><em>Cybermate (Cyber Studio)</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history7.html"><em>VII. Moving Forward</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

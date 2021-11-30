@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Home</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<img src="gfx/masthead-large.gif" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="86" />
+		
+<img src="gfx/anthrobot_02.gif" width="275" height="186" alt="" class="robot" style="padding-top: 30px;" /><img src="gfx/anthrobot_03.gif" width="369" height="84" alt="" class="robot" /><img src="gfx/anthrobot_05.gif" width="227" height="132" alt="" class="robot" /><img src="gfx/anthrobot_07.gif" width="292" height="95" alt="" class="robot" /><img src="gfx/anthrobot_09.gif" width="217" height="45" alt="" class="robot" />
+
+<p style="margin-top:20px;">By Martin Doudoroff<br />Edited by Monica J. Smith</p>
+
+<h1 style="clear:none;">Introduction</h1>
+<p>This Web site documents some moderately obscure computer graphics software history: a suite of animation products produced in the late 1980’s for the Atari ST personal computer platform. Although the fact is not widely known, this Atari software, published by a defunct computer magazine called Antic, directly preceded and led to the Autodesk 3D Studio and Discreet 3ds max products used by thousands of people today.</p>
+<p>The articles herein basically comprise an oral history: the information is drawn from interviews and hands-on exploration of the software, running under emulation or on original equipment.</p>
+<p>The site is organized into a chronological history, followed by in-depth discussions of each major product.</p>
+
+<h1 style="clear:none;">Acknowledgements</h1>
+<p>Thanks to my editor, Monica Smith, for making this documentation more respectable.</p>
+<p>Thanks to Gary Yost, Tom Hudson, Mark Kimball, Jim Kent, Andy Eddy, Maurice Molyneaux, Boris Tsikanovsky, Darrel Anderson, and Jack Powell for their enthusiastic participation in this project, which is really their project.</p>
+<p>Thanks to James Green and Heidi Brumbaugh for their assistance.</p>
+<p>Special thanks to Tom Hudson, Corey Kaup, Mike Mee (Liverpool), Tim Forcade, Richard Davey (<a href="http://www.atari.st">The Little Green Desktop</a>) and Kevin Savetz (<a href="http://www.atarimagazines.com"><em>Classic Computer Magazine Archive</em></a>) for their invaluable technical assistance and resources.</p>
+
+<h1>Contents</h1>
+<div class="bodyDiv">
+
+<h2>General History (main document)</h2>
+<ol>
+<li><a href="history1.html">Antic Magazine & The Catalog</a> <strong style="color:red;">&lt;— START HERE!</strong></li>
+<li><a href="history2.html">A new software culture</a></li>
+<li><a href="history3.html">Now, in 3-D!</a></li>
+<li><a href="history4.html">Making it move</a></li>
+<li><a href="history5.html">Make Art</a></li>
+<li><a href="history6.html">Going “Cyber”</a></li>
+<li><a href="history7.html">Moving Forward</a></li>
+</ol>
+
+<h2>Each software product in-depth</h2>
+<ul>
+<li><a href="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</a></li>
+<li><a href="cybermate.html">Cybermate (Cyber Studio)</a></li>
+<li><a href="cybercontrol.html">Cyber Control</a></li>
+<ul>
+<li>Postscript: Cyber Control after the Atari</li>
+</ul>
+<li><a href="spectrum.html">Spectrum 512 (and Unispec)</a></li>
+<li><a href="cyberpaint.html">Cyber Paint</a></li>
+<ul>
+<li>Postscript: Cyber Paint after the Atari</li>
+</ul>
+<li><a href="cybervcr.html">Cyber VCR</a></li>
+<li><a href="cybersculpt.html">Cyber Sculpt</a></li>
+<ul>
+<li>Postscript: Cyber Sculpt after the Atari</li>
+</ul>
+<li><a href="cybertexture.html">Cyber Texture</a></li>
+<li><a href="designdisks1.html">Future Design, Architectural Design, Human Design and Microbot Design Disks</a></li>
+<li><a href="designdisks2.html">Cartoon Design & Video Titling Design Disks</a></li>
+<li><a href="relatedproducts.html">Other related products</a></li>
+<ul>
+<li>3D-Fonts I</li>
+<li>3D-Fonts II</li>
+<li>Genesis</li>
+<li>3D Developers Disk for Cyber Studio</li>
+<li>3D Plotter & Printer Drivers</li>
+<li>Anti-aliaser</li>
+<li>G.I.S.T. G.I. Sound Tool</li>
+</ul>
+</ul>
+
+<h2>Additional material</h2>
+<ul>
+<li><a href="whatmight.html">What Might Have Been</a></li>
+<li><a href="quicktimegallery.html">QuickTime Gallery</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="about.html">About this history/the author</a></li>
+</ul>
+
+	</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history1.html"><em>I. Antic Magazine & The Catalog</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - About this history/the author</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html" selected="selected">About this history/the author</option>
+</select>
+		</div><br />
+<h1>About this history</h1>
+<p>A couple years ago, some pleasant fellow hired by Discreet to produce a historical timeline of their 3D animation software phoned me for an interview. I tried to answer his questions, but it was more difficult than I expected; my memory had grown dim. As far as I know nothing ever came of that project, but it occurred to me that the others who were part of the <em>Antic</em> years might also be forgetting. A couple emails was all it took to confirm my fears, so I made a commitment to try to interview whomever I could find and compile at least the basic facts. </p>
+<p>As it turned out, everybody was so forthcoming that I was able to do a much more thorough history than I originally planned. It took more time and more work, but I was able to document much of the important stuff and track down almost all the key people, some of whom had been completely out of touch for many years. My research also drew my attention to some of the other wonderful historical activities on the Internet pertaining to antiquated computing. For obvious reasons, I was particularly inspired by the <a href="http://www.atarimagazines.com"><em>Classic Computer Magazine Archive</em></a>. The end result is this site with all its materials, and an archive of raw research for the future. I hope you enjoy it.</p>
+
+<h1>About the author</h1>
+<p>When I was nine and growing up in Lawrence, Kansas, my father got me an Atari 800 that I used incessantly for years. I learned <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> programming and word processing, played classic video games like <a href="http://www.eidolons-inn.de/mule/">M.U.L.E.</a> and, above all, got interested in computer graphics. I practically wore out a Koala pad on the Atari 800 and was constantly uploading and downloading pictures and demos on CompuServe.</p>
+<p>I was one of the people who enthusiastically typed in Tom Hudson’s Solid States program out of <em>ANALOG</em> magazine. Solid States turned out to be a watershed that (along with the movie TRON) launched me on twelve years of 3D graphics work. </p>
+<p>When the Atari ST hit the market, I got one of the very first units. My friends Mark Pennel and Mark Almon got CAD-3D 1.0, which I played around with, and then we all immediately got Cyber Studio as soon as it was available. By this point, digital imaging and animation was our primary interest in computers and we were spending much of our free time on it. Through CompuServe, we got in touch with Gary Yost and sufficiently impressed him with the work we were doing with his software that he adopted us into his group of semi-official graphics software testers. The Marks and I also got to know Tom Hudson, who lived less than an hour away in Kansas City.</p>
+<p>During those years, the Marks and I created loads of animation with the Cyber software, including producing the promotional videotape <em>Cybermation</em> for <em>Antic</em>, a Kansas Film Festival award-winning spoof of the Road Runner cartoons, and an assortment of contract animation for Hybrid Arts and Atari Corp. Towards the end of the Cyber era, we were even hired by Jack Powell to help manage the development of Cyber Texture. I worked as the main liaison between <em>Antic</em> and the programmer, and the Marks collaborated on the documentation.</p>
+<p>Later, as a college student and semi-member of Yost Group, I contributed part-time attention and input to the development of the PC software. Tom Hudson and I even collaborated on the first complete scene created with 3D Studio Release 1:</p>
+<div class="cluster center"><div class="imageCluster inline"><a href="gfx/rendering.hovercraft.jpg"><img src="gfx/rendering.hovercraft.thumb.jpg" alt="The first complete scene rendered in Autodesk 3D Studio" width="320" height="254" border="2" /></a><p>The first complete scene rendered in Autodesk 3D Studio</p></div></div>
+<p>During the early ’90s, I worked with Gary on marketing his IPAS plug-ins and creating the World Creating Toolkit. Kyle Peacock, Tom Hudson and I created the script languages for 3D Studio Release 4. I also worked with Gus Grubba on the video post module and network rendering system for release one of 3ds max. Some cartoons I created during this period can be seen elsewhere on <a href="http://www.asterius.com">this site</a>.</p>
+<p>I now work as an independent Internet consultant in New York City.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="index.html"><em>Home/Introduction/Contents</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="timeline.html"><em>Timeline</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

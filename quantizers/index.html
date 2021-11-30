@@ -1,0 +1,668 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eurorack Quantizer Comparison</title>
+</head>
+<style>
+body {
+	max-width: 1600px;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+p, li {
+	max-width: 40rem;
+	line-height: 1.4;
+}
+.updates {
+	font-size: 85%;
+	font-family: monospace;
+}
+a {text-decoration:none;}
+a:hover {color:red;text-decoration:underline;}
+a:visited {color:blue;}
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+.main {	padding: 1em; }
+.red {color:red;}
+.green {color:green;}
+.gray {color:gray;}
+table {border-collapse: collapse;font-size: 85%;}
+td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+td.left, th.left {text-align:left;}
+td.notes {text-align: left;}
+td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+th { background-color: #eee; color: #666; }
+.notes { min-width: 15em; }
+.collapsed {display: none;}
+
+nav {
+	background: #eef; 
+	padding: 0.5em 1em;
+	font-family: Helvetica, sans-serif;
+	border-bottom: 2px solid #666;
+	}
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
+</style>
+<body>
+
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><strong>Quantizer Modules</strong></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
+
+
+<h1>Eurorack Pitch Quantizer Module Comparison</h1>
+
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+<p>This is a pretty exhaustive and up-to-date basic comparison of all your pitch quantizer module options for Eurorack. Some additional tools of potential interest are listed at the bottom.</p>
+
+<p>Related discussion thread: <a href="https://www.muffwiggler.com/forum/viewtopic.php?t=222110"><em>Eurorack pitch quantizer comparison</em> (MuffWiggler forum)</a></p>
+
+
+<h4>Latest</h4>
+<p class="updates">
+2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
+2020-02-19 added Shakmat Bard Quartet<br />
+2020-02-19 added Tenderfoot Quad Quantizer<br />
+2019-10-22 added Kassutronics Quantizer<br />
+2019-09-29 errata<br />
+2019-09-29 added Mungo w0<br />
+<span id="additionalUpdates" class="collapsed">
+2019-09-26 added more performance data from producers<br />
+2019-09-25 errata<br />
+2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
+2019-09-23 rough draft<br />
+</span>
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
+</p>
+
+<h4>Notes</h4>
+
+<p>The <strong>Channels</strong> column is the number of input voltages the unit will quantize for you. The <strong>Derived Parts</strong> describes the <em>additional</em> outputs that some units will create for you (intervals, chords, arpeggios, etc.)</p>
+
+<p>The <strong>Nominal accuracy</strong> column is a simple calculation of the resolution of the DAC against the output range of the quantizer. There are many other factors that may relate to the accuracy of a quantizer, but this is a baseline. Note that a cent is 0.83 millivolts, so quantizers above that value lack the resolution to be accurate within a cent.</p>
+
+<p>As with all sophisticated modules, the devil is in the details. In particular, <em>how</em> each of these work is beyond the scope of this comparison, but critical for your workflow. All this comparison can do is help you survey the options and identify the modules you need to research more carefully. (You may find that some of these modules are pretty whacky.)</p>
+
+<p>If you’re looking for microtonal quantization, use your browser’s search feature (usually command+f/ctrl+f) to find “micro” on this page.</p>
+
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
+
+
+<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>2hp Tune</strong><br />2016<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-tune" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.twohp.com/modules/tune" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/2hp-tune.jpg"><img src="gfx/2hp-tune.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">???</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">No</td>
+	<td class="">No</td>
+	<td class="">0 to +5v</td>
+	<td class="">0 to +5v</td>
+	<td class="">8 preset</td>
+	<td class="">Dedicated</td>
+	<td class="">100</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>ADDAC 207 Intuitive Quantizer</strong><br />2012<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac207" target="_blank">Modular Grid &gt;</a><br /><a href="http://addacsystem.com/product/addac200-series/addac207" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/addac-207.jpg"><img src="gfx/addac-207.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">???</td>
+	<td class="">4</td>
+	<td class="">three intervals</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">-5v to +5v</td>
+	<td class="">0 to +10v</td>
+	<td class="">7 basic scales with pure, equal, Bohlen-Pierce, Just or “exotic” temperament; active notes are directly editable/playable with keyboard-style buttons; v/o scaling enables 24-note and 48-note microtonal scales, etc.</td>
+	<td class="">(default) CV option</td>
+	<td class="">430</td>
+	<td class="notes"><ul>
+	<li>tuning mode</li>
+	<li> bypass</li>
+	<li> Buchla voltage support</li>
+	<li> tracking compensation adjustments</li>
+	<li> one assignable CV</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>ACL Sinfonion</strong><br />2018<br /><small><br />42 HP<br /><a href="https://www.modulargrid.net/e/acl-sinfonion" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.audiophilecircuitsleague.com/products/sinfonion.php" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/sinfonion.jpg"><img src="gfx/sinfonion.jpg" style="width:210px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.15 millivolts<br />(less than one cent)</td>
+	<td class="">5</td>
+	<td class="">four-part chord generation, arpeggiator</td>
+	<td class="">Yes, with delay comp</td>
+	<td class="">Yes</td>
+	<td class="">-10.24v to +10.24v</td>
+	<td class="">-2v to +8v</td>
+	<td class="">comprehensive modes and scales with equal temperament, just intonation, or quarter comma meantime; active notes are directly editable/playable with dedicated buttons for each channel</td>
+	<td class="">Dedicated</td>
+	<td class="">1000</td>
+	<td class="notes"><ul>
+	<li>all parts share root and scale while  having independent active scale notes</li>
+	<li> extensive sequencer for coordinating clocked or cv-based state changes</li>
+	<li> extensive CV modulation matrix</li>
+	<li> detune, glide and pitch bend support</li>
+	<li> bypass</li>
+	<li> multiple Sinfonions can be patched in a master -> slave configuration</li>
+	<li> tuning mode</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Der Mann mit der Maschine DROID</strong><br />2020<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid" target="_blank">Modular Grid &gt;</a><br /><a href="https://shop.dermannmitdermaschine.de" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/droid.jpg"><img src="gfx/droid.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.31 millivolts<br />(less than one cent)</td>
+	<td class="">8</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">-10v to +10v</td>
+	<td class="">-10v to +10v</td>
+	<td class="">implements twelve degrees out of the box</td>
+	<td class="">CV option</td>
+	<td class="">420</td>
+	<td class="notes"><ul>
+	<li>multipurpose module that is user configurable through a text file (something like a script language)–a broad array of quantization scenarios can be created, possibly including microtonal</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Doepfer A-156 Dual Quantizer</strong><br />2012<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-156" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/a156.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-A-156.jpg"><img src="gfx/doepfer-A-156.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">8-bit:<br />within 39.06 millivolts<br />(beware)</td>
+	<td class="">2</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">~27 possible scales</td>
+	<td class="">Dedicated</td>
+	<td class="">160</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Erica Synths Pico Quant</strong><br />2018<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-quant" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-quant/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/erica-pico-quant.jpg"><img src="gfx/erica-pico-quant.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">12-bit:<br />within 2.44 millivolts<br />(within a few cents)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0v to 10v</td>
+	<td class="">8 preset scales editable with web interface; includes support for quarter tone (microtonal) scales</td>
+	<td class="">No</td>
+	<td class="">135</td>
+	<td class="notes"><ul>
+	<li>cv-controlled glide</li>
+	<li> tolerance adjustment</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Expert Sleepers Disting (various editions)</strong><br />2014<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br /><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/disting.jpg"><img src="gfx/disting.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">24-bit:<br />within 0.01 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">Yes, with delay comp</td>
+	<td class="">Yes</td>
+	<td class="">-10v to +10v</td>
+	<td class="">-10v to +10v</td>
+	<td class="">fifteen basic scales by default; can load user-configured scala files (including microtonal)</td>
+	<td class="">Dedicated</td>
+	<td class="">190</td>
+	<td class="notes"><ul>
+	<li>multi-function device (quantizer is one of many modes)</li>
+	<li> slew/glide</li>
+	<li> MIDI support</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Flame Chord Machine 2</strong><br />2017<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/flame-chord-machine-2-2017" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.flame-instruments.de/flame2/downloads.html#cm2" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/flame-chord-2.jpg"><img src="gfx/flame-chord-2.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">???</td>
+	<td class="">1</td>
+	<td class="">four part chord and one arpeggio</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">huge list of scales; active notes set manually with keyboard-style buttons (?)</td>
+	<td class="">(default) CV option</td>
+	<td class="">370</td>
+	<td class="notes"><ul>
+	<li>state progression sequencer</li>
+	<li> tuning mode</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Industrial Music Electronics Argos Bleak</strong><br />2017<br /><small><br />15 HP<br /><a href="https://www.modulargrid.net/e/the-harvestman-argos-bleak" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.industrialmusicelectronics.com/products/20/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/argos-bleak.jpg"><img src="gfx/argos-bleak.jpg" style="width:75px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">12-bit:<br />within 1.95 millivolts<br />(within a few cents)</td>
+	<td class="">2</td>
+	<td class="">two intervals</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0v to +8v</td>
+	<td class="">???</td>
+	<td class="">15 basic scales</td>
+	<td class="">CV option</td>
+	<td class="">470</td>
+	<td class="notes"><ul>
+	<li>dedicated internal vibrato LFO</li>
+	<li> glide</li>
+	<li> octave shifting</li>
+	<li> tuning mode</li>
+	<li> bypass</li>
+	<li> preset sequencer</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Instruo Harmonaig</strong><br />2017<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/instruo-harmonaig" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.instruomodular.com/product/harmonaig/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/instruo-harmonaig.jpg"><img src="gfx/instruo-harmonaig.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.31 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class="">third, fifth and seventh (chord)</td>
+	<td class="">No</td>
+	<td class="">Yes</td>
+	<td class="">-10v to +10v</td>
+	<td class="">-10v to +10v</td>
+	<td class="">14 ionion and harmonic minor modes; active notes directly editable/playable with playable keyboard-style buttons</td>
+	<td class="">It’s complicated</td>
+	<td class="">335</td>
+	<td class="notes"><ul>
+	<li>intervals created automatically, manually, or with cv</li>
+	<li> analog slew per output</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Instruo Quad Performance Quantizer</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/instruo-qpq-quad-performance-quantizer-custom-shop" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/instruo-qpq.jpg"><img src="gfx/instruo-qpq.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="red">???</td>
+	<td class="">4</td>
+	<td class=""></td>
+	<td class="">No</td>
+	<td class="">Yes</td>
+	<td class="">???</td>
+	<td class="">???</td>
+	<td class="">available notes set by MIDI</td>
+	<td class="">No</td>
+	<td class="">620</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Intellijel Scales</strong><br />2019<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/intellijel-scales" target="_blank">Modular Grid &gt;</a><br /><a href="https://intellijel.com/shop/eurorack/scales/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/intellijel-scales.jpg"><img src="gfx/intellijel-scales.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.31 millivolts<br />(less than one cent)</td>
+	<td class="">2</td>
+	<td class="">one interval</td>
+	<td class="">Yes, with delay comp</td>
+	<td class="">Yes</td>
+	<td class="">-10v to +10v</td>
+	<td class="">-10v to +10v</td>
+	<td class="">35 scales arranged in banks, directly editable/playable with playable keyboard-style buttons</td>
+	<td class="">CV option</td>
+	<td class="">290</td>
+	<td class="notes"><ul>
+	<li>built-in transposable sequencer</li>
+	<li> one assignable CV</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Intellijel uScale 2</strong><br />2012<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/intellijel-μscale-v2" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/intellijel-uscale2.jpg"><img src="gfx/intellijel-uscale2.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">16-bit:<br />within 0.15 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class="">one interval</td>
+	<td class="">No</td>
+	<td class="">No</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">up to 144 user scales defined in banks with the playable keyboard-style buttons</td>
+	<td class="">CV option</td>
+	<td class="">230</td>
+	<td class="notes"><ul>
+	<li>cv over interval</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Kassutronics Quantizer</strong><br />2019<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-kassutronics-quantizer" target="_blank">Modular Grid &gt;</a><br /><a href="https://kassu2000.blogspot.com/2019/10/quantizer.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/kassutronics-quantizer.jpg"><img src="gfx/kassutronics-quantizer.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY/builder)</td>
+	<td class="">no DAC employed</td>
+	<td class="">2</td>
+	<td class=""></td>
+	<td class="">Yes, with delay comp</td>
+	<td class="">Yes</td>
+	<td class="">-5.33v to +5.33v</td>
+	<td class="">-5.33v to +5.33v</td>
+	<td class="">defined with the playable bracelet-style buttons</td>
+	<td class="">CV option</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>instead of simple triggers, outputs variable-length gates</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Ladik Q-010 Easy Quantizer</strong><br />2014<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/ladik-q-010" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=769" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ladik-easy-quant.jpg"><img src="gfx/ladik-easy-quant.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">???</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">No</td>
+	<td class="">No</td>
+	<td class="">0 to +5v</td>
+	<td class="">0 to +5v</td>
+	<td class="">sixteen basic scales</td>
+	<td class="">Dedicated</td>
+	<td class="">75</td>
+	<td class="notes"><ul>
+	<li>cv controlled octave switcher</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Monome Crow</strong><br />2019<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/monome-crow" target="_blank">Modular Grid &gt;</a><br /><a href="https://monome.org/docs/crow/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/monome-crow.jpg"><img src="gfx/monome-crow.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.23 millivolts<br />(less than one cent)</td>
+	<td class="">2</td>
+	<td class="">four (whatever you script up)</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">-5v to 10v</td>
+	<td class="">-5v to 10v</td>
+	<td class="">any scale can be scripted (including microtonal)</td>
+	<td class="">CV option</td>
+	<td class="">200</td>
+	<td class="notes"><ul>
+	<li>multipurpose module that is user configurable through a script language–a broad array of quantization scenarios can be created, possibly including microtonal</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Monome Teletype</strong><br />2015<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/monome-teletype" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.monome.org/docs/modular/teletype/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/teletype.jpeg"><img src="gfx/teletype.jpeg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">14-bit:<br />within 0.61 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class="">four (whatever you script up)</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">any scale can be scripted (including microtonal)</td>
+	<td class="">No (requires expander)</td>
+	<td class="">480</td>
+	<td class="notes"><ul>
+	<li>expanders are available to add additional CV inputs and CV outputs, theoretically adding additional channels or derived parts</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Mungo w0</strong><br />2013<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-w0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/w0.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mungo-w0.jpg"><img src="gfx/mungo-w0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">20-bit:<br />within 0.02 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">No</td>
+	<td class="">No</td>
+	<td class="">-10v to +10v</td>
+	<td class="">-9.5v to +9.5v</td>
+	<td class="">user-defined, arbitrary scales, including microtonal and non-uniform</td>
+	<td class="">No</td>
+	<td class="">500</td>
+	<td class="notes"><ul>
+	<li>“swiss army knife” signal generator capable of many functions, including loadable lookup table</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Ornament & Crime</strong><br />2016<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-ornament-crime-simple-msw-panel" target="_blank">Modular Grid &gt;</a><br /><a href="https://ornament-and-cri.me" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/o_c.jpeg"><img src="gfx/o_c.jpeg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY/builder)</td>
+	<td class="">16-bit:<br />within 0.15 millivolts<br />(less than one cent)</td>
+	<td class="">2 or 4 depending on mode</td>
+	<td class="">ASR, chords, or neo-Riemannian transformations depending on mode</td>
+	<td class="">Yes, with delay comp</td>
+	<td class="">Yes, depending on mode</td>
+	<td class="">-3.5v to +6.5v</td>
+	<td class="">-3v to +6v</td>
+	<td class="">100+ baked in scales (editable in UI) including microtonal</td>
+	<td class="">Yes, depending on mode</td>
+	<td class="">300</td>
+	<td class="notes"><ul>
+	<li>assignable cv varies by mode</li>
+	<li> hackable source code</li>
+	<li> alternate firmware</li>
+	<li> readily available from professional builders</li>
+	<li> also available in 8hp uO_C form factor (recommended!)</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Shakmat Bard Quartet</strong><br />2020<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/shakmat-modular-bard-quartet-" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.shakmatmodular.com/index.php" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/bard-quartet.jpg"><img src="gfx/bard-quartet.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="red">No</td>
+	<td class="">16-bit:<br />within 0.15 millivolts<br />(less than one cent)</td>
+	<td class="">4</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes (shared/assignable)</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">Active semi-tones are selected with playable keyboard-style buttons</td>
+	<td class="">Yes, pre- or post-quantization (selectable)</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>select between eight different module states with knob or over CV</li>
+	<li> save/recall 80 states</li>
+	<li> per note micro-detuning feature</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Sonic Potions Penrose</strong><br />2015<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/sonic-potions-penrose-quantizer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.sonic-potions.com/penrose" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/sonic-potions-penrose.jpg"><img src="gfx/sonic-potions-penrose.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY)</td>
+	<td class="red">8-bit:<br />within 39.06 millivolts<br />(beware)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">Active semi-tones are selected with playable keyboard-style buttons</td>
+	<td class="">No</td>
+	<td class="">95</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Synthesis Technology E102 Quad Temporal Shifter</strong><br />2012<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/synthesis-technology-e102-quad-temporal-shifter" target="_blank">Modular Grid &gt;</a><br /><a href="http://synthtech.com/eurorack/E102/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/synthtech-e102.jpg"><img src="gfx/synthtech-e102.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">14-bit:<br />within 0.61 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class="">3 time shifted outputs (shift register)</td>
+	<td class="">Yes</td>
+	<td class="">No</td>
+	<td class="">-6v to +6v</td>
+	<td class="">-6v to +6v</td>
+	<td class="">Chromatic</td>
+	<td class="">No</td>
+	<td class="">300</td>
+	<td class="notes"><ul>
+	<li>Shift register features</li>
+	<li> tuning mode</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Tenderfoot Quad Quantizer</strong><br />2019<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/tenderfoot-electronics-quad-quantizer" target="_blank">Modular Grid &gt;</a><br /><a href="https://tenderfootelectronics.com/collections/frontpage/products/quad-quantizer" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/tenderfoot-quad.jpg"><img src="gfx/tenderfoot-quad.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">12-bit:<br />within 2.44 millivolts<br />(within a few cents)</td>
+	<td class="">4</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">-3v to +7v</td>
+	<td class="">-3v to +7v</td>
+	<td class="">12 baked in scales, ephemeral user scale</td>
+	<td class="">Dedicated</td>
+	<td class="">215</td>
+	<td class="notes"><ul>
+	<li>cv selection over preset scales</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>TipTop QuantiZer</strong><br />2018<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/tiptop-audio-quantizer" target="_blank">Modular Grid &gt;</a><br /><a href="http://tiptopaudio.com/quantizer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/tiptop-quantizer.jpg"><img src="gfx/tiptop-quantizer.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.08 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">No</td>
+	<td class="">0 to +5v, 0 to +10v, or -5v to +5v (selectable)</td>
+	<td class="">0 to +5v</td>
+	<td class="">Major, minor plus 24 semi-tone-based user scale (defined with keyboard-style buttons)</td>
+	<td class="">CV option</td>
+	<td class="">299</td>
+	<td class="notes"><ul>
+	<li>clocked state sequencer with transposition</li>
+	<li> glide support</li>
+	<li> tuning mode</li>
+	<li> TipTop SyncBus support</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Toppobrillo Quantimator</strong><br />2012<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/toppobrillo-quantimator" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.toppobrillo.com/quantimator.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/toppobrillo-quantimator.jpg"><img src="gfx/toppobrillo-quantimator.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">12-bit:<br />within 1.22 millivolts<br />(within a few cents)</td>
+	<td class="">1</td>
+	<td class="">2 (triad/chord or shift register)</td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +5v</td>
+	<td class="">0 to +5v</td>
+	<td class="">32 scales</td>
+	<td class="">Dedicated</td>
+	<td class="">230</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr><td class="left"><strong>Tubbutec uTune</strong><br />2017<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/tubbutec-µtune-" target="_blank">Modular Grid &gt;</a><br /><a href="https://tubbutec.de/µtune/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/tubbute-utune.jpg"><img src="gfx/tubbute-utune.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">16-bit:<br />within 0.15 millivolts<br />(less than one cent)</td>
+	<td class="">2</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0 to +10v</td>
+	<td class="">0 to +10v</td>
+	<td class="">microtonal scale editor built-in</td>
+	<td class="">CV option</td>
+	<td class="">300</td>
+	<td class="notes"><ul>
+	<li>extensive MIDI I/O including sending microtonal MIDI out</li>
+	<li> tuner</li>
+	<li> assignable CV</li>
+	<li> dual channel expanders available</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>WMD Arpitecht</strong><br />2017<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/wmd-arpitecht" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.wmdevices.com/collections/eurorack-modules/products/arpitecht" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/wmd-arpitecht.jpg"><img src="gfx/wmd-arpitecht.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">14-bit:<br />within 0.43 millivolts<br />(less than one cent)</td>
+	<td class="">1</td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class="">Yes</td>
+	<td class="">0v to +5v</td>
+	<td class="">-1v to +6v</td>
+	<td class="">16 scales; active notes selected via note mask selection</td>
+	<td class="">Dedicated</td>
+	<td class="">300</td>
+	<td class="notes"><ul>
+	<li>extensive rhythmic pattern-based arpeggiation and glide features</li>
+	<li> triad (chord) expander</li>
+	</ul></td>
+</tr>
+</table>
+
+<p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
+<ul>
+<li><a href="https://www.modulargrid.net/e/elektrofon-klang">Elektrofon Klang</a> (four part chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord">Qu-bit Chord</a> (chord-generating quad-oscillator with parametric front-end)</li>
+<li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord-v2">Qu-bit Chord 2</a> (chord-generating quad-oscillator with parametric front-end)</li>
+<li><a href="https://www.modulargrid.net/e/flame-4vox">Flame 4VOX</a> (chord-generating quad sequencer)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-plaits">Mutable Instrument Plaits</a> (oscillator with chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-braids-2015">Mutable Instrument Braids</a> (oscillator with chord generator)</li>
+<li><a href="https://www.modulargrid.net/e/bastl-instruments-popcorn-">Bastl Instruments Popcorn</a> (sequencer that can be used as a quantizer)</li>
+<li><a href="https://www.modulargrid.net/e/mutable-instruments-marbles">Mutable Instruments Marbles</a> (random source that can be quantized to a user-supplied voltage table)</li>
+<li><a href="https://www.modulargrid.net/e/2hp-arp-black-panel">2hp Arp</a> (arpeggio generator)</li>
+<li><a href="https://www.modulargrid.net/e/klavis-caltrans-">Klavis Caltrans</a> (pitch manager)</li>
+<li><a href="https://www.modulargrid.net/e/alyseum-q-linear">Alyseium Q-Linear</a> (pitch manager)</li>
+<li><a href="https://www.modulargrid.net/e/bastl-instruments-1983">Bastl Instruments 1983</a> (pitch manager/MIDI interface)</li>
+<li><a href="https://www.modulargrid.net/e/mazzatron-keys-1-keyboard-quantizer">Mazzatron KEYS-1 Keyboard Quantizer</a> (transposer)</li>
+<li><a href="https://www.modulargrid.net/e/doepfer-a-173-1">Doepfer A-173-1 and -2</a> (transposer)</li>
+</ul>
+
+
+
+<p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
+</body>
+</html>

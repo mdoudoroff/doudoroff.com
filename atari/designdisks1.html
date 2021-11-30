@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Future Design, Architectural Design, Human Design and Microbot Design Disks</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html" selected="selected">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1 style="clear:right;">Future Design, Architectural Design, Human Design and Microbot Design Disks</h1>
+
+<div class="packaging right" style="width:150px;">
+	<a href="gfx/packaging.futuredesign.jpg"><img src="gfx/packaging.futuredesign.thumb.jpg" width="144" height="200" /></a>
+	<h2>Future Design Disk</h2>
+	<ul>
+	<li><a href="gfx/blueprint.fdd1.gif">Blueprint sheet #1</a></li>
+	<li><a href="gfx/blueprint.fdd2.gif">Blueprint sheet #2</a></li>
+	<li><a href="gfx/blueprint.fdd3.gif">Blueprint sheet #3</a></li>
+	</ul>
+</div>
+
+
+<!--<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.futuredesign.jpg"><img src="gfx/packaging.futuredesign.thumb.jpg" width="144" height="200" /></a>
+	</div>
+</div>-->
+<p>The Future Design Disk grew out of Darrel Anderson’s early futuristic CAD-3D experiments. Gary had Darrel carve out a comprehensive array of forms that could be recombined to make space ships, robots and futuristic architecture. Darrel delivered about 80 components, six complete models, and an essay on ways to use them. The finishing touch was inclusion of blueprints. As the Future Design Disk took form, Gary explains:</p>
+<p class="blockquote">It was obvious that we needed some way to make all the parts come alive for people, so folks could keep them straight in their heads. [M]y father was an architect and I had a lot of exposure to blueprints as a kid, so it seemed like a natural way to 'legitimize' the objects by cataloging them in blueprint form. And it worked well... those prints were sexy as hell in our nerdy way. Interestingly, only the first couple manufacturing runs were done that way and then we went to simple [blue and white] printing on 11x14 paper for subsequent copies. The blueprints were really expensive and [Antic Publisher] Jim Capparell couldn't stand that.</p>
+<div style="width:600px; margin:auto;">
+	<img src="gfx/diagram.blueprints.gif" width="600" height="397" style="text-align: center;" />
+</div>
+<p>What made the blueprints—exhibited here—so special was that what they represented was artistic in nature, and that the blueprints themselves were executed by the artist, building on Gary’s cue to reference the conventions of architectural blueprints. In a sense, the blueprints overshadowed the actual Design Disk software because they were more interesting than anything most CAD-3D users could do themselves with the clip-art. On the other hand, the prints could be enjoyed on their own, and so they substantially added to the value of the products.</p>
+<div class="packaging left" style="width:150px;">
+	<a href="gfx/packaging.architecturaldesign.jpg"><img src="gfx/packaging.architecturaldesign.thumb.jpg" width="144" height="200" /></a>
+</div>
+<div class="packaging right" style="width:150px;">
+	<img src="gfx/rendering.arches.gif" width="125" height="112" />
+	<h2>Architectural Design Disk</h2>
+	<ul>
+	<li><a href="gfx/blueprint.add1.gif">Blueprint sheet #1</a></li>
+	<li><a href="gfx/blueprint.add2.gif">Blueprint sheet #2</a></li>
+	<li><a href="gfx/blueprint.add3.gif">Blueprint sheet #3</a></li>
+	</ul>
+</div>
+<p>With the release of CAD-3D 2.0, Tom started working on Cyber Control, and Darrel starting exploring the use of the scripting language to create more sophisticated forms than could be modeled manually in CAD-3D. Gary, optimistically hoping to “snag some [professional] users by convincing them that we had a reasonable visualization tool”, proposed that Darrel follow up the Future Design Disk with an architectural design disk. What Darrel produced had mundane aspects, such as basic wall frames, stairs and doorframes, but was dominated by more fanciful arches, turrets, domes and columns. Some of the graceful arches represented his earliest experiments in cross-sectional modeling (through Cyber Control).</p>
+<p>Darrel’s basic cross-sectional idea was to create simple cross-sectional template objects in CAD-3D, carefully position them in space, and then use Cyber Control to connect them together with a surface “skin”. While Cyber Control could create geometry from scratch, it had no ability to analyze the <span class="glossaryTerm" onmouseover="javascript:showDiv('vertex')" onmouseout="javascript:hideDiv('vertex')">vertex</span> structure of an existing 3D object, so Darrel had to first export the vertex information to a text file (which Cyber Control could read from) using custom software. This process was therefore somewhat involved, but it allowed Darrel to create objects no one else could.</p>
+<div style="width:700px; margin:auto; text-align:center;">
+	<img src="gfx/diagram.designcx.gif" width="700" height="89" style="text-align:center;" />
+	<p class="caption">Template objects (in red) and the resulting “skin” surface</p>
+</div>
+<div class="packaging right" style="width:150px;">
+	<a href="gfx/packaging.humandesign.jpg"><img src="gfx/packaging.humandesign.thumb.jpg" width="144" height="200" /></a>
+	<h2>Human Design Disk</h2>
+	<ul>
+	<li><a href="gfx/blueprint.hdd1.gif">Blueprint sheet #1</a></li>
+	<li><a href="gfx/blueprint.hdd2.gif">Blueprint sheet #2</a></li>
+	<li><a href="gfx/blueprint.hdd3.gif">Blueprint sheet #3</a></li>
+	</ul>
+</div>
+<div class="cluster left">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/animation.backflip.gif" width="320" height="200" />
+	</div>
+</div>
+<p>At about the same time, Darrel sufficiently interested his artist colleague, Richard Berry, in CAD-3D that Richard agreed to produce a Design Disk for Gary, too. Surprisingly, this project turned out to be an ambitious exploration of human form. Using the limited tools in CAD-3D with anatomical references, Richard painstakingly modeled and assembled fairly complete and accurately representative male and female skeletons. While the surfaces lacked detail by medical standards, the mass of data was such that only one third of a skeleton could be loaded at one time on Atari systems that didn't have RAM upgrades. Given the hobbyist nature of the CAD-3D marketplace, the Human Design Disk was a somewhat baffling product. In any case, it “made great demos”, helped along by a Cyber Control script by Darrel that animated the skeleton doing a back-flip. Plus, it had those great blueprints!</p>
+<!--<div class="cluster right"><div class="sidebar">
+<h1>Future Design, Architectural Design, Human Design and Microbot Design Disks sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>reflected the aesthetic of the artist who made it</li>
+<li>blueprints</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>the limitations of the Atari ST and of CAD-3D could make working with these wonderful models exasperating</li>
+</ul>
+</div></div>-->
+<div class="packaging left" style="width:150px;">
+	<a href="gfx/packaging.microbotdesign.jpg"><img src="gfx/packaging.microbotdesign.thumb.jpg" width="144" height="200" /></a>
+	<h2>Microbot Design Disk</h2>
+	<ul>
+	<li><a href="gfx/blueprint.mdd1.gif">Blueprint sheet #1</a></li>
+	<li><a href="gfx/blueprint.mdd2.gif">Blueprint sheet #2</a></li>
+	<li><a href="gfx/blueprint.mdd3.gif">Blueprint sheet #3</a></li>
+	</ul>
+</div>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/animation.rubberneck.gif" width="320" height="201" />
+	</div>
+</div>
+<p>The following year, Darrel served up a final design disk: the Microbot Design Disk. This futurism project was entirely his idea, and it pretty much represents the most sophisticated 3D modeling done on the CAD-3D platform. Many, if not most of the forms were constructed using Cyber Control and his cross-sectional techniques. He even experimented with animated cross-sectional modeling, including a Cyber Control demonstration (included on the disk) that renders a gracefully twisting and bending form. The collection is also recognizable as the emergence of the aesthetic Darrel would explore in his 3D artwork for many years long after CAD-3D was left behind.</p>
+<p>A few years later, Darrel worked his cross-sectional modeling techniques into a couple of plug-in products for 3D Studio (Slice and Skin) that used bezier patch mathematics to produce ultra-smooth topologies.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="vertex">
+	<p><strong>Vertex</strong></p>
+	<p>A point in space, defined by numbers, of two or three dimensions. Vertices are a fundamental building block of 3D computer graphics.</p>
+</div>
+
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="designdisks2.html"><em>Cartoon & Video Titling Design Disks</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cybertexture.html"><em>CyberTexture</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

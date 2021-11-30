@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - General History Part III: Now, in 3-D!</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html" selected="selected">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h2 style="clear:both;">Now, in 3-D!</h2>
+<p>From 1982 to 1985, Tom Hudson worked as part of the small crew behind <em>ANALOG Computing</em> magazine writing articles, creating type-in games and other programs, and doing whatever else needed to be done. One of his pieces, published in 1984, was a little 3D wireframe renderer called Solid States. Tom explains:</p>
+<p class="blockquote">Being a long-time science fiction fan, creating high-tech graphic displays like those in movies and TV shows was something I wanted to do. When Battlestar Galactica came out in 1978, the vector-graphic displays in the “Viper” cockpits were a real inspiration. I bought my first personal computer, a <a href="http://www.geocities.com/~compcloset/CompuColorII.htm">Compucolor II</a>, shortly after Galactica came out. I had visions of creating all sorts of video games with wireframe representations of spacecraft, etc. The reality was somewhat less impressive—the Compucolor could only display 128x128-pixel graphics in eight colors.</p>
+<p class="blockquote">I found some 3D graphics <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> code in one of the old computer magazines that was out then and started playing with it a bit. The matrix math was somewhat beyond my grasp at that point, but I tinkered with it enough to get some crude 3D stuff working on the Compucolor. Since the Compucolor had only an 8080-based processor, running at just over one mHz, with 32K of memory, you can imagine that the results fell far short of my fantasies.</p>
+
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px; padding:0px;">
+		<a href="gfx/screenshot.solidstatesui.gif"><img src="gfx/screenshot.solidstatesui.thumb.jpg" alt="" width="250" height="150" /></a>
+		<p>Solid States on the Atari 800</p>
+		<a href="gfx/rendering.solidstates.gif"><img src="gfx/rendering.solidstates.thumb.jpg" alt="" width="250" height="150" /></a>
+		<p>A Solid States rendering</p>
+	</div>
+</div>
+
+<p class="blockquote">Solid States itself came about when I was working for <em>ANALOG Computing</em>. Atari had introduced a nifty little X-Y pen plotter and it was perfect for drawing vector-graphic images like computer-generated wireframes. I grabbed the old Compucolor graphics code and built up a new program for the Atari, and had it output the wireframes to both the screen and the plotter.</p>
+<p class="blockquote">I remember talking to <em>ANALOG</em>’s Charles Bachand (he was our resident hardware expert) about working up a special graphics card for the Atari that would output to a much higher resolution, true-color display. That project died a quick death when I did some checking on the cost of a monitor that would display 1280x1024 pixels. At that time they were $3000-5000. Of course, I was totally ignoring the fact that the Atari 800 would slow to worse than a crawl trying to compute the shading for a true-color image of that resolution.</p>
+<p>Following his departure from <em>ANALOG</em> magazine in August 1985, Tom produced two successful digital paint programs for the Atari ST: DEGAS and DEGAS Elite, both published by Batteries Included (BI). Tom continues:</p>
+
+<div class="cluster left">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.degaselite.gif"><img src="gfx/screenshot.degaselite.thumb.jpg" alt="" width="250" height="157" border="2" /></a>
+		<p>Degas Elite user interface</p>
+		<a href="gfx/rendering.degasbee.gif"><img src="gfx/rendering.degasbee.thumb.jpg" alt="" width="250" height="157" border="2" /></a>
+		<p>sample Degas painting by Tom Hudson</p>
+	</div>
+</div>
+
+<p class="blockquote">While writing DEGAS, word got out that I was working on a paint program (then known as HUDraw). Batteries Included jumped at the chance to get some ST software to sell and since they were, in my opinion, the best Atari software company at the time, I decided to market the program through them. I got a phone call from Gary Yost one evening shortly after I made the BI deal. Gary told me he'd like to have <em>Antic Software</em> sell HUDraw. I told him I was going with BI on it, but since I didn't want to put all my eggs in the BI basket, I told him that I’d be willing to have <em>Antic</em> sell my next product, which I figured would be a 3D modeling package. After all, the Atari ST had much better graphics capabilities than the 8-bit [computers], and I still had the dream of doing TV/film-quality computer graphics.</p>
+<p>Reviving his interest in 3D graphics, Tom ported his Solid States program to the ST and showed it to Gary Yost at the Fall 1985 COMDEX convention. Tom’s first <em>Antic</em> product, <a href="cad3d.html">CAD-3D 1.0</a> soon followed, and Gary quickly lost interest in anything not related to developing graphics software. Tom relates:</p>
+<p class="blockquote">As soon as I had finished DEGAS and got it out the door, I brought the Solid States program over from the 8-bit system and started hacking it into a form that would run under the ST’s <span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">GEM</span> operating system. I set it up with several windows and a crude number-based interface. The basic version I had did <span class="glossaryTerm" onmouseover="javascript:showDiv('flatshading')" onmouseout="javascript:hideDiv('flatshading')">flat shading</span> and you could define <span class="glossaryTerm" onmouseover="javascript:showDiv('face')" onmouseout="javascript:hideDiv('face')">face</span> colors.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.easy3d.gif"><img src="gfx/screenshot.easy3d.thumb.jpg" alt="" width="250" height="167" /></a>
+		<p>Easy3D on the Macintosh</p>
+	</div>
+</div>
+<p class="blockquote">I had just a few days to get the prototype up and running before having to go to a trade show (I’m pretty sure it was COMDEX)—I went out and demo'd DEGAS with BI and met with Gary and showed him the 3D prototype. He and I walked over to the Apple booth to look at the beta of a new Mac program (Easy 3D, from Enabling Technologies) to see how they handled their user interface. [What we saw in Easy 3D inspired] a new direction for Solid States ST, away from the number-based input and toward a graphical/icon interface and more direct object manipulation like most 3D programs have now.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cad3d2.gif"><img src="gfx/screenshot.cad3d2.thumb.jpg" alt="" width="250" height="155" /></a>
+		<p>CAD-3D 2.0 on the Atari ST</p>
+	</div>
+</div>
+<p>Gary remembers it this way:</p>
+<p class="blockquote">When Tom showed his prototype of Solid States on the ST to me I could immediately see that there was the potential for a whole new way of making images. I can’t describe the excitement I felt—especially because I’d just come from the Apple booth and saw how they were presenting user-produced Macintosh imagery as a new language for communication. There was no reason why the Atari ST couldn't do exactly the same things, (even better) in color. I was hooked, and immediately started working with Tom to get what would become CAD-3D out the door as soon as possible.</p>
+<p>While Tom and Gary were planning CAD-3D, Mark Kimball was working on some very interesting technology that would eventually find its place at <em>Antic</em>. Mark is a programmer and hardware engineer who had been working at Tektronix in Oregon, developing, among other things, applications for liquid crystal shutters. One of these applications was as a light valve for 3D glasses.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:445px;">
+		<img src="gfx/portrait.stereotekprototype.jpg" alt="" width="445" height="371" />
+		<p>Prototype Stereotek 3D Goggles</p>
+	</div>
+</div>
+<p>Mark’s prototype glasses had been first used with a <a href="http://www.old-computers.com/museum/computer.asp?c=91&st=1">Radio Shack Color Computer</a>, but Mark had since begun experimenting with the Atari ST. Mark explains:</p>
+<p class="blockquote">I had been experimenting with a hardware/software combination, which used the Atari ST to display 3D images with welder’s goggles-style glasses using a video camera, a home-built frame grabber, and Tom Hudson’s DEGAS paint program for the ST. I also had written some programs using <span class="glossaryTerm" onmouseover="javascript:showDiv('FORTH')" onmouseout="javascript:hideDiv('FORTH')">Forth</span> to draw and display some mathematical objects using the same 3D goggles. I wrote an [Atari ST <span class="glossaryTerm" onmouseover="javascript:showDiv('deskaccessory')" onmouseout="javascript:hideDiv('deskaccessory')">desk accessory</span>] which would let me page through memory and discover where DEGAS was storing its images. From there, I could activate a <span class="glossaryTerm" onmouseover="javascript:showDiv('pageflipping')" onmouseout="javascript:hideDiv('pageflipping')">page-flipping</span> routine to switch between two different pages in DEGAS. So all I had to do was to import two images into DEGAS and activate the page flipping routine and—<em>voila!</em>—3D images. When Tom’s CAD-3D came out, I immediately bought it and started experimenting with it. The first thing I did was generate some static views, save them as files, and then import them to DEGAS to view with the 3D goggles. Since Tom had written both programs, and we wanted to try to sell 3D glasses to a larger market, it seemed like a good idea to get Tom and Gary involved.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/rendering.stereo.gif" alt="" width="320" height="200" />
+		<p>Left- and right-eye images would flicker back and forth in synchronization with the shutters in the glasses (much faster than this simulation)</p>
+	</div>
+</div>
+<p>Tom explains:</p>
+<p class="blockquote">These were liquid-crystal sheets set into a pair of safety goggles with a couple of wires that ran to a small box connected to the ST’s expansion port. Special software in the ST toggled the left and right sides of the liquid-crystal goggles in sync with the video display which, when set to flicker between a left- and right-eye image of a 3D scene, would produce an excellent 3D image for the person wearing the goggles. It was amazing.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:332px;">
+		<img src="gfx/portrait.stereotek.jpg" alt="" width="332" height="196" />
+		<p>The final Steretek product<br />(control box not shown)</p>
+	</div>
+</div>
+<p>Mark contacted Tom, who flew up to Mark’s office, then in Beaverton, Oregon. They worked together for a day or two sorting out the technical details that would add stereo rendering and viewing support into CAD-3D for version two. Then Gary flew up to Tektronix and made arrangements for <em>Antic</em> to resell the consumer version of the glasses (StereoTek 3D Glasses) that Tektronix would manufacture. Gary says:</p>
+<p class="blockquote">I spent a day with Mark and his crew and left so excited that I couldn't even sleep that night after I got home. They gave me a prototype to play with and I spent the entire night making stereoscopic images with CAD-3D. The next day, bleary-eyed, I came into <em>Antic</em> and, with great hype, announced the beginning of a whole new era of 3D imagery.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+<div class="glossaryPopup" id="flatshading">
+	<p><strong>Flat shading</strong></p>
+	<p>The filling in the faceted lattice (the “faces”) of 3D geometry with solid colors.</p>
+	<img src="gfx/diagram.shading.gif" width="270" height="96" alt="illustration of wire, flat and smooth shading" />
+	<p>3D computer graphics on the Atari never really got beyond flat shading into smooth shading; the computer just didn't have enough color shades to do it justice (see the section “What Might Have Been”).</p>
+</div>
+<div class="glossaryPopup" id="FORTH">
+	<p><strong>FORTH</strong></p>
+	<p>A unique, idiosyncratic, but highly efficient computer language created in 1970 by Charles Moore.</p>
+</div>
+<div class="glossaryPopup" id="deskaccessory">
+	<p><strong>Desk Accessory</strong></p>
+	<p>Different operating systems have used different approaches to managing types of programs that hang around (“stay resident”) while the user is working with an application. Often these co-existing programs are intended to complement applications in some fashion. In the Atari ST’s TOS operating system, such programs were called “Desk Accessories”, because they were often accessed from a drop-down menu on the desktop display. The comparable feature of a modern operating system is a “service” or “daemon”.</p>
+</div>
+<div class="glossaryPopup" id="pageflipping">
+	<p><strong>Page flipping</strong></p>
+	<p>The precise technical definition of page flipping depends on the specific display architecture of a computer, but the general idea is that you set up a sequence of images in the computer’s RAM memory (limited by how much RAM the computer has available) and then you instruct the computer to send each image in sequence to the display as quickly as possible. At one time, this sort of technique was one of the only ways to reproduce full-motion imagery on a computer because hard disk storage was much slower (and much more expensive).</p>
+</div>
+<div class="glossaryPopup" id="face">
+	<p><strong>Face</strong></p>
+	<p>A set of three or more vertices connected to represent an arbitrary surface (or more commonly, a facet of a surface). Faces are a ubiquitous building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="gem">
+	<p><strong>GEM and TOS</strong></p>
+	<p>The operating system of the Atari ST-series of personal computers was called TOS (Tramiel Operating System), which was a superset of Digital Research’s GEM (Graphical Environment Manager) system. In short, it was responsible for the Macintosh-like features (windows, drop-down menus, the mouse pointer) in most of these Antic software products.</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history4.html"><em>IV. Making it move</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history2.html"><em>II. A new software culture</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

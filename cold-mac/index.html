@@ -1,0 +1,551 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Patching Cold Mac</title>
+</head>
+<style>
+
+body {
+	max-width: 800px;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+p, li {
+	max-width: 40rem;
+	line-height: 1.4;
+}
+.updates {
+	font-size: 85%;
+	font-family: monospace;
+}
+a {text-decoration:none;}
+a:hover {color:red;text-decoration:underline;}
+a:visited {color:blue;}
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+.main {	padding: 1em; }
+
+nav {
+	background: #eef; 
+	padding: 0.5em 1em;
+	font-family: Helvetica, sans-serif;
+	border-bottom: 2px solid #666;
+	}
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
+
+
+p, li {
+	max-width: 30em;
+	line-height: 1.4;
+}
+
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+
+h2 {
+	margin: 1em 0 0.5em 0;
+}
+
+.context {
+	font-size: 50%;
+	text-transform: uppercase;
+	display: block;
+}
+
+
+.green {
+	color: rgb(57, 181, 74);
+}
+
+.orange {
+	color: rgb(251, 176, 59);	
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+@media (max-width: 450px) {
+	body { width: 100%; }
+	img { width: 100%; height: auto; margin: 1em 0; }
+}
+
+
+</style>
+<body>
+
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><strong>Patching Cold Mac</strong></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
+
+<h1>Patching Cold Mac</h1>
+
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// -->
+</script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+
+<p>This document is an attempt to understand the <a href="http://www.whimsicalraps.com/pages/coldmac">Cold Mac</a> utility module for Eurorack synthesizers, designed and manufactured by Whimsical Raps. Please note: this is an unofficial, customer-generated document and may contain errors. The author will attempt to correct any errors as he becomes aware of them.</p>
+
+<p style="color: orange;">Note: In mid-2019, Whimsical Raps produced a remarkable new set of documentation for their modules, including a new guide for Cold Mac. You may still find my guide, below, to be helpful, and mine may be an easier-to-digest introdution, particularly with the video. But please don’t miss out on the new official documentation, which you can find here: <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac.pdf">PDF</a> and <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac-web.md">web</a>. Lots of great stuff in there.
+
+<p>A companion video is now available. The video is supplemental to this document—you may wish to watch it before or after reading further, or refer back to parts of the video, later.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A72eYNfxxRU" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<h2>Contents</h2>
+
+<ol>
+	<li><a href="#functionalblocks">Functional Blocks of Cold Mac</a></li>
+	<ol>
+		<li><a href="#nomenclature">Nomenclature</a></li>
+		<li><a href="#survey">The big knob and its cv</a></li>
+		<li><a href="#panning">Panning/Crossfading</a></li>
+		<li><a href="#inversion">Signal Inversion and Offset</a></li>
+		<li><a href="#logic">Analog Logic</a></li>
+		<li><a href="#logical">Logical Mixing</a></li>
+		<li><a href="#rectification">Full Rectification</a></li>
+		<li><a href="#follow">Envelope follower</a></li>
+		<li><a href="#crease">Crease</a></li>
+		<li><a href="#location">Location</a></li>
+		<li><a href="#unitymix">Straight Audio Unity Mix</a></li>
+	</ol>
+	<li><a href="#system">Cold Mac as a System</a></li>
+	<ol>
+		<li><a href="#normalizations">Normalizations</a></li>
+		<li><a href="#standalone">Standalone CV output</a></li>
+		<li><a href="#circuits">Each circuit in isolation</a></li>
+		<li><a href="#surveillance">“Patch Surveillance”</a></li>
+	</ol>
+	<li><a href="#videos">Additional Videos</a></li>
+	<li><a href="#review">Review</a></li>
+	<li><a href="#history">Revision History</a></li>
+</ol>
+
+
+
+
+
+
+<h1 id="functionalblocks">Functional Blocks of Cold Mac</h1>
+
+<p>In this document, we’re going to first break the module down from top to bottom, and examine each functional block (circuit) in isolation. Later, we’ll step back and look at the holistic side of Cold Mac.</p>
+
+<img src="gfx/functional-blocks.jpg"  style="width: auto; height: 625px;" />
+
+
+
+
+<h2 id="nomenclature">Nomenclature</h2>
+
+<p>The faceplate of Cold Mac contains a whopping 20 jacks. This document refers to each jack by its label in capital letters (e.g., SLOPE). Alas, a number of the jacks are labeled redundantly or with pictograms that don’t translate readily to words, so, taking a syntactic cue from the <a href="https://cdn.shopify.com/s/files/1/0714/9931/files/COLDMAC-Manual-outlines.pdf">official documentation</a>, we’ve adopted these names for those jacks:</p>
+
+<img src="gfx/nomenclature.jpg" style="width: auto; height: 625px;" />
+
+<p>Note: if your faceplate doesn’t quite match this one, then you have one of the earliest units. The early units erroneously implied that AND(2) was normaled to OR(2). Moreover, the newer faceplate adds various helpful markings to indicated where SURVEY and the ±5v offsets are normaled.</p>
+
+
+
+
+
+<h2 id="survey"><span class="context">SURVEY</span>The big knob and its cv</h2>
+
+<p>At the top of the module is the knob and associated SURVEY cv input. The knob generates roughly ±5v, with 0v at noon. Whatever voltage (positive or negative) you apply at the SURVEY jack is added to whatever the knob is set to. The SURVEY jack will happily accept cv or audio (for audio-rate modulation). There’s no direct output for this sum, but you have nothing patched to LEFT and test the voltage at LEFT(OUT), the floor and ceiling seems to be around -5v and +6v, respectively.</p>
+
+
+
+
+
+
+<h2 id="panning"><span class="context red">LEFT/RIGHT</span>Panning/Crossfading signals (audio or CV)</h2>
+
+<p>The first pair of rows of jacks presents a crossfading circuit. These work for CV or audio. At its simplest:</p>
+<ul>
+<li>Whatever you patch to LEFT will be panned from LEFT(OUT) to RIGHT(OUT), according to the signal patched to FADE (±5v).</li>
+<li>Whatever you patch to RIGHT will be panned from RIGHT(OUT) to LEFT(OUT), according to the signal patched to FADE (±5v).</li>
+</ul>
+
+<p>FADE will happily accept cv or audio (for audio rate modulation).</p>
+
+<p>If you patch nothing to FADE, then the pan position is determined by SURVEY, to which FADE is normaled.</p>
+
+<p>In this manner, you can:</p>
+<p>1. pan a single signal between LEFT(OUT) and RIGHT(OUT) using one input and both outputs as a stereo pair
+<img src="gfx/pan.jpg" /></p>
+<p>2. crossfade from one signal to the other (use both inputs and one or the other output)
+<img src="gfx/crossfade-mono.jpg" /></p>
+<p>3. pan two signals between left and right as a stereo pair (use both inputs and both outputs)
+<img src="gfx/crossfade-stereo.jpg" /></p>
+<p>4. fade a single signal in and out, like a simple VCA (select inputs and outputs for desired behavior, break normal of unused input—see below)
+<img src="gfx/vca.jpg" /></p>
+
+<p><strong>Important wrinkle:</strong> As implied by the panel graphics, LEFT is normaled to -5v and RIGHT is normaled to +5v. If you’re only using the LEFT or RIGHT input, then you’re not crossfading/panning/attenuating against 0v! In these situations, you probably want to insert a dummy cable into the unused jack to break that normal. This fact is often inconvenient, but the designer felt these normalized offsets were essential for some of the other use cases of the module.</p>
+
+<p>The range of FADE is ±5v, so zero volts will be the middle “pan position”. Note: if you overdrive FADE with positive voltage (e.g., +10v), you may observe some waveshaping.</p>
+
+<p>Finally, anything (cv or audio) you patch to OFFSET will be summed with whatever is heading to <em>both</em> LEFT(OUT) and RIGHT(OUT). Note OFFSET does <em>not</em> participate in MAC circuit (explained below).</p>
+
+<p>Arguably, the existing faceplate graphics are misleading: they imply that FADE pertains to the LEFT circuit and OFFSET pertains to the RIGHT circuit. Rather, FADE and OFFSET affect <em>both</em> LEFT and RIGHT circuits as described here.</p>
+
+<p>Here are graphs that illustrate the behavior of these circuits as if you were working with a sine wave as an input signal and relying on FADE’s normalization to SURVEY:</p>
+
+<img src="gfx/crossfade-graphs.jpg" />
+
+
+
+
+<h2 id="inversion"><span class="context red">LEFT/RIGHT</span>Signal Inversion and Offset</h2>
+
+<p>If you put a signal into FADE (with no signal in LEFT or RIGHT), an inverted copy will be available from the RIGHT(OUT).
+<img src="gfx/inversion.jpg" /></p>
+
+
+
+<p>However, keep in mind that what you’re <em>actually</em> doing here is using your signal to attenuate the +5v normaled to RIGHT. If you’re working with a hotter signal that you want to invert, and you want to preserve more amplitude, you’ll need to patch a hotter constant voltage into RIGHT (e.g., 10v from MATHS channel 2).</p>
+
+<p>Alternatively, if you put your signal into SURVEY instead of FADE, you can use the knob to add positive or negative offset.
+<img src="gfx/inversion-offset.jpg" /></p>
+
+
+<p>Tip: if you want an inverted copy of a signal—such as a gate stream—but you want it in the positive voltage domain (0-5v), use these same patch approaches, but insert a dummy cable in LEFT to defeat the -5V offset. Voila!.</p>
+
+
+
+
+<h2 id="logic"><span class="context orange">AND/OR</span>Combining signals with analog logic</h2>
+
+<p>The next pair of rows of jacks is a straightforward implementatation of analog logic circuits. They work for CV or audio.</p>
+
+<p>At its simplest, if you patch two signals into OR(1) and OR(2), you get the highest (peak/maximum) of the two signals at any one time from OR(OUT).
+<img src="gfx/analog-or.jpg" /></p>
+
+
+
+<p>If you patch two signals into AND(1) and AND(2), you get the lowest (trough/minumum) of the two signals at any one time from AND(OUT). 
+<img src="gfx/analog-and.jpg" /></p>
+
+
+
+<p>Entire Eurorack modules exist that do nothing but this, and herein are various useful techniques for deriving a new signal from two different signals at either cv or audio rates.</p>
+
+<p>Note the lines and arrows on the panel graphics: AND(1) is normaled to OR(1), so by patching into OR(1), the same signal can be processed by both the OR and AND circuits—you don’t need a mult. Inserting a cable into AND(1) breaks that normal.</p>
+
+
+
+
+
+<h2 id="slicing"><span class="context orange">AND/OR</span>Half-recification and wave slicing</h2>
+
+<p>Moreover, OR(2) and AND(2) are each normaled to SURVEY, which means that if you don’t patch something to those jacks, then the position of SURVEY is the voltage value (±5v) that OR(1) and AND(1) will be compared to, respectively. So, if you patch a signal into OR(1) and nothing into OR(2), then SURVEY sets a <em>floor</em> for the voltage and sends the result out of OR(OUT). If you patch a signal into AND(1)—or inherit the signal from OR(1)—and patch nothing into AND(2), then SURVEY effectively sets a <em>ceiling</em> for the voltage and sends that result out of AND(OUT). Another way of looking at this normalization is that patching CV into the OR(2) or AND(2) input will decouple these circuits from SURVEY (using the CV input), freeing up SURVEY for other purposes.</p>
+
+<p>If you leave SURVEY at noon, OR(2) and AND(2) unpatched, and connect and audio or cv signal to OR(1), then you’ll get positive and negative half-rectified signal out of OR(OUT) and AND(OUT). That constant zero volts from SURVEY acts as the split point. You can then adjust SURVEY to raise or lower that split point—or better yet, patch fluctuating cv to SURVEY and animate the split point. Or patch two different fluctuating cv signals to OR(2) and AND(2) to separately animate the split point. Various terrific wave shaping techniques herein, even in stereo (if you treat OR(OUT) and AND(OUT) as a stereo pair.</p>
+
+<p>Here are graphs illustrating the OR and AND circuits as if you were working with a sine wave as input and relying on the normalization of OR(2) and AND(2) to SURVEY instead of inserting your own second signal(s):</p>
+
+<img src="gfx/logic-graphs.jpg" />
+
+
+
+<h2 id="logical"><span class="context orange">AND/OR</span>Logical mixing (audio or CV)</h2>
+
+<p>Moreover again, if you patch two different signals simultaneously into OR(1) and AND(1), then take both outputs and mix them back together downstream, you achieve what the <a href="https://cdn.shopify.com/s/files/1/0714/9931/files/COLDMAC-Manual-outlines.pdf">official documentation</a> terms “logical crossfading” with “spectral connotations”. 
+<img src="gfx/logical-mix.jpg" /></p>
+
+<p>As you sweep SURVEY from left to right, you’re simultaneously raising the floor of first signal until its highest frequencies wink out, while lowering the floor of the second signal from nothing until the full spectrum is passed. With audio, the result sounds different from a conventional crossfade.</p>
+
+
+
+
+
+
+
+
+<h2 id="rectification"><span class="context green">SLOPE</span>Full Rectification</h2>
+
+<p>Patching audio or CV into SLOPE, you get a fully rectified copy of the input signal from SLOPE(OUT). Any portion of the signal that was negative voltage is now postive voltage.
+<img src="gfx/full-rectification.jpg" /></p>
+
+
+
+<p>This graph illustrates what the SLOPE circuit does to a sine wave:</p>
+
+<img src="gfx/rectification-graph.jpg" />
+
+<p>Another way to think of it: full rectification takes any input voltage (positive or negative) and returns the <em>amplitude</em> (magnitude) of that voltage. In mathenmatical terms, the <em>absolute value</em> of the voltage.</p>
+
+<p>Note that SLOPE is normaled to SURVEY, so if nothing is patched to SLOPE, the offset voltage from SURVEY will be processed by the rectifier.</p>
+
+
+
+
+
+<h2 id="follow"><span class="context green">SLOPE</span>Envelope follower</h2>
+
+<p>Patching CV (this one doesn’t do much with audio) into SLOPE will yield a slewed voltage out of FOLLOW that chases the <em>amplitude</em> of the signal at SLOPE. (This is a slewed version of the rectified signal, so you will only see positive voltages from FOLLOW.) The slew rate of this envelope follower is fixed, and the circuit is—according to the official documentation—based on the ARP 2600’s envelope follower.
+<img src="gfx/follow.jpg" /></p>
+
+
+
+<p>FOLLOW is ostensibly useful for deriving the CV for a sidechain patch. However, it may slew too slowly for ducking around percussion hits—your mileage may vary. (More full-featured envelope follower modules are available such as Steady State Fate’s DetectRx). In any case, FOLLOW is nice to have and can be handy as a general-purpose slew or envelope follower. Also, if you ping SLOPE with a trigger, you’ll get a simple envelope out of FOLLOW.</p>
+
+<p>Note that SLOPE is normaled to SURVEY, so if nothing is patched to SLOPE, the offset voltage from SURVEY will be processed the FOLLOW circuit. Indeed, one of the stated intentions for the FOLLOW circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
+
+
+
+
+
+<h2 id="crease"><span class="context blue">CREASE</span>Crease</h2>
+
+<p>Patching CV or audio to CREASE will yield a flipped/wavefolded/creased copy of the signal at CREASE(OUT). In effect, the crease circuit translates the positive portion of the signal into the negative domain, and the negative portion of the signal into the positive one, introducing a discontinuity where the source crosses zero volts. Low amplitudes become high, high amplitudes become low. With audio, generally speaking, lower amplitude sources will emerge with more harmonics, and higher amplitude sources less. There’s no particular precedent I know of for the utility of this transform function, but it provides an additional variation on a CV signal or an additional timbre to an audio signal.
+<img src="gfx/crease.jpg" /></p>
+
+
+
+<p>This graph illustrates what the crease circuit does to a sine wave:</p>
+
+<img src="gfx/crease-graph.jpg" />
+
+<p>Note that because CREASE is normaled to SLOPE, and SLOPE is normaled to SURVEY, with nothing patched to either SLOPE or CREASE, the offset voltage from SURVEY will be processed by the crease circuit.</p>
+
+
+
+
+
+<h2 id="location"><span class="context blue">LOCATION</span>Location</h2>
+
+<p>Patching CV into CREASE (audio won’t generally work here) you will produce a voltage from LOCATION that rises or falls at a rate proportional to the magnitude of the input voltage (relative to 0v).
+<img src="gfx/location.jpg" /></p>
+
+
+<p>LOCATION is a curious integrator circuit. More or less, you steer its voltage up and down by applying positive or negative voltage at CREASE. It’s a bit like the steering wheel of a car, or perhaps more like the rudder of a boat: the higher the voltage (negative or positive) you apply, the faster LOCATION changes. When you apply zero volts, LOCATION stops changing.</p>
+
+<p>Note that because CREASE is normaled to SLOPE, and SLOPE is normaled to SURVEY, with nothing patched to either SLOPE or CREASE, the offset voltage from SURVEY will be processed by the location integrator. Indeed, one of the stated intentions for the LOCATION circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
+
+<p>The maximum range of LOCATION seems to be about ±4.5v, but the actual range depends a bit on the CV you input. For example, if you hit it with ±5v, you’ll only see about a ±4.2v range from LOCATION. If you hit it with ±10v, you’ll see ±4.5v. Even with high voltage swings at the CREASE input, this integrator moves at a somewhat leisurely pace. For it to do much interesting, you generally need to be applying bipolar CV at CREASE, otherwise LOCATION will simply drift up and mostly stay there (although there may be some one-shot creative application for this). Moreover, if the CV you apply at CREASE is modulating in a more or less evenly balanced way between positive and negative (such as a typical LFO), then it’s going to even out at LOCATION and you might get something like a flatline. So, to creatively employ LOCATION, you probably need one of two things as a CV input:</p>
+
+<ul>
+	<li>a CV source that is normally sits at zero volts but sometimes goes positive or negative like steering corrections to a vehicle; a joystick could be one example, but the Survey knob itself is the most obvious</li>
+	<li>a CV source that drifts up and down arbitrarily, at an <em>average slow pace</em>; pitch data on a relatively long sequence might do this.</li>
+</ul>
+
+<p>In any case, the actual result from LOCATION depends a great deal on the relative speed of the fluctuating input CV and the <em>fixed</em> rate behavior of the LOCATION integrator.</p>
+
+
+
+
+
+
+<h2 id="unitymix"><span class="context">MAC</span>Straight Audio Unity Mix + VCA</h2>
+
+<p>Further complicating the picture, there’s an entire other layer happening within Cold Mac: copies of the signal at the six left input jacks (not including SURVEY) are summed together (unity mix) in a separate circuit. That sum is then attenuated in a linear VCA according to SURVEY, and the results output from MAC. So, regardless of whatever else Cold Mac is doing, it also acts a lot like a VCA with a unity mix on the front end.</p>
+
+<p>The rest of the jacks have no effect on MAC.</p>
+
+<p><strong>Important detail #1:</strong> the signals at OR(1) and SLOPE (marked <span style="color:red; font-weight:bold;">*</span> in the illustration) will receive 2X gain within the MAC circuit if the normalization of the AND(1) and CREASE jacks are not respectively broken. One implication is that you can use Cold Mac to modestly amplify one audio signal (or two, if you don’t mind them getting mixed together). Again, this extra gain is only present at the MAC output, not at the OR(OUT) or SLOPE(OUT) outputs.</p>
+
+<p><strong>Important detail #2:</strong> This MAC circuit is AC coupled, so it doesn’t pass control voltage. However, if you are also running control voltage into any of those six inputs, it may well manifest as DC offset in the MAC signal and cause you grief down the line. Moreover, if there are discontinuities in such control voltage, they may manifest as clicks in the audio signal coming from MAC. In other words, you cannot simultaneously use Cold Mac as an audio VCA and process a bunch of CV with complete impunity. Your mileage may vary.</p>
+
+<img src="gfx/MAC.jpg" style="height: 625px; width: auto;" />
+
+
+
+
+
+
+<h1 id="system">Cold Mac as a System</h1>
+
+<p>Now that we’ve looked at Cold Mac’s circuits in isolation, let us step back and take in the module as a system, which is where Cold Mac derives much of its mystique.</p>
+
+
+
+
+
+<h2 id="normalizations">Normalized connections</h2>
+
+<p>A big part of what makes Cold Mac a system is the network of normalized connections behind the faceplate. We’ve discussed them all, already, but let’s review them as a whole:</p>
+
+<img src="gfx/normalizations.jpg"  style="width: auto; height: 625px;"  />
+
+<ul>
+<li>FADE, OR(2), AND(2) and SLOPE are each normaled to SURVEY.</li>
+<li>CREASE is normaled to SLOPE [which is normaled to SURVEY]</li>
+<li>LEFT is normaled to -5v</li>
+<li>RIGHT is normaled to +5v</li>
+<li>AND(1) is normaled to OR(1)</li>
+</ul>
+
+<p>So, <em>by default</em>, SURVEY has influence on every circuit in Cold Mac. As discussed above, that influence can be decoupled from (overridden in) any circuit in Cold Mac by breaking a normal (except for MAC).</p>
+
+
+
+
+
+<h2 id="standalone">Standalone CV output</h2>
+
+<p>With no external inputs, each of the outputs (except MAC) emits CV according to the position of SURVEY as indicated by the little graphs by the jacks.</p>
+
+<p>Indeed, if you set the knob to noon and patch any basic bipolar LFO (or any other wave shape) into the SURVEY jack, you’ll derive eight distinct LFO responses from the eight outputs that are potentially useful. (thanks <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2926800#2926800">Sunden</a>)</p>
+
+<p>You can certainly use this default CV output directly, or you can break one or more of the normalizations in one or more of the inputs, substituting your own modulation sources. You can also layer in some self-patching between Cold Mac outputs and inputs, and thereby erect a more complex web of signal processing.</p>
+
+
+
+
+
+
+<h2 id="surveillance">Patch Surveillance</h2>
+
+<p>Whimsical Raps’ concept of “patch surveillance” is that a whole bunch of parallel CV and/or audio can be processed through Cold Mac under the concurrent modulation of the sweep (or CV) of SURVEY. The number of possibilities are initially overwhelming, particularly when you factor in self-patching, but once you internalize the behavior of the individual circuits, your intuition can guide experimentation.</p>
+
+<p>Below is an attempt to summarize what you need to internalize for the purpose of patch surveillance. The voltage in brackets is what you get if the only input to the circuit is SURVEY itself.</p>
+
+<img src="gfx/surv-framework.jpg" />
+
+<p>Regarding SLOPE, CREASE, FOLLOW and LOCATION: from the basic patch surveillance perspective, their use implies that nothing is patched into the SLOPE or CREASE inputs, because doing so cuts those circuits off from SURVEY. </p>
+
+<p>Don’t forget:</p>
+<ul>
+<li>patch surveillance can be all about cv, all about audio, or a bit of both</li>
+<li>parts of Cold Mac can be used for patch surveillance while others are simply processing signals (break those normals).</li>
+<li>SURVEY has a cv input: you can bring in external (or self-patched) cv to animate SURVEY and still use the knob to inject offset</li>
+</ul>
+
+<p>Tip: alas, there’s no auxiliary output for SURVEY, but if you aren’t using LEFT and RIGHT, then you can take the LEFT output, mix that with other signals externally, and then bring that signal back to any of the Cold Mac circuits, potentially even the SURVEY input itself.</p>
+
+
+<h3>Example 1</h3>
+
+<p>First, you might have a simple oscillator (running at audio frequencies) that outputs a few standard wave shapes. You might patch the triangle wave to LEFT and the square wave to RIGHT, and then patch the LEFT(OUT) to your filter. In this manner, SURVEY will crossfade between the two waveforms en route to your filter, moving smoothly from a drone of little harmonic content (the triangle wave) to a drone with a great deal of harmonic content (the square wave).</p>
+
+<p>Next, you might have a sine wave LFO patched into OR, with the AND(OUT) patched to the FM input of your filter. In this manner, as SURVEY increases, the filter cutoff opens up more, and concurrently, more cutoff animation from the LFO is introduced. At the clockwise extreme of SURVEY, you’ve got a pure square wave (from above) being filtered by a constantly fluctuating cutoff frequency for a lot of constant timbre animation. As SURVEY decreases (counter-clockwise), the filter closes down more and fluctuates less until you’re back down to a simple triangle wave drone.</p>
+
+<p>Next, you might patch a slow sample-and-hold random cv to SLOPE, and take the FOLLOW output to the 1v/o input on your oscillator, causing the pitch of the oscillator to glide up and down randomly.</p>
+
+<p>The patch described above looks something roughly like this:</p>
+
+<img src="gfx/surveillance-example.jpg" />
+
+<p>Now, as your synthesizer drones, you could play with the SURVEY knob (or apply CV to it) to increase or decrease the overall intensity and animation of the voice, while the slew limiter circuit of Cold Mac controls the pitch of the oscillator (independent of SURVEY). It might sound something like this (slowly sweeping SURVEY fully clockwise and all the way back again):</p>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/514174659&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+<p>By itself, this example isn’t all that interesting, but it hopefully serves to illustrate the concept of “patch surveillance”.</p>
+
+<h3>Example 2</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mvvtRtV9bJw" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+<h2 id="videos">Additional Videos</h2>
+
+<p>Here is a collection of videos from other parties that you may find helpful. I will add others as I become aware of them.</p>
+
+<p><em>Patching Cold Mac #1</em> by endor:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ULJChfuJMYw" frameborder="0" allowfullscreen></iframe>
+
+<p>Whimsical Raps’ <em>COLD MAC: An Introduction</em>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIgcg4-8TOs" frameborder="0" allowfullscreen></iframe>
+
+<p>Whimsical Raps’ <em>COLD MAC: Patch Surveillance</em>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I_hLiDaUi3Q" frameborder="0" allowfullscreen></iframe>
+
+<p><em>Modular Patch Walkthrough 01</em> by Nathan Moody: (this video is about a lot more than Cold Mac, but effectively demonstrates its integration into a larger patch)</p>
+<iframe src="https://player.vimeo.com/video/260343825" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+
+
+
+
+<h2 id="review">Review (opinions)</h2>
+
+<p>Like Make Noise Maths, Cold Mac has developed a mystique based on its initial inscrutability. Also like Maths, once you dig into it, Cold Mac does nothing that’s really all that remarkable: it is just a bunch of basic utility circuits. There’s probably no single task that Cold Mac does “better” than any more-focused utility module would. However, that’s not the full story, and I think there are three big features that make Cold Mac unique: </p>
+
+<p>1. <strong>sheer density</strong> </p>
+
+<p>Cold Mac is maybe 3 or 4 utility modules collapsed into 8HP. Because of this, Cold Mac could be particularly attractive for small systems, and it probably was conceived with a small system in mind, since that’s what designer Trent Gil seems to himself favor. Cold Mac represents a lot of functionality for the money and space.</p>
+
+<p>2. <strong>lower-level functional design</strong></p>
+
+<p>Most Eurorack utility modules are designed with a primary use-case foremost in mind—a design bias—that the panel layout and graphics strongly reflects, and therefore basic operation is usually somewhat obvious and intuitive, even if there are additional, secondary ways to employ the module. For example, a cross-fader module is perhaps labeled as such, has two primary inputs, one primary output and a knob for setting the mix.</p>
+
+<p>Cold Mac has no such use-case bias, which is why it’s not even remotely evident what the module does simply by looking at it. Put another way, Cold Mac is not a cross fader module per se, but it offers a collection of circuits, some of which can be used to create a cross fader (or other things) if you understand them and use them accordingly. One term for this approach is <em>patch programming</em>, a modular philosphopy strongly associated with Serge synthesizers.</p>
+
+<p>3. <strong>the survey knob and cv</strong></p>
+
+<p>Even when packaged together, most utility circuits come with their own controls; with Cold Mac, there’s only one shared control that is built-in. Imagine having 3-4 more typical utility modules, but with rubber bands connecting their knobs so that when you turn one, they all turn; that’s a bit like how Cold Mac works by default. This unusual approach might seem a limitation if you’re thinking about functions in isolation, but it has potential as a <em>macro control</em> to simultaneously introduce or shift the animation of different strands of your patch as they pass through Cold Mac. This macro control is what Whimsical Raps calls <em>patch surveillance</em>, hence the “Survey knob”.</p>
+
+<p>That said, let’s not over-romanticize or get hung up on the Survey knob: <em>it’s nothing but a simple bi-polar offset generator</em> to which many parts of Cold Mac are normaled. Just because the Survey offset control is there doesn’t mean you must use it, and often you won’t.</p>
+
+<p>There’s no question that having access to an oscilloscope makes Cold Mac easier to learn. If the Cold Mac design was ever revisited, the addition of two-color LEDs that could give the user a hint about the bipolar voltages at the inputs and outputs would be immensely helpful, although it would probably force the module to grow in size and cost.</p>
+
+<p>Some other “improvements” that might be worth at least contemplating would be an auxilliary output for SURVEY, more control over the FOLLOW circuit, and additional normalizations to exclude inputs from the MAC circuit when their main outputs are in use.</p>
+
+<p>In summary, Cold Mac is about patch programming, and arguably, it out-Serges Serge in that respect. Cold Mac requires commitment: memorize how each bit affects your signals, master the normalizations, and integrate it all into your process. As a whole greater than the sum of its parts, Cold Mac might be truly delightful to some folks, while others will run away screaming. Either way, you’re not wrong.</p>
+
+
+<h2 id="history">Revision History</h2>
+<p style="max-width: 100%;">Revision history:<br />2018-12-21 Added new Elements companion video<br />2018-12-18 Corrections<br />2018-12-03 Massive 2.0 rewrite<br />2018-10-13 Added overview and various other corrections and amplifications<br />2018-08-01 Added Nathan Moody’s helpful <em>Modular Patch Walkthrough 01</em> video (see bottom of page)<br />2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
+
+
+<p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
+
+</body>
+</html>

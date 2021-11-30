@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Spectrum 512 (and Unispec)</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html" selected="selected">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Spectrum 512 (and Unispec)</h1>
+<p>Spectrum 512 was a computer paint program by Boris Tsikanovsky that enabled the creation of images with more than 16 simultaneous colors. Boris accomplished this by using a special display algorithm that dynamically reassigned the color palette three times per scan line for a total of 48 unique colors (out of 512) per scan line. Unispec—which was not published by <em>Antic</em>—was basically a second-generation Spectrum 512 that added more sophisticated features, including the ability to do <span class="glossaryTerm" onmouseover="javascript:showDiv('pageflipping')" onmouseout="javascript:hideDiv('pageflipping')">page-flipping animation</span>.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.spectrum.jpg"><img src="gfx/packaging.spectrum.thumb.jpg" width="143" height="166" /></a>
+	</div>
+</div>
+<p>Boris immigrated to the United States in 1979 from the Soviet Union. In college, he studied physics and applied mathematics. Boris began programming in 1985 on the <a href="http://home.t-online.de/home/sinclair_zx81/zx81_wbr.htm">Timex/Sinclair 1000</a> for fun, and took an interest in graphics. Boris explains:</p>
+<p class="blockquote">You had to pull pretty ingenious tricks to get any meaningful graphics out of the Timex/Sinclair. Basically, you had to play with fragments of the 8x8 bitmaps representing text characters to produce lines, curves, etc. Very convoluted. Nothing as straightforward as simply being able to set a given pixel to black.</p>
+<p>Boris found gratification in discovering unconventional ways to get a computer (the Timex in this case) to do something well that it wasn't originally intended to do (make pictures). When Boris got an Atari ST in 1986, his first major project was to break down the computer’s 16-color limitation. </p>
+<div class="cluster right" style="background-color: #AAAAAA;">
+	<div class="imageCluster" style="width:200px; padding:10px;">
+		<p>Spectrum 512 art by Darrel Anderson and Richard Berry</p>
+		<a href="gfx/rendering.laserbee.gif"><img src="gfx/rendering.1.laserbee.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.hardwire.gif"><img src="gfx/rendering.2.hardwire.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.ellen.gif"><img src="gfx/rendering.3.ellen.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.nimspec.gif"><img src="gfx/rendering.4.nimspec.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.drops.gif"><img src="gfx/rendering.5.drops.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.finhorn.gif"><img src="gfx/rendering.6.finhorn.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.project4.gif"><img src="gfx/rendering.7.project4.thumb.jpg" alt="" width="200" height="138" style="margin-bottom:10px;" /></a>
+		<a href="gfx/rendering.136.gif"><img src="gfx/rendering.0.136.thumb.jpg" alt="" width="200" height="138" /></a>
+	</div>
+</div>
+<p class="blockquote">By this time (January 1987) I had a pretty good idea what to do. While playing with the ST’s graphics the previous summer it struck me that the color table (<span class="glossaryTerm" onmouseover="javascript:showDiv('clut')" onmouseout="javascript:hideDiv('clut')">CLUT</span>) mechanism offers a very fast method of animating graphics. Normally, to change the image you have to write tens of thousands of pixel values, and this takes time (certainly it took a lot of time back in ’86!). On the other hand, changing CLUT entries takes no time at all, and it produces pretty dramatic changes in the picture! This, of course, is what is known as color cycling animation. Soon I realized that its capabilities as an animation method are very limited and lost interest in the animation angle. But I discovered while experimenting, that the CLUT can be changed an awful number of times while the picture is being displayed by the monitor, line by line, and this led me to the idea that continuously modifying the CLUT allows us to have many more colors on the screen at the same time than the 16 colors in a single CLUT.</p>
+<p>The Spectrum project was made possible by friends:</p>
+<p class="blockquote">At about this time I met a school friend of mine, Boris Elman, who, like me, also came to the States from Russia in 1979. Unlike me, he had by this time a good-paying job. He and his brother Michael were looking for something to invest money into. We decided that I quit my messenger job, move from New York to Boston and we started Trio Engineering. They didn't have any firm notion about what Trio Engineering should be doing, but for me it was clear: developing software for the Atari ST!</p>
+<p>Boris now had the freedom to program, but—typical for someone working on something outside the norm for a system—there were few resources to make his job easy.</p>
+<p class="blockquote">Lack of documentation! I spent a couple of months at one point chasing a problem where Spectrum 512, which had to exit [<span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">GEM</span>] and drop into <span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">TOS</span>, somehow corrupted that <span class="glossaryTerm" onmouseover="javascript:showDiv('ui')" onmouseout="javascript:hideDiv('ui')">GUI</span> when entering it on return, and you had to restart the computer. After two months I found out that I was setting some parameter to 0 instead of 1 when re-initializing the GUI. There was no standard reference, I just stumbled on the solution by accident. I remember buying a book written by some Englishman (or was he German?) containing some extremely valuable (but incomplete and unofficial) information about the inner workings of the operating system. This whole Atari ST thing was so half-baked.</p>
+<p>In any case, Spectrum 512 was created in a different era of computing. Nowadays, application programming is almost always done safely distanced from the equipment it runs on. Spectrum 512, on the other hand, was nothing if not the direct manipulation of that hardware.</p>
+<p class="blockquote">Actually, as we started to show the program to other people around April ’87, I discovered to my horror that some other ST’s have different timing properties, resulting in an unsteady picture (not the same color for a given pixel in consecutive display frames). I had to start looking again, and eventually discovered another undocumented register, whose behavior turned out to be solid as a rock for all Atari ST’s in existence.</p>
+<p>Another problem was that Trio Engineering didn't really know what to do with its first product, as none of the three had any experience with software publishing. Once again, friends came through for Boris:</p>
+<p class="blockquote">While still playing with the preliminary version of Spectrum 512 [then called Chameleon] in ’86, I went to Pittsburgh to see a friend of mine (from Russia), who at that time was a visiting professor there. He put me in touch with another university professor, who knew a lot about personal computers and had some idea about software publishing (I didn't have a clue). He told me about <em>Antic</em>. Later, in the Spring of ’87, the Elman brothers called Gary and showed him the early version of Spectrum 512 when he came to Boston soon after. He was enthusiastic and quickly talked them into signing a contract with <em>Antic</em>. I remember them fuming about the 15% royalty, but really, none of us knew anything about software publishing, so we had to go along. </p>
+<p>From their outside perspective, Trio’s publishing options must have been vexing. Boris’s candid insight into the commercial software climate of the ST will be familiar to many programmers from that (and this) era:</p>
+<p class="blockquote">I suppose [Antic] was by far the smoothest and most professional operation in software publishing for the Atari ST. I have vague memories of some amazingly flaky characters being involved in this business, some of them from England, if I’m not mistaken... and, of course, Atari [Corp.] itself was not exactly blue chip.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px; padding:10px;">
+		<a href="gfx/screenshot.spectrumui.gif"><img src="gfx/screenshot.spectrumui.thumb.gif" alt="" width="320" height="200" style="margin-bottom:10px;" /></a>
+		<p>Spectrum 512 main menu</p>
+		<a href="gfx/screenshot.spectrumpalette.gif"><img src="gfx/screenshot.spectrumpalette.thumb.gif" alt="" width="320" height="200" /></a>
+		<p>Spectrum 512 color picker</p>
+	</div>
+</div>
+<p>After Trio signed the contract with <em>Antic</em>, Gary put Boris in touch with Darrel Anderson. </p>
+<p class="blockquote">[Darrel] had a lot of criticisms and suggestions about Spectrum 512. He found the initial version of Spectrum 512 pretty much unusable from the artist’s point of view. I was simply fascinated with the technical idea of delivering 512 colors on the screen and didn't really care about much else. I had to learn about all the things that people expected to find in a paint program, and how to code them.</p>
+<p class="blockquote">I have absolutely no art background, and every time I draw a circle in some diagram it comes out lumpy. I think about the only UI philosophy I have, to this day, is to use the type of user interface that will take the least amount of coding. Needless to say, this would not be the best UI. I just remember everybody nudging me to do something that would be more convenient for the user, and me following the path of least resistance by coming up with the easiest (from the programming point of view) solutions to satisfy these demands.</p>
+<p>Following the release of Spectrum 512 by <em>Antic</em>, Trio produced a couple of follow-up products. One product—DigiSpec—enabled users of the Digital Visions ComputerEyes video digitizer to capture 512 color Spectrum images. ComputerEyes was an interface box that connected an Atari ST to a video source. The best results were usually from using a color wheel and a monochrome security camera to capture an image in three passes (red, green and blue) to the ST. </p>
+<p class="blockquote">[W]ithout Spectrum 512 capabilities ComputerEyes, after obtaining RGB data from video, could only convert it to a pitiful standard 16-color image. They didn't even have any option for saving RGB image to disk, only the 16-color conversion of it. So, DigiSpec grabbed RGB data directly from the ComputerEyes memory buffer, converted it to Spectrum format, and displayed it on the screen.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Spectrum 512/Unispec sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>48 unique colors out of 512 per scan line</li>
+<li>red, green or blue tinting, and lightness control for entire picture of with airbrush</li>
+<li>anti-aliased polygon and oval</li>
+<li>copy/paste buffer with basic transparency</li>
+<li>live magnification window</li>
+<li>Spectrum slide show program capable of running simple scripts, including page flipping many frames per second (hence, short 512 color animations)</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>320 x 200, 512 colors</li>
+</ul>
+</div></div>
+<p>DigiSpec was a successful product for Trio that was sold through Digital Visions. </p>
+<p>The other product was UniSpec. UniSpec probably should have been Spectrum 512 Version 2, but Trio was uncomfortable with the royalty arrangement they had with <em>Antic</em>, so they chose to self-publish UniSpec as an add-on to Spectrum 512. The bind of not competing with their own <em>Antic</em> product led to UniSpec <em>looking</em> just like Spectrum 512, but sporting unique features that were accessed through obscure key combinations and hidden tricks. There was one highly visible difference, however, which was that UniSpec manifested itself as an Atari ST <span class="glossaryTerm" onmouseover="javascript:showDiv('deskaccessory')" onmouseout="javascript:hideDiv('deskaccessory')">desk accessory</span>. Darrel Anderson, who had by this time adopted Spectrum 512 as one of his tools, wound up writing the manual for UniSpec.</p>
+<p>While UniSpec had an assortment of new features over the original Spectrum product, its most prominent feature was that—as a desk accessory—it could sit on top of another program (such as DEGAS or CAD-3D) and acquire the latter’s output. It was in this manner that one could build up a 512 color image from multiple 16 color CAD-3D renderings. And it was by repeating this process many times that a handful of 512 color Cyber Studio animations were produced, because the Spectrum slide show program was capable of buffering and flipping through a stack of Spectrum images very quickly.</p>
+<p>After UniSpec and DigiSpec, Boris worked with Darrel Anderson’s brother, Jeff, on a sophisticated automation programming system for the ST, which was a technical success and a commercial catastrophe. By the end of 1988, the ST market was collapsing and Trio collapsed with it. Boris moved to Colorado and began developing Macintosh software. His first Mac product was called Pickture, which integrated document thumbnails into the Mac user interface. From there, he and Jeff Anderson developed an array of image distortion products, Flo, MetaFlo and MovieFlo, which were published by the <a href="http://www.valisgroup.com/">Valis Group</a>. Nowadays, Boris is experimenting with image recognition and developing 3D rendering software for Darrel Anderson’s <a href="http://groboto.com/">Groboto</a> project.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="ui">
+	<p><strong>User Interface (UI) and Graphical User Interface (GUI)</strong></p>
+	<p>Computer programs don't actually do anything visible to the user unless the programmer goes out of the way to include visual features. These features, which often the user can interact with through a mouse or keyboard, constitute a user interface. Graphical User Interfaces further infers a level of visual sophistication in the interface beyond computer terminal text.</p>
+</div>
+<div class="glossaryPopup" id="gem">
+	<p><strong>GEM and TOS</strong></p>
+	<p>The operating system of the Atari ST-series of personal computers was called TOS (Tramiel Operating System), which was a superset of Digital Research’s GEM (Graphical Environment Manager) system. In short, it was responsible for the Macintosh-like features (windows, drop-down menus, the mouse pointer) in most of these Antic software products.</p>
+</div>
+<div class="glossaryPopup" id="clut">
+	<p><strong>CLUT (Color Look-up Table)</strong></p>
+	<p>A set of indexed registers, each containing numbers representing colors. On the Atari ST, the CLUT kept track of whichever sixteen colors were in use on-screen at any given moment.</p>
+</div>
+<div class="glossaryPopup" id="deskaccessory">
+	<p><strong>Desk Accessory</strong></p>
+	<p>Different operating systems have used different approaches to managing types of programs that hang around (“stay resident”) while the user is working with an application. Often these co-existing programs are intended to complement applications in some fashion. In the Atari ST’s TOS operating system, such programs were called “Desk Accessories”, because they were often accessed from a drop-down menu on the desktop display. The comparable feature of a modern operating system is a “service” or “daemon”.</p>
+</div>
+<div class="glossaryPopup" id="pageflipping">
+	<p><strong>Page flipping</strong></p>
+	<p>The precise technical definition of page flipping depends on the specific display architecture of a computer, but the general idea is that you set up a sequence of images in the computer’s RAM memory (limited by how much RAM the computer has available) and then you instruct the computer to send each image in sequence to the display as quickly as possible. At one time, this sort of technique was one of the only ways to reproduce full-motion imagery on a computer because hard disk storage was much slower (and much more expensive).</p>
+</div>
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="cyberpaint.html"><em>Cyber Paint</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cybercontrol.html"><em>Cyber Control</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

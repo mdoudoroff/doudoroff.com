@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cyber Texture</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html" selected="selected">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+
+<h1>Cyber Texture</h1>
+<div class="cluster right" style="background-color: #AAAAAA; margin-bottom: 15px;">
+	<div class="imageCluster" style="width:200px; padding:10px;">
+		<p>Making a globe in Cyber Texture</p>
+		<a href="gfx/screenshot.cybertexture.sphere1.gif"><img src="gfx/screenshot.cybertexture.sphere1.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Selecting the sphere primitive</p>
+		<a href="gfx/screenshot.cybertexture.sphere2.gif"><img src="gfx/screenshot.cybertexture.sphere2.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Loading and cropping a map picture (from Degas)</p>
+		<a href="gfx/screenshot.cybertexture.sphere3.gif"><img src="gfx/screenshot.cybertexture.sphere3.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Adjusting parameters</p>
+		<a href="gfx/screenshot.cybertexture.sphere4.gif"><img src="gfx/screenshot.cybertexture.sphere4.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Waiting...</p>
+		<a href="gfx/screenshot.cybertexture.sphere5.gif"><img src="gfx/screenshot.cybertexture.sphere5.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Geometry ready to be saved to disk</p>
+		<a href="gfx/screenshot.cybertexture.sphere6.gif"><img src="gfx/screenshot.cybertexture.sphere6.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Sphere loaded in CAD-3D</p>
+		<a href="gfx/screenshot.cybertexture.sphere7.gif"><img src="gfx/screenshot.cybertexture.sphere7.thumb.jpg" alt="" width="200" height="125" style="margin-bottom:10px;" /></a>
+		<p class="small">Rendered without shading</p>
+		<a href="clips/globe.mov"><img src="gfx/video.globe.jpg" alt="" width="160" height="120" /></a>
+		<p class="small"><a href="clips/globe.mov">Quicktime animation (0.5MB)</a></p>
+	</div>
+</div>
+<p>Cyber Texture was an unusual program by David Ramsden that used a picture file as a basis for creating a 3D object that looked like the picture, often warped or distorted into some non-flat form. The technique used was a peculiarly brute-force imitation of what is known in computer graphics as “<span class="glossaryTerm" onmouseover="javascript:showDiv('texturemap')" onmouseout="javascript:hideDiv('texturemap')">texture mapping</span>”. </p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cybertexture.jpg"><img src="gfx/packaging.cybertexture.thumb.jpg" width="144" height="200" /></a>
+	</div>
+</div>
+<p>David Ramsden was a member of the CAD-3D user community and an aspiring programmer. David was aware of the texture mapping techniques in use on the more powerful Silicon Graphics computers—where an image could be “wrapped” around a 3D form to make the form more visually interesting. The Atari ST didn't have anywhere near enough horsepower (or colors, for that matter) to do traditional texture mapping well, and besides, CAD-3D wasn't capable of it. David did dream up an alternative approach where the individual “pixels” that make up an image are each converted into a little 3D square of the same color. While this technique would result in a very large number of little 3D squares, it would approximate the results of texture mapping, and David set out implementing his idea as a programming challenge.</p>
+<p>Cyber Texture is, at heart, a fairly simple concept: it loads a picture file, calculates 3D <span class="glossaryTerm" onmouseover="javascript:showDiv('vertex')" onmouseout="javascript:hideDiv('vertex')">vertex</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('face')" onmouseout="javascript:hideDiv('face')">face</span> information from it, and saves out the 3D information as a CAD-3D file. However, David was very thorough about wringing as much functionality out of that concept as possible, and his attention to detail is apparent in the software and its interface.</p>
+<p>Cyber Texture supports a wide array of picture file formats, includes an interface to crop the picture (in case you don't want to use the whole thing), and an interface to “erase” colors from a picture to make portions “transparent” (holes). He even integrated the ability for Cyber Texture to load a Cyber Paint animation and spit out a separate CAD-3D object for each frame of that animation. One could then switch between the objects in Cyber Control to render animated texture effects!</p>
+
+<div style="width:370px; padding: 10px 0px 10px 150px;">
+	<img src="gfx/diagram.cybertextureprimitives.gif" width="338" height="181" />
+</div>
+
+<p>For the calculation phase, David produced 15 different 3D primitives to construct, many of which have options. Plus, he made it so that the user could import <span class="glossaryTerm" onmouseover="javascript:showDiv('spin')" onmouseout="javascript:hideDiv('spin')">spin</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('extrude')" onmouseout="javascript:hideDiv('extrude')">extrude</span> templates from CAD-3D, making the possibilities (in a sense) limitless. Furthermore, those 3D primitives that had parameters could be “tweened” so that you could create a series of objects (for animation) of a flag rippling or a scrap coiling into a spiral or a picture melting like wax. Finally, he tied it together with a highly iconographic and interactive interface.</p>
+
+<div style="width:270px; padding: 10px 0px 10px 190px;">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.cybertexturespiral.gif"><img src="gfx/screenshot.cybertexturespiral.thumb.jpg" width="250" height="156" /></a>
+		<p>Adjusting the parameters of the spiral primitive</p>
+	</div>
+</div>
+
+<div class="cluster right" style="clear:right;"><div class="sidebar">
+<h1>Cyber Texture sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>import various common ST image formats</li>
+<li>create various parametric primitives</li>
+<li>support for basic transparency (results in holes in the object)</li>
+<li>ability to import spin and extrude templates from CAD-3D</li>
+<li>manual bitmap cropping (prior to processing)</li>
+<li>ability to batch generate objects from a Cyber Paint SEQ file (for “animated texture maps”)</li>
+<li>ability to batch generate parametric objects with <span class="glossaryTerm" onmouseover="javascript:showDiv('tweening')" onmouseout="javascript:hideDiv('tweening')">tweening</span> (to animate the flapping of a flag, for example)</li>
+<li>basic geometry optimization</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>was easily capable of creating more geometry than CAD-3D could deal with given the Atari ST’s memory limitations</li>
+</ul>
+</div></div>
+
+<p>Cyber Texture objects tended to push the memory of the Atari ST to its limit, and their density made them infuriating to work with by hand in CAD-3D, but they also dramatically increased the visual options open to the CAD-3D user. </p>
+
+<p>Cyber Texture is an oddity. The inherent inefficiency of its process (creating vast quantities of data to represent a simpler thing: a picture) had no future on more powerful, colorful computers. Interestingly, a remarkably similar technique was used in an Autodesk 3D Studio plug-in for the purpose of displacement mapping (using a picture to define the elevation topography of a surface).</p>
+
+<div style="width:270px; padding: 10px 0px 10px 130px;">
+	<div class="imageCluster" style="width:250px;">
+		<a href="gfx/screenshot.displace.jpg"><img src="gfx/screenshot.displace.thumb.jpg" width="250" height="188" /></a>
+		<p>Rolf Berteig’s Displace plug-in for Autodesk 3D Studio</p>
+	</div>
+</div>
+
+
+<!-- glossary -->
+<div class="glossaryPopup" id="spin">
+	<p><strong>Spin</strong></p>
+	<p>Spin, more commonly known in computer graphics as “surface of revolution”, was a lathe-like tool where the user draws a symmetric cross section which the computer uses as a profile for a cylindrical form.</p>
+	<img src="gfx/diagram.spin.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="extrude">
+	<p><strong>Extrude</strong></p>
+	<p>As it sounds, extrude was a tool that took a user-drawn cross-section and built geometry that gave the shape depth.</p>
+	<img src="gfx/diagram.extrude.gif" width="300" height="100" style="margin: 10px 0px 0px 75px;" />
+</div>
+<div class="glossaryPopup" id="face">
+	<p><strong>Face</strong></p>
+	<p>A set of three or more vertices connected to represent an arbitrary surface (or more commonly, a facet of a surface). Faces are a ubiquitous building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="vertex">
+	<p><strong>Vertex</strong></p>
+	<p>A point in space, defined by numbers, of two or three dimensions. Vertices are a fundamental building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="texturemap">
+	<p><strong>Texture map</strong></p>
+	<p>A 3D graphics technique where the color values of a picture file are mathematically interpolated (mapped) across a 3D surface, as a way of adding interesting visual detail to the surface.</p>
+</div>
+<div class="glossaryPopup" id="tweening">
+	<p><strong>Tweening</strong></p>
+	<p>The term, short for “in-betweening”, and the concept derive from traditional hand-drawn cel animation production where a master animator draws “key frames” of cartoon characters and assistants draw the frames in-between, interpolating how they should look from the master’s lead.</p>
+	<p>Given the right instructions, a computer can mathematically interpolate in-between frames just as it has below between two different stars.</p>
+	<img src="gfx/diagram.tweening.gif" width="264" height="80" style="margin: 10px 0px 0px 118px;" />
+</div>
+
+<br class="spacer" />&nbsp;
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="designdisks1.html"><em>Future, Architectural, Human & Microbot Design Disks</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cybersculpt.html"><em>Cyber Sculpt</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

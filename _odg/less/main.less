@@ -1,0 +1,440 @@
+@import "html5boilerplate.less";
+
+
+@general-red:   rgb(237,68,57);
+@sm-black:  	rgb(34,30,28);
+@sm-tan:		rgb(251,224,183);
+@odg-black:  	rgb(45,41,38);
+@odg-orange: 	rgb(237,109,35);
+
+@body-font-family: Georgia, serif;
+@header-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+@sm-lt-tan:		lighten( rgb(251,224,183), 10%);
+
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after{box-sizing:border-box;}
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+
+html{ 
+   font-size: 1px;/*for using REM units*/
+}
+body{
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   font-size: 17rem;
+   font-weight: 400;
+   line-height: 1.3;
+   color: #222;
+
+   @media only screen and (min-width: 1100px)  {
+   	font-size: 18rem;
+
+   }
+}
+
+// The above is a gentle reset to be used in conjunction with normalize.css
+// It can be adjusted to taste
+
+////////////////////////////
+
+
+
+body {
+	font-family: @body-font-family;
+	background-color: @sm-lt-tan;
+}
+
+#main {
+	padding: 0 0.5em;
+	max-width: 960px;
+	min-height: 400px;
+	margin: 0 auto;
+
+
+	@media screen and (min-width: 760px) {
+		max-width: 960px;
+
+		h1, h2, h3, h4 {
+			max-width: 600rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+		p {
+			max-width: 600rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		table {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+}
+
+
+p {
+	margin-bottom: 0.5em;
+	line-height: 1.4;
+}
+
+h1 {
+	font-family: @header-font-family;
+	font-size: 24rem;
+	font-weight: bold;
+	// text-align: center;
+}
+h2 {
+	font-family: @header-font-family;
+	font-size: 20rem;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 1em;
+}
+
+h3 {
+	font-family: @header-font-family;
+	font-size: 17rem;
+	margin-top: 1em;
+}
+
+figure {
+	margin: 1em 0;
+
+	@media screen and (min-width: 760px) {
+		max-width: 640px;
+		margin: 1em auto;
+	}
+
+}
+
+figcaption {
+	font-style:italic;
+	text-align: center;
+}
+
+table {
+	font-size: 13rem;
+	margin-top:1em;
+	margin-botto:1em;
+
+	th {
+		text-align: left;
+	}
+
+}
+
+
+a, a:visited, a:active { color: @odg-orange; }
+a:hover { color: @general-red; }
+
+img {
+	width: 100%;
+}
+
+figure.right, figure.left {
+	width: 40%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	float: right;
+	clear: both;
+	margin-left: 1em;
+
+	@media screen and (min-width: 760px) {
+		max-width: 300px;
+	}
+}
+
+figure.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+
+#masthead {
+	display: none;
+	text-align: center;
+
+	background-color: @sm-tan;
+
+	@media screen and (min-width: 760px) {
+		display: block;
+
+		font-family: @body-font-family;
+		font-weight: bold;
+		font-size: 32rem;
+
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+
+	}
+}
+
+nav {
+	font-family: @header-font-family;
+	top: 0;
+	width: 100%;
+	min-height: 50px;
+	height: auto;
+	position: fixed;
+	background: rgba(90,90,90,.7);
+	backdrop-filter: blur(5px); 
+	-webkit-backdrop-filter: blur(5px); 
+
+	a, a:visited, a:active { color: white; }
+	a:hover { color: red; }
+
+	@media screen and (min-width: 760px) {
+		
+		position: relative;
+		background: none;
+		min-height: 0;
+
+		// background-color: @sm-tan;
+		background-color: @sm-black;
+
+		a, a:visited, a:active { color: #fff; }
+		a:hover { color: #fff; }
+
+
+	}
+
+}
+
+#navLogo {
+	height:80px;
+	width: auto;
+	position: absolute;
+	right: 10rem;
+	top: 10rem;
+
+	@media screen and (min-width: 760px) {
+
+		display: none;
+	}
+}
+
+#mainLogo {
+	display: none;
+
+	@media screen and (min-width: 760px) {
+		width: 180px;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#spacerForFixedHeader {
+	height: 52px;
+	height: 90rem;
+
+	@media screen and (min-width: 760px) {
+		height: 52px;
+	}
+
+}
+
+footer {
+	clear:both;
+	font-size: 14rem;
+	margin: 2em 0 0 0;
+	padding: 1em 0.5em;
+	background: @sm-black;
+	color: #ccc;
+	a, a:visited, a:active { color: #fff; }
+	a:hover { color: #fff; }
+
+
+	.contentWrapper {
+		display: flex;
+		justify-content: space-between;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+.mobile {
+
+	@media screen and (min-width: 760px) {
+		display: none !important;
+	}
+}
+
+.desktop {
+	display: none !important;
+
+	@media screen and (min-width: 760px) {
+		display: inherit !important;
+	}
+
+}
+
+#burger {
+	position: absolute;
+	left:9px;
+	top: 9px;
+	width: 30px;
+	height: 30px;
+	transition: transform 0.5s;
+
+	@media screen and (min-width: 760px) {
+		display: none;
+	}
+
+
+}
+
+.mainMenuContainer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#mainMenu {
+
+	display: none;
+	margin-left: 13px;
+	margin-top: 40rem;
+	padding-bottom: 1em;
+
+	@media screen and (min-width: 760px) {
+
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-around;
+
+		a {
+			display: block;
+			padding: 0.5em 0;
+		}
+
+	}
+
+
+
+	li {
+		font-size: 15rem;
+		height: 35px;
+		line-height: 35px;
+
+		@media screen and (min-width: 760px) {
+			line-height: 1.0;
+			display: block;
+			height: auto;
+			text-align: center;
+		}
+
+
+	}
+
+}
+
+
+
+.buttonRow {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.imagePair {
+	display: flex;
+	justify-content: space-around;
+
+	img {
+		max-height: 400px;
+		width: auto;
+	}
+
+	@media screen and (min-width: 760px) {
+
+		// float: right;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+
+		img {
+			max-height: 600px;	
+		}
+		
+	}
+
+}
+
+.recipe {
+
+	padding: 1em;
+	background: darken(@sm-lt-tan,15%);
+	max-width: 30em;
+	font-size: 15rem;
+	line-height: 1.6;
+	margin-left: auto;
+	margin-right: auto;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.ingredients {
+		margin-top: 1em;
+		margin-left: 1em;
+		font-style:italic;
+	}
+}
+
+p.herotext {
+	font-family: @header-font-family;
+	font-weight: bold;
+	font-size: 30rem;
+	line-height: 1;
+}
+
+figure.hero {
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	@media screen and (min-width: 760px) {
+		width: 50%;
+		float: left;
+		clear: both;
+		margin-right: 1em;
+		margin-top: 0;
+	}
+}
+
+.dingbat {
+	display: block;
+	height: 45px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	clear: both;
+}
+
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software—General History Part I: Antic Magazine & The Catalog</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html" selected="selected">General History:</option><option value="history1.html" selected="selected">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h1>General History</h1>
+<h2><em>Antic Magazine</em> & <em>The Catalog</em></h2>
+<div class="cluster right" style="background-color: white;">
+	<div class="imageCluster" style="width:320px; padding:10px;">
+		<div class="imageCluster left" style="width:150px; padding:0px 0px 20px 0px;">
+			<img src="gfx/cover.antic.thumb.jpg" alt="" width="148" height="200"  />
+			<span class="small">Antic: The Atari Resource<br /><a href="http://www.atarimagazines.com/">For examples, visit the Classic Computer Magazine Archive</a></span>
+		</div>
+		<div class="imageCluster left" style="width:150px; padding:0px 0px 20px 0px;">
+			<img src="gfx/cover.analog.thumb.jpg" alt="" width="148" height="200"  />
+			<span class="small">ANALOG Computing<br /><a href="http://www.cyberroach.com/analog/default.htm">For examples, visit The Digital ANALOG Project</a></span>
+		</div>
+	</div>
+</div>
+<p><em>Antic Magazine</em> was one of two primary magazines supporting Atari home computers during the 1980s (the other being <em>ANALOG Computing</em>). Both were oriented around Atari’s 8-bit computers: the Atari 400 and Atari 800 (and subsequent models). When Atari began selling the Atari ST series of 16-bit computers in 1985, <em>Antic</em> responded first with a section of their magazine dedicated to the new platform, and then spun off a quarterly magazine called <em>START</em>. </p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:150px;">
+		<img src="gfx/cover.start.thumb.jpg" alt="" width="148" height="200" border="0" />
+		<span class="small">START: The ST Quarterly</span>
+	</div>
+</div>
+<p>Gary Yost got involved in computers through a grant from the Atari Institute in 1982. The grant supported an experiment to determine if home-bound individuals recuperating from an illness could financially support themselves with consumer computing hardware. It included Atari 800-series computer equipment, software and documentation. Through the user community Gary met other Atari users (such as James Capparell, the publisher of <em>Antic</em>) and much time was spent discussing the future of computing. When still part of Warner Communications (now AOL Time/Warner), Atari published a catalog, <em>APX</em> (Atari Program Exchange), that resold user-submitted software for the Atari 800. While <em>APX</em> was good for Atari’s public relations and, as Gary puts it, “helped inspire the cult of Atari”, it was not a directly profitable endeavor, and it was shut down when Jack Tramiel purchased the company in late 1983.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:150px;">
+		<img src="gfx/logo.anticsoftware.jpg" alt="Antic Software logo" width="150" height="115" border="0" /></a>
+	</div>
+</div>
+<p>Recognizing an opportunity, Gary Yost approached James Capparell and sold him on starting up a software-publishing arm, <em>Antic Software</em>, to be managed by Gary. He then contacted each of the former <em>APX</em> programmers and re-signed many of them to a contract with <em>Antic</em>. Gary explains:</p>
+<div class="cluster right" style="background-color: white;">
+	<div class="imageCluster" style="width:240px; padding:10px;">
+		<p>Assorted Catalogs in PDF</p>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">
+			<a href="pdf/catalog-1986-q2.pdf"><img src="gfx/cover.catalog86Q2.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q2 1986<br />(PDF-8.5MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">
+			<a href="pdf/catalog-1986-q4.pdf"><img src="gfx/cover.catalog86Q4.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q4 1986<br />(PDF-9MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1987-q1.pdf"><img src="gfx/cover.catalog87Q1.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q1 1987<br />(PDF-7.5MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1987-q3.pdf"><img src="gfx/cover.catalog87Q3.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q3 1987<br />(PDF-8MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1987-q4.pdf"><img src="gfx/cover.catalog87Q4.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q4 1987<br />(PDF-10.5MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1988-q1.pdf"><img src="gfx/cover.catalog88Q1.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q1 1988<br />(PDF-200KB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1988-q2.pdf"><img src="gfx/cover.catalog88Q2.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Q2 1988<br />(PDF-10MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1989-01.pdf"><img src="gfx/cover.catalog8901.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Jan 1989<br />(PDF-5MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1989-02.pdf"><img src="gfx/cover.catalog8902.thumb.jpg" alt="" width="106" height="150"  /></a>
+			<span class="small">Feb 1989<br />(PDF-1.8MB)</span>
+		</div>
+		<div class="imageCluster left" style="width:106px; padding:0px 0px 20px 0px;">		
+			<a href="pdf/catalog-1990-04.pdf"><img src="gfx/cover.catalog9004.thumb.jpg" alt="" width="106" height="150" /></a>
+			<span class="small">Apr 1990<br />(PDF-2MB)</span>
+		</div>
+	</div>
+</div>
+<p class="blockquote">Obviously, anyone who was serious about their code and trying to make a buck from it signed on ’cause <em>Antic</em> had such a good name in the community, and all of a sudden I had about fifteen products and a catalog. We started shipping software within a couple of months. Initially, there was virtually no <span class="glossaryTerm" onmouseover="javascript:showDiv('QualityAssurance')" onmouseout="javascript:hideDiv('QualityAssurance')">Quality Assurance</span>, and no product support. We were shipping a <span class="glossaryTerm" onmouseover="javascript:showDiv('ccompiler')" onmouseout="javascript:hideDiv('ccompiler')">C compiler</span> (Deep Blue C) that was our bread and butter for the first year. We had some disk duplication problems in our first batch and found we had to build a product support team fast, so we did.</p>
+<p class="blockquote"><em>The Catalog</em> was my concept, loosely based on the old <em>Atari Connection</em>. I contracted for all the software, co-designed many applications and development-tested virtually everything we sold. I was extremely involved in the titles that pertained to my primary interest, graphics. </p>
+<p>Initially, Gary wrote <em>The Catalog</em>, but it quickly grew too large for one person to handle, and Jack Powell—an editor for <em>Antic</em> and <em>START</em>—moved over to product development in 1986 to help out.</p>
+<p>Jack Powell, a professional actor and Bay Area native, who had recently returned there from trying to work in New York, wound up at <em>Antic</em> somewhat by chance:</p>
+<p class="blockquote">When we moved back, I visited a friend of mine (Charles Cherry), who I’ve known since kindergarten. He had an Atari computer, and I grew interested in [the computer game] The Wizard and the Princess and the possibility of creating “stereo” <span class="glossaryTerm" onmouseover="javascript:showDiv('anaglyphic')" onmouseout="javascript:hideDiv('anaglyphic')">anaglyphic graphics</span>. Having a hard time finding a temp job, I bought an Atari, and spent several weeks in a walk-in closet, learning <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> and playing [textual adventure game] Zork. I visited an Atari user’s group meeting in San Francisco, where they were demonstrating two Atari’s linked together so they could play Star Raiders [a computer game inspired by the movie Star Wars’ outer-space dog fights] with one computer against the other—a very early “Internet-like” game setup. At the meeting [<em>Antic</em> representative] Dave Duberman announced that <em>Antic</em> was looking for a “value checker”.</p>
+<p>Jack signed up with <em>Antic</em> to check the BASIC code listings printed in <em>Antic</em>’s magazine and to provide phone support for subscribers who had trouble with these type-in programs. Jack continues:</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:280px;">
+		<a href="gfx/portrait.gary-and-jack.jpg"><img src="gfx/portrait.gary-and-jack.thumb.jpg" alt="Jack Powell & Gary Yost at Antic" width="280" height="185" border="2" /></a>
+		<p>Jack Powell & Gary Yost at Antic</p>
+	</div>
+</div>
+<p class="blockquote">My early experience at <em>Antic</em> was not only checking the BASIC listings for accuracy, but doing “customer support” on the phone for readers who hadn't typed the program in exactly right and needed help to get their game running. This developed in me a strong feeling for what type of communication is needed for new users. Added to this were my growing editorial duties, much of which concerned editing and rewriting articles that had been originally written by programmers—who were often not the clearest of writers.</p>
+<p>Jack and Gary turned out to be a perfect brainstorming partnership. They collaborated on the subsequent Catalog copy and software development at <em>Antic</em>, and then continued to work together afterwards on Autodesk 3D Studio, Animator, Animator Pro and Discreet 3ds max. Throughout, Jack provided advocacy for the non-expert user as an essential balance to the techno-obsessive perspective that Gary ultimately cultivated (and termed “mutant”.) Jack also significantly raised the standards for computer graphics software documentation in the process.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="QualityAssurance">
+	<p><strong>Quality Assurance</strong></p>
+	<p>A systematic process, usually executed in parallel with programming, for verifying that software meets specifications and for insuring bugs are fixed or otherwise resolved.</p>
+</div>
+<div class="glossaryPopup" id="ccompiler">
+	<p><strong>C compiler</strong></p>
+	<p>C is a programming language developed in the early 1970s at Bell Labs concurrently (and for) the UNIX operating system. C and its variants (such as C++ and Objective C) are the dominant professional programming languages of today. A compiler is a program that takes a text file containing an abstract sequence of instructions written by a programmer and translates it into a file of commands that a computer can execute efficiently on demand. In other words, a compiler is a program that is used to make any other program.</p>
+</div>
+<div class="glossaryPopup" id="anaglyphic">
+	<p><strong>Anaglyphic graphics</strong></p>
+	<p>Stereo “3D” images comprised of two offset views of a subject in contrasting colors, usually red and blue. Generally viewed through red and blue tinted “3D glasses”.</p>
+</div>
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history2.html"><em>II. A new software culture</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="index.html"><em>Home/Introduction/Contents</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

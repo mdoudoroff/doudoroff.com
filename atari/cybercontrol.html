@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - Cyber Control</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html" selected="selected">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+<h1>Cyber Control</h1>
+<p>Cyber Control was an add-on Atari ST “<span class="glossaryTerm" onmouseover="javascript:showDiv('deskaccessory')" onmouseout="javascript:hideDiv('deskaccessory')">desk accessory</span>” for CAD-3D created by Tom Hudson. Cyber Control contained a text editor and <span class="glossaryTerm" onmouseover="javascript:showDiv('interpreter')" onmouseout="javascript:hideDiv('interpreter')">script interpreter</span> based on the <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> language that could control CAD-3D’s renderer. With Cyber Control, the user could learn to write fairly simple, re-usable BASIC programs that could produce more sophisticated animation from CAD-3D than was possible by hand. Cyber Control scripts could also be used to create 3D geometry (see the section on Darrel Anderson’s <a href="designdisks1.html">design disks</a>), and create and manipulate cameras and lights.</p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:144px;">
+		<a href="gfx/packaging.cybercontrol.jpg"><img src="gfx/packaging.cybercontrol.thumb.jpg" width="143" height="218" /></a>
+	</div>
+</div>
+<p>By the time Tom Hudson was developing the second version of CAD-3D, he obviously had Cyber Control in mind; indeed it was released merely six months after Cyber Studio’s debut. He explains in <em>The Catalog</em>:</p>
+<p class="blockquote">As CAD-3D 2.0 grew into a powerful animation system, I realized that truly complex animations would require a scripting language for proper control. I purposely designed Cyber Control as a BASIC-like language so anyone could pick it up quickly.</p>
+<p class="blockquote">When activated in CAD-3D 2.0, Cyber Control takes over full control of all functions, creating and manipulating objects and cameras (yes, three different ones). Its primary use is as a cinematic motion-control script language, but its flexible nature makes it an ideal “front-end” for CAD-3D so you can write your own BASIC-like programs that use CAD-3D as a “graphic engine!”</p>
+<div style="width:640px; margin:auto; text-align:center;">
+	<img src="gfx/screenshot.cybercontrol.gif" width="640" height="400" />
+	<p class="caption">CyberControl’s script editor with sample BASIC code and a rudimentary dialog box for entering parameters into a running script</p>
+</div>
+<p>Tom explains the development process:</p>
+<p class="blockquote">It was pretty much from scratch. I had an expression parser that I had developed in college for a final project that I dusted off and used to handle all the various mathematical expressions; the rest was all specially coded for Cyber Control.</p>
+<p class="blockquote">The desk accessory interface I used in my <span class="glossaryTerm" onmouseover="javascript:showDiv('gem')" onmouseout="javascript:hideDiv('gem')">GEM</span> products was a lot of fun. I found out about it one day while looking through the GEM manual and decided to try using it in DEGAS. I was worried that it wouldn't work because GEM on the Atari ST seemed to be kind of hit-or-miss on implemented features, but it did work. DEGAS used it for access to the various <span class="glossaryTerm" onmouseover="javascript:showDiv('buffer')" onmouseout="javascript:hideDiv('buffer')">bitmap buffers</span>, and CAD-3D went far beyond that.</p>
+<p class="blockquote">The CAD-3D accessory interface used the GEM communications pipe. A desk accessory could tell CAD-3D what to do using a simple 16-byte (eight word) message. Basically, CAD-3D exposed just about every function it had, allowing plug-ins like Cyber Control to take complete control over the application.</p>
+<p class="blockquote">I can’t think of any other people who used the interface for commercial products beside me, but I assume some did.</p>
+<p>One of the most important features of Cyber Control was that it freed up the camera to move through and around the 3D scene, whereas someone manually creating animation in CAD-3D 2.0 was limited to viewpoints outside the scene looking in. Making camera movement practical to choreograph in Cyber Control was solved by providing tools for calculating 3D motion <span class="glossaryTerm" onmouseover="javascript:showDiv('path')" onmouseout="javascript:hideDiv('path')">paths</span>. The user defined locations in space they wanted the camera (or another object) to pass through -- often by visually placing little marker cubes throughout their scene in CAD-3D -- and Cyber Control calculated the points in-between. The motion paths could have sharp corners (linear) or be smooth (<span class="glossaryTerm" onmouseover="javascript:showDiv('spline')" onmouseout="javascript:hideDiv('spline')">spline</span>).</p>
+<div style="width:650px; margin:auto; text-align:center;">
+	<img src="gfx/diagram.splines.gif" width="650" height="65" />
+</div>
+<p>Cyber Control also included rudimentary tools for automating the relative rotation of hierarchically linked objects. The user could define a set of objects to link, including pivot points (joint location). After subsequently specifying rotation commands on individual objects, the user could call a function that propogated the changes to the object’s children. All the calculations were performed relative to the objects’ state as stored on disk, so the script had to reload the geometry for each frame of the animation. For a good example, see the walking characters on the <a href="designdisks2.html">Cartoon Design Disk</a>: Cyber Control’s hierarchical tool keeps the arms and legs together as they swing through their respective motions.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:340px;">
+		<img src="gfx/video.computertable.jpg" alt=" " width="160" height="120" />
+		<img src="gfx/video.rocking.jpg" alt=" " width="160" height="120" />
+		<p>CAD-3D scenes with Cyber Control-generated shadows</p>
+	</div>
+</div>
+<p>Like images and animations, Cyber Control scripts were shared and exchanged amongst members of the user base, particularly on CompuServe. One of the most popular scripts that emerged from the community created all the “shadows” you see in the animations on this site. Those shadows are actually automated duplicates of the geometry that have been flattened in a direction that approximates (sometimes better than others) the direction of the light source. CAD-3D’s lights were not otherwise capable of producing shadows.</p>
+<div class="cluster right"><div class="sidebar">
+<h1>Cyber Control sidebar</h1>
+<h2>notable features</h2>
+<ul>
+<li>Built-in (simple) script editor.</li>
+<li>Free-flying cameras, specified either by camera location and target location or in terms of heading/pitch/roll.</li>
+<li>B-spline and S-spline calculation functions (yielded arrays of values from a list of key points)</li>
+<li>Basic hierarchical animation with angular constraints</li>
+<li>Arbitrary <span class="glossaryTerm" onmouseover="javascript:showDiv('vertex')" onmouseout="javascript:hideDiv('vertex')">vertex</span> and <span class="glossaryTerm" onmouseover="javascript:showDiv('face')" onmouseout="javascript:hideDiv('face')">face</span> creation</li>
+<li>ASCII file I/O</li>
+</ul>
+<h2>notable limitations</h2>
+<ul>
+<li>Variable names limited to seven characters</li>
+<li>Global scope only</li>
+<li>Limited precision</li>
+<li>No ability to iterate through scene members, so no way to truly write generalized code</li>
+</ul>
+</div></div>
+<h2>Postscript: Cyber Control after the Atari</h2>
+<p>Although the Cyber Control language ended up being central to producing 3D animation with the Cyber software, a script language did not become available for 3D Studio until relatively late in that product’s evolution. Like CAD-3D 2.0 before it, 3D Studio had a totally open <span class="glossaryTerm" onmouseover="javascript:showDiv('api')" onmouseout="javascript:hideDiv('api')">API</span>, but the development focus for 3D Studio was on creating plug-in products and—for that matter—finding friendly, graphical ways of accomplishing everything that had required a script for CAD-3D.</p>
+<p>The core of the Cyber Control language was eventually recycled and extended by Tom, Kyle Peacock (ex ANALOG) and myself as a series of plug-in script languages for Release 4 of Autodesk 3D Studio. The first of these languages was the key-framer scripting language Keyscript, which shipped with 3DSr4. Keyscript was followed with an add-on product, The Script Extensions, that added language modules for modeling, image processing, shading, and file I/O.</p>
+<p>3ds max has a sophisticated script language that has no relation to Cyber Control, although the pattern of maintaining an extensive software API began here.</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="interpreter">
+	<p><strong>Interpreter</strong></p>
+	<p>A program that reads a sequence of instructions (another program, or script) and executes them in sequence.</p>
+</div>
+<div class="glossaryPopup" id="buffer">
+	<p><strong>Bitmap buffers</strong></p>
+	<p>The term “bitmap” is commonly used (arguably incorrectly) to refer to any kind of digital picture. A bitmap buffer is simply a place in memory set aside to hold one or more pictures.</p>
+</div>
+<div class="glossaryPopup" id="api">
+	<p><strong>Application Programming Interface (API)</strong></p>
+	<p>A feature of a program that enables another program to communicate with and control it.</p>
+</div>
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+<div class="glossaryPopup" id="deskaccessory">
+	<p><strong>Desk Accessory</strong></p>
+	<p>Different operating systems have used different approaches to managing types of programs that hang around (“stay resident”) while the user is working with an application. Often these co-existing programs are intended to complement applications in some fashion. In the Atari ST’s TOS operating system, such programs were called “Desk Accessories”, because they were often accessed from a drop-down menu on the desktop display. The comparable feature of a modern operating system is a “service” or “daemon”.</p>
+</div>
+<div class="glossaryPopup" id="face">
+	<p><strong>Face</strong></p>
+	<p>A set of three or more vertices connected to represent an arbitrary surface (or more commonly, a facet of a surface). Faces are a ubiquitous building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="vertex">
+	<p><strong>Vertex</strong></p>
+	<p>A point in space, defined by numbers, of two or three dimensions. Vertices are a fundamental building block of 3D computer graphics.</p>
+</div>
+<div class="glossaryPopup" id="gem">
+	<p><strong>GEM and TOS</strong></p>
+	<p>The operating system of the Atari ST-series of personal computers was called TOS (Tramiel Operating System), which was a superset of Digital Research’s GEM (Graphical Environment Manager) system. In short, it was responsible for the Macintosh-like features (windows, drop-down menus, the mouse pointer) in most of these Antic software products.</p>
+</div>
+<div class="glossaryPopup" id="path">
+	<p><strong>Path</strong></p>
+	<p>A path is a mathematically-defined (usually drawn by the user) route through two or three-dimensional space that the computer will use for some purpose. In 3D computer graphics, paths are most commonly used either to dictate the movement of an object within a scene or to provide a flexible axis on which the object’s own geometry is built.</p>
+</div>
+<div class="glossaryPopup" id="spline">
+	<p><strong>Spline</strong></p>
+	<p>A smoothly curving path (in two or three dimensions) through space calculated from three or more fixed points, often specified by the user.</p>
+</div>
+
+<div style="clear:both"></div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="spectrum.html"><em>Spectrum 512 (and Unispec)</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="cybermate.html"><em>Cybermate (Cyber Studio)</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>

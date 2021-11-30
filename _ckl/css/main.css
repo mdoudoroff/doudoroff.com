@@ -1,0 +1,264 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 1px;
+  /*for using REM units*/
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #222;
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    font-size: 18rem;
+  }
+}
+h1 {
+  font-size: 22rem;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 18rem;
+  font-weight: 900;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+h3 {
+  font-size: 16rem;
+  font-weight: 900;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+p {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
+p.breadcrumbs {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 11px;
+  padding: 0 1em;
+}
+p.nutshell {
+  font-weight: 900;
+}
+a {
+  color: #8080ff;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: black;
+}
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  color: white;
+}
+div.content {
+  background-color: #f5f4f1;
+}
+footer.footer {
+  color: white;
+  font-size: 80%;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 2em;
+}
+nav {
+  position: relative;
+  margin: 0.5em 0.5em;
+}
+nav li {
+  height: 30px;
+}
+nav li a {
+  color: white;
+}
+figure {
+  margin: 0 auto 1em auto;
+  max-width: 30em;
+}
+figure figcaption {
+  font-size: 11rem;
+  text-align: center;
+}
+.masthead {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 350px;
+  justify-self: end;
+}
+#burger {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s;
+}
+.mainMenuContainer ul {
+  display: none;
+  margin-left: 0.4em;
+  margin-top: 0.25em;
+}
+.featureGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridItem {
+  width: 50%;
+  color: gray;
+}
+.gridItem h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.gridItem .gridItemDesc {
+  font-size: 14rem;
+  padding: 0.25em 1em 1.75em 1em;
+}
+.gridItem a {
+  color: white;
+}
+@media only screen and (min-width: 700px) {
+  .gridItem {
+    width: 33.3333%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .gridItem {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .gridItem {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1315px) {
+  .gridItem {
+    width: 16.6666%;
+  }
+}
+@media only screen and (min-width: 1415px) {
+  .gridItem {
+    width: 14.2857%;
+  }
+}
+main {
+  padding-top: 1em;
+}
+main section {
+  font-family: Georgia;
+  margin: 0 1em 0 1em;
+  max-width: 40em;
+  padding: 1em 0 1em 0;
+}
+@media only screen and (min-width: 40em) {
+  main section {
+    margin: 0 auto 0 auto;
+  }
+}
+main footer.related {
+  color: white;
+  background-color: black;
+  padding-top: 2em;
+}
+main footer.related h2 {
+  margin-top: 0;
+  margin-left: 1em;
+}
+main footer.related .container {
+  margin: 0 1em 1em 1em;
+}
+main .endOfArticleDingbat {
+  padding: 1em 0 2em 0;
+  text-align: center;
+}
+section.sun {
+  max-width: 27em;
+}
+section.sun h2,
+section.sun h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+section.sun p {
+  text-indent: 1em;
+}
+section.figureDetail h1 {
+  margin-bottom: 0;
+}
+section.bibliographicEntry {
+  font-size: 14rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+section.bibliographicEntry .image {
+  flex-basis: 6em;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+section.bibliographicEntry .citation {
+  margin-left: 0.5em;
+}
+/*# sourceMappingURL=main.css.map */

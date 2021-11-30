@@ -1,0 +1,1730 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eurorack Stereo Mixer Module Comparison</title>
+</head>
+<style>
+body {
+	max-width: 1600px;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+p, li {
+	max-width: 40rem;
+	line-height: 1.4;
+}
+.updates {
+	font-size: 85%;
+	font-family: monospace;
+}
+a {text-decoration:none;}
+a:hover {color:red;text-decoration:underline;}
+a:visited {color:blue;}
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+.main {	padding: 1em; }
+.red {color:red;}
+.green {color:green;}
+.gray {color:gray;}
+table {border-collapse: collapse;font-size: 85%;}
+td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+td.left, th.left {text-align:left;}
+td.notes {text-align: left;}
+td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+th { background-color: #eee; color: #666; }
+.collapsed {display: none;}
+
+nav {
+	background: #eef; 
+	padding: 0.5em 1em;
+	font-family: Helvetica, sans-serif;
+	border-bottom: 2px solid #666;
+	}
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+</style>
+<body>
+
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><strong>Stereo Mixer Modules</strong></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
+
+<h1>Eurorack Stereo Mixer Module Comparison</h1>
+
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+<p>This is a pretty exhaustive and up-to-date basic comparison of all your stereo mixer module options for Eurorack, with an implicit focus on your output stage, although some of these modules are suitable for submixing. Some additional tools of potential interest are listed at the bottom. Related discussion thread: <a href="https://muffwiggler.com/forum/viewtopic.php?t=154186"><em>stereo mixer module comparison</em> (MuffWiggler forum)</a></p>
+
+<h4>Latest</h4>
+<p class="updates">
+2021-08-19 added Toppobrillo MiniMix<br />
+2021-07-10 added Happy Nerding 4x Stereo Mixer<br />
+2021-06-05 added Modulaire Maritime Victor Alpha 2 &amp; Feedback Mix BX<br />
+2020-03-20 added Blood Cells Audio D.O.Mixx<br />
+2020-01-11 small updates<br />
+2020-11-24 added Frap Tools QSC<br />
+2020-11-09 added SSF Vortices<br />
+<span id="additionalUpdates" class="collapsed">
+2020-10-30 added Endorphin.es Cockpit 2<br />
+2020-08-02 added Make Noise XOH<br />
+2020-08-01 added Ladik M-610<br />
+2020-07-03 added Cosmotronic Cosmix<br />
+2020-06-04 added 6IXMXM.SET and ST-Modular SUM CHANNEL + MAIN<br />
+2020-06-01 minor updates<br />
+2020-05-18 added ACL Pan Mix<br />
+2020-02-17 added Doepfer A-135-3<br />
+2020-02-17 added SynEssentials SE2026<br />
+2020-02-16 added Modulaire Maritime Victor Alpha<br />
+2019-11-20 added Arcaico Caronte MS-4<br />
+2019-11-04 added Catoff Mix<br />
+2019-11-03 added Paratek РИТМИКС<br />
+2019-09-26 added Alyseum Q-Mix<br />
+2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
+2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
+2019-09-26 added Toppobrillo Stereomix 2<br />
+2019-09-22 added Happy Nerding 2xSAM<br />
+2019-08-06 added ph Mixer++<br />
+2019-06-28 added new column about individual outs (for multitracking), other updates<br />
+2019-05-08 added OIII Quad Mixer<br />
+2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
+2019-03-27 added Befaco STMIX<br />
+2019-02-10 added JPSynth Stereo Mixer<br />
+2019-01-20 added Tesseract Tex Mix<br />
+2018-11-16 added Takaab Nearness and stubbed out Worng Sound Stage<br />
+2018-10-14 added ST-Modular SUM<br />
+2018-09-07 Added SSI M-4 and Happy Nerding 3X<br />
+2018-05-02 Added Happy Nerding PanMix Jr.<br />
+2018-05-01 Added Roland 531, updates<br />
+2018-03-15 Added Hyrlo, minor updates<br />
+2018-02-07 Stubbed out 4ms Listen modules<br />
+2017-12-21 Added Intellijel Mixup<br />
+2017-11-13 Stubbed out Random*Source Stereo Mixer<br />
+2017-08-14 Doepfer shipping update<br />
+2017-07-04 Stubbed out the Befaco HEXA<br />
+2017-06-29 XAOC Praga shipping update<br />
+2017-06-05 Rebel Technologies Mix 02, Eric Stereo Mixer V2<br />
+2017-06-01 ADDAC Stereo Summing Mixer<br />
+2017-05-02 GRP Stereo Out Module<br />
+2017-04-13 Doepfer A-138s<br />
+2017-04-06 Qu-bit Mixology update<br />
+2017-02-21 L-1 2 Channel Mixer &amp; Unity Stereo Mixer<br />
+2017-02-01 Rebel Technologies Mix 01<br />
+2017-01-31 Cwejman MX-4AS<br />
+2017-01-30 Doepfer A-135<br />
+2017-01-19 Qu-bit Mixology update<br />
+2017-01-17 Pittsburgh Lifeforms System Interface<br />
+2016-09-19 Ladik M-175 (and related)<br />
+2016-09-15 WMD &amp; Erica updates<br />
+2016-08-21 Toppobrillo &amp; Frap Tools update<br />
+2016-07-06 Topporillo update<br />
+2016-07-05 Endorphin.es Cockpit<br />
+2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br />
+2016-06-01 Additonal PanMix details<br />
+2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />
+2016-05-18 Added Arrel ER-100<br />
+2016-03-24 Added initial info on Doepfer A-138p/o<br />
+2016-03-23 Added initial info on Frap CGM<br />
+2016-03-15 Added headphone column; updated data on Koma mixer<br />
+2016-02-01 Updated WMD photo<br />
+2016-01-27 Updated Toppobrillo info, new photos<br />
+2016-01-26 More additions and corrections<br />
+2016-01-25 Added more placeholder photos, missing modules, errata<br />
+2016-01-24 Errata and many additions from Muffwiggler members<br />
+2016-01-23 Rough draft<br />
+</span>
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
+</p>
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
+
+
+<table><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>4ms Listen 4</strong><br />2018<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-listen-4" target="_blank">Modular Grid &gt;</a><br /><a href="https://4mscompany.com/p.php?p=813" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/4ms-listen4.jpg"><img src="gfx/4ms-listen4.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-4</td>
+	<td class="">2-4</td>
+	<td class="">40%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$190.00</td>
+	<td class="notes"><ul>
+	<li>can be daisy chained with other 4ms Listen modules</li>
+	<li> line level output switch and master attenuator</li>
+	<li> 1/4” output passive expander available</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>4ms Listen 4 1/4</strong><br />2018<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-listen-4-1-4" target="_blank">Modular Grid &gt;</a><br /><a href="https://4mscompany.com/p.php?p=818" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/4ms-listen4-bal.jpg"><img src="gfx/4ms-listen4-bal.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$210.00</td>
+	<td class="notes"><ul>
+	<li>1/4" TRS outputs that can be run as balanced or [verify] dual stereo outs</li>
+	<li> can be daisy chained with other 4ms Listen modules</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>6IXMIXM.SET</strong><br />2020<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-6ixmxm-set" target="_blank">Modular Grid &gt;</a><br /><a href="http://inkglospace.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/6ixmxm-set.jpg"><img src="gfx/6ixmxm-set.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="gray">0</td>
+	<td class="">60%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class=""></td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$100.00</td>
+	<td class="notes"><ul>
+	<li>this is a pair of modules that yields one stereo mix and one mono sum</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>ACL PAN MIX</strong><br />2020<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/acl-pan-mix" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/acl-pan-mix.jpg"><img src="gfx/acl-pan-mix.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">1 aux</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>ADDAC Stereo Summing Mixer</strong><br />2017<br /><small><br />80 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac807a" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.addacsystem.com/product/addac800-series/addac807" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/addac-stereo-summing-mixer.jpg"><img src="gfx/addac-stereo-summing-mixer.jpg" style="width:400px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">1-5+</td>
+	<td class="">1-5+</td>
+	<td class="">6%</td>
+	<td class="">5</td>
+	<td class="">5</td>
+	<td class="">5 (manual)</td>
+	<td class="">3 stereo sends</td>
+	<td class="">pre- or post-fader (switched per channel)</td>
+	<td class="green">Yes</td>
+	<td class="">$1350.00</td>
+	<td class="notes"><ul>
+	<li>product is broken into two modules, one for I/O and one for control</li>
+	<li> expander adds four more fully-featured channels, and you can add as many of these as you like</li>
+	<li> additional expanders add more individual channel outputs</li>
+	<li>  cueing system</li>
+	<li> extensive line level support</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Alyseum Q-Mix</strong><br />2019<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/alyseum-q-mix" target="_blank">Modular Grid &gt;</a><br /><a href="http://alyseum.com/q-mix.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/alyseum-q-mix.jpg"><img src="gfx/alyseum-q-mix.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$120.00</td>
+	<td class="notes"><ul>
+	<li>expander adds two stereo channels and three more mono channels</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Arcaico Caronte MS-4</strong><br />2019<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/arcaico-caronte" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.arcaico.eu/caronte/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/arcaico-caronte.jpg"><img src="gfx/arcaico-caronte.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-4</td>
+	<td class="">0-2</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$200.00</td>
+	<td class="notes"><ul>
+	<li>master level knob</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Arrel Audio ER-100 Eurorack Stereo Summing Mixer</strong><br />2018<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-arrel-audio-er-100" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.arrel-audio.com/product.php?page=ER-100" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/arrel-ER-100.jpg"><img src="gfx/arrel-ER-100.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">8</td>
+	<td class="">1 stereo aux, 1 stereo insert</td>
+	<td class="">29%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">8 solo (manual)</td>
+	<td class="">1 stereo send</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$1000.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Audio Gear Obsession SUMMINGFACILITY</strong><br />2019<br /><small><br />38 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-summingfacility-" target="_blank">Modular Grid &gt;</a><br /><a href="https://audiogearobsession.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ago-summingfacility.jpg"><img src="gfx/ago-summingfacility.jpg" style="width:190px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">aux returns can act as a stereo input</td>
+	<td class="">16%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 mutes (manual), 6 send mutes (manual)</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$1000.00</td>
+	<td class="notes"><ul>
+	<li>extra headroom</li>
+	<li> extra gain available for working with line level inputs</li>
+	<li> balanced i/o</li>
+	<li> expanders planned</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Befaco HEXA</strong><br />2017<br /><small><br />70 HP<br /><a href="https://www.modulargrid.net/e/befaco-hex-mix" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.befaco.org/en/hexmix/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/befaco-hexmix.jpg"><img src="gfx/befaco-hexmix.jpg" style="width:350px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">3 stereo returns</td>
+	<td class="">9%</td>
+	<td class="gray">0</td>
+	<td class="">6</td>
+	<td class="">6 (manual)</td>
+	<td class="">3 mono sends</td>
+	<td class="">post-EQ/fader</td>
+	<td class="green">Yes</td>
+	<td class="">$1200.00</td>
+	<td class="notes"><ul>
+	<li>product is broken into three modules</li>
+	<li> per-channel and master EQ features</li>
+	<li> cueing system</li>
+	<li> LED VU meters for master mix</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Befaco STMIX</strong><br />2019<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/befaco-stmix--" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.befaco.org/en/stmix/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/befaco-stmix.jpg"><img src="gfx/befaco-stmix.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-5</td>
+	<td class="">0-5</td>
+	<td class="">83%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class=""></td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$150.00</td>
+	<td class="notes"><ul>
+	<li>can be daisy chained together or to the Befaco Hexmix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Blacet MIX3500</strong><br />????<br /><small><br />15 HP<br /><a href="http://www.blacet.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/blacetmix3500.jpg"><img src="gfx/blacetmix3500.jpg" style="width:75px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY)</td>
+	<td class="">1-5</td>
+	<td class="">0-2</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$140.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Blood Cells  Audio D.O.MIXX</strong><br />2020<br /><small><br />22 HP<br /><a href="https://www.modulargrid.net/e/blood-cells-audio-d-o-mixx" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.bloodcellsaudio.com/domixx" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/blood-cells-domixx.jpg"><img src="gfx/blood-cells-domixx.jpg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">5</td>
+	<td class="">1 stereo return</td>
+	<td class="">23%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">5 (manual)</td>
+	<td class="">1 mono send</td>
+	<td class="">post-fader, post-mute</td>
+	<td class="red">No</td>
+	<td class="">$220.00</td>
+	<td class="notes"><ul>
+	<li>aux send is pre/post selectable per channel</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Blue Lantern BMX 6 Channel Stereo Mixer</strong><br />2015<br /><small><br />34 HP<br /><a href="https://www.modulargrid.net/e/blue-lantern-modules-bmx-6channel-stereo-mixer-diy" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/bluelanternmixer.jpg"><img src="gfx/bluelanternmixer.jpg" style="width:170px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="">6</td>
+	<td class="gray">0</td>
+	<td class="">18%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$45.00</td>
+	<td class="notes"><ul>
+	<li>supports line- or eurorack-level inputs</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Blue Lantern Stereo Sir Mix Alot</strong><br />2020<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/blue-lantern-modules-stereo-sir-mix-alot-2020" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/blue-lantern-sir-mix-a-lot.jpg"><img src="gfx/blue-lantern-sir-mix-a-lot.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="">6</td>
+	<td class="">2</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$225.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Catoff Mix</strong><br />2019<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-catoff-mix-4ch-complete-set" target="_blank">Modular Grid &gt;</a><br /><a href="http://catoffsystems.com/mix4ch/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/catoff-mix.jpg"><img src="gfx/catoff-mix.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">2 stereo returns</td>
+	<td class="">25%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="">2</td>
+	<td class="">No</td>
+	<td class="green">Yes</td>
+	<td class="">$300.00</td>
+	<td class="notes"><ul>
+	<li>clever channel expansion system</li>
+	<li> LED VU meters for master mix</li>
+	<li> balanced outputs</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Circuit Abbey Unify</strong><br />2012<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/circuit-abbey-unify" target="_blank">Modular Grid &gt;</a><br /><a href="http://circuitabbey.com/Unify.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/unify.jpg"><img src="gfx/unify.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	<li>expanders add up to 16 total channels</li>
+	<li> clipping LED indicator</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Cosmotronic Cosmix</strong><br />2020<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/cosmotronic-cosmix" target="_blank">Modular Grid &gt;</a><br /><a href="https://cosmotronic.nl/cosmix.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/cosmix-cosmotronic.jpg"><img src="gfx/cosmix-cosmotronic.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">2</td>
+	<td class="">38%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="">1</td>
+	<td class="">No</td>
+	<td class="red">No</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>drive circuit on master bus</li>
+	<li> aux send can be pre-fader or post-fader per channel</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Cwejman MX-4S</strong><br />2012<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/cwejman-mx-4s" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.cwejman.net/mx-4s.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mx4s.jpg"><img src="gfx/mx4s.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">20%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$900.00</td>
+	<td class="notes"><ul>
+	<li>cv over master level</li>
+	<li> LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Doepfer A-135-3</strong><br />2020<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-135-3" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-a-135-3.jpg"><img src="gfx/doepfer-a-135-3.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="red">No</td>
+	<td class="gray">0</td>
+	<td class="">4</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class=""></td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$349.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Doepfer A-135-4A/B/A-138o</strong><br />2017<br /><small><br />30 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-135-4a" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/home_e.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-A135.jpg"><img src="gfx/doepfer-A135.jpg" style="width:150px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">13%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4 (cv)</td>
+	<td class="">4</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$440.00</td>
+	<td class="notes"><ul>
+	<li>expandable up to sixteen channels</li>
+	<li> can be mixed/matched with A-138 modules</li>
+	<li> per-channel gain</li>
+	<li> envelope follower expander</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Doepfer A-138p/o</strong><br />2016<br /><small><br />20 HP<br /><a href="http://www.doepfer.de/A138p.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-A138p.jpg"><img src="gfx/doepfer-A138p.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">20%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="">1</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$150.00</td>
+	<td class="notes"><ul>
+	<li>expandable (multiple A-138p per A-138o)</li>
+	<li>per-channel gain</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Doepfer A-138s</strong><br />2017<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-138s" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/A138s.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/doepfer-138s.jpg"><img src="gfx/doepfer-138s.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$90.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>EMW Stereo Mixer</strong><br />2013<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/emw-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.electronicmusicworks.com/eurorack/4-ch-stereo-mixer.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/emwstereomixer.jpg"><img src="gfx/emwstereomixer.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">0-2</td>
+	<td class="">29%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$85.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Endorphin.es Cockpit</strong><br />2016<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/endorphin-es-cockpit" target="_blank">Modular Grid &gt;</a><br /><a href="http://endorphin.es/endorphin.es--modules.html#u5361" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/endorphines-cockpit.jpg"><img src="gfx/endorphines-cockpit.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="gray">0</td>
+	<td class="">4</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 mutes</td>
+	<td class="">0-2</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$260.00</td>
+	<td class="notes"><ul>
+	<li>makes extensive use of TTRS connectors</li>
+	<li> compressor</li>
+	<li> partly intended to facilitate use of iOS devices as effects processors</li>
+	<li> design may be strongly biased toward use with other Endorphin.es  modules</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Endorphin.es Cockpit 2</strong><br />2020<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/endorphin-es-cockpit-2" target="_blank">Modular Grid &gt;</a><br /><a href="https://endorphin.es/portfolio-items/cockpit-2/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/endorphines-cockpit-2.jpg"><img src="gfx/endorphines-cockpit-2.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-4</td>
+	<td class="">0-4</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (but not dedicated)</td>
+	<td class="">$200.00</td>
+	<td class="notes"><ul>
+	<li>each channel can be mono (TR) or stereo (TRS) based upon jumpers</li>
+	<li> multiple Cockpit 2 modules can be daisychained with jumpers behind the panel</li>
+	<li> built in ducking circuit based on CV, audio, or triggers</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Erica Synths Black Output v2</strong><br />2018<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-black-output-module" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/black-series/black-output-v2/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/erica-black-output-v2.jpg"><img src="gfx/erica-black-output-v2.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">3</td>
+	<td class="">1</td>
+	<td class="">29%</td>
+	<td class="">1</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$290.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Erica Synths Stereo Mixer v2</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-black-stereo-mixer-v2" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.ericasynths.lv/en/shop/eurorack-modules/by-functions/mixers/black-stereo-mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/erica-stereo-mixer2.jpg"><img src="gfx/erica-stereo-mixer2.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">1</td>
+	<td class="">3</td>
+	<td class="">40%</td>
+	<td class="">1</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$145.00</td>
+	<td class="notes"><ul>
+	<li>Pre-fade Listen Expander available adds headphone output and cueing</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Feedback Mix BX</strong><br />2021<br /><small><br />35 HP<br /><a href="https://www.modulargrid.net/e/feedback-mix-bx" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.feedbackmodules.com/products/mix-bx" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/feedback-mix-bx.jpg"><img src="gfx/feedback-mix-bx.jpg" style="width:175px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">2 stereo returns</td>
+	<td class="">23%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$190.00</td>
+	<td class="notes"><ul>
+	<li>Hi/Lo EQ per channel</li>
+	<li> design inspired Boss BX8</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Frap Tools CGM</strong><br />2016<br /><small><br />36 HP<br /><a href="https://www.modulargrid.net/e/modules/browser?SearchName=cgm" target="_blank">Modular Grid &gt;</a><br /><a href="http://frap.tools/portfolio/mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/frapcgm-updated.jpg"><img src="gfx/frapcgm-updated.jpg" style="width:180px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">3+</td>
+	<td class="">2+</td>
+	<td class="">8%</td>
+	<td class="">3+</td>
+	<td class="">3+</td>
+	<td class="">3+ (manual)</td>
+	<td class="">2+</td>
+	<td class="">pre- or post-fader (switched per channel)</td>
+	<td class="green">Yes</td>
+	<td class="">$1100.00</td>
+	<td class="notes"><ul>
+	<li>unique expandable modular design (picture shows only one possible combo)</li>
+	<li> extensive VCA support on everything</li>
+	<li> solo functionality (requires Group module)</li>
+	<li> pre-fader cueing (requires Master module)</li>
+	<li> LED VU meters for master mix (Master module)</li>
+	<li> 2021 update adds multiple balanced output stage</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Frap Tools QSC</strong><br />2020<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/frap-tools-qsc-quad-stereo-channel" target="_blank">Modular Grid &gt;</a><br /><a href="https://frap.tools/products/mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/frap-qsc.jpg"><img src="gfx/frap-qsc.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-8</td>
+	<td class="">0-4</td>
+	<td class="">22%</td>
+	<td class="">2</td>
+	<td class="">4</td>
+	<td class="">4 (manual)</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$500.00</td>
+	<td class="notes"><ul>
+	<li>can be used standalone or as part of the CGM mixer system</li>
+	<li> nominally 4 stereo channels, but stereo inputs can be treated as dual mono, with crossfading functionality</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>GRP Stereo Out Module</strong><br />2017<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-grp-stereo-out-module" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.grpsynthesizer.it/index.php/it/prodotti-it/eurorack-grp-it/eurorack-grp-stereo-out-module-it.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/grp-stereo-out.jpg"><img src="gfx/grp-stereo-out.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">3-4</td>
+	<td class="">0-1</td>
+	<td class="">25%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$350.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Happy Nerding Panmix</strong><br />2016<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/happy-nerding-panmix" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.happynerding.com/category/panmix/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/happy-nerding-panmix.jpg"><img src="gfx/happy-nerding-panmix.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4-6 (switches on back)</td>
+	<td class="">0-2 (switches on back)</td>
+	<td class="">38%</td>
+	<td class="">0-6</td>
+	<td class="">0-6</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$300.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters for master mix</li>
+	<li> headphones and main outputs share one attenuator</li>
+	<li> inputs 3 and 6 can accept stereo mini jacks depending on switches on back of panel</li>
+	<li>can be daisy chained with other Happy Nerding stereo modules</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Happy Nerding Panmix Jr.</strong><br />2018<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/happy-nerding-panmix-jr" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.happynerding.com/category/panmix-jr/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/happy-nerding-panmix-jr.jpg"><img src="gfx/happy-nerding-panmix-jr.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">3</td>
+	<td class="gray">0</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$100.00</td>
+	<td class="notes"><ul>
+	<li>can be daisy chained with other Happy Nerding stereo modules</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Happy Nerding 2xSAM</strong><br />2019<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/happy-nerding-2xsam" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.happynerding.com/category/2xsam/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/happy-nerding-2xsam.jpg"><img src="gfx/happy-nerding-2xsam.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="gray">0</td>
+	<td class="">2</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">0*</td>
+	<td class="">2 post-fader</td>
+	<td class="red">No</td>
+	<td class="">$90.00</td>
+	<td class="notes"><ul>
+	<li>two channel stereo mixer/attenuator</li>
+	<li> *this module is intended first as a stereo send/return for effects equipment</li>
+	<li> 5X gain available (jumper)</li>
+	<li> can be daisy chained with other Happy Nerding stereo modules</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Happy Nerding 3X Stereo Mixer</strong><br />2018<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/happy-nerding-3x-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.happynerding.com/category/3x-stereo-mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/happy-nerding.3x.jpg"><img src="gfx/happy-nerding.3x.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">1-3</td>
+	<td class="">1-3</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">2 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$100.00</td>
+	<td class="notes"><ul>
+	<li>can be daisy chained with other Happy Nerding stereo modules</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Happy Nerding 4X Stereo Mixer</strong><br />2021<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/happy-nerding-4x-stereo-mix" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.happynerding.com/category/4x-st-mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/happy-nerding-4xsm.jpg"><img src="gfx/happy-nerding-4xsm.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">1-4</td>
+	<td class="">1-4</td>
+	<td class="">100%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class=""></td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">130</td>
+	<td class="notes"><ul>
+	<li>can be daisy chained with other Happy Nerding stereo modules</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Intellijel Dubmix</strong><br />2018<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/intellijel-dubmix" target="_blank">Modular Grid &gt;</a><br /><a href="https://intellijel.com/eurorack-modules/dubmix/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/dubmix.jpg"><img src="gfx/dubmix.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">4</td>
+	<td class="">1 stereo aux input (2 more with expander)</td>
+	<td class="">14%</td>
+	<td class="">4</td>
+	<td class="">4 (but requires expander for use)</td>
+	<td class="">4 (manual)</td>
+	<td class="">1 mono send, 1 stereo return; additional sends with expander</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$600.00</td>
+	<td class="notes"><ul>
+	<li>expanders add two more aux sends and/or CV control over channel levels</li>
+	<li> elaborated AUX send architecture (see docs)</li>
+	<li> LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Intellijel Mixup</strong><br />2017<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/intellijel-mixup" target="_blank">Modular Grid &gt;</a><br /><a href="https://intellijel.com/eurorack-modules/mixup/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mixup.jpg"><img src="gfx/mixup.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-4</td>
+	<td class="">0-2</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">3 (manual mutes)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$90.00</td>
+	<td class="notes"><ul>
+	<li>no panning controls</li>
+	<li> chainable indefinitely</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>JPSynth Stereo Mixer</strong><br />2018<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-jpsynth-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="https://jpsynth.com/products/stereo-mixer" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/jpsynth-stereo-mixer.jpg"><img src="gfx/jpsynth-stereo-mixer.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-4</td>
+	<td class="">0-4</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$115.00</td>
+	<td class="notes"><ul>
+	<li>master attenuator</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Knob Farm Hyrlo</strong><br />2018<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-hyrlo" target="_blank">Modular Grid &gt;</a><br /><a href="https://knob.farm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/knob-farm-hyrlo.jpg"><img src="gfx/knob-farm-hyrlo.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-6</td>
+	<td class="">0-3</td>
+	<td class="">75%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$90.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Koma Elektronik Poltergeist</strong><br />2013<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/koma-elektronik-poltergeist" target="_blank">Modular Grid &gt;</a><br /><a href="http://koma-elektronik.com/?product=poltergeist-quadraphonic-audio-mixer-panner-vca" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/poltergeist2.jpg"><img src="gfx/poltergeist2.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">4</td>
+	<td class="">1 aux in</td>
+	<td class="">14%</td>
+	<td class="">4</td>
+	<td class="">4, plus master</td>
+	<td class="">4 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$800.00</td>
+	<td class="notes"><ul>
+	<li>elaborated stereo or quad panning features</li>
+	<li> compression feature</li>
+	<li> self-patching-oriented design</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>L-1 Discreet VC Stereo Mixer</strong><br />2019<br /><small><br />22 HP<br /><a href="https://www.modulargrid.net/e/l-1-discrete-vc-stereo-mixer" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/l-1-discrete-vc-stereo-mixer.jpg"><img src="gfx/l-1-discrete-vc-stereo-mixer.jpg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="gray">0</td>
+	<td class="">4</td>
+	<td class="">18%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$600.00</td>
+	<td class="notes"><ul>
+	<li>master level cv</li>
+	<li> LED VU meters for master mix</li>
+	<li> mute expander</li>
+	<li> insert expander</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>L-1 VC Stereo Mixer</strong><br />2013<br /><small><br />22 HP<br /><a href="https://www.modulargrid.net/e/l-1-vc-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://l-1.su/StereoMixer.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/vcstereomixer.jpg"><img src="gfx/vcstereomixer.jpg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">18%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$155.00</td>
+	<td class="notes"><ul>
+	<li>master level cv</li>
+	<li> LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>L-1 Two Channel Voltage Controlled Stereo Mixer.</strong><br />2016<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/l-1-2-channel-vc-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://l-1.su/2chStereoMixer.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/l-1-2-channel.jpg"><img src="gfx/l-1-2-channel.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="">1-2</td>
+	<td class="">1-2</td>
+	<td class="">14%</td>
+	<td class="">2</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">2 stereo sends; no returns</td>
+	<td class="">–</td>
+	<td class="">0</td>
+	<td class="">$115.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters</li>
+	<li> full CV over level and pan (but not the SEND)</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>L-1 Unity gain Stereo Mixer</strong><br />2016<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/l-1-unity-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://l-1.su/UnityStereoMixer.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/l-1-unity.jpg"><img src="gfx/l-1-unity.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="gray">0</td>
+	<td class="">10</td>
+	<td class="">83%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="">0</td>
+	<td class="">$70.00</td>
+	<td class="notes"><ul>
+	<li>(this is a straightforward high capacity unity mixer meant to pull together an expandable stereo mixing combination with other modules)</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Ladik M-175 (and M-171, M-172, M-173, and M-174)</strong><br />2016<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/ladik-m-175" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=1800" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ladik-m-175.jpg"><img src="gfx/ladik-m-175.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-6</td>
+	<td class="">1-4</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="">0</td>
+	<td class="">$100.00</td>
+	<td class="notes"><ul>
+	<li>available in various configurations</li>
+	<li> M-177 and M-178 expanders </li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Ladik M-610</strong><br />2020<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/ladik-m-610-6ch-stereo-slider-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=3070" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ladik-m-610.jpg"><img src="gfx/ladik-m-610.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">1-6</td>
+	<td class="">1-6</td>
+	<td class="">30%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$100.00</td>
+	<td class="notes"><ul>
+	<li>expanders add three or six additional mono/stereo channels</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Make Noise X-Pan</strong><br />2019<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/make-noise-x-pan" target="_blank">Modular Grid &gt;</a><br /><a href="http://makenoisemusic.com/modules/x-pan" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mn-x-pan.jpg"><img src="gfx/mn-x-pan.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-3</td>
+	<td class="">0-1</td>
+	<td class="">30%</td>
+	<td class="">2</td>
+	<td class="">1-3</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$260.00</td>
+	<td class="notes"><ul>
+	<li>output is modular level</li>
+	<li> two of the three channels are voltage-controlled crossfader circuits</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Make Noise XOH</strong><br />2019<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/make-noise-xoh" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/modules/xoh" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/make-noise-xoh.jpg"><img src="gfx/make-noise-xoh.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">0-2</td>
+	<td class="">0-2</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$110.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Modulaire Maritime Victor Alpha</strong><br />2020<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/modulaire-maritime-victor-alpha" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.modulaire-maritime.com/victor-alpha" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mm-victor-alpha.jpg"><img src="gfx/mm-victor-alpha.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$165.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Modulaire Maritime Victor Alpha 2</strong><br />2021<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/modulaire-maritime-victor-alpha-2" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.modulaire-maritime.com/copie-de-victor-alpha" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mm-victor-alpha-2.jpg"><img src="gfx/mm-victor-alpha-2.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">50%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$200.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters for master mix</li>
+	<li> Bluetooth connectivity</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>OIIIAUDIO Quad Mixer</strong><br />2019<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-oiiiaudio-quad-mixer-with-controlled-panorama" target="_blank">Modular Grid &gt;</a><br /><a href="http://o3audio.com/shop/quad-mixer-with-a-controlled-panorama/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/OIII-quad-mixer.jpg"><img src="gfx/OIII-quad-mixer.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">17%</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$350.00</td>
+	<td class="notes"><ul>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Paratek РИТМИКС</strong><br />2019<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/paratek-РИТМИКС-black" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/paratek-8chan.jpg"><img src="gfx/paratek-8chan.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">8</td>
+	<td class="gray">0</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$200.00</td>
+	<td class="notes"><ul>
+	<li>mute button for the entire mix</li>
+	<li> LED VU meters</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>ph Mixer++</strong><br />2019<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/ph-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://ph.neutre.free.fr/boutique.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ph-mixer.jpg"><img src="gfx/ph-mixer.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">3-4</td>
+	<td class="">0-1</td>
+	<td class="">33%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="">1 mono send</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$165.00</td>
+	<td class="notes"><ul>
+	<li>output is 3.5mm TRS stereo</li>
+	<li> per channel pan (manual)</li>
+	<li> per channel aux send level (manual)</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Pittsburgh Lifeforms System Interface</strong><br />2017<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/pittsburgh-modular-lifeforms-system-interface" target="_blank">Modular Grid &gt;</a><br /><a href="http://pittsburghmodular.com/lifeforms-system-interface" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/pittsburgh-si.jpg"><img src="gfx/pittsburgh-si.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">1 stereo AUX return</td>
+	<td class="">25%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">1 mono send</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	<li>discreet aux, bus and main paths with per-channel switching</li>
+	<li> LED levels</li>
+	<li> first channel designed to double as an external input</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>ProModular MIIIIX</strong><br />2014<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/promodular-miiiix-" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.pro-modular.com/miiiix-insert-commander-master.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/miiiix.jpg"><img src="gfx/miiiix.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">22%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4 (manual)</td>
+	<td class="">Expander</td>
+	<td class="">post-fader</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$600.00</td>
+	<td class="notes"><ul>
+	<li>expanders add AUX send/returns, cv control over mute/solo and other features</li>
+	<li> up to four MIIIX can be chained for up to 16 total channels</li>
+	<li> extra output configuration options</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Qu-Bit Mixology</strong><br />2017<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-mixology" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.qubitelectronix.com/modules/mixology" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mixology-final.jpg"><img src="gfx/mixology-final.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">1 stereo AUX return</td>
+	<td class="">14%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4/4 (manual)</td>
+	<td class="">1</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$400.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Random*Source Stereo Mixer</strong><br />2017<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/random-source-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://randomsource.net/serge_euro" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/randomsource-stereo.jpg"><img src="gfx/randomsource-stereo.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2</td>
+	<td class="gray">0</td>
+	<td class="">11%</td>
+	<td class="">2</td>
+	<td class="">2</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	<li>DIY</li>
+	<li> left and right aux inputs (unity)</li>
+	<li> balanced outputs</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Rebel Technology Mix 01</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/rebel-technology-mix-01" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rebeltech.org/products/mix-01/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/rebeltech-mix01.jpg"><img src="gfx/rebeltech-mix01.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">40%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$115.00</td>
+	<td class="notes"><ul>
+	<li>matrix mixer design</li>
+	<li>  rear bus interconnect options for chaining</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Rebel Technology Mix 02</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/rebel-technology-mix-02" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rebeltech.org/products/mix-02/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/rebeltech-mix02.jpg"><img src="gfx/rebeltech-mix02.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">40%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes (sort of)</td>
+	<td class="">$150.00</td>
+	<td class="notes"><ul>
+	<li>rear bus interconnect options for chaining</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Roland SYSTEM-500 531 MIX</strong><br />2018<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/roland-system-500-531" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.roland.com/uk/products/system-500_531/features/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/roland-531.jpg"><img src="gfx/roland-531.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="red">No</td>
+	<td class="">4-6</td>
+	<td class="">0-1</td>
+	<td class="">30%</td>
+	<td class="">6</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$400.00</td>
+	<td class="notes"><ul>
+	<li>stereo preamp with 1/4" jack</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Sputnik 6-Channel Stereo Mixer</strong><br />2014<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/sputnik-modular-6-channel-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://sputnik-modular.com/stereo-mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/6csm.jpg"><img src="gfx/6csm.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="gray">0</td>
+	<td class="">30%</td>
+	<td class="">2</td>
+	<td class="gray">0</td>
+	<td class="">4 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	<li>LED VU meters for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Sputnik Quadrophonic Mixer</strong><br />2015<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/sputnik-modular-quadrophonic-mixer" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/quadmixer.jpg"><img src="gfx/quadmixer.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="red">No</td>
+	<td class="">1  (plus one per expander)</td>
+	<td class="gray">0</td>
+	<td class="">4%</td>
+	<td class="">1</td>
+	<td class="">1</td>
+	<td class="gray">0</td>
+	<td class="gray">TBD</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>onboard EQ</li>
+	<li> onboard reverb</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>ST-Modular SUM</strong><br />2018<br /><small><br />26 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-sum" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.st-modular.com/sum.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/st-modular-sum.jpg"><img src="gfx/st-modular-sum.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY)</td>
+	<td class="">5</td>
+	<td class="">1 stereo input, 1 stereo aux return</td>
+	<td class="">27%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">5</td>
+	<td class="">1</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>DIY-only</li>
+	<li>the five mono channels have manual EQ control</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>ST-Modular SUM CHANNEL + MAIN</strong><br />2020<br /><small><br />34 HP<br /><a href="https://www.modulargrid.net/e/st-modular-stereo-sum-main" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.st-modular.com/stereo%20sum.htm" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/st-modular-sum-expandable.jpg"><img src="gfx/st-modular-sum-expandable.jpg" style="width:170px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY)</td>
+	<td class="">1+</td>
+	<td class="">1+</td>
+	<td class="">12%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">manual</td>
+	<td class="">2</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>unique expandable modular design (picture shows only one possible combo)</li>
+	<li> mono channels have manual EQ control</li>
+	<li> cue system</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Strange Science Instruments M-4 Advanced Stereo Mixer</strong><br />2018<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/strange-science-instruments-m-4-advanced-stereo-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.strangesci.com/m4stereomixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ssi.m-4.jpg"><img src="gfx/ssi.m-4.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">14%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$700.00</td>
+	<td class="notes"><ul>
+	<li>variable gain switch for the VCAs</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Steady State Fate Vortices</strong><br />2020<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/steady-state-fate-vortices" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.steadystatefate.com/vortices" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/ssf-vortices.jpg"><img src="gfx/ssf-vortices.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">3</td>
+	<td class="">39%</td>
+	<td class="">2 + crossfader</td>
+	<td class="">7</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$380.00</td>
+	<td class="notes"><ul>
+	<li>“tape simulation” signal coloring including build-in saturation and peak limiters</li>
+	<li> crossfader feature</li>
+	<li> stereo and mono mixer portions have their own outputs available</li>
+	<li> can be daisy-chained</li>
+	<li> expander offers CV over the seven input levels</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Synthrotek MST Stereo Output Mixer</strong><br />2015<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/synthrotek-mst-stereo-output-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.synthrotek.com/products/mst-eurorack-modules/mst-stereo-output-mixer/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/mststereoout.jpg"><img src="gfx/mststereoout.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">2-4</td>
+	<td class="">0-2</td>
+	<td class="">67%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$85.00</td>
+	<td class="notes"><ul>
+	<li>no cv control, but circuit is both AC and DC coupled</li>
+	<li> dual stereo outs</li>
+	<li> unusual 2 channel, 2 inputs-per-channel configuration</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>SynEssentials SE2026</strong><br />2020<br /><small><br />45 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-se2026-6-channel-audio-mixer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.hollandsynth.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/synessentials-se2026.jpg"><img src="gfx/synessentials-se2026.jpg" style="width:225px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">2 stereo returns</td>
+	<td class="">13%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="">2 mono sends</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$1500.00</td>
+	<td class="notes"><ul>
+	<li>low and high eq per channel</li>
+	<li> solo per channel</li>
+	<li> dual outs</li>
+	<li> dual stereo aux ins</li>
+	<li> note: all 1/4 jacks are stereo TRS except the two sends</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Takaab Nearness</strong><br />2018<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/takaab-nearness" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.siammodular.com/nearness-minimal-panning-mixer-eurorack-synthesizer-module" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/takaab-nearness.jpg"><img src="gfx/takaab-nearness.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">7</td>
+	<td class="gray">0</td>
+	<td class="">133%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$50.00</td>
+	<td class="notes"><ul>
+	<li>the input jack you select corresponds to relative pan placement in the stereo field</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Tesseract Tex-Mix</strong><br />2019<br /><small><br />32 HP<br /><a href="https://www.modulargrid.net/e/tesseract-modular-tex-mix-master-section" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/tesseract-mix.jpg"><img src="gfx/tesseract-mix.jpg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes (DIY or pre-built)</td>
+	<td class="">4-8</td>
+	<td class="">0-4</td>
+	<td class="">25%</td>
+	<td class="gray">0</td>
+	<td class="">4</td>
+	<td class="">8 (manual)</td>
+	<td class="">2 mono sends, 2 stereo returns</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$250.00</td>
+	<td class="notes"><ul>
+	<li>expandable modular design (this is only one possible configuration)</li>
+	<li> cue system</li>
+	<li> expander with direct outputs is available</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Toppobrillo Stereomix</strong><br />2016<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/toppobrillo-stereomix" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.toppobrillo.com/stereomix.html" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/topobrillostereo.jpg"><img src="gfx/topobrillostereo.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">4</td>
+	<td class="">1 stereo AUX return</td>
+	<td class="">17%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4 (manual)</td>
+	<td class="">1 mono send, 1 stereo return</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$550.00</td>
+	<td class="notes"><ul>
+	<li>cv over AUX send for each channel</li>
+	<li> LED level indicators for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Toppobrillo Stereomix 2</strong><br />2019<br /><small><br />24 HP<br /><a href="https://www.modulargrid.net/e/toppobrillo-stereomix-2-black-panel" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/topobrillostereo2.jpg"><img src="gfx/topobrillostereo2.jpg" style="width:120px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="">Discontinued</td>
+	<td class="">4</td>
+	<td class="">1 stereo AUX return</td>
+	<td class="">17%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4 (manual)</td>
+	<td class="">1 mono send, 1 stereo return</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="">$480.00</td>
+	<td class="notes"><ul>
+	<li>cv over AUX send for each channel</li>
+	<li> LED level indicators for master mix</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Toppobrillo MiniMix</strong><br />2021<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/toppobrillo-minimix-silver-panel" target="_blank">Modular Grid &gt;</a></small></td>
+	<td class="pic"><a href="gfx/toppobrillo-minimix.jpg"><img src="gfx/toppobrillo-minimix.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="red">No</td>
+	<td class="">4-6</td>
+	<td class="">0-2</td>
+	<td class="">43%</td>
+	<td class="">2</td>
+	<td class="gray">0</td>
+	<td class="">6 (manual)</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="green">Yes</td>
+	<td class="gray">TBD</td>
+	<td class="notes"><ul>
+	<li>chainable</li>
+	</ul></td>
+</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">Mono Inputs</th><th class="">Stereo Inputs</th><th class="">Channel Density/HP</th><th class="">CV Panning</th><th class="">CV VCAs</th><th class="">Mute/Solo</th><th class="">Sends</th><th class="">Individual Outs</th><th class="">Headphone Out</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+<tr>
+	<td class="left"><strong>Verbos Scan & Pan</strong><br />2015<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/verbos-electronics-scan-pan" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.verboselectronics.com/modules/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/scanpan.jpg"><img src="gfx/scanpan.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="">29%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$400.00</td>
+	<td class="notes"><ul>
+	<li>cv-controlled center/width control as per harmonic oscillator</li>
+	<li> LED level indicators per channel</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>WMD Performance Mixer</strong><br />2016<br /><small><br />40 HP<br /><a href="https://www.modulargrid.net/e/wmd-performance-mixer-" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.wmdevices.com/collections/eurorack-modules/products/performance-mixer" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/wmdperfmixer.jpg"><img src="gfx/wmdperfmixer.jpg" style="width:200px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">6</td>
+	<td class="">2</td>
+	<td class="">20%</td>
+	<td class="">8</td>
+	<td class="">8</td>
+	<td class="gray">0</td>
+	<td class="">2</td>
+	<td class="">post-gain, pre-fader (requires DB25 expander)</td>
+	<td class="green">Yes</td>
+	<td class="">$750.00</td>
+	<td class="notes"><ul>
+	<li>6 mono channels, each with 2 switched inputs</li>
+	<li> 2 true stereo channels</li>
+	<li> 2 mono send/returns</li>
+	<li> one stereo insert</li>
+	<li> one end of chain stereo send/return, dual input buses</li>
+	<li> cueing system</li>
+	<li> various LED indicators</li>
+	<li> full headphone support</li>
+	<li> expanders add mute controls, two additional full stereo channels</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>Worng Sound Stage</strong><br />2018<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/worng-electronics-soundstage" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.worngelectronics.com" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/worng-soundstage.jpg"><img src="gfx/worng-soundstage.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">22</td>
+	<td class="gray">0</td>
+	<td class="">183%</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="gray">0</td>
+	<td class="">–</td>
+	<td class="red">No</td>
+	<td class="">$350.00</td>
+	<td class="notes"><ul>
+	<li>the input jack you select corresponds horizontally to relative pan placement in the stereo field</li>
+	<li> vertical jack selection corresponds to EQ-like filtration (controlled overall manually or with CV)</li>
+	<li> manual and CV-control over output level</li>
+	</ul></td>
+</tr>
+<tr>
+	<td class="left"><strong>XAOC Praga</strong><br />2012<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/xaoc-devices-praga" target="_blank">Modular Grid &gt;</a><br /><a href="http://xaocdevices.com/main/praga/" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/praga.jpg"><img src="gfx/praga.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="">4</td>
+	<td class="">2 stereo returns</td>
+	<td class="">20%</td>
+	<td class="">4</td>
+	<td class="">4</td>
+	<td class="">4 (manual, CV with expander)</td>
+	<td class="">2 mono sends, 2 stereo returns</td>
+	<td class="">post-fader</td>
+	<td class="red">No</td>
+	<td class="">$515.00</td>
+	<td class="notes"><ul>
+	<li>individual LED VU meters per channel</li>
+	<li>cv for each VCA switchable between unipolar and bipolar</li>
+	<li> two units can be chained for eight channels</li>
+	<li> HRAD expander adds additional CV and full master section</li>
+	</ul></td>
+</tr>
+</table>
+
+<p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
+<ul>
+<li><a href="https://www.modulargrid.net/e/make-noise-rxmx">Make Noise RxMx</a> (can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-sponde">IO Instruments Sponde</a> (can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/intellijel-mutamix">Intellijel Mutamix</a> (can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/intellijel-azimuth-ii">Intellijel Azimuth II</a> (single channel of mono to stereo with panning and spread, amongst other features)</li>
+<li><a href="https://www.modulargrid.net/e/4ms-company-vca-matrix">4ms VCA Matrix</a> (multi-channel mixing and routing vca that can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/addac-system-addac802-quintet-mixing-console">ADDAC 802 Quintet Mixing Console</a> (multi-cahnnel mixing and routing vca that can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/low-gain-electronics-submix">Low-Gain Submix</a> (multi-channel mixing and routing vca that can be employed in a stereo manner)</li>
+<li><a href="https://www.modulargrid.net/e/mfb-drum-99">MFB Drum-99</a>  (multi-channel stereo submixer)</li>
+<li><a href="https://www.modulargrid.net/e/hinton-instruments-modmixii">Hinton Instruments ModMix II</a> (dual four input mixer with added sauce; also note other Hinton products relevant to stereo mixing)</li>
+<li><a href="https://www.modulargrid.net/e/other-unknown-worng-lrmsmslr">Worng LRMSMSLR Mid-Side (MS) Matrix</a> (mid side stereo processor for Eurorack)</li>
+<li><a href="https://www.modulargrid.net/e/ladik-m-160-6ch-mono-stereo-aux-mixer">Ladik M-160</a> (configurable mixer)</li>
+<li><a href="https://www.modulargrid.net/e/blue-lantern-modules-stereoscopic-duo-vca--">Blue Lantern Stereoscopic Duo VCA</a></li>
+<li><a href="https://www.modulargrid.net/e/hikari-instruments-atten-mixer">Hikari Atten/Mixer</a></li>
+<li><a href="http://omsonic.co.uk/product/omsonic-universal-panning-expander-upe-and-mixer/">omsonic Universal Panning Expander and Mixer</a></li>
+<li><a href="https://github.com/sarnesjo/nearness">Nearness</a> (clever space-efficient DIY design)</li>
+<li><a href="https://www.modulargrid.net/e/qu-bit-electronix-synapse">Qu-bit Synapse</a> (can be employed in a stereo manner)</li>
+</ul>
+
+<p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
+</body>
+</html>

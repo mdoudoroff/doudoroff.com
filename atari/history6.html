@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>The Antic Cyber Graphics Software - General History Part VI: Going “Cyber”</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+function setIdProperty( id, property, value )
+	{
+	    var styleObject = document.getElementById( id );
+	    if (styleObject != null)
+	    {
+	        styleObject = styleObject.style;
+	        styleObject[ property ] = value;
+	    }
+	}
+
+	var timeoutID;
+			
+	function showDiv( domId )
+	{
+		var theWidth = 0
+		var theHeight = 0
+        var yOffset = 0
+
+		// Try to get the yoffset...
+		if (window.pageYOffset)
+		{
+			  yOffset = window.pageYOffset
+		}
+		else if (document.documentElement && document.documentElement.scrollTop)
+		{
+			yOffset = document.documentElement.scrollTop
+		}
+		else if (document.body)
+		{
+			  yOffset = document.body.scrollTop
+		}
+		
+		// Try to get the "inner width" and "inner height"
+		if (window.innerWidth)
+		{
+			theWidth = window.innerWidth
+			theHeight = window.innerHeight
+		}
+		else if (document.documentElement && document.documentElement.clientWidth)
+		{
+			theWidth = document.documentElement.clientWidth
+			theHeight = document.documentElement.clientHeight
+		}
+		else if (document.body)
+		{
+			theWidth = document.body.clientWidth
+			theHeight = document.body.clientHeight
+		}
+	
+		var left = (theWidth-500)/2 + "px"
+		var top = (theHeight-200)/2 + yOffset + "px"
+
+		setIdProperty( domId, "left", left )
+		setIdProperty( domId, "top", top )	
+		
+		// timeout delay
+		timeoutID = window.setTimeout( 'setIdProperty( "'+ domId + '", "visibility", "visible" );', 500 );
+	}
+
+	function hideDiv( domId )
+	{
+	
+		// cancel the dely on the show code
+		window.clearTimeout(timeoutID);
+		
+	    setIdProperty( domId, "visibility", "hidden" );
+	}
+
+</script>
+</head>
+<body>
+
+<div id="frame">
+
+<div id="contentcenter">
+
+<a href="index.html" style="border:none;"><img src="gfx/masthead-small.gif" style="border:none;" alt="(Masthead) The Antic Cyber Graphics Software and the Pre-History of Autodesk 3D Studio and Discreet 3ds max" width="785" height="37" /></a>
+		
+<div style="float:right; clear:both; margin: 10px 0px 10px 15px;">
+<script type="text/javascript">
+	 function gopage(dest)
+	 	{
+			var x;
+			x=dest.options[dest.selectedIndex].value
+			location.href=x;
+	 	}
+</script>
+<select name="TOCSelect" id="TOCSelect" size="1" onchange="gopage(this)">
+<option value="index.html">Home/Introduction/Contents</option><option class="noLink" value=""></option><option value="history1.html">General History:</option><option value="history1.html">I. Antic Magazine & The Catalog</option><option value="history2.html">II. A new software culture</option><option value="history3.html">III. Now, in 3-D!</option><option value="history4.html">IV. Making it move</option><option value="history5.html">V. Make Art</option><option value="history6.html" selected="selected">VI. Going “Cyber”</option><option value="history7.html">VII. Moving Forward</option><option class="noLink" value=""></option><option value="cad3d.html">Each software product in-depth:</option><option value="cad3d.html">CAD-3D & CAD-3D 2.0 (Cyber Studio)</option><option value="cybermate.html">Cybermate (Cyber Studio)</option><option value="cybercontrol.html">Cyber Control</option><option value="spectrum.html">Spectrum 512 (and Unispec)</option><option value="cyberpaint.html">Cyber Paint</option><option value="cybervcr.html">Cyber VCR</option><option value="cybersculpt.html">Cyber Sculpt</option><option value="cybertexture.html">CyberTexture</option><option value="designdisks1.html">Future, Architectural, Human & Microbot Design Disks</option><option value="designdisks2.html">Cartoon & Video Titling Design Disks</option><option value="relatedproducts.html">Other related products</option><option class="noLink" value=""></option><option value="whatmight.html">Additional materials:</option><option value="whatmight.html">What Might Have Been</option><option value="quicktimegallery.html">Quicktime gallery</option><option value="timeline.html">Timeline</option><option value="about.html">About this history/the author</option>
+</select>
+		</div><br />
+		
+<h2 style="clear:both;">Going “Cyber”</h2>
+<p>The release of “The Cyber Studio”—as the CAD-3D 2.0 and Cybermate package came to be known—led to an evolving suite of software products.</p>
+<p>A few factors led to the conceptualization of a line of integrated graphics products. The name itself and some of the inspiration came straight out of William Gibson’s <em>Neuromancer</em>. Gary says: </p>
+<p class="blockquote">I read the book in early ‘87 and saw the potential for what we were doing to eventually extend to large-scale networked graphical databases. We still haven't gotten there, but [Discreet’s 3ds max] is a good <span class="glossaryTerm" onmouseover="javascript:showDiv('authoring')" onmouseout="javascript:hideDiv('authoring')">authoring</span> platform for that kind of thing. Back in the ’80s, the only company that was using the Cyber moniker was Control Data Corp, for their mainframe computers. The name itself is derived from the Greek word for the verb “to pilot”, and that was a good description of what we were doing... creating tools for graphiker pilots to voyage into their imaginations.</p>
+<p>Another factor was Sony’s introduction of the CTL-L interface to their VCRs and camcorders at the 1987 Spring COMDEX. That interface opened up the first possibility of recording computer animation in a somewhat professional manner using inexpensive consumer video equipment. </p>
+<div class="cluster right">
+	<div class="imageCluster" style="width:320px;">
+		<a href="gfx/screenshot.spectrumui.gif"><img src="gfx/screenshot.spectrumui.thumb.jpg" alt="" width="320" height="201" border="2" /></a>
+		<p>Spectrum 512 user interface<br />(compare with <a href="gfx/rendering.degasbee.gif">same bee from Degas</a>)</p>
+	</div>
+</div>
+<p>But the first major graphic product <em>Antic</em> published following Cyber Studio <em>didn't</em> inherit the “Cyber” moniker. Boris Tsikanovsky immigrated to the United States from the Soviet Union in 1979. By 1986, he had teamed up with two Russian friends (brothers Boris and Michael Elman) in Boston as Trio Engineering to develop Atari ST software. Through academic contacts Boris learned about <em>Antic</em>, and the Elmans contacted Gary Yost at an Atari user exhibition in Worcester, Massachusetts in the Spring of 1987 where they showed Gary an early version of Boris’ new paint program. This paint program, <a href="spectrum.html">Spectrum 512</a>, used tricky color palette switching to permit the simultaneous use of all 512 of the Atari’s colors on screen instead of just sixteen. Gary was enthusiastic about the product and signed Trio up to be published by <em>Antic</em>. However, since Spectrum 512 had no obvious relationship to 3D, nobody thought to call it a “Cyber” product, which in hindsight, it was.</p>
+<div class="cluster left">
+	<div class="imageCluster" style="width:320px;">
+		<img src="gfx/rendering.mars.gif" alt="" width="320" height="199" /></a>
+		<p>CAD-3D rendering dressed up in Spectrum</p>
+	</div>
+</div>
+<p>Around the same time, <em>Antic</em> published Tom Hudson’s <a href="cybercontrol.html">Cyber Control</a> script language, which became the second “official” Cyber product. Cyber Control radically increased the animation possibilities of CAD-3D, although it did so with <span class="glossaryTerm" onmouseover="javascript:showDiv('BASIC')" onmouseout="javascript:hideDiv('BASIC')">BASIC</span> scripts, rather than a graphical user interface. It also provided yet another basis for the <em>Antic</em> “Cyber” community to thrive on: creating and sharing Cyber Control scripts. Soon after it was released, CAD-3D user (and District Attorney) Andrew Reese showed Gary some custom Cyber Control code he wrote to do forensic reconstruction of car accidents. His animations—which were used in court—reinforced for Tom and Gary their potential for developing genuinely useful graphics products.</p>
+<p>Back around the time Cyber Studio was getting completed, Gary ran into Jim Kent in a San Francisco computer store. Jim was demonstrating his Atari ST port of Aegis Animator (which he had previously developed for the Amiga). Aegis Animator already had a publisher, but Jim had also knocked out a little animation utility called Flicker, which Gary arranged for Jim to publish in <em>Antic</em>’s <em>START</em> magazine. At <em>Antic</em>, Jim was shown Cyber Studio, and he recognized the potential of its delta animation format for a 2D animation program like Flicker. Gary was also looking for a way to embellish animations produced by CAD-3D with image processing tricks, text, and other effects. One thing led to another and the result was <a href="cyberpaint.html">Cyber Paint</a>: a full-featured, stand-alone, paint animation program that could also be used to doctor and edit Cyber Studio animations.</p>
+<p>From this point, Cyber products came in a flurry. By 1987, Gary was deliberately orchestrating software development toward a large, well-integrated Cyber product family. He and Jack Powell went so far as to include an integration diagram in one of their catalogs:</p>
+<div class="cluster center"><img src="gfx/diagram.cyberfamily.jpg" width="700" height="502" style="text-align: center;" /></div>
+<p>Within a year and a half, the Cyber family was rounded out with three other major applications, not including a second generation version of Cyber Paint. The user community produced a student programmer, David Ramsden, who created an unusual utility that transformed pictures into 3D geometry. This utility became the product <a href="cybertexture.html">Cyber Texture</a>. Tom Hudson also maintained a prodigious output, producing two more major Cyber applications in quick succession: <a href="cybervcr.html">Cyber VCR</a>, which elegantly assembled Cyber animations to videotape via Sony’s CTL-L interface, and <a href="cybersculpt.html">Cyber Sculpt</a>, an unusually sophisticated application strictly dedicated to creating and editing complex geometry for CAD-3D 2.0.</p>
+<p>By the end, there were more than 20 outright Cyber products, including numerous collections of 3D clip art and Cyber Control scripts (see <a href="designdisks1.html">Future Design, Architectural Design, Human Design and Microbot Design Disks</a>, and <a href="designdisks2.html">Cartoon Design & Video Titling Design Disks</a>), and several products that were close relatives, such as the G.I.S.T. sound editor and the Genesis molecular modeling package, all of which <em>Antic</em> published. (See <a href="relatedproducts.html">Other Related Products</a>.)</p>
+
+<!-- glossary -->
+<div class="glossaryPopup" id="authoring">
+	<p><strong>Authoring</strong></p>
+	<p>In the computer world, authoring refers to general creative assembly and sequencing of multimedia elements. Originally associated with the creation of CD-ROM multimedia software, authoring now applies to many media including the Web and DVDs. Authoring usually implies a lightweight process, as opposed to <em>programming</em>.</p>
+</div>
+<div class="glossaryPopup" id="BASIC">
+	<p><strong>BASIC</strong></p>
+	<p>A computer language designed by Dartmouth computer scientists in the 1960s to be easy to learn and use (intended for students as an introduction to computer programming); virtually every general computer system since has had at least one variant of BASIC implemented for it. The language has evolved into various forms over the decades, perhaps most notably those produced by Microsoft starting in the late 1970s.</p>
+</div>
+
+		<div id="bottomNav"><p><strong>Next page:</strong> <a href="history7.html"><em>VII. Moving Forward</em></a></p><p style="font-size:10px; font-family: sans-serif;">Previous page: <a href="history5.html"><em>V. Make Art</em></a></p></div>
+</div>
+
+<!--<br clear="all" />--><!-- without this little BR, NS6 and IE5PC do not stretch the frame div down to encopass the content DIVs -->
+<div id="footer" class="small" style="border:none;">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="#">Top</a>&nbsp;&nbsp;&nbsp;<!--User agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1-->
+</div>
+<div id="footer" class="small">
+	Text copyright &copy; 2002 Martin Doudoroff. Imagery copyrights belong to various different people.<br />
+
+</div>
+
+
+</div>
+		
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+</body>
+</html>
