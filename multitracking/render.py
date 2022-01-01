@@ -233,8 +233,7 @@ function toggleAdditionalUpdates()
 
 <p>For multitrack recording purposes, this approach is tidy (one USB cable does it all), and appealing for those who don’t already have a suitable computer audio interface. An additional point of interest is that these modules are DC-coupled, meaning that they can pass control voltage bi-directionally in addition to audio. Some DAWs (Ableton and Bitwig, in particular) and other software (Virtual Rack, Silent Way, etc.) can employ this feature to further integrate your modular with your computer, and it is one of the most accurate ways to clock your modular from your DAW (or, perhaps, clock your DAW from your modular—your mileage may vary).</p> 
 
-<p>If you do already have a computer audio interface, then running an ES-8 or ES-9 at the same time as a second interface may not be what you want to do. A personal computer only wants to deal with a single audio interface, so if you have more than one interface, you need a software broker to make them appear as one to the rest of the computer. This sleight of hand is easy to do on a Mac, because of the Aggregate Device feature built into the operating system. On Windows, you’ll need a utility such as ASIO4LL.</p>
-
+<p>If you do already have a computer audio interface, then running an ES-8 or ES-9 at the same time as a second interface may not be what you want to do. A personal computer only wants to deal with a single audio interface, so if you have more than one interface, you need a software broker to make them appear as one to the rest of the computer. This sleight of hand is easy to do on a Mac, because of the Aggregate Device feature built into the operating system. On Windows, you’ll need a utility such as ASIO4LL. Regardless, your mileage may vary with interface aggregation: it seems to work well for some, but others encounter intractable problems. Proceed with caution.</p>
 
 
 
