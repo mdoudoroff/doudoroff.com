@@ -43,6 +43,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_ckl\/canon-combined-sketch.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/canon-combined-sketch.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
     "\/_ckl\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -113,6 +123,830 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/_ckl\/exh.canon-timeline.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.drinks-timeline.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.drinks-timeline.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.alexander.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.alexander.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.americano.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.americano.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.aperol_spritz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.aperol_spritz.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.aperol.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.aperol.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.appletini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.appletini.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.aviation.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.aviation.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.bamboo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.bamboo.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.bloody_mary.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.bloody_mary.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.blue_hawaii.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.blue_hawaii.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.brandy_alexander.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.brandy_alexander.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.bronx.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.bronx.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.caesar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.caesar.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cafe_brulot.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cafe_brulot.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.caipirinha.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.caipirinha.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.champagne_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.champagne_cocktail.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.clover_club.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.clover_club.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cobbler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cobbler.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cocktail_americano.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cocktail_americano.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cocktail_dessert.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cocktail_dessert.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cocktail_sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cocktail_sour.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cocktail.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.collins.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.collins.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.combinacion.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.combinacion.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cooler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cooler.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cosmopolitan.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cosmopolitan.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.crusta.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.crusta.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.cuba_libre.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.cuba_libre.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.daiquiri.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.daiquiri.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.daisy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.daisy.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.dry_martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.dry_martini.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.egg_nogg.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.egg_nogg.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.el_presidente.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.el_presidente.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.exotic_drinks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.exotic_drinks.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.fix.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.fix.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.fizz.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.flip.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.flip.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.french_75.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.french_75.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.gibson.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.gibson.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.gin_&_tonic.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.gin_&_tonic.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.gin_tonic.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.gin_tonic.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.grasshopper.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.grasshopper.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.harvey_wallbanger.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.harvey_wallbanger.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.highball.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.highball.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.hot_spiced_rum.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.hot_spiced_rum.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.hurricane.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.hurricane.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ice_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ice_punch.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.improved_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.improved_cocktail.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.irish_coffee.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.irish_coffee.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.jack_rose.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.jack_rose.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.julep.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.julep.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.layered_pousse_cafe.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.layered_pousse_cafe.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.lemon_drop.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.lemon_drop.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.long_island_iced_tea.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.long_island_iced_tea.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.mai_tai.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.mai_tai.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.manhattan.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.manhattan.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.margarita.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.margarita.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.martini.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.milk_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.milk_punch.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.mojito.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.mojito.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.moscow_mule.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.moscow_mule.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.negroni.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.negroni.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ohio.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ohio.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.old_fashioned.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.old_fashioned.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.pina_colada.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.pina_colada.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.piña_colada.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.pisco_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.pisco_punch.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.pisco_sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.pisco_sour.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.planters_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.planters_punch.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.posset.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.posset.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.pousse_cafe.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.pousse_cafe.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.presidente.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.presidente.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.punch.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.purl.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.purl.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ramos_fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ramos_fizz.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ramos_gin_fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ramos_gin_fizz.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.rickey.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.rickey.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.rob_roy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.rob_roy.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.rose.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.rose.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sang_gris.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sang_gris.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sangaree.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sangaree.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sazerac.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sazerac.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sherry_cobbler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sherry_cobbler.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sidecar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sidecar.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.singapore_sling.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.singapore_sling.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sling.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sling.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.smash.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.smash.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.sour.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.spritzer.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.spritzer.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.stinger.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.stinger.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.stoughton’s_elixir_.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.stoughton’s_elixir_.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.stoughtons.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.stoughtons.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.swizzle.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.swizzle.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.tequila_sunrise.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.tequila_sunrise.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.toddy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.toddy.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.tomato_juice.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.tomato_juice.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.vermouth_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.vermouth_cocktail.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.vodka_martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.vodka_martini.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ward_8.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ward_8.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.ward_eight.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.ward_eight.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.white_lady.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.white_lady.html",
+      "oF" : 0
+    },
+    "\/_ckl\/exh.essential-drinks.zombie.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/exh.essential-drinks.zombie.html",
       "oF" : 0
     },
     "\/_ckl\/exh.figures.abeal_otero_jose.html" : {
@@ -1243,16 +2077,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/_ckl\/tl-images-canon\/canon-combined.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 3758088159,
-      "prP" : 0
-    },
     "\/_ckl\/tl-images-canon\/castellon-larousse-2004.jpg" : {
       "ft" : 16384,
       "iS" : 93607,
@@ -1538,6 +2362,14 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/_ckl\/tl-images-canon\/essential drink work 2.ai" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/essential drink work 2.ai",
+      "oF" : 0
     },
     "\/_ckl\/tl-images-canon\/ferruccio-il-barista-1920.jpg" : {
       "ft" : 16384,
@@ -2864,6 +3696,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/_ckl\/tl-images-drinks\/timeline.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-drinks\/timeline.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
     },
     "\/_odg\/404.html" : {
       "cB" : 0,

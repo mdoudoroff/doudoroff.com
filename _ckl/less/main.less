@@ -1,4 +1,5 @@
 
+@paper-color: #f5f4f1;
 
 /****** Elad Shechter's RESET *******/
 /*** box sizing border-box for all elements ***/
@@ -78,7 +79,17 @@ header {
 }
 
 div.content {
-	background-color: #f5f4f1;
+	background-color: @paper-color;
+
+
+	ul {
+		margin-left: 1em;
+
+		li {
+			list-style: square;
+		}
+	}
+
 }
 
 footer.footer {
@@ -139,49 +150,199 @@ figure {
 .featureGrid {
 	display: flex;
 	flex-wrap: wrap;
-}
 
-.gridItem {
-	width: 50%;
+	.gridItem {
+		width: 50%;
 
-	color: gray;
+		color: gray;
 
-	h3 {
-		margin-top:0;
-		margin-bottom:0.5em;
+		h3 {
+			margin-top:0;
+			margin-bottom:0;
+		}
+
+		.gridItemImage {
+
+		}
+
+		.gridItemDesc {
+			font-size: 14rem;
+			padding: 0.25em 1em 1.75em 1em;
+		}
+
+		a {
+			color: white;
+		}
+
+
 	}
 
-	.gridItemImage {
-
+	@media only screen and (max-width: 699px) {
+		// hide after fourth item on mobile
+		:nth-child(n+5) {
+			display: none;
+		}
 	}
 
-	.gridItemDesc {
-		font-size: 14rem;
-		padding: 0.25em 1em 1.75em 1em;
-	}
 
-	a {
-		color: white;
-	}
+	@media only screen and (min-width: 700px) and (max-width:899px)  {
+		// hide after third item
+		:nth-child(n+4) {
+			display: none;
+		}
 
-	@media only screen and (min-width: 700px)  {
-		width: 33.3333%;
+		.gridItem {
+			width: 33.3333%;
+		}
 	}
-	@media only screen and (min-width: 900px)  {
-		width: 25%;
+	@media only screen and (min-width: 900px) and (max-width:1099px) {
+		// hide after fourth item
+		:nth-child(n+5) {
+			display: none;
+		}
+
+		.gridItem {
+			width: 25%;
+		}
 	}
-	@media only screen and (min-width: 1100px)  {
-		width: 20%;
+	@media only screen and (min-width: 1100px) and (max-width:1314px) {
+		// hide after fifth item
+		:nth-child(n+6) {
+			display: none;
+		}
+
+		.gridItem {
+			width: 20%;
+		}
 	}
-	@media only screen and (min-width: 1315px)  {
-		width: 16.6666%;
+	@media only screen and (min-width: 1315px) and (max-width:1414px)  {
+		// hide after sixth item
+		:nth-child(n+7) {
+			display: none;
+		}
+
+		.gridItem {
+			width: 16.6666%;
+		}
 	}
 	@media only screen and (min-width: 1415px)  {
-		width: 14.2857%;
+		// hide after seventh item
+		:nth-child(n+8) {
+			display: none;
+		}
+
+		.gridItem {
+			width: 14.2857%;
+		}
 	}
 
 }
 
+
+.fullGrid {
+	display: flex;
+	flex-wrap: wrap;
+
+	.gridItem {
+		width: 50%;
+
+		color: gray;
+
+		h3 {
+			margin-top:0;
+			margin-bottom:0;
+		}
+
+		.gridItemImage {
+
+		}
+
+		.gridItemDesc {
+			font-size: 14rem;
+			padding: 0.25em 1em 1.75em 1em;
+		}
+
+		a {
+			color: white;
+		}
+
+
+	}
+
+	@media only screen and (max-width: 699px) {
+	}
+
+
+	@media only screen and (min-width: 700px) and (max-width:899px)  {
+
+		.gridItem {
+			width: 33.3333%;
+		}
+	}
+	@media only screen and (min-width: 900px) and (max-width:1099px) {
+
+		.gridItem {
+			width: 25%;
+		}
+	}
+	@media only screen and (min-width: 1100px) and (max-width:1314px) {
+
+		.gridItem {
+			width: 20%;
+		}
+	}
+	@media only screen and (min-width: 1315px) and (max-width:1414px)  {
+
+		.gridItem {
+			width: 16.6666%;
+		}
+	}
+	@media only screen and (min-width: 1415px)  {
+
+		.gridItem {
+			width: 14.2857%;
+		}
+	}
+
+}
+
+
+.exhibitGrid {
+	display: flex;
+	flex-wrap: wrap;
+
+	max-width: 40em;
+	margin: 0 auto;
+
+	.gridItem {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+
+		color: gray;
+
+		h3 {
+			margin-top:0;
+			margin-bottom:0;
+		}
+
+		.gridItemImage {
+
+		}
+
+		.gridItemDesc {
+			font-size: 14rem;
+			padding: 0.25em 1em 1.75em 1em;
+		}
+
+		a {
+			color: white;
+		}
+
+
+	}
+
+}
 
 
 main {
@@ -252,4 +413,44 @@ section.bibliographicEntry {
 		margin-left: 0.5em;
 	}
 
+}
+
+
+.drinkSummaryEntry {
+
+	display: flex;
+
+
+	.drinkicons {
+		display: flex;
+		flex: none;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100px;
+		height:100px;
+
+		background-color: darken(@paper-color,10%);
+		border-radius: 50px;
+		margin-right: 1em;
+		padding-bottom: 13px;
+
+		img {
+			width: inherit; // width: 30px;
+			height: auto;
+		}
+
+	}
+
+	div.summary {
+
+		h3, p {
+			margin: 0;
+		}
+
+		p.summary {
+			font-style: italic;
+			color: gray;
+		}
+
+	}
 }

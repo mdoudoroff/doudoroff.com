@@ -7,7 +7,7 @@
       "uuidString" : "DC8DBDB2-8F8F-46EC-8575-4F5DE7EE60FA"
     }
   ],
-  "creatorBuild" : "34264",
+  "creatorBuild" : "34335",
   "files" : {
     "\/about.html" : {
       "cB" : 0,
@@ -42,6 +42,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/canon-combined-sketch.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/canon-combined-sketch.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/css\/main.css" : {
       "aP" : 1,
@@ -97,6 +107,830 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/exh.canon-timeline.html",
+      "oF" : 0
+    },
+    "\/exh.drinks-timeline.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.drinks-timeline.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.alexander.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.alexander.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.americano.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.americano.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.aperol_spritz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.aperol_spritz.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.aperol.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.aperol.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.appletini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.appletini.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.aviation.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.aviation.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.bamboo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.bamboo.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.bloody_mary.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.bloody_mary.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.blue_hawaii.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.blue_hawaii.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.brandy_alexander.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.brandy_alexander.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.bronx.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.bronx.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.caesar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.caesar.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cafe_brulot.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cafe_brulot.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.caipirinha.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.caipirinha.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.champagne_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.champagne_cocktail.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.clover_club.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.clover_club.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cobbler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cobbler.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cocktail_americano.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cocktail_americano.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cocktail_dessert.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cocktail_dessert.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cocktail_sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cocktail_sour.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cocktail.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.collins.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.collins.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.combinacion.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.combinacion.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cooler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cooler.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cosmopolitan.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cosmopolitan.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.crusta.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.crusta.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.cuba_libre.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.cuba_libre.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.daiquiri.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.daiquiri.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.daisy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.daisy.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.dry_martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.dry_martini.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.egg_nogg.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.egg_nogg.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.el_presidente.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.el_presidente.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.exotic_drinks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.exotic_drinks.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.fix.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.fix.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.fizz.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.flip.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.flip.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.french_75.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.french_75.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.gibson.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.gibson.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.gin_&_tonic.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.gin_&_tonic.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.gin_tonic.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.gin_tonic.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.grasshopper.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.grasshopper.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.harvey_wallbanger.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.harvey_wallbanger.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.highball.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.highball.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.hot_spiced_rum.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.hot_spiced_rum.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.hurricane.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.hurricane.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ice_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ice_punch.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.improved_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.improved_cocktail.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.irish_coffee.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.irish_coffee.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.jack_rose.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.jack_rose.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.julep.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.julep.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.layered_pousse_cafe.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.layered_pousse_cafe.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.lemon_drop.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.lemon_drop.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.long_island_iced_tea.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.long_island_iced_tea.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.mai_tai.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.mai_tai.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.manhattan.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.manhattan.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.margarita.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.margarita.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.martini.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.milk_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.milk_punch.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.mojito.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.mojito.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.moscow_mule.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.moscow_mule.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.negroni.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.negroni.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ohio.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ohio.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.old_fashioned.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.old_fashioned.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.pina_colada.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.pina_colada.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.piña_colada.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.piña_colada.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.pisco_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.pisco_punch.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.pisco_sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.pisco_sour.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.planters_punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.planters_punch.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.posset.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.posset.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.pousse_cafe.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.pousse_cafe.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.presidente.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.presidente.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.punch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.punch.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.purl.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.purl.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ramos_fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ramos_fizz.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ramos_gin_fizz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ramos_gin_fizz.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.rickey.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.rickey.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.rob_roy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.rob_roy.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.rose.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.rose.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sang_gris.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sang_gris.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sangaree.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sangaree.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sazerac.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sazerac.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sherry_cobbler.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sherry_cobbler.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sidecar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sidecar.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.singapore_sling.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.singapore_sling.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sling.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sling.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.smash.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.smash.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.sour.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.sour.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.spritzer.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.spritzer.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.stinger.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.stinger.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.stoughton’s_elixir_.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.stoughton’s_elixir_.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.stoughtons.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.stoughtons.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.swizzle.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.swizzle.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.tequila_sunrise.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.tequila_sunrise.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.toddy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.toddy.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.tomato_juice.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.tomato_juice.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.vermouth_cocktail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.vermouth_cocktail.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.vodka_martini.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.vodka_martini.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ward_8.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ward_8.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.ward_eight.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.ward_eight.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.white_lady.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.white_lady.html",
+      "oF" : 0
+    },
+    "\/exh.essential-drinks.zombie.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/exh.essential-drinks.zombie.html",
       "oF" : 0
     },
     "\/exh.figures.abeal_otero_jose.html" : {
@@ -693,6 +1527,156 @@
       "oAP" : "\/favicon.ico",
       "oF" : 0
     },
+    "\/gfx\/combo-pitcher.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/combo-pitcher.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/combo-punchbowl.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/combo-punchbowl.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-cocktail-alt.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-cocktail-alt.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-cocktail.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-cocktail.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-collins.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-collins.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-copper-mug.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-copper-mug.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-double-rocks.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-double-rocks.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-flute.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-flute.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-goblet.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-goblet.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-mug.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-mug.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-pilsner.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-pilsner.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-pint.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-pint.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-rocks.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-rocks.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-snifter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-snifter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/glass-tiki.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/glass-tiki.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/gfx\/logotype.library-opaque.png" : {
       "ft" : 32768,
       "iS" : 24403,
@@ -719,6 +1703,66 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/gfx\/method-blend.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/method-blend.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/method-jigger.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/method-jigger.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/method-shake.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/method-shake.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/method-stir.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/method-stir.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/method-swizzle.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/method-swizzle.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/gfx\/openhand.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/openhand.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/gfx\/placeholder.jpg" : {
       "ft" : 16384,
       "iS" : 73721,
@@ -731,6 +1775,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/gfx\/pointinghand.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/gfx\/pointinghand.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/icon.png" : {
       "ft" : 32768,
@@ -998,6 +2052,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/bullock_tom.thumb.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/campbell_1867.jpg" : {
+      "ft" : 16384,
+      "iS" : 309968,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/campbell_1867.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2344,12 +3411,90 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/thumb.exhcanonbibliography.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 123540,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhcanonbibliography.wide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/thumb.exhcanontimeline.jpg" : {
       "ft" : 16384,
       "iS" : 80728,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/thumb.exhcanontimeline.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumb.exhcanontimeline.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 149868,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhcanontimeline.wide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumb.exhdrinktimeline.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 138121,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhdrinktimeline.wide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumb.exhessentialdrinks.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 119272,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhessentialdrinks.wide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumb.exhmajorfigures.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 245521,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhmajorfigures.wide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/thumb.exhsunarticle.wide.jpg" : {
+      "ft" : 16384,
+      "iS" : 380487,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/thumb.exhsunarticle.wide.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2658,12 +3803,77 @@
       "oAP" : "\/timeline-test.html",
       "oF" : 0
     },
+    "\/tl-images-canon\/achatz_aviary.jpg" : {
+      "ft" : 16384,
+      "iS" : 815688,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/achatz_aviary.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/amis_drink.jpg" : {
+      "ft" : 16384,
+      "iS" : 632614,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/amis_drink.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/anderson_recipes.jpg" : {
+      "ft" : 16384,
+      "iS" : 299568,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/anderson_recipes.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/applegreen_bar.jpg" : {
+      "ft" : 16384,
+      "iS" : 565355,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/applegreen_bar.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/arnold-liquid-intel-2014.jpg" : {
       "ft" : 16384,
       "iS" : 206255,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/arnold-liquid-intel-2014.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/arthur_orleans.jpg" : {
+      "ft" : 16384,
+      "iS" : 663265,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/arthur_orleans.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2690,6 +3900,58 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/baker-south-american-1951.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/beebe_stork.jpg" : {
+      "ft" : 16384,
+      "iS" : 359317,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/beebe_stork.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/bergeron_book.jpg" : {
+      "ft" : 16384,
+      "iS" : 1085424,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/bergeron_book.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/bergeron_guide.jpg" : {
+      "ft" : 16384,
+      "iS" : 621905,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/bergeron_guide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/berry_taboo.jpg" : {
+      "ft" : 16384,
+      "iS" : 601631,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/berry_taboo.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2755,6 +4017,45 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/berry-sippin-2017.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/blochman_how.jpg" : {
+      "ft" : 16384,
+      "iS" : 770682,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/blochman_how.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/boadas_cocteles.jpg" : {
+      "ft" : 16384,
+      "iS" : 51474,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/boadas_cocteles.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/boothby_1908.jpg" : {
+      "ft" : 16384,
+      "iS" : 517200,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/boothby_1908.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2931,6 +4232,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/campbell_barkeeper_1867.jpg" : {
+      "ft" : 16384,
+      "iS" : 309968,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/campbell_barkeeper_1867.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/canon-combined progress through B.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3072,6 +4386,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/cecchini_cosmopolitan.jpg" : {
+      "ft" : 16384,
+      "iS" : 465533,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/cecchini_cosmopolitan.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/chicote-el-bar-americano-1927.jpg" : {
       "ft" : 16384,
       "iS" : 80738,
@@ -3104,6 +4431,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/corrales-manual-oficial-1930.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/costa_batidas.jpg" : {
+      "ft" : 16384,
+      "iS" : 107112,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/costa_batidas.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3176,12 +4516,38 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/curtis_rum.jpg" : {
+      "ft" : 16384,
+      "iS" : 513031,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/curtis_rum.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/degroff-craft-2002.jpg" : {
       "ft" : 16384,
       "iS" : 38364,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/degroff-craft-2002.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/devoto_hour.jpg" : {
+      "ft" : 16384,
+      "iS" : 621417,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/devoto_hour.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3221,6 +4587,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/duffy-1948.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/edmunds_bullet.jpg" : {
+      "ft" : 16384,
+      "iS" : 283778,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/edmunds_bullet.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3280,6 +4659,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/essential drink work 2.ai" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/essential drink work 2.ai",
+      "oF" : 0
+    },
     "\/tl-images-canon\/ferruccio-il-barista-1920.jpg" : {
       "ft" : 16384,
       "iS" : 142171,
@@ -3319,12 +4706,77 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/fouquet_bariana.jpg" : {
+      "ft" : 16384,
+      "iS" : 536654,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/fouquet_bariana.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/gaige_companion.jpg" : {
+      "ft" : 16384,
+      "iS" : 639921,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/gaige_companion.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/gasparo_guia.jpg" : {
+      "ft" : 16384,
+      "iS" : 243901,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/gasparo_guia.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/grassi_misture.jpg" : {
+      "ft" : 16384,
+      "iS" : 424072,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/grassi_misture.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/grimes-2001.jpg" : {
       "ft" : 16384,
       "iS" : 51957,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/grimes-2001.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/grohusko_manual.jpg" : {
+      "ft" : 16384,
+      "iS" : 665969,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/grohusko_manual.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3397,6 +4849,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/jimmy_ciros.jpg" : {
+      "ft" : 16384,
+      "iS" : 572255,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/jimmy_ciros.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/johnson_1888.jpg" : {
+      "ft" : 16384,
+      "iS" : 423437,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/johnson_1888.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/johnson-1882.jpg" : {
       "ft" : 16384,
       "iS" : 102305,
@@ -3442,6 +4920,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/jones-bar-guide-1977.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/judge_how.jpg" : {
+      "ft" : 16384,
+      "iS" : 14249,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/judge_how.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3501,6 +4992,71 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/marco_how.jpg" : {
+      "ft" : 16384,
+      "iS" : 552745,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/marco_how.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/mario_playboy.jpg" : {
+      "ft" : 16384,
+      "iS" : 697768,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/mario_playboy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/mautone_bar.jpg" : {
+      "ft" : 16384,
+      "iS" : 382950,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/mautone_bar.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/mcbride_book.jpg" : {
+      "ft" : 16384,
+      "iS" : 454086,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/mcbride_book.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/mcelhone_barflies.jpg" : {
+      "ft" : 16384,
+      "iS" : 774660,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/mcelhone_barflies.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/mcelhone-1922.jpg" : {
       "ft" : 16384,
       "iS" : 108290,
@@ -3553,6 +5109,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/meehan_manual.jpg" : {
+      "ft" : 16384,
+      "iS" : 31590,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/meehan_manual.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/meehan-pdt-2011.jpg" : {
       "ft" : 16384,
       "iS" : 143858,
@@ -3598,6 +5167,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/muckensturm-1906.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/neirath_bar.jpg" : {
+      "ft" : 16384,
+      "iS" : 474750,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/neirath_bar.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3735,6 +5317,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/petraske_cocktails.jpg" : {
+      "ft" : 16384,
+      "iS" : 118566,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/petraske_cocktails.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/policastro-1955.jpg" : {
       "ft" : 16384,
       "iS" : 53010,
@@ -3800,6 +5395,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/requien_heure.jpg" : {
+      "ft" : 16384,
+      "iS" : 429793,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/requien_heure.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/ribalaigua_florida.jpg" : {
+      "ft" : 16384,
+      "iS" : 559559,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/ribalaigua_florida.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/rip_paris.jpg" : {
+      "ft" : 16384,
+      "iS" : 460766,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/rip_paris.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/rowley-lost-recipes-2015.jpg" : {
       "ft" : 16384,
       "iS" : 96971,
@@ -3819,6 +5453,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/sanchez-1948.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/sardi_guide.jpg" : {
+      "ft" : 16384,
+      "iS" : 48797,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/sardi_guide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/saucier_revised.jpg" : {
+      "ft" : 16384,
+      "iS" : 709273,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/saucier_revised.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3943,12 +5603,51 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/tl-images-canon\/simonson_proper.jpg" : {
+      "ft" : 16384,
+      "iS" : 299139,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/simonson_proper.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/simonson_proper.jpg .jpeg" : {
+      "ft" : 16384,
+      "iS" : 299139,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/simonson_proper.jpg .jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/tl-images-canon\/straub-1914.jpg" : {
       "ft" : 16384,
       "iS" : 62978,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/straub-1914.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/sun_article.jpg" : {
+      "ft" : 16384,
+      "iS" : 626931,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/sun_article.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3975,6 +5674,45 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/tl-images-canon\/tarling-royal-1937.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/terrington_cups.jpg" : {
+      "ft" : 16384,
+      "iS" : 1119761,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/terrington_cups.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/thomas_1876.jpg" : {
+      "ft" : 16384,
+      "iS" : 794294,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/thomas_1876.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/tl-images-canon\/thomas_1887.jpg" : {
+      "ft" : 16384,
+      "iS" : 714869,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/tl-images-canon\/thomas_1887.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -4254,6 +5992,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/tl-images-drinks\/timeline.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/tl-images-drinks\/timeline.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     }
   },
   "hooks" : [
@@ -4565,144 +6313,6 @@
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
-    "coffeeLintFlags2" : {
-      "arrow_spacing" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camel_case_classes" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "colon_assignment_spacing" : {
-        "active" : 0,
-        "flagValue" : 1
-      },
-      "cyclomatic_complexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "duplicate_key" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "ensure_comprehensions" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "indentation" : {
-        "active" : 1,
-        "flagValue" : 2
-      },
-      "line_endings" : {
-        "active" : 0,
-        "flagValue" : 0
-      },
-      "max_line_length" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "missing_fat_arrows" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newlines_after_classes" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "no_backticks" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_debugger" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_empty_functions" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_empty_param_list" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_implicit_braces" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_implicit_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_interpolation_in_single_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_nested_string_interpolation" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_private_function_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_stand_alone_at" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_tabs" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_throwing_strings" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_semicolons" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_whitespace" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_unnecessary_double_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_unnecessary_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "non_empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prefer_english_operator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "space_operators" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "spacing_after_comma" : {
-        "active" : 1,
-        "flagValue" : -1
-      }
-    },
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
@@ -5536,6 +7146,9 @@
       "prefer-numeric-literals" : {
         "active" : 0
       },
+      "prefer-object-has-own" : {
+        "active" : 0
+      },
       "prefer-object-spread" : {
         "active" : 0
       },
@@ -5568,7 +7181,8 @@
         "optionString" : "'always'"
       },
       "require-atomic-updates" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowProperties': false}"
       },
       "require-await" : {
         "active" : 0
@@ -5704,7 +7318,6 @@
       "minifierStyle" : 1,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
       "transpilerStyle" : 1
     },
     "languageDefaultsCSS" : {

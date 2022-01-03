@@ -117,6 +117,12 @@ header {
 div.content {
   background-color: #f5f4f1;
 }
+div.content ul {
+  margin-left: 1em;
+}
+div.content ul li {
+  list-style: square;
+}
 footer.footer {
   color: white;
   font-size: 80%;
@@ -163,45 +169,132 @@ figure figcaption {
   display: flex;
   flex-wrap: wrap;
 }
-.gridItem {
+.featureGrid .gridItem {
   width: 50%;
   color: gray;
 }
-.gridItem h3 {
+.featureGrid .gridItem h3 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
 }
-.gridItem .gridItemDesc {
+.featureGrid .gridItem .gridItemDesc {
   font-size: 14rem;
   padding: 0.25em 1em 1.75em 1em;
 }
-.gridItem a {
+.featureGrid .gridItem a {
   color: white;
 }
-@media only screen and (min-width: 700px) {
-  .gridItem {
+@media only screen and (max-width: 699px) {
+  .featureGrid :nth-child(n+5) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+  .featureGrid :nth-child(n+4) {
+    display: none;
+  }
+  .featureGrid .gridItem {
     width: 33.3333%;
   }
 }
-@media only screen and (min-width: 900px) {
-  .gridItem {
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .featureGrid :nth-child(n+5) {
+    display: none;
+  }
+  .featureGrid .gridItem {
     width: 25%;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .gridItem {
+@media only screen and (min-width: 1100px) and (max-width: 1314px) {
+  .featureGrid :nth-child(n+6) {
+    display: none;
+  }
+  .featureGrid .gridItem {
     width: 20%;
   }
 }
-@media only screen and (min-width: 1315px) {
-  .gridItem {
+@media only screen and (min-width: 1315px) and (max-width: 1414px) {
+  .featureGrid :nth-child(n+7) {
+    display: none;
+  }
+  .featureGrid .gridItem {
     width: 16.6666%;
   }
 }
 @media only screen and (min-width: 1415px) {
-  .gridItem {
+  .featureGrid :nth-child(n+8) {
+    display: none;
+  }
+  .featureGrid .gridItem {
     width: 14.2857%;
   }
+}
+.fullGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fullGrid .gridItem {
+  width: 50%;
+  color: gray;
+}
+.fullGrid .gridItem h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.fullGrid .gridItem .gridItemDesc {
+  font-size: 14rem;
+  padding: 0.25em 1em 1.75em 1em;
+}
+.fullGrid .gridItem a {
+  color: white;
+}
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+  .fullGrid .gridItem {
+    width: 33.3333%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .fullGrid .gridItem {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1314px) {
+  .fullGrid .gridItem {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1315px) and (max-width: 1414px) {
+  .fullGrid .gridItem {
+    width: 16.6666%;
+  }
+}
+@media only screen and (min-width: 1415px) {
+  .fullGrid .gridItem {
+    width: 14.2857%;
+  }
+}
+.exhibitGrid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40em;
+  margin: 0 auto;
+}
+.exhibitGrid .gridItem {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  color: gray;
+}
+.exhibitGrid .gridItem h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.exhibitGrid .gridItem .gridItemDesc {
+  font-size: 14rem;
+  padding: 0.25em 1em 1.75em 1em;
+}
+.exhibitGrid .gridItem a {
+  color: white;
 }
 main {
   padding-top: 1em;
@@ -260,5 +353,32 @@ section.bibliographicEntry .image {
 }
 section.bibliographicEntry .citation {
   margin-left: 0.5em;
+}
+.drinkSummaryEntry {
+  display: flex;
+}
+.drinkSummaryEntry .drinkicons {
+  display: flex;
+  flex: none;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #e0ddd3;
+  border-radius: 50px;
+  margin-right: 1em;
+  padding-bottom: 13px;
+}
+.drinkSummaryEntry .drinkicons img {
+  width: inherit;
+  height: auto;
+}
+.drinkSummaryEntry div.summary h3,
+.drinkSummaryEntry div.summary p {
+  margin: 0;
+}
+.drinkSummaryEntry div.summary p.summary {
+  font-style: italic;
+  color: gray;
 }
 /*# sourceMappingURL=main.css.map */
