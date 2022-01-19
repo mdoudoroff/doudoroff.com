@@ -44,9 +44,36 @@ td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { background-color: #eee; color: #666; }
+th { 
+	color: #666; position: sticky; top: 0px; 
+
+	background-color: rgba(200,200,200,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(200, 200, 200, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+
+}
 .notes { min-width: 15em; }
 .collapsed {display: none;}
+td.left { 
+	position: sticky; 
+	left: 0px; 
+	z-index: 1;
+
+	background-color: rgba(225,225,225,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(255, 255, 255, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+th.left {
+	position: sticky; 
+	left: 0px; 
+	z-index: 2;
+}
 
 nav {
 	background: #eef; 
@@ -102,13 +129,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-01-19 added Bastl 1983<br />
 2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
 2020-02-19 added Shakmat Bard Quartet<br />
 2020-02-19 added Tenderfoot Quad Quantizer<br />
+<span id="additionalUpdates" class="collapsed">
 2019-10-22 added Kassutronics Quantizer<br />
 2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />
-<span id="additionalUpdates" class="collapsed">
 2019-09-26 added more performance data from producers<br />
 2019-09-25 errata<br />
 2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
@@ -332,7 +360,9 @@ s += '<table>'
 
 for row in rows:
 
-	if rows.index(row)%5==0:
+	# if rows.index(row)%5==0:
+	# 	s += table_header_row
+	if rows.index(row)==0:
 		s += table_header_row
 
 	s += '\n<tr>'

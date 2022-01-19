@@ -36,9 +36,36 @@ td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { background-color: #eee; color: #666; }
+th { 
+	color: #666; position: sticky; top: 0px; 
+
+	background-color: rgba(200,200,200,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(200, 200, 200, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+
+}
 .notes { min-width: 15em; }
 .collapsed {display: none;}
+td.left { 
+	position: sticky; 
+	left: 0px; 
+	z-index: 1;
+
+	background-color: rgba(225,225,225,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(255, 255, 255, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+th.left {
+	position: sticky; 
+	left: 0px; 
+	z-index: 2;
+}
 
 nav {
 	background: #eef; 
@@ -94,13 +121,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-01-19 added Bastl 1983<br />
 2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
 2020-02-19 added Shakmat Bard Quartet<br />
 2020-02-19 added Tenderfoot Quad Quantizer<br />
+<span id="additionalUpdates" class="collapsed">
 2019-10-22 added Kassutronics Quantizer<br />
 2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />
-<span id="additionalUpdates" class="collapsed">
 2019-09-26 added more performance data from producers<br />
 2019-09-25 errata<br />
 2019-09-24 reworked transposition column, errata, first stab at accuracy column<br />
@@ -198,6 +226,24 @@ function toggleAdditionalUpdates()
 	<li> tuning mode</li>
 	</ul></td>
 </tr>
+<tr><td class="left"><strong>Bastl 1983</strong><br />2018<br /><small><br />7 HP<br /><a href="https://www.modulargrid.net/e/bastl-instruments-1983" target="_blank">Modular Grid &gt;</a><br /><a href="https://bastl-instruments.com/eurorack/modules/1983" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/bastl-1983.jpg"><img src="gfx/bastl-1983.jpg" style="width:35px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class="green">Yes</td>
+	<td class="red">???</td>
+	<td class="">4</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">Yes</td>
+	<td class=""></td>
+	<td class=""></td>
+	<td class="">equal temperament and just intonation, with some low level micro-tuning capabilities (see documentation)</td>
+	<td class=""></td>
+	<td class="">290</td>
+	<td class="notes"><ul>
+	<li>listen inputs enable the quantizer to keep four oscillators in tune</li>
+	<li> quad quantizer features are just one alternate mode for this MIDI-to-CV interface</li>
+	</ul></td>
+</tr>
 <tr><td class="left"><strong>Der Mann mit der Maschine DROID</strong><br />2020<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid" target="_blank">Modular Grid &gt;</a><br /><a href="https://shop.dermannmitdermaschine.de" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/droid.jpg"><img src="gfx/droid.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -230,7 +276,7 @@ function toggleAdditionalUpdates()
 	<td class="">160</td>
 	<td class="notes"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Erica Synths Pico Quant</strong><br />2018<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-quant" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-quant/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/erica-pico-quant.jpg"><img src="gfx/erica-pico-quant.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -325,7 +371,7 @@ function toggleAdditionalUpdates()
 	<li>intervals created automatically, manually, or with cv</li>
 	<li> analog slew per output</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Instruo Quad Performance Quantizer</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/instruo-qpq-quad-performance-quantizer-custom-shop" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-qpq.jpg"><img src="gfx/instruo-qpq.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">Discontinued</td>
@@ -410,7 +456,7 @@ function toggleAdditionalUpdates()
 	<td class="notes"><ul>
 	<li>cv controlled octave switcher</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Monome Crow</strong><br />2019<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/monome-crow" target="_blank">Modular Grid &gt;</a><br /><a href="https://monome.org/docs/crow/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/monome-crow.jpg"><img src="gfx/monome-crow.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
@@ -501,7 +547,7 @@ function toggleAdditionalUpdates()
 	<li> save/recall 80 states</li>
 	<li> per note micro-detuning feature</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Sonic Potions Penrose</strong><br />2015<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/sonic-potions-penrose-quantizer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.sonic-potions.com/penrose" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/sonic-potions-penrose.jpg"><img src="gfx/sonic-potions-penrose.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes (DIY)</td>
@@ -588,7 +634,7 @@ function toggleAdditionalUpdates()
 	<td class="">230</td>
 	<td class="notes"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Shipping</th><th class="">DAC resolution / nominal accuracy</th><th class="">Channels</th><th class="">Derived Parts</th><th class="">Triggered Quantization</th><th class="">Trigger Ouput</th><th class="">Input range</th><th class="">Output range</th><th class="">Scales</th><th class="">Transposition</th><th class="">Approx. Price (USD)</th><th class="notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Tubbutec uTune</strong><br />2017<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/tubbutec-µtune-" target="_blank">Modular Grid &gt;</a><br /><a href="https://tubbutec.de/µtune/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tubbute-utune.jpg"><img src="gfx/tubbute-utune.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="green">Yes</td>
