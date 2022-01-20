@@ -36,9 +36,36 @@ td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { background-color: #eee; color: #666; }
+th { 
+	color: #666; position: sticky; top: 0px; 
+
+	background-color: rgba(200,200,200,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(200, 200, 200, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+
+}
 .notes { min-width: 15em; }
 .collapsed {display: none;}
+td.left { 
+	position: sticky; 
+	left: 0px; 
+	z-index: 1;
+
+	background-color: rgba(225,225,225,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(255, 255, 255, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+th.left {
+	position: sticky; 
+	left: 0px; 
+	z-index: 2;
+}
 
 nav {
 	background: #eef; 
@@ -269,7 +296,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">99</td>
 	<td class="left"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Behringer System 55 – 960 Sequential Controller</strong><br />2019<br /><small><br /><a href="https://www.modulargrid.net/e/behringer-960-sequential-controller" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.behringer.com/behringer/product?modelCode=P0E2J" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/behringer-960.jpg"><img src="gfx/behringer-960.jpg" style="width:280px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""></td>
@@ -359,7 +386,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>analog</li>
 	<li> no built-in quantizer or storage</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Doepfer A-155</strong><br />2012<br /><small><br /><a href="https://www.modulargrid.net/e/doepfer-a-155" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/a155.htm" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/doepfer-A155.jpeg"><img src="gfx/doepfer-A155.jpeg" style="width:250px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=iwpwpb_XdGo" target="_blank">Raul’s video tutorial series</a></td>
@@ -457,7 +484,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> expander adds more track outs and gate outs</li>
 	<li> built-in Launchpad support</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Frap Tools USTA</strong><br />2019<br /><small><br /><a href="https://www.modulargrid.net/e/frap-tools-usta" target="_blank">Modular Grid &gt;</a><br /><a href="http://frap.tools/products/usta/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/frap-usta.jpg"><img src="gfx/frap-usta.jpg" style="width:180px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=29Ravc2M-Tk" target="_blank">Loopop video review</a><br /><br /><a href="https://www.youtube.com/watch?v=hKAzhn0aDVg" target="_blank">Baseput video series</a></td>
@@ -551,7 +578,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>eight subsequencers, probability and pitch manipulation features</li>
 	<li> gate expander</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Intellijel Tetrapad + Tete</strong><br />2019<br /><small><br /><a href="https://www.modulargrid.net/e/intellijel-tete-" target="_blank">Modular Grid &gt;</a><br /><a href="https://intellijel.com/shop/eurorack/tete/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/intellijel-tete-tetrapad.jpg"><img src="gfx/intellijel-tete-tetrapad.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=ii8uHzCgEdo" target="_blank">official walkthrough video</a></td>
@@ -645,7 +672,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> multiple clock inputs supports multi-axis sequencing</li>
 	<li> z-axis supports sequencing through states</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Malekko Heavy Industry Varigate 8+</strong><br />2016<br /><small><br /><a href="https://www.modulargrid.net/e/malekko-heavy-industry-varigate-8" target="_blank">Modular Grid &gt;</a><br /><a href="https://malekkoheavyindustry.com/product/varigate-8/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/varigate8plus.jpeg"><img src="gfx/varigate8plus.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=8Uk-mCEaxJ8" target="_blank">Daniel Dehaan video manual</a></td>
@@ -735,7 +762,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>additional outputs per track available with expander</li>
 	<li> reliant on external QWERTY keyboard for programming (included)</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Oakley Eight Stage Sequencer</strong><br />2019<br /><small><br /><a href="https://www.modulargrid.net/e/oakley-sequencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.oakleysound.com/sequencer-e.htm" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/oakley-8-stage.jpg"><img src="gfx/oakley-8-stage.jpg" style="width:250px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""></td>
@@ -822,7 +849,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="left"><ul>
 	<li>derives recursive, ephemeral, navigable melodic variations on a seed melodic pattern</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Qu-bit Octone</strong><br />2016<br /><small><br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-octone" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.qubitelectronix.com/shop/octone" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/octone.jpg"><img src="gfx/octone.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=-3A5KZ9QSOM" target="_blank">Datachrome video overview</a></td>
@@ -912,7 +939,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>extensive MIDI I/O features including recording</li>
 	<li> probability features</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Squarp Hermod Modular Brain</strong><br />2017<br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-hermod" target="_blank">Modular Grid &gt;</a><br /><a href="http://squarp.net/hermod" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/squarp-hermod.jpg"><img src="gfx/squarp-hermod.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=0miq5T0QEPY" target="_blank">Loopop video</a><br /><br /><a href="https://www.youtube.com/watch?v=lM-MsQ1L98U" target="_blank">Cuckoo video tutorial</a></td>
@@ -1005,7 +1032,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> modulation tracks</li>
 	<li> deep feature set</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Winter Modular Eloquencer</strong><br />2017<br /><small><br /><a href="https://www.modulargrid.net/e/winter-modular-eloquencer" target="_blank">Modular Grid &gt;</a><br /><a href="http://winter-modular.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/eloquencer.jpeg"><img src="gfx/eloquencer.jpeg" style="width:190px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=EPWf8bBOQXk" target="_blank">DivKid video</a><br /><br /><a href="https://www.youtube.com/watch?v=O0HiDEAZ2T4" target="_blank">Sonic Voltage in-depth video</a></td>
@@ -1104,7 +1131,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li> includes sample playback feature and synthesizer cartridge-based voice expanders</li>
 	<li> Launchpad and game controller support with expander</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Videos (to get you started)</th><th class="">Style</th><th class="">Steps (UI basis/max pattern length)</th><th class="">Tracks</th><th class="">Per track outs</th><th class="">Gate handling</th><th class="">Ratcheting/repeat</th><th class="">CV ins</th><th class="">HP</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>ZetaOhm FLXS1</strong><br />2017<br /><small><br /><a href="https://www.modulargrid.net/e/other-unknown-flxs1" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.zetaohm.com" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/flxs1.jpeg"><img src="gfx/flxs1.jpeg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class=""><a href="https://www.youtube.com/watch?v=I_xVhS483TM" target="_blank">official tutorial video</a></td>

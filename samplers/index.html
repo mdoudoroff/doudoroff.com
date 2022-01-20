@@ -36,9 +36,36 @@ td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
 td.left, th.left {text-align:left;}
 td.notes {text-align: left;}
 td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { background-color: #eee; color: #666; }
+th { 
+	color: #666; position: sticky; top: 0px; 
+
+	background-color: rgba(200,200,200,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(200, 200, 200, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+
+}
 .notes { min-width: 15em; }
 .collapsed {display: none;}
+td.left { 
+	position: sticky; 
+	left: 0px; 
+	z-index: 1;
+
+	background-color: rgba(225,225,225,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(255, 255, 255, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+th.left {
+	position: sticky; 
+	left: 0px; 
+	z-index: 2;
+}
 
 nav {
 	background: #eef; 
@@ -230,7 +257,7 @@ function toggleAdditionalUpdates()
 	<td class="">150</td>
 	<td class="left notes"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>4ms Stereo Triggered Sampler</strong><br />2015<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-stereo-triggered-sampler" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.4mscompany.com/sts.php" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/4ms-sts.jpg"><img src="gfx/4ms-sts.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -303,7 +330,7 @@ function toggleAdditionalUpdates()
 	<li>sample recording is not a primary function</li>
 	<li> includes sample content</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Expert Sleepers Disting mk4</strong><br />2017<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br /><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/expert-sleepers-disting-mk4.jpg"><img src="gfx/expert-sleepers-disting-mk4.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -380,7 +407,7 @@ function toggleAdditionalUpdates()
 	<li>real time granular processor that can freeze (and store and recall) its (short) buffer for use like a sampler</li>
 	<li> alternate modes (algorithms) and alternate firmware</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Grayscale Microcell</strong><br />2019<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/grayscale-microcell-ucell-µcell-micro-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br /><a href="https://grayscale.info/microcell/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/grayscale-microcell.jpg"><img src="gfx/grayscale-microcell.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
@@ -453,7 +480,7 @@ function toggleAdditionalUpdates()
 	<li>dual varispeed looper with one-shot mode</li>
 	<li> includes 2hp expander with additional CV ins (not shown)</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Make Noise Morphagene</strong><br />2017<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/make-noise-morphagene" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/modules/morphagene" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/make-noise-morphagene.jpg"><img src="gfx/make-noise-morphagene.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, granular</td>
@@ -521,7 +548,7 @@ function toggleAdditionalUpdates()
 	<td class="">600</td>
 	<td class="left notes"><ul>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Mungo s0 Sample/Slicer</strong><br />2015<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-s0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/s0.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mungo-s0.jpg"><img src="gfx/mungo-s0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, file player</td>
@@ -591,7 +618,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	<li>bandpass-filtered around human vocal frequencies</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Orthogonal Devices ER-301 Sound Computer</strong><br />2016<br /><small><br />30 HP<br /><a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.orthogonaldevices.com/er-301" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/od-er-301.jpg"><img src="gfx/od-er-301.jpg" style="width:150px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player, granular</td>
@@ -660,7 +687,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	<li>alternate firmware</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Rossum Electro-Music Assimil8or</strong><br />2017<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/rossum-electro-music-assimil8or" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rossum-electro.com/products/assimil8or/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/rossum-assimil8or.jpg"><img src="gfx/rossum-assimil8or.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -808,7 +835,7 @@ function toggleAdditionalUpdates()
 	<li>12-bit DAC</li>
 	<li> ships with sample content</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Erica Synths Pico Drums</strong><br />2016<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-drums" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-drums/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/erica-pico-drums.jpg"><img src="gfx/erica-pico-drums.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -878,7 +905,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	<li>designed to play long clips directly of microSD</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>Qu-bit Wave</strong><br />2016<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-wave" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/qubit-wave.jpg"><img src="gfx/qubit-wave.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
@@ -950,7 +977,7 @@ function toggleAdditionalUpdates()
 	<li>DC coupled (can play CV)</li>
 	<li>supports gated playback and looping</li>
 	</ul></td>
-</tr><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
+</tr>
 <tr><td class="left"><strong>vpme.de Quad Drum Voice</strong><br />2019<br /><small><br />22 HP<br /><a href="https://www.modulargrid.net/e/vpme-de-qd-quad-drum-voice" target="_blank">Modular Grid &gt;</a><br /><a href="http://vpme.de/qd/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/vpme-qd.jpg"><img src="gfx/vpme-qd.jpg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
