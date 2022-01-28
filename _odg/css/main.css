@@ -349,8 +349,10 @@ figure {
   }
 }
 figcaption {
+  margin-top: 0.5em;
   font-style: italic;
   text-align: center;
+  font-size: 15rem;
 }
 table {
   font-size: 13rem;
@@ -554,6 +556,49 @@ footer .contentWrapper {
 }
 @media screen and (min-width: 760px) {
   #mainMenu li {
+    line-height: 1;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+}
+#subnav {
+  display: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: none;
+}
+@media screen and (min-width: 760px) {
+  #subnav {
+    display: block;
+  }
+}
+.submenuContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#submenu-products {
+  display: none;
+  padding-bottom: 1em;
+}
+@media screen and (min-width: 760px) {
+  #submenu-products {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  #submenu-products a {
+    display: block;
+    padding: 0.5em 0;
+  }
+}
+#submenu-products li {
+  font-size: 15rem;
+  height: 35px;
+  line-height: 35px;
+}
+@media screen and (min-width: 760px) {
+  #submenu-products li {
     line-height: 1;
     display: block;
     height: auto;
