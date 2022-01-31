@@ -627,6 +627,10 @@ footer .contentWrapper {
     max-height: 600px;
   }
 }
+.byline {
+  font-size: 13rem;
+  font-style: italic;
+}
 .recipe {
   padding: 1em;
   background: #fad69f;
