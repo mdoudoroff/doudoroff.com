@@ -653,12 +653,12 @@
       "oAP" : "\/_ckl\/exh.essential-drinks.pina_colada.html",
       "oF" : 0
     },
-    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
+    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/_ckl\/exh.essential-drinks.piña_colada.html",
+      "oAP" : "\/_ckl\/exh.essential-drinks.piña_colada.html",
       "oF" : 0
     },
     "\/_ckl\/exh.essential-drinks.pisco_punch.html" : {
@@ -2076,6 +2076,134 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through B.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through B.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through C.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through C.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through G.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through G.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through J.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through J.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through M.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through M.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through P.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through P.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through S.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through S.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined progress through Z.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined progress through Z.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined-bak-211130-manually-edited.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined-bak-211130-manually-edited.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined-bak-211130.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined-bak-211130.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined-bak-20211122.ai" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined-bak-20211122.ai",
+      "oF" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined-last-known-good before linking work.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined-last-known-good before linking work.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
+    "\/_ckl\/tl-images-canon\/canon-combined.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_ckl\/tl-images-canon\/canon-combined.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
     },
     "\/_ckl\/tl-images-canon\/castellon-larousse-2004.jpg" : {
       "ft" : 16384,

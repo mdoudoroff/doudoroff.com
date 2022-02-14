@@ -93,7 +93,14 @@ p {
 p.breadcrumbs {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 11px;
-  padding: 0 1em;
+  max-width: 720px;
+  padding-top: 1em;
+  margin: 0 16px;
+}
+@media only screen and (min-width: 40em) {
+  p.breadcrumbs {
+    margin: 0 auto;
+  }
 }
 p.nutshell {
   font-weight: 900;
@@ -109,10 +116,10 @@ body {
   background-color: black;
 }
 header {
-  display: grid;
-  grid-template-columns: 40% 60%;
   position: relative;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 div.content {
   background-color: #f5f4f1;
@@ -131,6 +138,7 @@ footer.footer {
   padding-bottom: 2em;
 }
 nav {
+  display: none;
   position: relative;
   margin: 0.5em 0.5em;
 }
@@ -152,7 +160,7 @@ figure figcaption {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   width: 100%;
-  max-width: 350px;
+  max-width: 250px;
   justify-self: end;
 }
 #burger {
@@ -175,7 +183,6 @@ figure figcaption {
 }
 .featureGrid .gridItem h3 {
   margin-top: 0;
-  margin-bottom: 0;
 }
 .featureGrid .gridItem .gridItemDesc {
   font-size: 14rem;
@@ -273,16 +280,20 @@ figure figcaption {
     width: 14.2857%;
   }
 }
+.home h2 {
+  text-align: center;
+}
 .exhibitGrid {
   display: flex;
   flex-wrap: wrap;
-  max-width: 40em;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto 0 auto;
 }
 .exhibitGrid .gridItem {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 1em;
   color: gray;
 }
 .exhibitGrid .gridItem h3 {
@@ -291,18 +302,15 @@ figure figcaption {
 }
 .exhibitGrid .gridItem .gridItemDesc {
   font-size: 14rem;
-  padding: 0.25em 1em 1.75em 1em;
+  padding: 0.25em 0 1.75em 0;
 }
 .exhibitGrid .gridItem a {
   color: white;
 }
-main {
-  padding-top: 1em;
-}
 main section {
   font-family: Georgia;
   margin: 0 1em 0 1em;
-  max-width: 40em;
+  max-width: 720px;
   padding: 1em 0 1em 0;
 }
 @media only screen and (min-width: 40em) {
@@ -317,7 +325,6 @@ main footer.related {
 }
 main footer.related h2 {
   margin-top: 0;
-  margin-left: 1em;
 }
 main footer.related .container {
   margin: 0 1em 1em 1em;
