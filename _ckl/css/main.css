@@ -304,6 +304,11 @@ figure figcaption {
   font-size: 14rem;
   padding: 0.25em 0 1.75em 0;
 }
+@media only screen and (max-width: 600px) {
+  .exhibitGrid .gridItem .gridItemDesc {
+    padding: 0.25em 1em 1.75em 1em;
+  }
+}
 .exhibitGrid .gridItem a {
   color: white;
 }
@@ -387,5 +392,9 @@ section.bibliographicEntry .citation {
 .drinkSummaryEntry div.summary p.summary {
   font-style: italic;
   color: gray;
+}
+.drinkSummaryEntry div.summary p.citation {
+  margin-top: 0.2em;
+  font-size: 12rem;
 }
 /*# sourceMappingURL=main.css.map */
