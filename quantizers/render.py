@@ -129,6 +129,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-04-09 added Ladik Q-040 and Blue Lantern Quad Mk2<br />
 2022-01-20 added Flame Tame Machine (historical)<br />
 2022-01-19 added Bastl 1983<br />
 2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
