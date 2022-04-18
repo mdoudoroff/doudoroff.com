@@ -124,7 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>This document is an attempt to understand the <a href="http://www.whimsicalraps.com/pages/coldmac">Cold Mac</a> utility module for Eurorack synthesizers, designed and manufactured by Whimsical Raps. Please note: this is an unofficial, customer-generated document and may contain errors. The author will attempt to correct any errors as he becomes aware of them.</p>
 
-<p style="color: orange;">Note: In mid-2019, Whimsical Raps produced a remarkable new set of documentation for their modules, including a new guide for Cold Mac. You may still find my guide, below, to be helpful, and mine may be an easier-to-digest introdution, particularly with the video. But please don’t miss out on the new official documentation, which you can find here: <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac.pdf">PDF</a> and <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac-web.md">web</a>. Lots of great stuff in there.
+<p style="color: orange;">Note: In mid-2019, Whimsical Raps produced a remarkable new set of documentation for their modules, including a new guide for Cold Mac. You may still find my guide, below, to be helpful, and mine may be an easier-to-digest introduction, particularly with the video. But please don’t miss out on the new official documentation, which you can find here: <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac.pdf">PDF</a> and <a href="https://www.github.com/whimsicalraps/mannequins-technical-maps/blob/master/cold-mac/cold-mac-web.md">web</a>. Lots of great stuff in there.
 
 <p>A companion video is now available. The video is supplemental to this document—you may wish to watch it before or after reading further, or refer back to parts of the video, later.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A72eYNfxxRU" frameborder="0" allowfullscreen></iframe>
@@ -320,14 +320,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h2 id="follow"><span class="context green">SLOPE</span>Envelope follower</h2>
 
-<p>Patching CV (this one doesn’t do much with audio) into SLOPE will yield a slewed voltage out of FOLLOW that chases the <em>amplitude</em> of the signal at SLOPE. (This is a slewed version of the rectified signal, so you will only see positive voltages from FOLLOW.) The slew rate of this envelope follower is fixed, and the circuit is—according to the official documentation—based on the ARP 2600’s envelope follower.
+<p>Patching audio or CV into SLOPE will yield a slewed voltage out of FOLLOW that chases the <em>amplitude</em> of the signal at SLOPE. (This is a slewed version of the rectified signal, so you will only see positive voltages from FOLLOW.) The slew rate of this envelope follower is fixed, and the circuit is—according to the official documentation—based on the ARP 2600’s envelope follower.
 <img src="gfx/follow.jpg" /></p>
 
 
 
-<p>FOLLOW is ostensibly useful for deriving the CV for a sidechain patch. However, it may slew too slowly for ducking around percussion hits—your mileage may vary. (More full-featured envelope follower modules are available such as Steady State Fate’s DetectRx). In any case, FOLLOW is nice to have and can be handy as a general-purpose slew or envelope follower. Also, if you ping SLOPE with a trigger, you’ll get a simple envelope out of FOLLOW.</p>
+<p>FOLLOW is ostensibly useful for deriving the CV for a sidechain patch. However, it may slew too slowly for ducking around percussion hits—your mileage may vary. (Fully-featured envelope follower modules and parametric slews, such as Make Noise Maths, offer more flexibility). In any case, FOLLOW is nice to have and can be handy as a simple slew or envelope follower. Also, if you ping SLOPE with a trigger, you’ll get a simple envelope out of FOLLOW.</p>
 
-<p>Note that SLOPE is normaled to SURVEY, so if nothing is patched to SLOPE, the offset voltage from SURVEY will be processed the FOLLOW circuit. Indeed, one of the stated intentions for the FOLLOW circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
+<p>Note that SLOPE is normaled to SURVEY, so if nothing is patched to SLOPE, the offset voltage from SURVEY will be processed by the FOLLOW circuit. Indeed, one of the stated intentions for the FOLLOW circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
 
 
 
@@ -360,7 +360,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>Note that because CREASE is normaled to SLOPE, and SLOPE is normaled to SURVEY, with nothing patched to either SLOPE or CREASE, the offset voltage from SURVEY will be processed by the location integrator. Indeed, one of the stated intentions for the LOCATION circuit is to provide a “time variant” of SURVEY for patch surveillance (below).</p>
 
-<p>The maximum range of LOCATION seems to be about ±4.5v, but the actual range depends a bit on the CV you input. For example, if you hit it with ±5v, you’ll only see about a ±4.2v range from LOCATION. If you hit it with ±10v, you’ll see ±4.5v. Even with high voltage swings at the CREASE input, this integrator moves at a somewhat leisurely pace. For it to do much interesting, you generally need to be applying bipolar CV at CREASE, otherwise LOCATION will simply drift up and mostly stay there (although there may be some one-shot creative application for this). Moreover, if the CV you apply at CREASE is modulating in a more or less evenly balanced way between positive and negative (such as a typical LFO), then it’s going to even out at LOCATION and you might get something like a flatline. So, to creatively employ LOCATION, you probably need one of two things as a CV input:</p>
+<p>The maximum range of LOCATION seems to be about ±4.5v, but the actual range depends a bit on the CV you input. For example, if you hit it with ±5v, you’ll only see about a ±4.2v range from LOCATION. If you hit it with ±10v, you’ll see ±4.5v. Even with high voltage swings at the CREASE input, this integrator moves at a somewhat leisurely pace. For it to do much of interest, you generally need to be applying bipolar CV at CREASE, otherwise LOCATION will simply drift up and mostly stay there (although there may be some one-shot creative application for this). Moreover, if the CV you apply at CREASE is modulating in a more or less evenly balanced way between positive and negative (such as a typical LFO), then it’s going to even out at LOCATION and you might get something like a flatline. So, to creatively employ LOCATION, you probably need one of two things as a CV input:</p>
 
 <ul>
 	<li>a CV source that is normally sits at zero volts but sometimes goes positive or negative like steering corrections to a vehicle; a joystick could be one example, but the Survey knob itself is the most obvious</li>
@@ -528,7 +528,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 
 <h2 id="history">Revision History</h2>
-<p style="max-width: 100%;">Revision history:<br />2018-12-21 Added new Elements companion video<br />2018-12-18 Corrections<br />2018-12-03 Massive 2.0 rewrite<br />2018-10-13 Added overview and various other corrections and amplifications<br />2018-08-01 Added Nathan Moody’s helpful <em>Modular Patch Walkthrough 01</em> video (see bottom of page)<br />2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
+<p style="max-width: 100%;">Revision history:<br />2022-04-18 Errata<br />2018-12-21 Added new Elements companion video<br />2018-12-18 Corrections<br />2018-12-03 Massive 2.0 rewrite<br />2018-10-13 Added overview and various other corrections and amplifications<br />2018-08-01 Added Nathan Moody’s helpful <em>Modular Patch Walkthrough 01</em> video (see bottom of page)<br />2016-02-22 Added draft section on signal inversion and offset<br />2015-10-04 Added video links section, table of contents<br />2015-09-24 LFO CV visualization and clarification re: normals<br />2015-09-23 correction<br />2015-09-22 nomenclature section & edits<br />2015-09-21 corrections, normalized connections summary & logical crossfade<br />2015-09-20 first draft</p>
 
 
 <p style="text-align:center;">• • •</p>
