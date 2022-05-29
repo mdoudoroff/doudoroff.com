@@ -127,6 +127,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-05-29 added ADDAC112 and Miso Cornflakes<br />
 2021-07-28 added Endorphin.es Two of Cups<br />
 2020-06-04 added 2hp Loop; additional updates<br />
 2020-04-25 added Bitbox Mk2 and Bitbox Micro<br />
@@ -196,6 +197,7 @@ html_bottom = '''
 <li><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay">4ms Dual Looping Delay</a> (delay with some sampler-esque capabilities)</li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
 <li><a href="https://www.modulargrid.net/e/alyseum-record">Alyseum Record</a></li>
+<li><a href="https://www.modulargrid.net/e/patching-panda-ephemere-silver-panel">Patching Panda Ephemere (cv recorder)</a></li>
 </ul>
 
 <h2>Non-modular alternatives</h2>
@@ -204,6 +206,7 @@ html_bottom = '''
 <li><a href="https://www.elektron.se/products/digitakt/">Elektron Digitakt</a></li>
 <li><a href="https://www.elektron.se/products/octatrack-mkii/">Elektron Octatrack MKII</a></li>
 <li><a href="https://synthstrom.com/product/deluge/">Synthstrom Deluge</a></li>
+<li><a href="https://www.tastychips.nl/product/gr-1-granular-synthesizer/">Tasty Chips GR-1</a></li>
 <li><a href="https://teenage.engineering/products/op-1">Teenage Engineering OP-1</a></li>
 <li><a href="https://teenage.engineering/products/op-z">Teenage Engineering OP-Z</a></li>
 <li><a href="https://teenage.engineering/products/po">Teenage Engineering PO-33</a></li>
