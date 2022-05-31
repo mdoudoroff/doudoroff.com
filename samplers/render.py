@@ -127,6 +127,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-05-31 minor updates<br />
 2022-05-29 added ADDAC112 and Miso Cornflakes<br />
 2021-07-28 added Endorphin.es Two of Cups<br />
 2020-06-04 added 2hp Loop; additional updates<br />
