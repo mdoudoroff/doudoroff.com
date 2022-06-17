@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-06-17 added Modbap Transit; misc updates<br />
 2021-12-01 added EMW 8-channel and updated Frap CGM<br />
 2021-08-19 added Toppobrillo MiniMix<br />
 2021-07-10 added Happy Nerding 4x Stereo Mixer<br />
