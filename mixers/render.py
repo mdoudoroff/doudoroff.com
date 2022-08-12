@@ -124,16 +124,17 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-06-17 added added ADDAC713<br />
 2022-06-17 added Modbap Transit; misc updates<br />
 2021-12-01 added EMW 8-channel and updated Frap CGM<br />
 2021-08-19 added Toppobrillo MiniMix<br />
 2021-07-10 added Happy Nerding 4x Stereo Mixer<br />
+<span id="additionalUpdates" class="collapsed">
 2021-06-05 added Modulaire Maritime Victor Alpha 2 &amp; Feedback Mix BX<br />
 2020-03-20 added Blood Cells Audio D.O.Mixx<br />
 2020-01-11 small updates<br />
 2020-11-24 added Frap Tools QSC<br />
 2020-11-09 added SSF Vortices<br />
-<span id="additionalUpdates" class="collapsed">
 2020-10-30 added Endorphin.es Cockpit 2<br />
 2020-08-02 added Make Noise XOH<br />
 2020-08-01 added Ladik M-610<br />
