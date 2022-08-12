@@ -87,7 +87,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>With no external inputs, each of the outputs (except MAC) emits CV according to the position of SURVEY as indicated by the little graphs by the jacks.</p>
 
-<p>Indeed, if you patch a simple rising ramp LFO (or any other wave shape) into the SURVEY jack, you’ll derive eight distinct LFO responses from the eight outputs (thanks <a href="https://www.muffwiggler.com/forum/viewtopic.php?p=2926800#2926800">Sunden</a>) that are potentially useful.</p>
+<p>Indeed, if you patch a simple rising ramp LFO (or any other wave shape) into the SURVEY jack, you’ll derive eight distinct LFO responses from the eight outputs (thanks <a href="https://www.modwiggler.com/forum/viewtopic.php?p=2926800#2926800">Sunden</a>) that are potentially useful.</p>
 
 <img src="gfx/10-surveillance.jpg" />
 
