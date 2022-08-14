@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-08-14 added NoisyFruitsLab 8CHAN<br />
 2022-08-12 added added ADDAC713<br />
 2022-06-17 added Modbap Transit; misc updates<br />
 2021-12-01 added EMW 8-channel and updated Frap CGM<br />
