@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34418",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -5642,6 +5642,216 @@
       "sI" : 0,
       "sU" : 0
     },
+    "\/logic\/__pycache__\/recipes.cpython-310.pyc" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/__pycache__\/recipes.cpython-310.pyc",
+      "oF" : 0
+    },
+    "\/logic\/_recipes\/combine gate streams for expressive ADSR variation.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/combine gate streams for expressive ADSR variation-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/combine gate streams for expressive ADSR variation.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/logic\/_recipes\/combine gate streams for expressive ADSR variation.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/derive accent pattern from two euclidean patterns.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/derive accent pattern from two euclidean patterns-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/derive accent pattern from two euclidean patterns.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/logic\/_recipes\/derive accent pattern from two euclidean patterns.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/mix logic outputs to create melodies.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/mix logic outputs to create melodies-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/mix logic outputs to create melodies.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/logic\/_recipes\/mix logic outputs to create melodies.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/quantize triggers.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/quantize triggers-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/quantize triggers.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/logic\/_recipes\/quantize triggers.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/.python-version" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/.python-version",
+      "oF" : 0
+    },
+    "\/logic\/dk01-combine_gate_streams_for_expressive_adsr_variation.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk01-combine_gate_streams_for_expressive_adsr_variation.html",
+      "oF" : 0
+    },
+    "\/logic\/dk02-quantize_triggers_and_short_pulses_to_a_rhythm.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk02-quantize_triggers_and_short_pulses_to_a_rhythm.html",
+      "oF" : 0
+    },
+    "\/logic\/dk03-mix_logic_outputs_to_create_melodies.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk03-mix_logic_outputs_to_create_melodies.html",
+      "oF" : 0
+    },
+    "\/logic\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/index.html",
+      "oF" : 0
+    },
+    "\/logic\/jquery.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/logic\/min\/jquery.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/logic\/keywords.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/keywords-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/mm01-derive_accent_pattern_from_two_euclidean_patterns.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/mm01-derive_accent_pattern_from_two_euclidean_patterns.html",
+      "oF" : 0
+    },
+    "\/logic\/recipeindex.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/logic\/min\/recipeindex-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/logic\/recipes.py" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/recipes.py",
+      "oF" : 0
+    },
+    "\/logic\/render.py" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/render.py",
+      "oF" : 0
+    },
     "\/martin.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8545,7 +8755,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -9173,6 +9384,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 0,
       "removeComments" : 0,
