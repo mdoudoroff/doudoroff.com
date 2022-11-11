@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-11-11 added Cosmotronic Cosmix Pro, Noise Engineering Xer Dualis, and Feedback Mix Mix<br />
 2022-08-27 added Sebsongs ST Mixer<br />
 2022-08-27 added D&D Wire Station<br />
 2022-08-14 added NoisyFruitsLab 8CHAN<br />
