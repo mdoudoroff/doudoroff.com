@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2022-11-30 added ALM Mega Tang and G-Storm Electro Influx<br />
 2022-11-23 added Instruo cárn and Uraltone Tube Sounding Micro Mixer<br />
 2022-11-11 added Cosmotronic Cosmix Pro, Noise Engineering Xer Dualis, and Feedback Mix Mix<br />
 2022-08-27 added Sebsongs ST Mixer<br />
