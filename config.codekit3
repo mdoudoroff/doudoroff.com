@@ -5068,6 +5068,43 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/egypt\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/egypt\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/egypt\/gfx" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/egypt\/gfx",
+      "oF" : 0
+    },
+    "\/egypt\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/egypt\/index.html",
+      "oF" : 0
+    },
+    "\/egypt\/js\/script.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/egypt\/js\/min\/script-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/fonts\/427083\/0B611C5C735FD05A5.css" : {
       "aP" : 1,
       "bl" : 0,

@@ -1,0 +1,17 @@
+
+html {
+	background-color: #ddd;
+	font-family: georgia;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 960px;
+
+	background-color: #ddd;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
