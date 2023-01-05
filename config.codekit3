@@ -653,7 +653,7 @@
       "oAP" : "\/_ckl\/exh.essential-drinks.pina_colada.html",
       "oF" : 0
     },
-    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
+    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
@@ -5065,6 +5065,18 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/egypt\/css\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/egypt\/css\/style-min-min.css",
       "oF" : 0,
       "pg" : 0
     },
