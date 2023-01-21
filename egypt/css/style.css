@@ -1,6 +1,6 @@
 
 html {
-	background-color: #ddd;
+	background-color: #eee;
 	font-family: georgia;
 }
 
@@ -8,7 +8,11 @@ body {
 	margin: 0 auto;
 	max-width: 960px;
 
-	background-color: #ddd;
+	background-color: #eee;
+}
+
+h1, h2, h3 {
+	font-family: sans-serif;
 }
 
 img {
