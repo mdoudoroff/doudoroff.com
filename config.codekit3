@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34448",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -653,7 +653,7 @@
       "oAP" : "\/_ckl\/exh.essential-drinks.pina_colada.html",
       "oF" : 0
     },
-    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
+    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
@@ -5699,6 +5699,60 @@
       "oAP" : "\/logic\/__pycache__\/recipes.cpython-310.pyc",
       "oF" : 0
     },
+    "\/logic\/_recipes\/block one thing from happening when another is happening.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/block one thing from happening when another is happening-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/block one thing from happening when another is happening.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/block one thing from happening when another is happening.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/chop up a rhythm with a gate stream.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/chop up a rhythm with a gate stream-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/chop up a rhythm with a gate stream.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/chop up a rhythm with a gate stream.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/logic\/_recipes\/combine gate streams for expressive ADSR variation.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -5716,8 +5770,35 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/logic\/_recipes\/combine gate streams for expressive ADSR variation.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/combine waveshapes.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/combine waveshapes-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/combine waveshapes.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/combine waveshapes.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -5743,8 +5824,170 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/logic\/_recipes\/derive accent pattern from two euclidean patterns.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/derive third rhythm from two.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/derive third rhythm from two-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/derive third rhythm from two.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/derive third rhythm from two.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/gate high on release phase of envelope.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/gate high on release phase of envelope-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/gate high on release phase of envelope.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/gate high on release phase of envelope.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/half-wave rectification.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/half-wave rectification-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/half-wave rectification.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/half-wave rectification.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/limit events based on pitch or velocity threshold.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/limit events based on pitch or velocity threshold-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/limit events based on pitch or velocity threshold.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/limit events based on pitch or velocity threshold.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/merge triggers and gates with retriggering.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/merge triggers and gates with retriggering-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/merge triggers and gates with retriggering.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/merge triggers and gates with retriggering.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/merge triggers and gates.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/merge triggers and gates-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/merge triggers and gates.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/merge triggers and gates.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -5770,9 +6013,63 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/logic\/_recipes\/mix logic outputs to create melodies.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/offbeat from not-nor.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/offbeat from not-nor-min.json",
       "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/offbeat from not-nor.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/offbeat from not-nor.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/probabilty-based events per note.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/probabilty-based events per note-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/probabilty-based events per note.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/probabilty-based events per note.html",
+      "oF" : 1,
       "oFM" : 0,
       "oS" : 0,
       "pHT" : 0,
@@ -5797,8 +6094,143 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/logic\/_recipes\/quantize triggers.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/shifting rhythms from unsynced lfos.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/shifting rhythms from unsynced lfos-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/shifting rhythms from unsynced lfos.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/shifting rhythms from unsynced lfos.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/square wave ring modulation.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/square wave ring modulation-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/square wave ring modulation.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/square wave ring modulation.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/target start or end of note.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/target start or end of note-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/target start or end of note.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/target start or end of note.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/turn anything into a gate stream.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/turn anything into a gate stream-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/turn anything into a gate stream.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/turn anything into a gate stream.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/turn drum fills on and off.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/turn drum fills on and off-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/turn drum fills on and off.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/turn drum fills on and off.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -5839,6 +6271,92 @@
       "oAP" : "\/logic\/dk03-mix_logic_outputs_to_create_melodies.html",
       "oF" : 0
     },
+    "\/logic\/dk04-off-beat_from_nornot.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk04-off-beat_from_nornot.html",
+      "oF" : 0
+    },
+    "\/logic\/dk04-trigger_or_gate_off-beat_from_nornot.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk04-trigger_or_gate_off-beat_from_nornot.html",
+      "oF" : 0
+    },
+    "\/logic\/dk05-derive_third_rhythmic_pattern_from_two_existing_patterns.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk05-derive_third_rhythmic_pattern_from_two_existing_patterns.html",
+      "oF" : 0
+    },
+    "\/logic\/dk06-chop_up_a_rhythm_with_a_gate_stream.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk06-chop_up_a_rhythm_with_a_gate_stream.html",
+      "oF" : 0
+    },
+    "\/logic\/dk07-shifting_rhythms_from_unsynced_lfos.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk07-shifting_rhythms_from_unsynced_lfos.html",
+      "oF" : 0
+    },
+    "\/logic\/dk08-square_wave_ring_modulation.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk08-square_wave_ring_modulation.html",
+      "oF" : 0
+    },
+    "\/logic\/dk09-turn_drum_fills_on_and_off.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk09-turn_drum_fills_on_and_off.html",
+      "oF" : 0
+    },
+    "\/logic\/dk10-merge_triggers_and_gates.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk10-merge_triggers_and_gates.html",
+      "oF" : 0
+    },
+    "\/logic\/dk11-turn_anything_into_a_gate_stream.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk11-turn_anything_into_a_gate_stream.html",
+      "oF" : 0
+    },
+    "\/logic\/dk12-block_one_thing_from_happening_when_another_is_happening.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dk12-block_one_thing_from_happening_when_another_is_happening.html",
+      "oF" : 0
+    },
+    "\/logic\/images" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/logic\/images",
+      "oF" : 0
+    },
     "\/logic\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -5865,6 +6383,89 @@
       "oF" : 0,
       "oO" : 0,
       "oS" : 1
+    },
+    "\/logic\/kl01-merge_triggers_and_gates_with_retriggering.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/kl01-merge_triggers_and_gates_with_retriggering.html",
+      "oF" : 0
+    },
+    "\/logic\/md01-gate_high_on_release_phase_of_envelope.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md01-gate_high_on_release_phase_of_envelope.html",
+      "oF" : 0
+    },
+    "\/logic\/md01-modulate_during_the_release_phase_of_envelope.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md01-modulate_during_the_release_phase_of_envelope.html",
+      "oF" : 0
+    },
+    "\/logic\/md02-per-note_modulation_based_on_probability.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md02-per-note_modulation_based_on_probability.html",
+      "oF" : 0
+    },
+    "\/logic\/md03-event_at_start_andor_end_of_note.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md03-event_at_start_andor_end_of_note.html",
+      "oF" : 0
+    },
+    "\/logic\/md04-limit_note_events_by_pitch_or_velocity.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md04-limit_note_events_by_pitch_or_velocity.html",
+      "oF" : 0
+    },
+    "\/logic\/md04-threshold_events_based_on_pitch_or_velocity.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md04-threshold_events_based_on_pitch_or_velocity.html",
+      "oF" : 0
+    },
+    "\/logic\/md05-half-wave_rectification.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md05-half-wave_rectification.html",
+      "oF" : 0
+    },
+    "\/logic\/md06-combine_two_waveshapes.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/md06-combine_two_waveshapes.html",
+      "oF" : 0
+    },
+    "\/logic\/min\/recipeindex-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/logic\/min\/min\/recipeindex-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/logic\/mm01-derive_accent_pattern_from_two_euclidean_patterns.html" : {
       "cB" : 0,
@@ -8464,6 +9065,10 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
+      "logical-assignment-operators" : {
+        "active" : 0,
+        "optionString" : "'always',  {'enforceForIfStatements': false}"
+      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "1"
@@ -8624,6 +9229,9 @@
       "no-empty-pattern" : {
         "active" : 1
       },
+      "no-empty-static-block" : {
+        "active" : 0
+      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -8762,6 +9370,9 @@
         "active" : 0
       },
       "no-new-func" : {
+        "active" : 0
+      },
+      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {
@@ -9325,7 +9936,7 @@
       "strictUnits" : 0
     },
     "languageDefaultsMARKDOWN" : {
-      "autoOutputAction" : 0,
+      "autoOutputAction" : 1,
       "autoOutputPathFilenamePattern" : "*.html",
       "autoOutputPathRelativePath" : "",
       "autoOutputPathReplace1" : "",
@@ -9578,7 +10189,7 @@
       },
       "comments" : {
         "active" : 0,
-        "flagValue" : -1
+        "flagValue" : 1
       },
       "comparisons" : {
         "active" : 1,
