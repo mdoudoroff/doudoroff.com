@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<title>TTOL MAP TEST</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+		<script>
+		var mapItems = [{"pos": [40.7260499366919, -73.98461300592663], "cap": "<strong>Death & Co.</strong> (2007\u2013)", "type": "Bar", "status": "extant"}, {"pos": [36.134265500069986, -115.16757180980264], "cap": "<strong>Aku-Aku (Stardust Hotel)</strong> (1960\u20131980)", "type": "Bar", "status": "ghost"}, {"pos": [40.755083888156285, -73.97299353392262], "cap": "<strong>Hawaiian Room</strong> (1937\u20131966)<br />Was in the Lexington Hotel\n", "type": "Bar", "status": "artifact"}, {"pos": [39.9725, -82.904722], "cap": "<strong>Kahiki</strong> (1961\u20132000)", "type": "Residence", "status": "ghost"}, {"pos": [33.74904237771687, -118.11303436684997], "cap": "<strong>Hukilau Room (Captain\u2019s Inn)</strong> (1957\u20131975)", "type": "Bar", "status": "artifact"}, {"pos": [18.510423, -77.903077], "cap": "<strong>Bay Roc Hotel</strong> (1953\u20131981)", "type": "Hotel", "status": "ghost"}, {"pos": [32.786143367909844, -79.93693202697158], "cap": "<strong>Francis Marion Hotel</strong> (1924\u2013)", "type": "Hotel", "status": "extant"}, {"pos": [37.84835925364107, -122.28518323535849], "cap": "<strong>Trader Vic\u2019s (Oakland)</strong> (1937\u20131972)", "type": "Bar", "status": "ghost"}, {"pos": [41.89987675707975, -87.62394656762922], "cap": "<strong>Don the Beachcomber\u2019s (Chicago)</strong> (1940\u2013)", "type": "Bar", "status": "ghost"}, {"pos": [32.71946952546092, -117.22041228446935], "cap": "<strong>Bali Hai</strong> (1954\u2013)", "type": "Bar", "status": "extant"}, {"pos": [29.953835808820912, -90.06512336874506], "cap": "<strong>Beachbum Berry\u2019s Latitude 29</strong> (2014\u2013)", "type": "Bar", "status": "extant"}, {"pos": [21.282525252594215, -157.83756540724931], "cap": "<strong>Hilton Hawaiian Village</strong> (1955\u2013)", "type": "Hotel", "status": "extant"}, {"pos": [47.620614732261046, -122.34923448030239], "cap": "<strong>Eye of the Needle (Seattle)</strong> (1962\u20132000)", "type": "Restaurant", "status": "artifact"}, {"pos": [18.463889, -66.085], "cap": "<strong>Caribe Hilton</strong> (1949\u2013)", "type": "Hotel", "status": "extant"}, {"pos": [34.103195801560666, -118.33754210998869], "cap": "<strong>Don the Beachcomber\u2019s (Hollywood)</strong> (1933\u2013)", "type": "Bar", "status": "ghost"}, {"pos": [18.529444, -72.3375], "cap": "<strong>Grand Hotel Oloffson</strong> (1935\u2013)", "type": "Hotel", "status": "extant"}, {"pos": [34.06976392049492, -118.40382272482529], "cap": "<strong>Luau</strong> (1953\u20131979)", "type": "Restaurant", "status": "ghost"}, {"pos": [22.217113, -159.497376], "cap": "<strong>House of Happy Talk (Hanalei Plantation)</strong> (1961\u20131979)", "type": "Bar", "status": "ghost"}, {"pos": [33.837542026197234, -116.54693372350259], "cap": "<strong>Don the Beachcomber\u2019s (Palm Springs)</strong> (1953\u2013)", "type": "Bar", "status": "artifact"}, {"pos": [23.139499, -82.35803], "cap": "<strong>Sloppy Joe\u2019s</strong> (1934\u2013)", "type": "Bar", "status": "extant"}, {"pos": [20.005416, -155.823727], "cap": "<strong>Batiki Bar (Mauna Kea Beach Hotel)</strong> (1965\u2013)", "type": "Hotel", "status": "extant"}, {"pos": [21.277542109231852, -157.83193424307038], "cap": "<strong>House Without a Key (Halekulani Hotel)</strong> (1917\u2013)", "type": "Bar", "status": "extant"}, {"pos": [26.172672198659633, -80.11988261091838], "cap": "<strong>Mai-Kai</strong> (1956\u2013)", "type": "Restaurant", "status": "extant"}, {"pos": [23.137317, -82.357324], "cap": "<strong>Bar La Florida/El Floridita</strong> (1918\u2013)<br />Opened 1817 as La Pi\u00f1a de Plata; became La Florida around 1916\n", "type": "Bar", "status": "extant"}, {"pos": [34.059646, -118.297101], "cap": "<strong>Cocoanut Grove (Ambassador Hotel)</strong> (1921\u20131989)", "type": "Bar", "status": "ghost"}, {"pos": [40.72713274349124, -73.98384332656862], "cap": "<strong>PDT</strong> (2007\u2013)", "type": "Bar", "status": "extant"}, {"pos": [40.76184907242926, -73.98366061808768], "cap": "<strong>Hawaii Kai</strong> (1962\u20131989)<br />Above the Winter Garden Theater; b\t\tegan as Monte Proser's Beachcomber (a ripoff of Don the Beachcombers) in the 1940s\n", "type": "Bar", "status": "artifact"}, {"pos": [18.443402219447126, -64.76377963917663], "cap": "<strong>Soggy Dollar Bar</strong> (1971\u2013)", "type": "Bar", "status": "extant"}, {"pos": [34.097688366144155, -118.28586812156675], "cap": "<strong>Tiki-Ti</strong> (1961\u2013)", "type": "Bar", "status": "extant"}, {"pos": [34.152029, -118.345409], "cap": "<strong>China Trader</strong> (\u2013)", "type": "Bar", "status": "ghost"}, {"pos": [30.032, -90.062], "cap": "<strong>Bali Ha\u2019i At The Beach</strong> (1958\u20131983)", "type": "Bar", "status": "ghost"}];
+		</script>
+
+		<style>
+			#centerButton {
+				position: absolute;
+				top: 80px;
+				left: 10px;
+				width: 34px;
+				height: 34px;
+				padding: 4px;
+				z-index: 4000;
+				border: 2px solid rgb(0,0,0,0.2);
+				background: white;
+				border-radius: 2px;
+			}
+		</style>
+
+	</head>
+	<body>    
+		<div id="map" style="height: 100vh; width: 100vw;">
+
+		<button id="centerButton"><img src="gfx/button-location.png" width="20" height="20" /></button>
+
+		</div>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
