@@ -125,13 +125,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-02-22 added ALM ASQ-1<br />
 2022-03-23 added various new sequencers to lists at bottom<br />
 2021-06-01 added XAOC Moskwa II<br />
+<span id="additionalUpdates" class="collapsed">
 2021-05-15 errata<br />
 2021-05-14 misc updates, added videos column<br />
 2021-04-08 errata<br />
 2021-02-15 added Intellijel Metropolix<br />
-<span id="additionalUpdates" class="collapsed">
 2021-01-23 minor updates<br />
 2021-01-03 added Intellijel Tete+Tetrapad<br />
 2020-12-19 added D&D Modules Heaven 16<br />
