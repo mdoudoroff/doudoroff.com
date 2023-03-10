@@ -1,0 +1,185 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A Logic Cookbook for Synthesis</title>
+</head>
+<style>
+body {
+	max-width: 1600px;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+p, li {
+	max-width: 40rem;
+	line-height: 1.4;
+}
+.updates {
+	font-size: 85%;
+	font-family: monospace;
+}
+a {text-decoration:none;}
+a:hover {color:red;text-decoration:underline;}
+a:visited {color:blue;}
+img {
+	width: 100%;
+	margin: 1em 0;
+}
+.main {	padding: 1em; }
+.red {color:red;}
+.green {color:green;}
+.gray {color:gray;}
+table {border-collapse: collapse;font-size: 85%;}
+td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+td.left, th.left {text-align:left;}
+td.notes {text-align: left;}
+td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+th { 
+	color: #666; position: sticky; top: 0px; 
+
+	background-color: rgba(200,200,200,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(200, 200, 200, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+
+}
+.notes { min-width: 15em; }
+.collapsed {display: none;}
+td.left { 
+	position: sticky; 
+	left: 0px; 
+	z-index: 1;
+
+	background-color: rgba(225,225,225,0.9);
+	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+		background-color: rgba(255, 255, 255, .5);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+th.left {
+	position: sticky; 
+	left: 0px; 
+	z-index: 2;
+}
+
+nav {
+	background: #eef; 
+	padding: 0.5em 1em;
+	font-family: Helvetica, sans-serif;
+	border-bottom: 2px solid #666;
+	}
+nav div.navrail { display: flex; }
+nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+span.kw_cat, span.kw_fn {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 12px;
+	background-color: #ddf;
+	padding: 2px 0.5em;
+	border-radius: 12px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a span.kw_cat:hover, a span.kw_fn:hover {
+	color: red;
+	background-color: #fdd;
+}
+
+div.entry {
+	border-bottom: 1px solid #eee;
+	padding: 0.5em 0;
+	max-width: 640px;
+}
+
+p.principle {
+	font-style: italic;
+	color: #FF5F52;
+}
+
+@media (max-width: 450px) {
+	.main { padding: 1em 0.5em; }
+	nav { padding: 0.25 0.5em; }
+}
+
+#recipefilters {
+	display: flex;
+}
+
+fieldset {
+	border: none;
+	border-radius: 12px;
+}
+
+
+
+.category { background-color: #AEFCD0; }
+span.category { background-color: #AEFCD0; }
+.category.cv {}
+.category.audio {}
+.function { background-color: #FFD996; }
+span.function { background-color: #FFD996; }
+
+
+
+</style>
+<body>
+
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="main">
+<p><strong><a href="index.html">A Logic Cookbook for Synthesis</a></strong></p>
+<article class="cat_cv cat_binary cat_rhythm fn_and fn_or fn_xor fn_nand fn_nor fn_xnor fn_not">
+<h1>Shifting rhythms from unsynced LFOs</h1>
+<small>Attibution: DivKid</small>
+<p class="principle">Boolean logic can react to bipolar variable signals</p>
+<p>If you feed two unsynced LFOs (works best with bipolar LFOs) into logic circuits, you will derive diverse, inconsistent clocks and “rhythms” from different logic circuit outputs. Experiment.</p>
+<p>Example:</p>
+<ul>
+<li>patch two biplar LFOs to the inputs on a logic module</li>
+<li>experiment with the outputs</li>
+</ul>
+<p>Video example (begins at 11:38):</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3y6uRCM-fdE?start=698" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
+</body>
+</html>
