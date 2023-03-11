@@ -1,0 +1,16 @@
+{
+    "rID": "Sm9kwbcS",
+    "title": "Square wave ring modulation",
+    "principle": "XOR logic will combine two square waves in a way that emphasizes their differences",
+    "attribution": "DivKid",
+    "categories": [
+        "audio",
+        "binary",
+        "distortion"
+    ],
+    "functions": [
+        "xor"
+    ],
+    "modules": [],
+    "createtime": 1676207331.447563
+}

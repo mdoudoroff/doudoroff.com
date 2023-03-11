@@ -1,0 +1,16 @@
+{
+    "rID": "XHhPiQyS",
+    "title": "Derive third rhythmic pattern from two existing patterns",
+    "principle": "An AND circuit will only go high if all its inputs are high.",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "and"
+    ],
+    "modules": [],
+    "createtime": 1676207331.447366
+}

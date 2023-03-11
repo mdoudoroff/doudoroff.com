@@ -1,0 +1,17 @@
+{
+    "rID": "Lp74uHjL",
+    "title": "Half-wave rectification",
+    "principle": "OR analog logic will pass the highest positive voltage",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "audio",
+        "cv",
+        "analog",
+        "distortion"
+    ],
+    "functions": [
+        "max"
+    ],
+    "modules": [],
+    "createtime": 1676207331.446157
+}

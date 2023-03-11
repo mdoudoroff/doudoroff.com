@@ -1,0 +1,17 @@
+{
+    "rID": "RBziErtf",
+    "title": "Off-beat from NOR/NOT",
+    "principle": "The NOR and NOT logic outputs are high when all other signals are low",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "nor",
+        "not"
+    ],
+    "modules": [],
+    "createtime": 1676207331.4468858
+}

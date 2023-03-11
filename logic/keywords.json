@@ -1,0 +1,34 @@
+{
+	"categories": {
+		"cv": "CV",
+		"audio": "audio",
+
+		"binary": "binary/“digital” logic",
+		"analog": "variable/“analog” logic",
+
+		"rhythm": "rhythm creation",
+		"envelopes": "gating envelopes (ADSR)",
+		"distortion": "distortion",
+		"quantizing": "quantizing events",
+		"conditions": "conditions",
+		"filtration": "filtering events"
+	},
+	"functions": {
+		"and": "AND",
+		"nand": "NAND",
+		"or": "OR",
+		"nor": "NOR",
+		"xor": "XOR",
+		"xnor": "XNOR",
+		"not": "NOT",
+		"min": "MIN (AND/TROUGH)",
+		"max": "MAX (OR/PEAK)",
+		"diff": "DIFF (magnitude)",
+		"comparator": "comparator",
+		"delay": "gate/trigger delay",
+		"skip": "probability-based skip",
+		"flipflop": "flipflop",
+		"edge": "edge detector",
+		"gater": "“gater”"
+	}
+}

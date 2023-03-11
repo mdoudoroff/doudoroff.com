@@ -88,24 +88,6 @@ h2, h3 {
 </style>
 <body>
 
-<nav>
-<div class="navrail">
-<ul>
-	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
-	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
-	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
-	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
-	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
-</ul>
-<ul>
-	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
-	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
-	<li><strong>How to Multitrack Your Eurorack</strong></li>
-	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
-</ul>
-</div>
-</nav>
-
 <div class="main">
 
 
@@ -401,6 +383,28 @@ html_bottom = '''
 </p>
 
 </div><!-- end div.main -->
+
+<footer>
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><strong>How to Multitrack Your Eurorack</strong></li>
+	<li><a href="//doudoroff.com/logic/">A Logic Cookbook for Synthesis</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+</footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>

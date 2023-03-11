@@ -1,0 +1,16 @@
+{
+    "rID": "7CdzvUop",
+    "title": "Merge triggers and gates with retriggering",
+    "principle": "An OR circuit will remain high as long as one input is high",
+    "attribution": "Klavis",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "gater"
+    ],
+    "modules": [],
+    "createtime": 1676207331.446007
+}

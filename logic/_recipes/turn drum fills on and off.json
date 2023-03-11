@@ -1,0 +1,17 @@
+{
+    "rID": "WJ2KwxQw",
+    "title": "Turn drum fills on and off",
+    "principle": "AND logic will only go high when its inputs are all high",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "filtration",
+        "rhythm"
+    ],
+    "functions": [
+        "and"
+    ],
+    "modules": [],
+    "createtime": 1676207331.4442198
+}

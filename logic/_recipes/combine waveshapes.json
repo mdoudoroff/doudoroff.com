@@ -1,0 +1,17 @@
+{
+    "rID": "FJJrhhhm",
+    "title": "Combine two waveshapes",
+    "principle": "MAX (OR) analog logic will pass the highest positive voltage",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "audio",
+        "cv",
+        "analog",
+        "distortion"
+    ],
+    "functions": [
+        "max"
+    ],
+    "modules": [],
+    "createtime": 1676207331.444791
+}

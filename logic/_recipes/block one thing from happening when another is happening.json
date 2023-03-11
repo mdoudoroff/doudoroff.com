@@ -1,0 +1,20 @@
+{
+    "rID": "gZurtMKc",
+    "title": "Block one thing from happening when another is happening",
+    "principle": "AND logic will only go high when its inputs are all high, and NOR/NOT will only be high when its inputs are LOW",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "filtration",
+        "rhythm",
+        "conditions"
+    ],
+    "functions": [
+        "not",
+        "and",
+        "nor"
+    ],
+    "modules": [],
+    "createtime": 1676207331.4445162
+}

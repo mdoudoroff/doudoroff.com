@@ -1,0 +1,22 @@
+{
+    "rID": "PnSAQZfo",
+    "title": "Shifting rhythms from unsynced LFOs",
+    "principle": "Boolean logic can react to bipolar variable signals",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "and",
+        "or",
+        "xor",
+        "nand",
+        "nor",
+        "xnor",
+        "not"
+    ],
+    "modules": [],
+    "createtime": 1676207331.446311
+}

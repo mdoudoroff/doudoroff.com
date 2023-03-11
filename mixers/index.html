@@ -81,26 +81,38 @@ nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 
 	.main { padding: 1em 0.5em; }
 	nav { padding: 0.25 0.5em; }
 }
+
+#comparisonSwitcher {
+	font-size: 80%;
+	display: flex;
+	column-gap: 18px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+@media (min-width: 400px) {
+	#comparisonSwitcher {
+		font-size: 100%;
+	}
+}
+@media (min-width: 960px) {
+	#comparisonSwitcher {
+		justify-content: flex-start;
+		column-gap: 24px;
+	}
+}
+
+
 </style>
 <body>
 
-<nav>
-<div class="navrail">
-<ul>
-	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
-	<li><strong>Stereo Mixer Modules</strong></li>
-	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
-	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
-	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
-</ul>
-<ul>
-	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
-	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
-	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
-	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
-</ul>
-</div>
+<nav id="comparisonSwitcher">
+<strong>Stereo Mixers</strong>
+<a href="/sequencers/">Pitch+Gate Sequencers</a>
+<a href="/samplers/">Samplers</a>
+<a href="/quantizers/">Quantizers</a>
 </nav>
+
 
 <div class="main">
 
@@ -2007,6 +2019,28 @@ function toggleAdditionalUpdates()
 <p style="text-align:center;">• • •</p>
 
 </div><!-- end div.main -->
+
+<footer>
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><strong>Stereo Mixer Modules</strong></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="//doudoroff.com/logic/">A Logic Cookbook for Synthesis</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+</footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>

@@ -1,0 +1,18 @@
+{
+    "rID": "LtXK4rrg",
+    "title": "Quantize triggers and short pulses to a rhythm",
+    "principle": "An AND circuit will only go high if all its inputs are high.",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm",
+        "envelopes",
+        "quantizing"
+    ],
+    "functions": [
+        "and"
+    ],
+    "modules": [],
+    "createtime": 1676207331.447721
+}

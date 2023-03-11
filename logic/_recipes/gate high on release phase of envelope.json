@@ -1,0 +1,16 @@
+{
+    "rID": "2irSBBb5",
+    "title": "Modulate during the release phase of envelope",
+    "principle": "A NOR circuit will go high when all inputs are low",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "envelopes"
+    ],
+    "functions": [
+        "nor"
+    ],
+    "modules": [],
+    "createtime": 1676207331.447216
+}

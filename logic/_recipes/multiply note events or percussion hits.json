@@ -1,0 +1,16 @@
+{
+    "rID": "UmqJh93s",
+    "title": "Multiply note events or percussion hits",
+    "principle": "A gate delay will reproduce a gate stream with an adjustable degree of lag",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "delay"
+    ],
+    "modules": [],
+    "createtime": 1676207331.44381
+}

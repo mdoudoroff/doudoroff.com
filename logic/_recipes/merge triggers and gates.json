@@ -1,0 +1,16 @@
+{
+    "rID": "YGkmVjFX",
+    "title": "Merge triggers and gates",
+    "principle": "An OR circuit will remain high as long as one input is high",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "or"
+    ],
+    "modules": [],
+    "createtime": 1676207331.44832
+}

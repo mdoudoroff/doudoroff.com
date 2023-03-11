@@ -1,0 +1,16 @@
+{
+    "rID": "HXm2nMpx",
+    "title": "Derive accent pattern from two Euclidean patterns",
+    "principle": "An AND circuit will only go high if all its inputs are high.",
+    "attribution": "Mylar Melodies",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "and"
+    ],
+    "modules": [],
+    "createtime": 1676207331.446581
+}

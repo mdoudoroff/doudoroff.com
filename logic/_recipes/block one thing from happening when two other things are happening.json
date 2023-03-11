@@ -1,0 +1,18 @@
+{
+    "rID": "6pWbgpdF",
+    "title": "Block one thing from happening when two other things are happening",
+    "principle": "NAND logic will only go high when its inputs are low",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "filtration",
+        "rhythm",
+        "conditions"
+    ],
+    "functions": [
+        "nand"
+    ],
+    "modules": [],
+    "createtime": 1676207331.447884
+}

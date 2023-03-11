@@ -1,0 +1,15 @@
+{
+    "rID": "C5xNuF9r",
+    "title": "Get the lower of two signals at a point in time",
+    "principle": "MIN (AND) will pass whichever of two voltages is lower",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "analog"
+    ],
+    "functions": [
+        "min"
+    ],
+    "modules": [],
+    "createtime": 1676207331.445278
+}

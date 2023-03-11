@@ -128,27 +128,16 @@ span.category { background-color: #AEFCD0; }
 span.function { background-color: #FFD996; }
 
 
+#about {
+  margin-top: 2em;
+	padding: 1em;
+	background: #eee;
+	border-radius: 12px;
+	max-width: 960px;
+}
 
 </style>
 <body>
-
-<nav>
-<div class="navrail">
-<ul>
-	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
-	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
-	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
-	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
-	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
-</ul>
-<ul>
-	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
-	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
-	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
-	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
-</ul>
-</div>
-</nav>
 
 <div class="main">
 <h1>A Logic Cookbook for Synthesis</h1>
@@ -161,16 +150,16 @@ span.function { background-color: #FFD996; }
 	</select>
 	</fieldset>
 	<fieldset id="filtergroup2" class="category"><strong>Categories</strong><br />
-		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (24)</label><br />
+		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (26)</label><br />
 		<label><input type="checkbox" name="cat_audio" value="cat_audio" /> audio (4)</label><br />
-		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (20)</label><br />
+		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (22)</label><br />
 		<label><input type="checkbox" name="cat_analog" value="cat_analog" /> variable/“analog” logic (7)</label><br />
-		<label><input type="checkbox" name="cat_rhythm" value="cat_rhythm" /> rhythm creation (13)</label><br />
+		<label><input type="checkbox" name="cat_rhythm" value="cat_rhythm" /> rhythm creation (15)</label><br />
 		<label><input type="checkbox" name="cat_envelopes" value="cat_envelopes" /> gating envelopes (ADSR) (5)</label><br />
 		<label><input type="checkbox" name="cat_distortion" value="cat_distortion" /> distortion (4)</label><br />
 		<label><input type="checkbox" name="cat_quantizing" value="cat_quantizing" /> quantizing events (1)</label><br />
 		<label><input type="checkbox" name="cat_conditions" value="cat_conditions" /> conditions (3)</label><br />
-		<label><input type="checkbox" name="cat_filtration" value="cat_filtration" /> filtering events (4)</label><br />
+		<label><input type="checkbox" name="cat_filtration" value="cat_filtration" /> filtering events (6)</label><br />
 	</fieldset>
 	<fieldset id="filtergroup3" class="function"><strong>Functions</strong><br />
 		<label><input type="checkbox" name="fn_and" value="fn_and" /> AND (7)</label><br />
@@ -186,6 +175,7 @@ span.function { background-color: #FFD996; }
 		<label><input type="checkbox" name="fn_comparator" value="fn_comparator" /> comparator (2)</label><br />
 		<label><input type="checkbox" name="fn_delay" value="fn_delay" /> gate/trigger delay (1)</label><br />
 		<label><input type="checkbox" name="fn_skip" value="fn_skip" /> probability-based skip (1)</label><br />
+		<label><input type="checkbox" name="fn_flipflop" value="fn_flipflop" /> flipflop (1)</label><br />
 		<label><input type="checkbox" name="fn_edge" value="fn_edge" /> edge detector (1)</label><br />
 		<label><input type="checkbox" name="fn_gater" value="fn_gater" /> “gater” (1)</label><br />
 	</fieldset>
@@ -291,6 +281,16 @@ If you mult the trigger or gate driving an envelope or triggering percussion to 
 If you feed a 50% duty cycle clock into the OR of a logic module, the NOR (or inverse of OR) will go high halfway through the clock cycle (when the cl ...<br />
 <a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_rhythm"><span class="kw_cat category">rhythm creation</span></a> <a href="index.html?tag=fn_nor"><span class="kw_fn function">NOR</span></a> <a href="index.html?tag=fn_not"><span class="kw_fn function">NOT</span></a>
 </div>
+<div class="entry cat_cv cat_binary cat_filtration cat_rhythm">
+<strong><a href="i9f9nX3x-one_thing_cannot_happen.html">One thing cannot happen unless two other things happen in sequence beforehand</a></strong><br />
+You can use a three-step validation function, such as the 1,2,3 features of Klavis Logica XT, to insure that something only happens when a particular  ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_filtration"><span class="kw_cat category">filtering events</span></a> <a href="index.html?tag=cat_rhythm"><span class="kw_cat category">rhythm creation</span></a>
+</div>
+<div class="entry cat_cv cat_binary cat_filtration cat_rhythm fn_flipflop">
+<strong><a href="b7pDPxg4-one_thing_cannot_happen.html">One thing cannot happen until after another has happened</a></strong><br />
+You can use a flipflop to track whether something has happened or not, and employ the output downstream (in another logic module or VCA) to prevent so ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_filtration"><span class="kw_cat category">filtering events</span></a> <a href="index.html?tag=cat_rhythm"><span class="kw_cat category">rhythm creation</span></a> <a href="index.html?tag=fn_flipflop"><span class="kw_fn function">flipflop</span></a>
+</div>
 <div class="entry cat_cv cat_binary cat_envelopes cat_filtration fn_skip mod_klavis_two_bits">
 <strong><a href="9e3cMpeR-per-note_modulation_based_on.html">Per-note modulation based on probability</a></strong><br />
 You can patch a copy of the gate from your sequence or keyboard through a gate skipper, and patch the output of the skipper to another envelope (or VC ...<br />
@@ -329,9 +329,71 @@ You can use AND logic like a simple VCA to filter (pass or mute) any trigger or 
 <script type="text/javascript" src="jquery.min.js?b={bust}"></script>
 <script type="text/javascript" src="recipeindex.js?b={bust}"></script>
 
+
+<div id="about">
+
+<p>This cookbook is by no means exhaustive, but will hopefully be helpful to a few folks. If you think you find an error or wish to submit a recipe for inclusion, get in touch!</p>
+
+<p>Martin Doudoroff<br />
+<script type="text/javascript"><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+<p>Related discussion thread: <a href=""><em></em></a> (ModWiggler forum)</p>
+
+<h4>Latest</h4>
+<p class="updates">
+2023-03-11 first draft<br />
+<span id="additionalUpdates" class="collapsed">
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
+</p>
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
+
+</div>
+
+
 <p style="text-align:center;">• • •</p>
 
 </div><!-- end div.main -->
+
+<footer>
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><strong>A Logic Cookbook for Synthesis</strong></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+</footer>
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
@@ -342,6 +404,7 @@ You can use AND logic like a simple VCA to filter (pass or mute) any trigger or 
 
   gtag('config', 'UA-11161564-1');
 </script>
+
 
 
 </body>

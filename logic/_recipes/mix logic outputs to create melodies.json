@@ -1,0 +1,22 @@
+{
+    "rID": "inrENyZ6",
+    "title": "Mix logic outputs to create melodies",
+    "principle": "If you combine two or more gate streams in a mixer or logic circuit, you can derive a stepped melody from the results",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "analog"
+    ],
+    "functions": [
+        "and",
+        "or",
+        "xor",
+        "nand",
+        "nor",
+        "xnor",
+        "not"
+    ],
+    "modules": [],
+    "createtime": 1676207331.448034
+}

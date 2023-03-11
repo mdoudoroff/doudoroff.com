@@ -1,0 +1,17 @@
+{
+    "rID": "ZL4NDBmc",
+    "title": "Combine gate streams for expressive ADSR variation",
+    "principle": "An OR circuit will go high when any of the input signals is high.",
+    "attribution": "DivKid",
+    "categories": [
+        "cv",
+        "binary",
+        "rhythm",
+        "envelopes"
+    ],
+    "functions": [
+        "or"
+    ],
+    "modules": [],
+    "createtime": 1676207331.448467
+}

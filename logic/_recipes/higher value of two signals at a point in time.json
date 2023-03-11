@@ -1,0 +1,15 @@
+{
+    "rID": "BxysRcvL",
+    "title": "Get the higher of two signals at a point in time",
+    "principle": "MAX (OR) will pass whichever of two voltages is higher",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "analog"
+    ],
+    "functions": [
+        "max"
+    ],
+    "modules": [],
+    "createtime": 1676207331.444947
+}

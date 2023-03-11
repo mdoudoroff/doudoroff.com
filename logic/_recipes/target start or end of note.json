@@ -1,0 +1,18 @@
+{
+    "rID": "Z7xMVcSp",
+    "title": "Event at start and/or end of note",
+    "principle": "An edge detector will emit a trigger at the rise and/or fall of a gate",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "envelopes"
+    ],
+    "functions": [
+        "edge"
+    ],
+    "modules": [
+        "klavis_two_bits"
+    ],
+    "createtime": 1676207331.447055
+}

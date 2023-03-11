@@ -1,0 +1,19 @@
+{
+    "rID": "9e3cMpeR",
+    "title": "Per-note modulation based on probability",
+    "principle": "A gate skipper blocks gates from passing through some percentage of the time",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "envelopes",
+        "filtration"
+    ],
+    "functions": [
+        "skip"
+    ],
+    "modules": [
+        "klavis_two_bits"
+    ],
+    "createtime": 1676207331.4454458
+}

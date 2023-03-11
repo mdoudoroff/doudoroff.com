@@ -1,0 +1,19 @@
+{
+    "rID": "UE2sShgK",
+    "title": "Threshold events based on pitch or velocity",
+    "principle": "A comparator will only go high when a voltage crosses the threshold you set",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "analog",
+        "conditions"
+    ],
+    "functions": [
+        "comparator"
+    ],
+    "modules": [
+        "klavis_two_bits"
+    ],
+    "createtime": 1676207331.445739
+}

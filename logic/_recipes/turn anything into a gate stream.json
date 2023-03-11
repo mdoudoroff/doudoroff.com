@@ -1,0 +1,19 @@
+{
+    "rID": "azgFsvYV",
+    "title": "Turn anything into a gate stream",
+    "principle": "Logic circuits react when input signals fluctuate between \u201con\u201d and \u201coff\u201d; negative input voltages are typically interpreted as \u201coff\u201d",
+    "attribution": "DivKid",
+    "categories": [
+        "audio",
+        "cv",
+        "binary",
+        "distortion"
+    ],
+    "functions": [
+        "or",
+        "xor",
+        "comparator"
+    ],
+    "modules": [],
+    "createtime": 1676207331.4451032
+}

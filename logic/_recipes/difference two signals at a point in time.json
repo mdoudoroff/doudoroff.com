@@ -1,0 +1,15 @@
+{
+    "rID": "apALPERk",
+    "title": "Get the difference of two signals at a point in time",
+    "principle": "DIFF will subtract one voltage from another and output the magnitude of difference",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "analog"
+    ],
+    "functions": [
+        "diff"
+    ],
+    "modules": [],
+    "createtime": 1676207331.446738
+}
