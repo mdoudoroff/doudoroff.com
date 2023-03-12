@@ -229,6 +229,7 @@ html_bottom = '''
 	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
 	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
 	<li><a href="//doudoroff.com/logic/">A Logic Cookbook for Synthesis</a></li>
+	<li><a href="https://mdoudoroff.s3.amazonaws.com/sport-modulator-2+patch+book+draft+28-03-22.pdf">Sport Modulator 2 Patch Book</a></li>
 	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
 </ul>
 </div>
