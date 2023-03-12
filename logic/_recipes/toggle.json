@@ -1,0 +1,16 @@
+{
+    "title": "Toggle something on/off",
+    "principle": "flipflops will hold low or high until something causes them to flip",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "binary",
+        "filtration"
+    ],
+    "functions": [
+        "flipflop"
+    ],
+    "modules": [],
+    "rID": "BHSejaWi",
+    "createtime": 1678637757.5932622
+}

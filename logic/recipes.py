@@ -89,7 +89,11 @@ class Recipes(object):
 
 		for c in candidates:
 			f = open(os.path.join('./_recipes',c),'r')
-			j = json.load(f)
+			try:
+				j = json.load(f)
+			except:
+				print('ERROR: could not load JSON for file',c)
+				sys.exit(1)
 			f.close()
 
 			# process rID and timestamp for new entries

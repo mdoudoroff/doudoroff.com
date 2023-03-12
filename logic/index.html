@@ -150,16 +150,16 @@ span.function { background-color: #FFD996; }
 	</select>
 	</fieldset>
 	<fieldset id="filtergroup2" class="category"><strong>Categories</strong><br />
-		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (26)</label><br />
-		<label><input type="checkbox" name="cat_audio" value="cat_audio" /> audio (4)</label><br />
-		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (22)</label><br />
+		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (29)</label><br />
+		<label><input type="checkbox" name="cat_audio" value="cat_audio" /> audio (6)</label><br />
+		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (25)</label><br />
 		<label><input type="checkbox" name="cat_analog" value="cat_analog" /> variable/“analog” logic (7)</label><br />
 		<label><input type="checkbox" name="cat_rhythm" value="cat_rhythm" /> rhythm creation (15)</label><br />
 		<label><input type="checkbox" name="cat_envelopes" value="cat_envelopes" /> gating envelopes (ADSR) (5)</label><br />
 		<label><input type="checkbox" name="cat_distortion" value="cat_distortion" /> distortion (4)</label><br />
 		<label><input type="checkbox" name="cat_quantizing" value="cat_quantizing" /> quantizing events (1)</label><br />
 		<label><input type="checkbox" name="cat_conditions" value="cat_conditions" /> conditions (3)</label><br />
-		<label><input type="checkbox" name="cat_filtration" value="cat_filtration" /> filtering events (6)</label><br />
+		<label><input type="checkbox" name="cat_filtration" value="cat_filtration" /> filtering events (7)</label><br />
 	</fieldset>
 	<fieldset id="filtergroup3" class="function"><strong>Functions</strong><br />
 		<label><input type="checkbox" name="fn_and" value="fn_and" /> AND (7)</label><br />
@@ -175,8 +175,8 @@ span.function { background-color: #FFD996; }
 		<label><input type="checkbox" name="fn_comparator" value="fn_comparator" /> comparator (2)</label><br />
 		<label><input type="checkbox" name="fn_delay" value="fn_delay" /> gate/trigger delay (1)</label><br />
 		<label><input type="checkbox" name="fn_skip" value="fn_skip" /> probability-based skip (1)</label><br />
-		<label><input type="checkbox" name="fn_flipflop" value="fn_flipflop" /> flipflop (1)</label><br />
-		<label><input type="checkbox" name="fn_edge" value="fn_edge" /> edge detector (1)</label><br />
+		<label><input type="checkbox" name="fn_flipflop" value="fn_flipflop" /> flipflop (2)</label><br />
+		<label><input type="checkbox" name="fn_edge" value="fn_edge" /> edge detector (3)</label><br />
 		<label><input type="checkbox" name="fn_gater" value="fn_gater" /> “gater” (1)</label><br />
 	</fieldset>
 </div><!--end #recipefilters -->
@@ -211,6 +211,20 @@ Note: You’ll only get the positive (above 0V) portion of the results.
 
  ...<br />
 <a href="index.html?tag=cat_audio"><span class="kw_cat category">audio</span></a> <a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_analog"><span class="kw_cat category">variable/“analog” logic</span></a> <a href="index.html?tag=cat_distortion"><span class="kw_cat category">distortion</span></a> <a href="index.html?tag=fn_max"><span class="kw_fn function">MAX (OR/PEAK)</span></a>
+</div>
+<div class="entry cat_cv cat_audio cat_binary fn_edge">
+<strong><a href="4G8mpWeT-convert_gate_to_trigger.html">Convert gate to trigger</a></strong><br />
+Gate-to-trigger conversion is not a logic operation, per se, but it can be a necessary logic-adjacent step.
+
+A few multi-utility modules include a gat ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_audio"><span class="kw_cat category">audio</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=fn_edge"><span class="kw_fn function">edge detector</span></a>
+</div>
+<div class="entry cat_cv cat_audio cat_binary fn_edge">
+<strong><a href="GMJzoEyj-convert_trigger_to_gate.html">Convert trigger to gate</a></strong><br />
+Trigger-to-gate conversion is not a logic operation, per se, but it can be a necessary prior step.
+
+A few multi-utility modules include a trigger-to-g ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_audio"><span class="kw_cat category">audio</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=fn_edge"><span class="kw_fn function">edge detector</span></a>
 </div>
 <div class="entry cat_cv cat_binary cat_rhythm fn_and">
 <strong><a href="HXm2nMpx-derive_accent_pattern_from.html">Derive accent pattern from two Euclidean patterns</a></strong><br />
@@ -315,6 +329,11 @@ If you feed the square waves from two oscillators through a binary XOR logic cic
 <strong><a href="UE2sShgK-threshold_events_based_on.html">Threshold events based on pitch or velocity</a></strong><br />
 If you patch a variable voltage signal such as pitch or velocity to a comparator, you can use the resulting gate to trigger an event, open a VCA, or g ...<br />
 <a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_analog"><span class="kw_cat category">variable/“analog” logic</span></a> <a href="index.html?tag=cat_conditions"><span class="kw_cat category">conditions</span></a> <a href="index.html?tag=fn_comparator"><span class="kw_fn function">comparator</span></a>
+</div>
+<div class="entry cat_cv cat_binary cat_filtration fn_flipflop">
+<strong><a href="BHSejaWi-toggle_something_onoff.html">Toggle something on/off</a></strong><br />
+A simple flipflop will hold its state (high or low) until it receives a rising edge (trigger or gate) at its input, at which point it will switch to t ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_filtration"><span class="kw_cat category">filtering events</span></a> <a href="index.html?tag=fn_flipflop"><span class="kw_fn function">flipflop</span></a>
 </div>
 <div class="entry cat_audio cat_cv cat_binary cat_distortion fn_or fn_xor fn_comparator">
 <strong><a href="azgFsvYV-turn_anything_into_a.html">Turn anything into a gate stream</a></strong><br />

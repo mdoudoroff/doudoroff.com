@@ -1,0 +1,16 @@
+{
+    "title": "Convert gate to trigger",
+    "principle": "",
+    "attribution": "mdoudoroff",
+    "categories": [
+        "cv",
+        "audio",
+        "binary"
+    ],
+    "functions": [
+        "edge"
+    ],
+    "modules": [],
+    "rID": "4G8mpWeT",
+    "createtime": 1678650109.4820201
+}

@@ -6617,6 +6617,33 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/logic\/_recipes\/gate-to-trigger.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/gate-to-trigger-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/gate-to-trigger.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/gate-to-trigger.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/logic\/_recipes\/half-wave rectification.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -7049,6 +7076,60 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/logic\/_recipes\/toggle.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/toggle-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/toggle.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/toggle.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/trigger-to-gate.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/trigger-to-gate-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/trigger-to-gate.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/trigger-to-gate.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/logic\/_recipes\/turn anything into a gate stream.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -7119,6 +7200,14 @@
       "oAP" : "\/logic\/2irSBBb5-modulate_during_the_release.html",
       "oF" : 0
     },
+    "\/logic\/4G8mpWeT-convert_gate_to_trigger.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/4G8mpWeT-convert_gate_to_trigger.html",
+      "oF" : 0
+    },
     "\/logic\/6pWbgpdF-block_one_thing_from.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7167,6 +7256,14 @@
       "oAP" : "\/logic\/b7pDPxg4-one_thing_cannot_happen.html",
       "oF" : 0
     },
+    "\/logic\/BHSejaWi-toggle_something_onoff.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/BHSejaWi-toggle_something_onoff.html",
+      "oF" : 0
+    },
     "\/logic\/BxysRcvL-get_the_higher_of.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7189,6 +7286,14 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/logic\/FJJrhhhm-combine_two_waveshapes.html",
+      "oF" : 0
+    },
+    "\/logic\/GMJzoEyj-convert_trigger_to_gate.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/GMJzoEyj-convert_trigger_to_gate.html",
       "oF" : 0
     },
     "\/logic\/gZurtMKc-block_one_thing_from.html" : {
