@@ -1,0 +1,17 @@
+{
+    "title": "Sub-octave generator",
+    "principle": "flipflops will hold low or high until something causes them to flip",
+    "attribution": "mdoudoroff, Synth Music Blog",
+    "categories": [
+        "cv",
+        "audio",
+        "binary",
+        "rhythm"
+    ],
+    "functions": [
+        "flipflop"
+    ],
+    "modules": [],
+    "rID": "V7RyM2Qs",
+    "createtime": 1678973694.835818
+}

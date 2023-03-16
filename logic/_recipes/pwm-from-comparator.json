@@ -1,0 +1,17 @@
+{
+    "title": "Variable PWM from a comparator",
+    "principle": "A comparator will only go high when a voltage crosses the threshold you set",
+    "attribution": "DivKid",
+    "categories": [
+        "audio",
+        "cv",
+        "binary",
+        "distortion"
+    ],
+    "functions": [
+        "comparator"
+    ],
+    "modules": [],
+    "rID": "dCEiy3nW",
+    "createtime": 1678976334.371501
+}

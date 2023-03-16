@@ -32,6 +32,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-03-16 added recipes for PWM and sub-octave generation<br />
 2023-03-12 added recipes for toggle, gate-to-trigger, and trigger-to-gate<br />
 2023-03-11 first draft
 <span id="additionalUpdates" class="collapsed">
