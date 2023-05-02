@@ -140,13 +140,14 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-05-01 updates and corrections<br />
 2022-04-09 added Ladik Q-040 and Blue Lantern Quad Mk2<br />
 2022-01-20 added Flame Tame Machine (historical)<br />
 2022-01-19 added Bastl 1983<br />
 2020-10-31 added Monome Crow and Der Mann mit der Maschine DROID<br />
+<span id="additionalUpdates" class="collapsed">
 2020-02-19 added Shakmat Bard Quartet<br />
 2020-02-19 added Tenderfoot Quad Quantizer<br />
-<span id="additionalUpdates" class="collapsed">
 2019-10-22 added Kassutronics Quantizer<br />
 2019-09-29 errata<br />
 2019-09-29 added Mungo w0<br />

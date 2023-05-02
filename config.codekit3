@@ -653,12 +653,12 @@
       "oAP" : "\/_ckl\/exh.essential-drinks.pina_colada.html",
       "oF" : 0
     },
-    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
+    "\/_ckl\/exh.essential-drinks.piña_colada.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/_ckl\/exh.essential-drinks.piña_colada.html",
+      "oAP" : "\/_ckl\/exh.essential-drinks.piña_colada.html",
       "oF" : 0
     },
     "\/_ckl\/exh.essential-drinks.pisco_punch.html" : {
@@ -6914,6 +6914,33 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/logic\/_recipes\/pwm-from-comparator.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/pwm-from-comparator-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/pwm-from-comparator.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/pwm-from-comparator.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/logic\/_recipes\/quantize triggers.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -7041,6 +7068,33 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/logic\/_recipes\/square wave ring modulation.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/logic\/_recipes\/sub-octaves.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/sub-octaves-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/logic\/_recipes\/sub-octaves.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/logic\/_recipes\/sub-octaves.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -7280,6 +7334,14 @@
       "oAP" : "\/logic\/C5xNuF9r-get_the_lower_of.html",
       "oF" : 0
     },
+    "\/logic\/dCEiy3nW-variable_pwm_from_a.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/dCEiy3nW-variable_pwm_from_a.html",
+      "oF" : 0
+    },
     "\/logic\/FJJrhhhm-combine_two_waveshapes.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7461,6 +7523,14 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/logic\/UmqJh93s-multiply_note_events_or.html",
+      "oF" : 0
+    },
+    "\/logic\/V7RyM2Qs-sub-octave_generator.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/logic\/V7RyM2Qs-sub-octave_generator.html",
       "oF" : 0
     },
     "\/logic\/WJ2KwxQw-turn_drum_fills_on.html" : {
