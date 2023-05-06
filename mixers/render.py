@@ -136,6 +136,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-05-06 added Jolin Tutto & Sempre<br />
 2023-02-13 added Animal Factory Tannhauser Gates<br />
 2022-11-30 added ALM Mega Tang and G-Storm Electro Influx<br />
 2022-11-23 added Instruo cárn and Uraltone Tube Sounding Micro Mixer<br />
