@@ -136,6 +136,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-06-01 added Dreadbox Psychosis<br />
 2023-05-28 added Sebsongs ST MIXER XL and ST Modular MIX & PAN<br />
 2023-05-06 added Jolin Tutto & Sempre<br />
 2023-02-13 added Animal Factory Tannhauser Gates<br />
