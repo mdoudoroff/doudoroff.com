@@ -136,15 +136,16 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-07-03 added Eowave Supamix<br />
 2023-06-01 added Dreadbox Psychosis<br />
 2023-05-28 added Sebsongs ST MIXER XL and ST Modular MIX & PAN<br />
 2023-05-06 added Jolin Tutto & Sempre<br />
+<span id="additionalUpdates" class="collapsed">
 2023-02-13 added Animal Factory Tannhauser Gates<br />
 2022-11-30 added ALM Mega Tang and G-Storm Electro Influx<br />
 2022-11-23 added Instruo cárn and Uraltone Tube Sounding Micro Mixer<br />
 2022-11-11 added Cosmotronic Cosmix Pro, Noise Engineering Xer Dualis, and Feedback Mix Mix<br />
 2022-08-27 added Sebsongs ST Mixer<br />
-<span id="additionalUpdates" class="collapsed">
 2022-08-27 added D&D Wire Station<br />
 2022-08-14 added NoisyFruitsLab 8CHAN<br />
 2022-08-12 added added ADDAC713<br />
