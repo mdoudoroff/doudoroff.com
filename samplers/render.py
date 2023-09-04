@@ -137,6 +137,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-09-04 added 4ms Sampler<br />
 2022-07-16 added Mutable Instruments Beads<br />
 2022-05-31 minor updates<br />
 2022-05-29 added ADDAC112 and Miso Cornflakes<br />
@@ -207,9 +208,10 @@ html_bottom = '''
 <li><a href="https://www.modulargrid.net/e/other-unknown-eurotrash-mkii">Eurotrash Mk II dual mono WAV player</a> (teensy-based DIY hackable platform by mxmxmx)</li>
 <li><a href="https://www.modulargrid.net/e/analogue-systems-rs-290">Analogue Systems RS-290 Sampler/Delay</a> (venerable, nominally-Eurorack-compatible delay/sample/effect unit of the “audio buffer” sort)</a></li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-dual-looping-delay">4ms Dual Looping Delay</a> (delay with some sampler-esque capabilities)</li>
+<li><a href="https://www.modulargrid.net/e/4ms-company-looping-delay">4ms Looping Delay</a> (delay with some sampler-esque capabilities)</li>
 <li><a href="https://www.modulargrid.net/e/4ms-company-wav-recorder">4ms WAV Recorder</a></li>
 <li><a href="https://www.modulargrid.net/e/alyseum-record">Alyseum Record</a></li>
-<li><a href="https://www.modulargrid.net/e/patching-panda-ephemere-silver-panel">Patching Panda Ephemere (cv recorder)</a></li>
+<li><a href="https://www.modulargrid.net/e/patching-panda-ephemere-silver-panel">Patching Panda Ephemere (cv recorder/looper than can also record up to 4 seconds of audio)</a></li>
 </ul>
 
 <h2>Non-modular alternatives</h2>
