@@ -136,7 +136,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2023-09-09 added 1010music Bluebox Eurorack Edition<br />
+2023-09-09 added 1010music Bluebox Eurorack Edition and Boredbrain Xcelon<br />
 2023-08-26 added Noise Engineering Xer Mixa<br />
 2023-07-03 added Eowave Supamix<br />
 2023-06-01 added Dreadbox Psychosis<br />
