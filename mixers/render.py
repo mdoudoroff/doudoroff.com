@@ -7,111 +7,112 @@ if sys.version_info[0] != 3:
     sys.exit("This script requires Python version 3")
 
 html_top = '''
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Eurorack Stereo Mixer Module Comparison</title>
+	<style>
+		body {
+			max-width: 1600px;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		p, li {
+			max-width: 40rem;
+			line-height: 1.4;
+		}
+		.updates {
+			font-size: 85%;
+			font-family: monospace;
+		}
+		a {text-decoration:none;}
+		a:hover {color:red;text-decoration:underline;}
+		a:visited {color:blue;}
+		img {
+			width: 100%;
+			margin: 0.5em 0;
+		}
+		.main {	padding: 1em; }
+		.red {color:red;}
+		.green {color:green;}
+		.gray {color:gray;}
+		table {border-collapse: collapse;font-size: 85%;height: auto;}
+		td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+		td.left, th.left {text-align:left;}
+		td.notes {text-align: left;}
+		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+		th { 
+			color: #666; position: sticky; top: 0px; 
+
+			background-color: rgba(200,200,200,0.9);
+			@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+				background-color: rgba(200, 200, 200, .5);
+				-webkit-backdrop-filter: blur(5px);
+				backdrop-filter: blur(5px);
+			}
+
+		}
+		.notes { min-width: 15em; }
+		.collapsed {display: none;}
+		td.left { 
+			height: auto;
+			position: sticky; 
+			left: 0px; 
+			z-index: 1;
+
+			background-color: rgba(225,225,225,0.9);
+			@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+				background-color: rgba(255, 255, 255, .5);
+				-webkit-backdrop-filter: blur(5px);
+				backdrop-filter: blur(5px);
+			}
+		}
+		th.left {
+			height: auto;
+			position: sticky; 
+			left: 0px; 
+			z-index: 2;
+		}
+
+		nav {
+			background: #eef; 
+			padding: 0.5em 1em;
+			font-family: Helvetica, sans-serif;
+			border-bottom: 2px solid #666;
+			}
+		nav div.navrail { display: flex; }
+		nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+		nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+		@media (max-width: 450px) {
+			.main { padding: 1em 0.5em; }
+			nav { padding: 0.25 0.5em; }
+		}
+
+		#comparisonSwitcher {
+			font-size: 80%;
+			display: flex;
+			column-gap: 18px;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 400px) {
+			#comparisonSwitcher {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 960px) {
+			#comparisonSwitcher {
+				justify-content: flex-start;
+				column-gap: 24px;
+			}
+		}
+	</style>
 </head>
-<style>
-body {
-	max-width: 1600px;
-	font-family: Georgia, serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-}
-p, li {
-	max-width: 40rem;
-	line-height: 1.4;
-}
-.updates {
-	font-size: 85%;
-	font-family: monospace;
-}
-a {text-decoration:none;}
-a:hover {color:red;text-decoration:underline;}
-a:visited {color:blue;}
-img {
-	width: 100%;
-	margin: 0.5em 0;
-}
-.main {	padding: 1em; }
-.red {color:red;}
-.green {color:green;}
-.gray {color:gray;}
-table {border-collapse: collapse;font-size: 85%;}
-td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
-td.left, th.left {text-align:left;}
-td.notes {text-align: left;}
-td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { 
-	color: #666; position: sticky; top: 0px; 
-
-	background-color: rgba(200,200,200,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(200, 200, 200, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-
-}
-.notes { min-width: 15em; }
-.collapsed {display: none;}
-td.left { 
-	position: sticky; 
-	left: 0px; 
-	z-index: 1;
-
-	background-color: rgba(225,225,225,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(255, 255, 255, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-}
-th.left {
-	position: sticky; 
-	left: 0px; 
-	z-index: 2;
-}
-
-nav {
-	background: #eef; 
-	padding: 0.5em 1em;
-	font-family: Helvetica, sans-serif;
-	border-bottom: 2px solid #666;
-	}
-nav div.navrail { display: flex; }
-nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
-nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
-
-@media (max-width: 450px) {
-	.main { padding: 1em 0.5em; }
-	nav { padding: 0.25 0.5em; }
-}
-
-#comparisonSwitcher {
-	font-size: 80%;
-	display: flex;
-	column-gap: 18px;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-@media (min-width: 400px) {
-	#comparisonSwitcher {
-		font-size: 100%;
-	}
-}
-@media (min-width: 960px) {
-	#comparisonSwitcher {
-		justify-content: flex-start;
-		column-gap: 24px;
-	}
-}
-
-
-</style>
 <body>
 
 <nav id="comparisonSwitcher">
