@@ -8,7 +8,7 @@ if sys.version_info[0] != 3:
 
 html_top = '''
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Eurorack Stereo Mixer Module Comparison</title>
@@ -48,15 +48,9 @@ html_top = '''
 			color: #666; position: sticky; top: 0px; 
 
 			background-color: rgba(200,200,200,0.9);
-			@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-				background-color: rgba(200, 200, 200, .5);
-				-webkit-backdrop-filter: blur(5px);
-				backdrop-filter: blur(5px);
-			}
-
 		}
 		.notes { min-width: 15em; }
-		.collapsed {display: none;}
+		.collapsed {display: none; }
 		td.left { 
 			height: auto;
 			position: sticky; 
@@ -64,11 +58,6 @@ html_top = '''
 			z-index: 1;
 
 			background-color: rgba(225,225,225,0.9);
-			@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-				background-color: rgba(255, 255, 255, .5);
-				-webkit-backdrop-filter: blur(5px);
-				backdrop-filter: blur(5px);
-			}
 		}
 		th.left {
 			height: auto;
@@ -127,8 +116,8 @@ html_top = '''
 
 <h1>Eurorack Stereo Mixer Module Comparison</h1>
 
-<p>Martin Doudoroff<br />
-<script type="text/javascript"><!--
+<p>Martin Doudoroff<br>
+<script><!--
 var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
 // --></script>
 <noscript>Please enable Javascript to see the email address</noscript></p>
@@ -137,97 +126,97 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2023-09-10 added NANO ST MAR and Worng Soundstage II<br />
-2023-09-09 added 1010music Bluebox Eurorack Edition and Boredbrain Xcelon<br />
-2023-08-26 added Noise Engineering Xer Mixa<br />
-2023-07-03 added Eowave Supamix<br />
-2023-06-01 added Dreadbox Psychosis<br />
-2023-05-28 added Sebsongs ST MIXER XL and ST Modular MIX & PAN<br />
-2023-05-06 added Jolin Tutto & Sempre<br />
+2023-09-10 added NANO ST MAR and Worng Soundstage II<br>
+2023-09-09 added 1010music Bluebox Eurorack Edition and Boredbrain Xcelon<br>
+2023-08-26 added Noise Engineering Xer Mixa<br>
+2023-07-03 added Eowave Supamix<br>
+2023-06-01 added Dreadbox Psychosis<br>
+2023-05-28 added Sebsongs ST MIXER XL and ST Modular MIX & PAN<br>
+2023-05-06 added Jolin Tutto & Sempre<br>
 <span id="additionalUpdates" class="collapsed">
-2023-02-13 added Animal Factory Tannhauser Gates<br />
-2022-11-30 added ALM Mega Tang and G-Storm Electro Influx<br />
-2022-11-23 added Instruo cárn and Uraltone Tube Sounding Micro Mixer<br />
-2022-11-11 added Cosmotronic Cosmix Pro, Noise Engineering Xer Dualis, and Feedback Mix Mix<br />
-2022-08-27 added Sebsongs ST Mixer<br />
-2022-08-27 added D&D Wire Station<br />
-2022-08-14 added NoisyFruitsLab 8CHAN<br />
-2022-08-12 added added ADDAC713<br />
-2022-06-17 added Modbap Transit; misc updates<br />
-2021-12-01 added EMW 8-channel and updated Frap CGM<br />
-2021-08-19 added Toppobrillo MiniMix<br />
-2021-07-10 added Happy Nerding 4x Stereo Mixer<br />
-2021-06-05 added Modulaire Maritime Victor Alpha 2 &amp; Feedback Mix BX<br />
-2020-03-20 added Blood Cells Audio D.O.Mixx<br />
-2020-01-11 small updates<br />
-2020-11-24 added Frap Tools QSC<br />
-2020-11-09 added SSF Vortices<br />
-2020-10-30 added Endorphin.es Cockpit 2<br />
-2020-08-02 added Make Noise XOH<br />
-2020-08-01 added Ladik M-610<br />
-2020-07-03 added Cosmotronic Cosmix<br />
-2020-06-04 added 6IXMXM.SET and ST-Modular SUM CHANNEL + MAIN<br />
-2020-06-01 minor updates<br />
-2020-05-18 added ACL Pan Mix<br />
-2020-02-17 added Doepfer A-135-3<br />
-2020-02-17 added SynEssentials SE2026<br />
-2020-02-16 added Modulaire Maritime Victor Alpha<br />
-2019-11-20 added Arcaico Caronte MS-4<br />
-2019-11-04 added Catoff Mix<br />
-2019-11-03 added Paratek РИТМИКС<br />
-2019-09-26 added Alyseum Q-Mix<br />
-2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br />
-2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br />
-2019-09-26 added Toppobrillo Stereomix 2<br />
-2019-09-22 added Happy Nerding 2xSAM<br />
-2019-08-06 added ph Mixer++<br />
-2019-06-28 added new column about individual outs (for multitracking), other updates<br />
-2019-05-08 added OIII Quad Mixer<br />
-2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br />
-2019-03-27 added Befaco STMIX<br />
-2019-02-10 added JPSynth Stereo Mixer<br />
-2019-01-20 added Tesseract Tex Mix<br />
-2018-11-16 added Takaab Nearness and stubbed out Worng Sound Stage<br />
-2018-10-14 added ST-Modular SUM<br />
-2018-09-07 Added SSI M-4 and Happy Nerding 3X<br />
-2018-05-02 Added Happy Nerding PanMix Jr.<br />
-2018-05-01 Added Roland 531, updates<br />
-2018-03-15 Added Hyrlo, minor updates<br />
-2018-02-07 Stubbed out 4ms Listen modules<br />
-2017-12-21 Added Intellijel Mixup<br />
-2017-11-13 Stubbed out Random*Source Stereo Mixer<br />
-2017-08-14 Doepfer shipping update<br />
-2017-07-04 Stubbed out the Befaco HEXA<br />
-2017-06-29 XAOC Praga shipping update<br />
-2017-06-05 Rebel Technologies Mix 02, Eric Stereo Mixer V2<br />
-2017-06-01 ADDAC Stereo Summing Mixer<br />
-2017-05-02 GRP Stereo Out Module<br />
-2017-04-13 Doepfer A-138s<br />
-2017-04-06 Qu-bit Mixology update<br />
-2017-02-21 L-1 2 Channel Mixer &amp; Unity Stereo Mixer<br />
-2017-02-01 Rebel Technologies Mix 01<br />
-2017-01-31 Cwejman MX-4AS<br />
-2017-01-30 Doepfer A-135<br />
-2017-01-19 Qu-bit Mixology update<br />
-2017-01-17 Pittsburgh Lifeforms System Interface<br />
-2016-09-19 Ladik M-175 (and related)<br />
-2016-09-15 WMD &amp; Erica updates<br />
-2016-08-21 Toppobrillo &amp; Frap Tools update<br />
-2016-07-06 Topporillo update<br />
-2016-07-05 Endorphin.es Cockpit<br />
-2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br />
-2016-06-01 Additonal PanMix details<br />
-2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br />
-2016-05-18 Added Arrel ER-100<br />
-2016-03-24 Added initial info on Doepfer A-138p/o<br />
-2016-03-23 Added initial info on Frap CGM<br />
-2016-03-15 Added headphone column; updated data on Koma mixer<br />
-2016-02-01 Updated WMD photo<br />
-2016-01-27 Updated Toppobrillo info, new photos<br />
-2016-01-26 More additions and corrections<br />
-2016-01-25 Added more placeholder photos, missing modules, errata<br />
-2016-01-24 Errata and many additions from Mod Wiggler members<br />
-2016-01-23 Rough draft<br />
+2023-02-13 added Animal Factory Tannhauser Gates<br>
+2022-11-30 added ALM Mega Tang and G-Storm Electro Influx<br>
+2022-11-23 added Instruo cárn and Uraltone Tube Sounding Micro Mixer<br>
+2022-11-11 added Cosmotronic Cosmix Pro, Noise Engineering Xer Dualis, and Feedback Mix Mix<br>
+2022-08-27 added Sebsongs ST Mixer<br>
+2022-08-27 added D&D Wire Station<br>
+2022-08-14 added NoisyFruitsLab 8CHAN<br>
+2022-08-12 added added ADDAC713<br>
+2022-06-17 added Modbap Transit; misc updates<br>
+2021-12-01 added EMW 8-channel and updated Frap CGM<br>
+2021-08-19 added Toppobrillo MiniMix<br>
+2021-07-10 added Happy Nerding 4x Stereo Mixer<br>
+2021-06-05 added Modulaire Maritime Victor Alpha 2 &amp; Feedback Mix BX<br>
+2020-03-20 added Blood Cells Audio D.O.Mixx<br>
+2020-01-11 small updates<br>
+2020-11-24 added Frap Tools QSC<br>
+2020-11-09 added SSF Vortices<br>
+2020-10-30 added Endorphin.es Cockpit 2<br>
+2020-08-02 added Make Noise XOH<br>
+2020-08-01 added Ladik M-610<br>
+2020-07-03 added Cosmotronic Cosmix<br>
+2020-06-04 added 6IXMXM.SET and ST-Modular SUM CHANNEL + MAIN<br>
+2020-06-01 minor updates<br>
+2020-05-18 added ACL Pan Mix<br>
+2020-02-17 added Doepfer A-135-3<br>
+2020-02-17 added SynEssentials SE2026<br>
+2020-02-16 added Modulaire Maritime Victor Alpha<br>
+2019-11-20 added Arcaico Caronte MS-4<br>
+2019-11-04 added Catoff Mix<br>
+2019-11-03 added Paratek РИТМИКС<br>
+2019-09-26 added Alyseum Q-Mix<br>
+2019-09-26 added L-1 Discrete VC Stereo Mixer, other updates<br>
+2019-09-26 removed Cwejman MX-4AS and Escalation Dominance<br>
+2019-09-26 added Toppobrillo Stereomix 2<br>
+2019-09-22 added Happy Nerding 2xSAM<br>
+2019-08-06 added ph Mixer++<br>
+2019-06-28 added new column about individual outs (for multitracking), other updates<br>
+2019-05-08 added OIII Quad Mixer<br>
+2019-04-30 added Make Noise X-Pan and the AGO Summingfacility; varoius other updates<br>
+2019-03-27 added Befaco STMIX<br>
+2019-02-10 added JPSynth Stereo Mixer<br>
+2019-01-20 added Tesseract Tex Mix<br>
+2018-11-16 added Takaab Nearness and stubbed out Worng Sound Stage<br>
+2018-10-14 added ST-Modular SUM<br>
+2018-09-07 Added SSI M-4 and Happy Nerding 3X<br>
+2018-05-02 Added Happy Nerding PanMix Jr.<br>
+2018-05-01 Added Roland 531, updates<br>
+2018-03-15 Added Hyrlo, minor updates<br>
+2018-02-07 Stubbed out 4ms Listen modules<br>
+2017-12-21 Added Intellijel Mixup<br>
+2017-11-13 Stubbed out Random*Source Stereo Mixer<br>
+2017-08-14 Doepfer shipping update<br>
+2017-07-04 Stubbed out the Befaco HEXA<br>
+2017-06-29 XAOC Praga shipping update<br>
+2017-06-05 Rebel Technologies Mix 02, Eric Stereo Mixer V2<br>
+2017-06-01 ADDAC Stereo Summing Mixer<br>
+2017-05-02 GRP Stereo Out Module<br>
+2017-04-13 Doepfer A-138s<br>
+2017-04-06 Qu-bit Mixology update<br>
+2017-02-21 L-1 2 Channel Mixer &amp; Unity Stereo Mixer<br>
+2017-02-01 Rebel Technologies Mix 01<br>
+2017-01-31 Cwejman MX-4AS<br>
+2017-01-30 Doepfer A-135<br>
+2017-01-19 Qu-bit Mixology update<br>
+2017-01-17 Pittsburgh Lifeforms System Interface<br>
+2016-09-19 Ladik M-175 (and related)<br>
+2016-09-15 WMD &amp; Erica updates<br>
+2016-08-21 Toppobrillo &amp; Frap Tools update<br>
+2016-07-06 Topporillo update<br>
+2016-07-05 Endorphin.es Cockpit<br>
+2016-06-29 Blue Lantern Stereo Sir Mix Alot + new related modules<br>
+2016-06-01 Additonal PanMix details<br>
+2016-05-19 Added Happy Nerding PanMix &amp; Hinton references<br>
+2016-05-18 Added Arrel ER-100<br>
+2016-03-24 Added initial info on Doepfer A-138p/o<br>
+2016-03-23 Added initial info on Frap CGM<br>
+2016-03-15 Added headphone column; updated data on Koma mixer<br>
+2016-02-01 Updated WMD photo<br>
+2016-01-27 Updated Toppobrillo info, new photos<br>
+2016-01-26 More additions and corrections<br>
+2016-01-25 Added more placeholder photos, missing modules, errata<br>
+2016-01-24 Errata and many additions from Mod Wiggler members<br>
+2016-01-23 Rough draft<br>
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
@@ -324,14 +313,14 @@ def klassForAny(val):
 def valueForproduct(row):
 	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += '<br />%s' % row['_year']
-	h += '<br /><small>'
+		h += '<br>%s' % row['_year']
+	h += '<br><small>'
 	if row['_hp'].strip():
-		h += '<br />%s HP' % row['_hp']
+		h += '<br>%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+		h += '<br><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+		h += '<br><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
 	h += '</small>'
 	return h
 
