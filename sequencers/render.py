@@ -7,111 +7,99 @@ if sys.version_info[0] != 3:
     sys.exit("This script requires Python version 3")
 
 html_top = '''
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Eurorack Pitch + Gate Sequencer Module Comparison</title>
+	<style>
+		body {
+			max-width: 1600px;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		p, li {
+			max-width: 40rem;
+			line-height: 1.4;
+		}
+		.updates {
+			font-size: 85%;
+			font-family: monospace;
+		}
+		a {text-decoration:none;}
+		a:hover {color:red;text-decoration:underline;}
+		a:visited {color:blue;}
+		img {
+			width: 100%;
+			margin: 1em 0;
+		}
+		.main {	padding: 1em; }
+		.red {color:red;}
+		.green {color:green;}
+		.gray {color:gray;}
+		table {border-collapse: collapse;font-size: 85%;}
+		td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+		td.left, th.left {text-align:left;}
+		td.notes {text-align: left;}
+		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+		th { 
+			color: #666; position: sticky; top: 0px; 
+
+			background-color: rgba(200,200,200,0.9);
+		}
+		.notes { min-width: 15em; }
+		.collapsed {display: none;}
+		td.left { 
+			position: sticky; 
+			left: 0px; 
+			z-index: 1;
+
+			background-color: rgba(225,225,225,0.9);
+		}
+		th.left {
+			position: sticky; 
+			left: 0px; 
+			z-index: 2;
+		}
+
+		nav {
+			background: #eef; 
+			padding: 0.5em 1em;
+			font-family: Helvetica, sans-serif;
+			border-bottom: 2px solid #666;
+			}
+		nav div.navrail { display: flex; }
+		nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+		nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+		@media (max-width: 450px) {
+			.main { padding: 1em 0.5em; }
+			nav { padding: 0.25 0.5em; }
+		}
+
+		#comparisonSwitcher {
+			font-size: 80%;
+			display: flex;
+			column-gap: 18px;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 400px) {
+			#comparisonSwitcher {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 960px) {
+			#comparisonSwitcher {
+				justify-content: flex-start;
+				column-gap: 24px;
+			}
+		}
+	</style>
 </head>
-<style>
-body {
-	max-width: 1600px;
-	font-family: Georgia, serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-}
-p, li {
-	max-width: 40rem;
-	line-height: 1.4;
-}
-.updates {
-	font-size: 85%;
-	font-family: monospace;
-}
-a {text-decoration:none;}
-a:hover {color:red;text-decoration:underline;}
-a:visited {color:blue;}
-img {
-	width: 100%;
-	margin: 1em 0;
-}
-.main {	padding: 1em; }
-.red {color:red;}
-.green {color:green;}
-.gray {color:gray;}
-table {border-collapse: collapse;font-size: 85%;}
-td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
-td.left, th.left {text-align:left;}
-td.notes {text-align: left;}
-td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { 
-	color: #666; position: sticky; top: 0px; 
-
-	background-color: rgba(200,200,200,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(200, 200, 200, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-
-}
-.notes { min-width: 15em; }
-.collapsed {display: none;}
-td.left { 
-	position: sticky; 
-	left: 0px; 
-	z-index: 1;
-
-	background-color: rgba(225,225,225,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(255, 255, 255, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-}
-th.left {
-	position: sticky; 
-	left: 0px; 
-	z-index: 2;
-}
-
-nav {
-	background: #eef; 
-	padding: 0.5em 1em;
-	font-family: Helvetica, sans-serif;
-	border-bottom: 2px solid #666;
-	}
-nav div.navrail { display: flex; }
-nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
-nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
-
-@media (max-width: 450px) {
-	.main { padding: 1em 0.5em; }
-	nav { padding: 0.25 0.5em; }
-}
-
-#comparisonSwitcher {
-	font-size: 80%;
-	display: flex;
-	column-gap: 18px;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-@media (min-width: 400px) {
-	#comparisonSwitcher {
-		font-size: 100%;
-	}
-}
-@media (min-width: 960px) {
-	#comparisonSwitcher {
-		justify-content: flex-start;
-		column-gap: 24px;
-	}
-}
-
-
-</style>
 <body>
 
 <nav id="comparisonSwitcher">
@@ -125,7 +113,7 @@ nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 
 
 <h1>Eurorack Pitch + Gate Sequencer Module Comparison</h1>
 
-<p>Martin Doudoroff<br />
+<p>Martin Doudoroff<br>
 <script type="text/javascript"><!--
 var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
 // --></script>
@@ -135,47 +123,47 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2023-06-20 added Squarp Hermod+<br />
-2023-02-22 added ALM ASQ-1<br />
-2022-03-23 added various new sequencers to lists at bottom<br />
-2021-06-01 added XAOC Moskwa II<br />
+2023-06-20 added Squarp Hermod+<br>
+2023-02-22 added ALM ASQ-1<br>
+2022-03-23 added various new sequencers to lists at bottom<br>
+2021-06-01 added XAOC Moskwa II<br>
 <span id="additionalUpdates" class="collapsed">
-2021-05-15 errata<br />
-2021-05-14 misc updates, added videos column<br />
-2021-04-08 errata<br />
-2021-02-15 added Intellijel Metropolix<br />
-2021-01-23 minor updates<br />
-2021-01-03 added Intellijel Tete+Tetrapad<br />
-2020-12-19 added D&D Modules Heaven 16<br />
-2020-12-12 added Extralife Super Sixteen, other updates<br />
-2020-10-25 added Ladik S-280<br />
-2020-08-01 added SDS Digital Sequarallel<br />
-2020-07-21 added (with misgivings) Behringer 960 and 182<br />
-2020-04-29 added the RYK M185<br />
-2020-03-30 reworked the Gate Handling column<br />
-2019-12-30 minor updates<br />
-2019-10-28 added Befaco Muxlicer<br />
-2019-10-27 added Qu-bit Bloom to the comparison, updates<br />
-2019-10-15 removed Pittsburgh Sequence Designer<br />
-2019-10-13 minor updates<br />
-2019-09-30 added Tesseract Sequencer<br />
-2019-09-30 added Oakley Sequencer<br />
-2019-09-06 added Octone, other updates<br />
-2019-09-05 added WMD Metron+Voltera<br />
-2019-05-13 added Erica Black Sequencer, Livestock Shepard<br />
-2019-05-08 added Endorphin.es Ground Control<br />
-2019-05-03 added USTA, release years<br />
-2019-02-13 added CFM1<br />
-2019-02-10 stubbed out Per|Former (DIY)<br />
-2018-09-19 added René 2<br />
-2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br />
-2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br />
-2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br />
-2017-08-15 NerdSeq updates<br />
-2017-07-03 Corrections<br />
-2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br />
-2017-06-19 Various tweaks and additions<br />
-2017-06-18 Rough draft<br />
+2021-05-15 errata<br>
+2021-05-14 misc updates, added videos column<br>
+2021-04-08 errata<br>
+2021-02-15 added Intellijel Metropolix<br>
+2021-01-23 minor updates<br>
+2021-01-03 added Intellijel Tete+Tetrapad<br>
+2020-12-19 added D&D Modules Heaven 16<br>
+2020-12-12 added Extralife Super Sixteen, other updates<br>
+2020-10-25 added Ladik S-280<br>
+2020-08-01 added SDS Digital Sequarallel<br>
+2020-07-21 added (with misgivings) Behringer 960 and 182<br>
+2020-04-29 added the RYK M185<br>
+2020-03-30 reworked the Gate Handling column<br>
+2019-12-30 minor updates<br>
+2019-10-28 added Befaco Muxlicer<br>
+2019-10-27 added Qu-bit Bloom to the comparison, updates<br>
+2019-10-15 removed Pittsburgh Sequence Designer<br>
+2019-10-13 minor updates<br>
+2019-09-30 added Tesseract Sequencer<br>
+2019-09-30 added Oakley Sequencer<br>
+2019-09-06 added Octone, other updates<br>
+2019-09-05 added WMD Metron+Voltera<br>
+2019-05-13 added Erica Black Sequencer, Livestock Shepard<br>
+2019-05-08 added Endorphin.es Ground Control<br>
+2019-05-03 added USTA, release years<br>
+2019-02-13 added CFM1<br>
+2019-02-10 stubbed out Per|Former (DIY)<br>
+2018-09-19 added René 2<br>
+2018-07-30 added Pittsburgh and Random Source sequencers, misc updates<br>
+2018-04-26 misc updates, added Red Light District, Varigate 4+, and Lifeforms Micro Sequence<br>
+2017-11-01 updates to FLXS1, added Squarp and 1010Music Toolbox<br>
+2017-08-15 NerdSeq updates<br>
+2017-07-03 Corrections<br>
+2017-06-29 Added column on gate sequencing features; added Rene, Popcorn and Mattson sq816<br>
+2017-06-19 Various tweaks and additions<br>
+2017-06-18 Rough draft<br>
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
 </p>
@@ -327,12 +315,12 @@ def klassForAny(val):
 def valueForproduct(row):
 	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += '<br />%s' % row['_year']
-	h += '<br /><small>'
+		h += '<br>%s' % row['_year']
+	h += '<br><small>'
 	if row['_mgurl'].strip():
-		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+		h += '<br><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+		h += '<br><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
 	h += '</small>'
 	return h
 
@@ -345,7 +333,7 @@ def valueForvideos(row):
 	for l in links:
 		(text, url) = l.split('|')
 		bits.append(f'<a href="{url.strip()}" target="_blank">{text.strip()}</a>')
-	return '<br /><br />'.join(bits)
+	return '<br><br>'.join(bits)
 
 def klassFornotes(val):
 	return 'left'
@@ -392,7 +380,7 @@ def valueFornotes(row):
 
 def valueFortrack_outs(row):
 	vals = row['track_outs'].split(',')
-	return '<br />'.join(vals)
+	return '<br>'.join(vals)
 
 rows = []
 columnDisplayNames = {}
