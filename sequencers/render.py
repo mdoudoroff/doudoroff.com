@@ -123,6 +123,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-09-10 added Tesseract Step Fader II<br>
 2023-06-20 added Squarp Hermod+<br>
 2023-02-22 added ALM ASQ-1<br>
 2022-03-23 added various new sequencers to lists at bottom<br>
