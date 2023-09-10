@@ -7,113 +7,101 @@ if sys.version_info[0] != 3:
     sys.exit("This script requires Python version 3")
 
 html_top = '''
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Eurorack Sampler Module Comparison</title>
+	<style>
+		body {
+			max-width: 1600px;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		p, li {
+			max-width: 40rem;
+			line-height: 1.4;
+		}
+		.updates {
+			font-size: 85%;
+			font-family: monospace;
+		}
+		a {text-decoration:none;}
+		a:hover {color:red;text-decoration:underline;}
+		a:visited {color:blue;}
+		img {
+			width: 100%;
+			margin: 1em 0;
+		}
+		.main {	padding: 1em; }
+		.red {color:red;}
+		.green {color:green;}
+		.gray {color:gray;}
+		table {border-collapse: collapse;font-size: 85%;}
+		td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+		td.left, th.left {text-align:left;}
+		td.notes {text-align: left;}
+		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+		th { 
+			color: #666; position: sticky; top: 0px; 
+
+			background-color: rgba(200,200,200,0.9);
+		}
+		.notes { min-width: 15em; }
+		.collapsed {display: none;}
+		td.left { 
+			position: sticky; 
+			left: 0px; 
+			z-index: 1;
+
+			background-color: rgba(225,225,225,0.9);
+		}
+		th.left {
+			position: sticky; 
+			left: 0px; 
+			z-index: 2;
+		}
+
+		nav {
+			background: #eef; 
+			padding: 0.5em 1em;
+			font-family: Helvetica, sans-serif;
+			border-bottom: 2px solid #666;
+			}
+		nav div.navrail { display: flex; }
+		nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+		nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+		@media (max-width: 450px) {
+			.main { padding: 1em 0.5em; }
+			nav { padding: 0.25 0.5em; }
+		}
+
+		table.players .nope { display: none; }
+
+		#comparisonSwitcher {
+			font-size: 80%;
+			display: flex;
+			column-gap: 18px;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 400px) {
+			#comparisonSwitcher {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 960px) {
+			#comparisonSwitcher {
+				justify-content: flex-start;
+				column-gap: 24px;
+			}
+		}
+	</style>
 </head>
-<style>
-body {
-	max-width: 1600px;
-	font-family: Georgia, serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-}
-p, li {
-	max-width: 40rem;
-	line-height: 1.4;
-}
-.updates {
-	font-size: 85%;
-	font-family: monospace;
-}
-a {text-decoration:none;}
-a:hover {color:red;text-decoration:underline;}
-a:visited {color:blue;}
-img {
-	width: 100%;
-	margin: 1em 0;
-}
-.main {	padding: 1em; }
-.red {color:red;}
-.green {color:green;}
-.gray {color:gray;}
-table {border-collapse: collapse;font-size: 85%;}
-td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
-td.left, th.left {text-align:left;}
-td.notes {text-align: left;}
-td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { 
-	color: #666; position: sticky; top: 0px; 
-
-	background-color: rgba(200,200,200,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(200, 200, 200, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-
-}
-.notes { min-width: 15em; }
-.collapsed {display: none;}
-td.left { 
-	position: sticky; 
-	left: 0px; 
-	z-index: 1;
-
-	background-color: rgba(225,225,225,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(255, 255, 255, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-}
-th.left {
-	position: sticky; 
-	left: 0px; 
-	z-index: 2;
-}
-
-nav {
-	background: #eef; 
-	padding: 0.5em 1em;
-	font-family: Helvetica, sans-serif;
-	border-bottom: 2px solid #666;
-	}
-nav div.navrail { display: flex; }
-nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
-nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
-
-@media (max-width: 450px) {
-	.main { padding: 1em 0.5em; }
-	nav { padding: 0.25 0.5em; }
-}
-
-table.players .nope { display: none; }
-
-#comparisonSwitcher {
-	font-size: 80%;
-	display: flex;
-	column-gap: 18px;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-@media (min-width: 400px) {
-	#comparisonSwitcher {
-		font-size: 100%;
-	}
-}
-@media (min-width: 960px) {
-	#comparisonSwitcher {
-		justify-content: flex-start;
-		column-gap: 24px;
-	}
-}
-
-
-</style>
 <body>
 
 <nav id="comparisonSwitcher">
@@ -127,7 +115,7 @@ table.players .nope { display: none; }
 
 <h1>Eurorack Sampler Module Comparison</h1>
 
-<p>Martin Doudoroff<br />
+<p>Martin Doudoroff<br>
 <script type="text/javascript"><!--
 var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
 // --></script>
@@ -137,28 +125,28 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2023-09-04 added 4ms Sampler<br />
-2022-07-16 added Mutable Instruments Beads<br />
-2022-05-31 minor updates<br />
-2022-05-29 added ADDAC112 and Miso Cornflakes<br />
-2021-07-28 added Endorphin.es Two of Cups<br />
-2020-06-04 added 2hp Loop; additional updates<br />
-2020-04-25 added Bitbox Mk2 and Bitbox Micro<br />
-2020-04-24 added Disting EX<br />
+2023-09-04 added 4ms Sampler<br>
+2022-07-16 added Mutable Instruments Beads<br>
+2022-05-31 minor updates<br>
+2022-05-29 added ADDAC112 and Miso Cornflakes<br>
+2021-07-28 added Endorphin.es Two of Cups<br>
+2020-06-04 added 2hp Loop; additional updates<br>
+2020-04-25 added Bitbox Mk2 and Bitbox Micro<br>
+2020-04-24 added Disting EX<br>
 <span id="additionalUpdates" class="collapsed">
-2020-04-16 errata & updates<br />
-2020-02-28 added Squarp Rample<br />
-2019-09-27 errata<br />
-2019-09-25 clarified some wording<br />
-2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
-2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
-2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
-2019-09-17 added (tentatively) Clouds, more edits/augmentations<br />
-2019-09-16 added (nascent) latency column, corrections<br />
-2019-09-15 added 4ms DLD; many corrections and details<br />
-2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
-2019-09-13 added Mungo g0, filled in more cells<br />
-2019-08-26 super rough first draft<br />
+2020-04-16 errata & updates<br>
+2020-02-28 added Squarp Rample<br>
+2019-09-27 errata<br>
+2019-09-25 clarified some wording<br>
+2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br>
+2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br>
+2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br>
+2019-09-17 added (tentatively) Clouds, more edits/augmentations<br>
+2019-09-16 added (nascent) latency column, corrections<br>
+2019-09-15 added 4ms DLD; many corrections and details<br>
+2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br>
+2019-09-13 added Mungo g0, filled in more cells<br>
+2019-08-26 super rough first draft<br>
 
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
@@ -277,14 +265,14 @@ def klassForAny(val):
 def valueForproduct(row):
 	h = '<strong>%s</strong>' % row['product']
 	if row['_year'].strip():
-		h += '<br />%s' % row['_year']
-	h += '<br /><small>'
+		h += '<br>%s' % row['_year']
+	h += '<br><small>'
 	if row['_hp'].strip():
-		h += '<br />%s HP' % row['_hp']
+		h += '<br>%s HP' % row['_hp']
 	if row['_mgurl'].strip():
-		h += '<br /><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+		h += '<br><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
 	if row['_website'].strip():
-		h += '<br /><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+		h += '<br><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
 	h += '</small>'
 	return h
 

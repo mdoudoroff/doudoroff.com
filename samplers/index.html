@@ -1,111 +1,99 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Eurorack Sampler Module Comparison</title>
+	<style>
+		body {
+			max-width: 1600px;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		p, li {
+			max-width: 40rem;
+			line-height: 1.4;
+		}
+		.updates {
+			font-size: 85%;
+			font-family: monospace;
+		}
+		a {text-decoration:none;}
+		a:hover {color:red;text-decoration:underline;}
+		a:visited {color:blue;}
+		img {
+			width: 100%;
+			margin: 1em 0;
+		}
+		.main {	padding: 1em; }
+		.red {color:red;}
+		.green {color:green;}
+		.gray {color:gray;}
+		table {border-collapse: collapse;font-size: 85%;}
+		td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+		td.left, th.left {text-align:left;}
+		td.notes {text-align: left;}
+		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+		th { 
+			color: #666; position: sticky; top: 0px; 
+
+			background-color: rgba(200,200,200,0.9);
+		}
+		.notes { min-width: 15em; }
+		.collapsed {display: none;}
+		td.left { 
+			position: sticky; 
+			left: 0px; 
+			z-index: 1;
+
+			background-color: rgba(225,225,225,0.9);
+		}
+		th.left {
+			position: sticky; 
+			left: 0px; 
+			z-index: 2;
+		}
+
+		nav {
+			background: #eef; 
+			padding: 0.5em 1em;
+			font-family: Helvetica, sans-serif;
+			border-bottom: 2px solid #666;
+			}
+		nav div.navrail { display: flex; }
+		nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+		nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+		@media (max-width: 450px) {
+			.main { padding: 1em 0.5em; }
+			nav { padding: 0.25 0.5em; }
+		}
+
+		table.players .nope { display: none; }
+
+		#comparisonSwitcher {
+			font-size: 80%;
+			display: flex;
+			column-gap: 18px;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 400px) {
+			#comparisonSwitcher {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 960px) {
+			#comparisonSwitcher {
+				justify-content: flex-start;
+				column-gap: 24px;
+			}
+		}
+	</style>
 </head>
-<style>
-body {
-	max-width: 1600px;
-	font-family: Georgia, serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-}
-p, li {
-	max-width: 40rem;
-	line-height: 1.4;
-}
-.updates {
-	font-size: 85%;
-	font-family: monospace;
-}
-a {text-decoration:none;}
-a:hover {color:red;text-decoration:underline;}
-a:visited {color:blue;}
-img {
-	width: 100%;
-	margin: 1em 0;
-}
-.main {	padding: 1em; }
-.red {color:red;}
-.green {color:green;}
-.gray {color:gray;}
-table {border-collapse: collapse;font-size: 85%;}
-td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
-td.left, th.left {text-align:left;}
-td.notes {text-align: left;}
-td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-th { 
-	color: #666; position: sticky; top: 0px; 
-
-	background-color: rgba(200,200,200,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(200, 200, 200, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-
-}
-.notes { min-width: 15em; }
-.collapsed {display: none;}
-td.left { 
-	position: sticky; 
-	left: 0px; 
-	z-index: 1;
-
-	background-color: rgba(225,225,225,0.9);
-	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-		background-color: rgba(255, 255, 255, .5);
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
-	}
-}
-th.left {
-	position: sticky; 
-	left: 0px; 
-	z-index: 2;
-}
-
-nav {
-	background: #eef; 
-	padding: 0.5em 1em;
-	font-family: Helvetica, sans-serif;
-	border-bottom: 2px solid #666;
-	}
-nav div.navrail { display: flex; }
-nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
-nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
-
-@media (max-width: 450px) {
-	.main { padding: 1em 0.5em; }
-	nav { padding: 0.25 0.5em; }
-}
-
-table.players .nope { display: none; }
-
-#comparisonSwitcher {
-	font-size: 80%;
-	display: flex;
-	column-gap: 18px;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-@media (min-width: 400px) {
-	#comparisonSwitcher {
-		font-size: 100%;
-	}
-}
-@media (min-width: 960px) {
-	#comparisonSwitcher {
-		justify-content: flex-start;
-		column-gap: 24px;
-	}
-}
-
-
-</style>
 <body>
 
 <nav id="comparisonSwitcher">
@@ -119,7 +107,7 @@ table.players .nope { display: none; }
 
 <h1>Eurorack Sampler Module Comparison</h1>
 
-<p>Martin Doudoroff<br />
+<p>Martin Doudoroff<br>
 <script type="text/javascript"><!--
 var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
 // --></script>
@@ -129,28 +117,28 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
-2023-09-04 added 4ms Sampler<br />
-2022-07-16 added Mutable Instruments Beads<br />
-2022-05-31 minor updates<br />
-2022-05-29 added ADDAC112 and Miso Cornflakes<br />
-2021-07-28 added Endorphin.es Two of Cups<br />
-2020-06-04 added 2hp Loop; additional updates<br />
-2020-04-25 added Bitbox Mk2 and Bitbox Micro<br />
-2020-04-24 added Disting EX<br />
+2023-09-04 added 4ms Sampler<br>
+2022-07-16 added Mutable Instruments Beads<br>
+2022-05-31 minor updates<br>
+2022-05-29 added ADDAC112 and Miso Cornflakes<br>
+2021-07-28 added Endorphin.es Two of Cups<br>
+2020-06-04 added 2hp Loop; additional updates<br>
+2020-04-25 added Bitbox Mk2 and Bitbox Micro<br>
+2020-04-24 added Disting EX<br>
 <span id="additionalUpdates" class="collapsed">
-2020-04-16 errata & updates<br />
-2020-02-28 added Squarp Rample<br />
-2019-09-27 errata<br />
-2019-09-25 clarified some wording<br />
-2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br />
-2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br />
-2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br />
-2019-09-17 added (tentatively) Clouds, more edits/augmentations<br />
-2019-09-16 added (nascent) latency column, corrections<br />
-2019-09-15 added 4ms DLD; many corrections and details<br />
-2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br />
-2019-09-13 added Mungo g0, filled in more cells<br />
-2019-08-26 super rough first draft<br />
+2020-04-16 errata & updates<br>
+2020-02-28 added Squarp Rample<br>
+2019-09-27 errata<br>
+2019-09-25 clarified some wording<br>
+2019-09-24 kicked the DLD back down to the bottom of the page; other corrections<br>
+2019-09-22 by request, broke table in two: one for those that capture audio, and one for those that just play<br>
+2019-09-19 added (tentatively) Modcan CV Record, Supercell, Microcell and ISD, plus more edits<br>
+2019-09-17 added (tentatively) Clouds, more edits/augmentations<br>
+2019-09-16 added (nascent) latency column, corrections<br>
+2019-09-15 added 4ms DLD; many corrections and details<br>
+2019-09-14 added VPME, Doepfer and Ladik modules, ongoing basic corrections<br>
+2019-09-13 added Mungo g0, filled in more cells<br>
+2019-08-26 super rough first draft<br>
 
 </span>
 <a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>
@@ -191,7 +179,7 @@ function toggleAdditionalUpdates()
 <p>Many modules do some or all of the above, but there’s nearly always some sort of bias built into the user interface.</p>
 
 <h2>Samplers (with recording/capture)</h2><table><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Recording</th><th class="">Max record length</th><th class="">Clocked recording</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
-<tr><td class="left"><strong>1010 Music Bitbox</strong><br />2016<br /><small><br />26 HP<br /><a href="https://www.modulargrid.net/e/1010-music-bitbox-2-0" target="_blank">Modular Grid &gt;</a><br /><a href="https://1010music.com/product/bitbox-eurorack-module-with-touchscreen" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>1010 Music Bitbox</strong><br>2016<br><small><br>26 HP<br><a href="https://www.modulargrid.net/e/1010-music-bitbox-2-0" target="_blank">Modular Grid &gt;</a><br><a href="https://1010music.com/product/bitbox-eurorack-module-with-touchscreen" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/bitbox.jpg"><img src="gfx/bitbox.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -212,7 +200,7 @@ function toggleAdditionalUpdates()
 	<li> ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>1010 Music Bitbox mk2</strong><br />2020<br /><small><br />26 HP<br /><a href="https://1010music.com/product/bitbox-mk2" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>1010 Music Bitbox mk2</strong><br>2020<br><small><br>26 HP<br><a href="https://1010music.com/product/bitbox-mk2" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/bitbox-mk2.jpg"><img src="gfx/bitbox-mk2.jpg" style="width:130px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -234,7 +222,7 @@ function toggleAdditionalUpdates()
 	<li> ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>1010 Music Bitbox Micro</strong><br />2020<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/1010-music-bitbox-micro-" target="_blank">Modular Grid &gt;</a><br /><a href="https://1010music.com/product/bitbox-micro" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>1010 Music Bitbox Micro</strong><br>2020<br><small><br>18 HP<br><a href="https://www.modulargrid.net/e/1010-music-bitbox-micro-" target="_blank">Modular Grid &gt;</a><br><a href="https://1010music.com/product/bitbox-micro" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/bitbox-micro.jpg"><img src="gfx/bitbox-micro.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player, granular</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -256,7 +244,7 @@ function toggleAdditionalUpdates()
 	<li> ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>2hp Loop</strong><br />2020<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-loop-black-panel" target="_blank">Modular Grid &gt;</a></small></td>
+<tr><td class="left"><strong>2hp Loop</strong><br>2020<br><small><br>2 HP<br><a href="https://www.modulargrid.net/e/2hp-loop-black-panel" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/2hp-loop.jpg"><img src="gfx/2hp-loop.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">looper</td>
 	<td class="">24-bit 48kHz mono</td>
@@ -272,7 +260,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>4ms Sampler</strong><br />2023<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-sampler" target="_blank">Modular Grid &gt;</a><br /><a href="https://4mscompany.com/sampler" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>4ms Sampler</strong><br>2023<br><small><br>16 HP<br><a href="https://www.modulargrid.net/e/4ms-company-sampler" target="_blank">Modular Grid &gt;</a><br><a href="https://4mscompany.com/sampler" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/4ms-sampler.jpg"><img src="gfx/4ms-sampler.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -289,7 +277,7 @@ function toggleAdditionalUpdates()
 	<li>available pre-built or DIY</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>4ms Stereo Triggered Sampler</strong><br />2015<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/4ms-company-stereo-triggered-sampler" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.4mscompany.com/sts.php" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>4ms Stereo Triggered Sampler</strong><br>2015<br><small><br>20 HP<br><a href="https://www.modulargrid.net/e/4ms-company-stereo-triggered-sampler" target="_blank">Modular Grid &gt;</a><br><a href="http://www.4mscompany.com/sts.php" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/4ms-sts.jpg"><img src="gfx/4ms-sts.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">2 × variable up to 32-bit 96kHz</td>
@@ -307,7 +295,7 @@ function toggleAdditionalUpdates()
 	<li> end-of-sample trigger outputs</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>ADDAC 112</strong><br />2021<br /><small><br />45 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac112-controls" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.addacsystem.com/en/products/modules/addac100-series/addac112" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>ADDAC 112</strong><br>2021<br><small><br>45 HP<br><a href="https://www.modulargrid.net/e/addac-system-addac112-controls" target="_blank">Modular Grid &gt;</a><br><a href="https://www.addacsystem.com/en/products/modules/addac100-series/addac112" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/addac-112.jpg"><img src="gfx/addac-112.jpg" style="width:225px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">looper, granular</td>
 	<td class="">8-bit or 16-bit stereo up to 96Khz</td>
@@ -325,7 +313,7 @@ function toggleAdditionalUpdates()
 	<li>extensive features (please consult manual)</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>ALM Busy Circuits Squid Salmple</strong><br />2018<br /><small><br />21 HP<br /><a href="https://www.modulargrid.net/e/alm-busy-circuits-alm022-squid-salmple" target="_blank">Modular Grid &gt;</a><br /><a href="https://busycircuits.com/alm022/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>ALM Busy Circuits Squid Salmple</strong><br>2018<br><small><br>21 HP<br><a href="https://www.modulargrid.net/e/alm-busy-circuits-alm022-squid-salmple" target="_blank">Modular Grid &gt;</a><br><a href="https://busycircuits.com/alm022/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/alm-squid.jpg"><img src="gfx/alm-squid.jpg" style="width:105px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">16-bit 44.1kHz mono; cv recording</td>
@@ -343,7 +331,7 @@ function toggleAdditionalUpdates()
 	<li> ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Doepfer A-112 Sampler</strong><br />2012<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/doepfer-a-112v" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.doepfer.de/a112.htm" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Doepfer A-112 Sampler</strong><br>2012<br><small><br>10 HP<br><a href="https://www.modulargrid.net/e/doepfer-a-112v" target="_blank">Modular Grid &gt;</a><br><a href="http://www.doepfer.de/a112.htm" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/doepfer-A-112.jpg"><img src="gfx/doepfer-A-112.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
 	<td class="">8-bit variable sample rate mono</td>
@@ -362,7 +350,7 @@ function toggleAdditionalUpdates()
 	<li> non-volatile memory requires battery</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Erica Synths Sample Drum</strong><br />2018<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-sample-drum" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/drum-series/sample-drum/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Erica Synths Sample Drum</strong><br>2018<br><small><br>14 HP<br><a href="https://www.modulargrid.net/e/erica-synths-sample-drum" target="_blank">Modular Grid &gt;</a><br><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/drum-series/sample-drum/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/erica-sample-drum.jpg"><img src="gfx/erica-sample-drum.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">12-bit 48kHz mono</td>
@@ -380,7 +368,7 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Expert Sleepers Disting mk4</strong><br />2017<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br /><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Expert Sleepers Disting mk4</strong><br>2017<br><small><br>4 HP<br><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a><br><a href="http://expert-sleepers.co.uk/disting.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/expert-sleepers-disting-mk4.jpg"><img src="gfx/expert-sleepers-disting-mk4.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">16 bit 46.875kHz stereo or mono</td>
@@ -401,7 +389,7 @@ function toggleAdditionalUpdates()
 	<li> some MIDI support</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Expert Sleepers Disting EX</strong><br />2020<br /><small><br />8 HP<br /><a href="https://www.modulargrid.net/e/expert-sleepers-disting-ex" target="_blank">Modular Grid &gt;</a><br /><a href="https://expert-sleepers.co.uk/distingEX.html" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Expert Sleepers Disting EX</strong><br>2020<br><small><br>8 HP<br><a href="https://www.modulargrid.net/e/expert-sleepers-disting-ex" target="_blank">Modular Grid &gt;</a><br><a href="https://expert-sleepers.co.uk/distingEX.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/expert-sleepers-disting-ex.jpg"><img src="gfx/expert-sleepers-disting-ex.jpg" style="width:40px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">24 bit 96kHz stereo or mono</td>
@@ -422,7 +410,7 @@ function toggleAdditionalUpdates()
 	<li> some MIDI support</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Ginko Synthese Sampleslicer MkII</strong><br />2017<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/ginko-synthese-sampleslicer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.ginkosynthese.com/product/sampleslicer/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Ginko Synthese Sampleslicer MkII</strong><br>2017<br><small><br>16 HP<br><a href="https://www.modulargrid.net/e/ginko-synthese-sampleslicer" target="_blank">Modular Grid &gt;</a><br><a href="http://www.ginkosynthese.com/product/sampleslicer/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/ginko-synthese-samplesclicer-mk2.jpg"><img src="gfx/ginko-synthese-samplesclicer-mk2.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
 	<td class="">12-bit mono</td>
@@ -439,7 +427,7 @@ function toggleAdditionalUpdates()
 	<li>capable of audio rate modulation</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Grayscale Supercell</strong><br />2018<br /><small><br />34 HP<br /><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br /><a href="http://grayscale.info/supercell/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Grayscale Supercell</strong><br>2018<br><small><br>34 HP<br><a href="https://www.modulargrid.net/e/grayscale-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br><a href="http://grayscale.info/supercell/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/grayscale-supercell.jpg"><img src="gfx/grayscale-supercell.jpg" style="width:170px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">16-bit 32kHz stereo or mono; 8-bit 16kHz stereo or mono</td>
@@ -457,7 +445,7 @@ function toggleAdditionalUpdates()
 	<li> alternate modes (algorithms) and alternate firmware</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Grayscale Microcell</strong><br />2019<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/grayscale-microcell-ucell-µcell-micro-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br /><a href="https://grayscale.info/microcell/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Grayscale Microcell</strong><br>2019<br><small><br>14 HP<br><a href="https://www.modulargrid.net/e/grayscale-microcell-ucell-µcell-micro-supercell-aluminum-panel" target="_blank">Modular Grid &gt;</a><br><a href="https://grayscale.info/microcell/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/grayscale-microcell.jpg"><img src="gfx/grayscale-microcell.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">16-bit 32kHz stereo or mono; 8-bit 16kHz stereo or mono</td>
@@ -475,7 +463,7 @@ function toggleAdditionalUpdates()
 	<li> alternate modes (algorithms) and alternate firmware</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Harvestman Tyme Sefari 2</strong><br />2012<br /><small><br />15 HP<br /><a href="https://www.modulargrid.net/e/the-harvestman-tyme-sefari-2" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.industrialmusicelectronics.com/products/7" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Harvestman Tyme Sefari 2</strong><br>2012<br><small><br>15 HP<br><a href="https://www.modulargrid.net/e/the-harvestman-tyme-sefari-2" target="_blank">Modular Grid &gt;</a><br><a href="http://www.industrialmusicelectronics.com/products/7" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/harvestman-tyme-sefari-mk2.jpg"><img src="gfx/harvestman-tyme-sefari-mk2.jpg" style="width:75px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
 	<td class="">mono</td>
@@ -493,7 +481,7 @@ function toggleAdditionalUpdates()
 	<li> extensive expander available that also enables stereo operation</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Instruo arbhar</strong><br />2019<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/instruo-arbhar" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.instruomodular.com/product/arbhar/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Instruo arbhar</strong><br>2019<br><small><br>18 HP<br><a href="https://www.modulargrid.net/e/instruo-arbhar" target="_blank">Modular Grid &gt;</a><br><a href="https://www.instruomodular.com/product/arbhar/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-arbhar.jpg"><img src="gfx/instruo-arbhar.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">mono</td>
@@ -512,7 +500,7 @@ function toggleAdditionalUpdates()
 	<li> preamp and microphone</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Instruo Lúbadh</strong><br />2019<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/instruo-lubadh" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.instruomodular.com/product/lubadh/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Instruo Lúbadh</strong><br>2019<br><small><br>20 HP<br><a href="https://www.modulargrid.net/e/instruo-lubadh" target="_blank">Modular Grid &gt;</a><br><a href="https://www.instruomodular.com/product/lubadh/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/instruo-lubadh.jpg"><img src="gfx/instruo-lubadh.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape</td>
 	<td class="">2 × 24-bit 96kHz mono</td>
@@ -530,7 +518,7 @@ function toggleAdditionalUpdates()
 	<li> includes 2hp expander with additional CV ins (not shown)</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Make Noise Morphagene</strong><br />2017<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/make-noise-morphagene" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/modules/morphagene" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Make Noise Morphagene</strong><br>2017<br><small><br>20 HP<br><a href="https://www.modulargrid.net/e/make-noise-morphagene" target="_blank">Modular Grid &gt;</a><br><a href="http://www.makenoisemusic.com/modules/morphagene" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/make-noise-morphagene.jpg"><img src="gfx/make-noise-morphagene.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, granular</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -548,7 +536,7 @@ function toggleAdditionalUpdates()
 	<li>end-of-splice trigger</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Make Noise Phonogene</strong><br />2012<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/make-noise-phonogene" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.makenoisemusic.com/phonogene.shtml" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Make Noise Phonogene</strong><br>2012<br><small><br>20 HP<br><a href="https://www.modulargrid.net/e/make-noise-phonogene" target="_blank">Modular Grid &gt;</a><br><a href="http://www.makenoisemusic.com/phonogene.shtml" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/make-noise-phonogene.jpg"><img src="gfx/make-noise-phonogene.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape</td>
 	<td class="">mono</td>
@@ -564,7 +552,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Miso Modular Cornflakes</strong><br />2021<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/miso-modular-cornflakes" target="_blank">Modular Grid &gt;</a><br /><a href="https://miso.dk/cornflakes" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Miso Modular Cornflakes</strong><br>2021<br><small><br>14 HP<br><a href="https://www.modulargrid.net/e/miso-modular-cornflakes" target="_blank">Modular Grid &gt;</a><br><a href="https://miso.dk/cornflakes" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/miso-cornflakes.jpg"><img src="gfx/miso-cornflakes.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -582,7 +570,7 @@ function toggleAdditionalUpdates()
 	<li> time stretching, pitch shifting and harmonization (quantized or not)</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Modcan CV Record</strong><br />2012<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/modcan-cv-record" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.modcan.com/emodules/cvrecord.html" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Modcan CV Record</strong><br>2012<br><small><br>10 HP<br><a href="https://www.modulargrid.net/e/modcan-cv-record" target="_blank">Modular Grid &gt;</a><br><a href="http://www.modcan.com/emodules/cvrecord.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/modcan-cv-record.jpg"><img src="gfx/modcan-cv-record.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
 	<td class="">two mono or one stereo 400hz to 44.1kHz at unknown bitdepth</td>
@@ -600,7 +588,7 @@ function toggleAdditionalUpdates()
 	<li> third channel for recording and playing a parallel gate stream</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Mordax GXN</strong><br />2018<br /><small><br />20 HP<br /><a href="https://www.modulargrid.net/e/mordax-gxn" target="_blank">Modular Grid &gt;</a></small></td>
+<tr><td class="left"><strong>Mordax GXN</strong><br>2018<br><small><br>20 HP<br><a href="https://www.modulargrid.net/e/mordax-gxn" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mordax-gxn.jpg"><img src="gfx/mordax-gxn.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">stereo</td>
@@ -616,7 +604,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Mungo s0 Sample/Slicer</strong><br />2015<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-s0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/s0.html" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Mungo s0 Sample/Slicer</strong><br>2015<br><small><br>12 HP<br><a href="https://www.modulargrid.net/e/mungo-enterprises-s0" target="_blank">Modular Grid &gt;</a><br><a href="http://mungo.com.au/s0.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mungo-s0.jpg"><img src="gfx/mungo-s0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, file player</td>
 	<td class="">16-bit mono</td>
@@ -634,7 +622,7 @@ function toggleAdditionalUpdates()
 	<li> looping sustain</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Mungo g0</strong><br />2012<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/mungo-enterprises-g0" target="_blank">Modular Grid &gt;</a><br /><a href="http://mungo.com.au/g0.html" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Mungo g0</strong><br>2012<br><small><br>12 HP<br><a href="https://www.modulargrid.net/e/mungo-enterprises-g0" target="_blank">Modular Grid &gt;</a><br><a href="http://mungo.com.au/g0.html" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mungo-g0.jpg"><img src="gfx/mungo-g0.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">16-bit mono</td>
@@ -650,7 +638,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Mutable Instruments Beads</strong><br />2021<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/mutable-instruments-beads" target="_blank">Modular Grid &gt;</a><br /><a href="https://mutable-instruments.net/modules/beads/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Mutable Instruments Beads</strong><br>2021<br><small><br>14 HP<br><a href="https://www.modulargrid.net/e/mutable-instruments-beads" target="_blank">Modular Grid &gt;</a><br><a href="https://mutable-instruments.net/modules/beads/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mutable-beads.jpg"><img src="gfx/mutable-beads.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">48kHz 16-bit stereo 24kHz mono</td>
@@ -667,7 +655,7 @@ function toggleAdditionalUpdates()
 	<li>wavetable oscillator mode</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Mutable Instruments Clouds</strong><br />2014<br /><small><br />18 HP<br /><a href="https://www.modulargrid.net/e/mutable-instruments-clouds" target="_blank">Modular Grid &gt;</a><br /><a href="https://mutable-instruments.net/modules/clouds/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Mutable Instruments Clouds</strong><br>2014<br><small><br>18 HP<br><a href="https://www.modulargrid.net/e/mutable-instruments-clouds" target="_blank">Modular Grid &gt;</a><br><a href="https://mutable-instruments.net/modules/clouds/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mi-clouds.jpg"><img src="gfx/mi-clouds.jpg" style="width:90px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">16-bit 32kHz stereo or mono; 8-bit 16kHz stereo or mono</td>
@@ -686,7 +674,7 @@ function toggleAdditionalUpdates()
 	<li> NOTE: numerous miniaturized 8hp “uClouds” clones are on the market</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Noise Reap ISD Sampler</strong><br />2017<br /><small><br />10 HP<br /><a href="https://www.modulargrid.net/e/noise-reap-isd-sampler" target="_blank">Modular Grid &gt;</a><br /><a href="https://noisereap.com/?product=isd-sampler" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Noise Reap ISD Sampler</strong><br>2017<br><small><br>10 HP<br><a href="https://www.modulargrid.net/e/noise-reap-isd-sampler" target="_blank">Modular Grid &gt;</a><br><a href="https://noisereap.com/?product=isd-sampler" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/noise-reap-isd.jpg"><img src="gfx/noise-reap-isd.jpg" style="width:50px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">audio buffer</td>
 	<td class="">lo-fi mono</td>
@@ -703,7 +691,7 @@ function toggleAdditionalUpdates()
 	<li>bandpass-filtered around human vocal frequencies</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Orthogonal Devices ER-301 Sound Computer</strong><br />2016<br /><small><br />30 HP<br /><a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.orthogonaldevices.com/er-301" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Orthogonal Devices ER-301 Sound Computer</strong><br>2016<br><small><br>30 HP<br><a href="https://www.modulargrid.net/e/orthogonal-devices-er-301-sound-computer" target="_blank">Modular Grid &gt;</a><br><a href="http://www.orthogonaldevices.com/er-301" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/od-er-301.jpg"><img src="gfx/od-er-301.jpg" style="width:150px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player, granular</td>
 	<td class="">16-bit mono or stereo (up to six simultaneous mono tracks), external or internal (bounce); cv recording (for internal use only)</td>
@@ -720,7 +708,7 @@ function toggleAdditionalUpdates()
 	<li>generalized audio processing computer with many functions, including sampling</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Percussa SSP</strong><br />2017<br /><small><br />60 HP<br /><a href="https://www.modulargrid.net/e/percussa-super-signal-processor" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.percussa.com/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Percussa SSP</strong><br>2017<br><small><br>60 HP<br><a href="https://www.modulargrid.net/e/percussa-super-signal-processor" target="_blank">Modular Grid &gt;</a><br><a href="http://www.percussa.com/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/percussa-ssp.jpg"><img src="gfx/percussa-ssp.jpg" style="width:300px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player, granular</td>
 	<td class="">32-bit 48/96/192kHz (up to 16 channels or more)</td>
@@ -739,7 +727,7 @@ function toggleAdditionalUpdates()
 	<li> USB I/O</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Pulse Synthesizers Load Runner</strong><br />2019<br /><small><br />25 HP<br /><a href="https://www.modulargrid.net/e/other-unknown-load-runner-" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.tinshedmodular.com/store/p424/Load_Runner.html?fbclid=IwAR16HCp60Sc4JTfBPt-QBVSxqb-UFA57RFbQwJjezvSSxrkfImLFFSkwZsA" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Pulse Synthesizers Load Runner</strong><br>2019<br><small><br>25 HP<br><a href="https://www.modulargrid.net/e/other-unknown-load-runner-" target="_blank">Modular Grid &gt;</a><br><a href="https://www.tinshedmodular.com/store/p424/Load_Runner.html?fbclid=IwAR16HCp60Sc4JTfBPt-QBVSxqb-UFA57RFbQwJjezvSSxrkfImLFFSkwZsA" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tin-shed-load-runner.jpg"><img src="gfx/tin-shed-load-runner.jpg" style="width:125px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">16-bit 44.1kHz mono</td>
@@ -755,7 +743,7 @@ function toggleAdditionalUpdates()
 	<td class="left notes"><ul>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Qu-bit Nebulae 2</strong><br />2018<br /><small><br />20 HP<br /><a href="https://www.qubitelectronix.com/shop/nebulae" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.qubitelectronix.com/modules/nebulae" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Qu-bit Nebulae 2</strong><br>2018<br><small><br>20 HP<br><a href="https://www.qubitelectronix.com/shop/nebulae" target="_blank">Modular Grid &gt;</a><br><a href="http://www.qubitelectronix.com/modules/nebulae" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/qubit-nebulae-2.jpg"><img src="gfx/qubit-nebulae-2.jpg" style="width:100px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">granular</td>
 	<td class="">24-bit 48kHz stereo</td>
@@ -772,7 +760,7 @@ function toggleAdditionalUpdates()
 	<li>alternate firmware</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Rossum Electro-Music Assimil8or</strong><br />2017<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/rossum-electro-music-assimil8or" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.rossum-electro.com/products/assimil8or/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Rossum Electro-Music Assimil8or</strong><br>2017<br><small><br>28 HP<br><a href="https://www.modulargrid.net/e/rossum-electro-music-assimil8or" target="_blank">Modular Grid &gt;</a><br><a href="http://www.rossum-electro.com/products/assimil8or/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/rossum-assimil8or.jpg"><img src="gfx/rossum-assimil8or.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="">24-bit variable rate stereo up to 192kHz</td>
@@ -791,7 +779,7 @@ function toggleAdditionalUpdates()
 	<li> phase modulation</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>SDS Digital Reflex LiveLoop</strong><br />2016<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/sds-digital-reflex-liveloop" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.freshnelly.com/reflex/reflexhtml.htm" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>SDS Digital Reflex LiveLoop</strong><br>2016<br><small><br>16 HP<br><a href="https://www.modulargrid.net/e/sds-digital-reflex-liveloop" target="_blank">Modular Grid &gt;</a><br><a href="http://www.freshnelly.com/reflex/reflexhtml.htm" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/sds-digital-reflex.jpg"><img src="gfx/sds-digital-reflex.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">looper, virtual tape</td>
 	<td class="">16-bit variable rate 1.5kHz–48kHz </td>
@@ -813,7 +801,7 @@ function toggleAdditionalUpdates()
 	<li> flash board expansion PCB adds 8 slots of non-volatile memory for module state and TRS MIDI</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Strymon Magneto</strong><br />2018<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/strymon-magneto" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.strymon.net/products/magneto/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Strymon Magneto</strong><br>2018<br><small><br>28 HP<br><a href="https://www.modulargrid.net/e/strymon-magneto" target="_blank">Modular Grid &gt;</a><br><a href="https://www.strymon.net/products/magneto/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/strymon-magneto.jpg"><img src="gfx/strymon-magneto.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">looper, virtual tape</td>
 	<td class="">stereo</td>
@@ -831,7 +819,7 @@ function toggleAdditionalUpdates()
 	<li> four virtual playback heads to play with</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Whimsical Raps MANNEQUINS W/</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/mannequins-w" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.whimsicalraps.com/products/wslash" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Whimsical Raps MANNEQUINS W/</strong><br>2018<br><small><br>2 HP<br><a href="https://www.modulargrid.net/e/mannequins-w" target="_blank">Modular Grid &gt;</a><br><a href="https://www.whimsicalraps.com/products/wslash" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/mannequins-w.jpg"><img src="gfx/mannequins-w.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">virtual tape, looper</td>
 	<td class="">mono</td>
@@ -849,7 +837,7 @@ function toggleAdditionalUpdates()
 	</ul></td>
 </tr>
 </table><h2>Sample Players (no recording/capture)</h2><table class="players"><tr><th class="left">Product</th><th class="pic"></th><th class="">Type</th><th class="">Simultaneous samples (playback)</th><th class="">Triggered Latency</th><th class="">Outputs</th><th class="">CV support</th><th class="">storage/file format</th><th class="">Shipping</th><th class="">Approx. Price (USD)</th><th class="left notes">Additional Notes</th></tr>
-<tr><td class="left"><strong>2hp Play</strong><br />2018<br /><small><br />2 HP<br /><a href="https://www.modulargrid.net/e/2hp-play" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.twohp.com/modules/play" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>2hp Play</strong><br>2018<br><small><br>2 HP<br><a href="https://www.modulargrid.net/e/2hp-play" target="_blank">Modular Grid &gt;</a><br><a href="http://www.twohp.com/modules/play" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/2hp-play.jpg"><img src="gfx/2hp-play.jpg" style="width:10px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -866,7 +854,7 @@ function toggleAdditionalUpdates()
 	<li>ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>ADDAC 111</strong><br />2013<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/addac-system-addac111-ultra-wav-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.addacsystem.com/product/addac100-series/addac111" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>ADDAC 111</strong><br>2013<br><small><br>16 HP<br><a href="https://www.modulargrid.net/e/addac-system-addac111-ultra-wav-player" target="_blank">Modular Grid &gt;</a><br><a href="http://www.addacsystem.com/product/addac100-series/addac111" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/addac-111.jpg"><img src="gfx/addac-111.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -884,7 +872,7 @@ function toggleAdditionalUpdates()
 	<li>expander enables gate sequencing of eight sample files</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Bastl GrandPa</strong><br />2015<br /><small><br />5 HP<br /><a href="https://www.modulargrid.net/e/bastl-instruments-grandpa" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.bastl-instruments.com/modular/grandpa/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Bastl GrandPa</strong><br>2015<br><small><br>5 HP<br><a href="https://www.modulargrid.net/e/bastl-instruments-grandpa" target="_blank">Modular Grid &gt;</a><br><a href="http://www.bastl-instruments.com/modular/grandpa/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/bastl-granpa.jpg"><img src="gfx/bastl-granpa.jpg" style="width:25px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player, granular</td>
 	<td class="nope"> </td>
@@ -902,7 +890,7 @@ function toggleAdditionalUpdates()
 	<li> DC coupled (can play CV)</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Endorphin.es Two of Cups</strong><br />2021<br /><small><br />6 HP<br /><a href="https://www.modulargrid.net/e/endorphin-es-two-of-cups" target="_blank">Modular Grid &gt;</a><br /><a href="https://endorphin.es/items/two-of-cups/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Endorphin.es Two of Cups</strong><br>2021<br><small><br>6 HP<br><a href="https://www.modulargrid.net/e/endorphin-es-two-of-cups" target="_blank">Modular Grid &gt;</a><br><a href="https://endorphin.es/items/two-of-cups/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/endorphines-two-of-cups.jpg"><img src="gfx/endorphines-two-of-cups.jpg" style="width:30px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -920,7 +908,7 @@ function toggleAdditionalUpdates()
 	<li> ships with sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Erica Synths Pico Drums</strong><br />2016<br /><small><br />3 HP<br /><a href="https://www.modulargrid.net/e/erica-synths-pico-drums" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-drums/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Erica Synths Pico Drums</strong><br>2016<br><small><br>3 HP<br><a href="https://www.modulargrid.net/e/erica-synths-pico-drums" target="_blank">Modular Grid &gt;</a><br><a href="https://www.ericasynths.lv/shop/eurorack-modules/by-series/pico-series/pico-drums/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/erica-pico-drums.jpg"><img src="gfx/erica-pico-drums.jpg" style="width:15px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -938,7 +926,7 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Futureretro Transient Plus</strong><br />2018<br /><small><br />12 HP<br /><a href="https://www.modulargrid.net/e/futureretro-transient-plus" target="_blank">Modular Grid &gt;</a><br /><a href="http://www.future-retro.com/products.html#!/Transient-Plus/p/84467820/category=0" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Futureretro Transient Plus</strong><br>2018<br><small><br>12 HP<br><a href="https://www.modulargrid.net/e/futureretro-transient-plus" target="_blank">Modular Grid &gt;</a><br><a href="http://www.future-retro.com/products.html#!/Transient-Plus/p/84467820/category=0" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/future-retro-transient.jpg"><img src="gfx/future-retro-transient.jpg" style="width:60px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -956,7 +944,7 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Ladik D-333</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/ladik-d-333-rom-player" target="_blank">Modular Grid &gt;</a><br /><a href="http://ladik.ladik.eu/?page_id=1167" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Ladik D-333</strong><br>2015<br><small><br>4 HP<br><a href="https://www.modulargrid.net/e/ladik-d-333-rom-player" target="_blank">Modular Grid &gt;</a><br><a href="http://ladik.ladik.eu/?page_id=1167" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/ladik-d-333.jpg"><img src="gfx/ladik-d-333.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -973,7 +961,7 @@ function toggleAdditionalUpdates()
 	<li>not designed for frequently changing the sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Music Thing Radio Music</strong><br />2015<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/music-thing-modular-radio-music" target="_blank">Modular Grid &gt;</a><br /><a href="http://musicthing.co.uk/modular/?p=1075" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Music Thing Radio Music</strong><br>2015<br><small><br>4 HP<br><a href="https://www.modulargrid.net/e/music-thing-modular-radio-music" target="_blank">Modular Grid &gt;</a><br><a href="http://musicthing.co.uk/modular/?p=1075" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/music-thing-radio-music.jpg"><img src="gfx/music-thing-radio-music.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -990,7 +978,7 @@ function toggleAdditionalUpdates()
 	<li>designed to play long clips directly of microSD</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Qu-bit Wave</strong><br />2016<br /><small><br />28 HP<br /><a href="https://www.modulargrid.net/e/qu-bit-electronix-wave" target="_blank">Modular Grid &gt;</a></small></td>
+<tr><td class="left"><strong>Qu-bit Wave</strong><br>2016<br><small><br>28 HP<br><a href="https://www.modulargrid.net/e/qu-bit-electronix-wave" target="_blank">Modular Grid &gt;</a></small></td>
 	<td class="pic"><a href="gfx/qubit-wave.jpg"><img src="gfx/qubit-wave.jpg" style="width:140px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -1007,7 +995,7 @@ function toggleAdditionalUpdates()
 	<li>includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Squarp Rample</strong><br />2020<br /><small><br />14 HP<br /><a href="https://www.modulargrid.net/e/squarp-instruments-rample" target="_blank">Modular Grid &gt;</a><br /><a href="https://squarp.net/rample" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Squarp Rample</strong><br>2020<br><small><br>14 HP<br><a href="https://www.modulargrid.net/e/squarp-instruments-rample" target="_blank">Modular Grid &gt;</a><br><a href="https://squarp.net/rample" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/squarp-rampler.jpg"><img src="gfx/squarp-rampler.jpg" style="width:70px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -1026,7 +1014,7 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Tesseract Modular Nutella Tsunami</strong><br />2018<br /><small><br />16 HP<br /><a href="https://www.modulargrid.net/e/tesseract-modular-nutella-tsunami" target="_blank">Modular Grid &gt;</a><br /><a href="https://www.tesseractmodular.com/eurorack-modules/nutella-tsunami" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Tesseract Modular Nutella Tsunami</strong><br>2018<br><small><br>16 HP<br><a href="https://www.modulargrid.net/e/tesseract-modular-nutella-tsunami" target="_blank">Modular Grid &gt;</a><br><a href="https://www.tesseractmodular.com/eurorack-modules/nutella-tsunami" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tesseract-nutella.jpg"><img src="gfx/tesseract-nutella.jpg" style="width:80px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -1044,7 +1032,7 @@ function toggleAdditionalUpdates()
 	<li>DIY</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>Tiptop Audio ONE</strong><br />2017<br /><small><br />4 HP<br /><a href="https://www.modulargrid.net/e/tiptop-audio-one" target="_blank">Modular Grid &gt;</a><br /><a href="http://tiptopaudio.com/one/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>Tiptop Audio ONE</strong><br>2017<br><small><br>4 HP<br><a href="https://www.modulargrid.net/e/tiptop-audio-one" target="_blank">Modular Grid &gt;</a><br><a href="http://tiptopaudio.com/one/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/tiptop-one.jpg"><img src="gfx/tiptop-one.jpg" style="width:20px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -1062,7 +1050,7 @@ function toggleAdditionalUpdates()
 	<li>supports gated playback and looping</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>vpme.de Quad Drum Voice</strong><br />2019<br /><small><br />22 HP<br /><a href="https://www.modulargrid.net/e/vpme-de-qd-quad-drum-voice" target="_blank">Modular Grid &gt;</a><br /><a href="http://vpme.de/qd/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>vpme.de Quad Drum Voice</strong><br>2019<br><small><br>22 HP<br><a href="https://www.modulargrid.net/e/vpme-de-qd-quad-drum-voice" target="_blank">Modular Grid &gt;</a><br><a href="http://vpme.de/qd/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/vpme-qd.jpg"><img src="gfx/vpme-qd.jpg" style="width:110px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
@@ -1081,7 +1069,7 @@ function toggleAdditionalUpdates()
 	<li> includes sample content</li>
 	</ul></td>
 </tr>
-<tr><td class="left"><strong>XOR Electronics Nerdseq</strong><br />2016<br /><small><br />32 HP<br /><a href="https://www.modulargrid.net/e/xor-electronics-nerdseq" target="_blank">Modular Grid &gt;</a><br /><a href="http://xor-electronics.com/nerdseq/" target="_blank">Web site &gt;</a></small></td>
+<tr><td class="left"><strong>XOR Electronics Nerdseq</strong><br>2016<br><small><br>32 HP<br><a href="https://www.modulargrid.net/e/xor-electronics-nerdseq" target="_blank">Modular Grid &gt;</a><br><a href="http://xor-electronics.com/nerdseq/" target="_blank">Web site &gt;</a></small></td>
 	<td class="pic"><a href="gfx/xor-nerdseq.jpg"><img src="gfx/xor-nerdseq.jpg" style="width:160px;height:131.0px;cursor:zoom-in;" /></a></td>
 	<td class="">file player</td>
 	<td class="nope"> </td>
