@@ -126,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-11-08 added AI Synthesis AI018 and BearModules MATRIX<br>
 2023-10-02 added DPW M1 Mix<br>
 2023-09-10 added XAOC Ostrawa, NANO ST MAR and Worng Soundstage II<br>
 2023-09-09 added 1010music Bluebox Eurorack Edition and Boredbrain Xcelon<br>
