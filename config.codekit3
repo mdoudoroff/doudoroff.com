@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -20351,9 +20351,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -20365,6 +20362,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
