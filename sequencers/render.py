@@ -123,6 +123,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2023-12-12 added Floating Knobs Cuisine<br>
 2023-09-24 various updates<br>
 2023-09-10 added Tesseract Step Fader II<br>
 2023-06-20 added Squarp Hermod+<br>
