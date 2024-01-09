@@ -255,6 +255,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
 <li><a href="https://www.antikulture.com">Antikulture Desruptor</a> (probability-focused sequencer)</li>
 <li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
+<li><a href="https://www.modulargrid.net/e/cycle-instruments-tetrachords">Cycle Instruments Tetrachord</a> (four part arp/chord melody mill with sophisticated macro and cv control)</li>
 <li><a href="https://www.modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
 <li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
 <li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>

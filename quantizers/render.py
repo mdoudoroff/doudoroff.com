@@ -184,6 +184,7 @@ html_bottom = '''
 
 <p>In addition, these modules don’t really belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
+<li><a href="https://www.modulargrid.net/e/cycle-instruments-tetrachords">Cycle Instruments Tetrachord</a> (four part arp/chord melody mill with sophisticated macro and cv control)</li>
 <li><a href="https://www.modulargrid.net/e/elektrofon-klang">Elektrofon Klang</a> (four part chord generator)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord">Qu-bit Chord</a> (chord-generating quad-oscillator with parametric front-end)</li>
 <li><a href="https://www.modulargrid.net/e/qu-bit-electronix-chord-v2">Qu-bit Chord 2</a> (chord-generating quad-oscillator with parametric front-end)</li>

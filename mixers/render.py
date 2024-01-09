@@ -126,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-01-09 added Frequency Central Strips<br>
 2023-12-12 added After Later Audio Bartender<br>
 2023-11-30 added NANO Modules Performance Mixer<br>
 2023-11-08 added AI Synthesis AI018 and BearModules MATRIX<br>
