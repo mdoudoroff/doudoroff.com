@@ -130,6 +130,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-04-09 added dnipro qTone<br>
 2023-06-30 added Tenderfoot QQ2<br>
 2023-05-01 updates and corrections<br>
 2022-04-09 added Ladik Q-040 and Blue Lantern Quad Mk2<br>

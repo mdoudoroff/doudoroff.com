@@ -17461,6 +17461,14 @@
       "oAP" : "\/martin.html",
       "oF" : 0
     },
+    "\/midi\/midi-modules.numbers" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/midi\/midi-modules.numbers",
+      "oF" : 0
+    },
     "\/mixers\/gfx" : {
       "ft" : 65536,
       "oA" : 1,
