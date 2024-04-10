@@ -9,6 +9,8 @@ Example:
 
 Note: you can also use a mixer to combine your saw or ramp wave with an LFO signal, patch the result to the input of the comparator, and leave the comparator’s offset at zero to a somewhat similar effect. 
 
+This same general strategy can be used to add variable per-step gate length to any step sequencer. Use a step sequence to modulate the comparator, and clock the step sequence with the same saw wave you’re sending the comparator.
+
 If you have access to a window comparator (e.g., Joranalogue Compare 2) and pass it a <strong>triangle</strong> wave as your input, by adjusting or modulating the parameters on the window comparator, you can create PWM with pairs of pulses that separate and combine, resulting in both PWM-style timbres and octave shifts.
 
 Video example (begins at 3:19):

@@ -143,7 +143,7 @@ span.function { background-color: #FFD996; }
 <p><strong><a href="index.html">A Logic Cookbook for Synthesis</a></strong></p>
 <article class="cat_audio cat_cv cat_binary cat_distortion fn_comparator">
 <h1>Variable PWM from a comparator</h1>
-<small>Attibution: DivKid</small>
+<small>Attibution: DivKid, Luke Teaford</small>
 <p class="principle">A comparator will only go high when a voltage crosses the threshold you set</p>
 <p>A comparator outputs a binary (high or low) signal, indistinguishable from a pulse or gate stream. If you feed the comparator with a regular triangle, saw or ramp wave, you will get a regular pulse wave out of the comparator, and the width of the pulses will depend on the voltage the comparator is comparing the signal to.</p>
 <p>Example:</p>
@@ -154,6 +154,7 @@ span.function { background-color: #FFD996; }
 <li>instead of manually adjusting the offset knob, patch a triangle LFO to the second input on the comparator for automated PWM</li>
 </ul>
 <p>Note: you can also use a mixer to combine your saw or ramp wave with an LFO signal, patch the result to the input of the comparator, and leave the comparator’s offset at zero to a somewhat similar effect. </p>
+<p>This same general strategy can be used to add variable per-step gate length to any step sequencer. Use a step sequence to modulate the comparator, and clock the step sequence with the same saw wave you’re sending the comparator.</p>
 <p>If you have access to a window comparator (e.g., Joranalogue Compare 2) and pass it a <strong>triangle</strong> wave as your input, by adjusting or modulating the parameters on the window comparator, you can create PWM with pairs of pulses that separate and combine, resulting in both PWM-style timbres and octave shifts.</p>
 <p>Video example (begins at 3:19):</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jTylgi-7mqI?t=199" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
