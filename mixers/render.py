@@ -126,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-04-15 added Clank Endline<br>
 2024-01-19 added blaknblu Alpha Pro<br>
 2024-01-09 added Frequency Central Strips<br>
 2023-12-12 added After Later Audio Bartender<br>
