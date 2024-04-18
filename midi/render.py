@@ -292,7 +292,10 @@ class Module(object):
 		return [x.strip() for x in self._role.split(';')]
 
 	def hProduct(self):
-		return f'<strong>{self._product}</strong><br>{self._year}<br><small><a href="{self._mg}" target="_blank">Modular Grid &gt;</a></small>'
+		s = f'<strong>{self._product}</strong><br>{self._year}<br><small>'
+		if self._mg:
+			s += '<a href="{self._mg}" target="_blank">Modular Grid &gt;</a></small>'
+		return s
 
 	def hMIDI_in(self):
 		if self._mAin.strip():
@@ -377,8 +380,8 @@ with open('midi-modules.csv',encoding='utf-8') as csvfile:
 		else:
 
 			modules.append(Module(row))
-print(f'Loaded {len(modules)} module entries')
 
+print(f'Loaded {len(modules)} module entries')
 
 
 # roles (deliberately ordered)

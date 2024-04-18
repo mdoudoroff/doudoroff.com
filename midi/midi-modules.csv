@@ -10,18 +10,20 @@ Product,Role,,Year,A IN,B IN,X IN,? IN,A OUT,B OUT,X OUT,? OUT,USB,DIN,Notes
 ADDAC 221,utility,https://modulargrid.net/e/addac-system-addac221,2016,1,,,,1,,,,,,CV-to-MIDI CC converter
 ADDAC 222,utility,https://modulargrid.net/e/addac-system-addac222,2016,1,,,,1,,,,,,CV-to-MIDI notes converter
 Atonal Circuits WVR,voice,https://modulargrid.net/e/atonal-circuits-wvr,2022,,,1,,,,,,,,
-Befaco CV Thing,utility,https://modulargrid.net/e/befaco-cv-thing,2020,,,,,1,,,,,,
-Befaco MIDI Thing v2,utility,https://modulargrid.net/e/befaco-midi-thing-v2,2023,,,,1,,,,1,A,,
+Atonal Circuits Tone Hack,voice,,2024,,,1,,,,,,,,
+Befaco CV Thing,utility,https://modulargrid.net/e/befaco-cv-thing,2020,,,,,1,,,,,,CV-to-MIDI converter
+Befaco MIDI Thing v2,utility,https://modulargrid.net/e/befaco-midi-thing-v2,2023,,,,1,,,,1,A,,CV-to-MIDI converter
+Befaco VCMC,utility,https://modulargrid.net/e/befaco-vcmc,2019,,,,,,,,,B,1,CV-to-MIDI converter and MIDI controller
 Clatters Garden Listener,utility,https://modulargrid.net/e/clatters-garden-listener,2021,,,,,1,,,,,,biometric electrode-to-MIDI interface
 Cycle Instruments Tetrachords,sequencer,https://www.modulargrid.net/e/cycle-instruments-tetrachords,2023,,,1,,,,1,,C,,TRS IN type is auto-detected; TRS OUT type is set via a switch on the back of the module
 Deftaudio MIDI TRS Thru,utility,https://modulargrid.net/e/other-unknown-deftaudio-midi-trs-thru,2022,,,1,,,,4,,,,TRS type configured by jumpers per port
 Divergent Waves DrumFiend,utility,https://modulargrid.net/e/divergent-waves-drumfiend,2022,,,,,,,1,,,,Trigger to MIDI conversion; TRS type configured via jumper
 DMMDM Droid MASTER,sequencer; utility,https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid,2020,,1,,,,1,,,C,,requires X7 expander; cv-to-MIDI
-DMMDM Droid MASTER18,sequencer; utility,https://modulargrid.net/e/der-mann-mit-der-maschine-master18,2024,,2,,,,2,,,C,,
+DMMDM Droid MASTER18,sequencer; utility,https://modulargrid.net/e/der-mann-mit-der-maschine-master18,2024,,2,,,,2,,,C,,two MIDI interfaces built in
 Dreadbox Lil’ Erebus,voice,https://www.modulargrid.net/e/dreadbox-lil-erebus,2018,1,,,,,,,,,,
-dsp.coffee DPT,utility,https://www.modulargrid.net/e/dsp-coffee-dpt,2022,,,1,,,,1,,,,
+dsp.coffee DPT,utility,https://www.modulargrid.net/e/dsp-coffee-dpt,2022,,,1,,,,1,,,,Electrosmith Daisy Patch platform
 dsp.coffee KALI,effects,https://www.modulargrid.net/e/dsp-coffee-kali,2022,,,1,,,,1,,,,
-Electrosmith Daisy Patch,utility,https://www.modulargrid.net/e/electrosmith-daisy-patch,2020,1,,,,1,,,,,,
+Electrosmith Daisy Patch,utility,https://www.modulargrid.net/e/electrosmith-daisy-patch,2020,1,,,,1,,,,,,Electrosmith Daisy Patch platform
 endorphin.es Ground Control,sequencer,https://www.modulargrid.net/e/endorphin-es-ground-control-black-,2019,,1,,,,1,,,"A,B",,
 Enjoy Electronics The Godfather,effects,https://www.modulargrid.net/e/enjoy-electronics-the-godfather,2021,,,,1,,,,1,,,
 Eowave Quadrantid Swarm,voice,https://modulargrid.net/e/eowave-quadrantid-swarm,2017,,1,,,,,,,,,
@@ -29,7 +31,7 @@ Erica Black Sequencer,sequencer,https://www.modulargrid.net/e/erica-synths-black
 Erica Drum Sequencer,sequencer,https://www.modulargrid.net/e/erica-synths-drum-sequencer-with-black-keys,2019,,1,,,,,,,,,MIDI sync only
 Erogenous Tones Structure,video,https://modulargrid.net/e/erogenous-tones-structure,2018,,,,,,,,,A,,
 Eventide Misha,sequencer,https://www.modulargrid.net/e/eventide-misha,2022,1,,,,1,,,,,,
-Expert Sleepers CVM-8,utility,https://modulargrid.net/e/expert-sleepers-cvm-8,2022,,,,,,,,,,,CV-to-MIDI converter; requires breakout for out MIDI out
+Expert Sleepers CVM-8,utility,https://modulargrid.net/e/expert-sleepers-cvm-8,2022,,,,,,,,,,,dual CV-to-MIDI converter; requires one of assorted breakout options
 Expert Sleepers Disting,voice,https://www.modulargrid.net/e/expert-sleepers-disting-mk4,2017,,,1,,,,,,,1,via breakout
 Expert Sleepers Disting EX,voice,https://www.modulargrid.net/e/expert-sleepers-disting-ex,2020,,,1,,,,,,,1,via breakout
 Expert Sleepers General CV,voice,https://www.modulargrid.net/e/expert-sleepers-general-cv,2017,,,1,,,,,,,1,via breakout
@@ -39,7 +41,7 @@ Flame Curves,filter,https://www.modulargrid.net/e/flame-curves,2017,,1,,,,,,,,,
 Flame TAKT,sequencer,https://www.modulargrid.net/e/flame-takt-,2022,,1,,,,1,,,,,
 Flame TON,sequencer,https://www.modulargrid.net/e/flame-ton,2022,,1,,,,1,,,,,
 Floating Knobs Cuisine,sequencer,https://www.modulargrid.net/e/floating-knobs-cuisine,2023,,,,1,,,,1,,,
-Gamechanger Audio Plasma Voice,voice,https://www.modulargrid.net/e/gamechanger-audio-plasma-voice,2023,,,,1,,,,,,,
+Gamechanger Audio Plasma Voice,voice,https://www.modulargrid.net/e/gamechanger-audio-plasma-voice,2023,1,,,,,,,,,,
 Haken Audio Eaganmatrix,voice,https://www.modulargrid.net/e/haken-audio-eaganmatrix,2021,,1,,,,1,,,A,,
 IO Instruments Kallichore,voice,https://www.modulargrid.net/e/io-instruments-kallichore,2020,,,,1,,,,1,,,
 Jomox ModFM Synth,voice,https://www.modulargrid.net/e/jomox-modfm-synth,2023,,,,1,,,,1,,,
@@ -48,9 +50,9 @@ Knobula Chord Pilot,sequencer,https://www.modulargrid.net/e/knobula-chord-pilot,
 Knobula Pianophonic,voice,https://www.modulargrid.net/e/knobula-pianophonic,2023,1,,,,,,,,,,
 Knobula Poly Cinematic,voice,https://www.modulargrid.net/e/knobula-poly-cinematic,2021,1,,,,,,,,,,
 LPZW.modules WK3 MIDI Thru,utility,https://modulargrid.net/e/lpzw-modules-wk3-midi-thru,2017,,,1,,,,5,,,,TRS input is autodetect; each TRS output has a physical type switch
-Malekko SYNC,utility,https://modulargrid.net/e/malekko-heavy-industry-sync,2017,,1,,,,1,,,,,
+Malekko SYNC,utility,https://modulargrid.net/e/malekko-heavy-industry-sync,2017,,1,,,,1,,,,,MIDI clock extractor
 Manikk Otto MIDI,utility,https://modulargrid.net/e/manikk-otto-midi,2020,1,,,,4,,,,,,TRS MIDI Thru
-Michigan Synth Works USB2MIDI,utility,https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output,2022,,,,,5,,,,A,,
+Michigan Synth Works USB2MIDI,utility,https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output,2022,,,,,5,,,,A,,USB MIDI to 5X TRS TYPE A
 Modbap Trinity,voice,https://www.modulargrid.net/e/modbap-modular-trinity,2022,,,,,,,,,C,,
 MOK Waverazor Dual Oscillator,voice,https://www.modulargrid.net/e/1010-music-mok-waverazor-dual-oscillator,2019,,1,,,,,,,,,
 Nanopolis Antigone,voice,https://www.modulargrid.net/e/other-unknown-nanopolis-antigone,2023,,,,1,,,,,,,via expander
@@ -76,10 +78,10 @@ Tesseract Modular Tukra,sequencer,https://www.modulargrid.net/e/tesseract-modula
 Tesseract Sweet Sixteen,utility,https://modulargrid.net/e/tesseract-modular-sweet-sixteen,2019,,,,,,,1,,B,,MIDI controller; CV-to-MIDI converter; TRS type is jumper-controlled
 Tesseract Sweet Sixteen Mk2,utility,https://modulargrid.net/e/tesseract-modular-sweet-sixteen-mk-ii,2020,,,,,,,1,,B,,MIDI controller; CV-to-MIDI converter; TRS type is jumper-controlled
 The Centre,voice,https://www.modulargrid.net/e/1v-oct-the-centre,2021,,,,1,,,,,,,
-TiNRS Bopp & Steve,effects,https://www.modulargrid.net/e/this-is-not-rocket-science-bopp-steve,2023,,,,1,,,,,,,
+TiNRS Bopp & Steve,effects,https://www.modulargrid.net/e/this-is-not-rocket-science-bopp-steve,2023,,,1,,,,,,,,
 Tiptop Octopus,utility,https://modulargrid.net/e/tiptop-audio-octopus,2023,,,,,,,,,B,1,MIDI-to-ART converter
 Tubbutec 6equencer,sequencer,https://www.modulargrid.net/e/tubbutec-6equencer-3u,2021,,,,,1,,,,,,
-Tubbutec 6m0d6,voice,https://modulargrid.net/e/tubbutec-6m0d6,2021,,,1,,,,,,,,
+Tubbutec/LPZW.modules 6m0d6,voice,https://modulargrid.net/e/tubbutec-6m0d6,2021,,,1,,,,,,,,
 Tubbutec TRS-bridge,utility,https://modulargrid.net/e/tubbutec-trs-bridge,2023,,,4,,,,4,,,,route/split/merge TRS midi streams
 Tubbutec USB-bridge A,utility,https://modulargrid.net/e/tubbutec-usb-bridge-a,2020,1,,,,1,,,,A,,route/merge MIDI data between two USB devices and one TRS device
 vpme.de trig31,utility,https://modulargrid.net/e/vpme-de-trig31,2018,,,,,,1,,,,,trigger-to-MIDI converter
