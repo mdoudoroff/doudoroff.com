@@ -21,6 +21,8 @@ Divergent Waves DrumFiend,utility,https://modulargrid.net/e/divergent-waves-drum
 DMMDM Droid MASTER,sequencer; utility,https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid,2020,,1,,,,1,,,C,,requires X7 expander; cv-to-MIDI
 DMMDM Droid MASTER18,sequencer; utility,https://modulargrid.net/e/der-mann-mit-der-maschine-master18,2024,,2,,,,2,,,C,,two MIDI interfaces built in
 Dreadbox Lil’ Erebus,voice,https://www.modulargrid.net/e/dreadbox-lil-erebus,2018,1,,,,,,,,,,
+Dreadbox Dysmetria,voice,https://modulargrid.net/e/dreadbox-dysmetria,2022,1,,,,,,,,,,
+Dreadbox Telepathy,voice,https://modulargrid.net/e/dreadbox-telepathy-,2024,1,,,,1,,,,,,
 dsp.coffee DPT,utility,https://www.modulargrid.net/e/dsp-coffee-dpt,2022,,,1,,,,1,,,,Electrosmith Daisy Patch platform
 dsp.coffee KALI,effects,https://www.modulargrid.net/e/dsp-coffee-kali,2022,,,1,,,,1,,,,
 Electrosmith Daisy Patch,utility,https://www.modulargrid.net/e/electrosmith-daisy-patch,2020,1,,,,1,,,,,,Electrosmith Daisy Patch platform
@@ -50,7 +52,7 @@ Knobula Chord Pilot,sequencer,https://www.modulargrid.net/e/knobula-chord-pilot,
 Knobula Pianophonic,voice,https://www.modulargrid.net/e/knobula-pianophonic,2023,1,,,,,,,,,,
 Knobula Poly Cinematic,voice,https://www.modulargrid.net/e/knobula-poly-cinematic,2021,1,,,,,,,,,,
 LPZW.modules WK3 MIDI Thru,utility,https://modulargrid.net/e/lpzw-modules-wk3-midi-thru,2017,,,1,,,,5,,,,TRS input is autodetect; each TRS output has a physical type switch
-LPZW.Schleußig,utility,https://modulargrid.net/e/lpzw-modules-schleussig,2018,,,1,,,,,,,,MIDI clock-sync’d muting
+LPZW.Schleußig,utility,https://modulargrid.net/e/lpzw-modules-schleussig,2018,,,1,,,,,,,,MIDI clock-synchronized muting
 Malekko SYNC,utility,https://modulargrid.net/e/malekko-heavy-industry-sync,2017,,1,,,,1,,,,,MIDI clock extractor
 Manikk Otto MIDI,utility,https://modulargrid.net/e/manikk-otto-midi,2020,1,,,,4,,,,,,TRS MIDI Thru
 Michigan Synth Works USB2MIDI,utility,https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output,2022,,,,,5,,,,A,,USB MIDI to 5X TRS TYPE A
