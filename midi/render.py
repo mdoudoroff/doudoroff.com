@@ -112,9 +112,9 @@ html_top = '''
 		}
 
 
-		.TRSA { color: var(--TRSA-color);}
-		.TRSB { color: var(--TRSB-color); }
-		.TRSX { color: var(--TRSX-color); }
+		.TRSA { color: var(--TRSA-color); font-weight: bold; text-wrap: nowrap;}
+		.TRSB { color: var(--TRSB-color); font-weight: bold; text-wrap: nowrap;}
+		.TRSX { color: var(--TRSX-color); font-weight: bold; text-wrap: nowrap; }
 		.TRSTBD { color: var(--TRSTBD-color); }
 
 
@@ -301,47 +301,47 @@ class Module(object):
 	def hMIDI_in(self):
 		if self._mAin.strip():
 			if int(self._mAin) > 1:
-				return f'<span class="TRSA">TYPE A × {self._mAin}</span>'
+				return f'<span class="TRSA">A × {self._mAin}</span>'
 			else:
-				return '<span class="TRSA">TYPE A</span>'
+				return '<span class="TRSA">A</span>'
 		if self._mBin.strip():
 			if int(self._mBin) > 1:
-				return f'<span class="TRSB">TYPE B × {self._mBin}</span>'
+				return f'<span class="TRSB">B × {self._mBin}</span>'
 			else:
-				return '<span class="TRSB">TYPE B</span>'
+				return '<span class="TRSB">B</span>'
 		if self._mXin.strip():
 			if int(self._mXin) > 1:
-				return f'<span class="TRSX">TYPE A/B × {self._mXin}</span>'
+				return f'<span class="TRSX">A/B × {self._mXin}</span>'
 			else:
-				return '<span class="TRSX">TYPE A/B</span>'
+				return '<span class="TRSX">A/B</span>'
 		if self._mTBDin.strip():
 			if int(self._mTBDin) > 1:
-				return f'<span class="TRSTBD">TYPE ??? × {self._mTBDin}</span>'
+				return f'<span class="TRSTBD">??? × {self._mTBDin}</span>'
 			else:
-				return '<span class="TRSTBD">TYPE ???</span>'
+				return '<span class="TRSTBD">???</span>'
 		return ''
 
 	def hMIDI_out(self):
 		if self._mAout.strip():
 			if int(self._mAout) > 1:
-				return f'<span class="TRSA">TYPE A × {self._mAout}</span>'
+				return f'<span class="TRSA">A × {self._mAout}</span>'
 			else:
-				return '<span class="TRSA">TYPE A</span>'
+				return '<span class="TRSA">A</span>'
 		if self._mBout.strip():
 			if int(self._mBout) > 1:
-				return f'<span class="TRSB">TYPE B × {self._mBout}</span>'
+				return f'<span class="TRSB">B × {self._mBout}</span>'
 			else:
-				return '<span class="TRSB">TYPE B</span>'
+				return '<span class="TRSB">B</span>'
 		if self._mXout.strip():
 			if int(self._mXout) > 1:
-				return f'<span class="TRSX">TYPE A/B × {self._mXout}</span>'
+				return f'<span class="TRSX">A/B × {self._mXout}</span>'
 			else:
-				return '<span class="TRSX">TYPE A/B</span>'
+				return '<span class="TRSX">A/B</span>'
 		if self._mTBDout.strip():
 			if int(self._mTBDout) > 1:
-				return f'<span class="TRSTBD">TYPE ??? × {self._mTBDout}</span>'
+				return f'<span class="TRSTBD">??? × {self._mTBDout}</span>'
 			else:
-				return '<span class="TRSTBD">TYPE ???</span>'
+				return '<span class="TRSTBD">???</span>'
 		return ''
 
 	def hMIDI_other(self):
