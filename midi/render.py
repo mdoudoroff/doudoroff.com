@@ -181,6 +181,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-04-18 errata and a few stragglers<br>
 2024-04-17 first draft<br>
 <!--<span id="additionalUpdates" class="collapsed">
 </span>
