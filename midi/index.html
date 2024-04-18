@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MIDI Eurorack</title>
+	<style>
+
+		:root {
+			--TRSA-color: red;
+			--TRSB-color: blue;
+			--TRSX-color: green;
+			--TRSTBD-color: gray
+		}
+
+		body {
+			max-width: 1600px;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		p, li {
+			max-width: 40rem;
+			line-height: 1.4;
+		}
+		.updates {
+			font-size: 85%;
+			font-family: monospace;
+		}
+		a {text-decoration:none;}
+		a:hover {color:red;text-decoration:underline;}
+		a:visited {color:blue;}
+		img {
+			width: 100%;
+			margin: 0.5em 0;
+		}
+		.main {	padding: 1em; }
+		.red {color:red;}
+		.green {color:green;}
+		.gray {color:gray;}
+		table {border-collapse: collapse;font-size: 85%;height: auto;}
+
+		.tablesection { text-align: left; padding-top: 1em; }
+		td, th {text-align:center;padding:0.25em 1em;border-bottom:1px solid #eee;}
+		td.left, th.left {text-align:left;}
+		td.notes {text-align: left;}
+		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
+		th { 
+			color: #666; position: sticky; top: 0px; 
+
+			background-color: rgba(200,200,200,0.9);
+		}
+		.notes { min-width: 15em; }
+		.collapsed {display: none; }
+		td.left { 
+			height: auto;
+			position: sticky; 
+			left: 0px; 
+			z-index: 1;
+
+			background-color: rgba(225,225,225,0.9);
+		}
+		th.left {
+			height: auto;
+			position: sticky; 
+			left: 0px; 
+			z-index: 2;
+		}
+
+		nav {
+			background: #eef; 
+			padding: 0.5em 1em;
+			font-family: Helvetica, sans-serif;
+			border-bottom: 2px solid #666;
+			}
+		nav div.navrail { display: flex; }
+		nav ul { margin: 0.5em 0.5em 0.5em 0; padding: 0; font-size: 80%; }
+		nav ul li { list-style: none; margin-right: 1em; line-height: 1; margin-bottom: 1em;}
+
+		@media (max-width: 450px) {
+			.main { padding: 1em 0.5em; }
+			nav { padding: 0.25 0.5em; }
+		}
+
+		#comparisonSwitcher {
+			font-size: 80%;
+			display: flex;
+			column-gap: 18px;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 400px) {
+			#comparisonSwitcher {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 960px) {
+			#comparisonSwitcher {
+				justify-content: flex-start;
+				column-gap: 24px;
+			}
+		}
+
+
+		.TRSA { color: var(--TRSA-color);}
+		.TRSB { color: var(--TRSB-color); }
+		.TRSX { color: var(--TRSX-color); }
+		.TRSTBD { color: var(--TRSTBD-color); }
+
+
+		.graph .labels.x-labels {
+		  text-anchor: middle;
+		}
+
+		.graph .labels.y-labels {
+		  text-anchor: end;
+		}
+
+		.graph {
+		  height: 500px;
+		  width: auto;
+		}
+
+		.graph .grid {
+		  stroke: #ccc;
+		  stroke-dasharray: 0;
+		  stroke-width: 1;
+		}
+
+		.labels {
+		  font-size: 13px;
+		}
+
+		.label-title {
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  font-size: 12px;
+		  fill: black;
+		}
+	</style>
+</head>
+<body>
+
+<nav id="comparisonSwitcher">
+<a href="/mixers/">Stereo Mixers</a>
+<a href="/sequencers/">Pitch+Gate Sequencers</a>
+<a href="/samplers/">Samplers</a>
+<a href="/quantizers/">Quantizers</a>
+<strong>MIDI Eurorack</strong>
+</nav>
+
+
+<div class="main">
+
+<h1>MIDI Eurorack</h1>
+
+<p>Martin Doudoroff<br>
+<script><!--
+var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r',':','a','f','i','"','o','o','@','o','m','.','m','h','>','r','e','=','d','i','@','r','c','"','a','o','u','s','t','/','l','d','o','m','o','m','d','t','"','s','c','.',' ','d',' ','o','m','m','a','"','u','r','f','e','c','n','o','r','i','t','l'];var tbigqfr = [67,48,70,66,47,43,40,72,53,75,21,12,31,74,0,54,15,1,30,11,50,60,27,58,65,16,68,52,3,51,28,45,7,26,56,22,4,38,8,10,14,61,41,13,73,39,62,29,71,34,9,59,19,44,42,33,32,37,23,2,63,46,35,17,36,25,64,6,5,69,57,24,18,20,55,49];var bnsubaz= new Array();for(var i=0;i<tbigqfr.length;i++){bnsubaz[tbigqfr[i]] = vtnrkjn[i]; }for(var i=0;i<bnsubaz.length;i++){document.write(bnsubaz[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript></p>
+
+
+<p>This is a study of the rise of MIDI as a supplemental patching system to conventional audio and CV patching. Here, we are mainly concerned with 3.5mm TRS MIDI connectivity, although USB and DIN-based MIDI are acknowledged (and of course, DIN can be adapted to TRS via readily available cables).</p>
+<p>TRS patching of MIDI in Eurorack is already supported by over 80 modules and it is clearly here to stay. Unfortunately, TRS MIDI has been hobbled right out of the gate by two de facto standards: Type A (Korg) and Type B (Arturia). There’s nothing more than a single wire tranposition between these two standards, but this complication remains a fact of life. (For the time being, I have disregarded another, rare variant that uses TR cables, as it seems to be neither here nor there.)</p>
+<p>Scope-wise, this study largely disregards MIDI-to-CV converters, but includes CV-to-MIDI converters. Some of the modules below can perform MIDI-to-CV, but that is not why they are included. MIDI-to-CV converters are still relevant, of course, but that is well-established topic area.</p>
+<p>Moreover, this study is exclusive to Eurorack modules. There are, of course, gobs of standalone devices out there that support MIDI over 3.5mm TRS cables or adapter cable.</p>
+<p>Acknowledgements: this work began with <a href="https://modwiggler.com/forum/viewtopic.php?t=186808">this ModWiggler thread</a> by user <strong>kay_k</strong> in 2017, and many contributions by other ModWiggler users. ModWiggler user <strong>audionerd</strong> created the <a href="https://minimidi.world"><strong>minimidi.world</strong></a> project in 2019, which includes its own database (including many non-Eurorack entries) and an excellent presentation on cabling. I got some of the information in this study from both these sources, and collected the rest, myself, via ModularGrid and module documentation.</p>
+<p>I plan to update this study with new modules (and corrections) for as long as it seems relevant to do so.</p>
+
+
+<h4>Latest</h4>
+<p class="updates">
+2024-04-17 first draft<br>
+<!--<span id="additionalUpdates" class="collapsed">
+</span>
+<a id="updatesToggle" onclick="toggleAdditionalUpdates();" href="javascript:void(0);">Show full revision history</a>-->
+</p>
+
+<script>
+var status = "less";
+function toggleAdditionalUpdates()
+{  
+    if (status == "less") {
+        document.getElementById("additionalUpdates").className = "";
+        document.getElementById("updatesToggle").innerText = "Hide full revision history";
+        status = "more";
+    } else if (status == "more") {
+	    document.getElementById("additionalUpdates").className = "collapsed";
+        document.getElementById("updatesToggle").innerText = "Show full revision history";
+        status = "less"
+    }
+}
+</script>
+
+
+<h2>Growth of MIDI Eurorack</h2><p>The graph below summarizes the number of modules with TRS MIDI support (black line), and the numbers specifically for <strong style="color: var(--TRSA-color);">TRS-A</strong>, <strong style="color: var(--TRSB-color);">TRS-B</strong> and modules designed to accommodate <strong style="color: var(--TRSX-color);">both TRS-A and TRS-B (automatically or manually)</strong>. The graph omits modules of (as yet) unknown TRS type, and modules that only offer DIN or USB MIDI.</p><svg viewBox="0 0 580 435" class="graph">
+  <polyline
+     fill="none"
+     stroke="var(--TRSA-color)"
+     stroke-width="2"
+     points="40,380 100,375 160,370 220,360 280,330 340,305 400,290 460,285 520,285"/>
+  <polyline
+     fill="none"
+     stroke="var(--TRSB-color)"
+     stroke-width="2"
+     points="40,390 100,350 160,335 220,315 280,305 340,300 400,290 460,285 520,280"/>
+  <polyline
+     fill="none"
+     stroke="var(--TRSX-color)"
+     stroke-width="2"
+     points="40,395 100,375 160,375 220,360 280,330 340,320 400,285 460,255 520,250"/>
+  <polyline
+     fill="none"
+     stroke="black"
+     stroke-width="2"
+     points="40,375 100,310 160,290 220,245 280,175 340,135 400,75 460,35 520,25"/><g class="grid y-grid"><line x1="40" x2="40" y1="395" y2="0"></line></g><g class="grid x-grid"><line x1="40" x2="580" y1="395" y2="395"></line></g><g class="labels x-labels"><text x="40" y="415">2016</text><text x="100" y="415">2017</text><text x="160" y="415">2018</text><text x="220" y="415">2019</text><text x="280" y="415">2020</text><text x="340" y="415">2021</text><text x="400" y="415">2022</text><text x="460" y="415">2023</text><text x="520" y="415">2024</text></g><g class="labels y-labels"><text x="30" y="370">5</text><text x="30" y="345">10</text><text x="30" y="320">15</text><text x="30" y="295">20</text><text x="30" y="270">25</text><text x="30" y="245">30</text><text x="30" y="220">35</text><text x="30" y="195">40</text><text x="30" y="170">45</text><text x="30" y="145">50</text><text x="30" y="120">55</text><text x="30" y="95">60</text><text x="30" y="70">65</text><text x="30" y="45">70</text><text x="30" y="20">75</text><text x="30" y="-5">80</text></g></svg><h2>Modules</h2><table><tr><td colspan="4" class="tablesection"><h3>Utility</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>1010 MX4</strong><br>2017<br><small><a href="https://modulargrid.net/e/1010-music-mx4-midi-buffered-multiple" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B × 4</span></td><td></td><td class="left"><ul><li>buffered thru for TRS Type B</li></ul></td></tr><tr><td class="left"><strong>ADDAC 221</strong><br>2016<br><small><a href="https://modulargrid.net/e/addac-system-addac221" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"><ul><li>CV-to-MIDI CC converter</li></ul></td></tr><tr><td class="left"><strong>ADDAC 222</strong><br>2016<br><small><a href="https://modulargrid.net/e/addac-system-addac222" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"><ul><li>CV-to-MIDI notes converter</li></ul></td></tr><tr><td class="left"><strong>Befaco CV Thing</strong><br>2020<br><small><a href="https://modulargrid.net/e/befaco-cv-thing" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Befaco MIDI Thing v2</strong><br>2023<br><small><a href="https://modulargrid.net/e/befaco-midi-thing-v2" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td><span class="TRSTBD">TYPE ???</span></td><td>USB-A</td><td class="left"></td></tr><tr><td class="left"><strong>Clatters Garden Listener</strong><br>2021<br><small><a href="https://modulargrid.net/e/clatters-garden-listener" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"><ul><li>biometric electrode-to-MIDI interface</li></ul></td></tr><tr><td class="left"><strong>Deftaudio MIDI TRS Thru</strong><br>2022<br><small><a href="https://modulargrid.net/e/other-unknown-deftaudio-midi-trs-thru" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B × 4</span></td><td></td><td class="left"><ul><li>TRS type configured by jumpers per port</li></ul></td></tr><tr><td class="left"><strong>Divergent Waves DrumFiend</strong><br>2022<br><small><a href="https://modulargrid.net/e/divergent-waves-drumfiend" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"><ul><li>Trigger to MIDI conversion</li><li> TRS type configured via jumper</li></ul></td></tr><tr><td class="left"><strong>DMMDM Droid MASTER</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td>USB-C</td><td class="left"><ul><li>requires X7 expander</li><li> cv-to-MIDI</li></ul></td></tr><tr><td class="left"><strong>DMMDM Droid MASTER18</strong><br>2024<br><small><a href="https://modulargrid.net/e/der-mann-mit-der-maschine-master18" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B × 2</span></td><td><span class="TRSB">TYPE B × 2</span></td><td>USB-C</td><td class="left"></td></tr><tr><td class="left"><strong>dsp.coffee DPT</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/dsp-coffee-dpt" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Electrosmith Daisy Patch</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/electrosmith-daisy-patch" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Expert Sleepers CVM-8</strong><br>2022<br><small><a href="https://modulargrid.net/e/expert-sleepers-cvm-8" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td></td><td class="left"><ul><li>CV-to-MIDI converter</li><li> requires breakout for out MIDI out</li></ul></td></tr><tr><td class="left"><strong>LPZW.modules WK3 MIDI Thru</strong><br>2017<br><small><a href="https://modulargrid.net/e/lpzw-modules-wk3-midi-thru" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B × 5</span></td><td></td><td class="left"><ul><li>TRS input is autodetect</li><li> each TRS output has a physical type switch</li></ul></td></tr><tr><td class="left"><strong>Malekko SYNC</strong><br>2017<br><small><a href="https://modulargrid.net/e/malekko-heavy-industry-sync" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Manikk Otto MIDI</strong><br>2020<br><small><a href="https://modulargrid.net/e/manikk-otto-midi" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A × 4</span></td><td></td><td class="left"><ul><li>TRS MIDI Thru</li></ul></td></tr><tr><td class="left"><strong>Michigan Synth Works USB2MIDI</strong><br>2022<br><small><a href="https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSA">TYPE A × 5</span></td><td>USB-A</td><td class="left"></td></tr><tr><td class="left"><strong>Tesseract Sweet Sixteen</strong><br>2019<br><small><a href="https://modulargrid.net/e/tesseract-modular-sweet-sixteen" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSX">TYPE A/B</span></td><td>USB-B</td><td class="left"><ul><li>MIDI controller</li><li> CV-to-MIDI converter</li><li> TRS type is jumper-controlled</li></ul></td></tr><tr><td class="left"><strong>Tesseract Sweet Sixteen Mk2</strong><br>2020<br><small><a href="https://modulargrid.net/e/tesseract-modular-sweet-sixteen-mk-ii" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSX">TYPE A/B</span></td><td>USB-B</td><td class="left"><ul><li>MIDI controller</li><li> CV-to-MIDI converter</li><li> TRS type is jumper-controlled</li></ul></td></tr><tr><td class="left"><strong>Tiptop Octopus</strong><br>2023<br><small><a href="https://modulargrid.net/e/tiptop-audio-octopus" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>USB-B DIN</td><td class="left"><ul><li>MIDI-to-ART converter</li></ul></td></tr><tr><td class="left"><strong>Tubbutec TRS-bridge</strong><br>2023<br><small><a href="https://modulargrid.net/e/tubbutec-trs-bridge" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B × 4</span></td><td><span class="TRSX">TYPE A/B × 4</span></td><td></td><td class="left"><ul><li>route/split/merge TRS midi streams</li></ul></td></tr><tr><td class="left"><strong>Tubbutec USB-bridge A</strong><br>2020<br><small><a href="https://modulargrid.net/e/tubbutec-usb-bridge-a" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td>USB-A</td><td class="left"><ul><li>route/merge MIDI data between two USB devices and one TRS device</li></ul></td></tr><tr><td class="left"><strong>vpme.de trig31</strong><br>2018<br><small><a href="https://modulargrid.net/e/vpme-de-trig31" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"><ul><li>trigger-to-MIDI converter</li></ul></td></tr><tr><td class="left"><strong>XOXO Modular MIDIXO</strong><br>2019<br><small><a href="https://modulargrid.net/e/xoxo-modular-midixo-aluminum-panel" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"><ul><li>TRS type converter (jumper-configured)</li><li> Expert Sleepers-compatible MIDI breakout</li></ul></td></tr><tr><td colspan="4" class="tablesection"><h3>Sequencer</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>1010 Toolbox</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/1010-music-toolbox" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B × 4</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Cycle Instruments Tetrachords</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/cycle-instruments-tetrachords" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td>USB-C</td><td class="left"><ul><li>TRS IN type is auto-detected</li><li> TRS OUT type is set via a switch on the back of the module</li></ul></td></tr><tr><td class="left"><strong>DMMDM Droid MASTER</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td>USB-C</td><td class="left"><ul><li>requires X7 expander</li><li> cv-to-MIDI</li></ul></td></tr><tr><td class="left"><strong>DMMDM Droid MASTER18</strong><br>2024<br><small><a href="https://modulargrid.net/e/der-mann-mit-der-maschine-master18" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B × 2</span></td><td><span class="TRSB">TYPE B × 2</span></td><td>USB-C</td><td class="left"></td></tr><tr><td class="left"><strong>endorphin.es Ground Control</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/endorphin-es-ground-control-black-" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td>USB-A USB-B</td><td class="left"></td></tr><tr><td class="left"><strong>Erica Black Sequencer</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/erica-synths-black-sequencer" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Erica Drum Sequencer</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/erica-synths-drum-sequencer-with-black-keys" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"><ul><li>MIDI sync only</li></ul></td></tr><tr><td class="left"><strong>Eventide Misha</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/eventide-misha" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Five12 Vector</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/five12-vector-sequencer" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSB">TYPE B × 2</span></td><td>USB-A USB-B DIN</td><td class="left"><ul><li>DIN MIDI features require expander</li></ul></td></tr><tr><td class="left"><strong>Flame TAKT</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/flame-takt-" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Flame TON</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/flame-ton" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Floating Knobs Cuisine</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/floating-knobs-cuisine" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Kaona Zazou</strong><br>2024<br><small><a href="https://modulargrid.net/e/kaona-zazou" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Knobula Chord Pilot</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/knobula-chord-pilot" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>RYK Modular M185</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/ryk-modular-m185-sequencer" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>SDS Accord Melisma</strong><br>2019<br><small><a href="https://modulargrid.net/e/sds-digital-accord-melisma" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"><ul><li>CV-to-MIDI chord and melody generator</li></ul></td></tr><tr><td class="left"><strong>Squarp Hermod+</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/squarp-instruments-hermod-" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Tesseract Modular Tukra</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/tesseract-modular-tukra" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Tubbutec 6equencer</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/tubbutec-6equencer-3u" target="_blank">Modular Grid &gt;</a></small></td><td></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Westlicht Per|Former</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/westlicht-per-former--" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>XOR Nerdseq</strong><br>2016<br><small><a href="https://www.modulargrid.net/e/xor-electronics-nerdseq" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td>DIN</td><td class="left"><ul><li>requires expander</li></ul></td></tr><tr><td class="left"><strong>Zetaohm FLXS1</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/zetaohm-flxs1" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td colspan="4" class="tablesection"><h3>Voice</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>1010 Bitbox</strong><br>2018<br><small><a href="https://www.modulargrid.net/e/1010-music-bitbox-2-0" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>1010 Bitbox Micro</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/1010-music-bitbox-micro--" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>1010 Synthbox</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/1010-music-synthbox" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Atonal Circuits WVR</strong><br>2022<br><small><a href="https://modulargrid.net/e/atonal-circuits-wvr" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Dreadbox Lil’ Erebus</strong><br>2018<br><small><a href="https://www.modulargrid.net/e/dreadbox-lil-erebus" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Eowave Quadrantid Swarm</strong><br>2017<br><small><a href="https://modulargrid.net/e/eowave-quadrantid-swarm" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Expert Sleepers Disting</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/expert-sleepers-disting-mk4" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td>DIN</td><td class="left"><ul><li>via breakout</li></ul></td></tr><tr><td class="left"><strong>Expert Sleepers Disting EX</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/expert-sleepers-disting-ex" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td>DIN</td><td class="left"><ul><li>via breakout</li></ul></td></tr><tr><td class="left"><strong>Expert Sleepers General CV</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/expert-sleepers-general-cv" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td>DIN</td><td class="left"><ul><li>via breakout</li></ul></td></tr><tr><td class="left"><strong>Flame 4VOX</strong><br>2015<br><small><a href="https://www.modulargrid.net/e/flame-4vox" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>DIN</td><td class="left"></td></tr><tr><td class="left"><strong>Gamechanger Audio Plasma Voice</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/gamechanger-audio-plasma-voice" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Haken Audio Eaganmatrix</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/haken-audio-eaganmatrix" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td>USB-A</td><td class="left"></td></tr><tr><td class="left"><strong>IO Instruments Kallichore</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/io-instruments-kallichore" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Jomox ModFM Synth</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/jomox-modfm-synth" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Knobula Pianophonic</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/knobula-pianophonic" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Knobula Poly Cinematic</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/knobula-poly-cinematic" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Modbap Trinity</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/modbap-modular-trinity" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>USB-C</td><td class="left"></td></tr><tr><td class="left"><strong>MOK Waverazor Dual Oscillator</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/1010-music-mok-waverazor-dual-oscillator" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Nanopolis Antigone</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/other-unknown-nanopolis-antigone" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td></td><td class="left"><ul><li>via expander</li></ul></td></tr><tr><td class="left"><strong>Neutron Sound Dust of Time</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/neutron-sound-dust-of-time-" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Neuzeit Warp</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/neuzeit-instruments-warp" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Oxi Instruments Coral</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/oxi-instruments-coral" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Pittsburgh Modular Lifeforms SV-1</strong><br>2016<br><small><a href="https://www.modulargrid.net/e/pittsburgh-modular-lifeforms-sv-1" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Rebel Tech Magus</strong><br>2018<br><small><a href="https://modulargrid.net/e/rebel-technology-magus" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"><ul><li>requires expander</li></ul></td></tr><tr><td class="left"><strong>Rossum Electro Music Assimil8or</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/rossum-electro-music-locutus" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>DIN</td><td class="left"><ul><li>requires Locutus expander</li></ul></td></tr><tr><td class="left"><strong>RYK Vector Wave</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/ryk-modular-vector-wave" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>SDS VCO</strong><br>2017<br><small><a href="https://modulargrid.net/e/sds-digital-sds-vco" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"><ul><li>requires additional add-on</li><li> TRS type user switchable</li></ul></td></tr><tr><td class="left"><strong>SoundForce DCO</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/soundforce-udco" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>SoundForce uDCO</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/soundforce-dco-grey-2021" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Squarp Rample</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/squarp-instruments-rample" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Supercritical Demon Core Oscillator</strong><br>2019<br><small><a href="https://www.modulargrid.net/e/supercritical-synthesizers-16-voice-demon-core-oscillator" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"><ul><li>via Demon Core xpander</li><li> TRS input auto-detect</li><li> TRS output user-selectable</li></ul></td></tr><tr><td class="left"><strong>The Centre</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/1v-oct-the-centre" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Tubbutec 6m0d6</strong><br>2021<br><small><a href="https://modulargrid.net/e/tubbutec-6m0d6" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Warped Circuits Threshold</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/warped-circuits-threshold" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>XOR Nerdseq</strong><br>2016<br><small><a href="https://www.modulargrid.net/e/xor-electronics-nerdseq" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td>DIN</td><td class="left"><ul><li>requires expander</li></ul></td></tr><tr><td class="left"><strong>Ziqal Dimension</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/ziqal-dimension-mk3" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td></td><td></td><td class="left"></td></tr><tr><td colspan="4" class="tablesection"><h3>Filter</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>Flame Curves</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/flame-curves" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>RYK Night Rider</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/ryk-modular-night-rider" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td></td><td class="left"></td></tr><tr><td colspan="4" class="tablesection"><h3>Effects</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>1010 Bluebox</strong><br>2023<br><small><a href="https://modulargrid.net/e/1010-music-bluebox-" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>1010 Fxbox</strong><br>2017<br><small><a href="https://www.modulargrid.net/e/1010-music-fxbox" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>dsp.coffee KALI</strong><br>2022<br><small><a href="https://www.modulargrid.net/e/dsp-coffee-kali" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSX">TYPE A/B</span></td><td><span class="TRSX">TYPE A/B</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Enjoy Electronics The Godfather</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/enjoy-electronics-the-godfather" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Poly Effects Hector</strong><br>2021<br><small><a href="https://www.modulargrid.net/e/poly-effects-hector" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>Rebel Tech Magus</strong><br>2018<br><small><a href="https://modulargrid.net/e/rebel-technology-magus" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSB">TYPE B</span></td><td><span class="TRSB">TYPE B</span></td><td></td><td class="left"><ul><li>requires expander</li></ul></td></tr><tr><td class="left"><strong>TiNRS Bopp & Steve</strong><br>2023<br><small><a href="https://www.modulargrid.net/e/this-is-not-rocket-science-bopp-steve" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSTBD">TYPE ???</span></td><td></td><td></td><td class="left"></td></tr><tr><td class="left"><strong>ZOIA Euroburo</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/empress-effects-zoia-euroburo" target="_blank">Modular Grid &gt;</a></small></td><td><span class="TRSA">TYPE A</span></td><td><span class="TRSA">TYPE A</span></td><td></td><td class="left"></td></tr><tr><td colspan="4" class="tablesection"><h3>Video</h3></td></tr><tr><th>Product</th><th>TRS In</th><th>TRS Out</th><th>Other MIDI</th><th>Notes</th></tr><tr><td class="left"><strong>Erogenous Tones Structure</strong><br>2018<br><small><a href="https://modulargrid.net/e/erogenous-tones-structure" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>USB-A</td><td class="left"></td></tr><tr><td class="left"><strong>Sleepy Circuits Hypno</strong><br>2020<br><small><a href="https://www.modulargrid.net/e/sleepy-circuits-hypno" target="_blank">Modular Grid &gt;</a></small></td><td></td><td></td><td>USB-A</td><td class="left"></td></tr></table>
+
+
+
+<p style="text-align:center;">• • •</p>
+
+</div><!-- end div.main -->
+
+<footer>
+<nav>
+<div class="navrail">
+<ul>
+	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
+	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
+	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
+	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+	<li><strong>MIDI Eurorack</strong></li>
+</ul>
+<ul>
+	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
+	<li><a href="//doudoroff.com/cold-mac/">Patching Cold Mac</a></li>
+	<li><a href="//doudoroff.com/multitracking/">How to Multitrack Your Eurorack</a></li>
+	<li><a href="//doudoroff.com/logic/">A Logic Cookbook for Synthesis</a></li>
+	<li><a href="https://mdoudoroff.s3.amazonaws.com/sport-modulator-2+patch+book+draft+28-03-22.pdf">Sport Modulator 2 Patch Book</a></li>
+	<li><a href="https://www.youtube.com/user/MartinDoudoroffLLC/videos">Martin’s YouTube videos</a></li>
+</ul>
+</div>
+</nav>
+
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11161564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11161564-1');
+</script>
+
+
+</body>
+</html>

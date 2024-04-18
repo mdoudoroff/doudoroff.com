@@ -109,6 +109,7 @@ html_top = '''
 <a href="/sequencers/">Pitch+Gate Sequencers</a>
 <a href="/samplers/">Samplers</a>
 <a href="/quantizers/">Quantizers</a>
+<a href="/midi/">MIDI Eurorack</a>
 </nav>
 
 
@@ -283,6 +284,7 @@ html_bottom = '''
 	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
 	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
 	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
+	<li><a href="//doudoroff.com/midi/">MIDI Eurorack</a></li>
 </ul>
 <ul>
 	<li style="border-bottom: 2px solid gray;">Martin’s other articles</li>
