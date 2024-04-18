@@ -50,6 +50,7 @@ Knobula Chord Pilot,sequencer,https://www.modulargrid.net/e/knobula-chord-pilot,
 Knobula Pianophonic,voice,https://www.modulargrid.net/e/knobula-pianophonic,2023,1,,,,,,,,,,
 Knobula Poly Cinematic,voice,https://www.modulargrid.net/e/knobula-poly-cinematic,2021,1,,,,,,,,,,
 LPZW.modules WK3 MIDI Thru,utility,https://modulargrid.net/e/lpzw-modules-wk3-midi-thru,2017,,,1,,,,5,,,,TRS input is autodetect; each TRS output has a physical type switch
+LPZW.Schleußig,utility,https://modulargrid.net/e/lpzw-modules-schleussig,2018,,,1,,,,,,,,MIDI clock-sync’d muting
 Malekko SYNC,utility,https://modulargrid.net/e/malekko-heavy-industry-sync,2017,,1,,,,1,,,,,MIDI clock extractor
 Manikk Otto MIDI,utility,https://modulargrid.net/e/manikk-otto-midi,2020,1,,,,4,,,,,,TRS MIDI Thru
 Michigan Synth Works USB2MIDI,utility,https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output,2022,,,,,5,,,,A,,USB MIDI to 5X TRS TYPE A
@@ -60,6 +61,7 @@ Neutron Sound Dust of Time,voice,https://www.modulargrid.net/e/neutron-sound-dus
 Neuzeit Warp,voice,https://www.modulargrid.net/e/neuzeit-instruments-warp,2023,,1,,,,,,,,,
 Oxi Instruments Coral,voice,https://www.modulargrid.net/e/oxi-instruments-coral,2023,,,1,,,,,,,,
 Pittsburgh Modular Lifeforms SV-1,voice,https://www.modulargrid.net/e/pittsburgh-modular-lifeforms-sv-1,2016,,1,,,,,,,,,
+Plinky,voice;sequencer,https://modulargrid.net/e/thonk-plinky,2020,,,1,,1,,,,,,requires Pinky Expander
 Poly Effects Hector,effects,https://www.modulargrid.net/e/poly-effects-hector,2021,1,,,,1,,,,,,
 Rebel Tech Magus,voice;effects,https://modulargrid.net/e/rebel-technology-magus,2018,,1,,,,1,,,,,requires expander
 Rossum Electro Music Assimil8or,voice,https://www.modulargrid.net/e/rossum-electro-music-locutus,2023,,,,,,,,,,1,requires Locutus expander
