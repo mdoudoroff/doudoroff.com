@@ -9,10 +9,12 @@ Product,Role,,Year,A IN,B IN,X IN,? IN,A OUT,B OUT,X OUT,? OUT,USB,DIN,Notes
 1010 Toolbox,sequencer,https://www.modulargrid.net/e/1010-music-toolbox,2017,,1,,,,4,,,,,
 ADDAC 221,utility,https://modulargrid.net/e/addac-system-addac221,2016,1,,,,1,,,,,,CV-to-MIDI CC converter
 ADDAC 222,utility,https://modulargrid.net/e/addac-system-addac222,2016,1,,,,1,,,,,,CV-to-MIDI notes converter
+Alyseum Matrix II,utility,https://modulargrid.net/e/alyseum-matrix-ii,2019,,1,,,,1,,,,,16:16 switching matrix with MIDI preset control
+Alyseum Q-VCA,utility,https://modulargrid.net/e/alyseum-q-vca,2019,,1,,,,1,,,,,quad VCA with MIDI preset control
+Alyseum Q-Linear,utility,https://modulargrid.net/e/alyseum-q-linear,2019,,1,,,,1,,,,,quad 1v/o processor with MIDI preset control
 Atonal Circuits WVR,voice,https://modulargrid.net/e/atonal-circuits-wvr,2022,,,1,,,,,,,,
 Atonal Circuits Tone Hack,voice,,2024,,,1,,,,,,,,
 Befaco CV Thing,utility,https://modulargrid.net/e/befaco-cv-thing,2020,,,,,1,,,,,,CV-to-MIDI converter
-Befaco MIDI Thing v2,utility,https://modulargrid.net/e/befaco-midi-thing-v2,2023,,,,1,,,,1,A,,CV-to-MIDI converter
 Befaco VCMC,utility,https://modulargrid.net/e/befaco-vcmc,2019,,,,,,,,,B,1,CV-to-MIDI converter and MIDI controller
 Clatters Garden Listener,utility,https://modulargrid.net/e/clatters-garden-listener,2021,,,,,1,,,,,,biometric electrode-to-MIDI interface
 Cycle Instruments Tetrachords,sequencer,https://www.modulargrid.net/e/cycle-instruments-tetrachords,2023,,,1,,,,1,,C,,TRS IN type is auto-detected; TRS OUT type is set via a switch on the back of the module
@@ -70,8 +72,9 @@ Rossum Electro Music Assimil8or,voice,https://www.modulargrid.net/e/rossum-elect
 RYK Modular M185,sequencer,https://www.modulargrid.net/e/ryk-modular-m185-sequencer,2020,,,1,,,,1,,,,
 RYK Night Rider,filter,https://www.modulargrid.net/e/ryk-modular-night-rider,2023,,,1,,,,,,,,
 RYK Vector Wave,voice,https://www.modulargrid.net/e/ryk-modular-vector-wave,2022,,,1,,,,,,,,
-SDS Accord Melisma,sequencer,https://modulargrid.net/e/sds-digital-accord-melisma,2019,,,,,1,,,,,,CV-to-MIDI chord and melody generator
-SDS VCO,voice,https://modulargrid.net/e/sds-digital-sds-vco,2017,,,1,,,,,,,,requires additional add-on; TRS type user switchable
+SDS Digital / Konstantine Accord Melisma,sequencer,https://modulargrid.net/e/sds-digital-accord-melisma,2019,,,,,1,,,,,,CV-to-MIDI chord and melody generator
+SDS Digital VCO,voice,https://modulargrid.net/e/sds-digital-sds-vco,2017,,,1,,,,,,,,requires additional add-on; TRS type user switchable
+Shakmat Clock O’Pawn II,utility,https://modulargrid.net/e/shakmat-modular-clock-o-pawn-mkii,2023,,,1,,,,,,,,MIDI clock extractor
 Sleepy Circuits Hypno,video,https://www.modulargrid.net/e/sleepy-circuits-hypno,2020,,,,,,,,,A,,
 SoundForce DCO,voice,https://www.modulargrid.net/e/soundforce-udco,2021,,,1,,,,,,,,
 SoundForce uDCO,voice,https://www.modulargrid.net/e/soundforce-dco-grey-2021,2022,,,1,,,,,,,,
