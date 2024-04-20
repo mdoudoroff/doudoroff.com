@@ -20,8 +20,8 @@ Clatters Garden Listener,utility,https://modulargrid.net/e/clatters-garden-liste
 Cycle Instruments Tetrachords,sequencer,https://www.modulargrid.net/e/cycle-instruments-tetrachords,2023,,,1,,,,1,,C,,TRS IN type is auto-detected; TRS OUT type is set via a switch on the back of the module
 Deftaudio MIDI TRS Thru,utility,https://modulargrid.net/e/other-unknown-deftaudio-midi-trs-thru,2022,,,1,,,,4,,,,TRS type configured by jumpers per port
 Divergent Waves DrumFiend,utility,https://modulargrid.net/e/divergent-waves-drumfiend,2022,,,,,,,1,,,,Trigger to MIDI conversion; TRS type configured via jumper
-DMMDM Droid MASTER,sequencer; utility,https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid,2020,,1,,,,1,,,C,,requires X7 expander; cv-to-MIDI
-DMMDM Droid MASTER18,sequencer; utility,https://modulargrid.net/e/der-mann-mit-der-maschine-master18,2024,,2,,,,2,,,C,,two MIDI interfaces built in
+DMMDM Droid MASTER,sequencer; utility,https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid,2020,,,1,,,,1,,C,,requires X7 expander; cv-to-MIDI; TRS IN type is auto-detected
+DMMDM Droid MASTER18,sequencer; utility,https://modulargrid.net/e/der-mann-mit-der-maschine-master18,2024,,,2,,,,2,,C,,two MIDI interfaces built in; TRS IN type is auto-detected
 Dreadbox Lil’ Erebus,voice,https://www.modulargrid.net/e/dreadbox-lil-erebus,2018,1,,,,,,,,,,
 Dreadbox Dysmetria,voice,https://modulargrid.net/e/dreadbox-dysmetria,2022,1,,,,,,,,,,
 Dreadbox Telepathy,voice,https://modulargrid.net/e/dreadbox-telepathy-,2024,1,,,,1,,,,,,
@@ -39,6 +39,7 @@ Expert Sleepers CVM-8,utility,https://modulargrid.net/e/expert-sleepers-cvm-8,20
 Expert Sleepers Disting,voice,https://www.modulargrid.net/e/expert-sleepers-disting-mk4,2017,,,1,,,,,,,1,via breakout
 Expert Sleepers Disting EX,voice,https://www.modulargrid.net/e/expert-sleepers-disting-ex,2020,,,1,,,,,,,1,via breakout
 Expert Sleepers General CV,voice,https://www.modulargrid.net/e/expert-sleepers-general-cv,2017,,,1,,,,,,,1,via breakout
+Expert Sleepers FH-2,utility;sequencer,https://modulargrid.net/e/expert-sleepers-fh-2-factotum,2018,,,1,,,,,,"A,C",1,TRS and DIN MIDI via breakouts; CV-to-MIDI conversion and MIDI message creation
 Five12 Vector,sequencer,https://www.modulargrid.net/e/five12-vector-sequencer,2017,,,,,,2,,,"A,B",1,DIN MIDI features require expander
 Flame 4VOX,voice,https://www.modulargrid.net/e/flame-4vox,2015,,,,,,,,,,1,
 Flame Curves,filter,https://www.modulargrid.net/e/flame-curves,2017,,1,,,,,,,,,
@@ -60,6 +61,8 @@ Manikk Otto MIDI,utility,https://modulargrid.net/e/manikk-otto-midi,2020,1,,,,4,
 Michigan Synth Works USB2MIDI,utility,https://modulargrid.net/e/michigan-synth-works-usb2midi-5-port-trs-midi-output,2022,,,,,5,,,,A,,USB MIDI to 5X TRS TYPE A
 Modbap Trinity,voice,https://www.modulargrid.net/e/modbap-modular-trinity,2022,,,,,,,,,C,,
 MOK Waverazor Dual Oscillator,voice,https://www.modulargrid.net/e/1010-music-mok-waverazor-dual-oscillator,2019,,1,,,,,,,,,
+Moog Subharmonicon,voice,https://modulargrid.net/e/moog-music-inc-subharmonicon-2020-edition,2020,1,,,,,,,,,,
+Moog Mother-32,voice,https://modulargrid.net/e/moog-music-inc-moog-mother-32,2015,,,,,,,,,,1,
 Nanopolis Antigone,voice,https://www.modulargrid.net/e/other-unknown-nanopolis-antigone,2023,,,,1,,,,,,,via expander
 Neutron Sound Dust of Time,voice,https://www.modulargrid.net/e/neutron-sound-dust-of-time-,2020,,,1,,,,,,,,
 Neuzeit Warp,voice,https://www.modulargrid.net/e/neuzeit-instruments-warp,2023,,1,,,,,,,,,
