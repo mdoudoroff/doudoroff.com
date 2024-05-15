@@ -255,20 +255,21 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <h2>Additional Eurorack modules</h2>
 <p>Finally, the modules below don’t quite belong in the above comparison but have been pointed out as being of potential interest:</p>
 <ul>
-<li><a href="https://www.modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
+<li><a href="https://modulargrid.net/e/arc-serge-tkb">Analogue Research (ARC) Serge TKB</a> (touch activated keyboard sequencer)</li>
 <li><a href="https://www.antikulture.com">Antikulture Desruptor</a> (probability-focused sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/cycle-instruments-tetrachords">Cycle Instruments Tetrachord</a> (four part arp/chord melody mill with sophisticated macro and cv control)</li>
-<li><a href="https://www.modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
-<li><a href="https://www.modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
-<li><a href="https://www.modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
-<li><a href="https://www.modulargrid.net/e/other-unknown-degree-vco-controller">OK200 Degree</a> (novel quantized performance controller &amp; sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
-<li><a href="https://www.modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
-<li><a href="https://www.modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
-<li><a href="https://www.modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
-<li><a href="https://www.modulargrid.net/e/vermona-melodicer">Vermona meloDICER</a> (probability-focused musical phrase generator)</li>
+<li><a href="https://modulargrid.net/e/catalyst-audio-time-s-arrow">Catalyst Audio Time’s Arrow</a> (random melody-focused 16-step sequencer)</li>
+<li><a href="https://modulargrid.net/e/cycle-instruments-tetrachords">Cycle Instruments Tetrachord</a> (four part arp/chord melody mill with sophisticated macro and cv control)</li>
+<li><a href="https://modulargrid.net/e/frequency-central-cryptograf">Frequency Central Polygraf</a> (16 step CV sequencer with novel addressing scheme)</li>
+<li><a href="https://modulargrid.net/e/kaona-zazou">Kaona Zazou</a> (four part pitch generator/melody mill--see also Kaona Skippy gate generator)</li>
+<li><a href="https://modulargrid.net/e/malekko-heavy-industry-voltage-block">Malekko Heavy Industries Voltage Block</a> (8 independent tracks of quantizable 16-step CV sequencing, but no gates)</li>
+<li><a href="https://modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
+<li><a href="https://modulargrid.net/e/other-unknown-degree-vco-controller">OK200 Degree</a> (novel quantized performance controller &amp; sequencer)</li>
+<li><a href="https://modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
+<li><a href="https://modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
+<li><a href="https://modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
+<li><a href="https://modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
+<li><a href="https://modulargrid.net/e/twisted-electrons-cells">Twisted Electron Cells</a> (compact grid-like, dual sequencer)</li>
+<li><a href="https://modulargrid.net/e/vermona-melodicer">Vermona meloDICER</a> (probability-focused musical phrase generator)</li>
 </ul>
 
 <p style="text-align:center;">• • •</p>
