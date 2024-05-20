@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-05-20 added Five12 Vector II and Rides in the Storm QSQ<br>
 2024-04-10 added Glasgow Synth Guild Oct Tone<br>
 2024-02-02 added 4ms Catalyst Sequencer and NONO Major Tom<br>
 2023-12-12 added Floating Knobs Cuisine<br>
