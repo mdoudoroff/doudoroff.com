@@ -268,6 +268,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 <li><a href="https://modulargrid.net/e/noise-engineering-mimetic-digitalis-">Noise Engineering Mimetic Digitalis</a> (novel compact cv-only grid-based sequencer with four outputs)</li>
 <li><a href="https://modulargrid.net/e/other-unknown-degree-vco-controller">OK200 Degree</a> (novel quantized performance controller &amp; sequencer)</li>
 <li><a href="https://modulargrid.net/e/percussa-super-signal-processor">Percussa SSP</a> (multi-function device that, amongst other things, can run a flexible number of 64-step cv+gate sequencers)</li>
+<li><a href="https://rabidelephant.com/products/nexus-seq">Nexus Seq</a> (novel interactive CV sequencer with many unconventional ideas to make sequencing more immediate and performative)</li>
 <li><a href="https://modulargrid.net/e/other-unknown-electro-music-klee-sequencer">San Pedro Labs Klee Sequencer</a> (teensy-based module with various sequencer programs)</li>
 <li><a href="https://modulargrid.net/e/tinrs-tuesday">TiNRS Tuesday</a> (algorithmic melody-focused sequencer)</li>
 <li><a href="https://modulargrid.net/e/tiptop-audio-z8000-mk2">Tiptop Z8000 Mk2</a> (novel cv-only grid-based sequencer with many outputs)</li>
