@@ -24,6 +24,7 @@ hr {
 
 body {
   padding: 1em;
+  width: 100%;
 }
 
 h1 {
@@ -54,4 +55,40 @@ p {
 .label__thumbnail {
   width: 100px;
   height: 100px;
+}
+
+figure.primary {
+  max-width: 30%;
+}
+
+.varietals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--size-2);
+}
+.varietals div {
+  text-align: center;
+}
+.varietals img {
+  border-radius: var(--radius-2);
+}
+
+.map__cluster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--size-2);
+}
+.map__cluster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+figure.producer_secondary {
+  max-width: 25%;
+}
+figure.producer_secondary img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

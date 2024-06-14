@@ -2518,6 +2518,55 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_images\/distillation\/placeholder.jpg" : {
+      "ft" : 16384,
+      "iS" : 104384,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_images\/distillation\/placeholder.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_images\/maps\/local-placeholder.jpg" : {
+      "ft" : 16384,
+      "iS" : 452341,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_images\/maps\/local-placeholder.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_images\/maps\/political.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_images\/maps\/political.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/_images\/maps\/regional-placeholder.jpg" : {
+      "ft" : 16384,
+      "iS" : 374751,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_images\/maps\/regional-placeholder.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/_images\/Producers with Photos\/Aquilino Garcia Lopez\/Aquilino_Garcia.jpeg" : {
       "ft" : 16384,
       "iS" : 458065,
@@ -2686,6 +2735,18 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/css\/page.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/page-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/distillation-cactus.html" : {
       "cB" : 0,
