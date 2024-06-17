@@ -126,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-06-17 added Sebsongs Sampler, Percussa XMX and SoundForce Samples II<br>
 2023-10-01 added Error Instruments Brinta<br>
 2023-09-04 added 4ms Sampler<br>
 2022-07-16 added Mutable Instruments Beads<br>
