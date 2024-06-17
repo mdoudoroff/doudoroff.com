@@ -9,6 +9,19 @@
   ],
   "creatorBuild" : "34576",
   "files" : {
+    "\/_gfx\/cabinet-logo-MezcalBar_Horizontal_ko.png" : {
+      "ft" : 32768,
+      "iS" : 121035,
+      "oA" : 0,
+      "oAP" : "\/_gfx\/cabinet-logo-MezcalBar_Horizontal_ko.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/_images\/Agaves with Photos\/Cenizo\/cenizo_agave.jpeg" : {
       "ft" : 16384,
       "iS" : 712199,
@@ -2735,6 +2748,14 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/bottlings.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/bottlings-output.html",
+      "oF" : 0
     },
     "\/css\/page.css" : {
       "aP" : 1,
