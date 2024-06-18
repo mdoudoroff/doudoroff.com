@@ -2889,6 +2889,14 @@
       "oAP" : "\/index-states-output.html",
       "oF" : 0
     },
+    "\/index-types.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/index-types-output.html",
+      "oF" : 0
+    },
     "\/index-varietals.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3087,6 +3095,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/producer-amando-alvarado-output.html",
+      "oF" : 0
+    },
+    "\/producer-amin-david-robinson.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-amin-david-robinson-output.html",
       "oF" : 0
     },
     "\/producer-anatolio-ramirez.html" : {
@@ -3785,6 +3801,22 @@
       "oAP" : "\/producer-familia-chacon-output.html",
       "oF" : 0
     },
+    "\/producer-familia-de-la-cruz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-familia-de-la-cruz-output.html",
+      "oF" : 0
+    },
+    "\/producer-familia-flores.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-familia-flores-output.html",
+      "oF" : 0
+    },
     "\/producer-familia-gonzalez.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4481,6 +4513,14 @@
       "oAP" : "\/producer-jose-luis-medina-output.html",
       "oF" : 0
     },
+    "\/producer-jose-luis-portillo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-jose-luis-portillo-output.html",
+      "oF" : 0
+    },
     "\/producer-jose-manuel-lopez-montano.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4719,6 +4759,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/producer-manuel-aquino-output.html",
+      "oF" : 0
+    },
+    "\/producer-manuel-campanilla.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-manuel-campanilla-output.html",
       "oF" : 0
     },
     "\/producer-marcelo-flores.html" : {
@@ -5175,6 +5223,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/producer-ramon-costa-output.html",
+      "oF" : 0
+    },
+    "\/producer-ramon-gabriel-bustamante-gutierrez.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/producer-ramon-gabriel-bustamante-gutierrez-output.html",
       "oF" : 0
     },
     "\/producer-ramon-garcia-sanchez.html" : {
@@ -5961,6 +6017,14 @@
       "oAP" : "\/product-rec4RRkwXUNNleDdd-output.html",
       "oF" : 0
     },
+    "\/product-rec4U1oqsCj8zkwA1.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-rec4U1oqsCj8zkwA1-output.html",
+      "oF" : 0
+    },
     "\/product-rec4UTbpIuM4PDK6X.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -6263,6 +6327,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-rec7k7EiHTLbUkNYR-output.html",
+      "oF" : 0
+    },
+    "\/product-rec7KMY45jBUlb0ff.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-rec7KMY45jBUlb0ff-output.html",
       "oF" : 0
     },
     "\/product-rec7lFf3MrmffPOss.html" : {
@@ -7305,6 +7377,14 @@
       "oAP" : "\/product-recDRaPiQ5LzaSp9M-output.html",
       "oF" : 0
     },
+    "\/product-recDrdgV9PSffQSPS.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recDrdgV9PSffQSPS-output.html",
+      "oF" : 0
+    },
     "\/product-recDugH8VBpVXo9No.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7439,6 +7519,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-receJDLGfaDObd1Bh-output.html",
+      "oF" : 0
+    },
+    "\/product-receJS9PxqxEccjg2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-receJS9PxqxEccjg2-output.html",
       "oF" : 0
     },
     "\/product-recelFTS6w3sPSji4.html" : {
@@ -7631,6 +7719,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recfgKnXrfMjNAeND-output.html",
+      "oF" : 0
+    },
+    "\/product-recFIGC9szCFsY4lK.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recFIGC9szCFsY4lK-output.html",
       "oF" : 0
     },
     "\/product-recFigkwhP4r59RQp.html" : {
@@ -7959,6 +8055,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recGzHVfREsxttiOY-output.html",
+      "oF" : 0
+    },
+    "\/product-recGzjLNm3HP3LMmR.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recGzjLNm3HP3LMmR-output.html",
       "oF" : 0
     },
     "\/product-rech0HyCeafwGijis.html" : {
@@ -8865,6 +8969,14 @@
       "oAP" : "\/product-recLap2v1ojTFRtod-output.html",
       "oF" : 0
     },
+    "\/product-recLAz7ndN4mpmumv.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recLAz7ndN4mpmumv-output.html",
+      "oF" : 0
+    },
     "\/product-reclB9frL9l9rZr6C.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8903,6 +9015,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recLem72j4P1aXciH-output.html",
+      "oF" : 0
+    },
+    "\/product-recLFiHyUsvSSlBEc.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recLFiHyUsvSSlBEc-output.html",
       "oF" : 0
     },
     "\/product-reclfjwa133vqT93b.html" : {
@@ -9521,6 +9641,14 @@
       "oAP" : "\/product-recoa1RtsC1Kiiiiv-output.html",
       "oF" : 0
     },
+    "\/product-recOa1taAdCoCV7Ls.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recOa1taAdCoCV7Ls-output.html",
+      "oF" : 0
+    },
     "\/product-recOBEO7xHpfTiOtw.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9663,6 +9791,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recOWFBR7YQ5z4zPq-output.html",
+      "oF" : 0
+    },
+    "\/product-recoWHunbkNtIakQ1.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recoWHunbkNtIakQ1-output.html",
       "oF" : 0
     },
     "\/product-recoXFn2GTEYZPye3.html" : {
@@ -10961,6 +11097,14 @@
       "oAP" : "\/product-recuueqP4x8L8rJwX-output.html",
       "oF" : 0
     },
+    "\/product-recuURL66MN6Ph5Uy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recuURL66MN6Ph5Uy-output.html",
+      "oF" : 0
+    },
     "\/product-recUwEKbKYK5c8R7L.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -10999,6 +11143,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recv5kdhbbZLTZqaT-output.html",
+      "oF" : 0
+    },
+    "\/product-recv5meMMqrVjzrTZ.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recv5meMMqrVjzrTZ-output.html",
       "oF" : 0
     },
     "\/product-recv55XUM7mdbdMhx.html" : {
@@ -11289,6 +11441,14 @@
       "oAP" : "\/product-recWmQnkYa0HRVpJZ-output.html",
       "oF" : 0
     },
+    "\/product-recwn1vioxCcvYv6v.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recwn1vioxCcvYv6v-output.html",
+      "oF" : 0
+    },
     "\/product-recWPQx4Zx9EQ5NWs.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -11423,6 +11583,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/product-recXC02cfyQdkzFF8-output.html",
+      "oF" : 0
+    },
+    "\/product-recXCFeAfGpaJ1RcK.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/product-recXCFeAfGpaJ1RcK-output.html",
       "oF" : 0
     },
     "\/product-recxdD7ty7EryzZgW.html" : {
@@ -11968,6 +12136,350 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/spirittype-aguardiente.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-aguardiente-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-bacanora.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-bacanora-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-capon.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-capon-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-chumil.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-chumil-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-con-pulque.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-con-pulque-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-en-cuero.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-en-cuero-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-ensamble.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-ensamble-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-lechuguilla.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-lechuguilla-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-mezcal.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-mezcal-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-palmilla.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-palmilla-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-borrego.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-borrego-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-brisket.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-brisket-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-cafe.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-cafe-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-cannabis.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-cannabis-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-codorniz.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-codorniz-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-conejo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-conejo-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-corn.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-corn-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-de-castana.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-de-castana-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-deer.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-deer-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-frutas.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-frutas-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-gallina.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-gallina-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-guajolote.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-guajolote-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-lime.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-lime-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-mandarin.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-mandarin-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-mango-habanero.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-mango-habanero-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-mango.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-mango-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-miel-y-rosas.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-miel-y-rosas-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-mole.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-mole-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-pavo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-pavo-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-peyote,-snake-venom.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-peyote,-snake-venom-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-pinon.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-pinon-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-platano.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-platano-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-scorpion.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-scorpion-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-tlaciahual.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-tlaciahual-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-wild-boar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-wild-boar-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-zacatelimon.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-zacatelimon-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga-zarzamora.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-zarzamora-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-pechuga.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-pechuga-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-puntas.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-puntas-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-raicilla.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-raicilla-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-sotol.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-sotol-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-tequila.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-tequila-output.html",
+      "oF" : 0
+    },
+    "\/spirittype-tuxca.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/spirittype-tuxca-output.html",
+      "oF" : 0
+    },
     "\/state-chihuahua.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -12304,6 +12816,14 @@
       "oAP" : "\/varietal-bicuishe-output.html",
       "oF" : 0
     },
+    "\/varietal-blanco.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/varietal-blanco-output.html",
+      "oF" : 0
+    },
     "\/varietal-blue-weber.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -12558,6 +13078,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/varietal-cupreata-output.html",
+      "oF" : 0
+    },
+    "\/varietal-dasylirion.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/varietal-dasylirion-output.html",
       "oF" : 0
     },
     "\/varietal-de-castilla.html" : {

@@ -32,7 +32,8 @@ nav {
 
 	display: flex;
 	justify-content: space-around;
-
+	align-items: center;
+	
 
 	margin-block: 1em;
 
@@ -130,7 +131,7 @@ figure.producer_secondary {
 
 .bottling__index {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto;
 	row-gap: 2em;
 }
 
@@ -149,4 +150,10 @@ footer {
 	gap: 1em;
 	justify-content: space-between;
 	margin-block: 2em;
+}
+
+.bottling__detail__grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1em;
 }
