@@ -157,3 +157,17 @@ footer {
 	grid-template-columns: auto auto;
 	gap: 1em;
 }
+
+.big__map {
+	position: relative;
+	max-width: 700px;
+	height: auto;
+	margin-inline: auto;
+}
+.mexico__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}

@@ -22,6 +22,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/_gfx\/mx.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_gfx\/mx.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/_images\/Agaves with Photos\/Cenizo\/cenizo_agave.jpeg" : {
       "ft" : 16384,
       "iS" : 712199,
@@ -2556,6 +2566,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/_images\/maps\/mx.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_images\/maps\/mx.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/_images\/maps\/political.svg" : {
       "ft" : 2097152,
