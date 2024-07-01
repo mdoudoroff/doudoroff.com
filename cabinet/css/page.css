@@ -21,10 +21,6 @@ a, a:visited, a:hover {
   color: var(--cabinet-anchor);
 }
 
-strong {
-  color: white;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -38,7 +34,8 @@ nav a, nav span {
   align-items: center;
   padding: 0.5em 1em;
   border-radius: var(--radius-round);
-  margin-inline: 0.5em;
+  margin-inline: 1em;
+  font-size: var(--font-size-0);
 }
 nav a {
   background: var(--cabinet-altcolor);
@@ -116,7 +113,7 @@ figure.producer_secondary img {
 
 .bottling__index {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   row-gap: 2em;
 }
 
@@ -156,4 +153,9 @@ footer img {
   left: 0;
   width: 100%;
   height: auto;
+}
+
+.bin__location {
+  font-size: var(--font-size-0);
+  color: var(--cabinet-altcolor);
 }
