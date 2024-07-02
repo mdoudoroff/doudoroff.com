@@ -181,6 +181,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-07-02 various additions<br>
 2024-04-24 more errata and a few stragglers<br>
 2024-04-18 errata and a few stragglers<br>
 2024-04-17 first draft<br>
@@ -387,7 +388,7 @@ print(f'Loaded {len(modules)} module entries')
 
 
 # roles (deliberately ordered)
-roles = ['utility', 'sequencer', 'voice', 'filter', 'effects', 'video']
+roles = ['utility', 'sequencer', 'quantizer', 'voice', 'filter', 'effects', 'video']
 rolesFound = set([])
 for m in modules:
 	for r in m.roles():
