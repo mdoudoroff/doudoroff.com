@@ -436,7 +436,7 @@ yoffset = 40
 totYears = len(TRS_growth['y'])
 graphWidth = totYears * xgrid + xoffset
 maxModules = TRS_growth['t'][-1]
-graphHeight = maxModules * ygrid + yoffset + (ygrid * 5)
+graphHeight = maxModules * ygrid + yoffset + (ygrid * 5) + 20
 hsvg = f'''<svg viewBox="0 0 {graphWidth} {graphHeight}" class="graph">'''
 
 # == Type A
