@@ -164,6 +164,8 @@ footer {
 	max-width: 700px;
 	height: auto;
 	margin-inline: auto;
+	grid-column-start: 1;
+	grid-column-end: -1;
 }
 .mexico__overlay {
 	position: absolute;

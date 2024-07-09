@@ -7556,6 +7556,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/cabinet\/_images\/maps\/mx.guerrero.jpg" : {
+      "ft" : 16384,
+      "iS" : 437365,
+      "jF" : 0,
+      "oA" : 1,
+      "oAP" : "\/cabinet\/_images\/maps\/mx.guerrero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/cabinet\/_images\/maps\/mx.guerrero.svg" : {
       "ft" : 2097152,
       "miP" : 0,
