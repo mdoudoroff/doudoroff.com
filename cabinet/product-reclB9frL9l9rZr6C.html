@@ -9,10 +9,10 @@
 </head>
 <body>
 <nav>
-	<a href="index.html">Flights/Featured</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="bottlings.html">All</a>
+	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
-<hr />
-<h1>Siembra Metl</h1>
+<main>
+<h1>Siembra Metl Espadin</h1>
 <div">$20/oz</div>
 <div class="bottling__detail__grid">
 <div class="bottling__attributes">
@@ -22,7 +22,7 @@
 <p><strong>ABV:</strong> 49.0%</p>
 <p><strong>Producer:</strong> <a href="producer-jorge-miguel-perez.html">Jorge & Miguel Perez</a></p>
 <p><strong>City:</strong> Rio de Parras</p>
-<p><strong>State:</strong> <a href="state-jalisco.html">Jalisco</a></p>
+<p><strong>State:</strong> <a href="state-michoacan.html">Michoacan</a></p>
 <p><strong>Distillation Type:</strong> <a href="distillation-copper.html">Copper</a>, <a href="distillation-wood.html">Wood</a></p>
 <p><strong>Batch Size:</strong> 425L</p>
 <p><strong>Vintage:</strong> </p>
@@ -31,8 +31,19 @@
 </div>
 </div>
 <div><span class="bin__location">West W3</span></div>
+</main>
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
+<div id="backButton">⬅︎</div>
+<div id="scrollToTop">⬆︎</div>
+<script>
+document.getElementById("backButton").addEventListener("click", () => {
+  history.back();
+});
+document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
 </body>
 </html>

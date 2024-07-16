@@ -11,31 +11,43 @@
 }
 
 body {
-  padding: 1em;
   width: 100%;
   background: var(--cabinet-background);
   color: var(--cabinet-basecolor);
 }
 
+main {
+  padding-inline: 1em;
+}
+
 a, a:visited, a:hover {
   color: var(--cabinet-anchor);
+  text-decoration: none;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-block: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
   text-align: center;
   font-weight: bold;
+  position: sticky;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 nav a, nav span {
   display: flex;
   align-items: center;
   padding: 0.5em 1em;
   border-radius: var(--radius-round);
-  margin-inline: 1em;
-  font-size: var(--font-size-0);
+  font-size: var(--font-size-1);
+  background: white;
+  color: black;
 }
 nav a {
   background: var(--cabinet-altcolor);
@@ -45,15 +57,25 @@ hr {
   margin-block: 1em;
 }
 
+.selection {
+  margin-bottom: 0.5em;
+  font-size: var(--font-size-2);
+  font-weight: bold;
+}
+
 h1 {
   font-size: var(--font-size-6);
   text-align: center;
   max-inline-size: 100%;
   margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
-p {
-  line-height: 2;
+h2 {
+  font-size: var(--font-size-5);
+  max-inline-size: 100%;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .brand__image {
@@ -91,6 +113,10 @@ figure.primary {
   border-radius: var(--radius-2);
 }
 
+.columnar--options {
+  columns: 2;
+}
+
 .map__cluster {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,8 +139,20 @@ figure.producer_secondary img {
 
 .bottling__index {
   display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 2em;
+  grid-template-columns: minmax(auto, max-content) auto;
+  gap: 2em;
+}
+
+.bottling__index__extended {
+  display: grid;
+  grid-template-columns: minmax(auto, max-content) auto auto;
+  gap: 2em;
+}
+
+.bottling__index__flight {
+  display: grid;
+  grid-template-columns: minmax(auto, max-content) auto;
+  gap: 2em;
 }
 
 footer {
@@ -157,7 +195,37 @@ footer img {
   height: auto;
 }
 
+.count {
+  font-size: var(--font-size-0);
+  color: var(--cabinet-altcolor);
+  margin-left: 0.5em;
+}
+
 .bin__location {
   font-size: var(--font-size-0);
   color: var(--cabinet-altcolor);
+}
+
+#scrollToTop, #backButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-2);
+  font-weight: bold;
+  color: var(--cabinet-anchor);
+  background: var(--cabinet-altcolor);
+  cursor: pointer;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+#backButton {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
 }

@@ -9,9 +9,9 @@
 </head>
 <body>
 <nav>
-	<a href="index.html">Flights/Featured</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <span>States</span> <a href="index-distillation.html">Distillation</a> <a href="bottlings.html">All</a>
+	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <span>States</span> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
-<hr />
+<main>
 <h1>States</h1>
 <figure class="big__map"><img src="_images/maps/mx.svg" />
 <svg class="mexico__overlay" version="1.1" width="1638" height="1078" viewBox="0 0 1638 1078" xmlns="http://www.w3.org/2000/svg">
@@ -187,28 +187,40 @@
 <circle class="tick" cx="791" cy="728" r="3" opacity="0.5" fill="yellow" />
 <circle class="tick" cx="1088" cy="964" r="3" opacity="0.5" fill="yellow" />
 </svg></figure>
-<p><a href="state-chihuahua.html">Chihuahua</a> (10)</p>
-<p><a href="state-durango.html">Durango</a> (37)</p>
-<p><a href="state-estado-de-mexico.html">Estado de Mexico</a> (4)</p>
-<p><a href="state-guanajuato.html">Guanajuato</a> (5)</p>
-<p><a href="state-guerrero.html">Guerrero</a> (48)</p>
-<p><a href="state-hidalgo.html">Hidalgo</a> (2)</p>
-<p><a href="state-jalisco.html">Jalisco</a> (180)</p>
-<p><a href="state-michoacan.html">Michoacan</a> (26)</p>
-<p><a href="state-morelos.html">Morelos</a> (1)</p>
-<p><a href="state-nayarit.html">Nayarit</a> (1)</p>
-<p><a href="state-nuevo-leon.html">Nuevo Leon</a> (9)</p>
-<p><a href="state-oaxaca.html">Oaxaca</a> (399)</p>
-<p><a href="state-puebla.html">Puebla</a> (69)</p>
-<p><a href="state-san-luis-potosi.html">San Luis Potosi</a> (10)</p>
-<p><a href="state-sinaloa.html">Sinaloa</a> (1)</p>
-<p><a href="state-sonora.html">Sonora</a> (18)</p>
-<p><a href="state-tamaulipas.html">Tamaulipas</a> (4)</p>
-<p><a href="state-tlaxcala.html">Tlaxcala</a> (1)</p>
-<p><a href="state-yucatan.html">Yucatan</a> (1)</p>
-<p><a href="state-zacatecas.html">Zacatecas</a> (4)</p>
+<div class="columnar--options">
+<div class="selection"><a href="state-chihuahua.html">Chihuahua</a> <span class="count">8</span></div>
+<div class="selection"><a href="state-durango.html">Durango</a> <span class="count">36</span></div>
+<div class="selection"><a href="state-estado-de-mexico.html">Estado de Mexico</a> <span class="count">4</span></div>
+<div class="selection"><a href="state-guanajuato.html">Guanajuato</a> <span class="count">5</span></div>
+<div class="selection"><a href="state-guerrero.html">Guerrero</a> <span class="count">48</span></div>
+<div class="selection"><a href="state-hidalgo.html">Hidalgo</a> <span class="count">2</span></div>
+<div class="selection"><a href="state-jalisco.html">Jalisco</a> <span class="count">181</span></div>
+<div class="selection"><a href="state-michoacan.html">Michoacan</a> <span class="count">27</span></div>
+<div class="selection"><a href="state-morelos.html">Morelos</a> <span class="count">1</span></div>
+<div class="selection"><a href="state-nayarit.html">Nayarit</a> <span class="count">1</span></div>
+<div class="selection"><a href="state-nuevo-leon.html">Nuevo Leon</a> <span class="count">8</span></div>
+<div class="selection"><a href="state-oaxaca.html">Oaxaca</a> <span class="count">393</span></div>
+<div class="selection"><a href="state-puebla.html">Puebla</a> <span class="count">65</span></div>
+<div class="selection"><a href="state-san-luis-potosi.html">San Luis Potosi</a> <span class="count">11</span></div>
+<div class="selection"><a href="state-sonora.html">Sonora</a> <span class="count">18</span></div>
+<div class="selection"><a href="state-tamaulipas.html">Tamaulipas</a> <span class="count">4</span></div>
+<div class="selection"><a href="state-tlaxcala.html">Tlaxcala</a> <span class="count">1</span></div>
+<div class="selection"><a href="state-yucatan.html">Yucatan</a> <span class="count">1</span></div>
+<div class="selection"><a href="state-zacatecas.html">Zacatecas</a> <span class="count">4</span></div>
+</div>
+</main>
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
+<div id="backButton">⬅︎</div>
+<div id="scrollToTop">⬆︎</div>
+<script>
+document.getElementById("backButton").addEventListener("click", () => {
+  history.back();
+});
+document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
 </body>
 </html>

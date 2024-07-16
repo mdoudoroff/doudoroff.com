@@ -9,24 +9,37 @@
 </head>
 <body>
 <nav>
-	<a href="index.html">Flights/Featured</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <span>Distillation</span> <a href="bottlings.html">All</a>
+	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <span>Distillation</span> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
-<hr />
+<main>
 <h1>Distillation Types</h1>
-<p><a href="distillation-cactus.html">cactus</a> (2)</p>
-<p><a href="distillation-clay.html">Clay</a> (129)</p>
-<p><a href="distillation-copper.html">Copper</a> (538)</p>
-<p><a href="distillation-copper-coil.html">Copper Coil</a> (2)</p>
-<p><a href="distillation-internal-capture.html">Internal Capture</a> (4)</p>
-<p><a href="distillation-quiote.html">Quiote</a> (2)</p>
-<p><a href="distillation-radiator.html">Radiator</a> (1)</p>
-<p><a href="distillation-refrescador.html">Refrescador</a> (62)</p>
-<p><a href="distillation-stainless-steel.html">Stainless Steel</a> (27)</p>
-<p><a href="distillation-stainless-steel-column.html">Stainless Steel Column</a> (1)</p>
-<p><a href="distillation-steel.html">Steel</a> (4)</p>
-<p><a href="distillation-wood.html">Wood</a> (60)</p>
+<div class="columnar--options">
+<div class="selection"><a href="distillation-cactus.html">cactus</a> <span class="count">2</span></div>
+<div class="selection"><a href="distillation-clay.html">Clay</a> <span class="count">129</span></div>
+<div class="selection"><a href="distillation-copper.html">Copper</a> <span class="count">523</span></div>
+<div class="selection"><a href="distillation-copper-coil.html">Copper Coil</a> <span class="count">2</span></div>
+<div class="selection"><a href="distillation-filipino.html">Filipino</a> <span class="count">1</span></div>
+<div class="selection"><a href="distillation-internal-capture.html">Internal Capture</a> <span class="count">5</span></div>
+<div class="selection"><a href="distillation-quiote.html">Quiote</a> <span class="count">1</span></div>
+<div class="selection"><a href="distillation-radiator.html">Radiator</a> <span class="count">1</span></div>
+<div class="selection"><a href="distillation-refrescador.html">Refrescador</a> <span class="count">65</span></div>
+<div class="selection"><a href="distillation-stainless-steel.html">Stainless Steel</a> <span class="count">26</span></div>
+<div class="selection"><a href="distillation-steel.html">Steel</a> <span class="count">4</span></div>
+<div class="selection"><a href="distillation-wood.html">Wood</a> <span class="count">60</span></div>
+</div>
+</main>
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
+<div id="backButton">⬅︎</div>
+<div id="scrollToTop">⬆︎</div>
+<script>
+document.getElementById("backButton").addEventListener("click", () => {
+  history.back();
+});
+document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
 </body>
 </html>

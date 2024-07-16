@@ -9,23 +9,36 @@
 </head>
 <body>
 <nav>
-	<a href="index.html">Flights/Featured</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="bottlings.html">All</a>
+	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
-<hr />
+<main>
 <h1>Pechuga (platano)</h1>
+<div class="bottling__index__extended">
 
-			<div class="bottle__listing">
-				<div class="label__thumbnail"><a href="product-recRHlntqlIJyzozF.html"><img class="brand__image" src="_images/Brand Labels/label.mezcaloteca.jpeg"  /></a></div>
-				<div>
-					<strong><a href="product-recRHlntqlIJyzozF.html">Mezcaloteca</a></strong><br>
-					<a href="varietal-papalote.html">Papalote</a>,  47.0% ABV<br>
-					<a href="producer-alberto-calzada.html">Alberto Calzada</a>, Tlacotepec, <a href="state-guerrero.html">Guerrero</a><br>
-					$20/oz
-				</div>
+			<div class="label__thumbnail"><a href="product-recRHlntqlIJyzozF.html"><img class="brand__image" src="_images/Brand Labels/label.mezcaloteca.jpeg"  /></a></div>
+			<div>
+				<div class="selection"><a href="product-recRHlntqlIJyzozF.html">Mezcaloteca Papalote</a></div>
+				47.0% ABV, <a href="producer-alberto-calzada.html">Alberto Calzada</a>, Tlacotepec, <a href="state-guerrero.html">Guerrero</a>
+				
+			</div>
+			<div>
+				$20/oz
 			</div>
 		
+</div>
+</main>
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
+<div id="backButton">⬅︎</div>
+<div id="scrollToTop">⬆︎</div>
+<script>
+document.getElementById("backButton").addEventListener("click", () => {
+  history.back();
+});
+document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
 </body>
 </html>
