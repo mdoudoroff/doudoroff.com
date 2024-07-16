@@ -62,9 +62,18 @@ nav {
 		background: white;
 		color: black;
 	}
-	a {
+	a, a:visited, a:hover {
 		background: var(--cabinet-altcolor);
+		color: var(--cabinet-anchor);
 	}
+	#navLogotype {
+		width: 25%;
+		height: auto;
+	}
+}
+
+div {
+	scroll-margin-top: 180px;
 }
 
 hr {
@@ -122,14 +131,10 @@ figure.primary {
 	display: grid;
 	grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
 
-	gap: var(--size-2);
+	gap: 1em;
 
 	div {
 		text-align: center;
-	}
-
-	img {
-		border-radius: var(--radius-2);
 	}
 }
 
@@ -159,19 +164,25 @@ figure.producer_secondary {
 
 
 .bottling__index {
+	margin-block: 1em;
 	display: grid;
 	grid-template-columns: minmax(auto,max-content) auto;
 	gap: 2em;
+	align-items: center;
 }
 .bottling__index__extended {
+	margin-block: 1em;
 	display: grid;
 	grid-template-columns: minmax(auto,max-content) auto auto;
 	gap: 2em;
+	align-items: center;
 }
 .bottling__index__flight {
+	margin-block: 1em;
 	display: grid;
 	grid-template-columns: minmax(auto,max-content) auto;
 	gap: 2em;
+	align-items: center;
 }
 
 footer {
@@ -228,7 +239,7 @@ footer {
 	align-items: center;
 	padding: 0.5em 1em;
 	border-radius: var(--radius-round);
-	font-size: var(--font-size-2);
+	font-size: var(--font-size-1);
 	font-weight: bold;
 	color: var(--cabinet-anchor);
 	background: var(--cabinet-altcolor);
@@ -245,5 +256,23 @@ footer {
 	position: fixed;
 	bottom: 1em;
 	left: 1em;
+}
 
+.bottle__notes {
+	font-size: var(--font-size-0);
+}
+
+.varietal--tile {
+	
+	img { 
+		aspect-ratio: 2 / 3;
+		object-fit: cover; 
+		border-radius: var(--radius-3);
+	}
+
+}
+.placeholder {
+	aspect-ratio: 2 / 3;
+	background: var(--cabinet-altcolor);
+	border-radius: var(--radius-3);
 }

@@ -5,15 +5,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/page.css" type="text/css">
+  <link rel="stylesheet" href="css/page.css?bust=LZ07MICO" type="text/css">
 </head>
 <body>
 <nav>
+	<img id="navLogotype" src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
 <main>
-<h1>Pulquero (varietal)</h1>
-<figure class="primary"><img src="_images/Agaves with Photos/Cenizo/cenizo_agave.jpeg"></figure>
+<h1>Pulquero</h1>
+<figure class="primary"><img src="_images/Agaves with Photos/agave.pulquero.jpeg"></figure>
 <div class="bottling__index__extended">
 
 			<div class="label__thumbnail"><a href="product-recOsg7Vvdlr8UyJi.html"></a></div>
@@ -49,7 +50,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recgMF4PuXOf6Fyrf.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recgMF4PuXOf6Fyrf.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recgMF4PuXOf6Fyrf.html">Lechoncito de Oro Tobala/Pulquero/Sierra Negra</a></div>
 				49.0% ABV, <a href="producer-hermogenes-vasquez.html">Hermogenes Vasquez</a>, Logoche, Miahuatlan, <a href="state-oaxaca.html">Oaxaca</a>
@@ -60,7 +61,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recXVfI1dIKGIm64W.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recXVfI1dIKGIm64W.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recXVfI1dIKGIm64W.html">Lechoncito de Oro Pulquero</a></div>
 				 ABV, <a href="producer-agustin-guendulain-maya.html">Agustin Guendulain Maya</a>, Lachiguizo, Miahuatlan, <a href="state-oaxaca.html">Oaxaca</a>
@@ -130,13 +131,16 @@
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
-<div id="backButton">⬅︎</div>
-<div id="scrollToTop">⬆︎</div>
+<div id="backButton">&lt; BACK</div>
+<div id="scrollToTop">TOP</div>
 <script>
 document.getElementById("backButton").addEventListener("click", () => {
   history.back();
 });
 document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+document.getElementById("navLogotype").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 </script>

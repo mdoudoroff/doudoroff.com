@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/page.css" type="text/css">
+  <link rel="stylesheet" href="css/page.css?bust=LZ07MICO" type="text/css">
 </head>
 <body>
 <nav>
+	<img id="navLogotype" src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
 <main>
-<h1>Barril (varietal)</h1>
-<figure class="primary"><img src="_images/Agaves with Photos/Cenizo/cenizo_agave.jpeg"></figure>
+<h1>Barril</h1>
 <div class="bottling__index__extended">
 
 			<div class="label__thumbnail"><a href="product-recbSRSaKBUVbCaHi.html"></a></div>
@@ -71,7 +71,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recIuW1xRmZnsj6gi.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recIuW1xRmZnsj6gi.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recIuW1xRmZnsj6gi.html">Lechoncito de Oro Barril/Espadin/Tobaziche</a></div>
 				50.0% ABV, <a href="producer-epifanio-garcia.html">Epifanio Garcia</a>, San Agustin Amatengo, Ejutla, <a href="state-oaxaca.html">Oaxaca</a>
@@ -82,7 +82,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recnVLSncaWMwlTD4.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recnVLSncaWMwlTD4.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recnVLSncaWMwlTD4.html">Lechoncito de Oro Barril/Penca Verde</a></div>
 				 ABV, <a href="producer-ignacio-parada.html">Ignacio Parada</a>, Santa Maria Zoquitlan, <a href="state-oaxaca.html">Oaxaca</a>
@@ -218,13 +218,16 @@
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
-<div id="backButton">⬅︎</div>
-<div id="scrollToTop">⬆︎</div>
+<div id="backButton">&lt; BACK</div>
+<div id="scrollToTop">TOP</div>
 <script>
 document.getElementById("backButton").addEventListener("click", () => {
   history.back();
 });
 document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+document.getElementById("navLogotype").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 </script>

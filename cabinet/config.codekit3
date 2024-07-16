@@ -2916,12 +2916,28 @@
       "oAP" : "\/distillation-wood-output.html",
       "oF" : 0
     },
+    "\/flights.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/flights-output.html",
+      "oF" : 0
+    },
     "\/index-distillation.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/index-distillation-output.html",
+      "oF" : 0
+    },
+    "\/index-nom.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/index-nom-output.html",
       "oF" : 0
     },
     "\/index-producers.html" : {
@@ -2962,6 +2978,190 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/index-output.html",
+      "oF" : 0
+    },
+    "\/nom-1102.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1102-output.html",
+      "oF" : 0
+    },
+    "\/nom-1103.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1103-output.html",
+      "oF" : 0
+    },
+    "\/nom-1108.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1108-output.html",
+      "oF" : 0
+    },
+    "\/nom-1109.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1109-output.html",
+      "oF" : 0
+    },
+    "\/nom-1119.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1119-output.html",
+      "oF" : 0
+    },
+    "\/nom-1120.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1120-output.html",
+      "oF" : 0
+    },
+    "\/nom-1123.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1123-output.html",
+      "oF" : 0
+    },
+    "\/nom-1139.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1139-output.html",
+      "oF" : 0
+    },
+    "\/nom-1146.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1146-output.html",
+      "oF" : 0
+    },
+    "\/nom-1412.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1412-output.html",
+      "oF" : 0
+    },
+    "\/nom-1414.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1414-output.html",
+      "oF" : 0
+    },
+    "\/nom-1466.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1466-output.html",
+      "oF" : 0
+    },
+    "\/nom-1468.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1468-output.html",
+      "oF" : 0
+    },
+    "\/nom-1474.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1474-output.html",
+      "oF" : 0
+    },
+    "\/nom-1477.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1477-output.html",
+      "oF" : 0
+    },
+    "\/nom-1480.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1480-output.html",
+      "oF" : 0
+    },
+    "\/nom-1492.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1492-output.html",
+      "oF" : 0
+    },
+    "\/nom-1493.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1493-output.html",
+      "oF" : 0
+    },
+    "\/nom-1523.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1523-output.html",
+      "oF" : 0
+    },
+    "\/nom-1554.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1554-output.html",
+      "oF" : 0
+    },
+    "\/nom-1579.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1579-output.html",
+      "oF" : 0
+    },
+    "\/nom-1580.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1580-output.html",
+      "oF" : 0
+    },
+    "\/nom-1614.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/nom-1614-output.html",
       "oF" : 0
     },
     "\/producer-abdias-de-la-luz,-froylan-rodriguez.html" : {

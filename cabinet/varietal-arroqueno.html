@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/page.css" type="text/css">
+  <link rel="stylesheet" href="css/page.css?bust=LZ07MICO" type="text/css">
 </head>
 <body>
 <nav>
+	<img id="navLogotype" src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 	<a href="index.html">Featured</a> <a href="flights.html">Flights</a> <a href="index-types.html">Types</a> <a href="index-producers.html">Producers</a> <a href="index-varietals.html">Varietals</a> <a href="index-states.html">States</a> <a href="index-distillation.html">Distillation</a> <a href="index-nom.html">NOM</a> <a href="bottlings.html">All</a>
 </nav>
 <main>
-<h1>Arroqueño (varietal)</h1>
-<figure class="primary"><img src="_images/Agaves with Photos/Cenizo/cenizo_agave.jpeg"></figure>
+<h1>Arroqueño</h1>
 <div class="bottling__index__extended">
 
 			<div class="label__thumbnail"><a href="product-recXp1yGdc53ibvGT.html"></a></div>
@@ -126,7 +126,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recUwEKbKYK5c8R7L.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recUwEKbKYK5c8R7L.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recUwEKbKYK5c8R7L.html">Lechoncito de Oro Arroqueño</a></div>
 				60.0% ABV, <a href="producer-juan-rey.html">Juan Rey</a>, <a href="state-oaxaca.html">Oaxaca</a>
@@ -137,7 +137,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-reci66A8ranbeRiDl.html"></a></div>
+			<div class="label__thumbnail"><a href="product-reci66A8ranbeRiDl.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-reci66A8ranbeRiDl.html">Lechoncito de Oro Arroqueño/Tripon/Marteño/Tobaziche</a></div>
 				53.0% ABV, <a href="producer-heri-sanchez.html">Heri Sanchez</a>, Santa Catarina Minas, <a href="state-oaxaca.html">Oaxaca</a>
@@ -148,7 +148,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recJr5TK5COPZePgl.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recJr5TK5COPZePgl.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recJr5TK5COPZePgl.html">Lechoncito de Oro Arroqueño</a></div>
 				 ABV, <a href="producer-agustin-guendulain-maya.html">Agustin Guendulain Maya</a>, Lachiguizo, Miahuatlan, <a href="state-oaxaca.html">Oaxaca</a>
@@ -159,7 +159,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-recifoTCSBCiTgOU6.html"></a></div>
+			<div class="label__thumbnail"><a href="product-recifoTCSBCiTgOU6.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-recifoTCSBCiTgOU6.html">Lechoncito de Oro Arroqueño</a></div>
 				48.0% ABV, <a href="producer-librado-sanchez-aguirre.html">Librado Sanchez Aguirre</a>, San Antonio El Progresso, <a href="state-oaxaca.html">Oaxaca</a>
@@ -170,7 +170,7 @@
 			</div>
 		
 
-			<div class="label__thumbnail"><a href="product-rec6rVP2gznHLX2hF.html"></a></div>
+			<div class="label__thumbnail"><a href="product-rec6rVP2gznHLX2hF.html"><img class="brand__image" src="_images/Brand Labels/label.lechoncito_de_oro.jpeg"  /></a></div>
 			<div>
 				<div class="selection"><a href="product-rec6rVP2gznHLX2hF.html">Lechoncito de Oro Arroqueño</a></div>
 				50.0% ABV, <a href="producer-heri-sanchez.html">Heri Sanchez</a>, Santa Catarina Minas, <a href="state-oaxaca.html">Oaxaca</a>
@@ -306,13 +306,16 @@
 <footer>
 <img src="_gfx/cabinet-logo-MezcalBar_Horizontal_ko.png">
 </footer>
-<div id="backButton">⬅︎</div>
-<div id="scrollToTop">⬆︎</div>
+<div id="backButton">&lt; BACK</div>
+<div id="scrollToTop">TOP</div>
 <script>
 document.getElementById("backButton").addEventListener("click", () => {
   history.back();
 });
 document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+document.getElementById("navLogotype").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 </script>
