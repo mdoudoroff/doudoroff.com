@@ -127,6 +127,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-08-21 added Centreville Cerasus<br>
 2024-08-19 added SetonixSynth Shaka-8<br>
 2024-08-16 added TipTop 207t<br>
 2024-07-21 added WMD Performance Mixer MkII and WMD PM Channels MkII<br>
