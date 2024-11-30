@@ -127,6 +127,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2024-11-30 added ADDAC814, TouellSkouarn Kemmeskañ<br>
 2024-08-28 added Entineering Mixer<br>
 2024-08-21 added Centreville Cerasus<br>
 2024-08-19 added SetonixSynth Shaka-8<br>

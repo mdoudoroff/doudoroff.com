@@ -150,15 +150,15 @@ span.function { background-color: #FFD996; }
 	</select>
 	</fieldset>
 	<fieldset id="filtergroup2" class="category"><strong>Categories</strong><br />
-		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (31)</label><br />
+		<label><input type="checkbox" name="cat_cv" value="cat_cv" /> CV (32)</label><br />
 		<label><input type="checkbox" name="cat_audio" value="cat_audio" /> audio (8)</label><br />
-		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (27)</label><br />
-		<label><input type="checkbox" name="cat_analog" value="cat_analog" /> variable/“analog” logic (7)</label><br />
+		<label><input type="checkbox" name="cat_binary" value="cat_binary" /> binary/“digital” logic (28)</label><br />
+		<label><input type="checkbox" name="cat_analog" value="cat_analog" /> variable/“analog” logic (8)</label><br />
 		<label><input type="checkbox" name="cat_rhythm" value="cat_rhythm" /> rhythm creation (16)</label><br />
 		<label><input type="checkbox" name="cat_envelopes" value="cat_envelopes" /> gating envelopes (ADSR) (5)</label><br />
 		<label><input type="checkbox" name="cat_distortion" value="cat_distortion" /> distortion (5)</label><br />
 		<label><input type="checkbox" name="cat_quantizing" value="cat_quantizing" /> quantizing events (1)</label><br />
-		<label><input type="checkbox" name="cat_conditions" value="cat_conditions" /> conditions (3)</label><br />
+		<label><input type="checkbox" name="cat_conditions" value="cat_conditions" /> conditions (4)</label><br />
 		<label><input type="checkbox" name="cat_filtration" value="cat_filtration" /> filtering events (7)</label><br />
 	</fieldset>
 	<fieldset id="filtergroup3" class="function"><strong>Functions</strong><br />
@@ -172,7 +172,7 @@ span.function { background-color: #FFD996; }
 		<label><input type="checkbox" name="fn_min" value="fn_min" /> MIN (AND/TROUGH) (1)</label><br />
 		<label><input type="checkbox" name="fn_max" value="fn_max" /> MAX (OR/PEAK) (3)</label><br />
 		<label><input type="checkbox" name="fn_diff" value="fn_diff" /> DIFF (magnitude) (1)</label><br />
-		<label><input type="checkbox" name="fn_comparator" value="fn_comparator" /> comparator (3)</label><br />
+		<label><input type="checkbox" name="fn_comparator" value="fn_comparator" /> comparator (4)</label><br />
 		<label><input type="checkbox" name="fn_delay" value="fn_delay" /> gate/trigger delay (1)</label><br />
 		<label><input type="checkbox" name="fn_skip" value="fn_skip" /> probability-based skip (1)</label><br />
 		<label><input type="checkbox" name="fn_flipflop" value="fn_flipflop" /> flipflop (3)</label><br />
@@ -264,6 +264,13 @@ Example:
 
 - patch a sawtooth ...<br />
 <a href="index.html?tag=cat_audio"><span class="kw_cat category">audio</span></a> <a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_analog"><span class="kw_cat category">variable/“analog” logic</span></a> <a href="index.html?tag=cat_distortion"><span class="kw_cat category">distortion</span></a> <a href="index.html?tag=fn_max"><span class="kw_fn function">MAX (OR/PEAK)</span></a>
+</div>
+<div class="entry cat_cv cat_binary cat_analog cat_conditions fn_comparator">
+<strong><a href="fd8s3FFx-limit_events_to_period.html">Limit events to period of inactivity</a></strong><br />
+You can use a comparator to allow or disallow other events (such as advancing a sequencer) based on activity elsewhere in your patch.
+
+The requirement ...<br />
+<a href="index.html?tag=cat_cv"><span class="kw_cat category">CV</span></a> <a href="index.html?tag=cat_binary"><span class="kw_cat category">binary/“digital” logic</span></a> <a href="index.html?tag=cat_analog"><span class="kw_cat category">variable/“analog” logic</span></a> <a href="index.html?tag=cat_conditions"><span class="kw_cat category">conditions</span></a> <a href="index.html?tag=fn_comparator"><span class="kw_fn function">comparator</span></a>
 </div>
 <div class="entry cat_cv cat_binary cat_rhythm fn_or">
 <strong><a href="YGkmVjFX-merge_triggers_and_gates.html">Merge triggers and gates</a></strong><br />

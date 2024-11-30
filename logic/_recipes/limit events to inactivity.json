@@ -1,0 +1,18 @@
+{
+    "rID": "fd8s3FFx",
+    "title": "Limit events to period of inactivity",
+    "principle": "A comparator will only go high when a voltage crosses the threshold you set",
+    "attribution": "Christopher Williams",
+    "categories": [
+        "cv",
+        "binary",
+        "analog",
+        "conditions"
+    ],
+    "functions": [
+        "comparator"
+    ],
+    "modules": [
+    ],
+    "createtime": 1732991625.960661
+}
