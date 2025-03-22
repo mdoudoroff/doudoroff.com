@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'MT-TC bent jam',
+        file: 'MT-TC bent jam 2025-01-22 1509',
+        howl: null
+      }
+    ];
+  </script>
+
+</head>
+<body>
+
+  <p>2025.01.22</p>
+  <h1>Major Tom/Tetrachords/Data Bender jam</h1>
+  <p>First outing with Data Bender, continuing to tinker with Major Tom/Tetrachords combo. One take. Two synth parts plus kick and highhat.</p>
+
+  <p><a href="audio/MT-TC bent jam 2025-01-22 1509.mp3">MT-TC bent jam 2025-01-22 1509.mp3</a></p>
+
+  <style>
+
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/MT-TC bent jam 2025-01-22 1509.png'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

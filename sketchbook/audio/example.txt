@@ -1,0 +1,1 @@
+audiowaveform -i "MT-TC-Ribbon 250322.mp3" -o "MT-TC-Ribbon 250322.png" -w 1000 -h 300 -z auto --no-axis-labels --background-color ffffff00 --waveform-color 000000
