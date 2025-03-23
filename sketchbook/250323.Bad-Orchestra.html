@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'Bad Orchestra 250323',
+        file: 'Bad-Orchestra-250323',
+        howl: null
+      }
+    ];
+  </script>
+
+</head>
+<body>
+
+  <p>2025.03.23</p>
+  <h1>Bad Orchestra - Major Tom/Tetrachords/Serum test</h1>
+
+  <p>(This whole sketch is just a proof of concept that I knocked out fast and carelessly because I’m using Serum 2 in demo mode.)</p>
+
+  <p>Impetus: try out usign the Major Tom/Tetrachords combo with a VST for stringy/orchestral behavior; try out Serum 2</p>
+
+  <p>One channel of Major Tom drives Tetrachords channel 1 for one melodic part slightly tweaked from leftover patch; obviously, no sound design effort.</p>
+  <p>Second channel of Major Tom drives Tetrachords channel 4, playing Serum 2 in Bitwig (factory strings pad preset)</p>
+  <p>The recorded performance is switching up the gate pattern for the melodic part on Major Tom, and switching between four chordal presets on Tetrachords, plus a little manual spread manipulation for the chords going to Serum. Turned out those three items were a lot to handle!</p>
+
+
+  <p><a href="audio/Bad-Orchestra-250323.mp3">Bad-Orchestra-250323.mp3</a></p>
+
+  <style>
+
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/Bad-Orchestra-250323.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

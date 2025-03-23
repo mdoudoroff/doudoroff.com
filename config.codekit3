@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34592",
+  "creatorBuild" : "34689",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -7837,91 +7837,79 @@
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/oldfashioned101\/sass\/css\/_base.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/sass\/partials\/_fonts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/oldfashioned101\/sass\/css\/_fonts.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/sass\/partials\/_media.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/oldfashioned101\/sass\/css\/_media.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/sass\/partials\/_overrides.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/oldfashioned101\/sass\/css\/_overrides.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/sass\/partials\/_page.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/oldfashioned101\/sass\/css\/_page.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/sass\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/oldfashioned101\/css\/style.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
+      "oS" : 1,
+      "pg" : 0
     },
     "\/oldfashioned101\/stylesheets\/style.css" : {
       "aP" : 1,
@@ -9175,6 +9163,177 @@
       "oAP" : "\/sequencers\/sequencers-data.numbers",
       "oF" : 0
     },
+    "\/sketchbook\/250122.MT-TC-bent-jam-1509.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250122.MT-TC-bent-jam-1509.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/250322.MT-TC-Ribbon.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250322.MT-TC-Ribbon.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/250323.Bad-Orchestra.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250323.Bad-Orchestra.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/Bad-Orchestra-250323.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/Bad-Orchestra-250323.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/Bad-Orchestra-250323.png" : {
+      "ft" : 32768,
+      "iS" : 6068,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/Bad-Orchestra-250323.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/example.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/example.txt",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/MT-TC bent jam 2025-01-22 1509.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/MT-TC bent jam 2025-01-22 1509.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/MT-TC bent jam 2025-01-22 1509.png" : {
+      "ft" : 32768,
+      "iS" : 3249,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/MT-TC bent jam 2025-01-22 1509.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/MT-TC-Ribbon 250322.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/MT-TC-Ribbon 250322.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/MT-TC-Ribbon 250322.png" : {
+      "ft" : 32768,
+      "iS" : 6683,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/MT-TC-Ribbon 250322.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/temp.dat" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/temp.dat",
+      "oF" : 0
+    },
+    "\/sketchbook\/css\/styles-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/css\/styles-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/sketchbook\/css\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/css\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/sketchbook\/js\/howler.core.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/js\/min\/howler.core-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/sketchbook\/js\/min\/player-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/js\/min\/min\/player-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/sketchbook\/js\/player.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/js\/min\/player-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/sketchbook\/js\/siriwave.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/sketchbook\/js\/min\/siriwave-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/timeline-proof\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -10047,8 +10206,6 @@
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
-    "cssoForceMediaMerge" : 0,
-    "cssoRestructure" : 1,
     "environmentVariableEntries" : [
       "NODE_ENV:::production"
     ],
@@ -11189,11 +11346,9 @@
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 2,
-      "compilerType" : 1,
       "cssoStyle" : 0,
-      "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 0,
+      "outputStyle" : 1,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
@@ -11308,6 +11463,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
+    "sassWarningStyle" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, blog, articles, prem, prot, images, images_sel, images_selected, img, gfx, ad, WEB-INF, WEB-INF.bak, Templates",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
