@@ -173,6 +173,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <p>This is a study of the rise of MIDI as a supplemental patching system to conventional audio and CV patching. Here, we are mainly concerned with 3.5mm TRS MIDI connectivity, although USB and DIN-based MIDI are acknowledged (and of course, DIN can be adapted to TRS via readily available cables).</p>
 <p>TRS patching of MIDI in Eurorack is already supported by over 80 modules and it is clearly here to stay. Unfortunately, TRS MIDI has been hobbled right out of the gate by two de facto standards: Type A (Korg) and Type B (Arturia). There’s nothing more than a single wire tranposition between these two standards, but this complication remains a fact of life. (For the time being, I have disregarded another, rare variant that uses TR cables, as it seems to be neither here nor there.)</p>
+<p>Note: LPZW has published <a href="https://github.com/kay-lpzw/LPZW_TRS_MIDI">an open-source MIDI auto crossover design</a> to support Type A or Type B transparently.</p>
 <p>Scope-wise, this study largely disregards MIDI-to-CV converters, but includes CV-to-MIDI converters. Some of the modules below can perform MIDI-to-CV, but that is not why they are included. MIDI-to-CV converters are still relevant, of course, but that is well-established topic area.</p>
 <p>Moreover, this study is exclusive to Eurorack modules. There are, of course, gobs of standalone devices out there that support MIDI over 3.5mm TRS cables or adapter cable.</p>
 <p>Acknowledgements: this work began with <a href="https://modwiggler.com/forum/viewtopic.php?t=186808">this ModWiggler thread</a> by user <strong>kay_k</strong> in 2017, and many contributions by other ModWiggler users. ModWiggler user <strong>audionerd</strong> created the <a href="https://minimidi.world"><strong>minimidi.world</strong></a> project in 2019, which includes its own database (including many non-Eurorack entries) and an excellent presentation on cabling. I got some of the information in this study from both these sources, and collected the rest, myself, via ModularGrid and module documentation.</p>
@@ -181,6 +182,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-04-10 various additions<br>
 2024-07-02 various additions<br>
 2024-04-24 more errata and a few stragglers<br>
 2024-04-18 errata and a few stragglers<br>

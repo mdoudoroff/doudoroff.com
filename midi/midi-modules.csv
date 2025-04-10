@@ -28,6 +28,8 @@ Dreadbox Telepathy,voice,https://modulargrid.net/e/dreadbox-telepathy-,2024,1,,,
 dsp.coffee DPT,utility,https://www.modulargrid.net/e/dsp-coffee-dpt,2022,,,1,,,,1,,,,Electrosmith Daisy Patch platform
 dsp.coffee KALI,effects,https://www.modulargrid.net/e/dsp-coffee-kali,2022,,,1,,,,1,,,,
 Electrosmith Daisy Patch,utility,https://www.modulargrid.net/e/electrosmith-daisy-patch,2020,1,,,,1,,,,,,Electrosmith Daisy Patch platform
+EMW MINI-3 Oscillator Bank,voice,https://modulargrid.net/e/emw-mini-3-oscillator-bank,2025,,,,1,,,,,,,
+EMW WAVE-6 Polyphonic Oscillator,voice,https://modulargrid.net/e/emw-wave-6-polyphonic-osc,2025,,,,1,,,,,,,
 endorphin.es Ground Control,sequencer,https://www.modulargrid.net/e/endorphin-es-ground-control-black-,2019,,1,,,,1,,,"A,B",,
 endorphin.es New Godspeed,voice,https://www.endorphin.es/modules/p/new-godspeed,2024,,,1,,,,1,,,,
 Enjoy Electronics The Godfather,effects,https://www.modulargrid.net/e/enjoy-electronics-the-godfather,2021,,,,1,,,,1,,,
@@ -35,6 +37,7 @@ Eowave Quadrantid Swarm,voice,https://modulargrid.net/e/eowave-quadrantid-swarm,
 Entineering FM Playground,voice,https://modulargrid.net/e/entineering-fm-playground,2024,1,,,,1,,,,,,
 Entineering MIDI Mult,utility,https://modulargrid.net/e/entineering-midi-mult,2024,1,,,,1,,,,,,
 Entineering LFO,utility,https://modulargrid.net/e/entineering-lfo,2024,1,,,,1,,,,,,
+Entineering Mixer,utility,https://modulargrid.net/e/entineering-mixer,2024,1,,,,1,,,,,,
 Erica Black Sequencer,sequencer,https://www.modulargrid.net/e/erica-synths-black-sequencer,2019,,1,,,,1,,,,,
 Erica Drum Sequencer,sequencer,https://www.modulargrid.net/e/erica-synths-drum-sequencer-with-black-keys,2019,,1,,,,,,,,,MIDI sync only
 Erogenous Tones Structure,video,https://modulargrid.net/e/erogenous-tones-structure,2018,,,,,,,,,A,,
@@ -42,13 +45,16 @@ Eventide Misha,sequencer,https://www.modulargrid.net/e/eventide-misha,2022,1,,,,
 Expert Sleepers CVM-8,utility,https://modulargrid.net/e/expert-sleepers-cvm-8,2022,,,,,,,,,,,dual CV-to-MIDI converter; requires one of assorted breakout options
 Expert Sleepers Disting,voice;quantizer,https://www.modulargrid.net/e/expert-sleepers-disting-mk4,2017,,,1,,,,,,,1,via breakout
 Expert Sleepers Disting EX,voice;quantizer,https://www.modulargrid.net/e/expert-sleepers-disting-ex,2020,,,1,,,,,,,1,via breakout
+Expert Sleepers Disting NT,voice;quantizer;filter;effects;sequencer;utility,https://modulargrid.net/e/expert-sleepers-disting-nt,2024,,,1,,,,1,,,1,via breakout
 Expert Sleepers General CV,voice,https://www.modulargrid.net/e/expert-sleepers-general-cv,2017,,,1,,,,,,,1,via breakout
 Expert Sleepers FH-2,utility;sequencer,https://modulargrid.net/e/expert-sleepers-fh-2-factotum,2018,,,1,,,,,,"A,C",1,TRS and DIN MIDI via breakouts; CV-to-MIDI conversion and MIDI message creation
 Five12 Vector,sequencer,https://www.modulargrid.net/e/five12-vector-sequencer,2017,,,,,,2,,,"A,B",1,DIN in and out via expander
 Five12 Vector 2,sequencer,,2024,,,,,,2,,,,,additional TRS-B in and out jacks via expander
 Flame 4VOX,voice,https://www.modulargrid.net/e/flame-4vox,2015,,,,,,,,,,1,
 Flame Curves,filter,https://www.modulargrid.net/e/flame-curves,2017,,1,,,,,,,,,
+Flame Filterbank,filter,https://modulargrid.net/e/flame-black-filterbank-,2024,,1,,,,,,,,,
 Flame Fire,voice,https://modulargrid.net/e/flame-fire,2022,,2,,,,1,,,,,
+Flame Kosmos,voice,https://modulargrid.net/e/flame-fm-kosmos-,2024,,1,,,,1,,,,,
 Flame TAKT,sequencer,https://www.modulargrid.net/e/flame-takt-,2022,,1,,,,1,,,,,
 Flame TON,sequencer,https://www.modulargrid.net/e/flame-ton,2022,,1,,,,1,,,,,
 Floating Knobs Cuisine,sequencer,https://www.modulargrid.net/e/floating-knobs-cuisine,2023,,,,1,,,,1,,,
@@ -61,6 +67,7 @@ Kaona Zazou,sequencer,https://modulargrid.net/e/kaona-zazou,2024,,,,,,,1,,,,
 Knobula Chord Pilot,sequencer,https://www.modulargrid.net/e/knobula-chord-pilot,2022,1,,,,1,,,,,,
 Knobula Pianophonic,voice,https://www.modulargrid.net/e/knobula-pianophonic,2023,1,,,,,,,,,,
 Knobula Poly Cinematic,voice,https://www.modulargrid.net/e/knobula-poly-cinematic,2021,1,,,,,,,,,,
+Likaon Mandala Mk2,sequencer,https://modulargrid.net/e/likaon-instruments-mandala-mk2,2025,,,1,,,,1,,,,
 LPZW.modules WK3 MIDI Thru,utility,https://modulargrid.net/e/lpzw-modules-wk3-midi-thru,2017,,,1,,,,5,,,,TRS input is autodetect; each TRS output has a physical type switch
 LPZW.Schleußig,utility,https://modulargrid.net/e/lpzw-modules-schleussig,2018,,,1,,,,,,,,MIDI clock-synchronized muting
 Making Sound Machines Stolperbeats,sequencer,https://modulargrid.net/e/making-sound-machines-stolperbeats,2022,,,1,,,,1,,,,TRS input is autodetect; TRS out has physical switch on the back of the module
@@ -75,6 +82,7 @@ Moog Mother-32,voice,https://modulargrid.net/e/moog-music-inc-moog-mother-32,201
 Nanopolis Antigone,voice,https://www.modulargrid.net/e/other-unknown-nanopolis-antigone,2023,,,,1,,,,,,,via expander
 Neutron Sound Dust of Time,voice,https://www.modulargrid.net/e/neutron-sound-dust-of-time-,2020,,,1,,,,,,,,
 Neuzeit Warp,voice,https://www.modulargrid.net/e/neuzeit-instruments-warp,2023,,1,,,,,,,,,
+Noisy Fruits Lab MIDI Thru,utility,https://modulargrid.net/e/noisyfruitslab-midi-thru,2025,,,1,,,,4,,,,
 Oxi Instruments Coral,voice,https://www.modulargrid.net/e/oxi-instruments-coral,2023,,,1,,,,,,,,
 Pittsburgh Modular Lifeforms SV-1,voice,https://www.modulargrid.net/e/pittsburgh-modular-lifeforms-sv-1,2016,,1,,,,,,,,,
 Plinky,voice;sequencer,https://modulargrid.net/e/thonk-plinky,2020,,,1,,1,,,,,,requires Pinky Expander
@@ -108,6 +116,7 @@ Tubbutec TRS-bridge,utility,https://modulargrid.net/e/tubbutec-trs-bridge,2023,,
 Tubbutec USB-bridge A,utility,https://modulargrid.net/e/tubbutec-usb-bridge-a,2020,1,,,,1,,,,A,,route/merge MIDI data between two USB devices and one TRS device
 Verbos Sawtooth Stack,voice,,2024,,,,1,,,,,,,
 vpme.de trig31,utility,https://modulargrid.net/e/vpme-de-trig31,2018,,,,,,1,,,,,trigger-to-MIDI converter
+Wackylab MIDI Thru 2HP,utility,https://modulargrid.net/e/wackylab-midi-thru-2hp,2025,,,1,,,,5,,,,
 Warped Circuits Threshold,voice,https://www.modulargrid.net/e/warped-circuits-threshold,2020,,,1,,,,,,,,
 Westlicht Per|Former,sequencer,https://www.modulargrid.net/e/westlicht-per-former--,2019,1,,,,1,,,,,,
 XOR Nerdseq,sequencer; voice,https://www.modulargrid.net/e/xor-electronics-nerdseq,2016,1,,,,1,,,,,1,requires expander
