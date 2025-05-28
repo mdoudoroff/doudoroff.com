@@ -124,6 +124,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-05-28 added TipTop 248t, Koma Monoplex, Qu-bit Bloom v2<br>
 2024-10-09 added Tobinski Sequencer<br>
 2024-06-01 added CubuSynth ConseQuencer<br>
 2024-05-24 added DMMDM Droid Moto Kit, Doboz T12, and Tubbutec Brainstep<br>
