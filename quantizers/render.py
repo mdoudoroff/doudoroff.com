@@ -107,7 +107,7 @@ html_top = '''
 <nav id="comparisonSwitcher">
 <a href="/mixers/">Stereo Mixers</a>
 <a href="/sequencers/">Pitch+Gate Sequencers</a>
-<a href="/samplers/">Samplers</a>
+
 <strong>Quantizers</strong>
 <a href="/midi/">MIDI Eurorack</a>
 </nav>
@@ -217,7 +217,7 @@ html_bottom = '''
 	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
 	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
 	<li><a href="//doudoroff.com/sequencers/">Pitch &amp; Gate Sequencers</a></li>
-	<li><a href="//doudoroff.com/samplers/">Sampler Modules</a></li>
+	
 	<li><strong>Quantizer Modules</strong></li>
 	<li><a href="//doudoroff.com/midi/">MIDI Eurorack</a></li>
 </ul>
