@@ -9187,6 +9187,35 @@
       "oAP" : "\/sketchbook\/250323.Bad-Orchestra.html",
       "oF" : 0
     },
+    "\/sketchbook\/250610.AJH-Data_Bender-Sketch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250610.AJH-Data_Bender-Sketch.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/AJH-Data Bender Sketch 250610.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/AJH-Data Bender Sketch 250610.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/AJH-Data Bender Sketch 250610.png" : {
+      "ft" : 32768,
+      "iS" : 6956,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/AJH-Data Bender Sketch 250610.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/sketchbook\/audio\/Bad-Orchestra-250323.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9289,6 +9318,12 @@
       "oAP" : "\/sketchbook\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/sketchbook\/gfx" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/gfx",
+      "oF" : 0
     },
     "\/sketchbook\/js\/howler.core.js" : {
       "bF" : 0,

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'AJH / Data Bender Sketch',
+        file: 'AJH-Data Bender Sketch 250610',
+        howl: null
+      }
+    ];
+  </script>
+
+
+  <style>
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/AJH-Data Bender Sketch 250610.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+</head>
+<body>
+
+  <p>2025.06.10</p>
+  <h1>AJH / Data Bender Sketch</h1>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <p><a href="audio/AJH-Data Bender Sketch 250610.mp3">AJH-Data Bender Sketch 250610.mp3</a></p>
+
+  <p>Two parts run through the whole sketch, each AJH voices, recorded first, simultaneously: one is a plodding bass line; the other is a higher melodic part. The bass line is simply clocked notes and pitches using an LFO as the pitch voltage source run through a quantizer. The higher part is also clocked, but I am pitching it by hand from a Keystep and requantizing it in the quantizer. Most essentially, this second part runs through a clocked Data Bender, which hacks up and rearranges and repeats what would otherwise be a dreadfully rudimentary melody. No sequencers are employed in this sketch.</p>
+
+  <p>To these two parts, I later added some percussion and other sounds as overdubs, and did some editing and plugin effects work in Bitwig. Valhalla Room is providing reverb in various ways, and Transit 2 is used to manipulate the bass line at various points.</p>
+
+  <figure>
+    <a href="gfx/250610.AJH-Data_Bender-Sketch.jpg"><img src="gfx/250610.AJH-Data_Bender-Sketch.jpg" alt="screenshot" /></a>
+    <figcaption>Overview of project in Bitwig</figcaption>
+  </figure>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
