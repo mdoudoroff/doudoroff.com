@@ -1,0 +1,107 @@
+@use "open-props";
+@use "open-props-normalize";
+@use "open-props-buttons";
+
+:root {
+	
+    --primary-font-family: system-ui, sans-serif;
+    font-family: var(--primary-font-family);
+    font-weight: normal;
+
+}
+
+h1 {
+	font-size: var(--font-size-5);
+	margin-block: 0.25em;
+}
+
+h2 {
+	font-size: var(--font-size-3);
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+img {
+	margin-inline: auto;
+	width: 100%;
+}
+
+header, footer {
+	margin-inline: auto;
+	text-align: center;
+	background: #ccc;
+
+	img {
+		max-width: 60ch;
+	}
+}
+
+main {
+	margin-inline: auto;
+}
+
+section {
+	padding-inline: 1em;
+	padding-block: 1em;
+	max-width: 60ch;
+	margin-inline: auto;
+}
+
+.essentials {
+	text-align: center;
+	padding-block: 2em;
+}
+
+.event--date, .event--location {
+	margin-block: 0.5em;
+	font-weight: bold;
+}
+
+.sponsors {
+	text-align: center;
+
+}
+
+.sponsors__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-inline-start: 0;
+	gap: 0.5em 1em;
+	padding-block: 0.5em;
+
+	li {
+		list-style: none;
+	}
+}
+
+.button__row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em 1em;
+	align-items: center;
+	justify-content: center;
+	margin-block: 1em;
+}
+
+.faux--button--green {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  padding-block: 0.5em;
+  border-width:1px;
+  color:#fff;
+  border-color:#3b6e22;
+  font-weight:bold;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
+  box-shadow:inset 0px 1px 0px 0px #9acc85;
+  background:linear-gradient(#74ad5a, #68a54b);
+}
+
+.faux--button--green:hover {
+  background: linear-gradient(#68a54b, #74ad5a);
+}
+              
