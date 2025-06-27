@@ -1384,9 +1384,16 @@ img {
 header, footer {
   margin-inline: auto;
   text-align: center;
-  background: #ccc;
 }
 header img, footer img {
+  max-width: 30ch;
+}
+
+header {
+  padding-top: 1em;
+}
+
+body.home header img {
   max-width: 60ch;
 }
 
