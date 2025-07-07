@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'jam with Dan 2025-07-03 v1',
+        file: '2025-07-03-jam-v1',
+        howl: null
+      }
+    ];
+  </script>
+
+
+  <style>
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/2025-07-03-jam-v1.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+</head>
+<body>
+
+  <p>2025.07.03</p>
+  <h1>jam with Dan 2025-07-03</h1>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <p><a href="audio/2025-07-03-jam-v1.mp3">2025-07-03-jam-v1.mp3</a></p>
+
+  <p>version 1 edit</p>
+
+<!--   <figure>
+    <a href="gfx/250610.AJH-Data_Bender-Sketch.jpg"><img src="gfx/250610.AJH-Data_Bender-Sketch.jpg" alt="screenshot" /></a>
+    <figcaption>Overview of project in Bitwig</figcaption>
+  </figure>
+ -->
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
