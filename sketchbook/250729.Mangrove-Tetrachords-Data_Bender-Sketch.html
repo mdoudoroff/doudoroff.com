@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'Mangrove / Tetrachords / Data Bender Sketch',
+        file: 'Mangrove-Tetrachords-Data Bender Sketch 2025-07-29',
+        howl: null
+      }
+    ];
+  </script>
+
+
+  <style>
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+</head>
+<body>
+
+  <p>2025.07.29</p>
+  <h1>Mangrove / Tetrachords / Data Bender Sketch</h1>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <p><a href="audio/AJH-Data Bender Sketch 250610.mp3">Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.mp3</a></p>
+
+  <p>This quickie pseudo-Baroque thing consists of one lone arpeggiating Mangrove voice with a send to Data Bender, which provides “accompaniment”.</p>
+
+  <p>There’s no sequencer beyond a lone channel of Tetrachords in arpeggio mode, the note keys of which I toggle by hand while recording. There’s one LFO modulating the inversion. Sometimes I transpose down a step, again by hand.</p>
+
+  <p>The Mangrove voice is handled by a ADSR and VCA, and the results are passed through a low pass filter, the cutoff I also play by hand (via a joystick). There’s an LFO on the FORMANT for a touch of animation, but I really didn’t put much time into it.</p>
+
+  <p>One copy of the Mangrove voice is recorded directly, and another copy is sent to Data Bender, which is set to MICRO mode. A four step sequence is stepping through four hand-tuned REPEAT settings. A shift register is periodically switching the BEND parameter (i.e. pitch) between one octave below and one octave above. CORRUPT is set fairly high and adds a lot of bright timbre to the derived part.</p>
+
+  <p>That is all, other than a touch of reverb. This is the fourth take. The noise and popping audio artifacts are all or mostly from the buffer manipulation and bit crushing Data Bender is doing–I made no effort to control them.</p>
+
+  <p>&nbsp;</p>
+
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

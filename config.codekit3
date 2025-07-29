@@ -9294,6 +9294,19 @@
       "oAP" : "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3",
       "oF" : 0
     },
+    "\/sketchbook\/audio\/2025-07-03-jam-v1.png" : {
+      "ft" : 32768,
+      "iS" : 6981,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/2025-07-03-jam-v1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/sketchbook\/audio\/AJH-Data Bender Sketch 250610.mp3" : {
       "cB" : 0,
       "ft" : 8192,
