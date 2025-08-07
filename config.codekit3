@@ -9286,6 +9286,22 @@
       "oAP" : "\/sketchbook\/250707.jam.html",
       "oF" : 0
     },
+    "\/sketchbook\/250729.Mangrove-Tetrachords-Data_Bender-Sketch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250729.Mangrove-Tetrachords-Data_Bender-Sketch.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/250806.jam.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250806.jam.html",
+      "oF" : 0
+    },
     "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9356,6 +9372,48 @@
       "oA" : 2,
       "oAP" : "\/sketchbook\/audio\/example.txt",
       "oF" : 0
+    },
+    "\/sketchbook\/audio\/jam with Dan 250806.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/jam with Dan 250806.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/jam with Dan 250806.png" : {
+      "ft" : 32768,
+      "iS" : 6553,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/jam with Dan 250806.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.png" : {
+      "ft" : 32768,
+      "iS" : 6507,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/sketchbook\/audio\/MT-TC bent jam 2025-01-22 1509.mp3" : {
       "cB" : 0,
