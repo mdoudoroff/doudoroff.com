@@ -124,10 +124,12 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-09-02 added Noise Engineering Mimetic Digitwolis, Tenderfoot Chronicle<br>
 2025-05-28 added TipTop 248t, Koma Monoplex, Qu-bit Bloom v2<br>
 2024-10-09 added Tobinski Sequencer<br>
 2024-06-01 added CubuSynth ConseQuencer<br>
 2024-05-24 added DMMDM Droid Moto Kit, Doboz T12, and Tubbutec Brainstep<br>
+<span id="additionalUpdates" class="collapsed">
 2024-05-20 added Five12 Vector II and Rides in the Storm QSQ<br>
 2024-04-10 added Glasgow Synth Guild Oct Tone<br>
 2024-02-02 added 4ms Catalyst Sequencer and NONO Major Tom<br>
@@ -138,7 +140,6 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 2023-02-22 added ALM ASQ-1<br>
 2022-03-23 added various new sequencers to lists at bottom<br>
 2021-06-01 added XAOC Moskwa II<br>
-<span id="additionalUpdates" class="collapsed">
 2021-05-15 errata<br>
 2021-05-14 misc updates, added videos column<br>
 2021-04-08 errata<br>
