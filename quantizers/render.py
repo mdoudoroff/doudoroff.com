@@ -131,6 +131,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-09-09 added Trilling MC2VQ and Mimetic Digitwolis<br>
 2024-05-15 added Instruo Dail<br>
 2024-04-09 added dnipro qTone<br>
 2023-06-30 added Tenderfoot QQ2<br>
