@@ -7,7 +7,7 @@
       "uuidString" : "2CB13A4B-2DA4-48BD-9CE4-CC343C553FCA"
     }
   ],
-  "creatorBuild" : "34704",
+  "creatorBuild" : "34892",
   "files" : {
     "\/_ckl\/about.html" : {
       "cB" : 0,
@@ -9310,6 +9310,14 @@
       "oAP" : "\/sketchbook\/250814.oxi-tetrachords-sketch.html",
       "oF" : 0
     },
+    "\/sketchbook\/250918.jam.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/250918.jam.html",
+      "oF" : 0
+    },
     "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9394,6 +9402,27 @@
       "iS" : 6553,
       "oA" : 1,
       "oAP" : "\/sketchbook\/audio\/jam with Dan 250806.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/jam with Dan 250918.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/jam with Dan 250918.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/jam with Dan 250918.png" : {
+      "ft" : 32768,
+      "iS" : 6825,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/jam with Dan 250918.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -11081,6 +11110,9 @@
         "active" : 0,
         "optionString" : "{'skipBlankLines': false}"
       },
+      "no-unassigned-vars" : {
+        "active" : 0
+      },
       "no-undef" : {
         "active" : 1,
         "optionString" : "{'typeof': false}"
@@ -11161,7 +11193,8 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowRegexCharacters': []}"
       },
       "no-useless-rename" : {
         "active" : 0,
