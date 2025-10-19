@@ -9318,6 +9318,14 @@
       "oAP" : "\/sketchbook\/250918.jam.html",
       "oF" : 0
     },
+    "\/sketchbook\/251019.oxi-practice-sketch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/251019.oxi-practice-sketch.html",
+      "oF" : 0
+    },
     "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9486,6 +9494,27 @@
       "iS" : 6683,
       "oA" : 1,
       "oAP" : "\/sketchbook\/audio\/MT-TC-Ribbon 250322.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/Oxi Practice Sketch 2025 Oct 19.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/Oxi Practice Sketch 2025 Oct 19.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/Oxi Practice Sketch 2025 Oct 19.png" : {
+      "ft" : 32768,
+      "iS" : 6647,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/Oxi Practice Sketch 2025 Oct 19.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

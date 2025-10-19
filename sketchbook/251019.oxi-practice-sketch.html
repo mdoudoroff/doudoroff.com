@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'Oxi Practice Sketch 2025 Oct 19',
+        file: 'Oxi Practice Sketch 2025 Oct 19',
+        howl: null
+      }
+    ];
+  </script>
+
+</head>
+<body>
+
+  <p>2025.10.19</p>
+  <h1>Oxi One Practice sketch</h1>
+
+  <p>Just practicing working with the Oxi One Mk2. Three mono parts, one chord part (MIDI to Bitwig softsynth), one multichannel part for percussion.
+  <p>The three mono parts are E370 voices with two passed through Vostok Atlas and one through Natural Gate; some basic modulation. Simple percussion samples from Assimil8or.</p>
+  <p>Recorded in a single pass handling patterns, mutes and some performance looping/repeating on the Oxi. Kept the third recorded take. Some basic editing and effects work. The sketch drags a bit around the 3/4 mark.</p>
+
+  <p><a href="audio/Oxi Practice Sketch 2025 Oct 19.mp3">Oxi-Tetrachords sketch 250814.mp3</a></p>
+
+  <style>
+
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/Oxi Practice Sketch 2025 Oct 19.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
