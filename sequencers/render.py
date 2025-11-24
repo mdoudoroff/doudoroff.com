@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
-import json, csv, sys
+import csv
+import json
+import sys
 
 if sys.version_info[0] != 3:
     sys.exit("This script requires Python version 3")
@@ -44,28 +46,28 @@ html_top = '''
 		td.left, th.left {text-align:left;}
 		td.notes {text-align: left;}
 		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-		th { 
-			color: #666; position: sticky; top: 0px; 
+		th {
+			color: #666; position: sticky; top: 0px;
 
 			background-color: rgba(200,200,200,0.9);
 		}
 		.notes { min-width: 15em; }
 		.collapsed {display: none;}
-		td.left { 
-			position: sticky; 
-			left: 0px; 
+		td.left {
+			position: sticky;
+			left: 0px;
 			z-index: 1;
 
 			background-color: rgba(225,225,225,0.9);
 		}
 		th.left {
-			position: sticky; 
-			left: 0px; 
+			position: sticky;
+			left: 0px;
 			z-index: 2;
 		}
 
 		nav {
-			background: #eef; 
+			background: #eef;
 			padding: 0.5em 1em;
 			font-family: Helvetica, sans-serif;
 			border-bottom: 2px solid #666;
@@ -124,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-11-24 added Verbos VMS 16<br>
 2025-09-02 added Noise Engineering Mimetic Digitwolis, Tenderfoot Chronicle<br>
 2025-05-28 added TipTop 248t, Koma Monoplex, Qu-bit Bloom v2<br>
 2024-10-09 added Tobinski Sequencer<br>
@@ -183,7 +186,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <script>
 var status = "less";
 function toggleAdditionalUpdates()
-{  
+{
     if (status == "less") {
         document.getElementById("additionalUpdates").className = "";
         document.getElementById("updatesToggle").innerText = "Hide full revision history";
@@ -205,7 +208,7 @@ function toggleAdditionalUpdates()
 <p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
 biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
-<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
+<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern.
 This provides a clue about how “playable” or how much “windowing” is going on working with and navigating your sequence.</p>
 
 <p>The <strong>UI Style</strong> column is an attempt to broadly categorize the operational styles of these different designs:</p>
@@ -232,7 +235,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 html_bottom = '''
 
 <h2>External and partially-external alternatives with direct Eurorack integration</h2>
-<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
+<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack.
 These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can all produce CV):</p>
 <ul>
 <li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (<strong>direct patch</strong>)</li>
@@ -291,7 +294,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
 	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
 	<li><strong>Pitch &amp; Gate Sequencers</strong></li>
-	
+
 	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
 	<li><a href="//doudoroff.com/midi/">MIDI Eurorack</a></li>
 </ul>
@@ -323,112 +326,126 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 </html>
 '''
 
+
 def klassForAny(val):
-	klasses = []
-	if val.lower() in ('0','tbd'):
-		klasses.append('gray')
-	return ' '.join(klasses)
+    klasses = []
+    if val.lower() in ('0', 'tbd'):
+        klasses.append('gray')
+    return ' '.join(klasses)
+
 
 def valueForproduct(row):
-	h = '<strong>%s</strong>' % row['product']
-	if row['_year'].strip():
-		h += '<br>%s' % row['_year']
-	h += '<br><small>'
-	if row['_mgurl'].strip():
-		h += '<br><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
-	if row['_website'].strip():
-		h += '<br><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
-	h += '</small>'
-	return h
+    h = '<strong>%s</strong>' % row['product']
+    if row['_year'].strip():
+        h += '<br>%s' % row['_year']
+    h += '<br><small>'
+    if row['_mgurl'].strip():
+        h += '<br><a href="%s" target="_blank">Modular Grid &gt;</a>' % row['_mgurl']
+    if row['_website'].strip():
+        h += '<br><a href="%s" target="_blank">Web site &gt;</a>' % row['_website']
+    h += '</small>'
+    return h
+
 
 def klassForproduct(val):
-	return 'left'
+    return 'left'
+
 
 def valueForvideos(row):
-	bits = []
-	links = row['videos'].split(';')
-	for l in links:
-		(text, url) = l.split('|')
-		bits.append(f'<a href="{url.strip()}" target="_blank">{text.strip()}</a>')
-	return '<br><br>'.join(bits)
+    bits = []
+    links = row['videos'].split(';')
+    for l in links:
+        (text, url) = l.split('|')
+        bits.append(f'<a href="{url.strip()}" target="_blank">{text.strip()}</a>')
+    return '<br><br>'.join(bits)
+
 
 def klassFornotes(val):
-	return 'left'
+    return 'left'
+
 
 def klassForheadphone(val):
-	if val.lower().find('yes') > -1:
-		return 'green'
-	elif val.lower().find('no') > -1:
-		return 'red'
-	else:
-		return ''
+    if val.lower().find('yes') > -1:
+        return 'green'
+    elif val.lower().find('no') > -1:
+        return 'red'
+    else:
+        return ''
+
 
 def klassForshippingstatus(val):
-	if val.lower().find('yes') > -1:
-		return 'green'
-	elif val.lower().find('no') > -1:
-		return 'red'
-	else:
-		return ''
+    if val.lower().find('yes') > -1:
+        return 'green'
+    elif val.lower().find('no') > -1:
+        return 'red'
+    else:
+        return ''
+
 
 def klassForpic(val):
-	return 'pic'
+    return 'pic'
+
 
 def valueForpic(row):
-	if row['pic'].strip():
-		width = 0
-		try:
-			width = int(row['hp']) * 5
-			height = 26.2 * 5
-		except:
-			pass
-		return '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>''' % (row['pic'],row['pic'],width,height)
-	else:
-		return '(need photo)'
+    if row['pic'].strip():
+        width = 0
+        try:
+            width = int(row['hp']) * 5
+            height = 26.2 * 5
+        except:
+            pass
+        return (
+            '''<a href="gfx/%s"><img src="gfx/%s" style="width:%spx;height:%spx;cursor:zoom-in;" /></a>'''
+            % (row['pic'], row['pic'], width, height)
+        )
+    else:
+        return '(need photo)'
+
 
 def valueFornotes(row):
-	vals = row['notes'].split(';')
-	bits = ['<ul>']
-	for val in vals:
-		if val.strip():
-			bits.append('<li>%s</li>' % val)
-	bits.append('</ul>')
-	return '\n\t'.join(bits)
+    vals = row['notes'].split(';')
+    bits = ['<ul>']
+    for val in vals:
+        if val.strip():
+            bits.append('<li>%s</li>' % val)
+    bits.append('</ul>')
+    return '\n\t'.join(bits)
+
 
 def valueFortrack_outs(row):
-	vals = row['track_outs'].split(',')
-	return '<br>'.join(vals)
+    vals = row['track_outs'].split(',')
+    return '<br>'.join(vals)
+
 
 rows = []
 columnDisplayNames = {}
 
 with open('sequencers-data.csv') as csvfile:
 
-	reader = csv.DictReader(csvfile)
+    reader = csv.DictReader(csvfile)
 
-	for row in reader:
+    for row in reader:
 
-		# first row is special-contains our column display titles
-		if row['product'] == 'Product':
-			columnDisplayNames = row
-		else:
-			columns = []
-			for fieldname in reader.fieldnames:
-				if not fieldname.find('_')==0:
-					# v = locals()["valueFor%s" % fieldname](row)
-					try:
-						v = locals()["valueFor%s" % fieldname](row)
-					except:
-						v = row[fieldname]
-					klass = ''
-					try:
-						klass = locals()["klassFor%s" % fieldname](row[fieldname])
-					except:
-						klass = klassForAny(row[fieldname])
-					columns.append('<td class="%s">%s</td>' % (klass,v))
+        # first row is special-contains our column display titles
+        if row['product'] == 'Product':
+            columnDisplayNames = row
+        else:
+            columns = []
+            for fieldname in reader.fieldnames:
+                if not fieldname.find('_') == 0:
+                    # v = locals()["valueFor%s" % fieldname](row)
+                    try:
+                        v = locals()["valueFor%s" % fieldname](row)
+                    except:
+                        v = row[fieldname]
+                    klass = ''
+                    try:
+                        klass = locals()["klassFor%s" % fieldname](row[fieldname])
+                    except:
+                        klass = klassForAny(row[fieldname])
+                    columns.append('<td class="%s">%s</td>' % (klass, v))
 
-
-			rows.append(columns)
+            rows.append(columns)
 
 # print rows
 
@@ -436,14 +453,14 @@ with open('sequencers-data.csv') as csvfile:
 s = ''
 s += '<tr>'
 for fieldname in reader.fieldnames:
-	if not fieldname.find('_')==0:
-		klass = ''
-		try:
-			klass = locals()["klassFor%s" % fieldname](fieldname)
-		except:
-			klass = klassForAny(fieldname)
+    if not fieldname.find('_') == 0:
+        klass = ''
+        try:
+            klass = locals()["klassFor%s" % fieldname](fieldname)
+        except:
+            klass = klassForAny(fieldname)
 
-		s += '<th class="%s">%s</th>' % (klass,columnDisplayNames[fieldname])
+        s += '<th class="%s">%s</th>' % (klass, columnDisplayNames[fieldname])
 s += '</tr>'
 table_header_row = s
 
@@ -451,7 +468,7 @@ table_header_row = s
 s = html_top
 
 
-s += '<table>' 
+s += '<table>'
 
 # s += '<tr>'
 # for fieldname in reader.fieldnames:
@@ -467,22 +484,21 @@ s += '<table>'
 
 for row in rows:
 
-	# if rows.index(row)%5==0:
-	if rows.index(row)==0:
-		s += table_header_row
+    # if rows.index(row)%5==0:
+    if rows.index(row) == 0:
+        s += table_header_row
 
-	s += '\n<tr>'
-	try:
-		s += '\n\t'.join(row)
-	except:
-		print(row)
-		sys.exit(1)
-	s += '\n</tr>'
+    s += '\n<tr>'
+    try:
+        s += '\n\t'.join(row)
+    except:
+        print(row)
+        sys.exit(1)
+    s += '\n</tr>'
 s += '\n</table>'
 
 s += html_bottom
 
-f = open('index.html','wb')
+f = open('index.html', 'wb')
 f.write(s.encode('utf-8'))
 f.close()
-

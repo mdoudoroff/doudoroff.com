@@ -36,28 +36,28 @@
 		td.left, th.left {text-align:left;}
 		td.notes {text-align: left;}
 		td ul { padding-left: 20px; -webkit-padding-start: 20px; }
-		th { 
-			color: #666; position: sticky; top: 0px; 
+		th {
+			color: #666; position: sticky; top: 0px;
 
 			background-color: rgba(200,200,200,0.9);
 		}
 		.notes { min-width: 15em; }
 		.collapsed {display: none;}
-		td.left { 
-			position: sticky; 
-			left: 0px; 
+		td.left {
+			position: sticky;
+			left: 0px;
 			z-index: 1;
 
 			background-color: rgba(225,225,225,0.9);
 		}
 		th.left {
-			position: sticky; 
-			left: 0px; 
+			position: sticky;
+			left: 0px;
 			z-index: 2;
 		}
 
 		nav {
-			background: #eef; 
+			background: #eef;
 			padding: 0.5em 1em;
 			font-family: Helvetica, sans-serif;
 			border-bottom: 2px solid #666;
@@ -116,6 +116,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2025-11-24 added Verbos VMS 16<br>
 2025-09-02 added Noise Engineering Mimetic Digitwolis, Tenderfoot Chronicle<br>
 2025-05-28 added TipTop 248t, Koma Monoplex, Qu-bit Bloom v2<br>
 2024-10-09 added Tobinski Sequencer<br>
@@ -175,7 +176,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 <script>
 var status = "less";
 function toggleAdditionalUpdates()
-{  
+{
     if (status == "less") {
         document.getElementById("additionalUpdates").className = "";
         document.getElementById("updatesToggle").innerText = "Hide full revision history";
@@ -197,7 +198,7 @@ function toggleAdditionalUpdates()
 <p>This comparison can never be more than a starting place for further research—these modules are amongst the most complex in Eurorack and they are extremely hard to compare fairly and accurately—they each have design
 biases reflecting different priorities and ideas about “process” (how you work with them). Most of these modules have tons of features that I cannot even begin to describe here. Do your homework. <strong>Sequencers are intensely personal tools.</strong></p>
 
-<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern. 
+<p>The <strong>Steps (UI basis/max pattern length)</strong> column describes the number of steps the interface facilitates for editing at one time versus the (max) number of steps in a pattern.
 This provides a clue about how “playable” or how much “windowing” is going on working with and navigating your sequence.</p>
 
 <p>The <strong>UI Style</strong> column is an attempt to broadly categorize the operational styles of these different designs:</p>
@@ -619,7 +620,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting, repeat</td>
 	<td class="">2 assignable, plus assorted trigger inputs on expander</td>
 	<td class="">42</td>
-	<td class="red">No</td>
+	<td class="green">Yes</td>
 	<td class="">800</td>
 	<td class="left"><ul>
 	<li>extensive MIDI support including two additional MIDI-out-only tracks</li>
@@ -699,7 +700,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class="">play mode</td>
 	<td class="">84</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">900</td>
 	<td class="left"><ul>
 	<li>MIDI clocking focus</li>
@@ -717,7 +718,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting</td>
 	<td class="">1 tempo, 2 assignable, 1 cv record in</td>
 	<td class="">32</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">666</td>
 	<td class="left"><ul>
 	<li>per-step delay</li>
@@ -867,7 +868,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting</td>
 	<td class="">1 randomization gate, 1 cv record in</td>
 	<td class="">26</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">549</td>
 	<td class="left"><ul>
 	<li>provides additional six gate-only tracks</li>
@@ -886,7 +887,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">12</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">279</td>
 	<td class="left"><ul>
 	<li>can be four gate channels, four cv channels, or 2 gate+cv channels</li>
@@ -904,7 +905,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class="">1 transpose cv, 1 clock rate cv</td>
 	<td class="">52</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">970</td>
 	<td class="left"><ul>
 	<li>midi output</li>
@@ -922,7 +923,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class="">run gate</td>
 	<td class="">24</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">330</td>
 	<td class="left"><ul>
 	<li>faithful 303 sequencer recreation</li>
@@ -940,7 +941,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class="">1 assignable</td>
 	<td class="">21</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">600</td>
 	<td class="left"><ul>
 	<li>touchscreen UI (some users may need a stylus)</li>
@@ -981,6 +982,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<li>note and gate go on separate tracks</li>
 	<li> MIDI I/O</li>
 	<li> tracks can be configured for quantizing external voltage</li>
+	<li> microtonal support</li>
 	</ul></td>
 </tr>
 <tr><td class="left"><strong>NONO Major Tom</strong><br>2024<br><small><br><a href="https://www.modulargrid.net/e/nono-modular-major-tom-" target="_blank">Modular Grid &gt;</a><br><a href="https://nonomodular.com/major-tom/" target="_blank">Web site &gt;</a></small></td>
@@ -994,7 +996,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting</td>
 	<td class="">1 for pattern selection only; additional inputs through expander</td>
 	<td class="">42</td>
-	<td class="red">No</td>
+	<td class="green">Yes</td>
 	<td class="">800</td>
 	<td class="left"><ul>
 	<li>can be expanded to more channels</li>
@@ -1012,7 +1014,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class=""></td>
 	<td class="">2 transpose</td>
 	<td class="">50</td>
-	<td class="green">Yes (DIY)</td>
+	<td class="">(discontinued)</td>
 	<td class="">280</td>
 	<td class="left"><ul>
 	<li>multi-step “parallel loading” feature</li>
@@ -1083,7 +1085,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">repeat</td>
 	<td class="">transpose, various inputs for controlling and navigating pattern variations</td>
 	<td class="">16</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">330</td>
 	<td class="left"><ul>
 	<li>derives recursive, ephemeral, navigable melodic variations on a seed melodic pattern</li>
@@ -1153,7 +1155,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting</td>
 	<td class="">1 assignable</td>
 	<td class="">26</td>
-	<td class="red">No</td>
+	<td class="green">Yes</td>
 	<td class="">400</td>
 	<td class="left"><ul>
 	<li>includes MIDI-to-CV features</li>
@@ -1398,13 +1400,32 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">classic</td>
 	<td class="">8/8</td>
 	<td class="">1</td>
-	<td class="">1 cv<br> 1 gate</td>
+	<td class="">2 cv<br> 1 gate</td>
 	<td class="">gate on/off per step</td>
 	<td class=""></td>
 	<td class=""></td>
 	<td class="">30</td>
 	<td class="green">Yes</td>
 	<td class="">549</td>
+	<td class="left"><ul>
+	<li>analog</li>
+	<li> no built-in quantizer</li>
+	<li> really an arbitrary function generator, but can be operated as a step sequencer</li>
+	</ul></td>
+</tr>
+<tr><td class="left"><strong>Verbos Multistage 16</strong><br>2025<br><small><br><a href="https://modulargrid.net/e/verbos-electronics-voltage-multistage-16" target="_blank">Modular Grid &gt;</a><br><a href="https://www.verboselectronics.com/modules/voltagemultistage-16" target="_blank">Web site &gt;</a></small></td>
+	<td class="pic"><a href="gfx/verbos-vms16.jpg"><img src="gfx/verbos-vms16.jpg" style="width:210px;height:131.0px;cursor:zoom-in;" /></a></td>
+	<td class=""><a href="https://www.youtube.com/playlist?list=PLmKE41CVixdymKGolguLb-cRD_8qgM6Iu" target="_blank">official video series</a></td>
+	<td class="">classic</td>
+	<td class="">16/16</td>
+	<td class=""></td>
+	<td class="">2 cv<br> 1 gate</td>
+	<td class="">gate on/off per step</td>
+	<td class=""></td>
+	<td class="">stage select gate inputs</td>
+	<td class="">42</td>
+	<td class="red">No</td>
+	<td class="gray">TBD</td>
 	<td class="left"><ul>
 	<li>analog</li>
 	<li> no built-in quantizer</li>
@@ -1441,7 +1462,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting, repeat</td>
 	<td class="">2 assignable</td>
 	<td class="">38</td>
-	<td class="green">Yes</td>
+	<td class="">(discontinued)</td>
 	<td class="">616</td>
 	<td class="left"><ul>
 	<li>extensive random/probability features</li>
@@ -1459,7 +1480,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 	<td class="">ratcheting</td>
 	<td class="">2 assignable</td>
 	<td class="">40</td>
-	<td class="">(discontinued)</td>
+	<td class="green">Yes</td>
 	<td class="">850</td>
 	<td class="left"><ul>
 	<li>sophisticated gate sequencer with cv track expander (4 channels per Voltera expander)</li>
@@ -1552,7 +1573,7 @@ This provides a clue about how “playable” or how much “windowing” is goi
 </table>
 
 <h2>External and partially-external alternatives with direct Eurorack integration</h2>
-<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack. 
+<p>There are, of course, a zillion MIDI solutions available for Eurorack and related ways to control one’s rack.
 These are a selection of alternatives to either a heavy-duty sequencer module (per above) or a straight-up MIDI-style approach (i.e., these can all produce CV):</p>
 <ul>
 <li><a href="http://www.analoguesolutions.com/generator/">Analogue Solutions Generator</a> (<strong>direct patch</strong>)</li>
@@ -1611,7 +1632,7 @@ These are a selection of alternatives to either a heavy-duty sequencer module (p
 	<li style="border-bottom: 2px solid gray;">Comparison guides</li>
 	<li><a href="//doudoroff.com/mixers/">Stereo Mixer Modules</a></li>
 	<li><strong>Pitch &amp; Gate Sequencers</strong></li>
-	
+
 	<li><a href="//doudoroff.com/quantizers/">Quantizer Modules</a></li>
 	<li><a href="//doudoroff.com/midi/">MIDI Eurorack</a></li>
 </ul>
