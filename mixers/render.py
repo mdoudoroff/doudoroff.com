@@ -137,6 +137,13 @@ and damned tedious to wade through. The old comparison, which <a href="index-pre
 As of this writing, I’m leaving in the “nearness”-related mixers because they employ a form of patch programmability (if you squint a bit). No small
 utility mixers (you can find those on modulargrid), no matrix mixers (I love them, but they are not what this is designed for), and fewer dark, dusty corners.</p>
 
+<p>Related discussion
+thread:
+<a href="https://modwiggler.com/forum/viewtopic.php?t=154186"
+    ><em>stereo mixer module comparison</em> (ModWiggler
+    forum)</a
+></p>
+
 <h4>Latest</h4>
 <p class="updates">
 2025-11-29 major purge and refocusing of the comparison<br>
