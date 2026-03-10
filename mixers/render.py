@@ -147,6 +147,7 @@ thread:
 
 <h4>Latest</h4>
 <p class="updates">
+2026-03-10 minor updates<br>
 2025-11-29 major purge and refocusing of the comparison<br>
 <span id="additionalUpdates" class="collapsed">
 </span>
