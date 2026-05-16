@@ -126,6 +126,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2026-05-16 added Verbox VMS 10, Cre8audio Programm, Befaco ARK<br>
 2025-11-24 added Verbos VMS 16<br>
 2025-09-02 added Noise Engineering Mimetic Digitwolis, Tenderfoot Chronicle<br>
 2025-05-28 added TipTop 248t, Koma Monoplex, Qu-bit Bloom v2<br>
