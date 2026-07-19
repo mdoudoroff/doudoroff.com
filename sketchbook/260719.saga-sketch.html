@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: 'Saga Sketch 260719 2026 Jul 19',
+        file: 'Saga Sketch 260719',
+        howl: null
+      }
+    ];
+  </script>
+
+</head>
+<body>
+
+  <p>2026.07.19</p>
+  <h1>Saga Sketch</h1>
+
+  <p>Began with an exercise using two “Saga” stage sequencers on the OXI ONE with two closely-related sequences routed to two different voices. The primary voice is the K-Accumulator. The secondary voice, which doesn’t show up until ~1 minute in, is an E370. The initial recording is a performance of sorts, including the transpositions in the middle and end.</p>
+  <p>The bridge, which was created and inserted later, is the K-A with the same sequence, but dramatically slowed down, and then repeated two octaves lower.</p>
+  <p>Primary modulation of the K-A is a Planar joystick, mainly controlling the MORPH, but some onboard modulation is also employed. The E370 is simply sequenced through different wavetable positions. Probability-based velocity is modulating the envelope levels for both voices.</p>
+  <p>Samarkanda, patched as a ping-pong delay is featured. Some weird Swells reverb for the low pass gate strikes (derived from the secondary voice). Various Valhalla reverbs also employed on the DAW.</p>
+  <p>The percussion is just two channels of the Assimil8or using rotating samples. I had to re-record the percussion a couple times, simplifying it. The kick is operating in the “time signature” of the secondary voice, the snare is operating in the “time signature” of the primary voice. There’s a lot of phasing going on.</p>
+  <p>Quite a bit of editing, overall, to attempt to take something very repetitive and make it a little less boring. Only partly-successful, but some nice noises here and there. Mixing pretty questionable—slamming it all into a limiter. (Amateur hour.) Maybe I will revisit it, probably not.</p>
+
+  <p><a href="audio/Saga Sketch 260719.mp3">Saga Sketch 260719.mp3</a></p>
+
+  <style>
+
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/Saga Sketch 260719.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

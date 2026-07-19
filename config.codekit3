@@ -9334,6 +9334,22 @@
       "oAP" : "\/sketchbook\/251019.oxi-practice-sketch.html",
       "oF" : 0
     },
+    "\/sketchbook\/260705.k-a-first-sketch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/260705.k-a-first-sketch.html",
+      "oF" : 0
+    },
+    "\/sketchbook\/260719.saga-sketch.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/260719.saga-sketch.html",
+      "oF" : 0
+    },
     "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9447,6 +9463,27 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/sketchbook\/audio\/K-A first sketch 260705.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/K-A first sketch 260705.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/K-A first sketch 260705.png" : {
+      "ft" : 32768,
+      "iS" : 6475,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/K-A first sketch 260705.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/sketchbook\/audio\/Mangrove-Tetrachords-Data Bender Sketch 2025-07-29.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9544,6 +9581,27 @@
       "iS" : 6245,
       "oA" : 1,
       "oAP" : "\/sketchbook\/audio\/Oxi-Tetrachords sketch 250814.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/Saga Sketch 260719.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/Saga Sketch 260719.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/Saga Sketch 260719.png" : {
+      "ft" : 32768,
+      "iS" : 6528,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/Saga Sketch 260719.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
