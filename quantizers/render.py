@@ -131,6 +131,7 @@ var vtnrkjn = ['f','i','o','f','a','=','a','<','a','>','n','l','f','a','<','r','
 
 <h4>Latest</h4>
 <p class="updates">
+2026-07-21 added Xaoc Devices Skopje<br>
 2026-05-01 added This Machine Modular Quantica<br>
 2025-09-09 added Trilling MC2VQ and Mimetic Digitwolis<br>
 2024-05-15 added Instruo Dail<br>
