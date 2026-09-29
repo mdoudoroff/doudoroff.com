@@ -9350,6 +9350,14 @@
       "oAP" : "\/sketchbook\/260719.saga-sketch.html",
       "oF" : 0
     },
+    "\/sketchbook\/260928.monday-mood.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/260928.monday-mood.html",
+      "oF" : 0
+    },
     "\/sketchbook\/audio\/2025-07-03-jam-v1.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -9363,6 +9371,27 @@
       "iS" : 6981,
       "oA" : 1,
       "oAP" : "\/sketchbook\/audio\/2025-07-03-jam-v1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/sketchbook\/audio\/2026-09-28-monday-mood-rough-mix.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/sketchbook\/audio\/2026-09-28-monday-mood-rough-mix.mp3",
+      "oF" : 0
+    },
+    "\/sketchbook\/audio\/2026-09-28-monday-mood-rough-mix.png" : {
+      "ft" : 32768,
+      "iS" : 6345,
+      "oA" : 1,
+      "oAP" : "\/sketchbook\/audio\/2026-09-28-monday-mood-rough-mix.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

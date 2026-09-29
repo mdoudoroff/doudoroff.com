@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  <title>mdoudoroff sketchbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    var localPlaylist = [
+      {
+        title: '2026-09-28-monday-mood',
+        file: '2026-09-28-monday-mood-rough-mix',
+        howl: null
+      }
+    ];
+  </script>
+
+</head>
+<body>
+
+  <p>2026.09.28</p>
+  <h1>Monday Mood</h1>
+
+  <p>Started with the bass line: AJH stuff. Developed three additional parts that are modulated E370 wavetables: one drone and the two other melodic patterns in higher registers. These were all sequenced and partially modulated by the OXI ONE. Nothing exotic going on here; filters are in the audio paths. Except for the drone, these are sent (to some extent) to the Samarkanda patched as a ping-pong delay. The drone gets some processing in Swells to kind of fluff it out with one of their weirder, unnatural algorithms.</p>
+  <p>All this I recorded together, wiggling some cutoffs by hand, and keeping the third take. The I went back and constructed the percussion parts and multitracked those in. The clattery/crashing sounds are actually the BIA processed through Swells, abusing the bucket brigade algorithm. I liked how that worked out. The other two drums are just euclidean sequences triggering Assimil8or samples. I used the performance features of the OXI to manipulate the pitterpatter so it didn’t just do the same thing endlessly.</p>
+  <p>Not a lot of editing, just some levels and bringing things in/out to give the sketch some form. I think I threw some EQ on a couple parts to get them to not stomp each other as much.</p>
+
+  <p><a href="audio/2026-09-28-monday-mood-rough-mix.mp3">2026-09-28-monday-mood-rough mix.mp3</a></p>
+
+  <style>
+
+    :root {
+      --player-bkgd: #bb71f3;
+      --player-bkgd-2: #3d4d91;
+      --player-bkgd: #cccccc;
+      --player-bkgd-2: #999999;
+    }
+
+    .howler__player {
+
+      background: var(--player-bkgd);
+
+      background: no-repeat center url('audio/2026-09-28-monday-mood-rough-mix.png?h=2'),
+      linear-gradient(135deg, var(--player-bkgd) 0%, var(--player-bkgd-2) 100%);      
+
+      background-size: 100%, 100%;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
+
+    }
+  </style>
+
+  <div class="howler__player">
+
+    <!-- Top Info -->
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer">0:00</div>
+      <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="progress"></div>
+    <div id="waveform"></div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+      <div id="list"></div>
+    </div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/howler.core.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
